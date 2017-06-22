@@ -1,0 +1,50 @@
+<Project>
+
+  <PropertyGroup>
+    <FSharpSatelliteDirectory>\\cpvsbuild\drops\FSharp\Microbuild\20170620.1\Binaries\coreclr\bin\localize\</FSharpSatelliteDirectory>
+    <RoslynSatelliteDirectory>\\cpvsbuild\drops\VS\d15rel\raw\current\binaries.x86ret\Localized\simship\</RoslynSatelliteDirectory>
+    <IntermediateOutputPath>..\bin\Intermediate\</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Satellite Include="$(FSharpSatelliteDirectory)*\*.resources.dll" 
+               Exclude="$(FSharpSatelliteDirectory)ENU\*.resources.dll" />
+
+    <Satellite Include="$(RoslynSatelliteDirectory)*\ExternalApis\Roslyn\*.resources.dll"
+               Exclude="$(RoslynSatelliteDirectory)ENU\ExternalApis\Roslyn\*.resources.dll" />
+  </ItemGroup>
+
+  <Target Name="Build" 
+          DependsOnTargets="DecompileSatellite;
+                            DecompileResource;
+                            DeleteUnusedAssemblies" />
+  
+  <Target Name="DecompileSatellite" Inputs="@(Satellite)" Outputs="%(Satellite.Identity).batch">
+    <MakeDir Directories="$(IntermediateOutputPath)%(Satellite.Filename)\" />
+
+    <Exec Command="ildasm %(Satellite.FullPath) /out=$(IntermediateOutputPath)%(Satellite.Filename)\tmp.il" />
+
+    <ItemGroup>
+      <Resource Include="$(IntermediateOutputPath)%(Satellite.Filename)\*.resources"
+                Assembly="$([System.IO.Path]::GetFilenameWithoutExtension('%(Satellite.Filename)'))" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="DecompileResource" Inputs="@(Resource)" Outputs="%(Resource.Identity).batch">
+    <PropertyGroup>
+      <ResourceFilename>$([System.IO.Path]::GetFilenameWithoutExtension('%(Resource.Filename)'))</ResourceFilename>
+      <ResourceLanguage>$([System.IO.Path]::GetExtension('%(Resource.Filename)').TrimStart('.'))</ResourceLanguage>
+      <ResourceLanguage Condition="'$(ResourceLanguage)' == 'zh-HANS'">zh-Hans</ResourceLanguage>
+      <ResourceLanguage Condition="'$(ResourceLanguage)' == 'zh-HANT'">zh-Hant</ResourceLanguage>
+    </PropertyGroup>
+
+    <MakeDir Directories="..\src\%(Resource.Assembly)" />
+    <Exec Command="resgen %(Resource.FullPath) ..\src\%(Resource.Assembly)\$(ResourceFilename).$(ResourceLanguage).resx" />
+  </Target>
+
+  <Target Name="DeleteUnusedAssemblies">
+    <RemoveDir Directories="..\src\Microsoft.CodeAnalysis.Scripting;
+                            ..\src\Microsoft.CodeAnalysis.CSharp.Scripting" />
+  </Target>
+
+</Project>
