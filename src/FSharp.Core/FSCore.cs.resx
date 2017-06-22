@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="printfHashFormatSpecifierIllegal" xml:space="preserve">
+    <value>Modifikátor formátu # je v jazyce F# neplatný.</value>
+  </data>
+  <data name="invalidTupleTypeConstructorNotDefined" xml:space="preserve">
+    <value>Řazená kolekce členů typu {0} je neplatná. Požadovaný konstruktor není definován.</value>
+  </data>
+  <data name="syncContextNull" xml:space="preserve">
+    <value>Vlastnost System.Threading.SynchronizationContext.Current volajícího vlákna má hodnotu null.</value>
+  </data>
+  <data name="QtupleAccessOutOfRange" xml:space="preserve">
+    <value>Přístup do řazené kolekce členů mimo rozsah</value>
+  </data>
+  <data name="unsupportedQueryCall" xml:space="preserve">
+    <value>Toto není platný výraz dotazu. V dotazu byla použita metoda {0}, která není rozpoznána překladačem dotazu z jazyka F# do jazyka LINQ. Prostudujte si specifikace povolených dotazů a zvažte přesunutí některých operací mimo výraz dotazu.</value>
+  </data>
+  <data name="QfailedToBindTypeInAssembly" xml:space="preserve">
+    <value>Nezdařilo se vytvořit vazbu typu {0} v sestavení {1}.</value>
+  </data>
+  <data name="badFormatString" xml:space="preserve">
+    <value>Vstupní řetězec nemá správný formát.</value>
+  </data>
+  <data name="QincorrectInstanceType" xml:space="preserve">
+    <value>Nesprávný typ instance</value>
+  </data>
+  <data name="QcannotBindFunction" xml:space="preserve">
+    <value>Nebylo možné vytvořit vazbu funkce {0} v typu {1}.</value>
+  </data>
+  <data name="QfailedToBindField" xml:space="preserve">
+    <value>Nezdařilo se vytvořit vazbu pole {0}.</value>
+  </data>
+  <data name="printfPrecisonSpecifierIllegal" xml:space="preserve">
+    <value>Chybný specifikátor formátu (přesnost)</value>
+  </data>
+  <data name="nullsNotAllowedInArray" xml:space="preserve">
+    <value>Jeden z prvků v poli má hodnotu null.</value>
+  </data>
+  <data name="firstClassUsesOfSplice" xml:space="preserve">
+    <value>Použití % nebo %% jako výrazů první třídy není povoleno.</value>
+  </data>
+  <data name="QtmmCondMustBeBool" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: výraz podmínky musí být typu bool. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="unsupportedQueryProperty" xml:space="preserve">
+    <value>Toto není platný výraz dotazu. V dotazu byla použita vlastnost {0}, která není rozpoznána překladačem dotazu z jazyka F# do jazyka LINQ. Prostudujte si specifikace povolených dotazů a zvažte přesunutí některých operací mimo výraz dotazu.</value>
+  </data>
+  <data name="QtmmVarTypeNotMatchRHS" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: typ proměnné se neshoduje s typem výrazu na pravé straně vazby let. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="QcannotBindProperty" xml:space="preserve">
+    <value>Nebylo možné vytvořit vazbu vlastnosti {0} v typu {1}.</value>
+  </data>
+  <data name="inputMustBeNonNegative" xml:space="preserve">
+    <value>Hodnota vstupu musí být nezáporná.</value>
+  </data>
+  <data name="objIsNotARecord" xml:space="preserve">
+    <value>Objekt není hodnotou záznamu jazyka F#.</value>
+  </data>
+  <data name="QparentCannotBeNull" xml:space="preserve">
+    <value>Nadřazený typ nemůže mít hodnotu null.</value>
+  </data>
+  <data name="keyNotFoundAlt" xml:space="preserve">
+    <value>V kolekci nebyl nalezen index splňující predikát.</value>
+  </data>
+  <data name="keyNotFound" xml:space="preserve">
+    <value>V kolekci nebyla nalezena položka, klíč nebo index.</value>
+  </data>
+  <data name="mailboxReceiveTimedOut" xml:space="preserve">
+    <value>Vypršel časový limit metody Mailbox.Receive.</value>
+  </data>
+  <data name="startCannotBeNaN" xml:space="preserve">
+    <value>Počáteční hodnota rozsahu nemůže být NaN.</value>
+  </data>
+  <data name="QincompatibleRecordLength" xml:space="preserve">
+    <value>Nekompatibilní délka záznamu</value>
+  </data>
+  <data name="QtmmExprTypeMismatch" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: typy výrazů se neshodují. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="checkStaticInit" xml:space="preserve">
+    <value>Statická inicializace souboru nebo typu způsobila rekurzivní přístup ke statickým datům před úplným dokončením inicializace.</value>
+  </data>
+  <data name="notEnoughElements" xml:space="preserve">
+    <value>Vstupní sekvence má nedostatečný počet prvků.</value>
+  </data>
+  <data name="moveNextNotCalledOrFinished" xml:space="preserve">
+    <value>Nebyla volána nebo dokončena metoda MoveNext.</value>
+  </data>
+  <data name="QtmmFunctionArgTypeMismatch" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: neodpovídá typ argumentu funkce. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="QmissingUnionCase" xml:space="preserve">
+    <value>Typ {0} neobsahoval případ typu union jazyka F# s názvem {1}.</value>
+  </data>
+  <data name="QtmmRaw" xml:space="preserve">
+    <value>Neshoda typů při spojování výrazu do literálu citace. Typ vkládaného stromu výrazů neodpovídá typu, který očekává operace spojení. Očekávaný typ byl {0}, ale přijatý typ byl {1}. Zvažte uvedení očekávaného typu výrazu, např. (%% x : {0}) nebo (%x : {0}).</value>
+  </data>
+  <data name="privateRecordType" xml:space="preserve">
+    <value>Typ {0} je reprezentací typu záznamu jazyka F#, ale jeho reprezentace je privátní. Aby bylo možné přistupovat k privátním reprezentacím typů, je nutné určit příznak BindingFlags.NonPublic.</value>
+  </data>
+  <data name="unsupportedQueryConstructKind" xml:space="preserve">
+    <value>Toto není platný výraz dotazu. V dotazu byla použita konstrukce {0}, která není rozpoznána překladačem dotazu z jazyka F# do jazyka LINQ. Prostudujte si specifikace povolených dotazů a zvažte přesunutí některých operací mimo výraz dotazu.</value>
+  </data>
+  <data name="enumerationPastIntMaxValue" xml:space="preserve">
+    <value>Výčet založený na typu System.Int32 překročil hodnotu System.Int32.MaxValue.</value>
+  </data>
+  <data name="QfailedToBindProperty" xml:space="preserve">
+    <value>Nezdařilo se vytvořit vazbu vlastnosti {0}.</value>
+  </data>
+  <data name="stepCannotBeZero" xml:space="preserve">
+    <value>Krok rozsahu nemůže být nula.</value>
+  </data>
+  <data name="addressOpNotFirstClass" xml:space="preserve">
+    <value>Použití operátorů address-of jako výrazů první třídy není povoleno.</value>
+  </data>
+  <data name="notARecordType" xml:space="preserve">
+    <value>Typ {0} není typ záznamu jazyka F#.</value>
+  </data>
+  <data name="dyInvDivByIntCoerce" xml:space="preserve">
+    <value>Dynamické vyvolání metody DivideByInt zahrnující převody není podporováno.</value>
+  </data>
+  <data name="arraysHadDifferentLengths" xml:space="preserve">
+    <value>Pole mají rozdílné délky.</value>
+  </data>
+  <data name="QtmmInitArray" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: inicializátor neodpovídá typu pole. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="delegateExpected" xml:space="preserve">
+    <value>Je očekáván typ delegáta.</value>
+  </data>
+  <data name="QtmmTrueAndFalseMustMatch" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: typy ve větvích true a false se liší. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="genericCompareFail1" xml:space="preserve">
+    <value>Chyba během obecného srovnání: typ {0} neimplementuje rozhraní System.IComparable. Tato chyba může být způsobena použitím funkce jako například compare, max nebo min nebo datové struktury jako například Set nebo Map, jejichž klíče obsahují instance tohoto typu.</value>
+  </data>
+  <data name="QunexpectedHole" xml:space="preserve">
+    <value>Výraz obsahuje neočekávanou konstrukci quotation hole.</value>
+  </data>
+  <data name="outOfRange" xml:space="preserve">
+    <value>Index je mimo přípustný rozsah.</value>
+  </data>
+  <data name="printfExpectedPrecision" xml:space="preserve">
+    <value>Byl očekáván argument určující přesnost.</value>
+  </data>
+  <data name="stepCannotBeNaN" xml:space="preserve">
+    <value>Krok rozsahu nemůže být NaN.</value>
+  </data>
+  <data name="arrayWasEmpty" xml:space="preserve">
+    <value>Vstupní pole bylo prázdné.</value>
+  </data>
+  <data name="QstaticWithReceiverObject" xml:space="preserve">
+    <value>Objekt příjemce nebyl očekáván, protože člen je statický.</value>
+  </data>
+  <data name="inputSequenceTooLong" xml:space="preserve">
+    <value>Vstupní sekvence obsahuje více než jeden element.</value>
+  </data>
+  <data name="setContainsNoElements" xml:space="preserve">
+    <value>Sada neobsahuje žádné prvky.</value>
+  </data>
+  <data name="QtmmExprHasWrongType" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: výraz je chybného typu. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="QexpectedTwoTypes" xml:space="preserve">
+    <value>Byly očekávány přesně dva argumenty typu.</value>
+  </data>
+  <data name="QtmmBadFieldType" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: typ pole byl nesprávný. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="checkInit" xml:space="preserve">
+    <value>Inicializace objektu nebo hodnoty způsobila rekurzivní přístup k objektu nebo hodnotě před úplným dokončením inicializace.</value>
+  </data>
+  <data name="invalidRecordTypeConstructorNotDefined" xml:space="preserve">
+    <value>Záznam typu {0} je neplatný. Požadovaný konstruktor není definován.</value>
+  </data>
+  <data name="mailboxProcessorPostAndAsyncReplyTimedOut" xml:space="preserve">
+    <value>Vypršel časový limit metody MailboxProcessor.PostAndAsyncReply.</value>
+  </data>
+  <data name="QfailedToBindAssembly" xml:space="preserve">
+    <value>Při zpracování dat citace se nezdařilo vytvořit vazbu sestavení {0}.</value>
+  </data>
+  <data name="printfWidthSpecifierIllegal" xml:space="preserve">
+    <value>Chybný specifikátor formátu (šířka)</value>
+  </data>
+  <data name="dyInvOpMultCoerce" xml:space="preserve">
+    <value>Dynamické vyvolání metody op_Multiply zahrnující převody není podporováno.</value>
+  </data>
+  <data name="QincorrectNumArgs" xml:space="preserve">
+    <value>Nesprávný počet argumentů</value>
+  </data>
+  <data name="matchCasesIncomplete" xml:space="preserve">
+    <value>Případy výrazu match byly neúplné.</value>
+  </data>
+  <data name="mismatchIAREnd" xml:space="preserve">
+    <value>Poskytnutý objekt IAsyncResult neodpovídá této operaci End.</value>
+  </data>
+  <data name="inputSequenceEmpty" xml:space="preserve">
+    <value>Vstupní sekvence byla prázdná.</value>
+  </data>
+  <data name="QinvalidFuncType" xml:space="preserve">
+    <value>Neplatný typ funkce</value>
+  </data>
+  <data name="mismatchIARCancel" xml:space="preserve">
+    <value>Poskytnutý objekt IAsyncResult neodpovídá této operaci Cancel.</value>
+  </data>
+  <data name="invalidTupleTypes" xml:space="preserve">
+    <value>Toto není platný typ řazené kolekce členů pro knihovnu reflexe jazyka F#.</value>
+  </data>
+  <data name="thenByError" xml:space="preserve">
+    <value>Operátory thenBy a thenByDescending lze použít pouze pro uspořádaný vstup.</value>
+  </data>
+  <data name="notUsedForHashing" xml:space="preserve">
+    <value>Tento objekt je určen pro rekurzivní volání rovnosti a nelze jej použít pro algoritmus hash.</value>
+  </data>
+  <data name="resetNotSupported" xml:space="preserve">
+    <value>Tento enumerátor nepodporuje operaci resetování.</value>
+  </data>
+  <data name="QwritingGetOnly" xml:space="preserve">
+    <value>Zápis vlastnosti, která podporuje pouze operaci get</value>
+  </data>
+  <data name="enumerationAlreadyFinished" xml:space="preserve">
+    <value>Výčet byl již dokončen.</value>
+  </data>
+  <data name="QcannotTakeAddress" xml:space="preserve">
+    <value>Nelze získat adresu této citace.</value>
+  </data>
+  <data name="QexpectedOneType" xml:space="preserve">
+    <value>Byl očekáván přesně jeden argument typu.</value>
+  </data>
+  <data name="dyInvOpAddCoerce" xml:space="preserve">
+    <value>Dynamické vyvolání metody op_Addition zahrnující převody není podporováno.</value>
+  </data>
+  <data name="tupleIndexOutOfRange" xml:space="preserve">
+    <value>Index {1} řazené kolekce členů byl mimo rozsah řazené kolekce členů typu {0}.</value>
+  </data>
+  <data name="printfExpectedWidth" xml:space="preserve">
+    <value>Byl očekáván argument určující šířku.</value>
+  </data>
+  <data name="notAUnionType" xml:space="preserve">
+    <value>Typ {0} není typ union jazyka F#.</value>
+  </data>
+  <data name="QfailedToBindConstructor" xml:space="preserve">
+    <value>Nezdařilo se vytvořit vazbu konstruktoru.</value>
+  </data>
+  <data name="QtmmLoopBodyMustBeLambdaTakingInteger" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: tělo cyklu for musí být výraz lambda, který jako argument přijímá celé číslo. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="QincorrectType" xml:space="preserve">
+    <value>Nesprávný typ</value>
+  </data>
+  <data name="controlContinuationInvokedMultipleTimes" xml:space="preserve">
+    <value>Pokračování poskytované metodou Async.FromContinuations bylo vyvoláno vícekrát.</value>
+  </data>
+  <data name="QtmmFunTypeNotMatchDelegate" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: typ funkce neodpovídá typu delegáta. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="notAPermutation" xml:space="preserve">
+    <value>Funkce nevypočítala permutaci.</value>
+  </data>
+  <data name="printfMissingFormatSpecifier" xml:space="preserve">
+    <value>Chybí specifikátor formátu.</value>
+  </data>
+  <data name="notATupleType" xml:space="preserve">
+    <value>Typ {0} není typ řazené kolekce členů.</value>
+  </data>
+  <data name="QtmmExprNotMatchTuple" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: výraz neodpovídá typu řazené kolekce členů. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="QtmmBodyMustBeUnit" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: tělo musí vracet výraz typu unit. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="notComparable" xml:space="preserve">
+    <value>Tyto dva objekty mají rozdílné typy a nelze je porovnat.</value>
+  </data>
+  <data name="ThisValueCannotBeMutated" xml:space="preserve">
+    <value>Tato hodnota nemůže být mutována.</value>
+  </data>
+  <data name="unsupportedQueryConstruct" xml:space="preserve">
+    <value>Toto není platný výraz dotazu. V dotazu byla použita následující konstrukce, která není rozpoznána překladačem dotazu z jazyka F# do jazyka LINQ:\n{0}\nProstudujte si specifikace povolených dotazů a zvažte přesunutí některých operací mimo výraz dotazu.</value>
+  </data>
+  <data name="multipleCompilationMappings" xml:space="preserve">
+    <value>Více atributů CompilationMappingAttributes, byl očekáván nejvýše jeden.</value>
+  </data>
+  <data name="indexOutOfBounds" xml:space="preserve">
+    <value>Index byl mimo rozsah prvků seznamu.</value>
+  </data>
+  <data name="printfSpecifierAfterIllegal" xml:space="preserve">
+    <value>Chybný specifikátor formátu (za {0})</value>
+  </data>
+  <data name="QnonStaticNoReceiverObject" xml:space="preserve">
+    <value>Člen není statický (patří k instanci), ale nebyl poskytnut žádný objekt příjemce.</value>
+  </data>
+  <data name="QtmmIncorrectArgForUnion" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: nesprávný typ argumentu pro typ union jazyka F#. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="QtupleLengthsDiffer" xml:space="preserve">
+    <value>Délky řazených kolekcí členů se liší.</value>
+  </data>
+  <data name="notAFunctionType" xml:space="preserve">
+    <value>Typ {0} není typ funkce.</value>
+  </data>
+  <data name="printfNotAFunType" xml:space="preserve">
+    <value>Nejedná se o typ funkce.</value>
+  </data>
+  <data name="QwrongNumOfTypeArgs" xml:space="preserve">
+    <value>Počet očekávaných argumentů typu metody {0} je {1}, ale počet poskytnutých argumentů je {2}.</value>
+  </data>
+  <data name="mailboxProcessorAlreadyStarted" xml:space="preserve">
+    <value>Agent MailboxProcessor již byl spuštěn.</value>
+  </data>
+  <data name="dyInvOpAddOverload" xml:space="preserve">
+    <value>Dynamické vyvolání metody op_Addition zahrnující přetížení není podporováno.</value>
+  </data>
+  <data name="privateExceptionType" xml:space="preserve">
+    <value>Typ {0} je reprezentací deklarace výjimky jazyka F#, ale jeho reprezentace je privátní. Aby bylo možné přistupovat k privátním reprezentacím typů, je nutné určit příznak BindingFlags.NonPublic.</value>
+  </data>
+  <data name="privateUnionType" xml:space="preserve">
+    <value>Typ {0} je reprezentací typu union jazyka F#, ale jeho reprezentace je privátní. Aby bylo možné přistupovat k privátním reprezentacím typů, je nutné určit příznak BindingFlags.NonPublic.</value>
+  </data>
+  <data name="QtmmInvalidParam" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: neplatný parametr metody nebo vlastnosti indexeru. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="mailboxProcessorPostAndReplyTimedOut" xml:space="preserve">
+    <value>Vypršel časový limit metody MailboxProcessor.PostAndReply.</value>
+  </data>
+  <data name="printfBadFloatValue" xml:space="preserve">
+    <value>Chybná hodnota float</value>
+  </data>
+  <data name="inputListWasEmpty" xml:space="preserve">
+    <value>Vstupní seznam byl prázdný.</value>
+  </data>
+  <data name="QtmmExpectedFunction" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: při použití funkce nebo vytvoření vazby přiřazení let byl očekáván typ funkce. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="failDueToUnsupportedInputTypeInSumByOrAverageBy" xml:space="preserve">
+    <value>Nerozpoznané použití operátoru sumBy nebo averageBy v dotazu. V dotazech, jejichž původní data jsou statického typu IQueryable, je tyto operátory možné použít pouze s typem výsledku int32, int64, single, double nebo decimal.</value>
+  </data>
+  <data name="dyInvOpMultOverload" xml:space="preserve">
+    <value>Dynamické vyvolání metody op_Multiply zahrnující přetížení není podporováno.</value>
+  </data>
+  <data name="QunrecognizedMethodCall" xml:space="preserve">
+    <value>Parametr není rozpoznaný název metody.</value>
+  </data>
+  <data name="objIsNullAndNoType" xml:space="preserve">
+    <value>Objekt má hodnotu null a nebyl určen žádný typ. Buď předejte objekt, který nemá hodnotu null, nebo parametr typu, který nemá hodnotu null.</value>
+  </data>
+  <data name="QreadingSetOnly" xml:space="preserve">
+    <value>Čtení vlastnosti, které podporuje pouze operaci set</value>
+  </data>
+  <data name="QtmmLowerUpperBoundMustBeInt" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: dolní a horní hranice musejí být celá čísla. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="QunionNeedsDiffNumArgs" xml:space="preserve">
+    <value>Typ union jazyka F# vyžaduje odlišný počet argumentů.</value>
+  </data>
+  <data name="constructorForUnionCaseNotFound" xml:space="preserve">
+    <value>Metoda konstruktoru {0} pro případ typu union nebyla nalezena.</value>
+  </data>
+  <data name="enumerationNotStarted" xml:space="preserve">
+    <value>Výčet nebyl zahájen. Volejte metodu MoveNext.</value>
+  </data>
+  <data name="optionValueWasNone" xml:space="preserve">
+    <value>Hodnota možnosti byla None.</value>
+  </data>
+  <data name="printfBadIntegerForDynamicFomatter" xml:space="preserve">
+    <value>Dynamickému formátovacímu modulu byla předána chybná celočíselná hodnota.</value>
+  </data>
+  <data name="QtmmTuple" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: typ argumentu a prvku řazené kolekce členů se neshodují. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="QinvalidCaseIndex" xml:space="preserve">
+    <value>Nejedená se o platný index případu typu union jazyka F#.</value>
+  </data>
+  <data name="inputMustBePositive" xml:space="preserve">
+    <value>Hodnota vstupu musí být kladná.</value>
+  </data>
+  <data name="mapCannotBeMutated" xml:space="preserve">
+    <value>Hodnoty mapy nemohou být mutovány.</value>
+  </data>
+  <data name="QtmmIncorrectArgForRecord" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: nesprávný typ argumentu pro záznam jazyka F#. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="failedReadEnoughBytes" xml:space="preserve">
+    <value>Nezdařilo se přečíst dostatek bajtů z datového proudu.</value>
+  </data>
+  <data name="endCannotBeNaN" xml:space="preserve">
+    <value>Koncová hodnota rozsahu nemůže být NaN.</value>
+  </data>
+  <data name="QtmmGuardMustBeBool" xml:space="preserve">
+    <value>Neshoda typů při sestavování {0}: výraz guard musí vracet hodnotu typu boolean. Očekávaný typ byl {1}, ale přijatý typ byl {2}.</value>
+  </data>
+  <data name="noNegateMinValue" xml:space="preserve">
+    <value>Negace minimální hodnoty čísla ve formátu dvojkového doplňku je neplatná.</value>
+  </data>
+  <data name="QtypeArgumentOutOfRange" xml:space="preserve">
+    <value>Argument typu je mimo rozsah.</value>
+  </data>
+  <data name="mailboxScanTimedOut" xml:space="preserve">
+    <value>Vypršel časový limit metody Mailbox.Scan.</value>
+  </data>
+  <data name="QillFormedAppOrLet" xml:space="preserve">
+    <value>Chybně vytvořený výraz: AppOp nebo LetOp</value>
+  </data>
+  <data name="QmissingRecordField" xml:space="preserve">
+    <value>Typ {0} neobsahoval pole záznamu jazyka F# s názvem {1}.</value>
+  </data>
+  <data name="listsHadDifferentLengths" xml:space="preserve">
+    <value>Seznamy měly rozdílné délky.</value>
+  </data>
+  <data name="QcannotBindToMethod" xml:space="preserve">
+    <value>Nebylo možné vytvořit vazbu na metodu.</value>
+  </data>
+  <data name="printfBadFormatSpecifier" xml:space="preserve">
+    <value>Chybný specifikátor formátu: {0}</value>
+  </data>
+  <data name="notAnExceptionType" xml:space="preserve">
+    <value>Typ {0} není reprezentací deklarace výjimky jazyka F#.</value>
+  </data>
+  <data name="nonZeroBasedDisallowed" xml:space="preserve">
+    <value>Na této platformě nelze vytvářet pole, která nejsou počítána od nuly.</value>
+  </data>
+  <data name="unsupportedIfThenElse" xml:space="preserve">
+    <value>V dotazu není povolen podmíněný výraz if/then/else nebo výraz porovnávání vzorů s více větvemi. Je možné použít podmíněný výraz if/then/else.</value>
+  </data>
+</root>

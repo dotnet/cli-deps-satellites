@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Parser.TOKEN.BAR.BAR" xml:space="preserve">
+    <value>Symbol "||"</value>
+  </data>
+  <data name="NONTERM.Category.ImplementationFile" xml:space="preserve">
+    <value> in Implementierungsdatei</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot1" xml:space="preserve">
+    <value>Der Member "{0}" kann anhand des Namens und der Anzahl der Argumente keinem eindeutigen abstrakten Umsetzungsplatz zugeordnet werden.</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot2" xml:space="preserve">
+    <value>. Mehrere implementierte Schnittstellen besitzen einen Member mit diesem Namen und dieser Anzahl von Argumenten.</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot3" xml:space="preserve">
+    <value>. Implementieren Sie die {0}-Schnittstelle und die {1}-Schnittstelle explizit.</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot4" xml:space="preserve">
+    <value>. Möglicherweise sind zusätzliche Typanmerkungen erforderlich, um die relevante Überschreibung anzugeben. Diese Warnung kann mit "#nowarn "70"" oder "--nowarn 70" deaktiviert werden.</value>
+  </data>
+  <data name="Parser.TOKEN.LEX.FAILURE" xml:space="preserve">
+    <value>Lexfehler</value>
+  </data>
+  <data name="Parser.TOKEN.LPAREN.STAR.RPAREN" xml:space="preserve">
+    <value>Symbol "(*)"</value>
+  </data>
+  <data name="NONTERM.anonLambdaExpr" xml:space="preserve">
+    <value> in lambda-Ausdruck</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.PAREN.APP" xml:space="preserve">
+    <value>Symbol "("</value>
+  </data>
+  <data name="Parser.TOKEN.CONSTRUCTOR" xml:space="preserve">
+    <value>Schlüsselwort "constructor"</value>
+  </data>
+  <data name="NONTERM.attributeList" xml:space="preserve">
+    <value> in Attributliste</value>
+  </data>
+  <data name="ValNotMutable" xml:space="preserve">
+    <value>Dieser Wert ist nicht änderbar. Verwenden Sie ggf. ein änderbares Schlüsselwort, z. B. "let mutable {0} = Ausdruck".</value>
+  </data>
+  <data name="ReservedKeyword" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.PREFIX.OP" xml:space="preserve">
+    <value>Präfixoperator</value>
+  </data>
+  <data name="UpcastUnnecessary" xml:space="preserve">
+    <value>Diese Typumwandlung nach oben (Upcast) ist nicht notwendig, da die Typen identisch sind.</value>
+  </data>
+  <data name="UnitTypeExpectedWithEquality" xml:space="preserve">
+    <value>Das Ergebnis dieses Gleichheitsausdrucks wird implizit verworfen. Verwenden Sie ggf. "let", um das Ergebnis an einen Namen zu binden. Beispiel: "let Ergebnis = Ausdruck".</value>
+  </data>
+  <data name="VarBoundTwice" xml:space="preserve">
+    <value>"{0}" ist in diesem Muster doppelt gebunden.</value>
+  </data>
+  <data name="UpperCaseIdentifierInPattern" xml:space="preserve">
+    <value>Variablenbezeichner in Großbuchstaben sollten im Allgemeinen nicht in Mustern verwendet werden und können ein Hinweis auf einen falsch geschriebenen Musternamen sein.</value>
+  </data>
+  <data name="NONTERM.unionCaseRepr" xml:space="preserve">
+    <value> in diskriminierter Union-Falldeklaration</value>
+  </data>
+  <data name="Parser.TOKEN.TO" xml:space="preserve">
+    <value>Schlüsselwort "to"</value>
+  </data>
+  <data name="Parser.TOKEN.IF" xml:space="preserve">
+    <value>Schlüsselwort "if"</value>
+  </data>
+  <data name="Parser.TOKEN.IN" xml:space="preserve">
+    <value>Schlüsselwort "in"</value>
+  </data>
+  <data name="Parser.TOKEN.AS" xml:space="preserve">
+    <value>Schlüsselwort "as"</value>
+  </data>
+  <data name="Parser.TOKEN.OR" xml:space="preserve">
+    <value>Schlüsselwort "or"</value>
+  </data>
+  <data name="Parser.TOKEN.OF" xml:space="preserve">
+    <value>Schlüsselwort "of"</value>
+  </data>
+  <data name="Parser.TOKEN.DO" xml:space="preserve">
+    <value>Schlüsselwort "do"</value>
+  </data>
+  <data name="UnitTypeExpected" xml:space="preserve">
+    <value>Das Ergebnis dieses Ausdrucks wird implizit ignoriert. Verwenden Sie ggf. "ignore", um diesen Wert explizit zu verwerfen, z. B. "expr |&gt; ignore" oder "let" zum Binden des Ergebnisses an einen Namen, z. B. "let result = expr".</value>
+  </data>
+  <data name="Parser.TOKEN.INTERFACE" xml:space="preserve">
+    <value>Schlüsselwort "interface"</value>
+  </data>
+  <data name="NONTERM.fileModuleSpec" xml:space="preserve">
+    <value> in Modul- oder Namespacesignatur</value>
+  </data>
+  <data name="HashIncludeNotAllowedInNonScript" xml:space="preserve">
+    <value>#I-Direktiven dürfen nur in F#-Skriptdateien (Dateierweiterungen .fsx oder .fsscript) verwendet werden. Verschieben Sie entweder diesen Code in eine Skriptdatei, fügen Sie die Compileroption "-I" für diesen Verweis hinzu, oder trennen Sie die Direktive mit "#if INTERACTIVE'/'#endif" ab.</value>
+  </data>
+  <data name="Parser.TOKEN.CONSTRAINT" xml:space="preserve">
+    <value>Schlüsselwort "constraint"</value>
+  </data>
+  <data name="MSBuildReferenceResolutionError" xml:space="preserve">
+    <value>{0} (Code={1})</value>
+  </data>
+  <data name="NONTERM.classDefnMember" xml:space="preserve">
+    <value> in Memberdefinition</value>
+  </data>
+  <data name="Parser.TOKEN.FINALLY" xml:space="preserve">
+    <value>Schlüsselwort "finally"</value>
+  </data>
+  <data name="NONTERM.exconCore" xml:space="preserve">
+    <value> in Ausnahmedefinition</value>
+  </data>
+  <data name="TokenName1TokenName2TokenName3" xml:space="preserve">
+    <value>. "{0}", "{1}", "{2}" oder ein anderes Token wurde erwartet.</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.QMARK" xml:space="preserve">
+    <value>Symbol ":?"</value>
+  </data>
+  <data name="InterfaceNotRevealed" xml:space="preserve">
+    <value>Der Typ implementiert die {0}-Schnittstelle, das wird jedoch von der Signatur nicht offengelegt. Sie sollten die Schnittstelle in der Signatur auflisten, da die Schnittstelle durch dynamische Typumwandlungen und/oder Reflektion erkannt werden kann.</value>
+  </data>
+  <data name="Parser.TOKEN.PUBLIC" xml:space="preserve">
+    <value>Schlüsselwort "public"</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.COLON" xml:space="preserve">
+    <value>Symbol "::"</value>
+  </data>
+  <data name="SeeAlso" xml:space="preserve">
+    <value>. Siehe auch "{0}".</value>
+  </data>
+  <data name="Parser.TOKEN.LINE.COMMENT" xml:space="preserve">
+    <value>Zeilenkommentar</value>
+  </data>
+  <data name="VirtualAugmentationOnNullValuedType" xml:space="preserve">
+    <value>Der enthaltende Typ kann NULL als Darstellungswert für seinen nullären Union-Fall verwenden. Das Aufrufen eines abstrakten oder virtuellen Members oder einer Schnittstellenimplementierung für einen NULL-Wert verursacht eine Ausnahme. Fügen Sie dem nullären Konstruktor bei Bedarf einen Platzhalterdatenwert hinzu, damit NULL nicht als Darstellung für diesen Typ verwendet wird.</value>
+  </data>
+  <data name="Parser.TOKEN.UPCAST" xml:space="preserve">
+    <value>Schlüsselwort "upcast"</value>
+  </data>
+  <data name="Parser.TOKEN.OVERRIDE" xml:space="preserve">
+    <value>Schlüsselwort "override"</value>
+  </data>
+  <data name="MatchIncomplete1" xml:space="preserve">
+    <value>Unvollständige Musterübereinstimmungen für diesen Ausdruck.</value>
+  </data>
+  <data name="MatchIncomplete2" xml:space="preserve">
+    <value> Beispielsweise kann der Wert "{0}" einen Fall kennzeichnen, der nicht von dem bzw. den Muster(n) abgedeckt wird.</value>
+  </data>
+  <data name="MatchIncomplete3" xml:space="preserve">
+    <value> Beispielsweise kann der Wert "{0}" einen Fall kennzeichnen, der nicht von dem bzw. den Muster(n) abgedeckt wird. Mit einer Musterregel mit einer when-Klausel kann dieser Wert allerdings unter Umständen erfolgreich abgeglichen werden.</value>
+  </data>
+  <data name="MatchIncomplete4" xml:space="preserve">
+    <value> Nicht zugeordnete Elemente werden ignoriert.</value>
+  </data>
+  <data name="BadEventTransformation" xml:space="preserve">
+    <value>Eine Definition, die als .NET-Ereignis kompiliert werden soll, weist nicht die erwartete Form auf. Nur Eigenschaftenmember können als .NET-Ereignisse kompiliert werden.</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.AT.HAT.OP" xml:space="preserve">
+    <value>infix-Operator</value>
+  </data>
+  <data name="NONTERM.ifExprCases" xml:space="preserve">
+    <value> in if/then/else-Ausdruck</value>
+  </data>
+  <data name="Parser.TOKEN.STRING" xml:space="preserve">
+    <value>Zeichenfolgenliteral</value>
+  </data>
+  <data name="Parser.TOKEN.STRUCT" xml:space="preserve">
+    <value>Schlüsselwort "struct"</value>
+  </data>
+  <data name="Parser.TOKEN.STATIC" xml:space="preserve">
+    <value>Schlüsselwort "static"</value>
+  </data>
+  <data name="Parser.TOKEN.RBRACK" xml:space="preserve">
+    <value>Symbol "]"</value>
+  </data>
+  <data name="Parser.TOKEN.RBRACE" xml:space="preserve">
+    <value>Symbol "}"</value>
+  </data>
+  <data name="Parser.TOKEN.RARROW" xml:space="preserve">
+    <value>Symbol "-&gt;"</value>
+  </data>
+  <data name="Parser.TOKEN.RPAREN" xml:space="preserve">
+    <value>Symbol ")"</value>
+  </data>
+  <data name="Parser.TOKEN.RQUOTE" xml:space="preserve">
+    <value>Zitat Ende</value>
+  </data>
+  <data name="UnresolvedReferenceNoRange" xml:space="preserve">
+    <value>Ein erforderlicher Assemblyverweis fehlt. Sie müssen einen Verweis auf Assembly "{0}" hinzufügen.</value>
+  </data>
+  <data name="IntfImplInExtrinsicAugmentation" xml:space="preserve">
+    <value>Schnittstellenimplementierungen sollten in der ersten Deklaration eines Typs angegeben werden.</value>
+  </data>
+  <data name="Parser.TOKEN.INLINE" xml:space="preserve">
+    <value>Schlüsselwort "inline"</value>
+  </data>
+  <data name="LetRecCheckedAtRuntime" xml:space="preserve">
+    <value>Dieser und andere rekursive Verweise auf das bzw. die definierte(n) Objekt(e) werden zur Laufzeit mithilfe eines verzögerten Verweises auf ihre ordnungsgemäße Initialisierung geprüft. Der Grund hierfür ist, dass Sie mindestens ein rekursives Objekt definieren, keine rekursiven Funktionen. Diese Warnung kann mithilfe von "#nowarn "40"" oder "--nowarn 40" unterdrückt werden.</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.QMARK.GREATER" xml:space="preserve">
+    <value>Symbol ":?&gt;"</value>
+  </data>
+  <data name="PossibleOverload" xml:space="preserve">
+    <value>Mögliche Überladung: '{0}'. {1}.</value>
+  </data>
+  <data name="FieldNotMutable" xml:space="preserve">
+    <value>Dieses Feld ist nicht änderbar.</value>
+  </data>
+  <data name="Parser.TOKEN.MEMBER" xml:space="preserve">
+    <value>Schlüsselwort "member"</value>
+  </data>
+  <data name="Parser.TOKEN.MODULE" xml:space="preserve">
+    <value>Schlüsselwort "module"</value>
+  </data>
+  <data name="NONTERM.valSpfn" xml:space="preserve">
+    <value> in Wertsignatur</value>
+  </data>
+  <data name="Parser.TOKEN.LPAREN" xml:space="preserve">
+    <value>Symbol "("</value>
+  </data>
+  <data name="Parser.TOKEN.LQUOTE" xml:space="preserve">
+    <value>Zitat Anfang</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.COMPARE.OP" xml:space="preserve">
+    <value>infix-Operator</value>
+  </data>
+  <data name="Parser.TOKEN.LARROW" xml:space="preserve">
+    <value>Symbol "&lt;-"</value>
+  </data>
+  <data name="Parser.TOKEN.DOWNCAST" xml:space="preserve">
+    <value>Schlüsselwort "downcast"</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACE" xml:space="preserve">
+    <value>Symbol "{"</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK" xml:space="preserve">
+    <value>Symbol "["</value>
+  </data>
+  <data name="ValNotLocal" xml:space="preserve">
+    <value>Dieser Wert ist nicht lokal.</value>
+  </data>
+  <data name="IndeterminateRuntimeCoercion" xml:space="preserve">
+    <value>Diese Laufzeitkoersion oder dieser Typtest vom Typ\n    {0}    \n in \n    {1}    \numfasst einen unbestimmten Typ, der auf Informationen vor diesem Programmpunkt basiert. Laufzeittyptests sind für einige Typen nicht zulässig. Weitere Typanmerkungen sind erforderlich.</value>
+  </data>
+  <data name="Parser.TOKEN.BAR.RBRACK" xml:space="preserve">
+    <value>Symbol "|]"</value>
+  </data>
+  <data name="ConstraintSolverMissingConstraint" xml:space="preserve">
+    <value>Einem Typparameter fehlt die Einschränkung "{0}".</value>
+  </data>
+  <data name="FixKeyword" xml:space="preserve">
+    <value>Schlüsselwort </value>
+  </data>
+  <data name="NONTERM.Category.Pattern" xml:space="preserve">
+    <value> in Muster</value>
+  </data>
+  <data name="Parser.TOKEN.ASSERT" xml:space="preserve">
+    <value>Schlüsselwort "assert"</value>
+  </data>
+  <data name="NONTERM.typeArgsActual" xml:space="preserve">
+    <value> in Typargumenten</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossibleAssignment" xml:space="preserve">
+    <value>Das Ergebnis dieses Gleichheitsausdrucks wird implizit verworfen. Verwenden Sie ggf. "let", um das Ergebnis an einen Namen zu binden. Beispiel: "let Ergebnis = Ausdruck". Falls Sie einen Wert mutieren möchten, markieren Sie ihn als "mutable", und verwenden Sie den Operator "&lt;-". Beispiel: "{0} &lt;- Ausdruck".</value>
+  </data>
+  <data name="Parser.TOKEN.ORESET" xml:space="preserve">
+    <value>Ende der Eingabe</value>
+  </data>
+  <data name="TyconBadArgs" xml:space="preserve">
+    <value>Der Typ "{0}" erwartet {1} Typargument(e), erhält aber {2}.</value>
+  </data>
+  <data name="Parser.TOKEN.ODUMMY" xml:space="preserve">
+    <value>internes Platzhaltertoken</value>
+  </data>
+  <data name="ErrorFromApplyingDefault1" xml:space="preserve">
+    <value>Typeinschränkungen stimmen nicht überein, wenn der Standardtyp "{0}" auf eine Typrückschlussvariable angewendet wird. </value>
+  </data>
+  <data name="ErrorFromApplyingDefault2" xml:space="preserve">
+    <value> Fügen Sie ggf. weitere Typeinschränkungen hinzu.</value>
+  </data>
+  <data name="Parser.TOKEN.DELEGATE" xml:space="preserve">
+    <value>Schlüsselwort "delegate"</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.STAR.DIV.MOD.OP" xml:space="preserve">
+    <value>infix-Operator</value>
+  </data>
+  <data name="Parser.TOKEN.EXTERN" xml:space="preserve">
+    <value>Schlüsselwort "extern"</value>
+  </data>
+  <data name="Parser.TOKEN.EQUALS" xml:space="preserve">
+    <value>Symbol "="</value>
+  </data>
+  <data name="Parser.TOKEN.DOT.DOT" xml:space="preserve">
+    <value>Symbol ".."</value>
+  </data>
+  <data name="Parser.TOKEN.DOWNTO" xml:space="preserve">
+    <value>Schlüsselwort "downto"</value>
+  </data>
+  <data name="Parser.TOKEN.DOLLAR" xml:space="preserve">
+    <value>Symbol "$"</value>
+  </data>
+  <data name="InvalidRuntimeCoercion" xml:space="preserve">
+    <value>Ungültige Laufzeitkoersion oder ungültiger Typtest von Typ "{0}" in "{1}"\n{2}</value>
+  </data>
+  <data name="ErrorFromAddingTypeEquation2" xml:space="preserve">
+    <value>Typenkonflikt. Erwartet:\n    "{0}"    \nErhalten:\n    "{1}"    {2}\n</value>
+  </data>
+  <data name="ErrorFromAddingTypeEquation1" xml:space="preserve">
+    <value>Dieser Ausdruck sollte den folgenden Typ aufweisen:\n    "{1}"    \nEr ist jedoch vom folgenden Typ:\n    "{0}"    {2}</value>
+  </data>
+  <data name="Parser.TOKEN.BINDER" xml:space="preserve">
+    <value>Schlüsselwort "binder"</value>
+  </data>
+  <data name="NONTERM.interaction" xml:space="preserve">
+    <value> in Interaktion</value>
+  </data>
+  <data name="Parser.TOKEN.OBLOCKBEGIN" xml:space="preserve">
+    <value>Anfang des strukturierten Konstrukts</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.STAR.STAR.OP" xml:space="preserve">
+    <value>infix-Operator</value>
+  </data>
+  <data name="IntfImplInIntrinsicAugmentation" xml:space="preserve">
+    <value>Schnittstellenimplementierungen in Augmentationen sind jetzt veraltet. Schnittstellenimplementierungen sollten in der ersten Deklaration eines Typs angegeben werden.</value>
+  </data>
+  <data name="TypeTestUnnecessary" xml:space="preserve">
+    <value>Dieser Typtest oder diese Typumwandlung nach unten (Downcast) ist immer erfolgreich.</value>
+  </data>
+  <data name="OverrideDoesntOverride2" xml:space="preserve">
+    <value>Der Member "{0}" weist nicht den richtigen Typ auf, um die entsprechende abstrakte Methode zu überschreiben.</value>
+  </data>
+  <data name="OverrideDoesntOverride3" xml:space="preserve">
+    <value> Die erforderliche Signatur lautet "{0}".</value>
+  </data>
+  <data name="OverrideDoesntOverride1" xml:space="preserve">
+    <value>Der Member "{0}" weist nicht den richtigen Typ auf, um eine beliebige virtuelle Methode zu überschreiben.</value>
+  </data>
+  <data name="OverrideDoesntOverride4" xml:space="preserve">
+    <value>Der Member "{0}" ist mit "unit" spezialisiert, "unit" kann aber nicht als Rückgabetyp einer abstrakten Methode verwendet werden, die für den Rückgabetyp parametrisiert wird.</value>
+  </data>
+  <data name="NONTERM.hashDirective" xml:space="preserve">
+    <value> in Direktive</value>
+  </data>
+  <data name="Parser.TOKEN.GLOBAL" xml:space="preserve">
+    <value>Schlüsselwort "global"</value>
+  </data>
+  <data name="NONTERM.classMemberSpfn" xml:space="preserve">
+    <value> in Membersignatur</value>
+  </data>
+  <data name="Parser.TOKEN.ADJACENT.PREFIX.OP" xml:space="preserve">
+    <value>Präfixoperator</value>
+  </data>
+  <data name="Parser.TOKEN.OFUNCTION" xml:space="preserve">
+    <value>Schlüsselwort "function"</value>
+  </data>
+  <data name="NONTERM.hardwhiteLetBindings" xml:space="preserve">
+    <value> in Bindung</value>
+  </data>
+  <data name="TokenName1" xml:space="preserve">
+    <value>. "{0}" oder ein anderes Token wurde erwartet.</value>
+  </data>
+  <data name="Parser.TOKEN.OINTERFACE.MEMBER" xml:space="preserve">
+    <value>Schlüsselwort "interface"</value>
+  </data>
+  <data name="Parser.TOKEN.SEMICOLON.SEMICOLON" xml:space="preserve">
+    <value>Symbol ";;"</value>
+  </data>
+  <data name="FixReplace" xml:space="preserve">
+    <value> (aufgrund der einzugsabhängigen Syntax)</value>
+  </data>
+  <data name="LetRecEvaluatedOutOfOrder" xml:space="preserve">
+    <value>Bindungen werden aufgrund dieses Vorwärtsverweises möglicherweise in der falschen Reihenfolge ausgeführt.</value>
+  </data>
+  <data name="FixSymbol" xml:space="preserve">
+    <value>Symbol </value>
+  </data>
+  <data name="Parser.TOKEN.DECIMAL" xml:space="preserve">
+    <value>Dezimalliteral</value>
+  </data>
+  <data name="Obsolete1" xml:space="preserve">
+    <value>Dieses Konstrukt ist veraltet.</value>
+  </data>
+  <data name="Obsolete2" xml:space="preserve">
+    <value>. {0}</value>
+  </data>
+  <data name="Parser.TOKEN.DEFAULT" xml:space="preserve">
+    <value>Schlüsselwort "default"</value>
+  </data>
+  <data name="NONTERM.recdExpr" xml:space="preserve">
+    <value> in Datensatzausdruck</value>
+  </data>
+  <data name="IndeterminateType" xml:space="preserve">
+    <value>Lookup für ein Objekt unbestimmten Typs, der auf Informationen vor diesem Programmpunkt basiert. Möglicherweise ist vor diesem Programmpunkt eine Typanmerkung erforderlich, um den Objekttyp einzuschränken. Dadurch kann das Lookup möglicherweise aufgelöst werden.</value>
+  </data>
+  <data name="DeprecatedThreadStaticBindingWarning" xml:space="preserve">
+    <value>Threadstatische und kontextstatische let-Bindungen sind veraltet. Verwenden Sie stattdessen eine Deklaration im Format "static val mutable &lt;ident&gt; : &lt;Typ&gt;" in einer Klasse. Fügen Sie dieser Deklaration das DefaultValue-Attribut hinzu, um anzugeben, dass der Wert bei jedem neuen Thread mit dem Standardwert initialisiert wird.</value>
+  </data>
+  <data name="TargetInvocationExceptionWrapper" xml:space="preserve">
+    <value>Interner Fehler: {0}</value>
+  </data>
+  <data name="NONTERM.typeConstraint" xml:space="preserve">
+    <value> in Typeinschränkung</value>
+  </data>
+  <data name="Parser.TOKEN.FUNKY.OPERATOR.NAME" xml:space="preserve">
+    <value>Operatorname</value>
+  </data>
+  <data name="UnresolvedPathReferenceNoRange" xml:space="preserve">
+    <value>Der Typ, auf den über "{0}" verwiesen wird, wird in einer Assembly definiert, auf die nicht verwiesen wird. Sie müssen einen Verweis auf Assembly "{1}" hinzufügen.</value>
+  </data>
+  <data name="Experimental" xml:space="preserve">
+    <value>{0}. Diese Warnung kann mit "--nowarn 57" oder "#nowarn "57"" deaktiviert werden.</value>
+  </data>
+  <data name="Failure4" xml:space="preserve">
+    <value>Interner Fehler: {0}</value>
+  </data>
+  <data name="Failure1" xml:space="preserve">
+    <value>Analysefehler</value>
+  </data>
+  <data name="Failure3" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Failure2" xml:space="preserve">
+    <value>Analysefehler: Unerwartetes Ende der Datei.</value>
+  </data>
+  <data name="HashLoadedScriptConsideredSource" xml:space="preserve">
+    <value>Geladene Dateien dürfen nur F#-Quellcodedateien (Dateierweiterung .fs) sein. Diese F#-Skriptdatei (.fsx oder .fsscript) wird wie eine F#-Quellcodedatei behandelt.</value>
+  </data>
+  <data name="ConstraintSolverInfiniteTypes" xml:space="preserve">
+    <value>Die Typen "{0}" und "{1}" können nicht vereinheitlicht werden.</value>
+  </data>
+  <data name="NameClash2" xml:space="preserve">
+    <value>{0} "{1}" kann nicht definiert werden, weil der Name "{2}" einen Konflikt mit {3} "{4}" in diesem Typ oder Modul verursacht.</value>
+  </data>
+  <data name="NameClash1" xml:space="preserve">
+    <value>Doppelte Definition von {0} "{1}"</value>
+  </data>
+  <data name="NONTERM.openDecl" xml:space="preserve">
+    <value> in open-Deklaration</value>
+  </data>
+  <data name="LetRecUnsound1" xml:space="preserve">
+    <value>Der Wert "{0}" wird als Teil seiner eigenen Definition ausgewertet.</value>
+  </data>
+  <data name="LetRecUnsound2" xml:space="preserve">
+    <value>Dieser Wert wird schließlich als Teil seiner eigenen Definition ausgewertet. Möglicherweise müssen Sie den Wert verzögern oder als Funktion festlegen. Wert "{0}"{1}.</value>
+  </data>
+  <data name="Parser.TOKEN.KEYWORD_STRING" xml:space="preserve">
+    <value>vom Compiler generiertes Literal</value>
+  </data>
+  <data name="MissingFields" xml:space="preserve">
+    <value>Für die folgenden Felder sind Werte erforderlich: {0}</value>
+  </data>
+  <data name="Parser.TOKEN.INACTIVECODE" xml:space="preserve">
+    <value>inaktiver Code</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInSubsumptionRelation" xml:space="preserve">
+    <value>Der Typ "{0}" ist nicht mit dem Typ "{1}"{2} kompatibel.</value>
+  </data>
+  <data name="Parser.TOKEN.ABSTRACT" xml:space="preserve">
+    <value>Schlüsselwort "abstract"</value>
+  </data>
+  <data name="Parser.TOKEN.NAMESPACE" xml:space="preserve">
+    <value>Schlüsselwort "namespace"</value>
+  </data>
+  <data name="Parser.TOKEN.OBLOCKEND" xml:space="preserve">
+    <value>Unvollständig strukturiertes Konstrukt vor oder bis zu diesem Punkt</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossiblePropertySetter" xml:space="preserve">
+    <value>Das Ergebnis dieses Gleichheitsausdrucks wird implizit verworfen. Verwenden Sie ggf. "let", um das Ergebnis an einen Namen zu binden. Beispiel: "let Ergebnis = Ausdruck". Falls Sie einen Wert auf eine Eigenschaft festlegen möchten, verwenden Sie den Operator "&lt;-". Beispiel: "{0}.{1} &lt;- Ausdruck".</value>
+  </data>
+  <data name="TokenName1TokenName2" xml:space="preserve">
+    <value>. "{0}", "{1}" oder ein anderes Token wurde erwartet.</value>
+  </data>
+  <data name="Parser.TOKEN.QMARK.QMARK" xml:space="preserve">
+    <value>Symbol "??"</value>
+  </data>
+  <data name="NotUpperCaseConstructor" xml:space="preserve">
+    <value>Diskriminierte Union-Fälle und Ausnahmebezeichnungen müssen Bezeichner in Großbuchstaben sein.</value>
+  </data>
+  <data name="UnionPatternsBindDifferentNames" xml:space="preserve">
+    <value>Die beiden Seiten dieses or-Musters binden unterschiedliche Variablensätze.</value>
+  </data>
+  <data name="LoadedSourceNotFoundIgnoring" xml:space="preserve">
+    <value>Datei "{0}" konnte nicht geladen werden, weil sie nicht vorhanden oder nicht zugreifbar ist.</value>
+  </data>
+  <data name="FunctionValueUnexpected" xml:space="preserve">
+    <value>Dieser Ausdruck ist ein Funktionswert, d.h., es fehlen Argumente. Typ: {0}.</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.BRACK.APP" xml:space="preserve">
+    <value>Symbol "["</value>
+  </data>
+  <data name="Parser.TOKEN.MUTABLE" xml:space="preserve">
+    <value>Schlüsselwort "mutable"</value>
+  </data>
+  <data name="NONTERM.Category.Definition" xml:space="preserve">
+    <value> in Definition</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.BAR.RBRACK" xml:space="preserve">
+    <value>Symbol "&gt;|]"</value>
+  </data>
+  <data name="IndentationProblem" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.WHITESPACE" xml:space="preserve">
+    <value>Leerzeichen</value>
+  </data>
+  <data name="Parser.TOKEN.PRIVATE" xml:space="preserve">
+    <value>Schlüsselwort "private"</value>
+  </data>
+  <data name="HashReferenceNotAllowedInNonScript" xml:space="preserve">
+    <value>#r-Anweisungen dürfen nur in F#-Skriptdateien (Dateierweiterungen .fsx oder .fsscript) verwendet werden. Verschieben Sie entweder diesen Code in eine Skriptdatei, oder ersetzen Sie diesen Verweis durch die Compileroption "-r". Wenn diese Anweisung als Benutzereingabe ausgeführt wird, trennen Sie sie mit "#if INTERACTIVE'/'#endif" ab.</value>
+  </data>
+  <data name="Parser.TOKEN.STRING.TEXT" xml:space="preserve">
+    <value>Zeichenfolgentext</value>
+  </data>
+  <data name="Parser.TOKEN.INT32.DOT.DOT" xml:space="preserve">
+    <value>integer..</value>
+  </data>
+  <data name="NONTERM.fieldDecl" xml:space="preserve">
+    <value> in Felddeklaration</value>
+  </data>
+  <data name="Recursion" xml:space="preserve">
+    <value>Ein Vorkommen der Funktion "{0}" stimmt nicht mit einem an anderer Stelle per Rückschluss abgeleiteten Typ überein. Der abgeleitete Typ der Funktion ist:\n    {1}.    \nAn diesem Verwendungsort ist folgender Funktionstyp erforderlich:\n    {2}    {3}\nDieser Fehler kann auf Einschränkungen im Zusammenhang mit der generischen Rekursion innerhalb einer "let rec"-Sammlung oder innerhalb einer Gruppe von Klassen zurückzuführen sein. Definieren Sie ggf. eine vollständige Typsignatur für die Ziele von rekursiven Aufrufen, einschließlich Typanmerkungen für Argument- und Rückgabetyp.</value>
+  </data>
+  <data name="CoercionTargetSealed" xml:space="preserve">
+    <value>Der Typ "{0}" besitzt keine geeigneten Untertypen und darf nicht als Ziel einer statischen Koersion verwendet werden.</value>
+  </data>
+  <data name="NONTERM.beginEndExpr" xml:space="preserve">
+    <value> in begin/end-Ausdruck</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACE.LESS" xml:space="preserve">
+    <value>Symbol "{&lt;"</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.EQUALS" xml:space="preserve">
+    <value>Symbol ":="</value>
+  </data>
+  <data name="Parser.TOKEN.INHERIT" xml:space="preserve">
+    <value>Schlüsselwort "inherit"</value>
+  </data>
+  <data name="Parser.TOKEN.TRY" xml:space="preserve">
+    <value>Schlüsselwort "try"</value>
+  </data>
+  <data name="Parser.TOKEN.SIG" xml:space="preserve">
+    <value>Schlüsselwort "sig"</value>
+  </data>
+  <data name="Parser.TOKEN.REC" xml:space="preserve">
+    <value>Schlüsselwort "rec"</value>
+  </data>
+  <data name="Parser.TOKEN.INT" xml:space="preserve">
+    <value>Integer-Literal</value>
+  </data>
+  <data name="Parser.TOKEN.VAL" xml:space="preserve">
+    <value>Schlüsselwort "val"</value>
+  </data>
+  <data name="Parser.TOKEN.ASR" xml:space="preserve">
+    <value>Schlüsselwort "asr"</value>
+  </data>
+  <data name="Parser.TOKEN.AND" xml:space="preserve">
+    <value>Schlüsselwort "and"</value>
+  </data>
+  <data name="Parser.TOKEN.AMP" xml:space="preserve">
+    <value>Symbol "&amp;"</value>
+  </data>
+  <data name="Parser.TOKEN.ODO" xml:space="preserve">
+    <value>Schlüsselwort "do"</value>
+  </data>
+  <data name="Parser.TOKEN.NEW" xml:space="preserve">
+    <value>Schlüsselwort "new"</value>
+  </data>
+  <data name="Parser.TOKEN.END" xml:space="preserve">
+    <value>Schlüsselwort "end"</value>
+  </data>
+  <data name="Parser.TOKEN.EOF" xml:space="preserve">
+    <value>Ende der Eingabe</value>
+  </data>
+  <data name="Parser.TOKEN.DOT" xml:space="preserve">
+    <value>Symbol "."</value>
+  </data>
+  <data name="Parser.TOKEN.BAR" xml:space="preserve">
+    <value>Symbol "|"</value>
+  </data>
+  <data name="Parser.TOKEN.FUN" xml:space="preserve">
+    <value>Schlüsselwort "fun"</value>
+  </data>
+  <data name="Parser.TOKEN.FOR" xml:space="preserve">
+    <value>Schlüsselwort "for"</value>
+  </data>
+  <data name="NonRigidTypar1" xml:space="preserve">
+    <value>Durch dieses Konstrukt wird der Code weniger generisch, als aus den Typanmerkungen hervorgeht. Die durch die Verwendung von "#", "_" oder einer anderen Typanmerkung bei oder in der Nähe von "{0}" implizierte Typvariable wurde auf den Typ "{1}" eingeschränkt.</value>
+  </data>
+  <data name="NonRigidTypar3" xml:space="preserve">
+    <value>Durch dieses Konstrukt wird der Code weniger generisch, als aus den Typanmerkungen hervorgeht. Die Typvariable "{0}" wurde auf den Typ "{1}" eingeschränkt.</value>
+  </data>
+  <data name="NonRigidTypar2" xml:space="preserve">
+    <value>Durch dieses Konstrukt wird der Code weniger generisch, als aus den Typanmerkungen hervorgeht. Die Maßeinheitenvariable "{0}" wurde auf die Maßeinheit "{1}" eingeschränkt.</value>
+  </data>
+  <data name="Parser.TOKEN.COMMENT" xml:space="preserve">
+    <value>Kommentar</value>
+  </data>
+  <data name="OverrideInIntrinsicAugmentation" xml:space="preserve">
+    <value>Überschreibungsimplementierungen in Augmentationen sind jetzt veraltet. Überschreibungsimplementierungen sollten als Teil der ersten Deklaration eines Typs angegeben werden.</value>
+  </data>
+  <data name="Parser.TOKEN.PLUS.MINUS.OP" xml:space="preserve">
+    <value>infix-Operator</value>
+  </data>
+  <data name="RecursiveUseCheckedAtRuntime" xml:space="preserve">
+    <value>Diese rekursive Verwendung wird zur Laufzeit auf ihre ordnungsgemäße Initialisierung geprüft. Diese Warnung ist in der Regel harmlos und kann mithilfe von "#nowarn "21"" oder "--nowarn 21" unterdrückt werden.</value>
+  </data>
+  <data name="OverrideInExtrinsicAugmentation" xml:space="preserve">
+    <value>Überschreibungsimplementierungen sollten als Teil der ersten Deklaration eines Typs angegeben werden.</value>
+  </data>
+  <data name="NonVirtualAugmentationOnNullValuedType" xml:space="preserve">
+    <value>Der enthaltende Typ kann NULL als Darstellungswert für seinen nullären Union-Fall verwenden. Dieser Member wird als statischer Member kompiliert.</value>
+  </data>
+  <data name="ErrorsFromAddingSubsumptionConstraint" xml:space="preserve">
+    <value>Die Typeinschränkungen stimmen nicht überein. Der Typ \n    "{0}"    \nist nicht mit folgendem Typ kompatibel:\n    "{1}"    {2}\n</value>
+  </data>
+  <data name="FileNameNotResolved" xml:space="preserve">
+    <value>Die Datei "{0}" kann nicht gefunden werden in:\n {1}</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.TYAPP" xml:space="preserve">
+    <value>Typanwendung </value>
+  </data>
+  <data name="HashDirectiveNotAllowedInNonScript" xml:space="preserve">
+    <value>Diese Direktive darf nur in F#-Skriptdateien (Dateierweiterungen .fsx oder .fsscript) verwendet werden. Entfernen Sie entweder die Direktive, verschieben Sie diesen Code in eine Skriptdatei, oder trennen Sie die Direktive mit "#if INTERACTIVE'/'#endif" ab.</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInEqualityRelation2" xml:space="preserve">
+    <value>Der Typ "{0}" stimmt nicht mit dem Typ "{1}" überein.</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInEqualityRelation1" xml:space="preserve">
+    <value>Die Maßeinheit "{0}" stimmt nicht mit der Maßeinheit "{1}" überein.</value>
+  </data>
+  <data name="Parser.TOKEN.INTERNAL" xml:space="preserve">
+    <value>Schlüsselwort "internal"</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK.LESS" xml:space="preserve">
+    <value>Symbol "[&lt;"</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER" xml:space="preserve">
+    <value>Symbol "&gt;"</value>
+  </data>
+  <data name="LibraryUseOnly" xml:space="preserve">
+    <value>Dieses Konstrukt ist veraltet: Es wird nur in der F#-Bibliothek verwendet.</value>
+  </data>
+  <data name="ValueRestriction2" xml:space="preserve">
+    <value>Werteinschränkung. Der Wert "{0}" hat den generischen Typ\n    {1}    \nDefinieren Sie "{2}" entweder als Funktion mit expliziten Argumenten, oder fügen Sie eine Typanmerkung hinzu, wenn der Typ nicht generisch sein soll.</value>
+  </data>
+  <data name="ValueRestriction3" xml:space="preserve">
+    <value>Werteinschränkung. Dieser Member wurde per Rückschluss abgeleitet als generischer Typ\n    {0}    \nKonstruktoren und Eigenschaftengetter/-setter dürfen nicht generischer sein als der einschließende Typ. Fügen Sie eine Typanmerkung hinzu, um die genauen Typen anzugeben.</value>
+  </data>
+  <data name="ValueRestriction1" xml:space="preserve">
+    <value>Werteinschränkung. Der Wert "{0}" hat den generischen Typ\n    {1}    \nLegen Sie die Argumente für "{2}" entweder als explizit fest, oder fügen Sie eine Typanmerkung hinzu, wenn der Typ nicht generisch sein soll.</value>
+  </data>
+  <data name="ValueRestriction4" xml:space="preserve">
+    <value>Werteinschränkung. Der Wert "{0}" wurde per Rückschluss abgeleitet als generischer Typ\n    {1}    \nLegen Sie die Argumente für "{2}" entweder als explizit fest, oder fügen Sie eine Typanmerkung hinzu, wenn der Typ nicht generisch sein soll.</value>
+  </data>
+  <data name="ValueRestriction5" xml:space="preserve">
+    <value>Werteinschränkung. Der Wert "{0}" wurde per Rückschluss abgeleitet als generischer Typ\n    {1}    \nDefinieren Sie "{2}" entweder als einfachen Ausdruck oder als Funktion mit expliziten Argumenten, oder fügen Sie eine Typanmerkung hinzu, wenn der Typ nicht generisch sein soll.</value>
+  </data>
+  <data name="NONTERM.patternClauses" xml:space="preserve">
+    <value> in Mustervergleich</value>
+  </data>
+  <data name="UnexpectedEndOfInput" xml:space="preserve">
+    <value>Unerwartetes Ende der Eingabe</value>
+  </data>
+  <data name="NONTERM.tyconDefn" xml:space="preserve">
+    <value> in Typdefinition</value>
+  </data>
+  <data name="NONTERM.tyconSpfn" xml:space="preserve">
+    <value> in Typsignatur</value>
+  </data>
+  <data name="NONTERM.Category.SignatureFile" xml:space="preserve">
+    <value> in Signaturdatei</value>
+  </data>
+  <data name="NONTERM.quoteExpr" xml:space="preserve">
+    <value> in Quotation-Literal</value>
+  </data>
+  <data name="HashLoadedSourceHasIssues1" xml:space="preserve">
+    <value>Mindestens eine Warnung in geladener Datei.\n</value>
+  </data>
+  <data name="HashLoadedSourceHasIssues2" xml:space="preserve">
+    <value>Mindestens ein Fehler in geladener Datei.\n</value>
+  </data>
+  <data name="BakedInMemberConstraintName" xml:space="preserve">
+    <value>Membereinschränkungen mit dem Namen "{0}" erhalten vom F#-Compiler einen Sonderstatus, da bestimmte .NET-Typen mit diesem Member implizit augmentiert werden. Dies kann Laufzeitfehler zur Folge haben, falls Sie versuchen, die Membereinschränkung in Ihrem eigenen Code aufzurufen.</value>
+  </data>
+  <data name="NONTERM.localBinding" xml:space="preserve">
+    <value> in Bindung</value>
+  </data>
+  <data name="Duplicate2" xml:space="preserve">
+    <value>Doppelte Definition von {0} "{1}"</value>
+  </data>
+  <data name="Duplicate1" xml:space="preserve">
+    <value>Zwei Member namens "{0}" weisen dieselbe Signatur auf.</value>
+  </data>
+  <data name="Parser.TOKEN.INSTANCE" xml:space="preserve">
+    <value>Schlüsselwort "instance"</value>
+  </data>
+  <data name="UseOfAddressOfOperator" xml:space="preserve">
+    <value>Durch die Verwendung von nativen Zeigern kann nicht verifizierbarer .NET-IL-Code entstehen.</value>
+  </data>
+  <data name="RuntimeCoercionSourceSealed2" xml:space="preserve">
+    <value>Der Typ "{0}" besitzt keine geeigneten Untertypen und kann nicht als Quelle eines Typtests oder einer Laufzeitkoersion verwendet werden.</value>
+  </data>
+  <data name="RuntimeCoercionSourceSealed1" xml:space="preserve">
+    <value>Der Typ "{0}" kann nicht als Quelle eines Typtests oder einer Laufzeitkoersion verwendet werden.</value>
+  </data>
+  <data name="Parser.TOKEN.ODO.BANG" xml:space="preserve">
+    <value>Schlüsselwort "do!"</value>
+  </data>
+  <data name="Parser.TOKEN.UNDERSCORE" xml:space="preserve">
+    <value>Symbol "_"</value>
+  </data>
+  <data name="ParameterlessStructCtor" xml:space="preserve">
+    <value>Implizite Objektkonstruktoren für Strukturen müssen mindestens ein Argument akzeptieren.</value>
+  </data>
+  <data name="Parser.TOKEN.PERCENT.OP" xml:space="preserve">
+    <value>Symbol "{0}"</value>
+  </data>
+  <data name="Parser.TOKEN.RESERVED" xml:space="preserve">
+    <value>reserviertes Schlüsselwort</value>
+  </data>
+  <data name="Parser.TOKEN.SPLICE.SYMBOL" xml:space="preserve">
+    <value>Symbol "splice"</value>
+  </data>
+  <data name="SelfRefObjCtor1" xml:space="preserve">
+    <value>Rekursive Verweise auf das definierte Objekt werden zur Laufzeit mithilfe eines verzögerten Verweises auf ihre ordnungsgemäße Initialisierung geprüft. Sie sollten in Membern oder innerhalb eines nachgestellten Ausdrucks Eigenverweise im Format "&lt;ctor-expr&gt;" gefolgt von "&lt;Ausdruck&gt;" platzieren.</value>
+  </data>
+  <data name="SelfRefObjCtor2" xml:space="preserve">
+    <value>Rekursive Verweise auf das definierte Objekt werden zur Laufzeit mithilfe eines verzögerten Verweises auf ihre ordnungsgemäße Iniitalisierung geprüft. Sie sollten in do-Anweisungen hinter der letzten let-Bindung in der Konstruktionssequenz Eigenverweise platzieren.</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.GREATER" xml:space="preserve">
+    <value>Symbol ":&gt;"</value>
+  </data>
+  <data name="UnionCaseWrongArguments" xml:space="preserve">
+    <value>Dieser Konstruktor wird auf {0} Argument(e) angewendet, erwartet aber {1}.</value>
+  </data>
+  <data name="Parser.TOKEN.FUNCTION" xml:space="preserve">
+    <value>Schlüsselwort "function"</value>
+  </data>
+  <data name="Deprecated" xml:space="preserve">
+    <value>Dieses Konstrukt ist veraltet: {0}</value>
+  </data>
+  <data name="Parser.TOKEN.HASH.ENDIF" xml:space="preserve">
+    <value>Direktive</value>
+  </data>
+  <data name="TypeIsImplicitlyAbstract" xml:space="preserve">
+    <value>Dieser Typ ist "abstract", da einige abstrakte Member keine Implementierung erhalten haben. Falls dies beabsichtigt ist, fügen Sie dem Typ das [&lt;AbstractClass&gt;]-Attribut hinzu.</value>
+  </data>
+  <data name="UndefinedName2" xml:space="preserve">
+    <value> Ein Konstrukt mit diesem Namen wurde in "FSharp.PowerPack.dll" gefunden; diese DLL enthält einige Module und Typen, auf die in früheren Versionen von F# implizit verwiesen wurde. Möglicherweise müssen Sie einen expliziten Verweis auf diese DLL hinzufügen, um den Code kompilieren zu können.</value>
+  </data>
+  <data name="Unexpected" xml:space="preserve">
+    <value>Unerwartete(s/r) {0}.</value>
+  </data>
+  <data name="Parser.TOKEN.YIELD.BANG" xml:space="preserve">
+    <value>yield!</value>
+  </data>
+  <data name="Parser.TOKEN.YIELD" xml:space="preserve">
+    <value>yield</value>
+  </data>
+  <data name="Parser.TOKEN.QMARK" xml:space="preserve">
+    <value>Symbol "?"</value>
+  </data>
+  <data name="Parser.TOKEN.QUOTE" xml:space="preserve">
+    <value>Anführungszeichensymbol</value>
+  </data>
+  <data name="StaticCoercionShouldUseBox" xml:space="preserve">
+    <value>Eine Koersion vom Werttyp \n    {0}    \nin den Typ \n    {1}    \nerfordert Boxing. Verwenden Sie stattdessen "box".</value>
+  </data>
+  <data name="Parser.TOKEN.IDENT" xml:space="preserve">
+    <value>Bezeichner</value>
+  </data>
+  <data name="Parser.TOKEN.WHILE" xml:space="preserve">
+    <value>Schlüsselwort "while"</value>
+  </data>
+  <data name="Parser.TOKEN.MATCH" xml:space="preserve">
+    <value>Schlüsselwort "match"</value>
+  </data>
+  <data name="Parser.TOKEN.MINUS" xml:space="preserve">
+    <value>Symbol "-"</value>
+  </data>
+  <data name="Parser.TOKEN.OWITH" xml:space="preserve">
+    <value>Schlüsselwort "with"</value>
+  </data>
+  <data name="Parser.TOKEN.OTHEN" xml:space="preserve">
+    <value>Schlüsselwort "then"</value>
+  </data>
+  <data name="Parser.TOKEN.OELSE" xml:space="preserve">
+    <value>Schlüsselwort "else"</value>
+  </data>
+  <data name="Parser.TOKEN.COLON" xml:space="preserve">
+    <value>Symbol ":"</value>
+  </data>
+  <data name="Parser.TOKEN.COMMA" xml:space="preserve">
+    <value>Symbol ","</value>
+  </data>
+  <data name="Parser.TOKEN.CONST" xml:space="preserve">
+    <value>Schlüsselwort 'const'</value>
+  </data>
+  <data name="Parser.TOKEN.CLASS" xml:space="preserve">
+    <value>Schlüsselwort "class"</value>
+  </data>
+  <data name="Parser.TOKEN.BEGIN" xml:space="preserve">
+    <value>Schlüsselwort "begin"</value>
+  </data>
+  <data name="Parser.TOKEN.FLOAT" xml:space="preserve">
+    <value>Gleitkommaliteral</value>
+  </data>
+  <data name="Parser.TOKEN.FIXED" xml:space="preserve">
+    <value>Schlüsselwort "fixed"</value>
+  </data>
+  <data name="Parser.TOKEN.FALSE" xml:space="preserve">
+    <value>Schlüsselwort "false"</value>
+  </data>
+  <data name="BlockEndSentence" xml:space="preserve">
+    <value>Unvollständig strukturiertes Konstrukt vor oder bis zu diesem Punkt</value>
+  </data>
+  <data name="RequiredButNotSpecified" xml:space="preserve">
+    <value>Das Modul "{0}" erfordert eine(n) {1} "{2}".</value>
+  </data>
+  <data name="NONTERM.cPrototype" xml:space="preserve">
+    <value> in externer Deklaration</value>
+  </data>
+  <data name="NONTERM.Category.Type" xml:space="preserve">
+    <value> in Typ</value>
+  </data>
+  <data name="NONTERM.Category.Expr" xml:space="preserve">
+    <value> in Ausdruck</value>
+  </data>
+  <data name="NONTERM.attrUnionCaseDecl" xml:space="preserve">
+    <value> in Union-Fall</value>
+  </data>
+  <data name="Parser.TOKEN.BYTEARRAY" xml:space="preserve">
+    <value>Bytearrayliteral</value>
+  </data>
+  <data name="LetRecUnsoundInner" xml:space="preserve">
+    <value> wird zu "{0}" ausgewertet</value>
+  </data>
+  <data name="RuleNeverMatched" xml:space="preserve">
+    <value>Für diese Regel wird niemals eine Übereinstimmung gefunden.</value>
+  </data>
+  <data name="ValueNotContained" xml:space="preserve">
+    <value>Das Modul "{0}" enthält\n    {1}    \nDie Signatur gibt aber Folgendes an:\n    {2}    \n{3}.</value>
+  </data>
+  <data name="PossibleBestOverload" xml:space="preserve">
+    <value>\n\nMögliche beste Überladung: "{0}".</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK.BAR" xml:space="preserve">
+    <value>Symbol "[|"</value>
+  </data>
+  <data name="ConstraintSolverTupleDiffLengths" xml:space="preserve">
+    <value>Die Tupel haben eine unterschiedliche Länge von {0} und {1}.</value>
+  </data>
+  <data name="Parser.TOKEN.TYPE" xml:space="preserve">
+    <value>Schlüsselwort "type"</value>
+  </data>
+  <data name="Parser.TOKEN.TRUE" xml:space="preserve">
+    <value>Schlüsselwort "true"</value>
+  </data>
+  <data name="Parser.TOKEN.STAR" xml:space="preserve">
+    <value>Symbol "*"</value>
+  </data>
+  <data name="Parser.TOKEN.HASH" xml:space="preserve">
+    <value>Symbol "#"</value>
+  </data>
+  <data name="Parser.TOKEN.WHEN" xml:space="preserve">
+    <value>Schlüsselwort "when"</value>
+  </data>
+  <data name="Parser.TOKEN.WITH" xml:space="preserve">
+    <value>Schlüsselwort "with"</value>
+  </data>
+  <data name="Parser.TOKEN.VOID" xml:space="preserve">
+    <value>Schlüsselwort "void"</value>
+  </data>
+  <data name="Parser.TOKEN.LESS" xml:space="preserve">
+    <value>Symbol "&lt;"</value>
+  </data>
+  <data name="Parser.TOKEN.LAZY" xml:space="preserve">
+    <value>Schlüsselwort "lazy"</value>
+  </data>
+  <data name="Parser.TOKEN.OPEN" xml:space="preserve">
+    <value>Schlüsselwort "open"</value>
+  </data>
+  <data name="Parser.TOKEN.OFUN" xml:space="preserve">
+    <value>Schlüsselwort "fun"</value>
+  </data>
+  <data name="Parser.TOKEN.OLET" xml:space="preserve">
+    <value>Schlüsselwort "let" oder "use"</value>
+  </data>
+  <data name="Parser.TOKEN.NULL" xml:space="preserve">
+    <value>Schlüsselwort "null"</value>
+  </data>
+  <data name="Parser.TOKEN.ELIF" xml:space="preserve">
+    <value>Schlüsselwort "elif"</value>
+  </data>
+  <data name="Parser.TOKEN.DONE" xml:space="preserve">
+    <value>Schlüsselwort "done"</value>
+  </data>
+  <data name="Parser.TOKEN.CHAR" xml:space="preserve">
+    <value>Zeichenliteral</value>
+  </data>
+  <data name="Parser.TOKEN.BASE" xml:space="preserve">
+    <value>Schlüsselwort "base"</value>
+  </data>
+  <data name="AssemblyNotResolved" xml:space="preserve">
+    <value>Der Assemblyverweis "{0}" wurde nicht gefunden oder ist ungültig.</value>
+  </data>
+  <data name="RecoverableParseError" xml:space="preserve">
+    <value>Syntaxfehler</value>
+  </data>
+  <data name="FieldsFromDifferentTypes" xml:space="preserve">
+    <value>Die Felder "{0}" und "{1}" stammen aus unterschiedlichen Typen.</value>
+  </data>
+  <data name="DefensiveCopyWarning" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="NONTERM.typeNameInfo" xml:space="preserve">
+    <value> in Typname</value>
+  </data>
+  <data name="Parser.TOKEN.AMP.AMP" xml:space="preserve">
+    <value>Symbol "&amp;&amp;"</value>
+  </data>
+  <data name="InvalidInternalsVisibleToAssemblyName1" xml:space="preserve">
+    <value>Ungültiger Assemblyname "{0}" aus dem InternalsVisibleTo-Attribut in "{1}".</value>
+  </data>
+  <data name="InvalidInternalsVisibleToAssemblyName2" xml:space="preserve">
+    <value>Ungültiger Assemblyname "{0}" aus dem InternalsVisibleTo-Attribut (Assemblydateiname nicht verfügbar).</value>
+  </data>
+  <data name="FunctionExpected" xml:space="preserve">
+    <value>Diese Funktion akzeptiert zu viele Argumente oder wird in einem Kontext verwendet, in dem keine Funktion erwartet wird.</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossibleAssignmentToMutable" xml:space="preserve">
+    <value>Das Ergebnis dieses Gleichheitsausdrucks wird implizit verworfen. Verwenden Sie ggf. "let", um das Ergebnis an einen Namen zu binden. Beispiel: "let Ergebnis = Ausdruck". Falls Sie einen Wert mutieren möchten, verwenden Sie den Operator "&lt;-". Beispiel: "{0} &lt;- Ausdruck".</value>
+  </data>
+  <data name="IndeterminateStaticCoercion" xml:space="preserve">
+    <value>Die statische Koersion vom Typ\n    {0}    \nin \n    {1}    \n umfasst einen unbestimmten Typ, der auf Informationen vor diesem Programmpunkt basiert. Statische Koersionen sind für einige Typen nicht zulässig. Weitere Typanmerkungen sind erforderlich.</value>
+  </data>
+  <data name="PossibleUnverifiableCode" xml:space="preserve">
+    <value>Die Verwendung dieses Konstrukts kann die Erzeugung von nicht verifizierbarem .NET-IL-Code zur Folge haben. Diese Warnung kann mit "--nowarn 9" oder "#nowarn "9"" deaktiviert werden.</value>
+  </data>
+  <data name="FullAbstraction" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.AMP.OP" xml:space="preserve">
+    <value>infix-Operator</value>
+  </data>
+  <data name="NONTERM.defnBindings" xml:space="preserve">
+    <value> in Definitionen</value>
+  </data>
+  <data name="Parser.TOKEN.SEMICOLON" xml:space="preserve">
+    <value>Symbol ";"</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.BAR.OP" xml:space="preserve">
+    <value>infix-Operator</value>
+  </data>
+  <data name="NONTERM.objectImplementationMembers" xml:space="preserve">
+    <value> in Objektausdruck</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.RBRACE" xml:space="preserve">
+    <value>Symbol "&gt;}"</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.RBRACK" xml:space="preserve">
+    <value>Symbol "&gt;]"</value>
+  </data>
+  <data name="Parser.TOKEN.EXCEPTION" xml:space="preserve">
+    <value>Schlüsselwort "exception"</value>
+  </data>
+</root>

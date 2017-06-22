@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Struct1" xml:space="preserve">
+    <value>estructura</value>
+  </data>
+  <data name="ElementIsExpected" xml:space="preserve">
+    <value>elemento esperado</value>
+  </data>
+  <data name="PEImageNotAvailable" xml:space="preserve">
+    <value>Imagen PE no disponible.</value>
+  </data>
+  <data name="InvalidSizeOfPublicKeyToken" xml:space="preserve">
+    <value>Tamaño no válido del token de clave pública.</value>
+  </data>
+  <data name="Event1" xml:space="preserve">
+    <value>evento</value>
+  </data>
+  <data name="InconsistentLanguageVersions" xml:space="preserve">
+    <value>Versiones de idioma incoherentes</value>
+  </data>
+  <data name="ReferenceResolverShouldReturnReadableNonNullStream" xml:space="preserve">
+    <value>El solucionador de referencias debe devolver secuencias no nulas que se puedan leer.</value>
+  </data>
+  <data name="InvalidCompilationOptions" xml:space="preserve">
+    <value>Opciones de compilación no válidas: el envío no se puede firmar.</value>
+  </data>
+  <data name="EmptyKeyInPathMap" xml:space="preserve">
+    <value>Una clave de pathMap está vacía.</value>
+  </data>
+  <data name="RuleSetHasDuplicateRules" xml:space="preserve">
+    <value>El archivo de conjuntos de reglas tiene reglas duplicadas para '{0}' con las acciones distintas '{1}' y '{2}'.</value>
+  </data>
+  <data name="TypeMustBeASubclassOfSyntaxAnnotation" xml:space="preserve">
+    <value>el tipo debe ser una subclase de SyntaxAnnotation.</value>
+  </data>
+  <data name="CompilerAnalyzerThrowsDescription" xml:space="preserve">
+    <value>El analizador '{0}' inició la siguiente excepción:
+'{1}'.</value>
+  </data>
+  <data name="Value_too_large_to_be_represented_as_a_30_bit_unsigned_integer" xml:space="preserve">
+    <value>Valor demasiado largo para representarse como entero sin signo de 30 bits.</value>
+  </data>
+  <data name="CannotAliasModule" xml:space="preserve">
+    <value>Un módulo no puede tener alias.</value>
+  </data>
+  <data name="InvalidCharactersInAssemblyCultureName" xml:space="preserve">
+    <value>Caracteres no válidos en nombre de referencia cultural de ensamblado</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>módulo</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>método</value>
+  </data>
+  <data name="SymWriterNotDeterministic" xml:space="preserve">
+    <value>El escritor de PDB de Windows no admite la compilación determinista: "{0}"</value>
+  </data>
+  <data name="AnalyzerNameColumnHeader" xml:space="preserve">
+    <value>Analizador</value>
+  </data>
+  <data name="Class1" xml:space="preserve">
+    <value>clase</value>
+  </data>
+  <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
+    <value>No se puede usar una copia de módulo para crear metadatos de ensamblado.</value>
+  </data>
+  <data name="IconStreamUnexpectedFormat" xml:space="preserve">
+    <value>La secuencia de iconos no está en el formato esperado.</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>Archivo no encontrado.</value>
+  </data>
+  <data name="RuleSetBadAttributeValue" xml:space="preserve">
+    <value>El atributo {0} tiene un valor no válido de {1}.</value>
+  </data>
+  <data name="CoffResourceInvalidSectionSize" xml:space="preserve">
+    <value>Los recursos de Win32, que se presupone que están en el formato de objeto COFF, tienen un tamaño de sección no válido.</value>
+  </data>
+  <data name="UnrecognizedResourceFileFormat" xml:space="preserve">
+    <value>Formato de archivo de recurso no reconocido.</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>parámetro</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>propiedad, indizador</value>
+  </data>
+  <data name="RuleSetMissingAttribute" xml:space="preserve">
+    <value>Falta el atributo llamado {1} del elemento {0}.</value>
+  </data>
+  <data name="MetadataRefNotFoundToRemove1" xml:space="preserve">
+    <value>No se encontró MetadataReference '{0}' para quitarse.</value>
+  </data>
+  <data name="InvalidModuleName" xml:space="preserve">
+    <value>Nombre de módulo no válido especificado en el módulo de metadatos '{0}': '{1}'</value>
+  </data>
+  <data name="NameContainsInvalidCharacter" xml:space="preserve">
+    <value>El nombre contiene caracteres no válidos.</value>
+  </data>
+  <data name="PdbStreamUnexpectedWhenEmbedding" xml:space="preserve">
+    <value>No se debería dar una secuencia de PDB al incrustar el PDB en la secuencia de PE.</value>
+  </data>
+  <data name="PdbStreamUnexpectedWhenEmittingMetadataOnly" xml:space="preserve">
+    <value>No se debería dar una secuencia de PE al emitir solo metadatos.</value>
+  </data>
+  <data name="AnalyzerDriverFailure" xml:space="preserve">
+    <value>Error del controlador del analizador</value>
+  </data>
+  <data name="MustIncludePrivateMembersUnlessRefAssembly" xml:space="preserve">
+    <value>Debe incluir miembros privados a menos que se emita un ensamblado de referencia.</value>
+  </data>
+  <data name="ChangesMustBeOrderedAndNotOverlapping" xml:space="preserve">
+    <value>Los cambios deben estar ordenados y no superponerse.</value>
+  </data>
+  <data name="KeepAliveIsTooSmall" xml:space="preserve">
+    <value>Los argumentos para la opción "/keepalive" inferiores a -1 no son válidos.</value>
+  </data>
+  <data name="IOperationFeatureDisabled" xml:space="preserve">
+    <value>La característica 'IOperation' está deshabilitada.</value>
+  </data>
+  <data name="AbsolutePathExpected" xml:space="preserve">
+    <value>Ruta de acceso absoluta esperada.</value>
+  </data>
+  <data name="InvalidDataAtOffset" xml:space="preserve">
+    <value>Datos no válidos en el desplazamiento {0}: {1}{2}*{3}{4}</value>
+  </data>
+  <data name="XmlReferencesNotSupported" xml:space="preserve">
+    <value>No se admiten referencias a documentos XML.</value>
+  </data>
+  <data name="StreamIsTooLong" xml:space="preserve">
+    <value>Secuencia demasiado larga.</value>
+  </data>
+  <data name="ReturnTypeCannotBeValuePointerbyRefOrOpen" xml:space="preserve">
+    <value>El tipo devuelto no puede ser un tipo de valor, un puntero, por referencia ni un tipo genérico abierto</value>
+  </data>
+  <data name="TupleUnderlyingTypeMustBeTupleCompatible" xml:space="preserve">
+    <value>El tipo subyacente de una tupla debe ser compatible con tuplas.</value>
+  </data>
+  <data name="AnalyzerDriverThrowsDescription" xml:space="preserve">
+    <value>El controlador del analizador produjo la siguiente excepción:
+'{0}'.</value>
+  </data>
+  <data name="ExceptionContext" xml:space="preserve">
+    <value>Se produjo una excepción con el contexto siguiente:
+{0}</value>
+  </data>
+  <data name="The_type_0_is_not_understood_by_the_serialization_binder" xml:space="preserve">
+    <value>El enlazador de serialización no comprende el tipo "{0}".</value>
+  </data>
+  <data name="InconsistentSyntaxTreeFeature" xml:space="preserve">
+    <value>Características de árbol de sintaxis incoherente</value>
+  </data>
+  <data name="CannotEmbedInteropTypesFromModule" xml:space="preserve">
+    <value>No se pueden insertar tipos de interoperabilidad desde el módulo.</value>
+  </data>
+  <data name="SourceTextCannotBeEmbedded" xml:space="preserve">
+    <value>SourceText no se puede insertar. Proporcione codificación o canBeEmbedded=true en la construcción.</value>
+  </data>
+  <data name="Stream_contains_invalid_data" xml:space="preserve">
+    <value>La secuencia contiene datos no válidos</value>
+  </data>
+  <data name="AnalyzerExecutionTimeColumnHeader" xml:space="preserve">
+    <value>Tiempo (s)</value>
+  </data>
+  <data name="AsyncAnalyzerActionCannotBeRegistered" xml:space="preserve">
+    <value>El analizador intentó registrar una acción 'async', que no se admite.</value>
+  </data>
+  <data name="InvalidTree" xml:space="preserve">
+    <value>El árbol de sintaxis no pertenece a la 'Compilación' subyacente.</value>
+  </data>
+  <data name="InvalidHash" xml:space="preserve">
+    <value>Hash no válido.</value>
+  </data>
+  <data name="KeepAliveWithoutShared" xml:space="preserve">
+    <value>La opción "/keepalive" solo es válida con la opción "/shared".</value>
+  </data>
+  <data name="IncludingPrivateMembersUnexpectedWhenEmittingToMetadataPeStream" xml:space="preserve">
+    <value>No se debe usar la inclusión de números privados al emitir a la salida del ensamblado secundario.</value>
+  </data>
+  <data name="PathReturnedByResolveStrongNameKeyFileMustBeAbsolute" xml:space="preserve">
+    <value>La ruta de acceso devuelta por {0}.ResolveStrongNameKeyFile debe ser absoluta: '{1}'</value>
+  </data>
+  <data name="FailedToResolveRuleSetName" xml:space="preserve">
+    <value>No se encontró el archivo de conjunto de reglas '{0}'.</value>
+  </data>
+  <data name="KeyInPathMapEndsWithSeparator" xml:space="preserve">
+    <value>Una clave de pathMap finaliza con un separador de ruta.</value>
+  </data>
+  <data name="AssemblySigningNotSupported" xml:space="preserve">
+    <value>Firma de ensamblados no admitida.</value>
+  </data>
+  <data name="InvalidNodeToTrack" xml:space="preserve">
+    <value>El nodo que se debe seguir no es descendiente de la raíz.</value>
+  </data>
+  <data name="MissingListItem" xml:space="preserve">
+    <value>El elemento especificado no es elemento de una lista.</value>
+  </data>
+  <data name="Delegate1" xml:space="preserve">
+    <value>delegado</value>
+  </data>
+  <data name="TheStreamCannotBeWrittenTo" xml:space="preserve">
+    <value>No se puede escribir en la sección.</value>
+  </data>
+  <data name="SharedArgumentMissing" xml:space="preserve">
+    <value>El valor para el argumento '/shared:' no debe estar vacío</value>
+  </data>
+  <data name="Deserialization_reader_for_0_read_incorrect_number_of_values" xml:space="preserve">
+    <value>El lector de deserialización de "{0}" leyó un número incorrecto de valores.</value>
+  </data>
+  <data name="CannotCreateReferenceToSubmission" xml:space="preserve">
+    <value>No se puede crear una referencia a un envío.</value>
+  </data>
+  <data name="PathReturnedByResolveMetadataFileMustBeAbsolute" xml:space="preserve">
+    <value>La ruta de acceso devuelta por {0}.ResolveMetadataFile debe ser absoluta: '{1}'</value>
+  </data>
+  <data name="Unresolved" xml:space="preserve">
+    <value>Sin resolver: </value>
+  </data>
+  <data name="KeepAliveIsNotAnInteger" xml:space="preserve">
+    <value>El argumento para la opción "/keepalive" no es un entero de 32 bits.</value>
+  </data>
+  <data name="SpanDoesNotIncludeStartOfLine" xml:space="preserve">
+    <value>El intervalo no incluye el principio de una línea.</value>
+  </data>
+  <data name="CantCreateReferenceToAssemblyWithoutLocation" xml:space="preserve">
+    <value>No se puede crear una referencia de metadatos a un ensamblado sin ubicación.</value>
+  </data>
+  <data name="InvalidCultureName" xml:space="preserve">
+    <value>Nombre de referencia cultural no válido: '{0}'</value>
+  </data>
+  <data name="TuplesNeedAtLeastTwoElements" xml:space="preserve">
+    <value>Las tuplas deben tener al menos dos elementos.</value>
+  </data>
+  <data name="MismatchedVersion" xml:space="preserve">
+    <value>El servidor del compilador Roslyn informa de una versión de protocolo distinta a la de la tarea de compilación.</value>
+  </data>
+  <data name="AnalyzerTotalExecutionTime" xml:space="preserve">
+    <value>Tiempo total de ejecución del analizador: {0} segundos.</value>
+  </data>
+  <data name="CompilationOptionsMustNotHaveErrors" xml:space="preserve">
+    <value>Las opciones de compilación no deben tener errores.</value>
+  </data>
+  <data name="Cannot_serialize_type_0" xml:space="preserve">
+    <value>No se puede serializar el tipo "{0}".</value>
+  </data>
+  <data name="MetadataPeStreamUnexpectedWhenEmittingMetadataOnly" xml:space="preserve">
+    <value>No se debería dar una secuencia de PE de metadatos al emitir solo metadatos.</value>
+  </data>
+  <data name="EmptyOrInvalidResourceName" xml:space="preserve">
+    <value>Nombre de recurso vacío o no válido</value>
+  </data>
+  <data name="ReturnTypeCannotBeVoidByRefOrOpen" xml:space="preserve">
+    <value>El tipo devuelto no puede estar vacío, ser por referencia ni un tipo genérico abierto</value>
+  </data>
+  <data name="SymWriterDoesNotSupportSourceLink" xml:space="preserve">
+    <value>El escritor de PDB de Windows no admite la característica SourceLink: "{0}"</value>
+  </data>
+  <data name="InvalidPublicKeyToken" xml:space="preserve">
+    <value>Token de clave pública no válido.</value>
+  </data>
+  <data name="MissingKeepAlive" xml:space="preserve">
+    <value>Falta el argumento de la opción "/keepalive".</value>
+  </data>
+  <data name="InMemoryModule" xml:space="preserve">
+    <value>&lt;módulo en memoria&gt;</value>
+  </data>
+  <data name="SymWriterOlderVersionThanRequired" xml:space="preserve">
+    <value>La versión del escritor de PDB de Windows no puede ser anterior a la requerida: "{0}"</value>
+  </data>
+  <data name="NodeOrTokenOutOfSequence" xml:space="preserve">
+    <value>Un nodo o token están fuera de la secuencia.</value>
+  </data>
+  <data name="EmbeddingPdbUnexpectedWhenEmittingMetadata" xml:space="preserve">
+    <value>No se permite insertar PDB al emitir metadatos.</value>
+  </data>
+  <data name="CantCreateReferenceToDynamicAssembly" xml:space="preserve">
+    <value>No se puede crear una referencia de metadatos en un ensamblado dinámico.</value>
+  </data>
+  <data name="CoffResourceInvalidSymbol" xml:space="preserve">
+    <value>Los recursos de Win32, que se presupone que están en el formato de objeto COFF, tienen uno o varios valores de símbolo no válidos,</value>
+  </data>
+  <data name="StreamMustSupportReadAndSeek" xml:space="preserve">
+    <value>La secuencia debe admitir las operaciones de lectura y búsqueda.</value>
+  </data>
+  <data name="Enum1" xml:space="preserve">
+    <value>enumeración</value>
+  </data>
+  <data name="InvalidDiagnosticLocationReported" xml:space="preserve">
+    <value>El diagnóstico notificado '{0}' tiene una ubicación de origen en el archivo '{1}', que no forma parte de la compilación que se está analizando.</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>campo</value>
+  </data>
+  <data name="NameCannotBeEmpty" xml:space="preserve">
+    <value>El nombre no puede estar vacío.</value>
+  </data>
+  <data name="CoffResourceMissingSection" xml:space="preserve">
+    <value>Los recursos de Win32, que se presupone que están en el formato de objeto COFF, carecen de una o las dos secciones '.rsrc$01' y '.rsrc$02'</value>
+  </data>
+  <data name="TupleElementNameCountMismatch" xml:space="preserve">
+    <value>Si se especifican nombres de elementos de tupla, el número de nombres de elementos debe coincidir con la cardinalidad de la tupla.</value>
+  </data>
+  <data name="InvalidContentType" xml:space="preserve">
+    <value>Tipo de contenido no válido</value>
+  </data>
+  <data name="GetMetadataMustReturnInstance" xml:space="preserve">
+    <value>{0}.GetMetadata() debe devolver una instancia de {1}.</value>
+  </data>
+  <data name="InvalidDiagnosticIdReported" xml:space="preserve">
+    <value>El diagnóstico informado tiene un identificador '{0}', que no es válido.</value>
+  </data>
+  <data name="CantCreateModuleReferenceToAssembly" xml:space="preserve">
+    <value>No se puede crear una referencia de módulo en un ensamblado.</value>
+  </data>
+  <data name="DuplicateAnalyzerInstances" xml:space="preserve">
+    <value>El argumento contiene instancias de analizador duplicadas.</value>
+  </data>
+  <data name="NameCannotStartWithWhitespace" xml:space="preserve">
+    <value>El nombre no puede empezar con un espacio en blanco.</value>
+  </data>
+  <data name="Arrays_with_more_than_one_dimension_cannot_be_serialized" xml:space="preserve">
+    <value>Las matrices con más de una dimensión no se pueden serializar.</value>
+  </data>
+  <data name="UnsupportedDiagnosticReported" xml:space="preserve">
+    <value>El analizador no admite el diagnóstico notificado con identificador '{0}'.</value>
+  </data>
+  <data name="OutputKindNotSupported" xml:space="preserve">
+    <value>Tipo de salida no admitida.</value>
+  </data>
+  <data name="SeparatorIsExpected" xml:space="preserve">
+    <value>se espera un separador</value>
+  </data>
+  <data name="UnexpectedTypeOfNodeInList" xml:space="preserve">
+    <value>Un nodo de la lista no es del tipo esperado.</value>
+  </data>
+  <data name="AnonymousTypeArgumentCountMismatch2" xml:space="preserve">
+    <value>{0} debe ser el "valor predeterminado" o tener la misma longitud que {1}.</value>
+  </data>
+  <data name="NameCannotBeNull" xml:space="preserve">
+    <value>El nombre no puede ser nulo.</value>
+  </data>
+  <data name="UnsupportedHashAlgorithm" xml:space="preserve">
+    <value>Algoritmo del hash no admitido.</value>
+  </data>
+  <data name="ResourceStreamProviderShouldReturnNonNullStream" xml:space="preserve">
+    <value>El proveedor de secuencias de recursos debe devolver secuencias no nulas.</value>
+  </data>
+  <data name="WinRTIdentityCantBeRetargetable" xml:space="preserve">
+    <value>La identidad WindowsRuntime no puede ser redestinable</value>
+  </data>
+  <data name="UnsupportedAnalyzerInstance" xml:space="preserve">
+    <value>El argumento contiene una instancia de analizador que no pertenece a los 'Analizadores' de esta instancia de CompilationWithAnalyzers.</value>
+  </data>
+  <data name="CannotTargetNetModuleWhenEmittingRefAssembly" xml:space="preserve">
+    <value>El destino no puede ser el módulo al emitir el ensamblado de referencia.</value>
+  </data>
+  <data name="Cannot_deserialize_type_0" xml:space="preserve">
+    <value>No se puede deserializar el tipo "{0}".</value>
+  </data>
+  <data name="StreamMustSupportRead" xml:space="preserve">
+    <value>La secuencia debe ser legible.</value>
+  </data>
+  <data name="Interface1" xml:space="preserve">
+    <value>interfaz</value>
+  </data>
+  <data name="CoffResourceInvalidRelocation" xml:space="preserve">
+    <value>Los recursos de Win32, que se presupone que están en el formato de objeto COFF, tienen uno o varios valores de encabezado de reubicación no válidos.</value>
+  </data>
+  <data name="CompilerAnalyzerThrows" xml:space="preserve">
+    <value>El analizador '{0}' produjo una excepción de tipo '{1}' con el mensaje '{2}'.</value>
+  </data>
+  <data name="InMemoryAssembly" xml:space="preserve">
+    <value>&lt;ensamblado en memoria&gt;</value>
+  </data>
+  <data name="AnonymousTypeMemberAndNamesCountMismatch2" xml:space="preserve">
+    <value>{0} y {1} deben tener la misma longitud.</value>
+  </data>
+  <data name="TupleElementNameEmpty" xml:space="preserve">
+    <value>El nombre del elemento de tupla no puede ser una cadena vacía.</value>
+  </data>
+  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
+    <value>Solo se admiten textos insertados cuando se emite un archivo PDB portátil.</value>
+  </data>
+  <data name="InvalidOutputKindForSubmission" xml:space="preserve">
+    <value>Tipo de salida no válida para el envío. DynamicallyLinkedLibrary esperado.</value>
+  </data>
+  <data name="StreamMustSupportWrite" xml:space="preserve">
+    <value>La secuencia se debe poder escribir.</value>
+  </data>
+  <data name="InvalidAssemblyName" xml:space="preserve">
+    <value>Nombre de ensamblado no válido: '{0}'</value>
+  </data>
+  <data name="InvalidAlias" xml:space="preserve">
+    <value>Alias no válido.</value>
+  </data>
+  <data name="Constructor" xml:space="preserve">
+    <value>constructor</value>
+  </data>
+  <data name="NoAnalyzersFound" xml:space="preserve">
+    <value>No se encontraron analizadores</value>
+  </data>
+  <data name="AssemblyMustHaveAtLeastOneModule" xml:space="preserve">
+    <value>El ensamblado debe tener al menos un módulo.</value>
+  </data>
+  <data name="ResourceDataProviderShouldReturnNonNullStream" xml:space="preserve">
+    <value>El proveedor de datos de recursos debe devolver secuencias no nulas</value>
+  </data>
+  <data name="ResourceStreamEndedUnexpectedly" xml:space="preserve">
+    <value>La secuencia de recursos finalizó en {0} bytes, cuando se esperaban {1} bytes.</value>
+  </data>
+  <data name="PEImageDoesntContainManagedMetadata" xml:space="preserve">
+    <value>La imagen PE no contiene metadatos administrados.</value>
+  </data>
+  <data name="EmptyOrInvalidFileName" xml:space="preserve">
+    <value>Nombre de archivo vacío o no válido</value>
+  </data>
+  <data name="Return1" xml:space="preserve">
+    <value>volver</value>
+  </data>
+  <data name="AnalyzerDriverThrows" xml:space="preserve">
+    <value>El controlador del analizador produjo una excepción de tipo '{0}' con el mensaje '{1}'.</value>
+  </data>
+  <data name="FileSizeExceedsMaximumAllowed" xml:space="preserve">
+    <value>El tamaño de archivo supera el tamaño máximo permitido para archivos de metadatos válidos.</value>
+  </data>
+  <data name="SpanDoesNotIncludeEndOfLine" xml:space="preserve">
+    <value>El intervalo no incluye el extremo de una línea.</value>
+  </data>
+  <data name="PreviousSubmissionHasErrors" xml:space="preserve">
+    <value>El envío anterior tiene errores.</value>
+  </data>
+  <data name="CompilationReferencesAssembliesWithDifferentAutoGeneratedVersion" xml:space="preserve">
+    <value>La compilación hace referencia a varios ensamblados cuyas versiones solo difieren en los números de compilación y/o versión generados automáticamente.</value>
+  </data>
+  <data name="AssemblyFileNotFound" xml:space="preserve">
+    <value>Ensamblado no encontrado</value>
+  </data>
+  <data name="InvalidPublicKey" xml:space="preserve">
+    <value>Clave pública no válida.</value>
+  </data>
+  <data name="TheStreamCannotBeReadFrom" xml:space="preserve">
+    <value>No se puede leer desde la secuencia.</value>
+  </data>
+  <data name="ReferenceOfTypeIsInvalid1" xml:space="preserve">
+    <value>La referencia del tipo '{0}' no es válida para esta compilación.</value>
+  </data>
+  <data name="DiagnosticIdCantBeNullOrWhitespace" xml:space="preserve">
+    <value>Un DiagnosticDescriptor debe tener un identificador que no sea nulo, que no sea una cadena vacía y que no sea una cadena que solo contenga espacio en blanco.</value>
+  </data>
+  <data name="TypeMustBeSameAsHostObjectTypeOfPreviousSubmission" xml:space="preserve">
+    <value>El tipo debe ser el mismo que el tipo de objeto host del envío anterior.</value>
+  </data>
+  <data name="TupleElementLocationCountMismatch" xml:space="preserve">
+    <value>Si se especifican las ubicaciones de los elementos de tupla, el número de ubicaciones debe coincidir con la cardinalidad de la tupla.</value>
+  </data>
+  <data name="EndMustNotBeLessThanStart" xml:space="preserve">
+    <value>'fin' no debe ser menor que 'inicio'</value>
+  </data>
+  <data name="CannotCreateReferenceToModule" xml:space="preserve">
+    <value>No se puede crear una referencia a un módulo.</value>
+  </data>
+  <data name="CompilerAnalyzerFailure" xml:space="preserve">
+    <value>Error del analizador</value>
+  </data>
+  <data name="ExpectedNonEmptyPublicKey" xml:space="preserve">
+    <value>Clave pública no vacía esperada</value>
+  </data>
+  <data name="InvalidRuleSetInclude" xml:space="preserve">
+    <value>Se produjo un error al cargar el archivo de conjuntos de reglas incluido {0} - {1}</value>
+  </data>
+  <data name="InvalidCharactersInAssemblyName" xml:space="preserve">
+    <value>Caracteres no válidos en nombre de ensamblado</value>
+  </data>
+  <data name="MultithreadedAnalyzerExecutionNote" xml:space="preserve">
+    <value>NOTA: el tiempo transcurrido puede ser inferior al tiempo de ejecución del analizador, dado que los analizadores pueden ejecutarse simultáneamente.</value>
+  </data>
+  <data name="ArgumentElementCannotBeNull" xml:space="preserve">
+    <value>El argumento no puede tener un elemento nulo.</value>
+  </data>
+  <data name="ArgumentCannotBeEmpty" xml:space="preserve">
+    <value>El argumento no puede estar vacío.</value>
+  </data>
+  <data name="Assembly" xml:space="preserve">
+    <value>ensamblado</value>
+  </data>
+  <data name="TypeParameter" xml:space="preserve">
+    <value>parámetro de tipo</value>
+  </data>
+  <data name="StartMustNotBeNegative" xml:space="preserve">
+    <value>'inicio' no puede ser negativo</value>
+  </data>
+  <data name="SizeHasToBePositive" xml:space="preserve">
+    <value>El tamaño ha de ser positivo.</value>
+  </data>
+  <data name="NullValueInPathMap" xml:space="preserve">
+    <value>Un valor en pathMap es null.</value>
+  </data>
+</root>

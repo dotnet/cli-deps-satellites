@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fsiUnexpectedThreadAbortException" xml:space="preserve">
+    <value>- 이벤트를 처리하는 동안 예기치 않은 ThreadAbortException(Ctrl-C)이 발생했습니다. 다시 시작합니다...</value>
+  </data>
+  <data name="fsiProductNameCommunity" xml:space="preserve">
+    <value>F# {0}에 대한 F# Interactive</value>
+  </data>
+  <data name="fsiDidAHashrWithLockWarning" xml:space="preserve">
+    <value>--&gt; '{0}' 참조됨(파일은 F# Interactive 프로세스에 의해 잠길 수 있음)</value>
+  </data>
+  <data name="fsiTimeInfoMainString" xml:space="preserve">
+    <value>실제: {0}, CPU: {1}, GC {2}</value>
+  </data>
+  <data name="fsiReadline" xml:space="preserve">
+    <value>콘솔에서 Tab 키 완성 기능을 지원합니다(기본값: 설정).</value>
+  </data>
+  <data name="fsiIntroTextHashloadInfo" xml:space="preserve">
+    <value>지정된 파일이 컴파일되고 참조된 것으로 간주하여 해당 파일을 로드합니다.</value>
+  </data>
+  <data name="fsiFailedToResolveAssembly" xml:space="preserve">
+    <value>어셈블리 '{0}'을(를) 확인하지 못했습니다.</value>
+  </data>
+  <data name="fsiIntroTextHeader2commandLine" xml:space="preserve">
+    <value>  F# Interactive 명령줄 옵션:</value>
+  </data>
+  <data name="fsiIntroTextHashquitInfo" xml:space="preserve">
+    <value>끝내기</value>
+  </data>
+  <data name="fsiRemaining" xml:space="preserve">
+    <value>나머지 인수를 fsi.CommandLineArgs를 사용하여 액세스하는 명령줄 인수로 처리합니다.</value>
+  </data>
+  <data name="fsiEmitDebugInfoInQuotations" xml:space="preserve">
+    <value>인용구의 디버그 정보를 내보냅니다.</value>
+  </data>
+  <data name="fsiAbortingMainThread" xml:space="preserve">
+    <value>- 주 스레드를 중단하는 중...</value>
+  </data>
+  <data name="fsiAdvanced" xml:space="preserve">
+    <value>- 고급 -</value>
+  </data>
+  <data name="fsiIntroTextHashrInfo" xml:space="preserve">
+    <value>지정된 DLL을 참조(동적 로드)합니다.</value>
+  </data>
+  <data name="fsiDidAHashI" xml:space="preserve">
+    <value>--&gt; 라이브러리 포함 경로에 '{0}'을(를) 추가했습니다.</value>
+  </data>
+  <data name="fsiDidAHashr" xml:space="preserve">
+    <value>--&gt; '{0}'이(가) 참조되었습니다.</value>
+  </data>
+  <data name="fsiIntroTextHashtimeInfo" xml:space="preserve">
+    <value>타이밍을 설정/해제합니다.</value>
+  </data>
+  <data name="fsiIntroTextHashIInfo" xml:space="preserve">
+    <value>참조된 DLL에 대해 지정된 검색 경로를 추가합니다.</value>
+  </data>
+  <data name="fsiIntroTextHeader1directives" xml:space="preserve">
+    <value>  F# Interactive 지시문:</value>
+  </data>
+  <data name="fsiLoadingFilesPrefixText" xml:space="preserve">
+    <value>로드</value>
+  </data>
+  <data name="stoppedDueToError" xml:space="preserve">
+    <value>오류 때문에 중지되었습니다.\n</value>
+  </data>
+  <data name="fsiInterrupt" xml:space="preserve">
+    <value>\n- 중단\n</value>
+  </data>
+  <data name="fsiInvalidAssembly" xml:space="preserve">
+    <value>'{0}'은(는) 올바른 어셈블리 이름이 아닙니다.</value>
+  </data>
+  <data name="fsiExceptionDuringPrettyPrinting" xml:space="preserve">
+    <value>\n\n보기 쉽게 출력하는 동안 예외가 발생했습니다.\n문제를 해결할 수 있도록 보고하십시오.\n추적: {0}\n</value>
+  </data>
+  <data name="fsiTurnedTimingOff" xml:space="preserve">
+    <value>--&gt; 타이밍이 해제되었습니다.</value>
+  </data>
+  <data name="fsiDidAHashrWithStaleWarning" xml:space="preserve">
+    <value>--&gt; 참조된 '{0}'(다른 타임스탬프가 포함된 어셈블리가 이 위치에서 이미 참조되었습니다. fsi를 다시 설정하여 업데이트된 어셈블리를 로드하세요.)</value>
+  </data>
+  <data name="fsiLanguage" xml:space="preserve">
+    <value>- 언어 -</value>
+  </data>
+  <data name="fsiMiscellaneous" xml:space="preserve">
+    <value>- 기타 -</value>
+  </data>
+  <data name="fsiConsoleProblem" xml:space="preserve">
+    <value>F# Interactive 프로세스를 시작하는 동안 오류가 발생했습니다. 일부 Windows 시스템에서 나타나는 유니코드 기반 응용 프로그램의 백그라운드 프로세스 콘솔 지원과 관련된 알려진 문제가 원인일 수 있습니다. [도구]-&gt;[옵션]-&gt;[F# Interactive for Visual Studio]를 선택하고 '--fsi-server-no-unicode'를 입력해 보십시오.</value>
+  </data>
+  <data name="fsiIntroTextHashhelpInfo" xml:space="preserve">
+    <value>도움말을 표시합니다.</value>
+  </data>
+  <data name="fsiTurnedTimingOn" xml:space="preserve">
+    <value>--&gt; 타이밍이 설정되었습니다.</value>
+  </data>
+  <data name="fsiIntroTextHeader3" xml:space="preserve">
+    <value>      옵션에 대해서는 '{0}'을(를) 참조하십시오.</value>
+  </data>
+  <data name="fsiExceptionRaisedStartingServer" xml:space="preserve">
+    <value>원격 서버를 시작하는 동안 예외가 발생했습니다.\n{0}</value>
+  </data>
+  <data name="fsiInvalidDirective" xml:space="preserve">
+    <value>잘못된 지시문 '#{0} {1}'</value>
+  </data>
+  <data name="fsiProductName" xml:space="preserve">
+    <value>Microsoft (R) F# Interactive 버전 {0}</value>
+  </data>
+  <data name="fsiBindingSessionTo" xml:space="preserve">
+    <value>세션을 '{0}'에 바인딩하는 중...</value>
+  </data>
+  <data name="fsiCodeGeneration" xml:space="preserve">
+    <value>- 코드 생성 -</value>
+  </data>
+  <data name="fsiTimeInfoGCGenerationLabelSomeShorthandForTheWordGeneration" xml:space="preserve">
+    <value>gen</value>
+  </data>
+  <data name="fsiDirectoryDoesNotExist" xml:space="preserve">
+    <value>'{0}' 디렉터리가 없습니다.</value>
+  </data>
+  <data name="fsiCouldNotInstallCtrlCHandler" xml:space="preserve">
+    <value>Ctrl-C 처리기를 설치하지 못했습니다. Ctrl-C 처리를 사용할 수 없습니다. 오류는 다음과 같습니다.\n\t{0}</value>
+  </data>
+  <data name="fsiLineTooLong" xml:space="preserve">
+    <value>경고: 줄이 너무 길어 일부 문자가 무시됩니다.\n</value>
+  </data>
+  <data name="fsiUse" xml:space="preserve">
+    <value>시작 시 지정된 파일을 초기 입력으로 사용합니다.</value>
+  </data>
+  <data name="fsiGui" xml:space="preserve">
+    <value>Windows Forms 이벤트 루프에서 상호 작용을 실행합니다(기본값: 설정).</value>
+  </data>
+  <data name="shadowCopyReferences" xml:space="preserve">
+    <value>참조가 F# Interactive 프로세스에 의해 잠기지 않도록 합니다.</value>
+  </data>
+  <data name="fsiBanner3" xml:space="preserve">
+    <value>도움말을 보려면 #help;;를 입력하십시오.</value>
+  </data>
+  <data name="fsiInputFiles" xml:space="preserve">
+    <value>- 입력 파일 -</value>
+  </data>
+  <data name="fsiHelp" xml:space="preserve">
+    <value>이 사용법 메시지를 표시합니다(약식: -?).</value>
+  </data>
+  <data name="fsiLoad" xml:space="preserve">
+    <value>#load: 시작할 때 지정된 파일을 로드합니다.</value>
+  </data>
+  <data name="fsiExec" xml:space="preserve">
+    <value>파일을 로드한 후 또는 명령줄에 지정된 .fsx 스크립트를 실행한 후 fsi를 종료하십시오.</value>
+  </data>
+  <data name="fsiExit" xml:space="preserve">
+    <value>\n- 끝내기...\n</value>
+  </data>
+  <data name="fsiErrorsAndWarnings" xml:space="preserve">
+    <value>- 오류 및 경고 -</value>
+  </data>
+  <data name="fsiQuiet" xml:space="preserve">
+    <value>fsi에서 stdout에 쓰지 않습니다.</value>
+  </data>
+  <data name="fsiUsage" xml:space="preserve">
+    <value>사용법: {0} &lt;options&gt; [script.fsx [&lt;arguments&gt;]]</value>
+  </data>
+</root>

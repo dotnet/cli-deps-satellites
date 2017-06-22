@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="printfHashFormatSpecifierIllegal" xml:space="preserve">
+    <value># biçimlendirme değiştiricisi F# içinde geçersizdir</value>
+  </data>
+  <data name="invalidTupleTypeConstructorNotDefined" xml:space="preserve">
+    <value>'{0}' demet türü geçersiz. Gerekli oluşturucu tanımlanmadı.</value>
+  </data>
+  <data name="syncContextNull" xml:space="preserve">
+    <value>Çağıran iş parçacığının System.Threading.SynchronizationContext.Current'ı null.</value>
+  </data>
+  <data name="QtupleAccessOutOfRange" xml:space="preserve">
+    <value>Demet erişimi aralık dışında</value>
+  </data>
+  <data name="unsupportedQueryCall" xml:space="preserve">
+    <value>Bu geçerli bir sorgu ifadesi değil. '{0}' metodu sorguda kullanıldı, ancak F#-to-LINQ çevirmeni tarafından tanınmıyor. İzin verilen soruların belirtimini denetleyin ve işlemlerden bazılarını sorgu ifadesinin dışına taşımayı düşünün</value>
+  </data>
+  <data name="QfailedToBindTypeInAssembly" xml:space="preserve">
+    <value>'{1}' bütünleştirilmiş kodundaki '{0}' türü bağlanamadı</value>
+  </data>
+  <data name="badFormatString" xml:space="preserve">
+    <value>Giriş dizesi doğru biçimde değildi.</value>
+  </data>
+  <data name="QincorrectInstanceType" xml:space="preserve">
+    <value>Yanlış örnek türü</value>
+  </data>
+  <data name="QcannotBindFunction" xml:space="preserve">
+    <value>{1} türünde {0} işlevi bağlanamadı</value>
+  </data>
+  <data name="QfailedToBindField" xml:space="preserve">
+    <value>'{0}' alanı bağlanamadı</value>
+  </data>
+  <data name="printfPrecisonSpecifierIllegal" xml:space="preserve">
+    <value>Hatalı biçim belirticisi (duyarlık)</value>
+  </data>
+  <data name="nullsNotAllowedInArray" xml:space="preserve">
+    <value>Dizideki öğelerden biri null.</value>
+  </data>
+  <data name="firstClassUsesOfSplice" xml:space="preserve">
+    <value>birinci sınıf '%' veya '%%' kullanımına izin verilmiyor</value>
+  </data>
+  <data name="QtmmCondMustBeBool" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: koşul ifadesi bool türünde olmalıdır. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="unsupportedQueryProperty" xml:space="preserve">
+    <value>Bu geçerli bir sorgu ifadesi değil. '{0}' özelliği sorguda kullanıldı, ancak F#-to-LINQ çevirmeni tarafından tanınmıyor. İzin verilen soruların belirtimini denetleyin ve işlemlerden bazılarını sorgu ifadesinin dışına taşımayı düşünün.</value>
+  </data>
+  <data name="QtmmVarTypeNotMatchRHS" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: değişken türü bir let bağlamasının sağ tarafının türüyle eşleşmiyor. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="QcannotBindProperty" xml:space="preserve">
+    <value>{1} türündeki {0} özelliği bağlanamadı</value>
+  </data>
+  <data name="inputMustBeNonNegative" xml:space="preserve">
+    <value>Giriş negatif olmayan bir sayı olmalıdır.</value>
+  </data>
+  <data name="objIsNotARecord" xml:space="preserve">
+    <value>Nesne bir F# kayıt değeri değil.</value>
+  </data>
+  <data name="QparentCannotBeNull" xml:space="preserve">
+    <value>Üst tür null olamaz</value>
+  </data>
+  <data name="keyNotFoundAlt" xml:space="preserve">
+    <value>Koşulu sağlayan bir dizin koleksiyonda bulunamadı.</value>
+  </data>
+  <data name="keyNotFound" xml:space="preserve">
+    <value>Belirtilen öğe, anahtar veya dizin koleksiyonda bulunamadı.</value>
+  </data>
+  <data name="mailboxReceiveTimedOut" xml:space="preserve">
+    <value>Mailbox.Receive zaman aşımına uğradı.</value>
+  </data>
+  <data name="startCannotBeNaN" xml:space="preserve">
+    <value>Aralığın başlangıcı NaN olamaz.</value>
+  </data>
+  <data name="QincompatibleRecordLength" xml:space="preserve">
+    <value>Uyumsuz kayıt uzunluğu</value>
+  </data>
+  <data name="QtmmExprTypeMismatch" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: ifadenin türleri eşleşmiyor. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="checkStaticInit" xml:space="preserve">
+    <value>Bir dosyanın veya türün statik başlatılması işlemi, tam olarak başlatılmadan önce statik verilere özyinelemeli olarak erişilmesiyle sonuçlandı.</value>
+  </data>
+  <data name="notEnoughElements" xml:space="preserve">
+    <value>Giriş dizisinde yetersiz sayıda öğe var.</value>
+  </data>
+  <data name="moveNextNotCalledOrFinished" xml:space="preserve">
+    <value>MoveNext çağrılmadı veya tamamlanmadı</value>
+  </data>
+  <data name="QtmmFunctionArgTypeMismatch" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: işlev bağımsız değişkeni türü eşleşmiyor. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="QmissingUnionCase" xml:space="preserve">
+    <value>'{0}' türünde '{1}' adlı bir F# birleşim durumu yoktu.</value>
+  </data>
+  <data name="QtmmRaw" xml:space="preserve">
+    <value>İfade değişmez teklif değerine birleştirilirken tür uyuşmazlığı oluştu. Eklenen ifade ağacının türü birleştirme işlemi tarafından beklenen türle eşleşmiyor. '{0}' bekleniyordu, ancak '{1}' türü alındı. (%% x : {0}) veya (%x : {0}) gibi beklenen ifade türüyle tür eklemeyi düşünün.</value>
+  </data>
+  <data name="privateRecordType" xml:space="preserve">
+    <value>'{0}' türü bir F# kayıt türü ancak temsili özel değil. Özel tür temsillerine erişmek için BindingFlags.NonPublic belirtmelisiniz.</value>
+  </data>
+  <data name="unsupportedQueryConstructKind" xml:space="preserve">
+    <value>Bu geçerli bir sorgu ifadesi değil. '{0}' yapısı sorguda kullanıldı, ancak F#-to-LINQ çevirmeni tarafından tanınmıyor. İzin verilen soruların belirtimini denetleyin ve işlemlerden bazılarını sorgu ifadesinin dışına taşımayı düşünün.</value>
+  </data>
+  <data name="enumerationPastIntMaxValue" xml:space="preserve">
+    <value>System.Int32'yi temel alan numaralandırma System.Int32.MaxValue'yu aştı.</value>
+  </data>
+  <data name="QfailedToBindProperty" xml:space="preserve">
+    <value>'{0}' özelliği bağlanamadı</value>
+  </data>
+  <data name="stepCannotBeZero" xml:space="preserve">
+    <value>Aralığın adımı sıfır olamaz.</value>
+  </data>
+  <data name="addressOpNotFirstClass" xml:space="preserve">
+    <value>Address-of işleçlerinin birinci sınıf kullanımlarına izin verilmiyor.</value>
+  </data>
+  <data name="notARecordType" xml:space="preserve">
+    <value>'{0}' türü bir F# kayıt türü değil.</value>
+  </data>
+  <data name="dyInvDivByIntCoerce" xml:space="preserve">
+    <value>Zorlamalar içeren dinamik DivideByInt çağrısı desteklenmiyor.</value>
+  </data>
+  <data name="arraysHadDifferentLengths" xml:space="preserve">
+    <value>Dizinlerin uzunlukları farklı.</value>
+  </data>
+  <data name="QtmmInitArray" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: başlatıcı dizi türüyle eşleşmiyor. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="delegateExpected" xml:space="preserve">
+    <value>Temsilci türü bekleniyor.</value>
+  </data>
+  <data name="QtmmTrueAndFalseMustMatch" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: true ve false dallarının türleri farklı. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="genericCompareFail1" xml:space="preserve">
+    <value>Genel karşılaştırma sırasında hata: '{0}' türü System.IComparable arabirimini uygulamıyor. Bu hata 'compare', 'max' veya 'min' gibi bir işlevin ya da anahtarları bu türün örneklerini içeren 'Set' veya 'Map' gibi bir veri yapısının kullanılmasından kaynaklanabilir.</value>
+  </data>
+  <data name="QunexpectedHole" xml:space="preserve">
+    <value>İfadede beklenmeyen tırnak boşluğu var.</value>
+  </data>
+  <data name="outOfRange" xml:space="preserve">
+    <value>Dizin geçerli aralığın dışında.</value>
+  </data>
+  <data name="printfExpectedPrecision" xml:space="preserve">
+    <value>Bir duyarlık bağımsız değişkeni bekleniyordu</value>
+  </data>
+  <data name="stepCannotBeNaN" xml:space="preserve">
+    <value>Aralığın adımı NaN olamaz.</value>
+  </data>
+  <data name="arrayWasEmpty" xml:space="preserve">
+    <value>Giriş dizisi boştu.</value>
+  </data>
+  <data name="QstaticWithReceiverObject" xml:space="preserve">
+    <value>Üye statik olduğundan alıcı nesne beklenmiyordu</value>
+  </data>
+  <data name="inputSequenceTooLong" xml:space="preserve">
+    <value>Giriş dizisi birden fazla öğe içeriyor.</value>
+  </data>
+  <data name="setContainsNoElements" xml:space="preserve">
+    <value>Küme hiç öğe içermiyor.</value>
+  </data>
+  <data name="QtmmExprHasWrongType" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: ifadenin türü yanlış. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="QexpectedTwoTypes" xml:space="preserve">
+    <value>Tam olarak iki tür bağımsız değişkeni bekleniyor.</value>
+  </data>
+  <data name="QtmmBadFieldType" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: alanın türü yanlıştı. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="checkInit" xml:space="preserve">
+    <value>Bir nesnenin veya değerin başlatılması işlemi, tam olarak başlatılmadan önce nesneye veya değere özyinelemeli olarak erişilmesiyle sonuçlandı.</value>
+  </data>
+  <data name="invalidRecordTypeConstructorNotDefined" xml:space="preserve">
+    <value>'{0}' kayıt türü geçersiz. Gerekli oluşturucu tanımlanmadı.</value>
+  </data>
+  <data name="mailboxProcessorPostAndAsyncReplyTimedOut" xml:space="preserve">
+    <value>MailboxProcessor.PostAndAsyncReply zaman aşımına uğradı.</value>
+  </data>
+  <data name="QfailedToBindAssembly" xml:space="preserve">
+    <value>Tırnak verileri işlenirken '{0}' bütünleştirilmiş kodu bağlanamadı</value>
+  </data>
+  <data name="printfWidthSpecifierIllegal" xml:space="preserve">
+    <value>Hatalı biçim belirticisi (genişlik)</value>
+  </data>
+  <data name="dyInvOpMultCoerce" xml:space="preserve">
+    <value>Zorlamalar içeren dinamik op_Multiply çağrısı desteklenmiyor.</value>
+  </data>
+  <data name="QincorrectNumArgs" xml:space="preserve">
+    <value>Yanlış sayıda bağımsız değişken</value>
+  </data>
+  <data name="matchCasesIncomplete" xml:space="preserve">
+    <value>Eşleşme durumları tam değildi</value>
+  </data>
+  <data name="mismatchIAREnd" xml:space="preserve">
+    <value>Sağlanan IAsyncResult nesnesi bu 'End' işlemiyle eşleşmiyor.</value>
+  </data>
+  <data name="inputSequenceEmpty" xml:space="preserve">
+    <value>Giriş dizisi boştu.</value>
+  </data>
+  <data name="QinvalidFuncType" xml:space="preserve">
+    <value>Geçersiz işlev türü</value>
+  </data>
+  <data name="mismatchIARCancel" xml:space="preserve">
+    <value>Sağlanan IAsyncResult nesnesi bu 'Cancel' işlemiyle eşleşmiyor.</value>
+  </data>
+  <data name="invalidTupleTypes" xml:space="preserve">
+    <value>Bu, F# yansıma kitaplığı için geçerli bir demet türü değil.</value>
+  </data>
+  <data name="thenByError" xml:space="preserve">
+    <value>'thenBy' ve 'thenByDescending' yalnızca sıralanmış bir girişle kullanılabilir</value>
+  </data>
+  <data name="notUsedForHashing" xml:space="preserve">
+    <value>Bu nesne özyinelemeli eşitlik çağrıları içindir ve karma işlevi için kullanılamaz.</value>
+  </data>
+  <data name="resetNotSupported" xml:space="preserve">
+    <value>Bu numaralayıcı üzerinde sıfırlama işlemi desteklenmiyor.</value>
+  </data>
+  <data name="QwritingGetOnly" xml:space="preserve">
+    <value>Yalnızca alınabilen bir özellik yazılıyor</value>
+  </data>
+  <data name="enumerationAlreadyFinished" xml:space="preserve">
+    <value>Sabit listesi zaten tamamlanmış.</value>
+  </data>
+  <data name="QcannotTakeAddress" xml:space="preserve">
+    <value>Bu tırnağın adresi alınamıyor</value>
+  </data>
+  <data name="QexpectedOneType" xml:space="preserve">
+    <value>Tam olarak bir tür bağımsız değişkeni bekleniyor.</value>
+  </data>
+  <data name="dyInvOpAddCoerce" xml:space="preserve">
+    <value>Zorlamalar içeren dinamik op_Addition çağrısı desteklenmiyor.</value>
+  </data>
+  <data name="tupleIndexOutOfRange" xml:space="preserve">
+    <value>'{0}' demet türü için '{1}' demet dizini aralık dışındaydı.</value>
+  </data>
+  <data name="printfExpectedWidth" xml:space="preserve">
+    <value>Bir genişlik bağımsız değişkeni bekleniyordu</value>
+  </data>
+  <data name="notAUnionType" xml:space="preserve">
+    <value>'{0}' türü bir F# birleşim türü değil.</value>
+  </data>
+  <data name="QfailedToBindConstructor" xml:space="preserve">
+    <value>Oluşturucu bağlanamadı</value>
+  </data>
+  <data name="QtmmLoopBodyMustBeLambdaTakingInteger" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: for döngüsünün gövdesi bağımsız değişken olarak tamsayı alan lambda olmalıdır. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="QincorrectType" xml:space="preserve">
+    <value>Yanlış tür</value>
+  </data>
+  <data name="controlContinuationInvokedMultipleTimes" xml:space="preserve">
+    <value>Async.FromContinuations tarafından sağlanan bir devamlılık birden fazla kez çağrıldı</value>
+  </data>
+  <data name="QtmmFunTypeNotMatchDelegate" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: işlev türü temsilci türüyle eşleşmiyor. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="notAPermutation" xml:space="preserve">
+    <value>İşlev bir permütasyon hesaplamadı.</value>
+  </data>
+  <data name="printfMissingFormatSpecifier" xml:space="preserve">
+    <value>Biçim belirticisi eksik</value>
+  </data>
+  <data name="notATupleType" xml:space="preserve">
+    <value>'{0}' türü bir demet türü değil.</value>
+  </data>
+  <data name="QtmmExprNotMatchTuple" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: ifade demet türüyle eşleşmiyor. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="QtmmBodyMustBeUnit" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: gövde birim döndürmelidir. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="notComparable" xml:space="preserve">
+    <value>İki nesne farklı türlere sahip ve karşılaştırılamaz.</value>
+  </data>
+  <data name="ThisValueCannotBeMutated" xml:space="preserve">
+    <value>Bu değer değiştirilemez</value>
+  </data>
+  <data name="unsupportedQueryConstruct" xml:space="preserve">
+    <value>Bu geçerli bir sorgu ifadesi değil. Aşağıdaki yapı sorguda kullanıldı, ancak F#-to-LINQ çevirmeni tarafından tanınmıyor:\n{0}\nİzin verilen soruların belirtimini denetleyin ve işlemlerden bazılarını sorgu ifadesinin dışına taşımayı düşünün.</value>
+  </data>
+  <data name="multipleCompilationMappings" xml:space="preserve">
+    <value>Birden fazla CompilationMappingAttributes var; bir tane bekleniyordu</value>
+  </data>
+  <data name="indexOutOfBounds" xml:space="preserve">
+    <value>Dizin listedeki öğeleri içeren aralığın dışındaydı.</value>
+  </data>
+  <data name="printfSpecifierAfterIllegal" xml:space="preserve">
+    <value>Hatalı biçim belirticisi ({0} sonrasında)</value>
+  </data>
+  <data name="QnonStaticNoReceiverObject" xml:space="preserve">
+    <value>Üye statik değil (örnek), ancak hiçbir alıcı nesne sağlanmadı</value>
+  </data>
+  <data name="QtmmIncorrectArgForUnion" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: bir F# birleşimi için geçersiz bağımsız değişken türü. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="QtupleLengthsDiffer" xml:space="preserve">
+    <value>Demet uzunlukları farklı</value>
+  </data>
+  <data name="notAFunctionType" xml:space="preserve">
+    <value>'{0}' türü bir işlev türü değil.</value>
+  </data>
+  <data name="printfNotAFunType" xml:space="preserve">
+    <value>Bir işlev türü değil</value>
+  </data>
+  <data name="QwrongNumOfTypeArgs" xml:space="preserve">
+    <value>'{0}' metodu {1} türünde bağımsız değişkenler bekliyor ancak {2} sağlandı</value>
+  </data>
+  <data name="mailboxProcessorAlreadyStarted" xml:space="preserve">
+    <value>MailboxProcessor zaten başlatılmış.</value>
+  </data>
+  <data name="dyInvOpAddOverload" xml:space="preserve">
+    <value>Aşırı yükleme içeren dinamik op_Addition çağrısı desteklenmiyor.</value>
+  </data>
+  <data name="privateExceptionType" xml:space="preserve">
+    <value>'{0}' türü bir F# özel durum bildirimini temsil ediyor ancak temsili özel değil. Özel tür temsillerine erişmek için BindingFlags.NonPublic belirtmelisiniz.</value>
+  </data>
+  <data name="privateUnionType" xml:space="preserve">
+    <value>'{0}' türü bir F# birleşim türü ancak temsili özel değil. Özel tür temsillerine erişmek için BindingFlags.NonPublic belirtmelisiniz.</value>
+  </data>
+  <data name="QtmmInvalidParam" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: bir metot veya dizin oluşturucu özelliği için geçersiz parametre. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="mailboxProcessorPostAndReplyTimedOut" xml:space="preserve">
+    <value>MailboxProcessor.PostAndReply zaman aşımına uğradı.</value>
+  </data>
+  <data name="printfBadFloatValue" xml:space="preserve">
+    <value>Hatalı float değeri</value>
+  </data>
+  <data name="inputListWasEmpty" xml:space="preserve">
+    <value>Giriş listesi boştu.</value>
+  </data>
+  <data name="QtmmExpectedFunction" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: işlev uygulamasında veya let bağlamasında işlev türü bekleniyordu. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="failDueToUnsupportedInputTypeInSumByOrAverageBy" xml:space="preserve">
+    <value>Sorguda 'sumBy' veya 'averageBy' işlecinin tanınmayan kullanımı. Özgün verileri statik IQueryable türünde olan sorgularda, bu işleçler yalnızca int32, int64, single, double veya decimal sonuç türüyle kullanılabilir</value>
+  </data>
+  <data name="dyInvOpMultOverload" xml:space="preserve">
+    <value>Aşırı yükleme içeren dinamik op_Multiply çağrısı desteklenmiyor.</value>
+  </data>
+  <data name="QunrecognizedMethodCall" xml:space="preserve">
+    <value>Parametre tanınan bir metot adı değil.</value>
+  </data>
+  <data name="objIsNullAndNoType" xml:space="preserve">
+    <value>Nesne null ve hiçbir tür verilmedi. Null olmayan bir nesne ya da null olmayan türde bir parametre geçirin.</value>
+  </data>
+  <data name="QreadingSetOnly" xml:space="preserve">
+    <value>Yalnızca ayarlanabilen bir özellik okunuyor</value>
+  </data>
+  <data name="QtmmLowerUpperBoundMustBeInt" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: alt ve üst sınırlar tamsayı olmalıdır. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="QunionNeedsDiffNumArgs" xml:space="preserve">
+    <value>F# birleşim türü farklı sayıda bağımsız değişken gerektirir</value>
+  </data>
+  <data name="constructorForUnionCaseNotFound" xml:space="preserve">
+    <value>Birleşim durumunun '{0}' oluşturucu metodu bulunamadı</value>
+  </data>
+  <data name="enumerationNotStarted" xml:space="preserve">
+    <value>Sabit listesi işlemi başlamadı. MoveNext çağrısı yapın.</value>
+  </data>
+  <data name="optionValueWasNone" xml:space="preserve">
+    <value>Seçenek değeri None idi</value>
+  </data>
+  <data name="printfBadIntegerForDynamicFomatter" xml:space="preserve">
+    <value>Dinamik biçimlendiriciye yanlış tamsayı sağlandı</value>
+  </data>
+  <data name="QtmmTuple" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: bağımsız değişken ile demet öğesinin türü eşleşmiyor. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="QinvalidCaseIndex" xml:space="preserve">
+    <value>Geçerli bir F# birleşim durumu dizini değil.</value>
+  </data>
+  <data name="inputMustBePositive" xml:space="preserve">
+    <value>Girdinin pozitif bir değer olması gerekir.</value>
+  </data>
+  <data name="mapCannotBeMutated" xml:space="preserve">
+    <value>Eşleme değerleri değiştirilemez.</value>
+  </data>
+  <data name="QtmmIncorrectArgForRecord" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: bir F# kaydı için geçersiz bağımsız değişken türü. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="failedReadEnoughBytes" xml:space="preserve">
+    <value>Akıştan yeterli miktarda bayt okunamadı.</value>
+  </data>
+  <data name="endCannotBeNaN" xml:space="preserve">
+    <value>Aralığın sonu NaN olamaz.</value>
+  </data>
+  <data name="QtmmGuardMustBeBool" xml:space="preserve">
+    <value>'{0}' oluşturulurken tür uyuşmazlığı oluştu: koruma boole değeri döndürmelidir. '{1}' bekleniyordu, ancak '{2}' türü alındı.</value>
+  </data>
+  <data name="noNegateMinValue" xml:space="preserve">
+    <value>İkiye tamamlanmış bir sayının en küçük değerini eksi yapma geçersizdir.</value>
+  </data>
+  <data name="QtypeArgumentOutOfRange" xml:space="preserve">
+    <value>tür bağımsız değişkeni aralık dışında</value>
+  </data>
+  <data name="mailboxScanTimedOut" xml:space="preserve">
+    <value>Mailbox.Scan zaman aşımına uğradı.</value>
+  </data>
+  <data name="QillFormedAppOrLet" xml:space="preserve">
+    <value>hatalı biçimlendirilmiş ifade: AppOp veya LetOp</value>
+  </data>
+  <data name="QmissingRecordField" xml:space="preserve">
+    <value>'{0}' türünde '{1}' adlı bir F# kayıt alanı yoktu.</value>
+  </data>
+  <data name="listsHadDifferentLengths" xml:space="preserve">
+    <value>Listelerin uzunlukları farklıydı.</value>
+  </data>
+  <data name="QcannotBindToMethod" xml:space="preserve">
+    <value>Metot bağlanamadı</value>
+  </data>
+  <data name="printfBadFormatSpecifier" xml:space="preserve">
+    <value>Hatalı biçim belirticisi: {0}</value>
+  </data>
+  <data name="notAnExceptionType" xml:space="preserve">
+    <value>'{0}' türü bir F# özel durum bildirimini temsil etmiyor.</value>
+  </data>
+  <data name="nonZeroBasedDisallowed" xml:space="preserve">
+    <value>Bu platformda sıfır tabanlı olmayan diziler oluşturulamaz.</value>
+  </data>
+  <data name="unsupportedIfThenElse" xml:space="preserve">
+    <value>Sorguda, birden fazla dalı bulunan if/then/else koşullu veya desen eşleştirme ifadesine izin verilmez. Bir if/then/else koşulu kullanılabilir.</value>
+  </data>
+</root>

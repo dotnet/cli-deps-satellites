@@ -1,0 +1,4300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="parsTypeAbbreviationsCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>对于类型缩写词，此位置不允许使用可访问性修饰符</value>
+  </data>
+  <data name="fscStaticLinkingNoEXE" xml:space="preserve">
+    <value>静态链接不能包含 .EXE</value>
+  </data>
+  <data name="tcPropertyIsNotReadable" xml:space="preserve">
+    <value>属性“{0}”不可读</value>
+  </data>
+  <data name="tcInvalidUseBinding" xml:space="preserve">
+    <value>“use”绑定的格式必须为“use &lt;var&gt; = &lt;expr&gt;”</value>
+  </data>
+  <data name="buildProductName" xml:space="preserve">
+    <value>Microsoft(R) F# 编译器版本 {0}</value>
+  </data>
+  <data name="fieldIsNotAccessible" xml:space="preserve">
+    <value>无法从此代码位置访问记录、结构或类字段“{0}”</value>
+  </data>
+  <data name="etMethodHasRequirements" xml:space="preserve">
+    <value>所提供的类型“{1}”的成员“{0}”无效。所提供类型的成员必须是公共成员，而不是泛型、虚拟或抽象成员。</value>
+  </data>
+  <data name="tcEmptyRecordInvalid" xml:space="preserve">
+    <value>“{{ }}”不是有效的表达式。记录必须至少包含一个字段。使用 Seq.empty 或空列表“[]”指定空序列。</value>
+  </data>
+  <data name="ilDynamicInvocationNotSupported" xml:space="preserve">
+    <value>不支持动态调用 {0}</value>
+  </data>
+  <data name="tcStructuralEqualityNotSatisfied1" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”具有“StructuralEquality”特性，但类型参数“{1}”不符合“equality”约束的要求。请考虑将“equality”约束添加到该类型参数</value>
+  </data>
+  <data name="tcStructuralEqualityNotSatisfied2" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”具有“StructuralEquality”特性，但组件类型“{1}”不符合“equality”约束的要求</value>
+  </data>
+  <data name="parsConsiderUsingSeparateRecordType" xml:space="preserve">
+    <value>请考虑改用单独的记录类型</value>
+  </data>
+  <data name="chkNoByrefReturnOfLocal" xml:space="preserve">
+    <value>当前无法使用变量 {0} 的地址。方法或函数可能没有返回该本地值的地址。</value>
+  </data>
+  <data name="buildCannotReadAssembly" xml:space="preserve">
+    <value>无法读取程序集“{0}”</value>
+  </data>
+  <data name="csGenericConstructRequiresStructType" xml:space="preserve">
+    <value>泛型构造要求类型“{0}”是 CLI 或 F# 结构类型</value>
+  </data>
+  <data name="etNullProvidedExpression" xml:space="preserve">
+    <value>类型提供程序“{0}”从 GetInvokerExpression 返回了 null。</value>
+  </data>
+  <data name="buildMultipleReferencesNotAllowed" xml:space="preserve">
+    <value>不允许多次引用“{0}.dll”</value>
+  </data>
+  <data name="parsMismatchedQuotationName" xml:space="preserve">
+    <value>不匹配的引用运算符名称(以“{0}”开头)</value>
+  </data>
+  <data name="keywordDescriptionAbstract" xml:space="preserve">
+    <value>表示一种方法，该方法在进行声明的类型中没有任何实现，或该方法为虚拟方法且包含默认实现。</value>
+  </data>
+  <data name="fscStaticLinkingNoMixedDLL" xml:space="preserve">
+    <value>静态链接不能包含混合的托管/非托管 DLL</value>
+  </data>
+  <data name="keywordDescriptionPrivate" xml:space="preserve">
+    <value>限制成员使用相同类型或模块编码的权限。</value>
+  </data>
+  <data name="csTypeNotCompatibleBecauseOfPrintf" xml:space="preserve">
+    <value>类型“{0}”与类型 {1} 中的任何类型都不兼容，因为使用了 printf 样式的格式字符串</value>
+  </data>
+  <data name="tcMemberOperatorDefinitionInExtrinsic" xml:space="preserve">
+    <value>扩展成员无法提供运算符重载。    请考虑改为将运算符定义为类型定义的一部分。</value>
+  </data>
+  <data name="chkVariableUsedInInvalidWay" xml:space="preserve">
+    <value>变量“{0}”的使用方式无效</value>
+  </data>
+  <data name="tcSyntaxCanOnlyBeUsedToCreateObjectTypes" xml:space="preserve">
+    <value>“{0}”只能用于构造对象类型</value>
+  </data>
+  <data name="parsUnfinishedExpression" xml:space="preserve">
+    <value>意外的标记“{0}”或不完整的表达式</value>
+  </data>
+  <data name="parsUnderscoreInvalidFieldName" xml:space="preserve">
+    <value>“_”不能用作字段名称</value>
+  </data>
+  <data name="parsMultipleAccessibilitiesForGetSet" xml:space="preserve">
+    <value>为属性 getter 或 setter 给定了多个可访问性</value>
+  </data>
+  <data name="tcConstructorsCannotBeFirstClassValues" xml:space="preserve">
+    <value>构造函数必须应用于参数，且不能用作第一类值。如有必要，请使用匿名函数“(fun arg1 ... argN -&gt; new Type(arg1,...,argN))”。</value>
+  </data>
+  <data name="buildInvalidVersionFile" xml:space="preserve">
+    <value>版本文件“{0}”无效</value>
+  </data>
+  <data name="tcRecursiveBindingsWithMembersMustBeDirectAugmentation" xml:space="preserve">
+    <value>包含成员规格的递归绑定只能作为类型的直接扩大出现</value>
+  </data>
+  <data name="InvalidRecursiveReferenceToAbstractSlot" xml:space="preserve">
+    <value>对抽象槽的递归引用无效</value>
+  </data>
+  <data name="crefQuotationsCantContainInlineIL" xml:space="preserve">
+    <value>引用内容不能包含内联程序集代码或数组模式匹配</value>
+  </data>
+  <data name="tcObjectsMustBeInitializedWithObjectExpression" xml:space="preserve">
+    <value>对象必须由一个对象构造表达式进行初始化，该表达式将调用继承的对象构造函数并为每个字段赋值</value>
+  </data>
+  <data name="tcUnrecognizedQueryBinaryOperator" xml:space="preserve">
+    <value>查询运算符的参数可能需要括号，例如“where (x &gt; y)”或“groupBy (x.Length / 10)”</value>
+  </data>
+  <data name="optsWarn" xml:space="preserve">
+    <value>设置警告等级(0-5)</value>
+  </data>
+  <data name="optsHelp" xml:space="preserve">
+    <value>显示此用法消息(缩写为: -?)</value>
+  </data>
+  <data name="fscSystemRuntimeInteropServicesIsRequired" xml:space="preserve">
+    <value>要使用 UnknownWrapper\DispatchWrapper 类，System.Runtime.InteropServices 程序集是必须的。</value>
+  </data>
+  <data name="typeInfoModule" xml:space="preserve">
+    <value>模块</value>
+  </data>
+  <data name="astInvalidExprLeftHandOfAssignment" xml:space="preserve">
+    <value>赋值运算左侧的表达式无效</value>
+  </data>
+  <data name="tcInvalidInlineSpecification" xml:space="preserve">
+    <value>内联规范无效</value>
+  </data>
+  <data name="keywordDescriptionTypedQuotation" xml:space="preserve">
+    <value>分隔泛型代码引用。</value>
+  </data>
+  <data name="tcMemberKindPropertyGetSetNotExpected" xml:space="preserve">
+    <value>仅分析树中需要 MemberKind.PropertyGetSet</value>
+  </data>
+  <data name="pathIsInvalid" xml:space="preserve">
+    <value>文件名“{0}”出现问题: 路径中存在非法字符。</value>
+  </data>
+  <data name="loadingDescription" xml:space="preserve">
+    <value>(正在加载说明...)</value>
+  </data>
+  <data name="csTypeDoesNotSupportComparison3" xml:space="preserve">
+    <value>类型“{0}”不支持“comparison”约束，因为它是一个记录、联合或结构，其中的一个或多个结构化元素类型不支持“comparison”约束。请避免对此类型使用比较，或将“StructuralComparison”特性添加到此类型以确定哪些字段类型不支持比较</value>
+  </data>
+  <data name="csTypeDoesNotSupportComparison2" xml:space="preserve">
+    <value>类型“{0}”不支持“comparison”约束。例如，它不支持“System.IComparable”接口</value>
+  </data>
+  <data name="csTypeDoesNotSupportComparison1" xml:space="preserve">
+    <value>类型“{0}”不支持“comparison”约束，因为它具有“NoComparison”特性</value>
+  </data>
+  <data name="notAFunctionButMaybeIndexerErrorCode" xml:space="preserve">
+    <value>
+    </value>
+  </data>
+  <data name="tcConditionalAttributeUsage" xml:space="preserve">
+    <value>特性“System.Diagnostics.ConditionalAttribute”仅对方法或特性类有效</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleDotNetRepresentationsDiffer" xml:space="preserve">
+    <value>异常定义不兼容，因为 CLI 表示形式不同。该模块包含异常定义\n    {0}    \n而其签名指定\n\t{1}</value>
+  </data>
+  <data name="parsSyntaxErrorInLabeledType" xml:space="preserve">
+    <value>带有标签的类型参数中的语法错误</value>
+  </data>
+  <data name="tcPropertyRequiresExplicitTypeParameters" xml:space="preserve">
+    <value>属性不能具有显式类型参数。请考虑改用方法。</value>
+  </data>
+  <data name="optsUtf8output" xml:space="preserve">
+    <value>以 UTF-8 编码格式输出消息</value>
+  </data>
+  <data name="tastConflictingModuleAndTypeDefinitionInAssembly" xml:space="preserve">
+    <value>名称均为“{0}”的一个模块和一个类型定义出现在命名空间“{1}”的此程序集的两个部分中</value>
+  </data>
+  <data name="tcNameNotBoundInPattern" xml:space="preserve">
+    <value>模式上下文中未绑定名称“{0}”</value>
+  </data>
+  <data name="etTypeProviderConstructorException" xml:space="preserve">
+    <value>类型提供程序构造函数引发异常: {0}</value>
+  </data>
+  <data name="etUnknownStaticArgumentKind" xml:space="preserve">
+    <value>解析对所提供类型或方法“{1}”的引用时出现未知静态参数类型“{0}”</value>
+  </data>
+  <data name="tcCustomOperationInvalid" xml:space="preserve">
+    <value>自定义运算符“{0}”的定义未使用有效的特性标志组合</value>
+  </data>
+  <data name="ilStaticMethodIsNotLambda" xml:space="preserve">
+    <value>GenSetStorage: {0} 已表示为一个静态方法，而不是适当的 lambda 表达式</value>
+  </data>
+  <data name="lexOutsideEightBitUnsigned" xml:space="preserve">
+    <value>此数字在允许的 8 位无符号整数范围之外</value>
+  </data>
+  <data name="parsAttributesIgnored" xml:space="preserve">
+    <value>此构造中已忽略特性</value>
+  </data>
+  <data name="tcOperatorRequiresIn" xml:space="preserve">
+    <value>“{0}”后面必须跟“in”。用法: {1}。</value>
+  </data>
+  <data name="tcImplementsIEquatableExplicitly" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”显式实现接口“System.IEquatable&lt;_&gt;”。将“CustomEquality”特性应用于相应的类型，并提供对非泛型重写“System.Object.Equals(obj)”的一致性实现。</value>
+  </data>
+  <data name="srcFileTooLarge" xml:space="preserve">
+    <value>源文件太大，无法嵌入可移植 PDB</value>
+  </data>
+  <data name="tcObjectConstructorRequiresArgument" xml:space="preserve">
+    <value>对象构造函数需要参数</value>
+  </data>
+  <data name="pickleErrorReadingWritingMetadata" xml:space="preserve">
+    <value>读取/写入 F# 编译的 DLL“{0}”时出错。是否使用了早期版本的 F# 编译器编译 DLL? (错误: “{1}”)。</value>
+  </data>
+  <data name="tcMemberOverridesIllegalInInterface" xml:space="preserve">
+    <value>接口不能包含成员重写的定义。</value>
+  </data>
+  <data name="tcMultipleVisibilityAttributes" xml:space="preserve">
+    <value>已为此标识符指定多个可见性特性</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureIsAbstract" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名是抽象类，而实现则不是。请考虑将 [&lt;AbstractClass&gt;] 特性添加到实现。</value>
+  </data>
+  <data name="etNullMemberDeclaringTypeDifferentFromProvidedType" xml:space="preserve">
+    <value>所提供的类型“{0}”的成员“{1}”具有声明类型“{2}”。声明类型应与所提供的类型相同。</value>
+  </data>
+  <data name="parsUnmatchedClassInterfaceOrStruct" xml:space="preserve">
+    <value>不匹配的“class”、“interface”或“struct”</value>
+  </data>
+  <data name="keywordDescriptionNamespace" xml:space="preserve">
+    <value>用于将名称与一组相关类型和模块关联，从逻辑上将其与其他代码分开。</value>
+  </data>
+  <data name="undefinedNameNamespaceOrModule" xml:space="preserve">
+    <value>未定义命名空间或模块“{0}”。</value>
+  </data>
+  <data name="tcUnionCaseRequiresOneArgument" xml:space="preserve">
+    <value>此联合用例采用一个参数</value>
+  </data>
+  <data name="parsUnexpectedEmptyModuleDefn" xml:space="preserve">
+    <value>意外的空类型 moduleDefn 列表</value>
+  </data>
+  <data name="keywordDescriptionWhen" xml:space="preserve">
+    <value>用于模式匹配的布尔条件(临界时)以及用于引入泛型类型参数的约束子句。</value>
+  </data>
+  <data name="keywordDescriptionWith" xml:space="preserve">
+    <value>在模式匹配表达式中与 match 关键字配合使用。此外，也用于在对象表达式、记录复制表达式和类型扩展，以引入成员定义和异常处理程序。</value>
+  </data>
+  <data name="keywordDescriptionVoid" xml:space="preserve">
+    <value>表示 .NET void 类型。在与其他 .NET 语言交互操作时使用。</value>
+  </data>
+  <data name="keywordDescriptionThen" xml:space="preserve">
+    <value>用于条件表达式。另外，也用于处理构造对象后的意外结果。</value>
+  </data>
+  <data name="keywordDescriptionType" xml:space="preserve">
+    <value>用于声明类、记录、结构、可区分的联合、枚举类型、度量单位或类型缩写。</value>
+  </data>
+  <data name="keywordDescriptionOpen" xml:space="preserve">
+    <value>用于使命名空间或模块的内容无需限定即可使用。</value>
+  </data>
+  <data name="keywordDescriptionNull" xml:space="preserve">
+    <value>表示缺少对象。另外，还用于泛型参数约束。</value>
+  </data>
+  <data name="keywordDescriptionCast" xml:space="preserve">
+    <value>将某类型转换为较高层次结构中的类型。</value>
+  </data>
+  <data name="keywordDescriptionBase" xml:space="preserve">
+    <value>用作基类对象的名称。</value>
+  </data>
+  <data name="keywordDescriptionLazy" xml:space="preserve">
+    <value>用于指定仅当需要结果时要执行的计算。</value>
+  </data>
+  <data name="keywordDescriptionElse" xml:space="preserve">
+    <value>用于条件性分支。</value>
+  </data>
+  <data name="keywordDescriptionElif" xml:space="preserve">
+    <value>用于条件性分支。Else if 的缩写形式。</value>
+  </data>
+  <data name="keywordDescriptionDone" xml:space="preserve">
+    <value>在详细语法中，表示循环表达式中程序块的结尾。</value>
+  </data>
+  <data name="impReferenceToDllRequiredByAssembly" xml:space="preserve">
+    <value>程序集 {1} 需要对 DLL {0} 的引用。导入的类型 {2} 位于第一个程序集中，未能解析此类型。</value>
+  </data>
+  <data name="lexOusideThirtyTwoBitFloat" xml:space="preserve">
+    <value>此数字在允许的 32 位浮点数范围之外</value>
+  </data>
+  <data name="tcTypeDefinitionsWithImplicitConstructionMustHaveOneInherit" xml:space="preserve">
+    <value>类型定义只能指定一个“inherit”，并且它必须是第一个声明</value>
+  </data>
+  <data name="tcLiteralCannotHaveGenericParameters" xml:space="preserve">
+    <value>文本值不能具有泛型参数</value>
+  </data>
+  <data name="parsUnexpectedQuotationOperatorInTypeAliasDidYouMeanVerbatimString" xml:space="preserve">
+    <value>类型定义中出现意外的引用运算符“&lt;@”。如果您要将原义字符串作为静态参数传递给类型提供程序，请在“&lt;”与“@”字符之间加一个空格。</value>
+  </data>
+  <data name="tcInvalidOperatorDefinitionRelational" xml:space="preserve">
+    <value>通常不应重新定义“{0}”运算符。若要为类型定义重载的比较语义，请在该类型的定义中实现“System.IComparable”接口。</value>
+  </data>
+  <data name="chkCurriedMethodsCantHaveOutParams" xml:space="preserve">
+    <value>具有扩充参数的方法不能声明 "out"、"ParamArray"、"optional"、"ReflectedDefinition"、"byref"、"CallerLineNumber"、"CallerMemberName" 或 "CallerFilePath" 参数</value>
+  </data>
+  <data name="buildPdbRequiresDebug" xml:space="preserve">
+    <value>“--pdb”选项要求使用“--debug”选项</value>
+  </data>
+  <data name="optValueMarkedInlineButWasNotBoundInTheOptEnv" xml:space="preserve">
+    <value>值“{0}”已标记为“inline”，但其未在优化环境中绑定</value>
+  </data>
+  <data name="tcPropertyIsStatic" xml:space="preserve">
+    <value>属性“{0}”是静态的</value>
+  </data>
+  <data name="tcNoComparisonNeeded1" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”在结构上是不可比较的，因为类型参数 {1} 不符合“comparison”约束的要求。请考虑将“NoComparison”特性添加到类型“{2}”以阐明此类型是不可比较的</value>
+  </data>
+  <data name="tcNoComparisonNeeded2" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”在结构上是不可比较的，因为类型“{1}”不符合“comparison”约束的要求。请考虑将“NoComparison”特性添加到类型“{2}”以阐明此类型是不可比较的</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplDefinesStruct" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现定义了一个结构，而签名采用隐藏的表示形式定义了一个类型</value>
+  </data>
+  <data name="tlrLambdaLiftingOptimizationsNotApplied" xml:space="preserve">
+    <value>注意: 尚未应用 Lambda 提升优化，因为使用了此本地约束的泛型函数作为一类值。添加类型约束可以解析此条件。</value>
+  </data>
+  <data name="tcUseForInSequenceExpression" xml:space="preserve">
+    <value>不允许在序列表达式中使用“let! x = coll”。请改用“for x in coll”。</value>
+  </data>
+  <data name="FieldNotContainedMutablesDiffer" xml:space="preserve">
+    <value>该模块包含字段\n    {0}    \n而其签名指定\n    {1}    \n“mutable”修饰符不同</value>
+  </data>
+  <data name="ilwriteMDBFileNameCannotBeChangedWarning" xml:space="preserve">
+    <value>MDB 文件的名称必须是 &lt;程序集文件名&gt;.mdb。将忽略 --pdb 选项。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityStaticButInstance" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n此方法的已编译表示形式作为一个静态成员，而签名指示其已编译表示形式作为一个实例成员</value>
+  </data>
+  <data name="ilDllImportAttributeCouldNotBeDecoded" xml:space="preserve">
+    <value>未能对 DllImport 特性进行解码</value>
+  </data>
+  <data name="chkBaseUsedInInvalidWay" xml:space="preserve">
+    <value>“base”关键字的使用方式无效。在闭包中不能使用 base 调用。请考虑使用私有成员进行 base 调用。</value>
+  </data>
+  <data name="tcNewMustBeUsedWithNamedType" xml:space="preserve">
+    <value>“new”必须用于命名类型</value>
+  </data>
+  <data name="tcTypeAbbreviationHasTypeParametersMissingOnType" xml:space="preserve">
+    <value>此类型缩写词具有一个或多个在要缩写的类型中不会显示的已声明类型参数。类型缩写词必须使用要缩写的类型中的所有已声明类型参数。请考虑删除一个或多个类型参数，或使用包装基础类型的具体类型定义，例如“type C&lt;'a&gt; = C of ...”。</value>
+  </data>
+  <data name="optsResponseFileNameInvalid" xml:space="preserve">
+    <value>响应文件名“{0}”为空，包含无效字符，具有没有绝对路径的驱动器规格，或过长</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAccessibilityDiffer" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名中指定的辅助功能比实现中指定的辅助功能多</value>
+  </data>
+  <data name="tcNoPropertyFoundForOverride" xml:space="preserve">
+    <value>未找到与此重写对应的抽象属性</value>
+  </data>
+  <data name="astParseEmbeddedILError" xml:space="preserve">
+    <value>分析嵌入的 IL 时出错</value>
+  </data>
+  <data name="tcDllImportStubsCannotBeInlined" xml:space="preserve">
+    <value>无法内联 DLLImport 存根</value>
+  </data>
+  <data name="tcIllegalPattern" xml:space="preserve">
+    <value>非法模式</value>
+  </data>
+  <data name="tcSimpleMethodNameRequired" xml:space="preserve">
+    <value>此处需要简单的方法名称</value>
+  </data>
+  <data name="tcAutoPropertyRequiresImplicitConstructionSequence" xml:space="preserve">
+    <value>“member val”定义仅允许用于具有主构造函数的类型中。请考虑向您的类型定义添加参数，例如“type X(args) = ...”。</value>
+  </data>
+  <data name="forFlagSetTwice" xml:space="preserve">
+    <value>“{0}”标志设置了两次</value>
+  </data>
+  <data name="crefQuotationsCantContainObjExprs" xml:space="preserve">
+    <value>引用内容不能包含对象表达式</value>
+  </data>
+  <data name="optValueMarkedInlineHasUnexpectedValue" xml:space="preserve">
+    <value>标记为“inline”的值具有意外的值</value>
+  </data>
+  <data name="tcMatchMayNotBeUsedWithQuery" xml:space="preserve">
+    <value>“match”表达式不能在查询中使用</value>
+  </data>
+  <data name="chkPropertySameNameIndexer" xml:space="preserve">
+    <value>属性“{0}”与类型“{1}”中的另一个属性具有相同的名称，但是其中一个属性采用了索引器参数，而另一个属性未采用。可能缺少其中一个属性的索引器参数。</value>
+  </data>
+  <data name="lexIdentEndInMarkReserved" xml:space="preserve">
+    <value>已保留后跟“{0}”的标识符以供将来使用</value>
+  </data>
+  <data name="tcExplicitTypeParameterInvalid" xml:space="preserve">
+    <value>显式类型参数只能用于模块或成员绑定</value>
+  </data>
+  <data name="etPropertyHasSetterButNoCanWrite" xml:space="preserve">
+    <value>所提供的类型“{1}”的属性“{0}”的 CanWrite 为 false，但是 GetSetMethod() 返回了方法</value>
+  </data>
+  <data name="optsEmitDebugInfoInQuotations" xml:space="preserve">
+    <value>发出用引号引起来的调试信息</value>
+  </data>
+  <data name="optsNowin32manifest" xml:space="preserve">
+    <value>不包括默认的 Win32 清单</value>
+  </data>
+  <data name="typeInfoActiveRecognizer" xml:space="preserve">
+    <value>活动识别器</value>
+  </data>
+  <data name="tcCompiledNameAttributeMisused" xml:space="preserve">
+    <value>“CompiledName”特性不能用于此语言元素</value>
+  </data>
+  <data name="keywordDescriptionMutable" xml:space="preserve">
+    <value>用于声明变量，即可更改的值。</value>
+  </data>
+  <data name="buildSignatureAlreadySpecified" xml:space="preserve">
+    <value>已指定文件或模块“{0}”的签名</value>
+  </data>
+  <data name="crefQuotationsCantSetUnionFields" xml:space="preserve">
+    <value>引用内容不能包含设置联合用例字段的表达式</value>
+  </data>
+  <data name="tcTypeDefinitionIsCyclic" xml:space="preserve">
+    <value>此类型定义涉及一个经由缩写词的直接循环引用</value>
+  </data>
+  <data name="optsInvalidTargetProfile" xml:space="preserve">
+    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+  </data>
+  <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
+    <value>主构造函数中不允许使用“use”绑定</value>
+  </data>
+  <data name="tcStructsCanOnlyBindThisAtMemberDeclaration" xml:space="preserve">
+    <value>结构只能在成员声明中绑定“this”参数</value>
+  </data>
+  <data name="parsAllEnumFieldsRequireValues" xml:space="preserve">
+    <value>所有枚举字段都必须为给定值</value>
+  </data>
+  <data name="parsIllegalMemberVarInObjectImplementation" xml:space="preserve">
+    <value>对象表达式中既不允许使用“member val”定义也不允许使用“override val”定义。</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleAbbreviationHiddenBySignature" xml:space="preserve">
+    <value>异常定义不兼容，因为签名将隐藏异常缩写词。缩写词必须对其他 CLI 语言可见。请考虑使缩写词在签名中可见。该模块包含异常定义\n    {0}    \n而其签名指定\n\t{1}。</value>
+  </data>
+  <data name="keywordDescriptionFinally" xml:space="preserve">
+    <value>与 try 配合使用，以引入无论是否发生异常都将执行的代码块。</value>
+  </data>
+  <data name="ilCustomMarshallersCannotBeUsedInFSharp" xml:space="preserve">
+    <value>无法使用 F# 代码指定自定义封送处理程序。请考虑使用 C# Helper 函数。</value>
+  </data>
+  <data name="typrelOverloadNotFound" xml:space="preserve">
+    <value>“{0}”的任何实现都不具有正确数目的参数和类型参数。所需签名为“{1}”。</value>
+  </data>
+  <data name="tcMethodOverridesIllegalHere" xml:space="preserve">
+    <value>此处不允许使用方法重写和接口实现</value>
+  </data>
+  <data name="ilFieldOffsetAttributeCouldNotBeDecoded" xml:space="preserve">
+    <value>未能对 FieldOffset 特性进行解码</value>
+  </data>
+  <data name="buildSignatureWithoutImplementation" xml:space="preserve">
+    <value>签名文件“{0}”没有相应的实现文件。如果存在实现文件，则检查签名文件和实现文件中的“module”和“namespace”声明是否匹配。</value>
+  </data>
+  <data name="tcInvalidIndexOperatorDefinition" xml:space="preserve">
+    <value>无法重定义“{0}”运算符。请考虑使用其他运算符名称</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSigHasAbbreviation" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名具有缩写，而实现没有缩写</value>
+  </data>
+  <data name="undefinedNameTypeParameter" xml:space="preserve">
+    <value>未定义类型参数 {0}。</value>
+  </data>
+  <data name="keywordDescriptionInherit" xml:space="preserve">
+    <value>用于指定基类或基接口。</value>
+  </data>
+  <data name="lexfltTokenIsOffsideOfContextStartedEarlier" xml:space="preserve">
+    <value>缩进可能不正确: 此标记位于从位置 {0} 开始的上下文的右侧。请尝试进一步缩进此标记，或使用标准格式设置约定。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityDisplayNamesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n显示名称不同</value>
+  </data>
+  <data name="tastConstantExpressionOverflow" xml:space="preserve">
+    <value>此文本表达式或特性参数会导致算术溢出。</value>
+  </data>
+  <data name="tcOptionalArgumentsCannotBeUsedInCustomAttribute" xml:space="preserve">
+    <value>自定义特性中不能使用可选参数</value>
+  </data>
+  <data name="optsStaticlink" xml:space="preserve">
+    <value>以静态方式链接给定程序集与依赖于此程序集的所有引用的 DLL。使用程序集名称(例如 mylib)而非 DLL 名称。</value>
+  </data>
+  <data name="parsEofInVerbatimStringInComment" xml:space="preserve">
+    <value>文件尾在此处或之前开始的注释中嵌入的原义字符串中</value>
+  </data>
+  <data name="ValueNotContainedMutabilityLiteralConstantValuesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n文本常数值和/或特性不同</value>
+  </data>
+  <data name="lexThisUnicodeOnlyInStringLiterals" xml:space="preserve">
+    <value>此 Unicode 编码仅在字符串中有效</value>
+  </data>
+  <data name="tcCallerInfoNotOptional" xml:space="preserve">
+    <value>“{0}”只能应用于可选参数</value>
+  </data>
+  <data name="ilAddressOfValueHereIsInvalid" xml:space="preserve">
+    <value>此操作涉及到采用通过本地变量或其他特殊表示形式表示的值“{0}”的地址。这是无效的。</value>
+  </data>
+  <data name="optsNoframework" xml:space="preserve">
+    <value>默认情况下不引用默认 CLI 程序集</value>
+  </data>
+  <data name="buildExpectedFileAlongSideFSharpCore" xml:space="preserve">
+    <value>未能在 FSharp.Core 旁找到文件“{0}”。文件应在 {1} 中。请考虑升级到更新版本的 FSharp.Core，该版本不再需要此文件。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureSaysNull" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名指明此类型可以使用 null 作为表示形式，而实现未指明这一点</value>
+  </data>
+  <data name="parsEofInComment" xml:space="preserve">
+    <value>文件尾在此处或之前开始的注释中</value>
+  </data>
+  <data name="csMemberHasNoArgumentOrReturnProperty" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”没有参数或可设置的返回属性“{1}”。{2}。</value>
+  </data>
+  <data name="etUnsupportedConstantType" xml:space="preserve">
+    <value>不支持的常数类型“{0}”。类型提供程序提供的引文只能包含简单常量。将提供的引文文本外声明的值移动为引文文本内的 "let" 绑定，可对类型提供程序的实现进行调整。</value>
+  </data>
+  <data name="patcPartialActivePatternsGenerateOneResult" xml:space="preserve">
+    <value>部分激活的模式只能生成一个结果</value>
+  </data>
+  <data name="typeIsNotAccessible" xml:space="preserve">
+    <value>无法从此代码位置访问类型“{0}”</value>
+  </data>
+  <data name="tcListLiteralMaxSize" xml:space="preserve">
+    <value>此列表表达式超出列表文本的最大大小。请对大型的文本使用数组并调用 Array.ToList。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationSealed" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现类型已密封，但签名暗示它未密封。请考虑将 [&lt;Sealed&gt;] 特性添加到签名。</value>
+  </data>
+  <data name="tcNamedArgumentDidNotMatch" xml:space="preserve">
+    <value>命名参数“{0}”与任何参数或可变属性均不匹配</value>
+  </data>
+  <data name="tcInvalidConstraintTypeSealed" xml:space="preserve">
+    <value>约束无效: 用于约束的类型已被密封，这表示最多只能有一个解决方案满足约束的条件</value>
+  </data>
+  <data name="lexUnexpectedChar" xml:space="preserve">
+    <value>意外的字符“{0}”</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleHiddenBySignature" xml:space="preserve">
+    <value>异常定义不兼容，因为签名将隐藏 CLI 异常映射。此异常映射必须对其他模块可见。该模块包含异常定义\n    {0}    \n而其签名指定\n\t{1}</value>
+  </data>
+  <data name="parsIgnoreAttributesOnModuleAbbreviation" xml:space="preserve">
+    <value>在模块缩写词中忽略特性</value>
+  </data>
+  <data name="tcExpectedTypeNotUnitOfMeasure" xml:space="preserve">
+    <value>应为类型，而非度量单位</value>
+  </data>
+  <data name="typrelTypeImplementsIComparableDefaultObjectEqualsProvided" xml:space="preserve">
+    <value>类型“{0}”显式实现“System.IComparable”，但未提供相对应的“Object.Equals”的重写。已自动提供“Object.Equals”的实现(通过“System.IComparable”实现)。请考虑显式实现重写“Object.Equals”</value>
+  </data>
+  <data name="buildCouldNotResolveAssemblyRequiredByFile" xml:space="preserve">
+    <value>未能解析“{1}”所需的程序集“{0}”</value>
+  </data>
+  <data name="tastInvalidMutationOfConstant" xml:space="preserve">
+    <value>常数表达式的变化无效。请考虑将该表达式复制一个可变的本地变量，例如“let mutable x = ...”。</value>
+  </data>
+  <data name="optsWarnaserror" xml:space="preserve">
+    <value>将特定警告报告为错误</value>
+  </data>
+  <data name="considerUpcast" xml:space="preserve">
+    <value>从 {0} 到 {1} 的转换是编译时安全的向上转换，而非向下转换。考虑使用 "upcast"，而非 "downcast"。</value>
+  </data>
+  <data name="lexhlpIdentifierReserved" xml:space="preserve">
+    <value>已保留标识符“{0}”以供 F# 将来使用</value>
+  </data>
+  <data name="buildMultiFileRequiresNamespaceOrModule" xml:space="preserve">
+    <value>库或多文件应用程序中的文件必须以命名空间或模块声明开头，例如 “namespace SomeNamespace.SubNamespace”或“module SomeNamespace.SomeModule”。仅应用程序的最后一个源文件可以忽略此类声明。</value>
+  </data>
+  <data name="tcBindingCannotBeUseAndRec" xml:space="preserve">
+    <value>不能将一个绑定同时标记为“use”和“rec”</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileTypeArgs" xml:space="preserve">
+    <value>类型参数中出现意外的输入结尾</value>
+  </data>
+  <data name="ValueNotContainedMutabilityVirtualsDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n一个是虚拟的，另一个不是虚拟的</value>
+  </data>
+  <data name="astDeprecatedIndexerNotation" xml:space="preserve">
+    <value>在 F# 语言中，此索引器表示法已删除</value>
+  </data>
+  <data name="tcTypeUsedInInvalidWay" xml:space="preserve">
+    <value>类型“{0}”的使用方式无效。“{1}”之前的值具有一个与“{2}”相关的推理类型，这是无效的前向引用。</value>
+  </data>
+  <data name="chkDuplicateMethodWithSuffix" xml:space="preserve">
+    <value>重复方法。清除元组、函数、度量单位和/或提供的类型后，方法“{0}”与类型“{1}”中的另一个方法具有相同的名称和签名。</value>
+  </data>
+  <data name="impNotEnoughTypeParamsInScopeWhileImporting" xml:space="preserve">
+    <value>内部错误或元数据格式不正确: 导入时范围内没有足够多的类型参数</value>
+  </data>
+  <data name="ilIncorrectNumberOfTypeArguments" xml:space="preserve">
+    <value>本地调用的类型参数的数目不正确</value>
+  </data>
+  <data name="parsSyntaxModuleSigEndDeprecated" xml:space="preserve">
+    <value>语法“module ... : sig .. end”不可用于 F# 代码。请考虑使用“module ... = begin .. end”</value>
+  </data>
+  <data name="tcExpectedInterfaceType" xml:space="preserve">
+    <value>应为接口类型</value>
+  </data>
+  <data name="tcInvalidMemberNameFixedTypes" xml:space="preserve">
+    <value>名称“({0})”不应用作成员名称，因为在 F# 库中为此名称给定了针对固定类型的标准定义</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileTypeDefinition" xml:space="preserve">
+    <value>类型定义中出现意外的输入结尾</value>
+  </data>
+  <data name="impInvalidMeasureArgument2" xml:space="preserve">
+    <value>值度量单位参数“{0}”无效</value>
+  </data>
+  <data name="impInvalidMeasureArgument1" xml:space="preserve">
+    <value>度量单位参数“{1}”的值“{0}”无效</value>
+  </data>
+  <data name="tastInvalidFormForPropertyGetter" xml:space="preserve">
+    <value>属性 getter 的格式无效。在使用显式语法时，至少需要一个“()”参数。</value>
+  </data>
+  <data name="etOneOrMoreErrorsSeenDuringExtensionTypeSetting" xml:space="preserve">
+    <value>在所提供的类型的设置过程中出现了一个或多个错误</value>
+  </data>
+  <data name="tcConstructorForInterfacesDoNotTakeArguments" xml:space="preserve">
+    <value>接口的构造函数表达式不采用参数</value>
+  </data>
+  <data name="optsInvalidWarningLevel" xml:space="preserve">
+    <value>警告等级“{0}”无效</value>
+  </data>
+  <data name="tcUnionCaseNameConflictsWithGeneratedType" xml:space="preserve">
+    <value>名为“{0}”的联合用例与生成的类型“{1}”冲突</value>
+  </data>
+  <data name="tcNoAbstractOrVirtualMemberFound" xml:space="preserve">
+    <value>成员“{0}”与可用于替代或实现的任何抽象或虚拟方法均不对应。</value>
+  </data>
+  <data name="tcInvalidRecordConstruction" xml:space="preserve">
+    <value>记录构造无效</value>
+  </data>
+  <data name="ModuleContainsConstructorButTypesOfFieldsDiffer" xml:space="preserve">
+    <value>该模块包含构造函数\n    {0}    \n而其签名指定\n    {1}    \n字段的类型不同</value>
+  </data>
+  <data name="ilLabelNotFound" xml:space="preserve">
+    <value>未找到标签 {0}</value>
+  </data>
+  <data name="activePatternChoiceHasFreeTypars" xml:space="preserve">
+    <value>活动模式“{0}”的结果类型中包含的类型变量不是由输入确定的。常见原因是未指出结果事例，例如“let (|A|B|) (x:int) = A x”。这可以通过使用类型约束来修复，例如“let (|A|B|) (x:int) : Choice&lt;int,unit&gt; = A x”</value>
+  </data>
+  <data name="csMemberSignatureMismatchArityNamed" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”需要 {1} 个参数，而此处给定了 {2} 个未命名参数和 {3} 个已命名参数。所需签名为“{4}”。</value>
+  </data>
+  <data name="tastTypeOrModuleNotConcrete" xml:space="preserve">
+    <value>类型/模块“{0}”不是具体的模块或类型</value>
+  </data>
+  <data name="optsHelpBannerOutputFiles" xml:space="preserve">
+    <value>- 输出文件 -</value>
+  </data>
+  <data name="csSeeAvailableOverloads" xml:space="preserve">
+    <value>下面(或“错误列表”窗口中)显示了可用重载。</value>
+  </data>
+  <data name="tcCustomOperationHasIncorrectArgCount" xml:space="preserve">
+    <value>“{0}”使用了数量错误的参数。这是此查询或计算表达式中的自定义运算。应为 {1} 个参数，但提供了 {2} 个。</value>
+  </data>
+  <data name="csMethodIsNotAnInstanceMethod" xml:space="preserve">
+    <value>{0} 不是实例方法</value>
+  </data>
+  <data name="tcObjectExpressionFormDeprecated" xml:space="preserve">
+    <value>此对象表达式格式不可用于 F#。请使用“member this.MemberName ... = ...”来定义对象表达式中的成员实现。</value>
+  </data>
+  <data name="tcUnexpectedExprAtRecInfPoint" xml:space="preserve">
+    <value>递归推理点中的意外的表达式</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAbstractMemberMissingInImpl" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名需要抽象成员“{2}”，而实现未指定该成员</value>
+  </data>
+  <data name="tcDoesNotAllowExplicitTypeArguments" xml:space="preserve">
+    <value>不应为方法或函数“{0}”给定显式类型参数，因为它不显式声明其类型参数</value>
+  </data>
+  <data name="tastTypeHasAssemblyCodeRepresentation" xml:space="preserve">
+    <value>类型“{0}”具有内联程序集代码表示形式</value>
+  </data>
+  <data name="tastRecursiveValuesMayNotBeAssignedToNonMutableField" xml:space="preserve">
+    <value>递归值不能直接赋给递归绑定内的类型“{1}”的不可变字段“{0}”。请考虑改用可变字段。</value>
+  </data>
+  <data name="optsMlcompatibility" xml:space="preserve">
+    <value>忽略 ML 兼容性警告</value>
+  </data>
+  <data name="memberOperatorDefinitionWithNoArguments" xml:space="preserve">
+    <value>中缀运算符成员“{0}”没有参数。需要一个由 2 个参数构成的元组，例如静态成员 (+) (x,y) = ...</value>
+  </data>
+  <data name="tcConcreteMembersIllegalInInterface" xml:space="preserve">
+    <value>接口不能包含具体成员的定义。您可能需要定义类型的构造函数来指示该类型是类。</value>
+  </data>
+  <data name="parsMissingQualificationAfterDot" xml:space="preserve">
+    <value>“.”后缺少限定</value>
+  </data>
+  <data name="nrTypeInstantiationIsMissingAndCouldNotBeInferred" xml:space="preserve">
+    <value>缺少泛型类型“{0}”的实例化，并且不能从该成员的参数或返回类型推理此实例化。请考虑在访问此类型时提供一个类型实例化，例如“{1}”。</value>
+  </data>
+  <data name="parsActivePatternCaseMustBeginWithUpperCase" xml:space="preserve">
+    <value>活动模式用例标识符必须以大写字母开头</value>
+  </data>
+  <data name="forHIsUnnecessary" xml:space="preserve">
+    <value>此格式说明符中不需要 "h" 或 "H"。可以改用 %d、%x、%o 或 %u，这些项将被重载以用于所有基本整数类型。</value>
+  </data>
+  <data name="tcExpressionFormRequiresObjectConstructor" xml:space="preserve">
+    <value>表达式格式“expr then expr”只能用作显式对象构造函数的一部分</value>
+  </data>
+  <data name="chkLimitationsOfBaseKeyword" xml:space="preserve">
+    <value>“base”值只能用于直接调用重写成员的基实现</value>
+  </data>
+  <data name="tastNotAConstantExpression" xml:space="preserve">
+    <value>这不是有效的常数表达式或自定义特性值</value>
+  </data>
+  <data name="tcInvalidMixtureOfRecursiveForms" xml:space="preserve">
+    <value>此递归绑定使用的递归格式组合无效</value>
+  </data>
+  <data name="tcImplementsGenericIComparableExplicitly" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”显式实现接口“System.IComparable&lt;_&gt;”。您必须将“CustomComparison”特性应用于相应的类型，并且应提供对非泛型接口 System.IComparable 的一致性实现。</value>
+  </data>
+  <data name="tcInvalidAssignment" xml:space="preserve">
+    <value>赋值无效</value>
+  </data>
+  <data name="parsEofInString" xml:space="preserve">
+    <value>文件尾在此处或之前开始的字符串中</value>
+  </data>
+  <data name="chkFirstClassFuncNoByref" xml:space="preserve">
+    <value>第一类函数的类型不能包含 byref</value>
+  </data>
+  <data name="csTypeDoesNotSupportEquality2" xml:space="preserve">
+    <value>类型“{0}”不支持“equality”约束，因为它是函数类型</value>
+  </data>
+  <data name="csTypeDoesNotSupportEquality3" xml:space="preserve">
+    <value>类型“{0}”不支持“equality”约束，因为它是一个记录、联合或结构，其中的一个或多个结构化元素类型不支持“equality”约束。请避免对此类型使用相等运算，或将“StructuralEquality”特性添加到此类型以确定哪些字段类型不支持相等运算</value>
+  </data>
+  <data name="csTypeDoesNotSupportEquality1" xml:space="preserve">
+    <value>类型“{0}”不支持“equality”约束，因为它具有“NoEquality”特性</value>
+  </data>
+  <data name="parsUnmatchedUseBang" xml:space="preserve">
+    <value>值定义不完整。如果该定义处于表达式中，则表达式体必须与“use!”关键字缩进到相同的列。</value>
+  </data>
+  <data name="parsNonAtomicType" xml:space="preserve">
+    <value>此处不允许使用类型语法“int C”和“C  &lt;int&gt;”。请考虑将此类型调整为以格式“C&lt;int&gt;”编写</value>
+  </data>
+  <data name="forPrefixFlagSpacePlusSetTwice" xml:space="preserve">
+    <value>前缀标志(“ ”或“+”)设置了两次</value>
+  </data>
+  <data name="assemblyResolutionFoundByAssemblyFoldersKey" xml:space="preserve">
+    <value>已由 AssemblyFolders 注册表项找到</value>
+  </data>
+  <data name="tcConstructRequiresSequenceOrComputations" xml:space="preserve">
+    <value>只能在序列或计算表达式中使用此构造</value>
+  </data>
+  <data name="astParseEmbeddedILTypeError" xml:space="preserve">
+    <value>分析嵌入的 IL 类型时出错</value>
+  </data>
+  <data name="tcIllegalAttributesForLiteral" xml:space="preserve">
+    <value>不能为文本值给定 [&lt;ThreadStatic&gt;] 或 [&lt;ContextStatic&gt;] 特性</value>
+  </data>
+  <data name="etInvalidTypeProviderAssemblyName" xml:space="preserve">
+    <value>程序集“{0}”的 TypeProviderAssembly 特性具有无效值“{1}”。该值应为有效的程序集名称</value>
+  </data>
+  <data name="tcFunctionRequiresExplicitLambda" xml:space="preserve">
+    <value>此函数值将用于构造其签名包含 byref 参数的委托类型。您必须使用一个采用 {0} 个参数的显式 lambda 表达式。</value>
+  </data>
+  <data name="tcAbbreviationsFordotNetExceptionsCannotTakeArguments" xml:space="preserve">
+    <value>通用 IL 异常的缩写词不能采用参数</value>
+  </data>
+  <data name="tcEnumTypeCannotBeEnumerated" xml:space="preserve">
+    <value>类型“{0}”不是有效枚举器类型，即，没有返回布尔值的“MoveNext()”方法和“Current”属性</value>
+  </data>
+  <data name="parsEofInDirective" xml:space="preserve">
+    <value>文件尾在此处或之前开始的指令中</value>
+  </data>
+  <data name="forFormatDoesntSupportPrecision" xml:space="preserve">
+    <value>“{0}”格式不支持精度</value>
+  </data>
+  <data name="tcConstructorRequiresCall" xml:space="preserve">
+    <value>类型“{0}”的构造函数必须直接或间接调用其隐式对象构造函数。请使用对隐式对象构造函数的调用，而不是记录表达式。</value>
+  </data>
+  <data name="tcCustomOperationNotUsedCorrectly" xml:space="preserve">
+    <value>“{0}”使用有误。这是此查询或计算表达式中的自定义运算。</value>
+  </data>
+  <data name="parsUnmatchedLBrackLess" xml:space="preserve">
+    <value>不匹配的“[&lt;”。应为结束“&gt;]”</value>
+  </data>
+  <data name="tcFixedNotAllowed" xml:space="preserve">
+    <value>无效的 "fixed" 使用。"fixed" 只能用在 "use x = fixed expr" 形式的声明中，其中表达式为数组、字段的地址、数组元素或字符串的地址</value>
+  </data>
+  <data name="etIllegalCharactersInTypeName" xml:space="preserve">
+    <value>所提供的类型名称“{1}”中不允许出现字符“{0}”</value>
+  </data>
+  <data name="etStaticParameterRequiresAValue" xml:space="preserve">
+    <value>提供的类型或方法“{1}”的静态参数“{0}”需要一个值。类型提供程序的静态参数可以选择使用命名参数指定，例如“{2}&lt;{3}=...&gt;”。</value>
+  </data>
+  <data name="tcUnexpectedMeasureAnon" xml:space="preserve">
+    <value>意外的 SynMeasure.Anon</value>
+  </data>
+  <data name="parsAssertIsNotFirstClassValue" xml:space="preserve">
+    <value>“assert”不可用作一类值。请改用“assert &lt;表达式&gt;”。</value>
+  </data>
+  <data name="tcCannotInheritFromVariableType" xml:space="preserve">
+    <value>无法从变量类型继承</value>
+  </data>
+  <data name="unionCasesAreNotAccessible" xml:space="preserve">
+    <value>无法从此代码位置访问类型“{0}”的联合用例或字段</value>
+  </data>
+  <data name="tcMutableValuesSyntax" xml:space="preserve">
+    <value>应按照“let mutable f = (fun args -&gt; ...)”格式编写可变函数值</value>
+  </data>
+  <data name="parsOnlyClassCanTakeValueArguments" xml:space="preserve">
+    <value>只有类类型可以采用值参数</value>
+  </data>
+  <data name="buildInvalidWarningNumber" xml:space="preserve">
+    <value>警告编号“{0}”无效</value>
+  </data>
+  <data name="csTypeHasNonStandardDelegateType" xml:space="preserve">
+    <value>类型“{0}”具有非标准委托类型</value>
+  </data>
+  <data name="tcArgumentArityMismatch" xml:space="preserve">
+    <value>成员“{0}”未接受正确的参数数目。应为 {1} 个参数，但给出了 {2} 个参数。必需的签名为“{3}”。{4}</value>
+  </data>
+  <data name="typeInfoPatternVariable" xml:space="preserve">
+    <value>patvar</value>
+  </data>
+  <data name="ValueNotContainedMutabilityFinalsDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n一个是最终的，另一个不是最终的</value>
+  </data>
+  <data name="delegatesNotAllowedToHaveCurriedSignatures" xml:space="preserve">
+    <value>委托不得有扩充签名</value>
+  </data>
+  <data name="optsPlatform" xml:space="preserve">
+    <value>限制可以运行此代码的平台: x86、Itanium、x64、anycpu32bitpreferred 或 anycpu。默认值为 anycpu。</value>
+  </data>
+  <data name="tcExpectedUnitOfMeasureNotType" xml:space="preserve">
+    <value>应为度量单位，而非类型</value>
+  </data>
+  <data name="optsWin32res" xml:space="preserve">
+    <value>指定 Win32 资源文件(.res)</value>
+  </data>
+  <data name="tcLocalClassBindingsCannotBeInline" xml:space="preserve">
+    <value>不能将本地类绑定标记为“inline”。请考虑将定义放到类的外部，否则不要将该类标记为“inline”。</value>
+  </data>
+  <data name="descriptionUnavailable" xml:space="preserve">
+    <value>(说明不可用...)</value>
+  </data>
+  <data name="undefinedNameTypeIn" xml:space="preserve">
+    <value>类型“{0}”未在“{1}”中定义。</value>
+  </data>
+  <data name="parsIdentifierExpected" xml:space="preserve">
+    <value>应输入标识符</value>
+  </data>
+  <data name="ppparsUnexpectedToken" xml:space="preserve">
+    <value>预处理器表达式中意外的标记“{0}”</value>
+  </data>
+  <data name="forPrecisionMissingAfterDot" xml:space="preserve">
+    <value>“.”后缺少精度</value>
+  </data>
+  <data name="crefNoSetOfHole" xml:space="preserve">
+    <value>引号可能不涉及对捕获的本地变量赋值或获取其地址</value>
+  </data>
+  <data name="optsInternalNoDescription" xml:space="preserve">
+    <value>命令行选项“{0}”仅用于测试目的</value>
+  </data>
+  <data name="yieldUsedInsteadOfYieldBang" xml:space="preserve">
+    <value>考虑使用 "yield!"，而非 "yield"。</value>
+  </data>
+  <data name="tcInheritedTypeIsNotObjectModelType" xml:space="preserve">
+    <value>继承的类型不是对象模型类型</value>
+  </data>
+  <data name="ilMainModuleEmpty" xml:space="preserve">
+    <value>程序的主模块为空: 运行此程序时将不会有任何反应</value>
+  </data>
+  <data name="fscAssemblyWildcardAndDeterminism" xml:space="preserve">
+    <value>An {0} specified version '{1}', but this value is a wildcard, and you have requested a deterministic build, these are in conflict.</value>
+  </data>
+  <data name="fscResxSourceFileDeprecated" xml:space="preserve">
+    <value>不推荐将 .resx 文件({0})作为源文件传递给编译器。请使用 resgen.exe 将 .resx 文件转换为 .resources 文件以作为 --resource 选项进行传递。如果您使用的是 MSBuild，则可以通过 .fsproj 项目文件中的 &lt;EmbeddedResource&gt; 项完成此操作。</value>
+  </data>
+  <data name="tcModuleAbbreviationForNamespace" xml:space="preserve">
+    <value>路径“{0}”是一个命名空间。模块缩写词可能不会缩写命名空间。</value>
+  </data>
+  <data name="tcValueInSignatureRequiresLiteralAttribute" xml:space="preserve">
+    <value>仅在声明具有 [&lt;Literal&gt;] 特性时可以在签名中为声明给定值</value>
+  </data>
+  <data name="etProvidedTypeWithNameException" xml:space="preserve">
+    <value>访问所提供类型的“{0}”时发生异常: {1}</value>
+  </data>
+  <data name="keywordDescriptionInternal" xml:space="preserve">
+    <value>用于指定某成员在程序集内可见，但在程序集外不可见。</value>
+  </data>
+  <data name="parsNoHashEndIfFound" xml:space="preserve">
+    <value>未找到与 #if 或 #else 对应的 #endif</value>
+  </data>
+  <data name="tastInvalidMemberSignature" xml:space="preserve">
+    <value>遇到无效的成员签名，因为前面出现了错误</value>
+  </data>
+  <data name="tcFieldNameConflictsWithGeneratedNameForAnonymousField" xml:space="preserve">
+    <value>命名字段“{0}”与匿名字段的自动生成名称发生冲突。</value>
+  </data>
+  <data name="buildInvalidHashtimeDirective" xml:space="preserve">
+    <value>指令无效。应为“#time”、“#time \"on\"”或“#time \"off\"”。</value>
+  </data>
+  <data name="parsEnumTypesCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>对于枚举类型，此位置不允许使用可访问性修饰符</value>
+  </data>
+  <data name="parsAttributesIllegalHere" xml:space="preserve">
+    <value>此处不允许使用特性</value>
+  </data>
+  <data name="optsHelpBannerLanguage" xml:space="preserve">
+    <value>- 语言 -</value>
+  </data>
+  <data name="optsUnrecognizedDebugType" xml:space="preserve">
+    <value>无法识别的调试类型“{0}”，应为“pdbonly”或“full”</value>
+  </data>
+  <data name="tcIntoNeedsRestOfQuery" xml:space="preserve">
+    <value>“into”的使用必须后跟计算的剩余部分</value>
+  </data>
+  <data name="chkNoFirstClassRethrow" xml:space="preserve">
+    <value>不允许优先使用“reraise”函数</value>
+  </data>
+  <data name="parsMissingGreaterThan" xml:space="preserve">
+    <value>不匹配的“&lt;”。应为结束“&gt;”</value>
+  </data>
+  <data name="tastUndefinedItemRefVal" xml:space="preserve">
+    <value>编译单元“{1}”中的模块/命名空间“{0}”未包含值“{2}”</value>
+  </data>
+  <data name="tcFunctionRequiresExplicitTypeArguments" xml:space="preserve">
+    <value>必须为泛型函数“{0}”给定显式类型参数</value>
+  </data>
+  <data name="etPropertyCanReadButHasNoGetter" xml:space="preserve">
+    <value>所提供的类型“{1}”的属性“{0}”的 CanRead 为 true，但是没有来自 GetGetMethod() 的值</value>
+  </data>
+  <data name="chkReturnTypeNoByref" xml:space="preserve">
+    <value>方法返回类型将包含不允许使用的 byref</value>
+  </data>
+  <data name="tcEventIsStatic" xml:space="preserve">
+    <value>事件“{0}”是静态的</value>
+  </data>
+  <data name="lexTokenReserved" xml:space="preserve">
+    <value>已保留此标记供将来使用</value>
+  </data>
+  <data name="tcOpenFirstInMutRec" xml:space="preserve">
+    <value>在递归声明组中，"open" 声明必须位于每个模块的首位</value>
+  </data>
+  <data name="etNullOrEmptyMemberName" xml:space="preserve">
+    <value>所提供的类型“{0}”返回了具有 null 或空成员名称的成员</value>
+  </data>
+  <data name="forBadFormatSpecifier" xml:space="preserve">
+    <value>错误的格式说明符(位于 l 或 L 之后): 应为 ld、li、lo、lu、lx 或 lX。在 F# 代码中，可以改用 %d、%x、%o 或 %u，这些项将被重载以用于所有基本整数类型。</value>
+  </data>
+  <data name="infosInvalidProvidedLiteralValue" xml:space="preserve">
+    <value>所提供文本值“{0}”无效</value>
+  </data>
+  <data name="tcInterfaceTypesCannotBeSealed" xml:space="preserve">
+    <value>无法密封接口类型</value>
+  </data>
+  <data name="checkLowercaseLiteralBindingInPattern" xml:space="preserve">
+    <value>小写文字“{0}”被具有相同名称的新模式隐藏。只有大写文字和模块作为前缀的文字可以用作命名模式。</value>
+  </data>
+  <data name="ilUndefinedValue" xml:space="preserve">
+    <value>未定义的值“{0}”</value>
+  </data>
+  <data name="tcConstructRequiresListArrayOrSequence" xml:space="preserve">
+    <value>只能在列表、数组和序列表达式中使用此构造函数，例如格式为“seq {{ ... }}”、“[ ... ]”或“[| ... |]”的表达式。它们将使用语法“for ... in ... do ... yield...”来生成元素</value>
+  </data>
+  <data name="tcCustomAttributeMustBeReferenceType" xml:space="preserve">
+    <value>自定义特性必须是引用类型</value>
+  </data>
+  <data name="tcStaticFieldUsedWhenInstanceFieldExpected" xml:space="preserve">
+    <value>在需要实例字段的位置使用了静态字段</value>
+  </data>
+  <data name="parsUnmatchedParen" xml:space="preserve">
+    <value>不匹配的“(”</value>
+  </data>
+  <data name="csMethodIsOverloaded" xml:space="preserve">
+    <value>未能根据此程序点之前的类型信息确定方法“{0}”的唯一重载。可能需要类型批注。</value>
+  </data>
+  <data name="csMemberIsNotAccessible" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”不是 {1}</value>
+  </data>
+  <data name="optsDebugPM" xml:space="preserve">
+    <value>发出调试信息(缩写: -g)</value>
+  </data>
+  <data name="fscKeyFileWarning" xml:space="preserve">
+    <value>选项“--keyfile”将重写源文件或添加的模块中给定的“System.Reflection.AssemblyKeyFileAttribute”特性</value>
+  </data>
+  <data name="optsResponseFile" xml:space="preserve">
+    <value>读取响应文件以获取更多选项</value>
+  </data>
+  <data name="parsUnmatchedBrace" xml:space="preserve">
+    <value>不匹配的“{{”</value>
+  </data>
+  <data name="parsUnmatchedBegin" xml:space="preserve">
+    <value>不匹配的“begin”</value>
+  </data>
+  <data name="tcNonSimpleLetBindingInQuery" xml:space="preserve">
+    <value>此“let”定义不能在查询中使用。查询中只能使用简单值定义。</value>
+  </data>
+  <data name="chkProtectedOrBaseCalled" xml:space="preserve">
+    <value>调用了受保护的成员或正在使用“base”。只能在对成员的直接实现中这样做，因为它们可能会超出其对象范围。</value>
+  </data>
+  <data name="parsNonAdjacentTyargs" xml:space="preserve">
+    <value>必须将类型参数直接放置到类型名称的旁边，例如 \"C&lt;'T&gt;\"，而非 \"C  &lt;'T&gt;\"</value>
+  </data>
+  <data name="parsNonAdjacentTypars" xml:space="preserve">
+    <value>必须将类型参数直接放置到类型名称的旁边，例如 \"type C&lt;'T&gt;\"，而非 type \"C   &lt;'T&gt;\"</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInPrintf" xml:space="preserve">
+    <value>未能解析使用“printf”样式的格式字符串所产生的固有多义性</value>
+  </data>
+  <data name="parsErrorInReturnForLetIncorrectIndentation" xml:space="preserve">
+    <value>此“let”的返回表达式出错。缩进可能不正确。</value>
+  </data>
+  <data name="typrelCannotResolveImplicitGenericInstantiation" xml:space="preserve">
+    <value>未能解析在此点或其附近进行的泛型构造的隐式实例化，因为它可以解析为多个不相关的类型，例如“{0}”和“{1}”。请考虑使用类型批注来解析此多义性</value>
+  </data>
+  <data name="tcOptionalArgsMustComeAfterNonOptionalArgs" xml:space="preserve">
+    <value>可选参数必须位于参数列表结尾的任何非可选参数的后面</value>
+  </data>
+  <data name="parsErrorParsingAsOperatorName" xml:space="preserve">
+    <value>尝试将此分析为运算符名称，但未成功</value>
+  </data>
+  <data name="optsReference" xml:space="preserve">
+    <value>引用一个程序集(缩写: -r)</value>
+  </data>
+  <data name="assemblyResolutionFoundByAssemblyFoldersExKey" xml:space="preserve">
+    <value>已由 AssemblyFoldersEx 注册表项找到</value>
+  </data>
+  <data name="parsGetOrSetRequired" xml:space="preserve">
+    <value>需要“get”、“set”或“get,set”</value>
+  </data>
+  <data name="buildArgInvalidFloat" xml:space="preserve">
+    <value>“{0}”不是有效的浮点型参数</value>
+  </data>
+  <data name="optsDCLODeprecatedSuggestAlternative" xml:space="preserve">
+    <value>命令行选项“{0}”已弃用。请改用“{1}”。</value>
+  </data>
+  <data name="augCustomEqNeedsObjEquals" xml:space="preserve">
+    <value>具有特性“CustomEquality”的类型必须至少显式实现“Object.Equals(obj)”、“System.IEquatable&lt;_&gt;”或“System.Collections.IStructuralEquatable”中的一个</value>
+  </data>
+  <data name="tcUnexpectedSymbolInTypeExpression" xml:space="preserve">
+    <value>类型表达式中的意外的 {0}</value>
+  </data>
+  <data name="tcUnrecognizedAttributeTarget" xml:space="preserve">
+    <value>无法识别的特性目标。有效的特性目标为“assembly”、“module”、“type”、“method”、“property”、“return”、“param”、“field”、“event”、“constructor”。</value>
+  </data>
+  <data name="parsMissingFunctionBody" xml:space="preserve">
+    <value>缺少函数体</value>
+  </data>
+  <data name="parsUnexpectedVisibilityDeclaration" xml:space="preserve">
+    <value>此处不允许使用可访问性修饰符，但却给出了“{0}”。</value>
+  </data>
+  <data name="tcTypesCannotContainNestedTypes" xml:space="preserve">
+    <value>类型不能包含嵌套的类型定义</value>
+  </data>
+  <data name="optsConsoleColors" xml:space="preserve">
+    <value>以彩色输出警告和错误消息</value>
+  </data>
+  <data name="tcInvalidUseOfTypeName" xml:space="preserve">
+    <value>类型名称的使用无效</value>
+  </data>
+  <data name="tastValueDoesNotHaveSetterType" xml:space="preserve">
+    <value>此值不具有有效的属性 setter 类型</value>
+  </data>
+  <data name="buildInvalidSearchDirectory" xml:space="preserve">
+    <value>搜索目录“{0}”无效</value>
+  </data>
+  <data name="optsLinkresource" xml:space="preserve">
+    <value>将指定的资源链接到此程序集，其中 resinfo 格式为“&lt;文件&gt;[,&lt;字符串名称&gt;[,public|private]]”</value>
+  </data>
+  <data name="parsIllegalDenominatorForMeasureExponent" xml:space="preserve">
+    <value>度量单位指数中的分母不得为 0</value>
+  </data>
+  <data name="tcInheritCannotBeUsedOnInterfaceType" xml:space="preserve">
+    <value>“inherit”不能用于接口类型。请考虑改用“interface ... with ... end”实现接口。</value>
+  </data>
+  <data name="parsUnexpectedIntegerLiteralForUnitOfMeasure" xml:space="preserve">
+    <value>度量单位表达式中意外的整数文本</value>
+  </data>
+  <data name="tcNamedTypeRequired" xml:space="preserve">
+    <value>“{0}”只能用于命名类型</value>
+  </data>
+  <data name="csMemberSignatureMismatchArity" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”需要 {1} 个参数，而此处给定了 {2} 个参数。所需签名为“{3}”。</value>
+  </data>
+  <data name="chkUnionCaseDefaultAugmentation" xml:space="preserve">
+    <value>联合用例的默认扩大</value>
+  </data>
+  <data name="notAFunction" xml:space="preserve">
+    <value>此值不是一个函数，无法应用。</value>
+  </data>
+  <data name="forMissingFormatSpecifier" xml:space="preserve">
+    <value>缺少格式说明符</value>
+  </data>
+  <data name="parsIndexerPropertyRequiresAtLeastOneArgument" xml:space="preserve">
+    <value>必须为索引器属性给定至少一个参数</value>
+  </data>
+  <data name="optsUnrecognizedTarget" xml:space="preserve">
+    <value>无法识别的目标“{0}”，应为“exe”、“winexe”、“library”或“module”</value>
+  </data>
+  <data name="parsWhileDoExpected" xml:space="preserve">
+    <value>“while”表达式中缺少“do”。应为“while &lt;表达式&gt; do &lt;表达式&gt;”。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileFunBody" xml:space="preserve">
+    <value>lambda 表达式体中出现意外的输入结尾。应为“fun &lt;分区&gt; ... &lt;分区&gt; -&gt; &lt;表达式&gt;”。</value>
+  </data>
+  <data name="docfileNoXmlSuffix" xml:space="preserve">
+    <value>该文档文件不带 .xml 后缀</value>
+  </data>
+  <data name="parsArrowUseIsLimited" xml:space="preserve">
+    <value>在序列和计算表达式中，“-&gt;”只能用于“for pat in expr -&gt; expr”格式。使用语法“for ... in ... do ... yield...”可在更复杂的序列表达式中生成元素。</value>
+  </data>
+  <data name="parsGetterMustHaveAtLeastOneArgument" xml:space="preserve">
+    <value>getter 属性应为一个函数，例如“get() = ...”或“get(index) = ...”</value>
+  </data>
+  <data name="parsMismatchedQuote" xml:space="preserve">
+    <value>不匹配的引用(以“{0}”开头)</value>
+  </data>
+  <data name="lexOutsideSixtyFourBitUnsigned" xml:space="preserve">
+    <value>此数字在允许的 64 位无符号整数范围之外</value>
+  </data>
+  <data name="itemNotFoundInTypeDuringDynamicCodeGen" xml:space="preserve">
+    <value>{0} 从程序集“{3}”的类型“{2}”中找不到“{1}”。可能的原因或许是版本不兼容。可能需要显式引用此程序集的正确版本，以便所有引用的组件都能使用正确的版本。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityGenericParametersAreDifferentKinds" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n签名和实现中的泛型参数的种类不同。可能缺少 [&lt;Measure&gt;] 特性。</value>
+  </data>
+  <data name="ilTypeCannotBeUsedForLiteralField" xml:space="preserve">
+    <value>此类型不能用于文本字段</value>
+  </data>
+  <data name="optsTailcalls" xml:space="preserve">
+    <value>启用或禁用尾调用</value>
+  </data>
+  <data name="tcEmptyCopyAndUpdateRecordInvalid" xml:space="preserve">
+    <value>复制和更新记录表达式必须包含至少一个字段。</value>
+  </data>
+  <data name="parsEofInStringInComment" xml:space="preserve">
+    <value>文件尾在此外或之前开始的注释中嵌入的字符串中</value>
+  </data>
+  <data name="tcMissingCustomOperation" xml:space="preserve">
+    <value>需要“{0}”的自定义查询运算，但未指定该运算</value>
+  </data>
+  <data name="parsInvalidLiteralInType" xml:space="preserve">
+    <value>类型中的文本无效</value>
+  </data>
+  <data name="typrelMemberHasMultiplePossibleDispatchSlots" xml:space="preserve">
+    <value>成员“{0}”与同一方法的多个重载匹配。\n请将其限制为下面其中一项: {1}。</value>
+  </data>
+  <data name="tcStructUnionMultiCaseDistinctFields" xml:space="preserve">
+    <value>如果联合类型有多个用例且为结构，则必须赋予此联合类型中的所有字段唯一的名称。</value>
+  </data>
+  <data name="etPropertyNeedsCanWriteOrCanRead" xml:space="preserve">
+    <value>所提供的类型“{1}”的属性“{0}”即不可读也不可写，因为该属性的 CanRead 为 false，且 CanWrite 也为 false</value>
+  </data>
+  <data name="typeInfoGeneratedProperty" xml:space="preserve">
+    <value>生成的属性</value>
+  </data>
+  <data name="tcStaticValFieldsMustBeMutableAndPrivate" xml:space="preserve">
+    <value>类型中的静态“val”字段必须是可变的和私有的，并标记了“[&lt;DefaultValue&gt;]”特性。这些字段将被初始化为各自的类型的“null”或“零”值。请考虑在类类型中也使用“static let mutable”绑定。</value>
+  </data>
+  <data name="csMethodExpectsParams" xml:space="preserve">
+    <value>此方法需要在此位置提供有 CLI“params”参数。“params”是一种用于在 C# 等语言中向某个方法传递数量可变的参数的方式。请考虑为此参数传递一个数组</value>
+  </data>
+  <data name="tcUninitializedValFieldsMustBeMutable" xml:space="preserve">
+    <value>未初始化的“val”字段必须是可变的，且须标记“[&lt;DefaultValue&gt;]”特性。请考虑使用“let”绑定，而不是“val”字段。</value>
+  </data>
+  <data name="etMustNotBeGeneric" xml:space="preserve">
+    <value>所提供的类型“{0}”的“IsGenericType”为 true，但是不支持泛型类型。</value>
+  </data>
+  <data name="optsCopyright" xml:space="preserve">
+    <value>版权所有(C) Microsoft Corporation。保留所有权利。</value>
+  </data>
+  <data name="crefQuotationsCantSetExceptionFields" xml:space="preserve">
+    <value>引用内容不能包含设置异常值中的字段的表达式</value>
+  </data>
+  <data name="lexByteArrayCannotEncode" xml:space="preserve">
+    <value>此字节数组文本包含不会以单字节形式进行编码的字符</value>
+  </data>
+  <data name="parsAttributesMustComeBeforeVal" xml:space="preserve">
+    <value>特性应置于“val”之前</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplDefinesButSignatureDoesNot" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现定义了 {2}“{3}”，而签名没有定义(或者按不同的顺序进行了定义)</value>
+  </data>
+  <data name="tcAnonymousUnitsOfMeasureCannotBeNested" xml:space="preserve">
+    <value>不能将匿名度量单位嵌入另一个度量单位表达式中</value>
+  </data>
+  <data name="typrelSigImplNotCompatibleConstraintsDiffer" xml:space="preserve">
+    <value>签名和实现不兼容，因为类型参数“{0}”的声明需要 {1} 格式的约束</value>
+  </data>
+  <data name="tcTypeOrModule" xml:space="preserve">
+    <value>类型或模块</value>
+  </data>
+  <data name="etNestedProvidedTypesDoNotTakeStaticArgumentsOrGenericParameters" xml:space="preserve">
+    <value>所提供的嵌套类型未采用静态实参或泛型形参</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileExpression" xml:space="preserve">
+    <value>表达式中出现意外的输入结尾</value>
+  </data>
+  <data name="tcModuleRequiresQualifiedAccess" xml:space="preserve">
+    <value>此声明将打开标记为“RequireQualifiedAccess”的模块“{0}”。请调整您的代码以改用对模块元素的限定引用，例如“List.map”而非“map”。此更改将确保您的代码在库中不断添加新构造的情况下依然可靠。</value>
+  </data>
+  <data name="tcDeclarationElementNotPermittedInAugmentation" xml:space="preserve">
+    <value>扩大中不允许使用此声明元素</value>
+  </data>
+  <data name="csCtorSignatureMismatchArity" xml:space="preserve">
+    <value>对象构造函数“{0}”有 {1} 个参数，但此处只提供 {2} 个。所需的签名为“{3}”。</value>
+  </data>
+  <data name="tcNewMemberHidesAbstractMember" xml:space="preserve">
+    <value>此新成员隐藏了抽象成员“{0}”。重命名此成员或改用“override”。</value>
+  </data>
+  <data name="tcKindOfTypeSpecifiedDoesNotMatchDefinition" xml:space="preserve">
+    <value>类型的特性所指定的类型种类与类型的定义暗示的种类不匹配</value>
+  </data>
+  <data name="fscProblemWritingBinary" xml:space="preserve">
+    <value>写入二进制文件“{0}”时出现问题: {1}</value>
+  </data>
+  <data name="tcInvalidNonPrimitiveLiteralInPatternMatch" xml:space="preserve">
+    <value>非基元数值文本常数不能用于模式匹配，因为可以通过使用 NumericLiteral 模块将这些常数映射到多个不同类型。请考虑将其替换为一个变量，并在 match 子句的结尾使用“when &lt;variable&gt; = &lt;constant&gt;”。</value>
+  </data>
+  <data name="typrelSigImplNotCompatibleCompileTimeRequirementsDiffer" xml:space="preserve">
+    <value>签名和实现不兼容，因为类/签名中的类型参数与成员/实现中的类型参数具有的编译时要求不同</value>
+  </data>
+  <data name="checkRaiseFamilyFunctionArgumentCount" xml:space="preserve">
+    <value>冗余参数在函数“{0}”中被忽略。期望 {1} 但获得 {2} 参数。</value>
+  </data>
+  <data name="tcCustomAttributeMustInvokeConstructor" xml:space="preserve">
+    <value>自定义特性必须调用对象构造函数</value>
+  </data>
+  <data name="tcSyntaxFormUsedOnlyWithRecordLabelsPropertiesAndFields" xml:space="preserve">
+    <value>语法“expr.id”只能用于记录标签、属性和字段</value>
+  </data>
+  <data name="parsExpectedTypeAfterToken" xml:space="preserve">
+    <value>此点之后应是类型</value>
+  </data>
+  <data name="augNoRefEqualsOnStruct" xml:space="preserve">
+    <value>不能对结构使用“ReferenceEquality”特性。请考虑改用“StructuralEquality”特性，或实现对“System.Object.Equals(obj)”的重写。</value>
+  </data>
+  <data name="typrelOverrideImplementsMoreThenOneSlot" xml:space="preserve">
+    <value>重写“{0}”实现多个抽象槽，例如“{1}”和“{2}”</value>
+  </data>
+  <data name="tcArgumentArityMismatchOneOverload" xml:space="preserve">
+    <value>成员“{0}”不支持正确的参数数目。一个重载只支持 {1} 个参数，但给出了 {2} 个参数。必需的签名为“{3}”。{4}</value>
+  </data>
+  <data name="parsModuleDefnMustBeSimpleName" xml:space="preserve">
+    <value>模块名称必须是简单名称，而非路径</value>
+  </data>
+  <data name="parsMutableOnAutoPropertyShouldBeGetSetNotJustSet" xml:space="preserve">
+    <value>若要指示此属性可以进行设置，请使用“member val PropertyName = expr with get,set”。</value>
+  </data>
+  <data name="fsharpCoreNotFoundToBeCopied" xml:space="preserve">
+    <value>在编译器目录中找不到 FSharp.Core.dll</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleTypesHaveDifferentBaseTypes" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为类型具有不同的基类型</value>
+  </data>
+  <data name="csNoOverloadsFound" xml:space="preserve">
+    <value>没有与方法“{0}”匹配的重载。</value>
+  </data>
+  <data name="nrIsNotConstructorOrLiteral" xml:space="preserve">
+    <value>这不是一个构造函数或文本，或未正确使用某个构造函数</value>
+  </data>
+  <data name="tcOnlyTypesRepresentingUnitsOfMeasureCanHaveMeasure" xml:space="preserve">
+    <value>只能为表示度量单位的类型给定“Measure”特性</value>
+  </data>
+  <data name="csExpectedArguments" xml:space="preserve">
+    <value>应为实例成员的参数</value>
+  </data>
+  <data name="tcLessGenericBecauseOfAnnotation" xml:space="preserve">
+    <value>此代码并不像其批注要求的那样通用，因为未能对显式类型变量“{0}”进行一般化。它已被约束为“{1}”。</value>
+  </data>
+  <data name="tcInvalidOperatorDefinitionEquality" xml:space="preserve">
+    <value>通常不应重新定义“{0}”运算符。若要为类型定义相等语义，请在该类型的定义中重写“Object.Equals”成员。</value>
+  </data>
+  <data name="augRefEqCantHaveObjEquals" xml:space="preserve">
+    <value>具有特性“ReferenceEquality”的类型不能显式实现“Object.Equals(obj)”、“System.IEquatable&lt;_&gt;”或“System.Collections.IStructuralEquatable”</value>
+  </data>
+  <data name="tcInvalidUseNullAsTrueValue" xml:space="preserve">
+    <value>“UseNullAsTrueValue”特性标志只能用于具有一个空用例和至少一个非空用例的联合类型</value>
+  </data>
+  <data name="parsUnmatchedBeginOrStruct" xml:space="preserve">
+    <value>不匹配的“begin”或“struct”</value>
+  </data>
+  <data name="keywordDescriptionLeftArrow" xml:space="preserve">
+    <value>将一个值赋予变量。</value>
+  </data>
+  <data name="parsEofInHashIf" xml:space="preserve">
+    <value>文件尾在此处或之后开始的 #if 节中</value>
+  </data>
+  <data name="tcUseWhenPatternGuard" xml:space="preserve">
+    <value>在 F# 中，已删除字符范围匹配。请考虑改用“when”模式保护。</value>
+  </data>
+  <data name="lexHashBangMustBeFirstInFile" xml:space="preserve">
+    <value>#!可能只在文件开头显示为第一行。</value>
+  </data>
+  <data name="tcConstructorsDisallowedInExceptionAugmentation" xml:space="preserve">
+    <value>不能在异常扩大中指定构造函数</value>
+  </data>
+  <data name="etMustNotBeAnArray" xml:space="preserve">
+    <value>所提供的类型“{0}”的“IsArray”为 true，但是不支持数组类型。</value>
+  </data>
+  <data name="chkDuplicatePropertyWithSuffix" xml:space="preserve">
+    <value>重复属性。清除元组、函数、度量单位和/或提供的类型后，属性“{0}”与类型“{1}”中的另一个属性具有相同的名称和签名。</value>
+  </data>
+  <data name="tastUndefinedItemRefModuleNamespace" xml:space="preserve">
+    <value>编译单元“{1}”中的模块/命名空间“{0}”未包含模块/命名空间“{2}”</value>
+  </data>
+  <data name="parsLetAndForNonRecBindings" xml:space="preserve">
+    <value>非递归绑定的声明格式“let ... and ...”不可用于 F# 代码。请考虑使用“let”绑定序列</value>
+  </data>
+  <data name="typrelExplicitImplementationOfGetHashCodeOrEquals" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”具有“Object.GetHashCode”或“Object.Equals”的显式实现。您必须将“CustomEquality”特性应用于该类型</value>
+  </data>
+  <data name="tcInvalidUseOfDelegate" xml:space="preserve">
+    <value>委托构造函数的使用无效。请使用语法“new Type(args)”或直接使用“Type(args)”。</value>
+  </data>
+  <data name="typrelSigImplNotCompatibleConstraintsDifferRemove" xml:space="preserve">
+    <value>签名和实现不兼容，因为类型参数“{0}”具有 {1} 格式的约束，而实现没有此约束。从签名中删除此约束，或将此约束添加到实现。</value>
+  </data>
+  <data name="etHostingAssemblyFoundWithoutHosts" xml:space="preserve">
+    <value>引用的程序集“{0}”具有程序集级别特性“{1}”，但是找不到任何公共类型提供程序类</value>
+  </data>
+  <data name="optsWarnaserrorPM" xml:space="preserve">
+    <value>将所有警告报告为错误</value>
+  </data>
+  <data name="lexTabsNotAllowed" xml:space="preserve">
+    <value>F# 代码中不允许使用制表符，除非使用了 #indent \"off\" 选项</value>
+  </data>
+  <data name="etInvalidStaticArgument" xml:space="preserve">
+    <value>所提供类型的静态参数无效。应是类型为“{0}”的参数。</value>
+  </data>
+  <data name="tcMutableValuesCannotBeInline" xml:space="preserve">
+    <value>不能将可变值标记为“inline”</value>
+  </data>
+  <data name="typrelMoreThenOneOverride" xml:space="preserve">
+    <value>多个重写实现“{0}”</value>
+  </data>
+  <data name="tcAbstractTypeCannotBeInstantiated" xml:space="preserve">
+    <value>无法创建此类型的实例，因为已将此类型标记为抽象的或者没有为所有方法给定实现。请考虑改用对象表达式“{{ new ... with ... }}”。</value>
+  </data>
+  <data name="tcModuleAbbrevFirstInMutRec" xml:space="preserve">
+    <value>在递归声明组中，模块缩写必须处于所有 "open" 声明之后，并且在其他声明之前</value>
+  </data>
+  <data name="keywordDescriptionFunction" xml:space="preserve">
+    <value>用作 fun 关键字的更短替代项以及 lambda 表达式中具有单个参数模式匹配的匹配表达式。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityCompiledNamesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n编译的名称不同</value>
+  </data>
+  <data name="ValueNotContainedMutabilityAccessibilityMore" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n签名中指定的可访问性高于实现中指定的可访问性</value>
+  </data>
+  <data name="tcInvalidObjectConstructionExpression" xml:space="preserve">
+    <value>这不是有效的对象构造表达式。显式对象构造函数必须调用一个替换构造函数，或者初始化对象的所有字段并指定一个对超类构造函数的调用。</value>
+  </data>
+  <data name="optsUnknownPlatform" xml:space="preserve">
+    <value>无法识别的平台“{0}”，有效值为“x86”、“x64”、“Itanium”、“anycpu32bitpreferred”和“anycpu”</value>
+  </data>
+  <data name="tcNewCannotBeUsedOnInterfaceType" xml:space="preserve">
+    <value>“new”不能用于接口类型。请考虑改用对象表达式“{{ new ... with ... }}”。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAbbreviationHiddenBySig" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名将隐藏缩写。缩写必须对其他 CLI 语言可见。请考虑使缩写在签名中可见。</value>
+  </data>
+  <data name="tastInvalidFormForPropertySetter" xml:space="preserve">
+    <value>属性 setter 的格式无效。至少需要一个参数。</value>
+  </data>
+  <data name="tcBindMayNotBeUsedInQueries" xml:space="preserve">
+    <value>“let!”、“use!”和“do!”表达式不能用于查询中</value>
+  </data>
+  <data name="parsEofInVerbatimString" xml:space="preserve">
+    <value>文件尾在此外或之前开始的原义字符串中</value>
+  </data>
+  <data name="tcFieldIsReadonly" xml:space="preserve">
+    <value>此字段是只读的</value>
+  </data>
+  <data name="ilStructLayoutAttributeCouldNotBeDecoded" xml:space="preserve">
+    <value>未能对 StructLayout 特性进行解码</value>
+  </data>
+  <data name="csTypeIsNotDelegateType" xml:space="preserve">
+    <value>类型“{0}”不是 CLI 委托类型</value>
+  </data>
+  <data name="notAFunctionButMaybeIndexer" xml:space="preserve">
+    <value>此值不是一个函数，无法应用。是否曾打算改为通过 expr.[index] 访问索引器?</value>
+  </data>
+  <data name="replaceWithSuggestion" xml:space="preserve">
+    <value>替换为“{0}”</value>
+  </data>
+  <data name="structOrClassFieldIsNotAccessible" xml:space="preserve">
+    <value>无法从此代码位置访问结构或类字段“{0}”</value>
+  </data>
+  <data name="keywordDescriptionYieldBang" xml:space="preserve">
+    <value>在计算表达式中用于将给定计算表达式的结果追加到包含计算表达式的结果集合。</value>
+  </data>
+  <data name="nrInvalidExpression" xml:space="preserve">
+    <value>表达式“{0}”无效</value>
+  </data>
+  <data name="csTypeParameterCannotBeNullable" xml:space="preserve">
+    <value>无法将此类型参数实例化为“Nullable”。此限制是强制实施的，旨在确保在某些 CLI 语言中将“null”与“Nullable”值一起使用时，不会混淆二者的含义。</value>
+  </data>
+  <data name="buildImplementationAlreadyGiven" xml:space="preserve">
+    <value>已提供文件或模块“{0}”的实现</value>
+  </data>
+  <data name="etIncorrectProvidedConstructor" xml:space="preserve">
+    <value>类型提供程序“{0}”提供的构造函数未在声明类型为“{1}”的构造函数中进行报告</value>
+  </data>
+  <data name="tcInterfacesShouldUseInheritNotInterface" xml:space="preserve">
+    <value>由其他接口继承的接口应使用“inherit ...”而非“interface ...”进行声明</value>
+  </data>
+  <data name="chkEntryPointUsage" xml:space="preserve">
+    <value>用 "EntryPointAttribute" 特性标记的函数必须是编译序列中最后一个文件中的最后一个声明。</value>
+  </data>
+  <data name="nrRecordDoesNotContainSuchLabel" xml:space="preserve">
+    <value>记录类型“{0}”不包含标签“{1}”。</value>
+  </data>
+  <data name="parsUnClosedBlockInHashLight" xml:space="preserve">
+    <value>未封闭的块</value>
+  </data>
+  <data name="tcPropertyOrFieldNotFoundInAttribute" xml:space="preserve">
+    <value>未在此自定义特性类型中找到此属性或字段</value>
+  </data>
+  <data name="tastNamespaceAndModuleWithSameNameInAssembly" xml:space="preserve">
+    <value>名称均为“{0}”的一个命名空间和一个模块同时出现在此程序集的两个部分中</value>
+  </data>
+  <data name="optsTargetProfile" xml:space="preserve">
+    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+  </data>
+  <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
+    <value>从 F# 4.1 起，类型缩写词的辅助功能在编译时进行检查。请考虑更改类型缩写词的辅助功能。忽略此警告可能会导致运行时错误。</value>
+  </data>
+  <data name="lexHashEndifMustBeFirst" xml:space="preserve">
+    <value>#endif 指令必须作为一行的第一个非空白字符出现</value>
+  </data>
+  <data name="ilSignInvalidRSAParams" xml:space="preserve">
+    <value>RSAParameters 结构无效 - 应为“{{0}}”</value>
+  </data>
+  <data name="tcNoEqualityNeeded1" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”不支持结构相等比较，因为类型参数 {1} 不符合“equality”约束的要求。请考虑将“NoEquality”特性添加到类型“{2}”以阐明此类型不支持结构相等比较</value>
+  </data>
+  <data name="tcNoEqualityNeeded2" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”不支持结构相等比较，因为类型“{1}”不符合“equality”约束的要求。请考虑将“NoEquality”特性添加到类型“{2}”以阐明此类型不支持结构相等比较</value>
+  </data>
+  <data name="tcAttributeIsNotValidForLanguageElementUseDo" xml:space="preserve">
+    <value>对此语言元素使用此特性无效。如有需要，应将程序集特性附加到 F# 模块中的“do ()”声明。</value>
+  </data>
+  <data name="tcThreadStaticAndContextStaticMustBeStatic" xml:space="preserve">
+    <value>线程静态和上下文静态变量必须是静态的，并且必须为二者给定 [&lt;DefaultValue&gt;] 特性以指示在每个新线程上将变量值初始化为默认值</value>
+  </data>
+  <data name="chkNoAddressOfArrayElementAtThisPoint" xml:space="preserve">
+    <value>此时无法使用某个数组元素的地址</value>
+  </data>
+  <data name="parsUnexpectedTypeParameter" xml:space="preserve">
+    <value>语法错误: 意外的类型参数规范</value>
+  </data>
+  <data name="ilDefaultAugmentationAttributeCouldNotBeDecoded" xml:space="preserve">
+    <value>未能对 DefaultAugmentation 特性进行解码</value>
+  </data>
+  <data name="chkValueWithDefaultValueMustHaveDefaultValue" xml:space="preserve">
+    <value>使用“DefaultValue”特性的字段的类型必须承认默认初始化，也就是说，此类型将“null”用作适当的值，或者此类型是一个结构类型，其中的所有字段均承认默认初始化。可以使用“DefaultValue(false)”禁用此检查</value>
+  </data>
+  <data name="keywordDescriptionOverride" xml:space="preserve">
+    <value>用于实现与基础版本不同的抽象或虚拟方法的版本。</value>
+  </data>
+  <data name="etUnexpectedExceptionFromProvidedTypeMember" xml:space="preserve">
+    <value>在所提供类型“{0}”成员“{1}”中发生意外异常: {2}</value>
+  </data>
+  <data name="chkTyparMultipleClassConstraints" xml:space="preserve">
+    <value>一个类型变量已由多个不同的类类型进行约束。一个类型变量只能有一个类约束。</value>
+  </data>
+  <data name="etMissingStaticArgumentsToMethod" xml:space="preserve">
+    <value>所提供方法需要静态参数</value>
+  </data>
+  <data name="undefinedNameConstructorModuleOrNamespace" xml:space="preserve">
+    <value>未定义构造函数、模块或命名空间“{0}”。</value>
+  </data>
+  <data name="tcTypeIsInaccessible" xml:space="preserve">
+    <value>无法从此代码位置访问此类型</value>
+  </data>
+  <data name="tcAttributesOfTypeSpecifyMultipleKindsForType" xml:space="preserve">
+    <value>此类型的特性指定此类型的多个种类</value>
+  </data>
+  <data name="tastInvalidAddressOfMutableAcrossAssemblyBoundary" xml:space="preserve">
+    <value>此操作用于访问在另一个程序集中定义的可变顶级值的方式不受支持。无法通过该值的地址来访问该值。请考虑将该表达式复制到一个可变本地变量，例如“let mutable x = ...”，另外如果需要，可在完成此操作后赋回该值</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileTry" xml:space="preserve">
+    <value>“try”表达式中出现意外的输入结尾。应为“try &lt;表达式&gt; with &lt;规则&gt;”或“try &lt;表达式&gt; finally &lt;表达式&gt;”。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileFor" xml:space="preserve">
+    <value>“for”表达式中出现意外的输入结尾。应为“for &lt;模式&gt; in &lt;表达式&gt; do &lt;表达式&gt;”。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleRepresentationsDiffer" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为表示形式不同</value>
+  </data>
+  <data name="crefQuotationsCantContainThisPatternMatch" xml:space="preserve">
+    <value>引用内容不能包含这种模式匹配</value>
+  </data>
+  <data name="parsExpectedNameAfterToken" xml:space="preserve">
+    <value>意外的类型结尾。此点之后应是名称。</value>
+  </data>
+  <data name="etProviderError" xml:space="preserve">
+    <value>类型提供程序“{0}”报告了错误: {1}</value>
+  </data>
+  <data name="ilwriteMDBMemberMissing" xml:space="preserve">
+    <value>MDB 生成失败。找不到兼容成员 {0}</value>
+  </data>
+  <data name="tcTypeAbbreviationsCannotHaveInterfaceDeclaration" xml:space="preserve">
+    <value>类型缩写词不能具有接口声明</value>
+  </data>
+  <data name="augStructEqNeedsNoCompOrStructComp" xml:space="preserve">
+    <value>“StructuralEquality”特性必须与“NoComparison”或“StructuralComparison”特性结合使用</value>
+  </data>
+  <data name="chkSplicingOnlyInQuotations" xml:space="preserve">
+    <value>表达式拼接运算符只能在引号内使用</value>
+  </data>
+  <data name="lexHashEndingNoMatchingIf" xml:space="preserve">
+    <value>#endif 没有匹配的 #if</value>
+  </data>
+  <data name="tcAttributeIsNotValidForLanguageElement" xml:space="preserve">
+    <value>对此语言元素使用此特性无效</value>
+  </data>
+  <data name="optsChecked" xml:space="preserve">
+    <value>生成溢出检查</value>
+  </data>
+  <data name="optsCopyrightCommunity" xml:space="preserve">
+    <value>在 Apache 2.0 开源许可证下免费分发</value>
+  </data>
+  <data name="csMemberOverloadArityMismatch" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”不采用 {1} 个参数。发现某个重载采用 {2} 个参数。</value>
+  </data>
+  <data name="etProviderHasWrongDesignerAssembly" xml:space="preserve">
+    <value>程序集特性“{0}”引用的设计器程序集“{1}”无法加载或不存在。{2}</value>
+  </data>
+  <data name="etUnexpectedExceptionFromProvidedMemberMember" xml:space="preserve">
+    <value>在所提供类型“{1}”成员“{2}”的成员“{0}”中发生意外异常: {3}</value>
+  </data>
+  <data name="estApplyStaticArgumentsForMethodNotImplemented" xml:space="preserve">
+    <value>一个类型提供程序实现了 GetStaticParametersForMethod，但是 ApplyStaticArgumentsForMethod 未实现或无效</value>
+  </data>
+  <data name="optsHelpBannerResources" xml:space="preserve">
+    <value>- 资源 -</value>
+  </data>
+  <data name="fscQuotationLiteralsStaticLinking0" xml:space="preserve">
+    <value>此程序集中的代码使用了引用文本。静态链接可能不包含使用引用文本的组件，除非所有程序集都使用至少 F# 4.0 进行编译。</value>
+  </data>
+  <data name="tcBinaryOperatorRequiresBody" xml:space="preserve">
+    <value>“{0}”的前面必须是“for”选择子句，后面必须是查询的剩余部分。语法: ... {1} ...</value>
+  </data>
+  <data name="fscDelaySignWarning" xml:space="preserve">
+    <value>选项“--delaysign”将重写源文件或添加的模块中给定的“System.Reflection.AssemblyDelaySignAttribute”特性</value>
+  </data>
+  <data name="ilAddressOfLiteralFieldIsInvalid" xml:space="preserve">
+    <value>采用文本字段的地址无效</value>
+  </data>
+  <data name="lexOutsideThirtyTwoBitSigned" xml:space="preserve">
+    <value>此数字在允许的 32 位带符号整数范围之外</value>
+  </data>
+  <data name="parsUnmatchedBracketBar" xml:space="preserve">
+    <value>不匹配的“[|”</value>
+  </data>
+  <data name="csMemberIsNotAccessible2" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”不是 {1}。只可以从声明类型中访问私有成员。只可以从扩展类型访问受保护的成员，而不能从内部 lambda 表达式访问这些成员。</value>
+  </data>
+  <data name="methodIsNotStatic" xml:space="preserve">
+    <value>方法或对象构造函数“{0}”不是静态的</value>
+  </data>
+  <data name="fscQuotationLiteralsStaticLinking" xml:space="preserve">
+    <value>程序集“{0}”中的代码使用了引用文本。静态链接可能不包含使用引用文本的组件，除非所有程序集都使用至少 F# 4.0 进行编译。</value>
+  </data>
+  <data name="buildInvalidFilename" xml:space="preserve">
+    <value>“{0}”不是有效的文件名</value>
+  </data>
+  <data name="optsPublicSign" xml:space="preserve">
+    <value>仅使用强名称密钥的公用部分对该程序集进行公开签名, 并将该程序集标记为已签名</value>
+  </data>
+  <data name="lexOutsideSixteenBitUnsigned" xml:space="preserve">
+    <value>此数字在允许的 16 位无符号整数范围之外</value>
+  </data>
+  <data name="etProvidedAppliedTypeHadWrongName" xml:space="preserve">
+    <value>类型提供程序“{0}”从“ApplyStaticArguments”返回了无效类型。需要名称为“{1}”的类型，但返回了名称为“{2}”的类型。</value>
+  </data>
+  <data name="abImplicitHeapAllocation" xml:space="preserve">
+    <value>可变本地变量“{0}”隐式分配为引用单元格，因为它已由关闭事件捕获。此警告只是为了提供信息，用于指示执行了隐式分配的情况。</value>
+  </data>
+  <data name="parsParenFormIsForML" xml:space="preserve">
+    <value>在 F# 代码中可以使用“expr.[expr]”。可能需要进行类型批注以指明第一个表达式是一个数组</value>
+  </data>
+  <data name="tcObjectConstructorsIllegalInInterface" xml:space="preserve">
+    <value>接口不能包含对象构造函数的定义</value>
+  </data>
+  <data name="optsInvalidSubSystemVersion" xml:space="preserve">
+    <value>“--subsystemversion”的版本“{0}”无效。版本必须为 4.00 或更高版本。</value>
+  </data>
+  <data name="tcNameArgumentsMustAppearLast" xml:space="preserve">
+    <value>命名参数必须出现在所有其他参数的后面</value>
+  </data>
+  <data name="crefBoundVarUsedInSplice" xml:space="preserve">
+    <value>虽然变量“{0}”在某个引用内容中进行了绑定，但它用作拼接表达式的一部分。不允许这样做，因为该变量可能会超出其范围。</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInEnum" xml:space="preserve">
+    <value>未能解析在此位置或其附近使用带“enum”约束的泛型构造所产生的多义性</value>
+  </data>
+  <data name="ilSignNoSignatureDirectory" xml:space="preserve">
+    <value>无签名目录</value>
+  </data>
+  <data name="parsUnexpectedOperatorForUnitOfMeasure" xml:space="preserve">
+    <value>度量单位表达式中意外的中缀运算符。合法的运算符为“*”、“/”和“^”。</value>
+  </data>
+  <data name="typeInfoProperty" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="tcCannotInheritFromSealedType" xml:space="preserve">
+    <value>无法继承已密封的类型</value>
+  </data>
+  <data name="tcConstructIsAmbiguousInSequenceExpression" xml:space="preserve">
+    <value>此构造作为序列表达式的一部分具有多义性。可以使用“let _ = (...)”来编写嵌套的表达式，并可以使用“yield! seq {{... }}”来编写嵌套的序列。</value>
+  </data>
+  <data name="tcImplementsIStructuralEquatableExplicitly" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”显式实现接口“System.IStructuralEquatable”。将“CustomEquality”特性应用于相应的类型。</value>
+  </data>
+  <data name="parsMemberIllegalInObjectImplementation" xml:space="preserve">
+    <value>对象实现中不允许使用此成员</value>
+  </data>
+  <data name="impImportedAssemblyUsesNotPublicType" xml:space="preserve">
+    <value>导入的程序集使用类型“{0}”，但该类型不是公共类型</value>
+  </data>
+  <data name="optsHelpBannerMisc" xml:space="preserve">
+    <value>- 杂项 -</value>
+  </data>
+  <data name="tastUndefinedItemRefModuleNamespaceType" xml:space="preserve">
+    <value>编译单元“{1}”中的模块/命名空间“{0}”未包含命名空间、模块或类型“{2}”</value>
+  </data>
+  <data name="fscRemotingError" xml:space="preserve">
+    <value>未使用驻留编译服务，因为与服务器通信时发生问题。</value>
+  </data>
+  <data name="tcFieldValIllegalHere" xml:space="preserve">
+    <value>此处不允许使用字段/值声明</value>
+  </data>
+  <data name="tcInvalidNewConstraint" xml:space="preserve">
+    <value>“new”约束必须采用一个类型为“unit”的参数并返回构造化类型</value>
+  </data>
+  <data name="optsResident" xml:space="preserve">
+    <value>使用驻留后台编译服务缩短编译器启动时间。</value>
+  </data>
+  <data name="tcInvalidConstraint" xml:space="preserve">
+    <value>约束无效</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationSaysNull" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现指明此类型可以使用 null 作为表示形式，而签名未指明这一点</value>
+  </data>
+  <data name="etErrorApplyingStaticArgumentsToMethod" xml:space="preserve">
+    <value>将静态参数应用于提供的方法时发生错误</value>
+  </data>
+  <data name="optsResource" xml:space="preserve">
+    <value>嵌入指定的托管资源</value>
+  </data>
+  <data name="tcCouldNotFindOffsetToStringData" xml:space="preserve">
+    <value>生成 "fixed" 表达式时，在引用中找不到方法 System.Runtime.CompilerServices.OffsetToStringData。</value>
+  </data>
+  <data name="tcMemberAndLocalClassBindingHaveSameName" xml:space="preserve">
+    <value>一个成员和一个本地类绑定的名称都为“{0}”</value>
+  </data>
+  <data name="tcBinaryOperatorRequiresVariable" xml:space="preserve">
+    <value>“{0}”后面必须跟变量名。用法: {1}。</value>
+  </data>
+  <data name="tcTypeTestErased" xml:space="preserve">
+    <value>不允许对提供的类型“{0}”执行此类型测试，因为该提供的类型在运行时将清除为“{1}”。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationIsAbstract" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现是抽象类，而签名则不是。请考虑将 [&lt;AbstractClass&gt;] 特性添加到签名。</value>
+  </data>
+  <data name="csArgumentLengthMismatch" xml:space="preserve">
+    <value>参数长度不匹配</value>
+  </data>
+  <data name="notAFunctionButMaybeDeclaration" xml:space="preserve">
+    <value>此值不是一个函数，无法应用。您是否忘记结束某个声明?</value>
+  </data>
+  <data name="typrelMemberCannotImplement" xml:space="preserve">
+    <value>成员“{0}”不能用于实现“{1}”。所需签名为“{2}”。</value>
+  </data>
+  <data name="chkMultipleGenericInterfaceInstantiations" xml:space="preserve">
+    <value>此类型在不同的泛型实例化“{0}”和“{1}”实现了同样的接口。这在该版本 F# 中是不允许的。</value>
+  </data>
+  <data name="fscKeyNameWarning" xml:space="preserve">
+    <value>选项“--keycontainer”将重写源文件或添加的模块中给定的“System.Reflection.AssemblyNameAttribute”特性</value>
+  </data>
+  <data name="tcGlobalsSystemTypeNotFound" xml:space="preserve">
+    <value>需要系统类型“{0}”，但没有引用系统 DLL 包含此类型</value>
+  </data>
+  <data name="keywordDescriptionReturnBang" xml:space="preserve">
+    <value>用于表示一种计算表达式，该表达式在计算时，提供包含计算表达式的结果。</value>
+  </data>
+  <data name="memberOperatorDefinitionWithCurriedArguments" xml:space="preserve">
+    <value>中缀运算符成员“{0}”具有额外的扩充参数。需要一个由 2 个参数构成的元组，例如静态成员 (+) (x,y) = ...</value>
+  </data>
+  <data name="tcMemberNotPermittedInInterfaceImplementation" xml:space="preserve">
+    <value>接口实现中不允许使用此成员</value>
+  </data>
+  <data name="memberOperatorDefinitionWithNonTripleArgument" xml:space="preserve">
+    <value>中缀运算符成员“{0}”具有 {1} 个初始参数。需要一个由 3 个参数构成的元组。</value>
+  </data>
+  <data name="ilFieldHasOffsetForSequentialLayout" xml:space="preserve">
+    <value>FieldOffset 特性只能放置在标记为 StructLayout(LayoutKind.Explicit) 的类型的成员上</value>
+  </data>
+  <data name="tcConstructorCannotHaveTypeParameters" xml:space="preserve">
+    <value>构造函数不能具有显式类型参数。请考虑改用静态构造方法。</value>
+  </data>
+  <data name="etPropertyHasGetterButNoCanRead" xml:space="preserve">
+    <value>所提供的类型“{1}”的属性“{0}”的 CanRead 为 false，但是 GetGetMethod() 返回了方法</value>
+  </data>
+  <data name="tcJoinMustUseSimplePattern" xml:space="preserve">
+    <value>在查询中，“{0}”必须使用简单模式</value>
+  </data>
+  <data name="tcUnexpectedConstByteArray" xml:space="preserve">
+    <value>意外的 Const_bytearray</value>
+  </data>
+  <data name="tlrUnexpectedTExpr" xml:space="preserve">
+    <value>意外的 Expr.TyChoose</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileObjectMembers" xml:space="preserve">
+    <value>对象成员中出现意外的输入结尾</value>
+  </data>
+  <data name="chkDuplicateMethodCurried" xml:space="preserve">
+    <value>方法“{0}”具有扩充参数，并且与类型“{1}”中的另一个方法具有相同的名称。无法重载具有扩充参数的方法。请考虑使用采用元组化参数的方法。</value>
+  </data>
+  <data name="fscBadAssemblyVersion" xml:space="preserve">
+    <value>{0} 指定的版本“{1}”，但此值无效，已被忽略</value>
+  </data>
+  <data name="tcTypeParameterInvalidAsTypeConstructor" xml:space="preserve">
+    <value>类型参数不能用作类型构造函数</value>
+  </data>
+  <data name="ilMutableVariablesCannotEscapeMethod" xml:space="preserve">
+    <value>可变变量不能脱离其方法</value>
+  </data>
+  <data name="tcMeasureDeclarationsRequireStaticMembers" xml:space="preserve">
+    <value>度量声明只能具有静态成员</value>
+  </data>
+  <data name="tcInvalidOperatorDefinition" xml:space="preserve">
+    <value>通常不应重新定义“{0}”运算符。请考虑使用其他运算符名称</value>
+  </data>
+  <data name="chkNoByrefAtThisPoint" xml:space="preserve">
+    <value>此时无法使用 byref 类型化值“{0}”</value>
+  </data>
+  <data name="buildSearchDirectoryNotFound" xml:space="preserve">
+    <value>未能找到搜索目录“{0}”</value>
+  </data>
+  <data name="tcConstructIsAmbiguousInComputationExpression" xml:space="preserve">
+    <value>此构造作为计算表达式的一部分具有多义性。可以使用“let _ = (...)”来编写嵌套的表达式，并可以使用“let! res = builder {{ ... }}”来编写嵌套的计算。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureDefinesButImplDoesNot" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名定义了 {2}“{3}”，而实现没有定义(或者按不同的顺序进行了定义)</value>
+  </data>
+  <data name="typeInfoFullName" xml:space="preserve">
+    <value>全名</value>
+  </data>
+  <data name="optsFullpaths" xml:space="preserve">
+    <value>使用完全限定路径输出消息</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleFieldWasPresent" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现中具有字段“{2}”，而签名中没有该字段</value>
+  </data>
+  <data name="optsNoCopyFsharpCore" xml:space="preserve">
+    <value>请勿从已生成的二进制文件中复制 FSharp.Core.dll</value>
+  </data>
+  <data name="csGenericConstructRequiresUnmanagedType" xml:space="preserve">
+    <value>泛型构造要求类型“{0}”是非托管类型</value>
+  </data>
+  <data name="typrelExplicitImplementationOfEquals" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”具有“Object.Equals”的显式实现。请考虑为“Object.GetHashCode()”实现匹配的重写</value>
+  </data>
+  <data name="tcIllegalFormForExplicitTypeDeclaration" xml:space="preserve">
+    <value>构造函数的显式类型声明的格式必须为“ty1 * ... * tyN -&gt; resTy”。可能需要用括号将“resTy”括起来</value>
+  </data>
+  <data name="keywordDescriptionRec" xml:space="preserve">
+    <value>用于表示某函数为递归函数。</value>
+  </data>
+  <data name="keywordDescriptionVal" xml:space="preserve">
+    <value>在签名中用于表示值，或在类型中用于声明成员，但情况有限。</value>
+  </data>
+  <data name="keywordDescriptionUse" xml:space="preserve">
+    <value>用于替代 let，以便要求 Dispose  的值可调用到免费资源。</value>
+  </data>
+  <data name="keywordDescriptionTry" xml:space="preserve">
+    <value>用于引入可能产生异常的代码块。与 with 或 finally 配合使用。</value>
+  </data>
+  <data name="keywordDescriptionNew" xml:space="preserve">
+    <value>用于声明、定义或调用创建或可创建对象的构造函数。另外，也用于泛型参数约束，以表示类型必需包含某构造函数。</value>
+  </data>
+  <data name="keywordDescriptionNot" xml:space="preserve">
+    <value>实际上不是关键字。但是，组合中的结构不会用作泛型参数约束。</value>
+  </data>
+  <data name="keywordDescriptionLet" xml:space="preserve">
+    <value>用于将名称关联或绑定到值或函数。</value>
+  </data>
+  <data name="keywordDescriptionFun" xml:space="preserve">
+    <value>用于 lambda 表达式，也称为异步函数。</value>
+  </data>
+  <data name="keywordDescriptionFor" xml:space="preserve">
+    <value>用于循环构造。</value>
+  </data>
+  <data name="keywordDescriptionEnd" xml:space="preserve">
+    <value>在类型定义和类型扩展中，表示成员定义的某部分的结尾。在详细语法中，用于指定以 begin 关键字开头的程序块的结尾。</value>
+  </data>
+  <data name="chkGetterAndSetterHaveSamePropertyType" xml:space="preserve">
+    <value>属性的 getter 和 setter 的类型必须相同。属性“{0}”的 getter 的类型为“{1}”，而 setter 的类型为“{2}”。</value>
+  </data>
+  <data name="tcInvalidTypeArgumentCount" xml:space="preserve">
+    <value>类型参数的数量不匹配: 提供了“{0}”个，应是“{1}”个。这可能与以前报告的错误有关。</value>
+  </data>
+  <data name="tcFieldRequiresName" xml:space="preserve">
+    <value>此字段需要名称</value>
+  </data>
+  <data name="typeInfoGeneratedType" xml:space="preserve">
+    <value>生成的类型</value>
+  </data>
+  <data name="buildInvalidVersionString" xml:space="preserve">
+    <value>版本字符串“{0}”无效</value>
+  </data>
+  <data name="tcInvalidTypeArgumentUsage" xml:space="preserve">
+    <value>无法在此处指定类型参数</value>
+  </data>
+  <data name="lexOutsideNativeSigned" xml:space="preserve">
+    <value>此数字在允许的带符号本机整数范围之外</value>
+  </data>
+  <data name="tcTypeTestLossy" xml:space="preserve">
+    <value>此类型测试或向下转换会将提供的类型“{0}”清除为类型“{1}”。</value>
+  </data>
+  <data name="parsInheritDeclarationsCannotHaveAsBindings" xml:space="preserve">
+    <value>“inherit”声明不能具有“as”绑定。若要在重写某个方法时访问基类的成员，可以使用语法“base.SomeMember”；“base”为关键字。删除此“as”绑定。</value>
+  </data>
+  <data name="keywordDescriptionDelegate" xml:space="preserve">
+    <value>用于声明委托。</value>
+  </data>
+  <data name="csMethodNotFound" xml:space="preserve">
+    <value>未找到方法或对象构造函数“{0}”</value>
+  </data>
+  <data name="forBadWidth" xml:space="preserve">
+    <value>格式说明符中的宽度错误</value>
+  </data>
+  <data name="tcAllowNullTypesMayOnlyInheritFromAllowNullTypes" xml:space="preserve">
+    <value>具有“AllowNullLiteral”特性的类型只能继承自或实现也允许使用 null 文本的类型</value>
+  </data>
+  <data name="tcStaticInitializerRequiresArgument" xml:space="preserve">
+    <value>静态初始化表达式需要参数</value>
+  </data>
+  <data name="tcSyntaxErrorUnexpectedQMark" xml:space="preserve">
+    <value>语法错误 - 意外的“?”符号</value>
+  </data>
+  <data name="tcInvalidUseOfInterfaceType" xml:space="preserve">
+    <value>接口类型的使用无效</value>
+  </data>
+  <data name="parsSuccessivePatternsShouldBeSpacedOrTupled" xml:space="preserve">
+    <value>应使用空格来分隔连续模式或将这些连续模式组成元组</value>
+  </data>
+  <data name="csRequiredSignatureIs" xml:space="preserve">
+    <value>所需签名为 {0}</value>
+  </data>
+  <data name="elSysEnvExitDidntExit" xml:space="preserve">
+    <value>System.Environment.Exit 未退出</value>
+  </data>
+  <data name="tcStaticOptimizationConditionalsOnlyForFSharpLibrary" xml:space="preserve">
+    <value>只能在 F# 库中使用静态优化条件</value>
+  </data>
+  <data name="arrayElementHasWrongType" xml:space="preserve">
+    <value>数组构造函数表达式的所有元素必须具有同一类型。此表达式的类型应为“{0}”，但此处类型为“{1}”。</value>
+  </data>
+  <data name="csTypeCannotBeResolvedAtCompileTime" xml:space="preserve">
+    <value>此处不能使用声明的类型参数“{0}”，因为编译时无法解析该类型参数</value>
+  </data>
+  <data name="buildInvalidAssemblyName" xml:space="preserve">
+    <value>“{0}”不是有效的程序集名称</value>
+  </data>
+  <data name="tcInvalidActivePatternName" xml:space="preserve">
+    <value>对于活动模式来说，这不是有效的名称</value>
+  </data>
+  <data name="missingElseBranch" xml:space="preserve">
+    <value>"if" 表达式缺少 "else" branch。"then" branch 的类型为“{0}”。因为 "if" 是一个表达式，而非语句，请添加将返回同一类型值的 "else" branch。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileTypeSignature" xml:space="preserve">
+    <value>类型签名中出现意外的输入结尾</value>
+  </data>
+  <data name="chkDuplicateMethod" xml:space="preserve">
+    <value>重复方法。方法“{0}”与类型“{1}”中的另一个方法具有相同的名称和签名。</value>
+  </data>
+  <data name="typrelMethodIsOverconstrained" xml:space="preserve">
+    <value>此方法在其类型参数中过度约束</value>
+  </data>
+  <data name="patcMissingVariable" xml:space="preserve">
+    <value>缺少变量“{0}”</value>
+  </data>
+  <data name="parsInlineAssemblyCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允许对内联程序集代码类型使用可访问性修饰符</value>
+  </data>
+  <data name="ilReflectedDefinitionsCannotUseSliceOperator" xml:space="preserve">
+    <value>反射的定义中不能使用前缀拼接运算符“%”</value>
+  </data>
+  <data name="tcInvalidUnitsOfMeasurePrefix" xml:space="preserve">
+    <value>度量单位不能用作类型的前缀参数。请重新编写为用尖括号括起的后缀参数。</value>
+  </data>
+  <data name="csStructConstraintInconsistent" xml:space="preserve">
+    <value>约束“struct”和“not struct”不一致</value>
+  </data>
+  <data name="tcLiteralDoesNotTakeArguments" xml:space="preserve">
+    <value>此文本模式不带有参数</value>
+  </data>
+  <data name="parsInvalidDeclarationSyntax" xml:space="preserve">
+    <value>声明语法无效</value>
+  </data>
+  <data name="csTypesDoNotSupportOperator" xml:space="preserve">
+    <value>任何类型“{0}”都不支持运算符“{1}”</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedDelegate" xml:space="preserve">
+    <value>总是密封委托类型</value>
+  </data>
+  <data name="parsExpectedExpressionAfterToken" xml:space="preserve">
+    <value>此点之后应是表达式</value>
+  </data>
+  <data name="chkTypeLessAccessibleThanType" xml:space="preserve">
+    <value>类型“{0}”的可访问性低于其所用于的值、成员或类型“{1}”。</value>
+  </data>
+  <data name="optsDeterministic" xml:space="preserve">
+    <value>产生确定性的程序集(包括模块版本 GUID 和时间戳)</value>
+  </data>
+  <data name="etUnexpectedNullFromProvidedTypeMember" xml:space="preserve">
+    <value>来自所提供类型“{0}”成员“{1}”的意外“null”返回值</value>
+  </data>
+  <data name="tcCouldNotFindIDisposable" xml:space="preserve">
+    <value>未能找到 IDisposable 的 Dispose，或者它已被重载</value>
+  </data>
+  <data name="buildInvalidPrivacy" xml:space="preserve">
+    <value>无法识别的托管资源隐私设置“{0}”，有效的选项为“public”和“private”</value>
+  </data>
+  <data name="optValueMarkedInlineCouldNotBeInlined" xml:space="preserve">
+    <value>未能内联标记为“inline”的值</value>
+  </data>
+  <data name="csGenericConstructRequiresPublicDefaultConstructor" xml:space="preserve">
+    <value>泛型构造要求类型“{0}”具有公共的默认构造函数</value>
+  </data>
+  <data name="csMemberIsNotInstance" xml:space="preserve">
+    <value>{0} 不是实例成员</value>
+  </data>
+  <data name="crefQuotationsCantContainThisConstant" xml:space="preserve">
+    <value>引用内容不能包含这种常数</value>
+  </data>
+  <data name="etIncorrectParameterExpression" xml:space="preserve">
+    <value>类型提供程序“{0}”在 ParameterExpression 中使用了无效参数: {1}</value>
+  </data>
+  <data name="tcNonUniformMemberUse" xml:space="preserve">
+    <value>在此程序点之前，已在非统一实例化中使用了泛型成员“{0}”。请考虑重新排列成员顺序，以使此成员先出现。或者，也可以显式指定该成员的完整类型，包括实参类型、返回类型以及其他任何泛型形参和约束。</value>
+  </data>
+  <data name="chkCantStoreByrefValue" xml:space="preserve">
+    <value>某个类型将存储 byref 类型化值。通用 IL 不允许这样做。</value>
+  </data>
+  <data name="fscNoImplementationFiles" xml:space="preserve">
+    <value>未指定任何实现文件</value>
+  </data>
+  <data name="ValueNotContainedMutabilityInlineFlagsDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n内联标志不同</value>
+  </data>
+  <data name="tcInvalidNamespaceModuleTypeUnionName" xml:space="preserve">
+    <value>命名空间、模块、类型或联合用例名称无效</value>
+  </data>
+  <data name="tcTypeAbbreviationsMayNotHaveMembers" xml:space="preserve">
+    <value>类型缩写词不能具有成员</value>
+  </data>
+  <data name="tcRecImplied" xml:space="preserve">
+    <value>此模块上的 "rec" 由外部 "rec" 声明暗示，正被忽略</value>
+  </data>
+  <data name="tcTypeIsNotARecordTypeNeedConstructor" xml:space="preserve">
+    <value>此类型不是记录类型。必须使用对对象构造函数的调用来创建类和结构类型的值。</value>
+  </data>
+  <data name="csExpectTypeWithOperatorButGivenFunction" xml:space="preserve">
+    <value>应为支持运算符“{0}”的类型，但给定的是函数类型。可能缺少函数的参数。</value>
+  </data>
+  <data name="tcNamespaceCannotContainValues" xml:space="preserve">
+    <value>命名空间不能包含值。请考虑使用模块来包含值声明。</value>
+  </data>
+  <data name="noInvokeMethodsFound" xml:space="preserve">
+    <value>未找到委托类型的 Invoke 方法</value>
+  </data>
+  <data name="parsIncompleteIf" xml:space="preserve">
+    <value>条件不完整。应为“if &lt;表达式&gt; then &lt;表达式&gt;”或“if &lt;表达式&gt; then &lt;表达式&gt; else &lt;表达式&gt;”。</value>
+  </data>
+  <data name="tcCustomOperationMayNotBeUsedHere" xml:space="preserve">
+    <value>在此计算表达式中，不能与“use”、“try/with”、“try/finally”、“if/then/else”或“match”运算符一起使用自定义运算</value>
+  </data>
+  <data name="augStructCompNeedsStructEquality" xml:space="preserve">
+    <value>“StructuralComparison”特性必须与“StructuralEquality”特性结合使用</value>
+  </data>
+  <data name="parsInvalidUseOfRec" xml:space="preserve">
+    <value>无效的 "rec" 关键字使用</value>
+  </data>
+  <data name="tcEnumerationsMayNotHaveMembers" xml:space="preserve">
+    <value>枚举不能具有成员</value>
+  </data>
+  <data name="undefinedNameRecordLabelOrNamespace" xml:space="preserve">
+    <value>未定义记录标签或命名空间“{0}”。</value>
+  </data>
+  <data name="crefQuotationsCantContainGenericExprs" xml:space="preserve">
+    <value>引用内容中不能使用泛型表达式</value>
+  </data>
+  <data name="optsDCLONoDescription" xml:space="preserve">
+    <value>命令行选项“{0}”已弃用</value>
+  </data>
+  <data name="keywordDescriptionLetBang" xml:space="preserve">
+    <value>在异步工作流中用于将名称绑定到异步计算的结果，或在其他计算表达式中，用于将名称绑定到属于计算类型的结果。</value>
+  </data>
+  <data name="typeInfoCallsWord" xml:space="preserve">
+    <value>调用</value>
+  </data>
+  <data name="lexHashElseNoMatchingIf" xml:space="preserve">
+    <value>#else 没有匹配的 #if</value>
+  </data>
+  <data name="optsClirootDescription" xml:space="preserve">
+    <value>用于重写编译器查找 mscorlib.dll 和 Framework 组件的位置</value>
+  </data>
+  <data name="csMemberSignatureMismatchArityType" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”需要 {1} 个类型参数，而此处给定了 {2} 个类型参数。所需签名为“{3}”。</value>
+  </data>
+  <data name="itemNotFoundDuringDynamicCodeGen" xml:space="preserve">
+    <value>{0} 程序集“{2}”中找不到“{1}”。可能的原因或许是版本不兼容。可能需要显式引用此程序集的正确版本，以便所有引用的组件都能使用正确的版本。</value>
+  </data>
+  <data name="tcIllegalSyntaxInTypeExpression" xml:space="preserve">
+    <value>类型表达式中的非法语法</value>
+  </data>
+  <data name="lexOutsideIntegerRange" xml:space="preserve">
+    <value>此数字在允许的此整数类型范围之外</value>
+  </data>
+  <data name="activePatternIdentIsNotFunctionTyped" xml:space="preserve">
+    <value>活动模式“{0}”不是一个函数</value>
+  </data>
+  <data name="chkGetterSetterDoNotMatchAbstract" xml:space="preserve">
+    <value>类型为“{1}”的属性“{0}”存在不匹配的 getter 和 setter。如果其中一个是抽象的，则另一个也必须是抽象的。</value>
+  </data>
+  <data name="tcNoIntegerForLoopInQuery" xml:space="preserve">
+    <value>在查询中，应使用“for x in n .. m do ...”的形式处理整数范围</value>
+  </data>
+  <data name="parsEofInTripleQuoteString" xml:space="preserve">
+    <value>文件尾在此处或之前开始的三重引号字符串中</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileDefinition" xml:space="preserve">
+    <value>值、函数或成员定义中出现意外的输入结尾</value>
+  </data>
+  <data name="csCtorSignatureMismatchArityProp" xml:space="preserve">
+    <value>对象构造函数“{0}”有 {1} 个参数，但此处只提供 {2} 个。所需的签名为“{3}”。如果某些参数用于向属性分配值，请考虑使用逗号(",")分隔这些参数。</value>
+  </data>
+  <data name="tcCallerInfoWrongType" xml:space="preserve">
+    <value>“{0}”必须应用于类型“{1}”的参数，但却被应用于类型“{2}”的参数</value>
+  </data>
+  <data name="tcCannotCreateExtensionOfSealedType" xml:space="preserve">
+    <value>无法创建已密封的类型的扩展</value>
+  </data>
+  <data name="parsNoMatchingInForLet" xml:space="preserve">
+    <value>未找到与此“let”匹配的“in”</value>
+  </data>
+  <data name="parsIgnoreVisibilityOnModuleAbbreviationAlwaysPrivate" xml:space="preserve">
+    <value>模块缩写词中不允许“{0}”可见性特性。模块缩写词总是私有的。</value>
+  </data>
+  <data name="augNoCompCantImpIComp" xml:space="preserve">
+    <value>具有特性“NoComparison”的类型通常不应显式实现“System.IComparable”、“System.IComparable&lt;_&gt;”或“System.Collections.IStructuralComparable”。如果这是为了实现互操作性而特意这样做的，请禁用此警告</value>
+  </data>
+  <data name="tcConstructRequiresComputationExpressions" xml:space="preserve">
+    <value>只能在计算表达式中使用此构造。若要从普通函数返回值，只需编写不带“return”的表达式。</value>
+  </data>
+  <data name="parsMutableOnAutoPropertyShouldBeGetSet" xml:space="preserve">
+    <value>属性定义不能声明为可变。若要指示此属性可以进行设置，请使用“member val PropertyName = expr with get,set”。</value>
+  </data>
+  <data name="optsHelpBannerAdvanced" xml:space="preserve">
+    <value>- 高级 -</value>
+  </data>
+  <data name="FieldNotContainedStaticsDiffer" xml:space="preserve">
+    <value>该模块包含字段\n    {0}    \n而其签名指定\n    {1}    \n“static”修饰符不同</value>
+  </data>
+  <data name="chkUnionCaseCompiledForm" xml:space="preserve">
+    <value>联合用例的已编译形式</value>
+  </data>
+  <data name="buildAssemblyResolutionFailed" xml:space="preserve">
+    <value>程序集解析在此位置或此位置附近失败</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleFieldOrderDiffer" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名和实现中的字段顺序不同</value>
+  </data>
+  <data name="tcAbstractMembersIllegalInAugmentation" xml:space="preserve">
+    <value>扩大中不允许使用抽象成员 - 必须将它们定义为类型本身的一部分</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileThen" xml:space="preserve">
+    <value>条件表达式的“then”分支中出现意外的输入结尾。应为“if &lt;表达式&gt; then &lt;表达式&gt;”或“if &lt;表达式&gt; then &lt;表达式&gt; else &lt;表达式&gt;”。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileWith" xml:space="preserve">
+    <value>“match”或“try”表达式中出现意外的输入结尾</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileElse" xml:space="preserve">
+    <value>条件表达式的“else”分支中出现意外的输入结尾。应为“if &lt;表达式&gt; then &lt;表达式&gt;”或“if &lt;表达式&gt; then &lt;表达式&gt; else &lt;表达式&gt;”。</value>
+  </data>
+  <data name="tcNoArgumentsForRecordValue" xml:space="preserve">
+    <value>在构造记录值时，可能未给定任何参数</value>
+  </data>
+  <data name="lexhlpIdentifiersContainingAtSymbolReserved" xml:space="preserve">
+    <value>已保留包含“@”的标识符以用于 F# 代码生成</value>
+  </data>
+  <data name="tcLookupMayNotBeUsedHere" xml:space="preserve">
+    <value>不能在此处使用此查找</value>
+  </data>
+  <data name="tcMembersThatExtendInterfaceMustBePlacedInSeparateModule" xml:space="preserve">
+    <value>必须将扩展接口、委托或枚举类型的成员放置到与相应的类型定义分离的模块中。此模块必须具有 AutoOpen 特性或由客户端代码显式打开以将扩展成员纳入范围中。</value>
+  </data>
+  <data name="tcNoInterfaceImplementationForConstructionExpression" xml:space="preserve">
+    <value>不能在构造表达式中提供接口实现</value>
+  </data>
+  <data name="tcNotSufficientlyGenericBecauseOfScope" xml:space="preserve">
+    <value>此代码的通用程度不够。未能对类型变量 {0} 进行一般化，因为它会超出其范围。</value>
+  </data>
+  <data name="parsEofInIfOcaml" xml:space="preserve">
+    <value>文件尾在此处或之前开始的 IF-OCAML 节中</value>
+  </data>
+  <data name="tcOnlyClassesCanHaveAbstract" xml:space="preserve">
+    <value>只能为类给定“AbstractClass”特性</value>
+  </data>
+  <data name="chkSystemVoidOnlyInTypeof" xml:space="preserve">
+    <value>“System.Void”在 F# 中只能用作“typeof&lt;System.Void&gt;”</value>
+  </data>
+  <data name="parsMultiArgumentGenericTypeFormDeprecated" xml:space="preserve">
+    <value>语法“(typ,...,typ) ident”不可用于 F# 代码。请考虑改用“ident&lt;typ,...,typ&gt;”</value>
+  </data>
+  <data name="tcStructTypesCannotContainAbstractMembers" xml:space="preserve">
+    <value>结构类型不能包含抽象成员</value>
+  </data>
+  <data name="tcNewMemberHidesAbstractMemberWithSuffix" xml:space="preserve">
+    <value>一旦清除元组、函数、度量单位和/或所提供的类型，此新成员就会隐藏抽象成员“{0}”。请重命名此成员或改用“override”。</value>
+  </data>
+  <data name="tastUnexpectedDecodeOfInterfaceDataVersionAttribute" xml:space="preserve">
+    <value>对 InterfaceDataVersionAttribute 的意外解码</value>
+  </data>
+  <data name="lexfltSeparatorTokensOfPatternMatchMisaligned" xml:space="preserve">
+    <value>用于分离此模式匹配规则的“|”标记错开了一列。请考虑重新对齐代码或使用进一步的缩进。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityArityNotInferred" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n未为此值推理 arity</value>
+  </data>
+  <data name="tcUnexpectedPropertyInSyntaxTree" xml:space="preserve">
+    <value>语法树中意外的源级别属性规范</value>
+  </data>
+  <data name="tcExtraneousFieldsGivenValues" xml:space="preserve">
+    <value>已为外来字段给定值</value>
+  </data>
+  <data name="keywordDescriptionDowncast" xml:space="preserve">
+    <value>用于转换为较低继承链中的类型。</value>
+  </data>
+  <data name="tupleRequiredInAbstractMethod" xml:space="preserve">
+    <value>\n一个或多个参数需要元组类型。请考虑在额外的括号中换行给定的参数或评审接口的定义。</value>
+  </data>
+  <data name="tcUnexpectedBigRationalConstant" xml:space="preserve">
+    <value>意外的大有理常数</value>
+  </data>
+  <data name="ilSignBadImageFormat" xml:space="preserve">
+    <value>错误的图像格式</value>
+  </data>
+  <data name="etEmptyNamespaceNotAllowed" xml:space="preserve">
+    <value>在类型提供程序“{0}”中发现空命名空间。请将“null”用于全局命名空间。</value>
+  </data>
+  <data name="ModuleContainsConstructorButNamesDiffer" xml:space="preserve">
+    <value>该模块包含构造函数\n    {0}    \n而其签名指定\n    {1}    \n名称不同</value>
+  </data>
+  <data name="customOperationTextLikeJoin" xml:space="preserve">
+    <value>{0} var in collection {1} (outerKey = innerKey)。请注意，“{2}”后需使用括号</value>
+  </data>
+  <data name="parsInOrEqualExpected" xml:space="preserve">
+    <value>应为“in”或“=”</value>
+  </data>
+  <data name="tastUnexpectedDecodeOfInternalsVisibleToAttribute" xml:space="preserve">
+    <value>对 InternalsVisibleToAttribute 的意外解码</value>
+  </data>
+  <data name="ppparsIncompleteExpression" xml:space="preserve">
+    <value>不完整的预处理器表达式</value>
+  </data>
+  <data name="tcExprUndelayed" xml:space="preserve">
+    <value>TcExprUndelayed: 已延迟</value>
+  </data>
+  <data name="etDirectReferenceToGeneratedTypeNotAllowed" xml:space="preserve">
+    <value>不允许直接引用生成的类型“{0}”。而应使用类型定义，例如“type TypeAlias = &lt;路径&gt;”。这指示类型提供程序将生成的类型添加到您的程序集中。</value>
+  </data>
+  <data name="lexWrongNestedHashEndif" xml:space="preserve">
+    <value>语法错误。嵌套的 #endif 出错，其前面存在意外的标记。</value>
+  </data>
+  <data name="optsWarnOn" xml:space="preserve">
+    <value>启用默认情况下可能关闭的特定警告</value>
+  </data>
+  <data name="tcNamedActivePattern" xml:space="preserve">
+    <value>{0} 为活动模式，不能将其作为带命名字段的可区分联合用例。</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedRecord" xml:space="preserve">
+    <value>总是密封记录类型</value>
+  </data>
+  <data name="tcInvalidSignatureForSet" xml:space="preserve">
+    <value>集成员的签名无效</value>
+  </data>
+  <data name="tcNoWhileInQuery" xml:space="preserve">
+    <value>“while”表达式不能在查询中使用</value>
+  </data>
+  <data name="lexInvalidCharLiteral" xml:space="preserve">
+    <value>这不是有效的字符文本</value>
+  </data>
+  <data name="tcReturnValuesCannotHaveNames" xml:space="preserve">
+    <value>返回值不能具有名称</value>
+  </data>
+  <data name="tcCannotInheritFromErasedType" xml:space="preserve">
+    <value>无法从已清除的提供的类型中继承</value>
+  </data>
+  <data name="etErasedTypeUsedInGeneration" xml:space="preserve">
+    <value>提供程序“{0}”在一组生成类型的上下文中返回了非生成类型“{1}”。请考虑调整类型提供程序以仅返回生成类型。</value>
+  </data>
+  <data name="tcInvalidEnumConstraint" xml:space="preserve">
+    <value>“enum”约束的格式必须为“enum&lt;type&gt;”</value>
+  </data>
+  <data name="ValueNotContainedMutabilityAbstractsDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n一个是抽象的，另一个不是抽象的</value>
+  </data>
+  <data name="tcInvalidMethodNameForEquality" xml:space="preserve">
+    <value>名称“({0})”不应用作成员名称。若要为类型定义相等语义，请重写“Object.Equals”成员。如果从其他 CLI 语言中定义了要使用的静态成员，请改用名称“{1}”。</value>
+  </data>
+  <data name="lexOusideDecimal" xml:space="preserve">
+    <value>此数字在允许的十进制文本范围之外</value>
+  </data>
+  <data name="etTooManyStaticParameters" xml:space="preserve">
+    <value>静态参数太多。最多应为 {0} 个参数，但是获得了 {1} 个未命名参数和 {2} 个命名参数。</value>
+  </data>
+  <data name="parsNoEqualShouldFollowNamespace" xml:space="preserve">
+    <value>“namespace”声明后面不应有“=”符号</value>
+  </data>
+  <data name="tcPredefinedTypeCannotBeUsedAsSuperType" xml:space="preserve">
+    <value>类型 System.ValueType、System.Enum、System.Delegate、System.MulticastDelegate 和 System.Array 不能用作对象表达式或类中的超类型</value>
+  </data>
+  <data name="buildMultipleToplevelModules" xml:space="preserve">
+    <value>此文件包含形式为“module SomeNamespace.SomeModule”的多个声明。一个文件中只能有一个此形式的声明。将您的文件更改为使用初始命名空间声明并且/或者使用“module ModuleName = ...”定义模块。</value>
+  </data>
+  <data name="tcCannotInheritFromInterfaceType" xml:space="preserve">
+    <value>无法从接口类型继承。请改用 interface ... with。</value>
+  </data>
+  <data name="optsCrossoptimize" xml:space="preserve">
+    <value>启用或禁用跨模块优化</value>
+  </data>
+  <data name="FieldNotContainedAccessibilitiesDiffer" xml:space="preserve">
+    <value>该模块包含字段\n    {0}    \n而其签名指定\n    {1}    \n签名中指定的可访问性高于实现中指定的可访问性</value>
+  </data>
+  <data name="keywordDescriptionSelect" xml:space="preserve">
+    <value>在查询表达式中用于指定要提取的字段或列。注意，这是上下文关键字，意味着它实际上并不是保留字，而只会充当相应上下文中的关键字。</value>
+  </data>
+  <data name="chkNoAddressFieldAtThisPoint" xml:space="preserve">
+    <value>此时无法使用字段“{0}”的地址</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInUnmanaged" xml:space="preserve">
+    <value>对于在此位置或附近使用“unmanaged”约束的泛型构造的用法，无法解析其多义性</value>
+  </data>
+  <data name="tcThisTypeMayNotHaveACLIMutableAttribute" xml:space="preserve">
+    <value>此类型定义不能具有“CLIMutable”特性。只有记录类型可以有此特性。</value>
+  </data>
+  <data name="lexOutsideSixtyFourBitSigned" xml:space="preserve">
+    <value>此数字在允许的 64 位带符号整数范围之外</value>
+  </data>
+  <data name="parsEnumFieldsCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允许对枚举字段使用可访问性修饰符</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleNumbersDiffer" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为 {2} 的数量不同</value>
+  </data>
+  <data name="tcInvalidTypeExtension" xml:space="preserve">
+    <value>类型扩展无效</value>
+  </data>
+  <data name="buildProblemWithFilename" xml:space="preserve">
+    <value>文件名“{0}”存在问题: {1}</value>
+  </data>
+  <data name="lexHashEndifRequiredForElse" xml:space="preserve">
+    <value>#else 需要 #endif</value>
+  </data>
+  <data name="keywordDescriptionStruct" xml:space="preserve">
+    <value>用于声明结构类型。另外，也用于泛型参数约束。用于模块定义中的 OCaml 兼容性。</value>
+  </data>
+  <data name="keywordDescriptionStatic" xml:space="preserve">
+    <value>用于表示可在没有类型实例的情况下调用的方法或属性，或者在某类型的所有实例中共享的值成员。</value>
+  </data>
+  <data name="tcEntryPointAttributeRequiresFunctionInModule" xml:space="preserve">
+    <value>“EntryPointAttribute”特性只能用于模块中的函数定义</value>
+  </data>
+  <data name="DefaultParameterValueNotAppropriateForArgument" xml:space="preserve">
+    <value>默认值与参数的类型不同。将忽略 DefaultParameterValue 属性以及任何可选属性。注意: "null" 需要用正确的类型进行批注，例如 "DefaultParameterValue(null:obj)"。</value>
+  </data>
+  <data name="csIncorrectGenericInstantiation" xml:space="preserve">
+    <value>泛型实例化不正确。没有名为“{1}”的 {0} 成员采用 {2} 个泛型参数。</value>
+  </data>
+  <data name="tcNamespaceCannotContainExtensionMembers" xml:space="preserve">
+    <value>命名空间不能包含扩展成员(在定义类型的同一文件和命名空间声明组中除外)。请考虑使用模块来包含扩展成员的声明。</value>
+  </data>
+  <data name="keywordDescriptionReturn" xml:space="preserve">
+    <value>用于表示一个可作为计算表达式的结果提供的值。</value>
+  </data>
+  <data name="valueIsNotAccessible" xml:space="preserve">
+    <value>无法从此代码位置访问值“{0}”</value>
+  </data>
+  <data name="lexfltIncorrentIndentationOfIn" xml:space="preserve">
+    <value>相对于相应的“let”，此“in”标记的缩进不正确</value>
+  </data>
+  <data name="impTypeRequiredUnavailable" xml:space="preserve">
+    <value>此处需要类型“{0}”，但此类型不可用。必须添加对程序集“{1}”的引用。</value>
+  </data>
+  <data name="tcOperatorDoesntAcceptInto" xml:space="preserve">
+    <value>运算符“{0}”不接受“into”的用法</value>
+  </data>
+  <data name="csMemberIsNotStatic" xml:space="preserve">
+    <value>{0} 不是静态成员</value>
+  </data>
+  <data name="tcAnonymousTypeInvalidInDeclaration" xml:space="preserve">
+    <value>此声明中不允许有匿名类型变量</value>
+  </data>
+  <data name="tcRecordFieldInconsistentTypes" xml:space="preserve">
+    <value>此记录包含来自不一致的类型的字段</value>
+  </data>
+  <data name="tcTypeDefinitionsWithImplicitConstructionMustHaveLocalBindingsBeforeMembers" xml:space="preserve">
+    <value>“let”和“do”绑定在类型定义中必须处于成员和接口定义之前</value>
+  </data>
+  <data name="buildDirectivesInModulesAreIgnored" xml:space="preserve">
+    <value>模块中的指令被忽略</value>
+  </data>
+  <data name="lexOutsideSixteenBitSigned" xml:space="preserve">
+    <value>此数字在允许的 16 位带符号整数范围之外</value>
+  </data>
+  <data name="optsProblemWithCodepage" xml:space="preserve">
+    <value>代码页“{0}”存在问题: {1}</value>
+  </data>
+  <data name="tcAttributeExpressionsMustBeConstructorCalls" xml:space="preserve">
+    <value>特性表达式必须是对对象构造函数的调用</value>
+  </data>
+  <data name="tcDelegateConstructorMustBePassed" xml:space="preserve">
+    <value>必须向委托构造函数传递单个函数值</value>
+  </data>
+  <data name="csIndexArgumentMismatch" xml:space="preserve">
+    <value>此索引器需要 {0} 个参数，而此处给定了 {1} 个参数</value>
+  </data>
+  <data name="ifExpression" xml:space="preserve">
+    <value>"if" 表达式需要具有类型“{0}”才能满足上下文类型要求。当前的类型为“{1}”。</value>
+  </data>
+  <data name="tcAbbreviatedTypesCannotBeSealed" xml:space="preserve">
+    <value>不能为缩写的类型给定“Sealed”特性</value>
+  </data>
+  <data name="optsOptimize" xml:space="preserve">
+    <value>启用优化(缩写: -O)</value>
+  </data>
+  <data name="tcOverrideArityMismatch" xml:space="preserve">
+    <value>此替代使用的参数数量与对应的抽象成员的数量不同。找到以下抽象成员: {0}</value>
+  </data>
+  <data name="parsUnmatchedBracket" xml:space="preserve">
+    <value>不匹配的“[”</value>
+  </data>
+  <data name="tcLiteralCannotBeInline" xml:space="preserve">
+    <value>不能将文本值标记为“inline”</value>
+  </data>
+  <data name="augNoEqualityNeedsNoComparison" xml:space="preserve">
+    <value>“NoEquality”特性必须与“NoComparison”特性结合使用</value>
+  </data>
+  <data name="crefQuotationsCantRequireByref" xml:space="preserve">
+    <value>引用内容不能包含需要 byref 指针的表达式</value>
+  </data>
+  <data name="tcUnexpectedSlashInType" xml:space="preserve">
+    <value>类型中的意外的 /</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedAssemblyCode" xml:space="preserve">
+    <value>总是密封程序集代码类型</value>
+  </data>
+  <data name="buildNoInputsSpecified" xml:space="preserve">
+    <value>未指定输入</value>
+  </data>
+  <data name="tcNonZeroConstantCannotHaveGenericUnit" xml:space="preserve">
+    <value>非零常数不能具有泛型单位。对于泛型零，请编写 0.0&lt;_&gt;。</value>
+  </data>
+  <data name="parsInvalidProperty" xml:space="preserve">
+    <value>属性 getter 或 setter 无效</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureDeclaresDiffer" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名声明的是 {2}，而实现声明的是 {3}</value>
+  </data>
+  <data name="etIllegalCharactersInNamespaceName" xml:space="preserve">
+    <value>所提供的命名空间名称“{1}”中不允许出现字符“{0}”</value>
+  </data>
+  <data name="buildInvalidHashIDirective" xml:space="preserve">
+    <value>指令无效。应为“#I \"&lt;路径&gt;\"”。</value>
+  </data>
+  <data name="lexOutsideThirtyTwoBitUnsigned" xml:space="preserve">
+    <value>此数字在允许的 32 位无符号整数范围之外</value>
+  </data>
+  <data name="chkPropertySameNameMethod" xml:space="preserve">
+    <value>属性“{0}”与类型“{1}”中的某个方法具有相同的名称。</value>
+  </data>
+  <data name="typeInfoEvent" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="typeInfoField" xml:space="preserve">
+    <value>字段</value>
+  </data>
+  <data name="tastRecursiveValuesMayNotBeInConstructionOfTuple" xml:space="preserve">
+    <value>以递归方式定义的值在递归绑定内不能直接显示为元组值的构造的一部分</value>
+  </data>
+  <data name="optsDCLOHtmlDoc" xml:space="preserve">
+    <value>命令行选项“{0}”已弃用。HTML 文档生成现在是 F# Power Pack 的一部分(借助 FsHtmlDoc.exe 工具)。</value>
+  </data>
+  <data name="tcAttributesAreNotPermittedOnLetBindings" xml:space="preserve">
+    <value>不允许对表达式中的“let”绑定使用特性</value>
+  </data>
+  <data name="ValueNotContainedMutabilityParameterCountsDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n各自的类型参数计数不同</value>
+  </data>
+  <data name="tcMemberIsNotSufficientlyGeneric" xml:space="preserve">
+    <value>此成员的通用性不够</value>
+  </data>
+  <data name="keywordDescriptionTrueFalse" xml:space="preserve">
+    <value>用作布尔文本</value>
+  </data>
+  <data name="crefQuotationsCantContainDescendingForLoops" xml:space="preserve">
+    <value>引用内容不能包含循环的递减</value>
+  </data>
+  <data name="optsBaseaddress" xml:space="preserve">
+    <value>要生成的库的基址</value>
+  </data>
+  <data name="buildProblemReadingAssembly" xml:space="preserve">
+    <value>读取程序集“{0}”时出现问题: {1}</value>
+  </data>
+  <data name="etNullMember" xml:space="preserve">
+    <value>所提供的类型“{0}”返回了 null 成员</value>
+  </data>
+  <data name="impReferencedTypeCouldNotBeFoundInAssembly" xml:space="preserve">
+    <value>在程序集“{1}”中找到了对类型“{0}”的引用，但在该程序集中未能找到此类型</value>
+  </data>
+  <data name="tcGenericParameterHasBeenConstrained" xml:space="preserve">
+    <value>使用泛型类型参数的方式已将其限定为始终为“{0}”</value>
+  </data>
+  <data name="ValueNotContainedMutabilityOverridesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n一个标记为重写，另一个未标记为重写</value>
+  </data>
+  <data name="tcExpressionCountMisMatch" xml:space="preserve">
+    <value>需要 {0} 个表达式，已获取 {1} 个</value>
+  </data>
+  <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
+    <value>此类型扩展的已声明类型参数与原始类型“{0}”的已声明类型参数不匹配</value>
+  </data>
+  <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
+    <value>至少有一个重写未正确实现其相应的抽象成员</value>
+  </data>
+  <data name="fscAssemblyVersionAttributeIgnored" xml:space="preserve">
+    <value>已忽略“AssemblyVersionAttribute”，因为已使用命令行选项给定一个版本</value>
+  </data>
+  <data name="tcDefaultValueAttributeRequiresVal" xml:space="preserve">
+    <value>“DefaultValue”特性只能用于“val”声明</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedStruct" xml:space="preserve">
+    <value>总是密封结构类型</value>
+  </data>
+  <data name="tcTypesCannotInheritFromMultipleConcreteTypes" xml:space="preserve">
+    <value>类型不能从多个具体类型继承</value>
+  </data>
+  <data name="tcUnexpectedTypeArguments" xml:space="preserve">
+    <value>意外的类型参数</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleMissingInterface" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名要求此类型支持接口 {2}，而该接口尚未实现</value>
+  </data>
+  <data name="optsHelpBannerCodeGen" xml:space="preserve">
+    <value>- 代码生成 -</value>
+  </data>
+  <data name="tcUnexpectedConstUint16Array" xml:space="preserve">
+    <value>意外的 Const_uint16array</value>
+  </data>
+  <data name="tcMemberUsedInInvalidWay" xml:space="preserve">
+    <value>成员“{0}”的使用方式无效。在给出“{2}”的定义之前，已推理出“{1}”的用法，这是无效的前向引用。</value>
+  </data>
+  <data name="descriptionWordIs" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="tcUnsupportedAttribute" xml:space="preserve">
+    <value>不能在此版本的 F# 中使用该特性</value>
+  </data>
+  <data name="tcAttributesInvalidInPatterns" xml:space="preserve">
+    <value>模式中不允许使用特性</value>
+  </data>
+  <data name="tcCannotOverrideSealedMethod" xml:space="preserve">
+    <value>无法重写继承的成员“{0}”，因为该成员是密封的</value>
+  </data>
+  <data name="tcTypeHasNoNestedTypes" xml:space="preserve">
+    <value>此类型不具有嵌套类型</value>
+  </data>
+  <data name="buildUnexpectedFileNameCharacter" xml:space="preserve">
+    <value>文件名“{0}”包含无效字符“{1}”</value>
+  </data>
+  <data name="undefinedNameFieldConstructorOrMember" xml:space="preserve">
+    <value>未定义字段、构造函数或成员“{0}”。</value>
+  </data>
+  <data name="chkReflectedDefCantSplice" xml:space="preserve">
+    <value>[&lt;ReflectedDefinition&gt;] 条件中不能使用前缀拼接运算符“%”</value>
+  </data>
+  <data name="csTypeInstantiationLengthMismatch" xml:space="preserve">
+    <value>类型实例化长度不匹配</value>
+  </data>
+  <data name="parsSetterAtMostTwoArguments" xml:space="preserve">
+    <value>setter 属性最多可以有两个参数组</value>
+  </data>
+  <data name="optsNowarn" xml:space="preserve">
+    <value>禁用特定的警告消息</value>
+  </data>
+  <data name="optsNologo" xml:space="preserve">
+    <value>取消显示编译器版权消息</value>
+  </data>
+  <data name="ilFieldDoesNotHaveValidOffsetForStructureLayout" xml:space="preserve">
+    <value>类型“{0}”已标记为具有显式布局，但字段“{1}”尚未用“FieldOffset”特性进行标记</value>
+  </data>
+  <data name="FieldNotContainedTypesDiffer" xml:space="preserve">
+    <value>该模块包含字段\n    {0}    \n而其签名指定\n    {1}    \n类型不同</value>
+  </data>
+  <data name="chkNoFirstClassSplicing" xml:space="preserve">
+    <value>不允许优先使用表达式拼接运算符</value>
+  </data>
+  <data name="tcTypeCastErased" xml:space="preserve">
+    <value>此向下转换会将所提供类型“{0}”清除到类型“{1}”。</value>
+  </data>
+  <data name="tcMemberFoundIsNotAbstractOrVirtual" xml:space="preserve">
+    <value>类型 {0} 包含成员“{1}”，但其不是可用于替代或实现的虚拟或抽象方法。</value>
+  </data>
+  <data name="tcAttribArgsDiffer" xml:space="preserve">
+    <value>特性“{0}”同时出现在实现和签名中，但它们的参数有所不同。只有签名中的该特性才会包括在已编译代码中。</value>
+  </data>
+  <data name="cannotResolveNullableOperators" xml:space="preserve">
+    <value>无法解析运算符“{0}”。请考虑打开模块“Microsoft.FSharp.Linq.NullableOperators”。</value>
+  </data>
+  <data name="buildUnrecognizedOption" xml:space="preserve">
+    <value>无法识别的选项: '{0}'</value>
+  </data>
+  <data name="typeInfoExtension" xml:space="preserve">
+    <value>扩展</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleFieldInImplButNotSig" xml:space="preserve">
+    <value>异常定义不兼容，因为实现中具有字段“{0}”，而签名中没有该字段。该模块包含异常定义\n    {1}    \n而其签名指定\n\t{2}。</value>
+  </data>
+  <data name="csMethodFoundButIsNotStatic" xml:space="preserve">
+    <value>类型“{0}”具有方法“{1}”(全名为“{2}”)，但此方法不是静态的</value>
+  </data>
+  <data name="chkErrorContainsCallToRethrow" xml:space="preserve">
+    <value>只可以在 try-with 的处理程序中直接调用“reraise”</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedEnum" xml:space="preserve">
+    <value>总是密封枚举类型</value>
+  </data>
+  <data name="csArgumentTypesDoNotMatch" xml:space="preserve">
+    <value>参数类型不匹配</value>
+  </data>
+  <data name="forLIsUnnecessary" xml:space="preserve">
+    <value>此格式说明符中不需要“l”或“L”。在 F# 代码中，可以改用 %d、%x、%o 或 %u，这些项将被重载以用于所有基本整数类型。</value>
+  </data>
+  <data name="keywordDescriptionPublic" xml:space="preserve">
+    <value>允许访问类型外的成员。</value>
+  </data>
+  <data name="csNullableTypeDoesNotHaveNull" xml:space="preserve">
+    <value>类型“{0}”未将“null”用作适当的值。若要为可以为 null 的类型创建 null 值，请使用“System.Nullable()”。</value>
+  </data>
+  <data name="optRecursiveValValue" xml:space="preserve">
+    <value>递归的 ValValue {0}</value>
+  </data>
+  <data name="chkNoByrefsOfByrefs" xml:space="preserve">
+    <value>类型“{0}”非法，因为在 byref&lt;T&gt; 中，T 不能包含 byref 类型。</value>
+  </data>
+  <data name="optsDefine" xml:space="preserve">
+    <value>定义条件编译符号(缩写: -d)</value>
+  </data>
+  <data name="parsAttributesIllegalOnInherit" xml:space="preserve">
+    <value>不允许对“inherit”声明使用特性</value>
+  </data>
+  <data name="etPropertyCanWriteButHasNoSetter" xml:space="preserve">
+    <value>所提供的类型“{1}”的属性“{0}”的 CanWrite 为 true，但是没有来自 GetSetMethod() 的值</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleExceptionDeclarationsDiffer" xml:space="preserve">
+    <value>异常定义不兼容，因为异常声明不同。该模块包含异常定义\n    {0}    \n而其签名指定\n\t{1}。</value>
+  </data>
+  <data name="buildExpectedSigdataFile" xml:space="preserve">
+    <value>未能在 FSharp.Core 旁找到 FSharp.Core.sigdata。文件应在 {0} 中。请考虑升级到更新版本的 FSharp.Core，该版本不再需要此文件。</value>
+  </data>
+  <data name="pplexExpectedSingleLineComment" xml:space="preserve">
+    <value>应输入单行注释或行尾</value>
+  </data>
+  <data name="etProviderReturnedNull" xml:space="preserve">
+    <value>类型提供程序返回了“null”，这不是来自“{0}”的有效返回值</value>
+  </data>
+  <data name="lexHashIfMustHaveIdent" xml:space="preserve">
+    <value>#if 指令后应紧跟标识符</value>
+  </data>
+  <data name="typrelNoImplementationGivenWithSuggestion" xml:space="preserve">
+    <value>未为“{0}”给定任何实现。请注意，必须在适当的“interface”声明下实现并列出所有接口成员，例如“interface ... with member ...”。</value>
+  </data>
+  <data name="parsExpectedExpressionAfterLet" xml:space="preserve">
+    <value>此“{0}”后的程序块未完成。每个代码块均为表达式，且必须具有结果。“{1}”不能为程序块中最后的代码元素。考虑为此程序块提供显式结果。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileWhile" xml:space="preserve">
+    <value>“while”表达式中出现意外的输入结尾。应为“while &lt;表达式&gt; do &lt;表达式&gt;”。</value>
+  </data>
+  <data name="tcMeasureDefinitionsCannotHaveTypeParameters" xml:space="preserve">
+    <value>度量定义不能具有类型参数</value>
+  </data>
+  <data name="buildDifferentVersionMustRecompile" xml:space="preserve">
+    <value>必须对 F# 编译的 DLL“{0}”进行重新编译，才能将其用于此版本的 F#</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileMatch" xml:space="preserve">
+    <value>“match”表达式中出现意外的输入结尾。应为“match &lt;表达式&gt; with | &lt;分区&gt; -&gt; &lt;表达式&gt; | &lt;分区&gt; -&gt; &lt;表达式&gt; ...”。</value>
+  </data>
+  <data name="tcInterfaceTypesAndDelegatesCannotContainFields" xml:space="preserve">
+    <value>接口类型和委托类型不能包含字段</value>
+  </data>
+  <data name="buildCompilingExtensionIsForML" xml:space="preserve">
+    <value>文件扩展名“.ml”和“.mli”适用于 ML 兼容性</value>
+  </data>
+  <data name="typeInfoNamespace" xml:space="preserve">
+    <value>命名空间</value>
+  </data>
+  <data name="csMemberSignatureMismatch" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”需要 {1} 个参数。所需签名为“{2}”。</value>
+  </data>
+  <data name="tcMeasureDeclarationsRequireStaticMembersNotConstructors" xml:space="preserve">
+    <value>度量声明只能具有静态成员: 构造函数不可用</value>
+  </data>
+  <data name="tcStaticInitializersIllegalInInterface" xml:space="preserve">
+    <value>接口不能包含静态初始化表达式的定义</value>
+  </data>
+  <data name="crefNoInnerGenericsInQuotations" xml:space="preserve">
+    <value>带引号的表达式中不允许有内部泛型函数。请考虑添加一些类型约束，直至此函数不再是泛型函数。</value>
+  </data>
+  <data name="optsUnknownArgumentToTheTestSwitch" xml:space="preserve">
+    <value>未知的测试参数: '{0}'</value>
+  </data>
+  <data name="csTypeInferenceMaxDepth" xml:space="preserve">
+    <value>类型推理问题太复杂(已达到最大迭代深度)。请考虑添加更多类型批注。</value>
+  </data>
+  <data name="undefinedNameValueNamespaceTypeOrModule" xml:space="preserve">
+    <value>未定义值、命名空间、类型或模块“{0}”。</value>
+  </data>
+  <data name="ModuleContainsConstructorButDataFieldsDiffer" xml:space="preserve">
+    <value>该模块包含构造函数\n    {0}    \n而其签名指定\n    {1}    \n各自的数据字段数不同</value>
+  </data>
+  <data name="tcStructsMayNotContainDoBindings" xml:space="preserve">
+    <value>结构不能包含“do”绑定，因为结构的默认构造函数将不会执行这些绑定</value>
+  </data>
+  <data name="keywordDescriptionUpcast" xml:space="preserve">
+    <value>用于转换为较高继承链中的类型。</value>
+  </data>
+  <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
+    <value>{0} var in collection {1} (outerKey = innerKey) into group。请注意，“{2}”后需使用括号。</value>
+  </data>
+  <data name="tcDefaultStructConstructorCall" xml:space="preserve">
+    <value>结构类型的默认零初始化构造函数只能在结构类型的所有字段都承认默认初始化时使用</value>
+  </data>
+  <data name="tcGenericTypesCannotHaveStructLayout" xml:space="preserve">
+    <value>不能为泛型类型给定“StructLayout”特性</value>
+  </data>
+  <data name="tcExplicitObjectConstructorSyntax" xml:space="preserve">
+    <value>显式对象构造函数应使用语法“new(args) = expr”</value>
+  </data>
+  <data name="keywordDescriptionUntypedQuotation" xml:space="preserve">
+    <value>分隔泛型代码引用。</value>
+  </data>
+  <data name="tcStructsMayNotContainLetBindings" xml:space="preserve">
+    <value>结构不能包含值定义，因为结构的默认构造函数将不会执行这些绑定。请考虑为该类型的主构造函数添加更多参数。</value>
+  </data>
+  <data name="lexOutsideEightBitSigned" xml:space="preserve">
+    <value>此数字在允许的 8 位带符号整数范围之外</value>
+  </data>
+  <data name="etUnsupportedMemberKind" xml:space="preserve">
+    <value>所提供类型“{1}”的成员“{0}”无效。仅允许使用属性、方法和构造函数</value>
+  </data>
+  <data name="tcFieldRequiresAssignment" xml:space="preserve">
+    <value>未为类型“{1}”的字段“{0}”赋值</value>
+  </data>
+  <data name="csTypeDoesNotSupportOperator" xml:space="preserve">
+    <value>类型“{0}”不支持运算符“{1}”</value>
+  </data>
+  <data name="chkNoAddressStaticFieldAtThisPoint" xml:space="preserve">
+    <value>此时无法使用静态字段“{0}”的地址</value>
+  </data>
+  <data name="tcOpenUsedWithPartiallyQualifiedPath" xml:space="preserve">
+    <value>此声明通过部分限定的路径来打开命名空间或模块“{0}”。请调整此代码以使用命名空间的完整路径。此更改将使您的代码在 F# 和 CLI 库中不断添加新构造的情况下更为可靠。</value>
+  </data>
+  <data name="tcDoBangIllegalInSequenceExpression" xml:space="preserve">
+    <value>不能在序列表达式中使用“do!</value>
+  </data>
+  <data name="buildImplementationAlreadyGivenDetail" xml:space="preserve">
+    <value>已提供文件或模块“{0}”的实现。由于需要进行类型推理，因此编译顺序在 F# 中很重要。您可能需要调整文件的顺序，将签名文件放在实现之前。在 Visual Studio 中，将按照文件在项目文件中的显示顺序对这些文件执行类型检查，可以使用解决方案资源管理器手动编辑或调整此显示顺序。</value>
+  </data>
+  <data name="invalidNamespaceForProvidedType" xml:space="preserve">
+    <value>所提供类型的命名空间无效</value>
+  </data>
+  <data name="tcTypeDefinitionIsCyclicThroughInheritance" xml:space="preserve">
+    <value>此类型定义涉及一个经由结构字段或继承关系的直接循环引用</value>
+  </data>
+  <data name="tcNonLiteralCannotBeUsedInPattern" xml:space="preserve">
+    <value>此值不是文本，不能在模式中使用</value>
+  </data>
+  <data name="tcStructsMustDeclareTypesOfImplicitCtorArgsExplicitly" xml:space="preserve">
+    <value>必须为结构的主构造函数的每个参数给定一个类型，例如“type S(x1:int, x2: int) = ...”。这些参数确定该结构的各个字段。</value>
+  </data>
+  <data name="tcMutableValuesMayNotHaveGenericParameters" xml:space="preserve">
+    <value>可变值不能具有泛型参数</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInDelegate" xml:space="preserve">
+    <value>未能解析在此位置或其附近使用带“delegate”约束的泛型构造所产生的多义性</value>
+  </data>
+  <data name="tcInvalidDelegateSpecification" xml:space="preserve">
+    <value>委托规范的格式必须为“typ -&gt; typ”</value>
+  </data>
+  <data name="chkNoReflectedDefinitionOnStructMember" xml:space="preserve">
+    <value>ReflectedDefinitionAttribute 不能应用于结构类型的实例成员，因为该实例成员采用隐式“this”byref 参数</value>
+  </data>
+  <data name="parsGetAndOrSetRequired" xml:space="preserve">
+    <value>需要“get”和/或“set”</value>
+  </data>
+  <data name="forDoesNotSupportPrefixFlag" xml:space="preserve">
+    <value>“{0}”不支持前缀“{1}”标志</value>
+  </data>
+  <data name="tcTypeParameterHasBeenConstrained" xml:space="preserve">
+    <value>使用此类型参数的方式已将其限定为始终为“{0}”</value>
+  </data>
+  <data name="tcNamedArgumentsCannotBeUsedInMemberTraits" xml:space="preserve">
+    <value>不能将命名参数提供给成员特征调用</value>
+  </data>
+  <data name="toolLocationHelperUnsupportedFrameworkVersion" xml:space="preserve">
+    <value>不支持指定的 .NET Framework 版本“{0}”。请指定来自枚举 Microsoft.Build.Utilities.TargetDotNetFrameworkVersion 的值。</value>
+  </data>
+  <data name="tcLiteralAttributeRequiresConstantValue" xml:space="preserve">
+    <value>如果同时给定了常数值(例如“val x : int = 1”)，则声明只能为 [&lt;Literal&gt;] 特性</value>
+  </data>
+  <data name="buildInvalidSourceFileExtension" xml:space="preserve">
+    <value>无法识别“{0}”的文件扩展名。源文件的扩展名必须为 .fs、.fsi、.fsx、.fsscript、.ml 或 .mli。</value>
+  </data>
+  <data name="tcInheritDeclarationMissingArguments" xml:space="preserve">
+    <value>此“inherit”声明指定继承的类型，但没有参数。请考虑提供参数，例如“inherit BaseType(args)”。</value>
+  </data>
+  <data name="optsPdb" xml:space="preserve">
+    <value>对输出调试文件进行命名</value>
+  </data>
+  <data name="optsLib" xml:space="preserve">
+    <value>指定用于解析源文件和程序集的包含路径的目录(缩写: -I)</value>
+  </data>
+  <data name="optsSig" xml:space="preserve">
+    <value>将推理出的程序集接口输出到文件</value>
+  </data>
+  <data name="optsBuildModule" xml:space="preserve">
+    <value>生成可添加到其他程序集的模块</value>
+  </data>
+  <data name="parsActivePatternCaseContainsPipe" xml:space="preserve">
+    <value>不允许在活动模式用例标识符中使用“|”字符</value>
+  </data>
+  <data name="parsAccessibilityModsIllegalForAbstract" xml:space="preserve">
+    <value>不允许对此成员使用可访问性修饰符。抽象槽总是具有与封闭类型相同的可见性。</value>
+  </data>
+  <data name="commaInsteadOfSemicolonInRecord" xml:space="preserve">
+    <value>使用 ";" 来分隔记录中的字段值。考虑使用 ";" 替换 ","。</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInOverloadedOperator" xml:space="preserve">
+    <value>未能解析在此程序点或其附近使用运算符“{0}”所产生的固有多义性。请考虑使用类型批注来解析此多义性。</value>
+  </data>
+  <data name="undefinedNameType" xml:space="preserve">
+    <value>未定义类型“{0}”。</value>
+  </data>
+  <data name="keywordDescriptionInline" xml:space="preserve">
+    <value>用于表示应直接集成到调用方代码中的函数。</value>
+  </data>
+  <data name="tcNotValidEnumCaseName" xml:space="preserve">
+    <value>对于枚举用例来说，这不是有效的名称</value>
+  </data>
+  <data name="tcInstanceMemberRequiresTarget" xml:space="preserve">
+    <value>此实例成员需要一个用于表示被调用的对象的参数。使此成员成为静态成员，或使用表示法“member x.Member(args) = ...”。</value>
+  </data>
+  <data name="etNoStaticParameterWithName" xml:space="preserve">
+    <value>不存在名称为“{0}”的静态参数</value>
+  </data>
+  <data name="augNoEqNeedsNoObjEquals" xml:space="preserve">
+    <value>具有特性“NoEquality”通常不应显式实现“Object.Equals(obj)”。如果这是为了实现互操作性而特意这样做的，请禁用此警告</value>
+  </data>
+  <data name="tastValueHasBeenCopied" xml:space="preserve">
+    <value>已复制该值以确保此操作不会更改原始值，或由于该副本在从成员返回结构时为隐式，而随后访问了另一成员</value>
+  </data>
+  <data name="tcConstrainedTypeVariableCannotBeGeneralized" xml:space="preserve">
+    <value>未能对此绑定的一个或多个显式类或函数类型变量进行一般化，因为它们已被约束为其他类型</value>
+  </data>
+  <data name="csCandidates" xml:space="preserve">
+    <value>候选项: {0}</value>
+  </data>
+  <data name="parsUnmatchedWith" xml:space="preserve">
+    <value>不匹配的“with”或“with”块的格式不正确</value>
+  </data>
+  <data name="listElementHasWrongType" xml:space="preserve">
+    <value>列表构造函数表达式的所有元素必须具有同一类型。此表达式的类型应为“{0}”，但此处类型为“{1}”。</value>
+  </data>
+  <data name="tcExplicitTypeSpecificationCannotBeUsedForExceptionConstructors" xml:space="preserve">
+    <value>显式类型规范不能用于异常构造函数</value>
+  </data>
+  <data name="nrRecordTypeNeedsQualifiedAccess" xml:space="preserve">
+    <value>使用 RequireQualifiedAccessAttribute 定义记录字段“{0}”的记录类型。包括所使用的名称中记录类型 ('{1}') 的名称。</value>
+  </data>
+  <data name="tcFormalArgumentIsNotOptional" xml:space="preserve">
+    <value>相应的形参不是可选的</value>
+  </data>
+  <data name="typrelInvalidValue" xml:space="preserve">
+    <value>值无效</value>
+  </data>
+  <data name="chkUnusedValue" xml:space="preserve">
+    <value>未使用值“{0}”</value>
+  </data>
+  <data name="buildOptionRequiresParameter" xml:space="preserve">
+    <value>选项需要参数: {0}</value>
+  </data>
+  <data name="tcInvalidDeclaration" xml:space="preserve">
+    <value>声明无效</value>
+  </data>
+  <data name="lexOutsideNativeUnsigned" xml:space="preserve">
+    <value>此数字在允许的无符号本机整数范围之外</value>
+  </data>
+  <data name="undefinedNamePatternDiscriminator" xml:space="preserve">
+    <value>未定义模式鉴别器“{0}”。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFile" xml:space="preserve">
+    <value>意外的输入结束</value>
+  </data>
+  <data name="tastTwoModulesWithSameNameInAssembly" xml:space="preserve">
+    <value>名为“{0}”的两个模块同时出现在此程序集的两个部分中</value>
+  </data>
+  <data name="moreThanOneInvokeMethodFound" xml:space="preserve">
+    <value>已找到委托类型的多个 Invoke 方法</value>
+  </data>
+  <data name="notAFunctionButMaybeIndexerWithName" xml:space="preserve">
+    <value>此值不是一个函数，无法应用。是否曾打算改为通过 {0}.[index] 访问索引器?</value>
+  </data>
+  <data name="tcParameterInferredByref" xml:space="preserve">
+    <value>“{0}”参数被推断为具有 byref 类型。必须为 byref 类型的参数给定显式类型批注，例如“x1: byref&lt;int&gt;”。使用时，会隐式取消引用 byref 参数。</value>
+  </data>
+  <data name="tcStaticMemberShouldNotHaveThis" xml:space="preserve">
+    <value>此静态成员不应具有“this”参数。请考虑使用表示法“member Member(args) = ...”。</value>
+  </data>
+  <data name="csGenericConstructRequiresNonAbstract" xml:space="preserve">
+    <value>泛型构造要求类型“{0}”是非抽象的</value>
+  </data>
+  <data name="optsNoOpt" xml:space="preserve">
+    <value>仅包含实现内联构造所必需的优化信息。禁止跨模块内联，但会提高二进制兼容性。</value>
+  </data>
+  <data name="tcRepresentationOfTypeHiddenBySignature" xml:space="preserve">
+    <value>签名会隐藏此类型的表示形式。必须为此类型给定一个特性(如 [&lt;Sealed&gt;]、[&lt;Class&gt;] 或 [&lt;Interface&gt;])以指示其特征。</value>
+  </data>
+  <data name="forDoesNotSupportZeroFlag" xml:space="preserve">
+    <value>“{0}”格式不支持“0”标志</value>
+  </data>
+  <data name="checkNotSufficientlyGenericBecauseOfScope" xml:space="preserve">
+    <value>类型推理使类型变量 {0} 逸出其范围。请考虑添加显示类型参数声明或调整代码使其通用性降低。</value>
+  </data>
+  <data name="optsDebug" xml:space="preserve">
+    <value>指定调试类型: full、portable、embedded、pdbonly。(若未指定调试类型，则默认为“{0}”，它允许将调试程序附加到正在运行的程序。"portable" 是跨平台格式，"embedded" 是嵌入到输出文件中的跨平台格式)。</value>
+  </data>
+  <data name="parsOnlyHashDirectivesAllowed" xml:space="preserve">
+    <value>只有“#”编译器指令可以在第一个“namespace”声明之前出现</value>
+  </data>
+  <data name="optLocalValueNotFoundDuringOptimization" xml:space="preserve">
+    <value>优化过程中未找到本地值 {0}</value>
+  </data>
+  <data name="etIncorrectProvidedMethod" xml:space="preserve">
+    <value>类型提供程序“{0}”提供了具有名称“{1}”和元数据标记“{2}”的方法，该方法不会在声明类型“{3}”的方法中进行报告</value>
+  </data>
+  <data name="tcOperatorIncorrectSyntax" xml:space="preserve">
+    <value>“{0}”的语法不正确。用法: {1}。</value>
+  </data>
+  <data name="lexInvalidFloat" xml:space="preserve">
+    <value>浮点数无效</value>
+  </data>
+  <data name="tcConstructorsIllegalInAugmentation" xml:space="preserve">
+    <value>不允许将构造函数作为扩展成员 - 必须将它们定义为类型原始定义的一部分</value>
+  </data>
+  <data name="csCtorHasNoArgumentOrReturnProperty" xml:space="preserve">
+    <value>对象构造函数“{0}”无参数或无可设置的返回属性“{1}”。{2}。</value>
+  </data>
+  <data name="invalidPlatformTarget" xml:space="preserve">
+    <value>“anycpu32bitpreferred”平台只能用于 EXE 目标。必须改用“anycpu”。</value>
+  </data>
+  <data name="FieldNotContainedNamesDiffer" xml:space="preserve">
+    <value>该模块包含字段\n    {0}    \n而其签名指定\n    {1}    \n名称不同</value>
+  </data>
+  <data name="ValueNotContainedMutabilityStaticsDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n一个是静态的，另一个不是静态的</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationIsNotSealed" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现类型未密封，但签名暗示它已密封。请考虑将 [&lt;Sealed&gt;] 特性添加到实现。</value>
+  </data>
+  <data name="tcTryIllegalInSequenceExpression" xml:space="preserve">
+    <value>不能在序列表达式中使用“try”/“with”</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAbstractMemberMissingInSig" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现中具有抽象成员“{2}”，而签名中没有该成员</value>
+  </data>
+  <data name="typrelExplicitImplementationOfGetHashCode" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”具有“Object.GetHashCode”的显式实现。请考虑为“Object.Equals(obj)”实现匹配的重写</value>
+  </data>
+  <data name="keywordDescriptionMember" xml:space="preserve">
+    <value>用于声明对象类型中的属性或方法。</value>
+  </data>
+  <data name="keywordDescriptionModule" xml:space="preserve">
+    <value>用于将名称与一组相关类型、值和函数关联，从逻辑上将其与其他代码分开。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityTypesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n类型不同</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleParameterCountsDiffer" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为各自的类型参数计数不同</value>
+  </data>
+  <data name="tcDelegatesCannotBeCurried" xml:space="preserve">
+    <value>委托规范不得为扩充类型。请为多参数委托使用“typ * ... * typ -&gt; typ”，并为返回函数值的委托使用“typ -&gt; (typ -&gt; typ)”。</value>
+  </data>
+  <data name="optValueMarkedInlineButIncomplete" xml:space="preserve">
+    <value>值“{0}”已标记为“inline”，而该值的实现使用了一个无法充分访问的内部或私有函数</value>
+  </data>
+  <data name="tcPropertyIsNotStatic" xml:space="preserve">
+    <value>属性“{0}”不是静态的</value>
+  </data>
+  <data name="tcInvalidObjectSequenceOrRecordExpression" xml:space="preserve">
+    <value>对象、序列或记录表达式无效</value>
+  </data>
+  <data name="tcTypeParametersInferredAreNotStable" xml:space="preserve">
+    <value>為這個值推斷的類型參數在清除類型縮寫後會不穩定。這是因為使用類型縮寫，導致卸除或重新排列類型參數，例如 \n\ttype taggedInt&lt;'a&gt; = int or\n\ttype swap&lt;'a,'b&gt; = 'b * 'a。\n請考慮明確宣告這個值的類型參數，例如\n\tlet f&lt;'a,'b&gt; ((x,y) : swap&lt;'b,'a&gt;) : swap&lt;'a,'b&gt; = (y,x)。</value>
+  </data>
+  <data name="tcImplementsIStructuralComparableExplicitly" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”显式实现接口“System.IStructuralComparable”。将“CustomComparison”特性应用于相应的类型。</value>
+  </data>
+  <data name="parsSyntaxError" xml:space="preserve">
+    <value>语法错误</value>
+  </data>
+  <data name="tcInvalidRelationInJoin" xml:space="preserve">
+    <value>“{0}”中的联接关系无效。应为“expr &lt;op&gt; expr”，其中 &lt;op&gt; 为 =、=?、?= 或 ?=?。</value>
+  </data>
+  <data name="parsFieldBinding" xml:space="preserve">
+    <value>字段绑定的格式必须为“id = expr;”</value>
+  </data>
+  <data name="tcEventIsNotStatic" xml:space="preserve">
+    <value>事件“{0}”不是静态的</value>
+  </data>
+  <data name="customOperationTextLikeZip" xml:space="preserve">
+    <value>{0} var in collection</value>
+  </data>
+  <data name="keywordDescriptionYield" xml:space="preserve">
+    <value>在序列表达式中用于产生序列的值。</value>
+  </data>
+  <data name="tcNoTryFinallyInQuery" xml:space="preserve">
+    <value>“try/finally”表达式不能在查询中使用</value>
+  </data>
+  <data name="tcIDisposableTypeShouldUseNew" xml:space="preserve">
+    <value>建议通过将语法 "new Type(args)"(而非 "Type(args)" 或 "Type")用作表示构造函数的函数值来创建支持 IDisposable 接口的对象，以指示生成的值可拥有该资源</value>
+  </data>
+  <data name="tcLiteralCannotBeMutable" xml:space="preserve">
+    <value>不能将文本值标记为“mutable”</value>
+  </data>
+  <data name="keywordDescriptionWhile" xml:space="preserve">
+    <value>引入循环构造。</value>
+  </data>
+  <data name="csMethodIsNotAStaticMethod" xml:space="preserve">
+    <value>{0} 不是静态方法</value>
+  </data>
+  <data name="parsAttributesAreNotPermittedOnInterfaceImplementations" xml:space="preserve">
+    <value>不允许对接口实现使用特性</value>
+  </data>
+  <data name="tcExpressionRequiresSequence" xml:space="preserve">
+    <value>此表达式格式只能用于序列和计算表达式</value>
+  </data>
+  <data name="crefQuotationsCantFetchUnionIndexes" xml:space="preserve">
+    <value>引用内容不能包含获取联合用例索引的表达式</value>
+  </data>
+  <data name="keywordDescriptionClass" xml:space="preserve">
+    <value>在详细语法中，表示类定义的开头。</value>
+  </data>
+  <data name="keywordDescriptionBegin" xml:space="preserve">
+    <value>在详细语法中，指示程序块的开头。</value>
+  </data>
+  <data name="tcObjectConstructorsOnTypeParametersCannotTakeArguments" xml:space="preserve">
+    <value>不能为针对类型参数的对象构造函数调用提供参数</value>
+  </data>
+  <data name="keywordDescriptionMatch" xml:space="preserve">
+    <value>用于通过比较值与模式来进行分支。</value>
+  </data>
+  <data name="tcUnexpectedConditionInImportedAssembly" xml:space="preserve">
+    <value>导入的程序集中的意外条件: 未能对 AttributeUsage 特性进行解码</value>
+  </data>
+  <data name="tcUnionCaseDoesNotTakeArguments" xml:space="preserve">
+    <value>此联合用例不采用参数</value>
+  </data>
+  <data name="keywordDescriptionGlobal" xml:space="preserve">
+    <value>用于引用顶级 .NET 命名空间。</value>
+  </data>
+  <data name="tcRequireBuilderMethod" xml:space="preserve">
+    <value>只有在计算表达式生成器定义“{0}”方法时才能使用此控制构造</value>
+  </data>
+  <data name="tcImplicitMeasureFollowingSlash" xml:space="preserve">
+    <value>/ 后的度量值的隐式乘积</value>
+  </data>
+  <data name="tcTPFieldMustBeLiteral" xml:space="preserve">
+    <value>提供的字段无效。属于已清除的提供类型的提供字段必须为文本。</value>
+  </data>
+  <data name="tcUnrecognizedQueryOperator" xml:space="preserve">
+    <value>这不是已知的查询运算符。查询运算符是使用“QueryBuilder”类型的对应方法定义的标识符，如“select”、“where”、“sortBy”、“thenBy”、“groupBy”、“groupValBy”、“join”、“groupJoin”、“sumBy”和“averageBy”。</value>
+  </data>
+  <data name="csNoMemberTakesTheseArguments" xml:space="preserve">
+    <value>没有名为“{1}”的 {0} 成员或对象构造函数采用 {2} 个参数</value>
+  </data>
+  <data name="tcInvalidTypeForUnitsOfMeasure" xml:space="preserve">
+    <value>仅 float、float32、decimal 和带符号整数类型支持度量单位</value>
+  </data>
+  <data name="tcFieldIsNotStatic" xml:space="preserve">
+    <value>字段“{0}”不是静态的</value>
+  </data>
+  <data name="parsNamespaceOrModuleNotBoth" xml:space="preserve">
+    <value>文件应以命名空间或模块声明(例如“namespace SomeNamespace.SubNamespace”或“module SomeNamespace.SomeModule”)开头，而不是同时以二者开头。若要定义命名空间中的模块，请使用“module SomeModule = ...”</value>
+  </data>
+  <data name="ilSignatureForExternalFunctionContainsTypeParameters" xml:space="preserve">
+    <value>此外部函数的签名包含类型参数。请约束此参数和返回类型以指示相应的 C 函数的类型。</value>
+  </data>
+  <data name="followingPatternMatchClauseHasWrongType" xml:space="preserve">
+    <value>模式匹配表达式的所有分支必须具有同一类型。此表达式的类型应为“{0}”，但此处类型为“{1}”。</value>
+  </data>
+  <data name="typrelMethodIsSealed" xml:space="preserve">
+    <value>方法“{0}”是密封的，不能重写</value>
+  </data>
+  <data name="parsUnmatched" xml:space="preserve">
+    <value>不匹配的“{0}”</value>
+  </data>
+  <data name="tcRequireVarConstRecogOrLiteral" xml:space="preserve">
+    <value>这不是变量、常数、活动识别器或文本</value>
+  </data>
+  <data name="tcUndefinedField" xml:space="preserve">
+    <value>已为字段“{0}”给定值，但该字段未包含在类型“{1}”中</value>
+  </data>
+  <data name="crefQuotationsCantContainStaticFieldRef" xml:space="preserve">
+    <value>引用内容不能包含获取静态字段的表达式</value>
+  </data>
+  <data name="tcStaticLetBindingsRequireClassesWithImplicitConstructors" xml:space="preserve">
+    <value>静态值定义只能在具有主构造函数的类型中使用。请考虑向类型定义添加参数，例如“type X(args) = ...”。</value>
+  </data>
+  <data name="parsAttributeOnIncompleteCode" xml:space="preserve">
+    <value>无法找到此特性的代码目标，可能是因为此特性后面的代码不完整。</value>
+  </data>
+  <data name="buildInvalidModuleOrNamespaceName" xml:space="preserve">
+    <value>模块或命名空间名称无效</value>
+  </data>
+  <data name="typeInfoCustomOperation" xml:space="preserve">
+    <value>自定义运算</value>
+  </data>
+  <data name="keywordDescriptionAssert" xml:space="preserve">
+    <value>用于在调试期间验证代码。</value>
+  </data>
+  <data name="buildImplicitModuleIsNotLegalIdentifier" xml:space="preserve">
+    <value>此文件中的声明将置于基于文件名“{1}”的隐式模块“{0}”中。但由于这不是一个有效的 F# 标识符，因此将无法从其他文件访问该内容。请考虑重命名此文件或在文件的顶部添加“module”或“namespace”声明。</value>
+  </data>
+  <data name="fscKeyFileCouldNotBeOpened" xml:space="preserve">
+    <value>未能打开密钥文件“{0}”</value>
+  </data>
+  <data name="crefQuotationsCantContainArrayPatternMatching" xml:space="preserve">
+    <value>引用内容不能包含数组模式匹配</value>
+  </data>
+  <data name="tcTupleStructMismatch" xml:space="preserve">
+    <value>有一个元组类型是结构元组，而另一个则是引用元组</value>
+  </data>
+  <data name="csMemberSignatureMismatch4" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”需要 {1} 个附加参数。所需签名为“{2}”。一些缺少的参数的名称为 {3}。</value>
+  </data>
+  <data name="csMemberSignatureMismatch3" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”需要 {1} 个参数。所需签名为“{2}”。一些缺少的参数的名称为 {3}。</value>
+  </data>
+  <data name="csMemberSignatureMismatch2" xml:space="preserve">
+    <value>成员或对象构造函数“{0}”需要 {1} 个附加参数。所需签名为“{2}”。</value>
+  </data>
+  <data name="parsUnmatchedLetBang" xml:space="preserve">
+    <value>值定义不完整。如果该定义处于表达式中，则表达式体必须与“let!”关键字缩进到相同的列。</value>
+  </data>
+  <data name="parsMissingTypeArgs" xml:space="preserve">
+    <value>应为类型参数或静态参数</value>
+  </data>
+  <data name="fscTwoResourceManifests" xml:space="preserve">
+    <value>以下指定选项发生冲突: “win32manifest”和“win32res”。只能使用其中的一个选项。</value>
+  </data>
+  <data name="chkDuplicateProperty" xml:space="preserve">
+    <value>重复属性。属性“{0}”与类型“{1}”中的另一个属性具有相同的名称和签名。</value>
+  </data>
+  <data name="optsPreferredUiLang" xml:space="preserve">
+    <value> 指定首选输出语言区域性名称(例如 es-ES、ja-JP)</value>
+  </data>
+  <data name="tcSeqResultsUseYield" xml:space="preserve">
+    <value>在序列表达式中，使用“yield”生成结果</value>
+  </data>
+  <data name="optsStrongKeyFile" xml:space="preserve">
+    <value>指定强名称密钥文件</value>
+  </data>
+  <data name="parsUnexpectedIdentifier" xml:space="preserve">
+    <value>意外的标识符: '{0}'</value>
+  </data>
+  <data name="lexInvalidLineNumber" xml:space="preserve">
+    <value>行号“{0}”无效</value>
+  </data>
+  <data name="csOptionalArgumentNotPermittedHere" xml:space="preserve">
+    <value>此处不允许可选参数</value>
+  </data>
+  <data name="experimentalConstruct" xml:space="preserve">
+    <value>此构造是试验性构造</value>
+  </data>
+  <data name="parsAugmentationsIllegalOnDelegateType" xml:space="preserve">
+    <value>不允许对委托类型 moduleDefns 使用扩大</value>
+  </data>
+  <data name="buildArgInvalidInt" xml:space="preserve">
+    <value>“{0}”不是有效的整数参数</value>
+  </data>
+  <data name="buildExplicitCoreLibRequiresNoFramework" xml:space="preserve">
+    <value>当显式引用 mscorlib.dll 或 FSharp.Core.dll 时，同时也必须传递 {0} 选项</value>
+  </data>
+  <data name="parsTypeAnnotationsOnGetSet" xml:space="preserve">
+    <value>必须在“get()”或“set(v)”后面提供属性 getter 和 setter 的类型批注，例如“with get() : string = ...”</value>
+  </data>
+  <data name="optsBuildWindows" xml:space="preserve">
+    <value>生成 Windows 可执行文件</value>
+  </data>
+  <data name="optsNameOfOutputFile" xml:space="preserve">
+    <value>输出文件的名称(缩写: -o)</value>
+  </data>
+  <data name="optsSourceLinkRequirePortablePDBs" xml:space="preserve">
+    <value>--仅在发出可移植 PDB 时才支持源链接开关(--debug:portable 或 --debug:embedded)</value>
+  </data>
+  <data name="CallerMemberNameIsOverriden" xml:space="preserve">
+    <value>应用于参数“{0}”的 CallerMemberNameAttribute 不会起作用。它已由 CallerFilePathAttribute 替代。</value>
+  </data>
+  <data name="etBadUnnamedStaticArgs" xml:space="preserve">
+    <value>命名静态参数必须位于所有未命名静态参数之后</value>
+  </data>
+  <data name="optsBuildConsole" xml:space="preserve">
+    <value>生成控制台可执行文件</value>
+  </data>
+  <data name="tcAllImplementedInterfacesShouldBeDeclared" xml:space="preserve">
+    <value>应在类型的初始声明中声明所有实现的接口</value>
+  </data>
+  <data name="tcUnexpectedPropertySpec" xml:space="preserve">
+    <value>意外的源级别属性规范</value>
+  </data>
+  <data name="tcCannotCallAbstractBaseMember" xml:space="preserve">
+    <value>无法调用抽象基成员:“{0}”</value>
+  </data>
+  <data name="tcConditionalAttributeRequiresMembers" xml:space="preserve">
+    <value>“ConditionalAttribute”特性只能用于成员</value>
+  </data>
+  <data name="augCustomCompareNeedsIComp" xml:space="preserve">
+    <value>具有特性“CustomComparison”的类型必须至少显式实现“System.IComparable”或“System.Collections.IStructuralComparable”中的一个</value>
+  </data>
+  <data name="ValueNotContainedMutabilityDotNetNamesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \nCLI 成员名称不同</value>
+  </data>
+  <data name="tcDefaultAmbiguous" xml:space="preserve">
+    <value>此默认值实现的方法具有多义性</value>
+  </data>
+  <data name="tastopsMaxArrayThirtyTwo" xml:space="preserve">
+    <value>F# 支持 1 到 32 之间的数组秩。不允许使用值 {0}。</value>
+  </data>
+  <data name="crefQuotationsCantContainThisType" xml:space="preserve">
+    <value>引用内容不能包含这种类型</value>
+  </data>
+  <data name="assemblyResolutionNetFramework" xml:space="preserve">
+    <value>.NET Framework</value>
+  </data>
+  <data name="tcObjectExpressionsCanOnlyOverrideAbstractOrVirtual" xml:space="preserve">
+    <value>只能在对象表达式中指定抽象和虚拟成员的重写</value>
+  </data>
+  <data name="optsWriteXml" xml:space="preserve">
+    <value>将程序集的 xmldoc 写入到给定文件</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleFieldIsInImplButNotSig" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现中具有字段“{2}”，而签名中没有该字段。虽然这些字段可能仍标记为“私有”或“内部”，但是结构类型此时必须在该类型的签名中显示其字段。</value>
+  </data>
+  <data name="unionCaseIsNotAccessible" xml:space="preserve">
+    <value>无法从此代码位置访问联合用例“{0}”</value>
+  </data>
+  <data name="augOnlyCertainTypesCanHaveAttrs" xml:space="preserve">
+    <value>只可以利用“ReferenceEquality”、“StructuralEquality”和“StructuralComparison”特性来扩大记录、联合、异常和结构类型</value>
+  </data>
+  <data name="ilSignInvalidSignatureSize" xml:space="preserve">
+    <value>签名大小无效</value>
+  </data>
+  <data name="optsWin32manifest" xml:space="preserve">
+    <value>指定 Win32 清单文件</value>
+  </data>
+  <data name="tcInvalidIndexerExpression" xml:space="preserve">
+    <value>索引器表达式无效</value>
+  </data>
+  <data name="parsTypeNameCannotBeEmpty" xml:space="preserve">
+    <value>类型名不能是空的。</value>
+  </data>
+  <data name="buildCouldNotFindSourceFile" xml:space="preserve">
+    <value>未能找到源文件“{0}”</value>
+  </data>
+  <data name="tcExpectModuleOrNamespaceParent" xml:space="preserve">
+    <value>应为模块或命名空间父级 {0}</value>
+  </data>
+  <data name="tcOnlySimpleBindingsCanBeUsedInConstructionExpressions" xml:space="preserve">
+    <value>只能在构造表达式中使用“id = expr”格式的简单绑定</value>
+  </data>
+  <data name="keywordDescriptionExtern" xml:space="preserve">
+    <value>表示声明的计划元素在其他二进制文件或程序集中定义。</value>
+  </data>
+  <data name="optsSourceLink" xml:space="preserve">
+    <value>要嵌入可移植 PDB 文件中的源链接信息文件</value>
+  </data>
+  <data name="tcNewRequiresObjectConstructor" xml:space="preserve">
+    <value>“new”只能用于对象构造函数</value>
+  </data>
+  <data name="csCodeLessGeneric" xml:space="preserve">
+    <value>此代码并不像其批注所述的那样通用。使用“_”指定的度量单位已确定为“1”，即无度量。请考虑使此代码成为泛型代码，或删除对“_”的使用。</value>
+  </data>
+  <data name="tcIllegalStructTypeForConstantExpression" xml:space="preserve">
+    <value>这不是有效的文本表达式。将忽略 [&lt;Literal&gt;] 特性。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureSaysNull2" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名指明此类型可以使用 null 作为额外值，而实现未指明这一点</value>
+  </data>
+  <data name="tcTryWithMayNotBeUsedInQueries" xml:space="preserve">
+    <value>“try/with”表达式不能在查询中使用</value>
+  </data>
+  <data name="optsStandalone" xml:space="preserve">
+    <value>以静态方式将 F# 库与依赖于此库的所有引用的 DLL 链接到所生成的程序集中</value>
+  </data>
+  <data name="tcAttributeAutoOpenWasIgnored" xml:space="preserve">
+    <value>程序集“{1}”中的特性“AutoOpen(\"{0}\")”未引用该程序集中的有效模块或命名空间，已忽略此特性</value>
+  </data>
+  <data name="tcFieldIsNotMutable" xml:space="preserve">
+    <value>此字段是不可变的</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleTypeIsDifferentKind" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为类型的种类不相同</value>
+  </data>
+  <data name="tcEnumerationsCannotHaveInterfaceDeclaration" xml:space="preserve">
+    <value>枚举不能具有接口声明</value>
+  </data>
+  <data name="optsBuildLibrary" xml:space="preserve">
+    <value>生成库(缩写: -a)</value>
+  </data>
+  <data name="buildCouldNotResolveAssembly" xml:space="preserve">
+    <value>未能解析程序集“{0}”</value>
+  </data>
+  <data name="csMemberNotAccessible" xml:space="preserve">
+    <value>无法从此代码位置访问采用 {1} 个参数的成员或对象构造函数“{0}”。方法“{2}”的所有可访问版本都采用了 {3} 个参数。</value>
+  </data>
+  <data name="optsShortFormOf" xml:space="preserve">
+    <value>“{0}”的缩写</value>
+  </data>
+  <data name="tcDefaultImplementationForInterfaceHasAlreadyBeenAdded" xml:space="preserve">
+    <value>已添加此接口的默认实现，因为在相应类型的定义中未指定接口的显式实现</value>
+  </data>
+  <data name="tcFieldNameIsUsedModeThanOnce" xml:space="preserve">
+    <value>命名字段“{0}”多次被使用。</value>
+  </data>
+  <data name="fscDeterministicDebugRequiresPortablePdb" xml:space="preserve">
+    <value>确定性的生成仅支持可移植 PDB (--debug:portable 或 --debug:embedded)</value>
+  </data>
+  <data name="tcInvalidObjectExpressionSyntaxForm" xml:space="preserve">
+    <value>对象表达式无效。没有重写或接口的对象应使用不带括号的表达式格式“new Type(args)”。</value>
+  </data>
+  <data name="typeInfoFromFirst" xml:space="preserve">
+    <value>自 {0}</value>
+  </data>
+  <data name="keywordDescriptionDownto" xml:space="preserve">
+    <value>在 for 表达式中，在反向计数时使用。</value>
+  </data>
+  <data name="tcTypeIsNotARecordType" xml:space="preserve">
+    <value>此类型不是记录类型</value>
+  </data>
+  <data name="crefQuotationsCantContainAddressOf" xml:space="preserve">
+    <value>引用内容不能包含采用字段地址的表达式</value>
+  </data>
+  <data name="tcImplementsIComparableExplicitly" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”显式实现接口“System.IComparable”。您必须将“CustomComparison”特性应用于相应的类型。</value>
+  </data>
+  <data name="tcIfThenElseMayNotBeUsedWithinQueries" xml:space="preserve">
+    <value>if/then/else 表达式不能在查询中使用。请考虑使用 if/then 表达式，或改用序列表达式。</value>
+  </data>
+  <data name="etStaticParameterAlreadyHasValue" xml:space="preserve">
+    <value>已向静态参数“{0}”提供了值</value>
+  </data>
+  <data name="optsEmbedSource" xml:space="preserve">
+    <value>将特定源文件嵌入可移植 PDB 文件</value>
+  </data>
+  <data name="chkByrefUsedInInvalidWay" xml:space="preserve">
+    <value>byref 类型化变量“{0}”的使用方式无效。不能由闭包来捕获 Byref，也不能将其传递给内部函数。</value>
+  </data>
+  <data name="tcPropertyCannotBeSet1" xml:space="preserve">
+    <value>无法设置属性“{0}”</value>
+  </data>
+  <data name="tcPropertyCannotBeSet0" xml:space="preserve">
+    <value>无法设置此属性</value>
+  </data>
+  <data name="chkNoFirstClassAddressOf" xml:space="preserve">
+    <value>不允许优先使用 address-of 运算符</value>
+  </data>
+  <data name="ValueNotContainedMutabilityOneIsConstructor" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n一个是构造函数/属性，另一个不是构造函数/属性</value>
+  </data>
+  <data name="tcObjectConstructionCanOnlyBeUsedInClassTypes" xml:space="preserve">
+    <value>对象构造表达式只能用于实现类类型中的构造函数</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleFieldInSigButNotImpl" xml:space="preserve">
+    <value>异常定义不兼容，因为签名需要字段“{0}”，而实现未指定该字段。该模块包含异常定义\n    {1}    \n而其签名指定\n\t{2}。</value>
+  </data>
+  <data name="tcNumericLiteralRequiresModule" xml:space="preserve">
+    <value>此数值文本要求定义函数 FromZero、FromOne、FromInt32、FromInt64 和 FromString 的模块“{0}”位于范围内</value>
+  </data>
+  <data name="tcConstructorsIllegalForThisType" xml:space="preserve">
+    <value>不能为此类型定义构造函数</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleFieldRequiredButNotSpecified" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名需要字段“{2}”，而实现未指定该字段</value>
+  </data>
+  <data name="tcOptionalArgsOnlyOnMembers" xml:space="preserve">
+    <value>仅允许对类型成员使用可选参数</value>
+  </data>
+  <data name="etProvidedTypeReferenceMissingArgument" xml:space="preserve">
+    <value>对所提供类型的引用缺少静态参数“{0}”的值。可能需要重新编译一个或多个引用的程序集。</value>
+  </data>
+  <data name="elseBranchHasWrongType" xml:space="preserve">
+    <value>"if" 表达式的所有分支必须具有同一类型。此表达式的类型应为“{0}”，但此处类型为“{1}”。</value>
+  </data>
+  <data name="erasedTo" xml:space="preserve">
+    <value>已清除到的位置</value>
+  </data>
+  <data name="tcTypeParameterArityMismatch" xml:space="preserve">
+    <value>此值、类型或方法需要 {0} 个类型参数，而给定了 {1} 个类型参数</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleFieldOrderDiffers" xml:space="preserve">
+    <value>异常定义不兼容，因为签名和实现中的字段顺序不同。该模块包含异常定义\n    {0}    \n而其签名指定\n\t{1}。</value>
+  </data>
+  <data name="tcCustomOperationMayNotBeUsedInConjunctionWithNonSimpleLetBindings" xml:space="preserve">
+    <value>在此计算表达式的其他部分，不能与非值或递归“let”绑定一起使用自定义运算符</value>
+  </data>
+  <data name="typrelMemberDoesNotHaveCorrectNumberOfTypeParameters" xml:space="preserve">
+    <value>成员“{0}”不具有正确数目的方法类型参数。所需签名为“{1}”。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleDotNetTypeRepresentationIsHidden" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名将隐藏 CLI 类型表示形式</value>
+  </data>
+  <data name="tcStructuralComparisonNotSatisfied1" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”具有“StructuralComparison”特性，但类型参数“{1}”不符合“comparison”约束的要求。请考虑将“comparison”约束添加到该类型参数</value>
+  </data>
+  <data name="tcStructuralComparisonNotSatisfied2" xml:space="preserve">
+    <value>结构、记录或联合类型“{0}”具有“StructuralComparison”特性，但组件类型“{1}”不符合“comparison”约束的要求</value>
+  </data>
+  <data name="chkNoAddressOfAtThisPoint" xml:space="preserve">
+    <value>此时无法使用变量“{0}”的地址</value>
+  </data>
+  <data name="typeInfoUnionCase" xml:space="preserve">
+    <value>联合用例</value>
+  </data>
+  <data name="assemblyResolutionGAC" xml:space="preserve">
+    <value>全局程序集缓存</value>
+  </data>
+  <data name="typrelDuplicateInterface" xml:space="preserve">
+    <value>重复或冗余的接口</value>
+  </data>
+  <data name="optsInvalidResponseFile" xml:space="preserve">
+    <value>无效的响应文件“{0}”(“{1}”)</value>
+  </data>
+  <data name="tcInvalidUseBangBinding" xml:space="preserve">
+    <value>“use!”绑定的格式须为“use! &lt;变量&gt; = &lt;表达式&gt;”</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleTypeIsHidden" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名将隐藏类型表示形式</value>
+  </data>
+  <data name="tcInvalidSequenceExpressionSyntaxForm" xml:space="preserve">
+    <value>记录、序列或计算表达式无效。序列表达式的格式应为“seq {{ ... }}”}}'</value>
+  </data>
+  <data name="etEventNoAdd" xml:space="preserve">
+    <value>所提供类型“{1}”上的事件“{0}”没有来自 GetAddMethod() 的值</value>
+  </data>
+  <data name="keywordDescriptionInterface" xml:space="preserve">
+    <value>用于声明和实现接口。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityExtensionsDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n一个是扩展成员，另一个不是扩展成员</value>
+  </data>
+  <data name="parsSetSyntax" xml:space="preserve">
+    <value>必须使用“set value =”、“set idx value =”或“set (idx1,...,idxN) value = ...”定义属性 setter'</value>
+  </data>
+  <data name="tcInvalidArgForParameterizedPattern" xml:space="preserve">
+    <value>参数化模式标签的参数无效</value>
+  </data>
+  <data name="ilSignInvalidBitLen" xml:space="preserve">
+    <value>位长度无效</value>
+  </data>
+  <data name="lexHashIfMustBeFirst" xml:space="preserve">
+    <value>#if 指令必须作为一行的第一个非空白字符出现</value>
+  </data>
+  <data name="etMultipleStaticParameterWithName" xml:space="preserve">
+    <value>存在多个名称为“{0}”的静态参数</value>
+  </data>
+  <data name="tcVolatileFieldsMustBeMutable" xml:space="preserve">
+    <value>可变字段必须标记为“mutable”且不能是线程静态的</value>
+  </data>
+  <data name="tcReturnTypesForUnionMustBeSameAsType" xml:space="preserve">
+    <value>联合用例的返回类型必须与要定义的类型(直至类型的缩写词)相同</value>
+  </data>
+  <data name="tcOverridesCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允许对重写或接口实现使用可访问性修饰符</value>
+  </data>
+  <data name="lexIndentOffForML" xml:space="preserve">
+    <value>请考虑改用扩展名为“.ml”或“.mli”的文件</value>
+  </data>
+  <data name="tcAbstractPropertyMissingGetOrSet" xml:space="preserve">
+    <value>此属性会重写或实现一个抽象属性，但该抽象属性没有相应的 {0}</value>
+  </data>
+  <data name="ilUnexpectedUnrealizedValue" xml:space="preserve">
+    <value>编译器错误: 意外的未识别值</value>
+  </data>
+  <data name="etProvidedTypeReferenceInvalidText" xml:space="preserve">
+    <value>对所提供类型的引用具有无效的静态参数值“{0}”。可能需要重新编译一个或多个引用的程序集。</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleSignaturesDiffer" xml:space="preserve">
+    <value>异常定义不兼容，因为签名和实现中的异常缩写词不同。该模块包含异常定义\n    {0}    \n而其签名指定\n\t{1}。</value>
+  </data>
+  <data name="chkInvalidCustAttrVal" xml:space="preserve">
+    <value>自定义特性值无效(不是常数或文本)</value>
+  </data>
+  <data name="tcExceptionAbbreviationsShouldNotHaveArgumentList" xml:space="preserve">
+    <value>异常缩写词不应具有参数列表</value>
+  </data>
+  <data name="tcInvalidPropertyType" xml:space="preserve">
+    <value>此属性的某个类型无效。采用多个索引器参数的属性应具有格式为“ty1 * ty2 -&gt; ty3”的类型。返回函数的属性应具有格式为“(ty1 -&gt; ty2)”的类型。</value>
+  </data>
+  <data name="chkNoByrefAsTopValue" xml:space="preserve">
+    <value>将在此处存储 byref 类型化值。不允许使用顶级的 let 绑定的 byref 值。</value>
+  </data>
+  <data name="tcMultipleVisibilityAttributesWithLet" xml:space="preserve">
+    <value>已为此标识符指定多个可见性特性。与表达式中的任何“let”绑定一样，类中的“let”绑定总是私有的。</value>
+  </data>
+  <data name="crefQuotationsCantContainGenericFunctions" xml:space="preserve">
+    <value>引用内容不能包含推理为或声明为泛型的函数声明。请考虑添加一些类型约束，以使此引用内容成为带引号的有效表达式。</value>
+  </data>
+  <data name="forBadPrecision" xml:space="preserve">
+    <value>格式说明符中的精度错误</value>
+  </data>
+  <data name="tcTypeHasNoAccessibleConstructor" xml:space="preserve">
+    <value>此类型不具有可访问的对象构造函数</value>
+  </data>
+  <data name="etEmptyNamespaceOfTypeNotAllowed" xml:space="preserve">
+    <value>来自类型提供程序“{1}”的类型“{0}”具有空命名空间。请将“null”用于全局命名空间。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationSaysNull2" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为实现指明此类型可以使用 null 作为额外值，而签名未指明这一点</value>
+  </data>
+  <data name="tcConstructorRequiresArguments" xml:space="preserve">
+    <value>此对象构造函数需要参数</value>
+  </data>
+  <data name="parsVisibilityIllegalOnInherit" xml:space="preserve">
+    <value>不允许对“inherits”声明使用可访问性修饰符</value>
+  </data>
+  <data name="tcTypeRequiresDefinition" xml:space="preserve">
+    <value>此类型需要定义</value>
+  </data>
+  <data name="ilLiteralFieldsCannotBeSet" xml:space="preserve">
+    <value>无法设置文本字段</value>
+  </data>
+  <data name="keywordDescriptionTo" xml:space="preserve">
+    <value>在 for 循环中用于表示范围。</value>
+  </data>
+  <data name="keywordDescriptionOr" xml:space="preserve">
+    <value>与布尔条件配合使用，作为布尔值或运算符。相当于 ||。另外，也用于成员约束。</value>
+  </data>
+  <data name="keywordDescriptionOf" xml:space="preserve">
+    <value>在可区分的联合中用于表示值类别的类型，并用于委托和异常声明。</value>
+  </data>
+  <data name="keywordDescriptionIf" xml:space="preserve">
+    <value>用于条件性分支构造。</value>
+  </data>
+  <data name="keywordDescriptionIn" xml:space="preserve">
+    <value>用于序列表达式，并且在详细语法中，用于分隔绑定中的表达式。</value>
+  </data>
+  <data name="keywordDescriptionAs" xml:space="preserve">
+    <value>用于向当前类对象提供对象名称。另外，也用于向模式匹配中的整个模式提供名称。</value>
+  </data>
+  <data name="keywordDescriptionDo" xml:space="preserve">
+    <value>用于循环构造或执行强制性代码。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityAttributesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n可变性特性不同</value>
+  </data>
+  <data name="tcAbbreviationsFordotNetExceptionsMustHaveMatchingObjectConstructor" xml:space="preserve">
+    <value>通用 IL 异常类型的缩写词必须具有匹配的对象构造函数</value>
+  </data>
+  <data name="lexInvalidNumericLiteral" xml:space="preserve">
+    <value>这不是有效的数字文本。有效的数字文本包括 1、0x1、0b0001 (int)、1u (uint32)、1L (int64)、1UL (uint64)、1s (int16)、1y (sbyte)、1uy (byte)、1.0 (float)、1.0f (float32)、1.0m (decimal)、1I (BigInteger)。</value>
+  </data>
+  <data name="augCustomEqNeedsNoCompOrCustomComp" xml:space="preserve">
+    <value>“CustomEquality”特性必须与“NoComparison”或“CustomComparison”特性结合使用</value>
+  </data>
+  <data name="parsGetterAtMostOneArgument" xml:space="preserve">
+    <value>getter 属性最多可以有一个参数组</value>
+  </data>
+  <data name="tcThisValueMayNotBeInlined" xml:space="preserve">
+    <value>此成员、函数或值声明不能声明为“inline”</value>
+  </data>
+  <data name="parsInvalidPrefixOperator" xml:space="preserve">
+    <value>无效的前缀运算符</value>
+  </data>
+  <data name="parsUnexpectedSemicolon" xml:space="preserve">
+    <value>此时不应有分号</value>
+  </data>
+  <data name="tcCustomOperationNotUsedCorrectly2" xml:space="preserve">
+    <value>“{0}”使用有误。用法: {1}。这是此查询或计算表达式中的自定义运算。</value>
+  </data>
+  <data name="typrelOverrideWasAmbiguous" xml:space="preserve">
+    <value>“{0}”的重写具有多义性</value>
+  </data>
+  <data name="optsStrongKeyContainer" xml:space="preserve">
+    <value>指定强名称密钥容器</value>
+  </data>
+  <data name="tcObjectOfIndeterminateTypeUsedRequireTypeConstraint" xml:space="preserve">
+    <value>已基于此程序点之前的信息对不确定类型的对象使用运算符“expr.[idx]”。请考虑添加更多类型约束</value>
+  </data>
+  <data name="optsHelpBannerErrsAndWarns" xml:space="preserve">
+    <value>- 错误和警告 -</value>
+  </data>
+  <data name="optsSimpleresolution" xml:space="preserve">
+    <value>使用基于目录的规则而非 MSBuild 解析来解析程序集引用</value>
+  </data>
+  <data name="chkDuplicateMethodInheritedTypeWithSuffix" xml:space="preserve">
+    <value>重复方法。在清除元组、函数、度量单位和/或所提供类型后，抽象方法“{0}”与继承类型中的某个抽象方法具有相同的名称和签名。</value>
+  </data>
+  <data name="tcUnitsOfMeasureInvalidInTypeConstructor" xml:space="preserve">
+    <value>不能在类型构造函数应用程序中使用度量单位</value>
+  </data>
+  <data name="tcObjectConstructionExpressionCanOnlyImplementConstructorsInObjectModelTypes" xml:space="preserve">
+    <value>对象构造函数表达式(即，具有继承规范的记录表达式)只能用于实现对象模型类型中的构造函数。请使用“new ObjectType(args)”在构造函数的外部构造对象模型类型的实例</value>
+  </data>
+  <data name="lexCharNotAllowedInOperatorNames" xml:space="preserve">
+    <value>不允许将“{0}”作为运算符名称中的字符，已将其保留以供将来使用</value>
+  </data>
+  <data name="tcUseMayNotBeUsedInQueries" xml:space="preserve">
+    <value>“use”表达式不能在查询中使用</value>
+  </data>
+  <data name="tcTypeCannotBeEnumerated" xml:space="preserve">
+    <value>类型“{0}”不属于其值可使用此语法进行枚举的类型，也就是说，此类型与 seq&lt;_&gt;、IEnumerable&lt;_&gt; 或 IEnumerable 不兼容且不具有 GetEnumerator 方法</value>
+  </data>
+  <data name="nrUnexpectedEmptyLongId" xml:space="preserve">
+    <value>意外的空白长标识符</value>
+  </data>
+  <data name="buildInvalidHashrDirective" xml:space="preserve">
+    <value>指令无效。应为“#r \"&lt;文件或程序集&gt;\"”。</value>
+  </data>
+  <data name="checkNotSufficientlyGenericBecauseOfScopeAnon" xml:space="preserve">
+    <value>类型推理使推理类型变量逸出其范围。请考虑添加类型批注，使代码通用性降低。</value>
+  </data>
+  <data name="csTypeDoesNotSupportConversion" xml:space="preserve">
+    <value>类型“{0}”不支持转换为类型“{1}”</value>
+  </data>
+  <data name="optsClirootDeprecatedMsg" xml:space="preserve">
+    <value>命令行选项“--cliroot”已弃用。请改用对 mscorlib.dll 的特定副本的显式引用。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleNamesDiffer" xml:space="preserve">
+    <value>签名和实现中的 {0} 定义不兼容，因为名称不同。该类型在签名文件中称为“{1}”，但在实现中称为“{2}”。</value>
+  </data>
+  <data name="ilxgenUnexpectedArgumentToMethodHandleOfDuringCodegen" xml:space="preserve">
+    <value>codegen 过程中出现无效“methodhandleof”参数</value>
+  </data>
+  <data name="parsUnexpectedSymbolEqualsInsteadOfIn" xml:space="preserve">
+    <value>表达式中出现意外符号 "="。是否想要改用 "for x in y .. z do"?</value>
+  </data>
+  <data name="nrNoConstructorsAvailableForType" xml:space="preserve">
+    <value>没有对类型“{0}”可用的构造函数</value>
+  </data>
+  <data name="tcDuplicateSpecOfInterface" xml:space="preserve">
+    <value>重复的接口规范</value>
+  </data>
+  <data name="fscAssemblyNotFoundInDependencySet" xml:space="preserve">
+    <value>在目标二进制文件的依赖项集中未找到程序集“{0}”。应使用不带扩展名 DLL 或 EXE 的程序集名称指定静态链接的根目录。如果已显式引用此程序集，则生成的二进制文件实际上可能不需要此程序集，在此情况下，不应静态链接此程序集。</value>
+  </data>
+  <data name="typrelTypeImplementsIComparableShouldOverrideObjectEquals" xml:space="preserve">
+    <value>类型“{0}”实现“System.IComparable”。请考虑同时添加“Object.Equals”的显式重写</value>
+  </data>
+  <data name="keyworkDescriptionAnd" xml:space="preserve">
+    <value>用于互相递归绑定、属性声明，并用于对泛型参数的多个约束。</value>
+  </data>
+  <data name="tcInvalidConstantExpression" xml:space="preserve">
+    <value>这不是有效的常数表达式</value>
+  </data>
+  <data name="optsResponseFileNotFound" xml:space="preserve">
+    <value>在“{1}”中找不到响应文件“{0}”</value>
+  </data>
+  <data name="undefinedNameNamespace" xml:space="preserve">
+    <value>未定义命名空间“{0}”。</value>
+  </data>
+  <data name="csTypesDoNotSupportOperatorNullable" xml:space="preserve">
+    <value>任何类型“{0}”都不支持运算符“{1}”。请考虑打开模块“Microsoft.FSharp.Linq.NullableOperators”。</value>
+  </data>
+  <data name="parsDoCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允许对 "do" 绑定使用可访问性修饰符，但却给出了“{0}”。</value>
+  </data>
+  <data name="pplexUnexpectedChar" xml:space="preserve">
+    <value>预处理器表达式中意外的字符“{0}”</value>
+  </data>
+  <data name="parsOnlyOneWithAugmentationAllowed" xml:space="preserve">
+    <value>最多允许一个“with”扩大</value>
+  </data>
+  <data name="tcParameterRequiresName" xml:space="preserve">
+    <value>还必须为具有特性的参数提供名称，例如“[&lt;特性&gt;] Name : Type”</value>
+  </data>
+  <data name="tcFieldsDoNotDetermineUniqueRecordType" xml:space="preserve">
+    <value>此记录表达式或模式的字段标签和预期类型没有唯一确定相应的记录类型</value>
+  </data>
+  <data name="tcRequireActivePatternWithOneResult" xml:space="preserve">
+    <value>仅有正好返回一个结果的活动模式才可以接受参数</value>
+  </data>
+  <data name="memberOperatorDefinitionWithNonPairArgument" xml:space="preserve">
+    <value>中缀运算符成员“{0}”具有 {1} 个初始参数。需要一个由 2 个参数构成的元组，例如静态成员 (+) (x,y) = ...</value>
+  </data>
+  <data name="typeInfoArgument" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="mlCompatMessage" xml:space="preserve">
+    <value>此构造适用于 ML 兼容性。{0}。可以通过使用“--mlcompatibility”或“--nowarn:62”来禁用此警告。</value>
+  </data>
+  <data name="forHashSpecifierIsInvalid" xml:space="preserve">
+    <value># 格式修饰符在 F# 中无效</value>
+  </data>
+  <data name="optsDelaySign" xml:space="preserve">
+    <value>仅使用强名称密钥的公共部分对程序集进行延迟签名</value>
+  </data>
+  <data name="keywordDescriptionException" xml:space="preserve">
+    <value>用于声明异常类型。</value>
+  </data>
+  <data name="tcOverloadsCannotHaveCurriedArguments" xml:space="preserve">
+    <value>此方法的一个或多个重载具有扩充参数。请考虑将这些成员重新设计为采用元组格式的参数。</value>
+  </data>
+  <data name="nrGlobalUsedOnlyAsFirstName" xml:space="preserve">
+    <value>“global”只能用作限定路径中的第一个名称</value>
+  </data>
+  <data name="tcInvalidTypeForLiteralEnumeration" xml:space="preserve">
+    <value>文本枚举必须具有类型 int、uint、int16、uint16、int64、uint64、byte、sbyte 或 char</value>
+  </data>
+  <data name="pickleMissingDefinition" xml:space="preserve">
+    <value>于程序集“{2}”的表“{1}”中的位置 {0} 处读取 F# 元数据节点时出错。该节点没有匹配的声明。请报告此警告。你可能需要重新编译正在使用的 F# 程序集。</value>
+  </data>
+  <data name="buildErrorOpeningBinaryFile" xml:space="preserve">
+    <value>打开二进制文件“{0}”时出错: {1}</value>
+  </data>
+  <data name="tcInvalidMemberNameCtor" xml:space="preserve">
+    <value>成员名称无效。成员名称不能为“.ctor”或“.cctor”</value>
+  </data>
+  <data name="forBadFormatSpecifierGeneral" xml:space="preserve">
+    <value>错误的格式说明符: '{0}'</value>
+  </data>
+  <data name="tcFieldNotLiteralCannotBeUsedInPattern" xml:space="preserve">
+    <value>此字段不是文本，不能在模式中使用</value>
+  </data>
+  <data name="tcOnlyRecordFieldsAndSimpleLetCanBeMutable" xml:space="preserve">
+    <value>只有记录字段和简单的非递归 "let" 绑定可能会被标记为“可变”</value>
+  </data>
+  <data name="buildInvalidHashloadDirective" xml:space="preserve">
+    <value>指令无效。应为“#load \"&lt;文件&gt;\" ... \"&lt;文件&gt;\"”。</value>
+  </data>
+  <data name="csMethodFoundButIsStatic" xml:space="preserve">
+    <value>类型“{0}”具有方法“{1}”(全名为“{2}”)，但此方法是静态的</value>
+  </data>
+  <data name="tcNoMemberFoundForOverride" xml:space="preserve">
+    <value>未找到与此重写对应的抽象或接口成员</value>
+  </data>
+  <data name="tcInvalidPattern" xml:space="preserve">
+    <value>这不是有效的模式</value>
+  </data>
+  <data name="parsForDoExpected" xml:space="preserve">
+    <value>“for”表达式中缺少“do”。应为“for &lt;模式&gt; in &lt;表达式&gt; do &lt;表达式&gt;”。</value>
+  </data>
+  <data name="tcOverridingMethodRequiresAllOrNoTypeParameters" xml:space="preserve">
+    <value>在重写泛型抽象方法时，必须显式声明所有类型参数或不声明任何类型参数</value>
+  </data>
+  <data name="etUnsupportedProvidedExpression" xml:space="preserve">
+    <value>类型提供程序提供的表达式“{0}”不受支持。如果您是此类型提供程序的作者，请考虑将它调整为提供不同的提供表达式。</value>
+  </data>
+  <data name="optsSubSystemVersion" xml:space="preserve">
+    <value>指定此程序集的子系统版本</value>
+  </data>
+  <data name="tastUnexpectedByRef" xml:space="preserve">
+    <value>对 byref 类型化变量的意外使用</value>
+  </data>
+  <data name="optFailedToInlineValue" xml:space="preserve">
+    <value>未能内联标记为“inline”的值“{0}”，可能是因为已将某个递归值标记为“inline”</value>
+  </data>
+  <data name="keywordDescriptionRightArrow" xml:space="preserve">
+    <value>在函数类型中，分隔参数并返回值。生成表达式(在序列表达式中)；相当于 yield 关键字。用于匹配表达式中。</value>
+  </data>
+  <data name="tcStructsCannotHaveConstructorWithNoArguments" xml:space="preserve">
+    <value>结构不能具有不带参数的对象构造函数。这是对所有 CLI 语言实施的限制，原因是结构自动支持默认构造函数。</value>
+  </data>
+  <data name="ilSignInvalidAlgId" xml:space="preserve">
+    <value>algId 无效 - 应为 "Exponent"</value>
+  </data>
+  <data name="returnUsedInsteadOfReturnBang" xml:space="preserve">
+    <value>考虑使用 "return!"，而非 "return"。</value>
+  </data>
+  <data name="derefInsteadOfNot" xml:space="preserve">
+    <value>"!" 运算符用于取消引用引用的单元格。请考虑在此处使用 "not expr"。</value>
+  </data>
+  <data name="optsNoInterface" xml:space="preserve">
+    <value>不向包含 F# 特定元数据的生成程序集中添加资源</value>
+  </data>
+  <data name="parsUnexpectedInfixOperator" xml:space="preserve">
+    <value>类型表达式中意外的中缀运算符</value>
+  </data>
+  <data name="optsEmbeddedSourceRequirePortablePDBs" xml:space="preserve">
+    <value>--仅在发出可移植 PDB 时才支持嵌入开关(--debug:portable 或 --debug:embedded)</value>
+  </data>
+  <data name="parsInvalidPrefixOperatorDefinition" xml:space="preserve">
+    <value>运算符定义无效。前缀运算符定义必须使用有效的前缀运算符名称。</value>
+  </data>
+  <data name="tcUnnamedArgumentsDoNotFormPrefix" xml:space="preserve">
+    <value>未命名的参数未形成已调用方法的参数的前缀</value>
+  </data>
+  <data name="invalidFullNameForProvidedType" xml:space="preserve">
+    <value>所提供类型的全名无效</value>
+  </data>
+  <data name="lexHashElseMustBeFirst" xml:space="preserve">
+    <value>#else 指令必须作为一行的第一个非空白字符出现</value>
+  </data>
+  <data name="tcUnionCaseFieldCannotBeUsedMoreThanOnce" xml:space="preserve">
+    <value>无法多次使用联合用例/异常字段“{0}”。</value>
+  </data>
+  <data name="parsUnionCasesCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允许对联合用例使用可访问性修饰符。请使用“type U = internal ...”或“type U = private ...”为整个表示形式给定可访问性。</value>
+  </data>
+  <data name="chkErrorUseOfByref" xml:space="preserve">
+    <value>某个类型实例化涉及 byref 类型。通用 IL 的规则不允许这样做。</value>
+  </data>
+  <data name="tcUnknownUnion" xml:space="preserve">
+    <value>未知的联合用例</value>
+  </data>
+  <data name="tcInvalidMethodNameForRelationalOperator" xml:space="preserve">
+    <value>名称“({0})”不应用作成员名称。若要为类型定义比较语义，请实现“System.IComparable”接口。如果从其他 CLI 语言中定义了要使用的静态成员，请改用名称“{1}”。</value>
+  </data>
+  <data name="tcTypeAbbreviationsCannotHaveAugmentations" xml:space="preserve">
+    <value>类型缩写词不能具有扩大</value>
+  </data>
+  <data name="ModuleContainsConstructorButAccessibilityDiffers" xml:space="preserve">
+    <value>该模块包含构造函数\n    {0}    \n而其签名指定\n    {1}    \n签名中指定的可访问性高于实现中指定的可访问性</value>
+  </data>
+  <data name="ValueNotContainedMutabilityAritiesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n签名和实现中的 arity 不同。签名指定“{3}”为函数定义或为接受至少个 {4} 参数的 lambda 表达式，而实现是计算出的函数值。若要声明计算出的函数值为允许的实现，只需在签名中用括号将其类型括起来，例如\n\tval {5}: int -&gt; (int -&gt; int)\n而非\n\tval {6}: int -&gt; int -&gt; int。</value>
+  </data>
+  <data name="typeInfoOtherOverloads" xml:space="preserve">
+    <value>和 {0} 个其他重载</value>
+  </data>
+  <data name="csTypeIsNotEnumType" xml:space="preserve">
+    <value>类型“{0}”不是 CLI 枚举类型</value>
+  </data>
+  <data name="parsModuleAbbreviationMustBeSimpleName" xml:space="preserve">
+    <value>模块缩写词必须是简单名称，而非路径</value>
+  </data>
+  <data name="tastRecursiveValuesMayNotAppearInConstructionOfType" xml:space="preserve">
+    <value>递归值在递归绑定内不能直接显示为类型“{0}”的构造。在 F# 语言中，此功能已删除。请考虑改用记录。</value>
+  </data>
+  <data name="buildProductNameCommunity" xml:space="preserve">
+    <value>适用于 F# {0} 的 F# 编译器</value>
+  </data>
+  <data name="typrelNamedArgumentHasBeenAssignedMoreThenOnce" xml:space="preserve">
+    <value>已为一个命名参数分配多个值</value>
+  </data>
+  <data name="fscIgnoringMixedWhenLinking" xml:space="preserve">
+    <value>在静态链接期间忽略混合托管/非托管程序集“{0}”</value>
+  </data>
+  <data name="tcOnlyStructsCanHaveStructLayout" xml:space="preserve">
+    <value>只能为不带主构造函数的结构和类提供“StructLayout”特性</value>
+  </data>
+  <data name="tcExpectedTypeParameter" xml:space="preserve">
+    <value>应为类型参数，而非度量单位参数</value>
+  </data>
+  <data name="keywordDescriptionDefault" xml:space="preserve">
+    <value>表示抽象方法的实现；与抽象方法声明配合使用可创建虚拟方法。</value>
+  </data>
+  <data name="parsEofInTripleQuoteStringInComment" xml:space="preserve">
+    <value>文件尾在此处或之前开始的注释中嵌入的三重引号字符串中</value>
+  </data>
+  <data name="optsUseHighEntropyVA" xml:space="preserve">
+    <value>启用高熵 ASLR</value>
+  </data>
+  <data name="ilSignPrivateKeyExpected" xml:space="preserve">
+    <value>应使用私钥</value>
+  </data>
+  <data name="typeInfoActivePatternResult" xml:space="preserve">
+    <value>活动模式结果</value>
+  </data>
+  <data name="tcUnsupportedMutRecDecl" xml:space="preserve">
+    <value>递归声明组中不支持此声明</value>
+  </data>
+  <data name="ppparsMissingToken" xml:space="preserve">
+    <value>预处理器表达式中缺少的标记“{0}”</value>
+  </data>
+  <data name="fscTooManyErrors" xml:space="preserve">
+    <value>正在退出 - 错误太多</value>
+  </data>
+  <data name="typrelMemberDoesNotHaveCorrectNumberOfArguments" xml:space="preserve">
+    <value>成员“{0}”不具有正确数目的参数。所需签名为“{1}”。</value>
+  </data>
+  <data name="augInvalidAttrs" xml:space="preserve">
+    <value>此类型使用的“NoEquality”、“ReferenceEquality”、“StructuralEquality”、“NoComparison”和“StructuralComparison”特性组合无效</value>
+  </data>
+  <data name="tcLetAndDoRequiresImplicitConstructionSequence" xml:space="preserve">
+    <value>此定义只能在具有主构造函数的类型中使用。请考虑向您的类型定义添加参数，例如“type X(args) = ...”。</value>
+  </data>
+  <data name="chkAttrHasAllowMultiFalse" xml:space="preserve">
+    <value>特性类型“{0}”具有“AllowMultiple=false”。不能向单个语言元素附加此特性的多个实例。</value>
+  </data>
+  <data name="tcUseYieldBangForMultipleResults" xml:space="preserve">
+    <value>在序列表达式中，使用“yield!”生成多个结果</value>
+  </data>
+  <data name="csTypeDoesNotSupportOperatorNullable" xml:space="preserve">
+    <value>类型“{0}”不支持运算符“{1}”。请考虑打开模块“Microsoft.FSharp.Linq.NullableOperators”。</value>
+  </data>
+  <data name="tcStructsInterfacesEnumsDelegatesMayNotInheritFromOtherTypes" xml:space="preserve">
+    <value>结构、接口、枚举和委托不能从其他类型继承</value>
+  </data>
+  <data name="impInvalidNumberOfGenericArguments" xml:space="preserve">
+    <value>所提供类型中的类型“{0}”的泛型参数数量无效。应是“{1}”个参数，提供了“{2}”个。</value>
+  </data>
+  <data name="tcMethodNotAccessible" xml:space="preserve">
+    <value>无法从此代码位置访问方法“{0}”</value>
+  </data>
+  <data name="ilSignInvalidMagicValue" xml:space="preserve">
+    <value>CLR 标头中存在无效的 Magic 值</value>
+  </data>
+  <data name="tcInvalidOptionalAssignmentToPropertyOrField" xml:space="preserve">
+    <value>某个属性或字段的可选赋值无效</value>
+  </data>
+  <data name="csNoMemberTakesTheseArguments3" xml:space="preserve">
+    <value>没有名为“{1}”的 {0} 成员或对象构造函数采用 {2} 个参数。已命名参数“{3}”与针对任何重载的任何参数或可设置的返回属性均不对应。</value>
+  </data>
+  <data name="csNoMemberTakesTheseArguments2" xml:space="preserve">
+    <value>没有名为“{1}”的 {0} 成员或对象构造函数采用 {2} 个参数。注意，调用此成员也会提供 {3} 个已命名参数。</value>
+  </data>
+  <data name="nrInvalidFieldLabel" xml:space="preserve">
+    <value>字段标签无效</value>
+  </data>
+  <data name="ilMarshalAsAttributeCannotBeDecoded" xml:space="preserve">
+    <value>未能对 MarshalAs 特性进行解码</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleILDiffer" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为 IL 表示形式不同</value>
+  </data>
+  <data name="buildUnexpectedTypeArgs" xml:space="preserve">
+    <value>非泛型类型“{0}”不需要任何类型参数，但此处给定了 {1} 个类型参数</value>
+  </data>
+  <data name="undefinedNameValueConstructorNamespaceOrType" xml:space="preserve">
+    <value>未定义值、构造函数、命名空间或类型“{0}”。</value>
+  </data>
+  <data name="typeInfoNamespaceOrModule" xml:space="preserve">
+    <value>命名空间/模块</value>
+  </data>
+  <data name="recursiveClassHierarchy" xml:space="preserve">
+    <value>类型“{0}”中的递归类层次结构</value>
+  </data>
+  <data name="chkUnusedThisVariable" xml:space="preserve">
+    <value>未使用递归对象引用“{0}”。如果存在递归对象引用，则会增加针对此类型和派生类型中的成员的运行时初始化检查。请考虑删除此递归对象引用。</value>
+  </data>
+  <data name="augTypeCantHaveRefEqAndStructAttrs" xml:space="preserve">
+    <value>一个类型不能同时具有“ReferenceEquality”特性和“StructuralEquality”或“StructuralComparison”特性</value>
+  </data>
+  <data name="tcConstructRequiresComputationExpression" xml:space="preserve">
+    <value>只能在计算表达式中使用此构造</value>
+  </data>
+  <data name="tastValueMustBeLocalAndMutable" xml:space="preserve">
+    <value>值必须是可变的，以便更改内容或采用值类型的地址，例如“let mutable x = ...”</value>
+  </data>
+  <data name="tcExceptionAbbreviationsMustReferToValidExceptions" xml:space="preserve">
+    <value>异常缩写词必须引用现有异常或派生自 System.Exception 的 F# 类型</value>
+  </data>
+  <data name="optsEmbedAllSource" xml:space="preserve">
+    <value>将所有源文件嵌入可移植 PDB 文件</value>
+  </data>
+  <data name="tcOnlySimplePatternsInLetRec" xml:space="preserve">
+    <value>只能在“let rec”构造中绑定简单的变量模式</value>
+  </data>
+  <data name="parsSuccessiveArgsShouldBeSpacedOrTupled" xml:space="preserve">
+    <value>应使用空格来分隔连续参数或将这些连续参数组成元组，并且应使用括号将涉及函数或方法应用的参数括起来</value>
+  </data>
+  <data name="tcNotAnException" xml:space="preserve">
+    <value>不是一个异常</value>
+  </data>
+  <data name="tcInvalidIndexIntoActivePatternArray" xml:space="preserve">
+    <value>内部错误。活动模式数组中的索引无效</value>
+  </data>
+  <data name="fscAssumeStaticLinkContainsNoDependencies" xml:space="preserve">
+    <value>已通过可传递的方式引用程序集“{0}”，但未能自动解析此程序集。静态链接将假定此 DLL 不依赖于 F# 库或其他静态链接的 DLL。请考虑添加对此 DLL 的显式引用。</value>
+  </data>
+  <data name="fscAssemblyCultureAttributeError" xml:space="preserve">
+    <value>发出“System.Reflection.AssemblyCultureAttribute”特性时出错:“可执行文件不能是附属程序集，区域应始终为空”</value>
+  </data>
+  <data name="parsInterfacesHaveSameVisibilityAsEnclosingType" xml:space="preserve">
+    <value>接口始终具有与封闭类型相同的可见性</value>
+  </data>
+  <data name="ValueNotContainedMutabilityOneIsTypeFunction" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n一个是类型函数，另一个不是类型函数。如果实现中存在显式类型参数，则签名需要这些显式类型参数。</value>
+  </data>
+  <data name="parsSyntaxModuleStructEndDeprecated" xml:space="preserve">
+    <value>语法“module ... = struct .. end”不可用于 F# 代码。请考虑使用“module ... = begin .. end”</value>
+  </data>
+  <data name="tcVolatileOnlyOnClassLetBindings" xml:space="preserve">
+    <value>只能在类中的“let”绑定中使用“VolatileField”特性</value>
+  </data>
+  <data name="FieldNotContainedLiteralsDiffer" xml:space="preserve">
+    <value>该模块包含字段\n    {0}    \n而其签名指定\n    {1}    \n“literal”修饰符不同</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAbbreviationsDiffer" xml:space="preserve">
+    <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为缩写不同: {2} 与 {3}</value>
+  </data>
+  <data name="tcExplicitStaticInitializerSyntax" xml:space="preserve">
+    <value>显式静态初始化表达式应使用语法“static new(args) = expr”</value>
+  </data>
+  <data name="tcOnlyFunctionsCanBeInline" xml:space="preserve">
+    <value>只能将函数标记为“inline”</value>
+  </data>
+  <data name="tcTypeIsNotInterfaceType0" xml:space="preserve">
+    <value>此类型不是接口类型</value>
+  </data>
+  <data name="tcTypeIsNotInterfaceType1" xml:space="preserve">
+    <value>类型“{0}”不是接口类型</value>
+  </data>
+  <data name="chkObjCtorsCantUseExceptionHandling" xml:space="preserve">
+    <value>在初始化对象之前，对象构造函数不能直接使用 try/with 和 try/finally。这包括像“for x in ...”这样详细说明其构造使用方式的构造。这是由通用 IL 设定的限制。</value>
+  </data>
+  <data name="tcReturnMayNotBeUsedInQueries" xml:space="preserve">
+    <value>“return”和“return!”不能在查询中使用</value>
+  </data>
+  <data name="parsRecordFieldsCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允许对记录字段使用可访问性修饰符。请使用“type R = internal ...”或“type R = private ...”为整个表示形式给定可访问性。</value>
+  </data>
+  <data name="keywordDescriptionUseBang" xml:space="preserve">
+    <value>用于替代异步工作流和其他计算表达式中的 let!，以便要求 Dispose  的值可调用到免费资源。</value>
+  </data>
+  <data name="tcInheritIllegalHere" xml:space="preserve">
+    <value>此处不允许使用继承声明</value>
+  </data>
+  <data name="etNullMemberDeclaringType" xml:space="preserve">
+    <value>所提供的类型“{0}”成员信息“{1}”具有 null 声明类型</value>
+  </data>
+  <data name="etProvidedAppliedMethodHadWrongName" xml:space="preserve">
+    <value>类型提供程序“{0}”从 "ApplyStaticArgumentsForMethod" 返回了无效方法。需要名称为“{1}”的方法，但返回了名称为“{2}”的方法。</value>
+  </data>
+  <data name="lexInvalidUnicodeLiteral" xml:space="preserve">
+    <value>\U{0} 不是有效的 Unicode 字符转义序列</value>
+  </data>
+  <data name="nrTypeInstantiationNeededToDisambiguateTypesWithSameName" xml:space="preserve">
+    <value>存在多个名为“{0}”的类型，这些类型采用的泛型参数的数目各不相同。请提供一个类型实例化以区分类型解析，例如“{1}”。</value>
+  </data>
+  <data name="typrelModuleNamespaceAttributesDifferInSigAndImpl" xml:space="preserve">
+    <value>签名和实现中的命名空间或模块特性不同</value>
+  </data>
+  <data name="typrelNeedExplicitImplementation" xml:space="preserve">
+    <value>接口“{0}”包含在多个显式实现的接口类型中。添加此接口的显式实现。</value>
+  </data>
+  <data name="eventHasNonStandardType" xml:space="preserve">
+    <value>事件“{0}”具有非标准类型。如果此事件是在另一种 CLI 语言中声明的，则您可能需要使用此事件的显式 {1} 和 {2} 方法来访问此事件。如果此事件是在 F# 中声明的，则使此事件的类型成为“IDelegateEvent&lt;_&gt;”或“IEvent&lt;_,_&gt;”的实例化。</value>
+  </data>
+  <data name="tcReservedSyntaxForAugmentation" xml:space="preserve">
+    <value>已保留语法“type X with ...”以供扩大使用。对于其表示形式已隐藏但是具有成员的类型，现在将在签名中使用“type X = ...”声明这些类型。您还可能需要向签名中的类型定义添加“[&lt;Sealed&gt;]”特性</value>
+  </data>
+  <data name="undefinedNameSuggestionsIntro" xml:space="preserve">
+    <value>你可能需要以下之一:</value>
+  </data>
+  <data name="undefinedNameRecordLabel" xml:space="preserve">
+    <value>记录标签“{0}”未定义。</value>
+  </data>
+  <data name="tcTypeTestLosesMeasures" xml:space="preserve">
+    <value>此类型测试或向下转换将忽略度量单位“{0}”</value>
+  </data>
+  <data name="ilSignInvalidPKBlob" xml:space="preserve">
+    <value>公钥 Blob 无效</value>
+  </data>
+  <data name="fscStaticLinkingNoProfileMismatches" xml:space="preserve">
+    <value>当生成引用 System.Runtime 的程序集(如 .NET Core 或 Portable 程序集)时，静态链接不能用在引用 mscorlib 的程序集(如 .NET Framework 程序集)上。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityGenericParametersDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n签名和实现中的泛型参数数目不同(签名声明 {3} 个泛型参数，而实现声明 {4} 个泛型参数</value>
+  </data>
+  <data name="typrelMemberDoesNotHaveCorrectKindsOfGenericParameters" xml:space="preserve">
+    <value>成员“{0}”不具有正确种类的泛型参数。所需签名为“{1}”。</value>
+  </data>
+  <data name="typrelSigImplNotCompatibleParamCountsDiffer" xml:space="preserve">
+    <value>签名和实现不兼容，因为各自的类型参数数目不同</value>
+  </data>
+  <data name="tcTypeExceptionOrModule" xml:space="preserve">
+    <value>类型、异常或模块</value>
+  </data>
+  <data name="tcExpressionWithIfRequiresParenthesis" xml:space="preserve">
+    <value>此列表或数组表达式包括采用“if ... then ... else”格式的元素。请使用括号将此表达式括起来以指示它是列表或数组中的单个元素，从而将此表达式与使用序列表达式生成的列表进行区分</value>
+  </data>
+  <data name="csTypeDoesNotHaveNull" xml:space="preserve">
+    <value>类型“{0}”未将“null”用作适当的值</value>
+  </data>
+  <data name="parsVisibilityDeclarationsShouldComePriorToIdentifier" xml:space="preserve">
+    <value>可访问性修饰符应紧接在用于命名构造函数的标识符的前面</value>
+  </data>
+  <data name="parsUnmatchedUse" xml:space="preserve">
+    <value>值定义不完整。如果该定义处于表达式中，则表达式体必须与“use”关键字缩进到相同的列。</value>
+  </data>
+  <data name="parsUnmatchedLet" xml:space="preserve">
+    <value>值或函数定义不完整。如果该定义处于表达式中，则表达式体必须与“let”关键字缩进到相同的列。</value>
+  </data>
+  <data name="tcUnionCaseConstructorDoesNotHaveFieldWithGivenName" xml:space="preserve">
+    <value>联合用例/异常“{0}”没有名为“{1}”的字段。</value>
+  </data>
+  <data name="tcInvalidMemberName" xml:space="preserve">
+    <value>名称“({0})”不应用作成员名称。如果从其他 CLI 语言中定义了要使用的静态成员，请改用名称“{1}”。</value>
+  </data>
+  <data name="etProviderDoesNotHaveValidConstructor" xml:space="preserve">
+    <value>类型提供程序没有有效的构造函数。构造函数应不采用参数或仅采用一个“TypeProviderConfig”类型的参数。</value>
+  </data>
+  <data name="tcRecordsUnionsAbbreviationsStructsMayNotHaveAllowNullLiteralAttribute" xml:space="preserve">
+    <value>记录、联合、缩写词和结构类型不能具有“AllowNullLiteral”特性</value>
+  </data>
+  <data name="tcExpressionFormRequiresRecordTypes" xml:space="preserve">
+    <value>表达式格式 {{ expr with ... }} 只能用于记录类型。若要生成对象类型，请使用 {{ new Type(...) with ... }}</value>
+  </data>
+  <data name="typrelNoImplementationGiven" xml:space="preserve">
+    <value>未为“{0}”给定任何实现</value>
+  </data>
+  <data name="tcUnionCaseExpectsTupledArguments" xml:space="preserve">
+    <value>此联合用例需要 {0} 个元组格式的参数</value>
+  </data>
+  <data name="tastDuplicateTypeDefinitionInAssembly" xml:space="preserve">
+    <value>两个名为“{0}”的类型定义出现在命名空间“{1}”的此程序集的两个部分中</value>
+  </data>
+  <data name="tcInvalidModuleName" xml:space="preserve">
+    <value>模块名称无效</value>
+  </data>
+  <data name="considerUpcastOperator" xml:space="preserve">
+    <value>从 {0} 到 {1} 的转换是编译时安全的向上转换，而非向下转换。考虑使用 :&gt; (向上转换)运算符，而非 :?&gt; (向下转换)运算符。</value>
+  </data>
+  <data name="forPositionalSpecifiersNotPermitted" xml:space="preserve">
+    <value>格式字符串中不得有位置说明符</value>
+  </data>
+  <data name="tcCustomOperationMayNotBeOverloaded" xml:space="preserve">
+    <value>自定义运算“{0}”引用了重载的方法。自定义运算的实现不能进行重载。</value>
+  </data>
+  <data name="parsUseBindingsIllegalInModules" xml:space="preserve">
+    <value>“use”绑定不允许在模块中使用并且将被视为“let”绑定</value>
+  </data>
+  <data name="optsCodepage" xml:space="preserve">
+    <value>指定用于读取源文件的代码页</value>
+  </data>
+  <data name="elDeprecatedOperator" xml:space="preserve">
+    <value>此时将通过 F# 编译器直接操作对此运算符的处理，并且不能重新定义其含义</value>
+  </data>
+  <data name="keywordDescriptionDynamicCast" xml:space="preserve">
+    <value>将某类型转换为较低层次结构中的类型。</value>
+  </data>
+  <data name="buildCouldNotReadVersionInfoFromMscorlib" xml:space="preserve">
+    <value>未能从 mscorlib.dll 读取版本</value>
+  </data>
+  <data name="etProviderErrorWithContext" xml:space="preserve">
+    <value>类型提供程序“{0}”在所提供类型“{1}”、成员“{2}”的上下文中报告了错误。错误: {3}</value>
+  </data>
+  <data name="etErrorApplyingStaticArgumentsToType" xml:space="preserve">
+    <value>将静态参数应用于所提供类型时发生错误</value>
+  </data>
+  <data name="optsHelpBannerInputFiles" xml:space="preserve">
+    <value>- 输入文件 -</value>
+  </data>
+  <data name="parsIntegerForLoopRequiresSimpleIdentifier" xml:space="preserve">
+    <value>用于循环的整数必须使用简单的标识符</value>
+  </data>
+  <data name="lexOutsideEightBitSignedHex" xml:space="preserve">
+    <value>此数字在允许的十六进制 8 位带符号整数范围之外</value>
+  </data>
+  <data name="patternMatchGuardIsNotBool" xml:space="preserve">
+    <value>模式匹配临界必须是 "bool" 类型，但此 "when" 表达式的类型为“{0}”。</value>
+  </data>
+  <data name="parsEmptyTypeDefinition" xml:space="preserve">
+    <value>类型定义需要一个或多个成员或者其他声明。如果您打算定义一个空的类、结构或接口，请使用“type ... = class end”、“interface end”或“struct end”。</value>
+  </data>
+  <data name="csGenericConstructRequiresReferenceSemantics" xml:space="preserve">
+    <value>泛型构造要求类型“{0}”具有引用语义，而该类型没有引用语义，也就是说，该类型是一个结构</value>
+  </data>
+  <data name="ValueNotContainedMutabilityNamesDiffer" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n名称不同</value>
+  </data>
+  <data name="chkNoByrefInTypeAbbrev" xml:space="preserve">
+    <value>类型缩写词包含 byref。F# 不允许这样做。</value>
+  </data>
+  <data name="ilwriteErrorCreatingMdb" xml:space="preserve">
+    <value>无法生成 MDB 调试信息。未能从“Mono.CompilerServices.SymbolWriter.dll”程序集加载“MonoSymbolWriter”类型。</value>
+  </data>
+  <data name="ilwriteErrorCreatingPdb" xml:space="preserve">
+    <value>创建调试信息文件“{0}”时出错</value>
+  </data>
+  <data name="tcExpectedUnitOfMeasureMarkWithAttribute" xml:space="preserve">
+    <value>应为度量单位参数，而非类型参数。必须用 [&lt;Measure&gt;] 特性标记显式度量单位参数。</value>
+  </data>
+  <data name="tcUnableToParseFormatString" xml:space="preserve">
+    <value>无法分析格式字符串“{0}”</value>
+  </data>
+  <data name="tastUnexpectedDecodeOfAutoOpenAttribute" xml:space="preserve">
+    <value>对 AutoOpenAttribute 的意外解码</value>
+  </data>
+  <data name="crefQuotationsCantCallTraitMembers" xml:space="preserve">
+    <value>引用内容不能包含进行成员约束调用或使用隐式解析为成员约束调用的运算符的表达式</value>
+  </data>
+  <data name="noEqualSignAfterModule" xml:space="preserve">
+    <value>库或多文件应用程序中的文件必须以命名空间或模块声明开头。当在文件开头使用模块声明时，"=" 号不被允许。如果这是顶级模块，请考虑删除 = 来解决此错误。</value>
+  </data>
+  <data name="tcFieldAppearsTwiceInRecord" xml:space="preserve">
+    <value>字段“{0}”在此记录表达式或模式中出现了两次</value>
+  </data>
+  <data name="etProvidedTypeHasUnexpectedName" xml:space="preserve">
+    <value>需要名为“{0}”的提供的类型，但所提供类型的“Name”值为“{1}”</value>
+  </data>
+  <data name="etProvidedTypeHasUnexpectedPath" xml:space="preserve">
+    <value>需要路径为“{0}”的提供的类型，但所提供类型的路径为“{1}”</value>
+  </data>
+  <data name="tcCustomAttributeArgumentMismatch" xml:space="preserve">
+    <value>自定义特性的参数数目与特性构造函数所需的参数数目不匹配</value>
+  </data>
+  <data name="chkMemberUsedInInvalidWay" xml:space="preserve">
+    <value>成员“{0}”的使用方式无效。在“{2}”处或其附近给出定义之前，已推理使用了“{1}”。这是无效的前向引用。</value>
+  </data>
+  <data name="etEventNoRemove" xml:space="preserve">
+    <value>所提供类型“{1}”上的事件“{0}”没有来自 GetRemoveMethod() 的值</value>
+  </data>
+  <data name="ilSignRsaKeyExpected" xml:space="preserve">
+    <value>应使用 RSA 密钥</value>
+  </data>
+  <data name="tcFSharpCoreRequiresExplicit" xml:space="preserve">
+    <value>必须使用“StructuralComparison”或“NoComparison”显式标记 FSharp.Core.dll 中的所有字段、联合和结构类型</value>
+  </data>
+  <data name="nrUnionTypeNeedsQualifiedAccess" xml:space="preserve">
+    <value>使用 RequireQualifiedAccessAttribute 定义联合用例“{0}”的联合类型。包括所使用的名称中联合类型 ('{1}') 的名称。</value>
+  </data>
+  <data name="tastActivePatternsLimitedToSeven" xml:space="preserve">
+    <value>活动模式不能返回 7 个以上的可能结果</value>
+  </data>
+  <data name="undefinedNameValueOfConstructor" xml:space="preserve">
+    <value>未定义值或构造函数“{0}”。</value>
+  </data>
+  <data name="tcInheritConstructionCallNotPartOfImplicitSequence" xml:space="preserve">
+    <value>此“inherit”声明具有参数，但是不在具有主构造函数的类型中。请考虑向您的类型定义添加参数，例如“type X(args) = ...”。</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedDU" xml:space="preserve">
+    <value>总是密封已区分的联合类型</value>
+  </data>
+  <data name="ilUnexpectedGetSetAnnotation" xml:space="preserve">
+    <value>某个属性的意外的 GetSet 批注</value>
+  </data>
+  <data name="tcInvalidEnumerationLiteral" xml:space="preserve">
+    <value>对于枚举文本来说，这不是有效的值</value>
+  </data>
+  <data name="nrInvalidModuleExprType" xml:space="preserve">
+    <value>模块/表达式/类型无效</value>
+  </data>
+  <data name="nicePrintOtherOverloadsN" xml:space="preserve">
+    <value>+ {0} 重载</value>
+  </data>
+  <data name="nicePrintOtherOverloads1" xml:space="preserve">
+    <value>+ 1 重载</value>
+  </data>
+  <data name="csExpectTypeWithOperatorButGivenTuple" xml:space="preserve">
+    <value>需要一个支持运算符“{0}”的类型，但提供的是元组类型</value>
+  </data>
+  <data name="fscReferenceOnCommandLine" xml:space="preserve">
+    <value>程序集“{0}”已在命令行中列出。应使用命令行标志(如“-r”)引用程序集。</value>
+  </data>
+  <data name="etProvidedTypeWithNullOrEmptyName" xml:space="preserve">
+    <value>所提供类型的“{0}”为 null 或为空。</value>
+  </data>
+  <data name="chkDuplicateMethodInheritedType" xml:space="preserve">
+    <value>重复方法。抽象方法“{0}”与继承类型中的某个抽象方法具有相同的名称和签名。</value>
+  </data>
+  <data name="typeInfoFromNext" xml:space="preserve">
+    <value>也自 {0}</value>
+  </data>
+  <data name="tcRuntimeSuppliedMethodCannotBeUsedInUserCode" xml:space="preserve">
+    <value>数组方法“{0}”由运行时提供且不能直接在代码中使用。对于带数组元素的操作，请考虑使用 LanguagePrimitives.IntrinsicFunctions 模块中的 GetArray/SetArray 函数系列。</value>
+  </data>
+  <data name="parsIgnoreAttributesOnModuleAbbreviationAlwaysPrivate" xml:space="preserve">
+    <value>模块缩写词中不允许“{0}”可访问性特性。模块缩写词总是私有的。</value>
+  </data>
+  <data name="tcGeneratedTypesShouldBeInternalOrPrivate" xml:space="preserve">
+    <value>通过这种类型提供程序使用方式生成的提供的类型不能从其他 F# 程序集使用，应标记为内部或私有的。请考虑使用“type internal TypeName = ...”或“type private TypeName = ...”。</value>
+  </data>
+  <data name="addIndexerDot" xml:space="preserve">
+    <value>添加 . 进行索引器访问。</value>
+  </data>
+  <data name="tcDllImportNotAllowed" xml:space="preserve">
+    <value>DLLImport 绑定必须是类中的静态成员或模块中的函数定义</value>
+  </data>
+  <data name="tcInferredGenericTypeGivesRiseToInconsistency" xml:space="preserve">
+    <value>函数或成员“{0}”的使用方式要求其在定义中提供进一步的类型批注，以确保推理类型的一致性。推理签名为“{1}”。</value>
+  </data>
+  <data name="tcDefaultImplementationAlreadyExists" xml:space="preserve">
+    <value>此方法已具有默认实现</value>
+  </data>
+  <data name="ValueNotContainedMutabilityInstanceButStatic" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n此方法的已编译表示形式作为一个实例成员，而签名指示其已编译表示形式作为一个静态成员</value>
+  </data>
+  <data name="lexInvalidByteLiteral" xml:space="preserve">
+    <value>这不是有效的字节文本</value>
+  </data>
+</root>

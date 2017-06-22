@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Parser.TOKEN.BAR.BAR" xml:space="preserve">
+    <value>符号“||”</value>
+  </data>
+  <data name="NONTERM.Category.ImplementationFile" xml:space="preserve">
+    <value> 在实现文件中</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot1" xml:space="preserve">
+    <value>成员“{0}”与只基于名称和参数数目的唯一抽象槽不对应</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot2" xml:space="preserve">
+    <value>。多个实现的接口包含具有此名称和参数数目的成员</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot3" xml:space="preserve">
+    <value>。请考虑显式实现接口“{0}”和“{1}”。</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot4" xml:space="preserve">
+    <value>。可能需要其他类型批注来指示相关重写。可以使用“#nowarn "70"”或“--nowarn:70”禁用此警告。</value>
+  </data>
+  <data name="Parser.TOKEN.LEX.FAILURE" xml:space="preserve">
+    <value>lex 失败</value>
+  </data>
+  <data name="Parser.TOKEN.LPAREN.STAR.RPAREN" xml:space="preserve">
+    <value>符号“(*)”</value>
+  </data>
+  <data name="NONTERM.anonLambdaExpr" xml:space="preserve">
+    <value> 在 lambda 表达式中</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.PAREN.APP" xml:space="preserve">
+    <value>符号“(”</value>
+  </data>
+  <data name="Parser.TOKEN.CONSTRUCTOR" xml:space="preserve">
+    <value>关键字“constructor”</value>
+  </data>
+  <data name="NONTERM.attributeList" xml:space="preserve">
+    <value> 在特性列表中</value>
+  </data>
+  <data name="ValNotMutable" xml:space="preserve">
+    <value>此值不是可变的。请考虑使用可变的关键字，如 "let mutable {0} = expression"。</value>
+  </data>
+  <data name="ReservedKeyword" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.PREFIX.OP" xml:space="preserve">
+    <value>前缀运算符</value>
+  </data>
+  <data name="UpcastUnnecessary" xml:space="preserve">
+    <value>不需要此向上转换 - 类型都是相同的</value>
+  </data>
+  <data name="UnitTypeExpectedWithEquality" xml:space="preserve">
+    <value>此等式表达式的结果被隐式丢弃。请考虑使用 "let" 将结果绑定到一个名称，例如 "let result = expression"。</value>
+  </data>
+  <data name="VarBoundTwice" xml:space="preserve">
+    <value>“{0}”在此模式中绑定了两次</value>
+  </data>
+  <data name="UpperCaseIdentifierInPattern" xml:space="preserve">
+    <value>通常不应在模式中使用大写的变量标识符，这可能标明某个模式名称存在拼写错误。</value>
+  </data>
+  <data name="NONTERM.unionCaseRepr" xml:space="preserve">
+    <value> 在可区分的联合用例声明中</value>
+  </data>
+  <data name="Parser.TOKEN.TO" xml:space="preserve">
+    <value>关键字“to”</value>
+  </data>
+  <data name="Parser.TOKEN.IF" xml:space="preserve">
+    <value>关键字“if”</value>
+  </data>
+  <data name="Parser.TOKEN.IN" xml:space="preserve">
+    <value>关键字“in”</value>
+  </data>
+  <data name="Parser.TOKEN.AS" xml:space="preserve">
+    <value>关键字“as”</value>
+  </data>
+  <data name="Parser.TOKEN.OR" xml:space="preserve">
+    <value>关键字“or”</value>
+  </data>
+  <data name="Parser.TOKEN.OF" xml:space="preserve">
+    <value>关键字“of”</value>
+  </data>
+  <data name="Parser.TOKEN.DO" xml:space="preserve">
+    <value>关键字“do”</value>
+  </data>
+  <data name="UnitTypeExpected" xml:space="preserve">
+    <value>此表达式的结果被隐式忽略。请考虑使用 "ignore" 以显式放弃该值，例如 "expr |&gt; ignore" 或 "let" 以将结果绑定到一个名称，例如 "let result = expr"。</value>
+  </data>
+  <data name="Parser.TOKEN.INTERFACE" xml:space="preserve">
+    <value>关键字“interface”</value>
+  </data>
+  <data name="NONTERM.fileModuleSpec" xml:space="preserve">
+    <value> 在模块或命名空间签名中</value>
+  </data>
+  <data name="HashIncludeNotAllowedInNonScript" xml:space="preserve">
+    <value>#I 指令只能出现在 F# 脚本文件(扩展名为 .fsx 或 .fsscript)中。请将此代码添加到脚本文件中、添加此引用的“-I”编译器选项或使用“#if INTERACTIVE”/“#endif”分隔此指令。</value>
+  </data>
+  <data name="Parser.TOKEN.CONSTRAINT" xml:space="preserve">
+    <value>关键字“constraint”</value>
+  </data>
+  <data name="MSBuildReferenceResolutionError" xml:space="preserve">
+    <value>{0} (代码={1})</value>
+  </data>
+  <data name="NONTERM.classDefnMember" xml:space="preserve">
+    <value> 在成员定义中</value>
+  </data>
+  <data name="Parser.TOKEN.FINALLY" xml:space="preserve">
+    <value>关键字“finally”</value>
+  </data>
+  <data name="NONTERM.exconCore" xml:space="preserve">
+    <value> 在异常定义中</value>
+  </data>
+  <data name="TokenName1TokenName2TokenName3" xml:space="preserve">
+    <value>。应为 {0}、{1}、{2} 或其他标记。</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.QMARK" xml:space="preserve">
+    <value>符号“:?”</value>
+  </data>
+  <data name="InterfaceNotRevealed" xml:space="preserve">
+    <value>类型实现了接口“{0}”，而签名未显示此接口。您应在签名中列出此接口，因为通过动态类型强制转换和/或反射将可以发现此接口。</value>
+  </data>
+  <data name="Parser.TOKEN.PUBLIC" xml:space="preserve">
+    <value>关键字“public”</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.COLON" xml:space="preserve">
+    <value>符号“::”</value>
+  </data>
+  <data name="SeeAlso" xml:space="preserve">
+    <value>。请参见 {0}。</value>
+  </data>
+  <data name="Parser.TOKEN.LINE.COMMENT" xml:space="preserve">
+    <value>行注释</value>
+  </data>
+  <data name="VirtualAugmentationOnNullValuedType" xml:space="preserve">
+    <value>包含类型可以将“null”用作其空联合用例的表示形式值。对 null 值调用抽象/虚拟成员或接口实现将会导致出现异常。如有必要，可将虚拟数据值添加到空构造函数以避免将“null”用作此值的表示形式。</value>
+  </data>
+  <data name="Parser.TOKEN.UPCAST" xml:space="preserve">
+    <value>关键字“upcast”</value>
+  </data>
+  <data name="Parser.TOKEN.OVERRIDE" xml:space="preserve">
+    <value>关键字“override”</value>
+  </data>
+  <data name="MatchIncomplete1" xml:space="preserve">
+    <value>此表达式中的模式匹配不完整。</value>
+  </data>
+  <data name="MatchIncomplete2" xml:space="preserve">
+    <value> 例如，值“{0}”可以指示模式未涵盖的用例。</value>
+  </data>
+  <data name="MatchIncomplete3" xml:space="preserve">
+    <value> 例如，值“{0}”可以指示模式未涵盖的用例。不过，包含“when”子句的模式规则可能会与此值成功匹配。</value>
+  </data>
+  <data name="MatchIncomplete4" xml:space="preserve">
+    <value> 将忽略不匹配的元素。</value>
+  </data>
+  <data name="BadEventTransformation" xml:space="preserve">
+    <value>要编译为 .NET 事件的定义不具有预期格式。只可以将属性成员编译为 .NET 事件。</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.AT.HAT.OP" xml:space="preserve">
+    <value>中缀运算符</value>
+  </data>
+  <data name="NONTERM.ifExprCases" xml:space="preserve">
+    <value> 在 if/then/else 表达式中</value>
+  </data>
+  <data name="Parser.TOKEN.STRING" xml:space="preserve">
+    <value>字符串</value>
+  </data>
+  <data name="Parser.TOKEN.STRUCT" xml:space="preserve">
+    <value>关键字“struct”</value>
+  </data>
+  <data name="Parser.TOKEN.STATIC" xml:space="preserve">
+    <value>关键字“static”</value>
+  </data>
+  <data name="Parser.TOKEN.RBRACK" xml:space="preserve">
+    <value>符号“]”</value>
+  </data>
+  <data name="Parser.TOKEN.RBRACE" xml:space="preserve">
+    <value>符号“}”</value>
+  </data>
+  <data name="Parser.TOKEN.RARROW" xml:space="preserve">
+    <value>符号“-&gt;”</value>
+  </data>
+  <data name="Parser.TOKEN.RPAREN" xml:space="preserve">
+    <value>符号“)”</value>
+  </data>
+  <data name="Parser.TOKEN.RQUOTE" xml:space="preserve">
+    <value>引用结束</value>
+  </data>
+  <data name="UnresolvedReferenceNoRange" xml:space="preserve">
+    <value>缺少所需的程序集引用。必须添加对程序集“{0}”的引用。</value>
+  </data>
+  <data name="IntfImplInExtrinsicAugmentation" xml:space="preserve">
+    <value>应在类型的初始声明中提供接口实现。</value>
+  </data>
+  <data name="Parser.TOKEN.INLINE" xml:space="preserve">
+    <value>关键字“inline”</value>
+  </data>
+  <data name="LetRecCheckedAtRuntime" xml:space="preserve">
+    <value>将检查对要定义的对象的此引用和其他递归引用，以查看其在运行时能否通过使用延迟的引用来完整地进行初始化。这是因为您定义的是一个或多个递归对象，而不是递归函数。可以使用“#nowarn "40"”或“--nowarn:40”来禁止显示此警告。</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.QMARK.GREATER" xml:space="preserve">
+    <value>符号“:?&gt;”</value>
+  </data>
+  <data name="PossibleOverload" xml:space="preserve">
+    <value>可能的重载: “{0}”。{1}。</value>
+  </data>
+  <data name="FieldNotMutable" xml:space="preserve">
+    <value>此字段是不可变的</value>
+  </data>
+  <data name="Parser.TOKEN.MEMBER" xml:space="preserve">
+    <value>关键字“member”</value>
+  </data>
+  <data name="Parser.TOKEN.MODULE" xml:space="preserve">
+    <value>关键字“module”</value>
+  </data>
+  <data name="NONTERM.valSpfn" xml:space="preserve">
+    <value> 在值签名中</value>
+  </data>
+  <data name="Parser.TOKEN.LPAREN" xml:space="preserve">
+    <value>符号“(”</value>
+  </data>
+  <data name="Parser.TOKEN.LQUOTE" xml:space="preserve">
+    <value>引用开始</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.COMPARE.OP" xml:space="preserve">
+    <value>中缀运算符</value>
+  </data>
+  <data name="Parser.TOKEN.LARROW" xml:space="preserve">
+    <value>符号“&lt;-”</value>
+  </data>
+  <data name="Parser.TOKEN.DOWNCAST" xml:space="preserve">
+    <value>关键字“downcast”</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACE" xml:space="preserve">
+    <value>符号“{”</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK" xml:space="preserve">
+    <value>符号“[”</value>
+  </data>
+  <data name="ValNotLocal" xml:space="preserve">
+    <value>此值不是本地的</value>
+  </data>
+  <data name="IndeterminateRuntimeCoercion" xml:space="preserve">
+    <value>这个从类型\n    {0}    \n 到 \n    {1}    的运行时强制或\n类型测试涉及一个基于此程序点之前的信息的不确定类型。不允许对某些类型执行运行时类型测试。需要更多的类型批注。</value>
+  </data>
+  <data name="Parser.TOKEN.BAR.RBRACK" xml:space="preserve">
+    <value>符号“|]”</value>
+  </data>
+  <data name="ConstraintSolverMissingConstraint" xml:space="preserve">
+    <value>类型参数缺少约束“{0}”</value>
+  </data>
+  <data name="FixKeyword" xml:space="preserve">
+    <value>关键字 </value>
+  </data>
+  <data name="NONTERM.Category.Pattern" xml:space="preserve">
+    <value> 在模式中</value>
+  </data>
+  <data name="Parser.TOKEN.ASSERT" xml:space="preserve">
+    <value>关键字“assert”</value>
+  </data>
+  <data name="NONTERM.typeArgsActual" xml:space="preserve">
+    <value> 在类型参数中</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossibleAssignment" xml:space="preserve">
+    <value>此等式表达式的结果被隐式丢弃。请考虑使用 "let" 将结果绑定到一个名称，例如 "let result = expression"。如果想要转变某个值，则将此值标记为 "mutable" 并使用 "&lt;-" 运算符，例如 "{0} &lt;- expression"。</value>
+  </data>
+  <data name="Parser.TOKEN.ORESET" xml:space="preserve">
+    <value>输入结束</value>
+  </data>
+  <data name="TyconBadArgs" xml:space="preserve">
+    <value>类型“{0}”需要 {1} 个类型参数，而给定了 {2} 个类型参数</value>
+  </data>
+  <data name="Parser.TOKEN.ODUMMY" xml:space="preserve">
+    <value>内部虚拟标记</value>
+  </data>
+  <data name="ErrorFromApplyingDefault1" xml:space="preserve">
+    <value>在为类型推理变量应用默认类型“{0}”时，类型约束不匹配。</value>
+  </data>
+  <data name="ErrorFromApplyingDefault2" xml:space="preserve">
+    <value> 请考虑添加更多类型约束</value>
+  </data>
+  <data name="Parser.TOKEN.DELEGATE" xml:space="preserve">
+    <value>关键字“delegate”</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.STAR.DIV.MOD.OP" xml:space="preserve">
+    <value>中缀运算符</value>
+  </data>
+  <data name="Parser.TOKEN.EXTERN" xml:space="preserve">
+    <value>关键字“extern”</value>
+  </data>
+  <data name="Parser.TOKEN.EQUALS" xml:space="preserve">
+    <value>符号“=”</value>
+  </data>
+  <data name="Parser.TOKEN.DOT.DOT" xml:space="preserve">
+    <value>符号“..”</value>
+  </data>
+  <data name="Parser.TOKEN.DOWNTO" xml:space="preserve">
+    <value>关键字“downto”</value>
+  </data>
+  <data name="Parser.TOKEN.DOLLAR" xml:space="preserve">
+    <value>符号“$”</value>
+  </data>
+  <data name="InvalidRuntimeCoercion" xml:space="preserve">
+    <value>从类型 {0} 到 {1} 的运行时强制或类型测试无效\n{2}</value>
+  </data>
+  <data name="ErrorFromAddingTypeEquation2" xml:space="preserve">
+    <value>类型不匹配。应为\n    “{0}”    \n而给定的是\n    “{1}”    {2}\n</value>
+  </data>
+  <data name="ErrorFromAddingTypeEquation1" xml:space="preserve">
+    <value>此表达式应具有类型\n    “{1}”    \n而此处具有类型\n    “{0}”    {2}</value>
+  </data>
+  <data name="Parser.TOKEN.BINDER" xml:space="preserve">
+    <value>联编程序关键字</value>
+  </data>
+  <data name="NONTERM.interaction" xml:space="preserve">
+    <value> 在交互中</value>
+  </data>
+  <data name="Parser.TOKEN.OBLOCKBEGIN" xml:space="preserve">
+    <value>结构化构造开始</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.STAR.STAR.OP" xml:space="preserve">
+    <value>中缀运算符</value>
+  </data>
+  <data name="IntfImplInIntrinsicAugmentation" xml:space="preserve">
+    <value>扩大中的接口实现现已弃用。应在类型的初始声明中提供接口实现。</value>
+  </data>
+  <data name="TypeTestUnnecessary" xml:space="preserve">
+    <value>将始终保持此类型测试或向下转换</value>
+  </data>
+  <data name="OverrideDoesntOverride2" xml:space="preserve">
+    <value>成员“{0}”不具有用于重写相应的抽象方法的正确类型。</value>
+  </data>
+  <data name="OverrideDoesntOverride3" xml:space="preserve">
+    <value> 所需签名为“{0}”。</value>
+  </data>
+  <data name="OverrideDoesntOverride1" xml:space="preserve">
+    <value>成员“{0}”不具有用于重写任何给定虚方法的正确类型</value>
+  </data>
+  <data name="OverrideDoesntOverride4" xml:space="preserve">
+    <value>成员“{0}”已通过 "unit" 特例化，但 "unit" 不能用作针对返回类型参数化的抽象方法的返回类型。</value>
+  </data>
+  <data name="NONTERM.hashDirective" xml:space="preserve">
+    <value> 在指令中</value>
+  </data>
+  <data name="Parser.TOKEN.GLOBAL" xml:space="preserve">
+    <value>关键字“global”</value>
+  </data>
+  <data name="NONTERM.classMemberSpfn" xml:space="preserve">
+    <value> 在成员签名中</value>
+  </data>
+  <data name="Parser.TOKEN.ADJACENT.PREFIX.OP" xml:space="preserve">
+    <value>前缀运算符</value>
+  </data>
+  <data name="Parser.TOKEN.OFUNCTION" xml:space="preserve">
+    <value>关键字“function”</value>
+  </data>
+  <data name="NONTERM.hardwhiteLetBindings" xml:space="preserve">
+    <value> 在绑定中</value>
+  </data>
+  <data name="TokenName1" xml:space="preserve">
+    <value>。应为 {0} 或其他标记。</value>
+  </data>
+  <data name="Parser.TOKEN.OINTERFACE.MEMBER" xml:space="preserve">
+    <value>关键字“interface”</value>
+  </data>
+  <data name="Parser.TOKEN.SEMICOLON.SEMICOLON" xml:space="preserve">
+    <value>符号“;;”</value>
+  </data>
+  <data name="FixReplace" xml:space="preserve">
+    <value> (因为可识别缩进的语法)</value>
+  </data>
+  <data name="LetRecEvaluatedOutOfOrder" xml:space="preserve">
+    <value>可以执行无序绑定，因为存在此前向引用。</value>
+  </data>
+  <data name="FixSymbol" xml:space="preserve">
+    <value>符号 </value>
+  </data>
+  <data name="Parser.TOKEN.DECIMAL" xml:space="preserve">
+    <value>十进制文本</value>
+  </data>
+  <data name="Obsolete1" xml:space="preserve">
+    <value>此构造已弃用</value>
+  </data>
+  <data name="Obsolete2" xml:space="preserve">
+    <value>。{0}</value>
+  </data>
+  <data name="Parser.TOKEN.DEFAULT" xml:space="preserve">
+    <value>关键字“default”</value>
+  </data>
+  <data name="NONTERM.recdExpr" xml:space="preserve">
+    <value> 在记录表达式中</value>
+  </data>
+  <data name="IndeterminateType" xml:space="preserve">
+    <value>查找基于此程序点之前的信息的不确定类型的对象。在此程序点之前可能需要类型批注来约束对象的类型。这可能允许解析查找。</value>
+  </data>
+  <data name="DeprecatedThreadStaticBindingWarning" xml:space="preserve">
+    <value>线程静态的和上下文静态的“let”绑定已弃用。请改为在类中使用“static val mutable &lt;ident&gt; : &lt;type&gt;”格式的声明。将“DefaultValue”特性添加到此声明以指示在每个新线程上将该值初始化为默认值。</value>
+  </data>
+  <data name="TargetInvocationExceptionWrapper" xml:space="preserve">
+    <value>内部错误: {0}</value>
+  </data>
+  <data name="NONTERM.typeConstraint" xml:space="preserve">
+    <value> 在类型约束中</value>
+  </data>
+  <data name="Parser.TOKEN.FUNKY.OPERATOR.NAME" xml:space="preserve">
+    <value>运算符名称</value>
+  </data>
+  <data name="UnresolvedPathReferenceNoRange" xml:space="preserve">
+    <value>通过“{0}”引用的类型是在一个未被引用的程序集中定义的。必须添加对程序集“{1}”的引用。</value>
+  </data>
+  <data name="Experimental" xml:space="preserve">
+    <value>{0}。可以使用“--nowarn:57”或“#nowarn "57"”禁用此警告。</value>
+  </data>
+  <data name="Failure4" xml:space="preserve">
+    <value>内部错误: {0}</value>
+  </data>
+  <data name="Failure1" xml:space="preserve">
+    <value>分析错误</value>
+  </data>
+  <data name="Failure3" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Failure2" xml:space="preserve">
+    <value>分析错误: 意外的文件尾</value>
+  </data>
+  <data name="HashLoadedScriptConsideredSource" xml:space="preserve">
+    <value>加载的文件只能是 F# 源文件(扩展名为 .fs)。此 F# 脚本文件(.fsx 或 .fsscript)将被视为一个 F# 源文件</value>
+  </data>
+  <data name="ConstraintSolverInfiniteTypes" xml:space="preserve">
+    <value>类型“{0}”和“{1}”无法联合。</value>
+  </data>
+  <data name="NameClash2" xml:space="preserve">
+    <value>无法定义 {0}“{1}”，因为名称“{2}”与此类型或模块中的 {3}“{4}”冲突</value>
+  </data>
+  <data name="NameClash1" xml:space="preserve">
+    <value>{0}“{1}”的定义重复</value>
+  </data>
+  <data name="NONTERM.openDecl" xml:space="preserve">
+    <value> 在开放的声明中</value>
+  </data>
+  <data name="LetRecUnsound1" xml:space="preserve">
+    <value>值“{0}”将作为其自身定义的一部分进行计算</value>
+  </data>
+  <data name="LetRecUnsound2" xml:space="preserve">
+    <value>此值最终将作为其自身定义的一部分进行计算。您可能需要采用延迟值或函数。值“{0}”{1}。</value>
+  </data>
+  <data name="Parser.TOKEN.KEYWORD_STRING" xml:space="preserve">
+    <value>编译器生成的文本</value>
+  </data>
+  <data name="MissingFields" xml:space="preserve">
+    <value>以下字段需要值: {0}</value>
+  </data>
+  <data name="Parser.TOKEN.INACTIVECODE" xml:space="preserve">
+    <value>非活动代码</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInSubsumptionRelation" xml:space="preserve">
+    <value>类型“{0}”与类型“{1}”{2} 不兼容</value>
+  </data>
+  <data name="Parser.TOKEN.ABSTRACT" xml:space="preserve">
+    <value>关键字“abstract”</value>
+  </data>
+  <data name="Parser.TOKEN.NAMESPACE" xml:space="preserve">
+    <value>关键字“namespace”</value>
+  </data>
+  <data name="Parser.TOKEN.OBLOCKEND" xml:space="preserve">
+    <value>此点或之前的结构化构造不完整</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossiblePropertySetter" xml:space="preserve">
+    <value>此等式表达式的结果被隐式丢弃。请考虑使用 "let" 将结果绑定到一个名称，例如 "let result = expression"。如果要为某属性设置值，请使用 "&lt;-" 运算符，例如 "{0}.{1} &lt;- expression"。</value>
+  </data>
+  <data name="TokenName1TokenName2" xml:space="preserve">
+    <value>。应为 {0}、{1} 或其他标记。</value>
+  </data>
+  <data name="Parser.TOKEN.QMARK.QMARK" xml:space="preserve">
+    <value>符号“??”</value>
+  </data>
+  <data name="NotUpperCaseConstructor" xml:space="preserve">
+    <value>可区分的联合用例和异常标签必须是大写的标识符</value>
+  </data>
+  <data name="UnionPatternsBindDifferentNames" xml:space="preserve">
+    <value>此“or”模式的两侧绑定了不同的变量组</value>
+  </data>
+  <data name="LoadedSourceNotFoundIgnoring" xml:space="preserve">
+    <value>未能加载文件“{0}”，因为该文件不存在或无法访问</value>
+  </data>
+  <data name="FunctionValueUnexpected" xml:space="preserve">
+    <value>此表达式是一个函数值，也就是说，缺少参数。其类型为 {0}。</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.BRACK.APP" xml:space="preserve">
+    <value>符号“[”</value>
+  </data>
+  <data name="Parser.TOKEN.MUTABLE" xml:space="preserve">
+    <value>关键字“mutable”</value>
+  </data>
+  <data name="NONTERM.Category.Definition" xml:space="preserve">
+    <value> 在定义中</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.BAR.RBRACK" xml:space="preserve">
+    <value>符号“&gt;|]”</value>
+  </data>
+  <data name="IndentationProblem" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.WHITESPACE" xml:space="preserve">
+    <value>空白</value>
+  </data>
+  <data name="Parser.TOKEN.PRIVATE" xml:space="preserve">
+    <value>关键字“private”</value>
+  </data>
+  <data name="HashReferenceNotAllowedInNonScript" xml:space="preserve">
+    <value>#r 指令只能出现在 F# 脚本文件(扩展名为 .fsx 或 .fsscript)中。请将此代码移动到脚本文件或使用 "-r" 编译器选项替换此引用。如果该指令作为用户输入执行，则可以使用 "#if INTERACTIVE'/'#endif" 分隔它。</value>
+  </data>
+  <data name="Parser.TOKEN.STRING.TEXT" xml:space="preserve">
+    <value>字符串文本</value>
+  </data>
+  <data name="Parser.TOKEN.INT32.DOT.DOT" xml:space="preserve">
+    <value>整数..</value>
+  </data>
+  <data name="NONTERM.fieldDecl" xml:space="preserve">
+    <value> 在字段声明中</value>
+  </data>
+  <data name="Recursion" xml:space="preserve">
+    <value>对函数“{0}”的使用与在其他位置推理出的类型不匹配。推理出的函数的类型为\n    {1}。            \n此时需要使用的函数的类型为\n    {2}    {3}\n此错误可能是由于与一个“let rec”集合或一组类中的泛型递归相关联的限制所导致的。请考虑为递归调用的目标给定完整的类型签名，包括参数和返回类型的类型批注。</value>
+  </data>
+  <data name="CoercionTargetSealed" xml:space="preserve">
+    <value>类型“{0}”不具有任何适当的子类型，且无需用作静态强制的目标</value>
+  </data>
+  <data name="NONTERM.beginEndExpr" xml:space="preserve">
+    <value> 在开始/结束表达式中</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACE.LESS" xml:space="preserve">
+    <value>符号“{&lt;”</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.EQUALS" xml:space="preserve">
+    <value>符号“:=”</value>
+  </data>
+  <data name="Parser.TOKEN.INHERIT" xml:space="preserve">
+    <value>关键字“inherit”</value>
+  </data>
+  <data name="Parser.TOKEN.TRY" xml:space="preserve">
+    <value>关键字“try”</value>
+  </data>
+  <data name="Parser.TOKEN.SIG" xml:space="preserve">
+    <value>关键字“sig”</value>
+  </data>
+  <data name="Parser.TOKEN.REC" xml:space="preserve">
+    <value>关键字“rec”</value>
+  </data>
+  <data name="Parser.TOKEN.INT" xml:space="preserve">
+    <value>整数文本</value>
+  </data>
+  <data name="Parser.TOKEN.VAL" xml:space="preserve">
+    <value>关键字“val”</value>
+  </data>
+  <data name="Parser.TOKEN.ASR" xml:space="preserve">
+    <value>关键字“asr”</value>
+  </data>
+  <data name="Parser.TOKEN.AND" xml:space="preserve">
+    <value>关键字“and”</value>
+  </data>
+  <data name="Parser.TOKEN.AMP" xml:space="preserve">
+    <value>符号 '&amp;'</value>
+  </data>
+  <data name="Parser.TOKEN.ODO" xml:space="preserve">
+    <value>关键字“do”</value>
+  </data>
+  <data name="Parser.TOKEN.NEW" xml:space="preserve">
+    <value>关键字“new”</value>
+  </data>
+  <data name="Parser.TOKEN.END" xml:space="preserve">
+    <value>关键字“end”</value>
+  </data>
+  <data name="Parser.TOKEN.EOF" xml:space="preserve">
+    <value>输入结束</value>
+  </data>
+  <data name="Parser.TOKEN.DOT" xml:space="preserve">
+    <value>符号“.”</value>
+  </data>
+  <data name="Parser.TOKEN.BAR" xml:space="preserve">
+    <value>符号“|”</value>
+  </data>
+  <data name="Parser.TOKEN.FUN" xml:space="preserve">
+    <value>关键字“fun”</value>
+  </data>
+  <data name="Parser.TOKEN.FOR" xml:space="preserve">
+    <value>关键字“for”</value>
+  </data>
+  <data name="NonRigidTypar1" xml:space="preserve">
+    <value>此构造导致代码并不像其类型批注指明的那样通用。通过使用“{0}”处或其附近的“#”、“_”或其他类型批注暗示的类型变量已被约束为类型“{1}”。</value>
+  </data>
+  <data name="NonRigidTypar3" xml:space="preserve">
+    <value>此构造导致代码并不像类型批注指明的那样通用。类型变量“{0}”已被约束为类型“{1}”。</value>
+  </data>
+  <data name="NonRigidTypar2" xml:space="preserve">
+    <value>此构造导致代码并不像类型批注指明的那样通用。度量单位变量“{0}”已被约束为度量“{1}”。</value>
+  </data>
+  <data name="Parser.TOKEN.COMMENT" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="OverrideInIntrinsicAugmentation" xml:space="preserve">
+    <value>扩大中的重写实现现已弃用。应将重写实现作为类型的初始声明的一部分提供。</value>
+  </data>
+  <data name="Parser.TOKEN.PLUS.MINUS.OP" xml:space="preserve">
+    <value>中缀运算符</value>
+  </data>
+  <data name="RecursiveUseCheckedAtRuntime" xml:space="preserve">
+    <value>将检查此递归使用能否在运行时完整地进行初始化。此警告通常是无害的，可以使用“#nowarn "21"”或“--nowarn:21”来取消显示此警告。</value>
+  </data>
+  <data name="OverrideInExtrinsicAugmentation" xml:space="preserve">
+    <value>应将重写实现作为类型的初始声明的一部分提供。</value>
+  </data>
+  <data name="NonVirtualAugmentationOnNullValuedType" xml:space="preserve">
+    <value>包含类型可以将“null”用作其空联合用例的表示形式值。此成员将编译为静态成员。</value>
+  </data>
+  <data name="ErrorsFromAddingSubsumptionConstraint" xml:space="preserve">
+    <value>类型约束不匹配。类型 \n    “{0}”    \n与类型\n    “{1}”    {2} 不兼容\n</value>
+  </data>
+  <data name="FileNameNotResolved" xml:space="preserve">
+    <value>无法在任何 {1} 中找到\n 文件“{0}”</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.TYAPP" xml:space="preserve">
+    <value>类型应用程序</value>
+  </data>
+  <data name="HashDirectiveNotAllowedInNonScript" xml:space="preserve">
+    <value>只能在 F# 脚本文件(扩展名为 .fsx 或 .fsscript)中使用此指令。请删除此指令、将此代码移动到脚本文件中或使用“#if INTERACTIVE”/“#endif”分隔此指令。</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInEqualityRelation2" xml:space="preserve">
+    <value>类型“{0}”与类型“{1}”不匹配</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInEqualityRelation1" xml:space="preserve">
+    <value>度量单位“{0}”与度量单位“{1}”不匹配</value>
+  </data>
+  <data name="Parser.TOKEN.INTERNAL" xml:space="preserve">
+    <value>关键字“internal”</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK.LESS" xml:space="preserve">
+    <value>符号“[&lt;”</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER" xml:space="preserve">
+    <value>符号“&gt;”</value>
+  </data>
+  <data name="LibraryUseOnly" xml:space="preserve">
+    <value>此构造已弃用: 只能在 F# 库中使用此构造</value>
+  </data>
+  <data name="ValueRestriction2" xml:space="preserve">
+    <value>值限制。值“{0}”具有泛型类型\n    {1}    \n使“{2}”成为具有显式参数的函数，或添加类型批注(如果您不希望它是泛型的)。</value>
+  </data>
+  <data name="ValueRestriction3" xml:space="preserve">
+    <value>值限制。已推理出此成员具有泛型类型\n    {0}    \n构造函数和属性 getter/setter 不能比封闭类型更通用。    添加类型批注以指示涉及到的确切类型。</value>
+  </data>
+  <data name="ValueRestriction1" xml:space="preserve">
+    <value>值限制。值“{0}”具有泛型类型\n    {1}    \n使“{2}”的参数成为显式参数，或添加类型批注(如果您不希望它是泛型的)。</value>
+  </data>
+  <data name="ValueRestriction4" xml:space="preserve">
+    <value>值限制。已推理出值“{0}”具有泛型类型\n    {1}    \n使“{2}”的参数成为显式参数，或添加类型批注(如果您不希望它是泛型的)。</value>
+  </data>
+  <data name="ValueRestriction5" xml:space="preserve">
+    <value>值限制。已推理出值“{0}”具有泛型类型\n    {1}    \n将“{2}”定义为简单的数据条目，使其成为具有显式参数的函数，或添加类型批注(如果您不希望它是泛型的)。</value>
+  </data>
+  <data name="NONTERM.patternClauses" xml:space="preserve">
+    <value> 在模式匹配中</value>
+  </data>
+  <data name="UnexpectedEndOfInput" xml:space="preserve">
+    <value>意外的输入结束</value>
+  </data>
+  <data name="NONTERM.tyconDefn" xml:space="preserve">
+    <value> 在类型定义中</value>
+  </data>
+  <data name="NONTERM.tyconSpfn" xml:space="preserve">
+    <value> 在类型签名中</value>
+  </data>
+  <data name="NONTERM.Category.SignatureFile" xml:space="preserve">
+    <value> 在签名文件中</value>
+  </data>
+  <data name="NONTERM.quoteExpr" xml:space="preserve">
+    <value> 在引用文本中</value>
+  </data>
+  <data name="HashLoadedSourceHasIssues1" xml:space="preserve">
+    <value>加载的文件中出现一个或多个警告。\n</value>
+  </data>
+  <data name="HashLoadedSourceHasIssues2" xml:space="preserve">
+    <value>加载的文件中出现一个或多个错误。\n</value>
+  </data>
+  <data name="BakedInMemberConstraintName" xml:space="preserve">
+    <value>F# 编译器为名称为“{0}”的成员约束给定了特殊状态，因为使用此成员隐式扩大了某些 .NET 类型。如果您尝试从自己的代码中调用该成员约束，则可能会导致运行时失败。</value>
+  </data>
+  <data name="NONTERM.localBinding" xml:space="preserve">
+    <value> 在绑定中</value>
+  </data>
+  <data name="Duplicate2" xml:space="preserve">
+    <value>{0}“{1}”的定义重复</value>
+  </data>
+  <data name="Duplicate1" xml:space="preserve">
+    <value>名为“{0}”的两个成员具有相同的签名</value>
+  </data>
+  <data name="Parser.TOKEN.INSTANCE" xml:space="preserve">
+    <value>关键字“instance”</value>
+  </data>
+  <data name="UseOfAddressOfOperator" xml:space="preserve">
+    <value>使用本机指针可能会导致无法验证的 .NET IL 代码</value>
+  </data>
+  <data name="RuntimeCoercionSourceSealed2" xml:space="preserve">
+    <value>类型“{0}”不具有任何适当的子类型，且不能用作类型测试或运行时强制的源。</value>
+  </data>
+  <data name="RuntimeCoercionSourceSealed1" xml:space="preserve">
+    <value>类型“{0}”不能用作类型测试或运行时强制的源</value>
+  </data>
+  <data name="Parser.TOKEN.ODO.BANG" xml:space="preserve">
+    <value>关键字“do!</value>
+  </data>
+  <data name="Parser.TOKEN.UNDERSCORE" xml:space="preserve">
+    <value>符号“_”</value>
+  </data>
+  <data name="ParameterlessStructCtor" xml:space="preserve">
+    <value>结构的隐式对象构造函数必须采用至少一个参数</value>
+  </data>
+  <data name="Parser.TOKEN.PERCENT.OP" xml:space="preserve">
+    <value>符号“{0}”</value>
+  </data>
+  <data name="Parser.TOKEN.RESERVED" xml:space="preserve">
+    <value>保留的关键字</value>
+  </data>
+  <data name="Parser.TOKEN.SPLICE.SYMBOL" xml:space="preserve">
+    <value>符号“splice”</value>
+  </data>
+  <data name="SelfRefObjCtor1" xml:space="preserve">
+    <value>将检查对要定义的对象的递归引用，以查看其在运行时能否通过使用延迟的引用来完整地进行初始化。请考虑在成员中或“&lt;ctor-expr&gt; then &lt;expr&gt;”格式的尾随表达式中放置自引用。</value>
+  </data>
+  <data name="SelfRefObjCtor2" xml:space="preserve">
+    <value>将检查对要定义的对象的递归引用，以查看其在运行时能否通过使用延迟的引用来完整地进行初始化。请考虑在构造序列中的最后一个“let”绑定后的“do”语句中放置自引用。</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.GREATER" xml:space="preserve">
+    <value>符号“:&gt;”</value>
+  </data>
+  <data name="UnionCaseWrongArguments" xml:space="preserve">
+    <value>此构造函数应用于 {0} 个参数，但应为 {1} 个参数</value>
+  </data>
+  <data name="Parser.TOKEN.FUNCTION" xml:space="preserve">
+    <value>关键字“function”</value>
+  </data>
+  <data name="Deprecated" xml:space="preserve">
+    <value>此构造已弃用: {0}</value>
+  </data>
+  <data name="Parser.TOKEN.HASH.ENDIF" xml:space="preserve">
+    <value>指令</value>
+  </data>
+  <data name="TypeIsImplicitlyAbstract" xml:space="preserve">
+    <value>由于未为一些抽象成员给定实现，因此此类型为“abstract”。如果是有意这样做的，请为您的类型添加“[&lt;AbstractClass&gt;]”特性。</value>
+  </data>
+  <data name="UndefinedName2" xml:space="preserve">
+    <value> 在 FSharp.PowerPack.dll 中找到了同名构造，其中包含某些早期版本的 F# 中已隐式引用的一些模块和类型。您可能需要添加对此 DLL 的显式引用以编译此代码。</value>
+  </data>
+  <data name="Unexpected" xml:space="preserve">
+    <value>意外的 {0}</value>
+  </data>
+  <data name="Parser.TOKEN.YIELD.BANG" xml:space="preserve">
+    <value>yield!</value>
+  </data>
+  <data name="Parser.TOKEN.YIELD" xml:space="preserve">
+    <value>yield</value>
+  </data>
+  <data name="Parser.TOKEN.QMARK" xml:space="preserve">
+    <value>符号“?”</value>
+  </data>
+  <data name="Parser.TOKEN.QUOTE" xml:space="preserve">
+    <value>引用符号</value>
+  </data>
+  <data name="StaticCoercionShouldUseBox" xml:space="preserve">
+    <value>从值类型 \n    {0}    \n到类型 \n    {1}    \n的强制将涉及装箱。请考虑改用“box”</value>
+  </data>
+  <data name="Parser.TOKEN.IDENT" xml:space="preserve">
+    <value>标识符</value>
+  </data>
+  <data name="Parser.TOKEN.WHILE" xml:space="preserve">
+    <value>关键字“while”</value>
+  </data>
+  <data name="Parser.TOKEN.MATCH" xml:space="preserve">
+    <value>关键字“match”</value>
+  </data>
+  <data name="Parser.TOKEN.MINUS" xml:space="preserve">
+    <value>符号“-”</value>
+  </data>
+  <data name="Parser.TOKEN.OWITH" xml:space="preserve">
+    <value>关键字“with”</value>
+  </data>
+  <data name="Parser.TOKEN.OTHEN" xml:space="preserve">
+    <value>关键字“then”</value>
+  </data>
+  <data name="Parser.TOKEN.OELSE" xml:space="preserve">
+    <value>关键字“else”</value>
+  </data>
+  <data name="Parser.TOKEN.COLON" xml:space="preserve">
+    <value>符号“:”</value>
+  </data>
+  <data name="Parser.TOKEN.COMMA" xml:space="preserve">
+    <value>符号“,”</value>
+  </data>
+  <data name="Parser.TOKEN.CONST" xml:space="preserve">
+    <value>关键字“const”</value>
+  </data>
+  <data name="Parser.TOKEN.CLASS" xml:space="preserve">
+    <value>关键字“class”</value>
+  </data>
+  <data name="Parser.TOKEN.BEGIN" xml:space="preserve">
+    <value>关键字“begin”</value>
+  </data>
+  <data name="Parser.TOKEN.FLOAT" xml:space="preserve">
+    <value>浮点文本</value>
+  </data>
+  <data name="Parser.TOKEN.FIXED" xml:space="preserve">
+    <value>关键字 "fixed"</value>
+  </data>
+  <data name="Parser.TOKEN.FALSE" xml:space="preserve">
+    <value>关键字“false”</value>
+  </data>
+  <data name="BlockEndSentence" xml:space="preserve">
+    <value>此点或之前的结构化构造不完整</value>
+  </data>
+  <data name="RequiredButNotSpecified" xml:space="preserve">
+    <value>模块“{0}”需要 {1}“{2}”</value>
+  </data>
+  <data name="NONTERM.cPrototype" xml:space="preserve">
+    <value> 在外部声明中</value>
+  </data>
+  <data name="NONTERM.Category.Type" xml:space="preserve">
+    <value> 在类型中</value>
+  </data>
+  <data name="NONTERM.Category.Expr" xml:space="preserve">
+    <value> 在表达式中</value>
+  </data>
+  <data name="NONTERM.attrUnionCaseDecl" xml:space="preserve">
+    <value> 在联合用例中</value>
+  </data>
+  <data name="Parser.TOKEN.BYTEARRAY" xml:space="preserve">
+    <value>字节数组文本</value>
+  </data>
+  <data name="LetRecUnsoundInner" xml:space="preserve">
+    <value> 将计算“{0}”</value>
+  </data>
+  <data name="RuleNeverMatched" xml:space="preserve">
+    <value>从不与此规则匹配</value>
+  </data>
+  <data name="ValueNotContained" xml:space="preserve">
+    <value>模块“{0}”包含\n    {1}    \n而其签名指定\n    {2}    \n{3}。</value>
+  </data>
+  <data name="PossibleBestOverload" xml:space="preserve">
+    <value>\n\n可能的最佳重载: “{0}”。</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK.BAR" xml:space="preserve">
+    <value>符号“[|”</value>
+  </data>
+  <data name="ConstraintSolverTupleDiffLengths" xml:space="preserve">
+    <value>元组具有不同长度的 {0} 和 {1}</value>
+  </data>
+  <data name="Parser.TOKEN.TYPE" xml:space="preserve">
+    <value>关键字“type”</value>
+  </data>
+  <data name="Parser.TOKEN.TRUE" xml:space="preserve">
+    <value>关键字“true”</value>
+  </data>
+  <data name="Parser.TOKEN.STAR" xml:space="preserve">
+    <value>符号“*”</value>
+  </data>
+  <data name="Parser.TOKEN.HASH" xml:space="preserve">
+    <value>意外的</value>
+  </data>
+  <data name="Parser.TOKEN.WHEN" xml:space="preserve">
+    <value>关键字“when”</value>
+  </data>
+  <data name="Parser.TOKEN.WITH" xml:space="preserve">
+    <value>关键字“with”</value>
+  </data>
+  <data name="Parser.TOKEN.VOID" xml:space="preserve">
+    <value>关键字“void”</value>
+  </data>
+  <data name="Parser.TOKEN.LESS" xml:space="preserve">
+    <value>符号“&lt;”</value>
+  </data>
+  <data name="Parser.TOKEN.LAZY" xml:space="preserve">
+    <value>关键字“lazy”</value>
+  </data>
+  <data name="Parser.TOKEN.OPEN" xml:space="preserve">
+    <value>关键字“open”</value>
+  </data>
+  <data name="Parser.TOKEN.OFUN" xml:space="preserve">
+    <value>关键字“fun”</value>
+  </data>
+  <data name="Parser.TOKEN.OLET" xml:space="preserve">
+    <value>关键字“let”或“use”</value>
+  </data>
+  <data name="Parser.TOKEN.NULL" xml:space="preserve">
+    <value>关键字“null”</value>
+  </data>
+  <data name="Parser.TOKEN.ELIF" xml:space="preserve">
+    <value>关键字“elif”</value>
+  </data>
+  <data name="Parser.TOKEN.DONE" xml:space="preserve">
+    <value>关键字“done”</value>
+  </data>
+  <data name="Parser.TOKEN.CHAR" xml:space="preserve">
+    <value>字符文本</value>
+  </data>
+  <data name="Parser.TOKEN.BASE" xml:space="preserve">
+    <value>关键字“base”</value>
+  </data>
+  <data name="AssemblyNotResolved" xml:space="preserve">
+    <value>程序集引用“{0}”未找到或无效</value>
+  </data>
+  <data name="RecoverableParseError" xml:space="preserve">
+    <value>语法错误</value>
+  </data>
+  <data name="FieldsFromDifferentTypes" xml:space="preserve">
+    <value>字段“{0}”和“{1}”来自不同的类型</value>
+  </data>
+  <data name="DefensiveCopyWarning" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="NONTERM.typeNameInfo" xml:space="preserve">
+    <value> 在类型名称中</value>
+  </data>
+  <data name="Parser.TOKEN.AMP.AMP" xml:space="preserve">
+    <value>符号“&amp;&amp;”</value>
+  </data>
+  <data name="InvalidInternalsVisibleToAssemblyName1" xml:space="preserve">
+    <value>来自 {1} 中的 InternalsVisibleTo 特性的程序集名称“{0}”无效</value>
+  </data>
+  <data name="InvalidInternalsVisibleToAssemblyName2" xml:space="preserve">
+    <value>来自 InternalsVisibleTo 特性的程序集名称“{0}”无效(程序集文件名不可用)</value>
+  </data>
+  <data name="FunctionExpected" xml:space="preserve">
+    <value>此函数采用的参数过多，或者用于不需要函数的上下文中</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossibleAssignmentToMutable" xml:space="preserve">
+    <value>此等式表达式的结果被隐式丢弃。请考虑使用 "let" 将结果绑定到一个名称，例如 "let result = expression"。如果想要转变某个值，请使用 "&lt;-" 运算符，例如 "{0} &lt;- expression"。</value>
+  </data>
+  <data name="IndeterminateStaticCoercion" xml:space="preserve">
+    <value>这个从类型\n    {0}    \n到 \n    {1}    \n的静态强制涉及一个基于此程序点之前的信息的不确定类型。不允许对某些类型进行静态强制。需要更多的类型批注。</value>
+  </data>
+  <data name="PossibleUnverifiableCode" xml:space="preserve">
+    <value>使用此构造可能会导致生成不可验证的 .NET IL 代码。可以使用“--nowarn:9”或“#nowarn "9"”禁用此警告。</value>
+  </data>
+  <data name="FullAbstraction" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.AMP.OP" xml:space="preserve">
+    <value>中缀运算符</value>
+  </data>
+  <data name="NONTERM.defnBindings" xml:space="preserve">
+    <value> 在定义中</value>
+  </data>
+  <data name="Parser.TOKEN.SEMICOLON" xml:space="preserve">
+    <value>符号“;”</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.BAR.OP" xml:space="preserve">
+    <value>中缀运算符</value>
+  </data>
+  <data name="NONTERM.objectImplementationMembers" xml:space="preserve">
+    <value> 在对象表达式中</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.RBRACE" xml:space="preserve">
+    <value>符号“&gt;}”</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.RBRACK" xml:space="preserve">
+    <value>符号“&gt;]”</value>
+  </data>
+  <data name="Parser.TOKEN.EXCEPTION" xml:space="preserve">
+    <value>关键字“exception”</value>
+  </data>
+</root>

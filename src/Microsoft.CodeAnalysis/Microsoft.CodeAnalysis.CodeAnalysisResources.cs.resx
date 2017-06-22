@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Struct1" xml:space="preserve">
+    <value>struktura</value>
+  </data>
+  <data name="ElementIsExpected" xml:space="preserve">
+    <value>Očekával se element.</value>
+  </data>
+  <data name="PEImageNotAvailable" xml:space="preserve">
+    <value>Image PE není dostupná.</value>
+  </data>
+  <data name="InvalidSizeOfPublicKeyToken" xml:space="preserve">
+    <value>Neplatná velikost tokenu veřejného klíče</value>
+  </data>
+  <data name="Event1" xml:space="preserve">
+    <value>událost</value>
+  </data>
+  <data name="InconsistentLanguageVersions" xml:space="preserve">
+    <value>Nekonzistentní jazykové verze</value>
+  </data>
+  <data name="ReferenceResolverShouldReturnReadableNonNullStream" xml:space="preserve">
+    <value>Řešitel odkazů by měl vrátit čitelný stream, který není null.</value>
+  </data>
+  <data name="InvalidCompilationOptions" xml:space="preserve">
+    <value>Neplatné možnosti kompilace -- odeslání nejde podepsat.</value>
+  </data>
+  <data name="EmptyKeyInPathMap" xml:space="preserve">
+    <value>Klíč v pathMap je prázdný.</value>
+  </data>
+  <data name="RuleSetHasDuplicateRules" xml:space="preserve">
+    <value>Soubor sady pravidel obsahuje duplicitní pravidla pro {0} s odlišnými akcemi {1} a {2}.</value>
+  </data>
+  <data name="TypeMustBeASubclassOfSyntaxAnnotation" xml:space="preserve">
+    <value>Typ musí být podtřída SyntaxAnnotation.</value>
+  </data>
+  <data name="CompilerAnalyzerThrowsDescription" xml:space="preserve">
+    <value>Analyzátor {0} vrátil následující výjimku:
+{1}.</value>
+  </data>
+  <data name="Value_too_large_to_be_represented_as_a_30_bit_unsigned_integer" xml:space="preserve">
+    <value>Hodnota je moc velká, než aby se dala vyjádřit jako 30bitové celé číslo bez znaménka.</value>
+  </data>
+  <data name="CannotAliasModule" xml:space="preserve">
+    <value>Modul nejde označit aliasem.</value>
+  </data>
+  <data name="InvalidCharactersInAssemblyCultureName" xml:space="preserve">
+    <value>Neplatné znaky v názvu sestavení jazykové verze</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>modul</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>metoda</value>
+  </data>
+  <data name="SymWriterNotDeterministic" xml:space="preserve">
+    <value>Zapisovač Windows PDB nepodporuje deterministickou kompilaci: {0}.</value>
+  </data>
+  <data name="AnalyzerNameColumnHeader" xml:space="preserve">
+    <value>Analyzátor</value>
+  </data>
+  <data name="Class1" xml:space="preserve">
+    <value>třída</value>
+  </data>
+  <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
+    <value>Kopie modulu se nedá použít k vytvoření metadat sestavení.</value>
+  </data>
+  <data name="IconStreamUnexpectedFormat" xml:space="preserve">
+    <value>Stream ikon není v očekávaném formátu.</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>Soubor se nenašel.</value>
+  </data>
+  <data name="RuleSetBadAttributeValue" xml:space="preserve">
+    <value>Atribut {0} má neplatnou hodnotu {1}.</value>
+  </data>
+  <data name="CoffResourceInvalidSectionSize" xml:space="preserve">
+    <value>Prostředky Win32, u kterých se předpokládá, že jsou ve formátu objektů COFF, mají neplatnou velikost sekce.</value>
+  </data>
+  <data name="UnrecognizedResourceFileFormat" xml:space="preserve">
+    <value>Nerozpoznaný formát souboru prostředku</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>parametr</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>vlastnost, indexer</value>
+  </data>
+  <data name="RuleSetMissingAttribute" xml:space="preserve">
+    <value>V elementu {0} chybí atribut s názvem {1}.</value>
+  </data>
+  <data name="MetadataRefNotFoundToRemove1" xml:space="preserve">
+    <value>Nenašel se odkaz na metadata {0}, který by se dal odebrat.</value>
+  </data>
+  <data name="InvalidModuleName" xml:space="preserve">
+    <value>Neplatný název oddílu určený v modulu metadat {0}: {1}</value>
+  </data>
+  <data name="NameContainsInvalidCharacter" xml:space="preserve">
+    <value>Název obsahuje neplatné znaky.</value>
+  </data>
+  <data name="PdbStreamUnexpectedWhenEmbedding" xml:space="preserve">
+    <value>Při vkládání PDB do streamu PE by neměl být zadaný stream PDB.</value>
+  </data>
+  <data name="PdbStreamUnexpectedWhenEmittingMetadataOnly" xml:space="preserve">
+    <value>Když se generují jenom metadata, neměl by se zadávat stream PDB.</value>
+  </data>
+  <data name="AnalyzerDriverFailure" xml:space="preserve">
+    <value>Chyba ovladače analyzátoru</value>
+  </data>
+  <data name="MustIncludePrivateMembersUnlessRefAssembly" xml:space="preserve">
+    <value>Pokud se negeneruje referenční sestavení, je třeba zahrnout soukromé členy.</value>
+  </data>
+  <data name="ChangesMustBeOrderedAndNotOverlapping" xml:space="preserve">
+    <value>Změny musí být seřazené a nesmí se překrývat.</value>
+  </data>
+  <data name="KeepAliveIsTooSmall" xml:space="preserve">
+    <value>Argumenty možnosti /keepalive nižší než -1 nejsou platné.</value>
+  </data>
+  <data name="IOperationFeatureDisabled" xml:space="preserve">
+    <value>Funkce IOperation je zakázaná.</value>
+  </data>
+  <data name="AbsolutePathExpected" xml:space="preserve">
+    <value>Očekávala se absolutní cesta.</value>
+  </data>
+  <data name="InvalidDataAtOffset" xml:space="preserve">
+    <value>Neplatná data na pozici {0}: {1}{2}*{3}{4}</value>
+  </data>
+  <data name="XmlReferencesNotSupported" xml:space="preserve">
+    <value>Odkazy na dokumenty XML se nepodporují.</value>
+  </data>
+  <data name="StreamIsTooLong" xml:space="preserve">
+    <value>Stream je moc dlouhý.</value>
+  </data>
+  <data name="ReturnTypeCannotBeValuePointerbyRefOrOpen" xml:space="preserve">
+    <value>Návratový typ nemůže být typ hodnoty, ukazatel, hodnota podle odkazu nebo otevřený obecný typ.</value>
+  </data>
+  <data name="TupleUnderlyingTypeMustBeTupleCompatible" xml:space="preserve">
+    <value>Základní typ pro řazenou kolekci členů musí být s řazenou kolekcí členů kompatibilní.</value>
+  </data>
+  <data name="AnalyzerDriverThrowsDescription" xml:space="preserve">
+    <value>Ovladač analyzátoru způsobil tuto výjimku:
+{0}.</value>
+  </data>
+  <data name="ExceptionContext" xml:space="preserve">
+    <value>Došlo k výjimce s tímto kontextem:
+{0}</value>
+  </data>
+  <data name="The_type_0_is_not_understood_by_the_serialization_binder" xml:space="preserve">
+    <value>Vazač serializace nerozumí typu {0}.</value>
+  </data>
+  <data name="InconsistentSyntaxTreeFeature" xml:space="preserve">
+    <value>Nekonzistentní funkce stromu syntaxe</value>
+  </data>
+  <data name="CannotEmbedInteropTypesFromModule" xml:space="preserve">
+    <value>Nejde vložit typy spolupráce z modulu.</value>
+  </data>
+  <data name="SourceTextCannotBeEmbedded" xml:space="preserve">
+    <value>Zdrojový text se nedá vložit. Při vytváření zadejte kódování nebo canBeEmbedded=true.</value>
+  </data>
+  <data name="Stream_contains_invalid_data" xml:space="preserve">
+    <value>Stream obsahuje neplatná data.</value>
+  </data>
+  <data name="AnalyzerExecutionTimeColumnHeader" xml:space="preserve">
+    <value>Doba (s)</value>
+  </data>
+  <data name="AsyncAnalyzerActionCannotBeRegistered" xml:space="preserve">
+    <value>Analyzátor se pokusil registrovat akci async, která se ale nepodporuje.</value>
+  </data>
+  <data name="InvalidTree" xml:space="preserve">
+    <value>Strom syntaxe nepatří do zdrojové kompilace.</value>
+  </data>
+  <data name="InvalidHash" xml:space="preserve">
+    <value>Neplatná hodnota hash</value>
+  </data>
+  <data name="KeepAliveWithoutShared" xml:space="preserve">
+    <value>Možnost /keepalive je platná jenom s možností /shared.</value>
+  </data>
+  <data name="IncludingPrivateMembersUnexpectedWhenEmittingToMetadataPeStream" xml:space="preserve">
+    <value>Při generování do sekundárního výstupu sestavení by se neměly zahrnovat privátní členy.</value>
+  </data>
+  <data name="PathReturnedByResolveStrongNameKeyFileMustBeAbsolute" xml:space="preserve">
+    <value>Cesta vrácená procedurou {0}.ResolveStrongNameKeyFile musí být absolutní: {1}.</value>
+  </data>
+  <data name="FailedToResolveRuleSetName" xml:space="preserve">
+    <value>Nejde najít soubor sady pravidel {0}.</value>
+  </data>
+  <data name="KeyInPathMapEndsWithSeparator" xml:space="preserve">
+    <value>Klíč v pathMap končí oddělovačem cesty.</value>
+  </data>
+  <data name="AssemblySigningNotSupported" xml:space="preserve">
+    <value>Podepsání sestavení se nepodporuje.</value>
+  </data>
+  <data name="InvalidNodeToTrack" xml:space="preserve">
+    <value>Uzel určený ke sledování není potomkem kořene.</value>
+  </data>
+  <data name="MissingListItem" xml:space="preserve">
+    <value>Zadaná položka není elementem seznamu.</value>
+  </data>
+  <data name="Delegate1" xml:space="preserve">
+    <value>delegát</value>
+  </data>
+  <data name="TheStreamCannotBeWrittenTo" xml:space="preserve">
+    <value>Do streamu se nedá zapisovat.</value>
+  </data>
+  <data name="SharedArgumentMissing" xml:space="preserve">
+    <value>Hodnota argumentu /shared: nesmí být prázdná.</value>
+  </data>
+  <data name="Deserialization_reader_for_0_read_incorrect_number_of_values" xml:space="preserve">
+    <value>Čtečka deserializace pro {0} přečetla nesprávný počet hodnot.</value>
+  </data>
+  <data name="CannotCreateReferenceToSubmission" xml:space="preserve">
+    <value>Nejde vytvořit odkaz na odeslání.</value>
+  </data>
+  <data name="PathReturnedByResolveMetadataFileMustBeAbsolute" xml:space="preserve">
+    <value>Cesta vrácená procedurou {0}.ResolveMetadataFile musí být absolutní: {1}.</value>
+  </data>
+  <data name="Unresolved" xml:space="preserve">
+    <value>Nevyřešeno: </value>
+  </data>
+  <data name="KeepAliveIsNotAnInteger" xml:space="preserve">
+    <value>Argument pro možnost /keepalive není 32bitové celé číslo.</value>
+  </data>
+  <data name="SpanDoesNotIncludeStartOfLine" xml:space="preserve">
+    <value>Rozpětí nezahrnuje začátek řádku.</value>
+  </data>
+  <data name="CantCreateReferenceToAssemblyWithoutLocation" xml:space="preserve">
+    <value>Nedá se vytvořit odkaz na metadata do sestavení bez umístění.</value>
+  </data>
+  <data name="InvalidCultureName" xml:space="preserve">
+    <value>Neplatný název jazykové verze: {0}</value>
+  </data>
+  <data name="TuplesNeedAtLeastTwoElements" xml:space="preserve">
+    <value>Řazené kolekce členů musí mít aspoň dva elementy.</value>
+  </data>
+  <data name="MismatchedVersion" xml:space="preserve">
+    <value>Server kompilátoru Roslyn hlásí jinou verzi protokolu, než má úloha sestavení.</value>
+  </data>
+  <data name="AnalyzerTotalExecutionTime" xml:space="preserve">
+    <value>Celková doba spuštění analyzátoru: {0} sekund</value>
+  </data>
+  <data name="CompilationOptionsMustNotHaveErrors" xml:space="preserve">
+    <value>Možnosti kompilace nesmí obsahovat chyby.</value>
+  </data>
+  <data name="Cannot_serialize_type_0" xml:space="preserve">
+    <value>Typ {0} nejde serializovat.</value>
+  </data>
+  <data name="MetadataPeStreamUnexpectedWhenEmittingMetadataOnly" xml:space="preserve">
+    <value>Když se generují jenom metadata, neměl by zadávat stream PE metadat.</value>
+  </data>
+  <data name="EmptyOrInvalidResourceName" xml:space="preserve">
+    <value>Prázdný nebo neplatný název zdroje</value>
+  </data>
+  <data name="ReturnTypeCannotBeVoidByRefOrOpen" xml:space="preserve">
+    <value>Návratový typ nemůže být prázdná hodnota, hodnota podle odkazu nebo otevřený obecný typ.</value>
+  </data>
+  <data name="SymWriterDoesNotSupportSourceLink" xml:space="preserve">
+    <value>Zapisovač Windows PDB nepodporuje funkci SourceLink: {0}.</value>
+  </data>
+  <data name="InvalidPublicKeyToken" xml:space="preserve">
+    <value>Neplatný token veřejného klíče</value>
+  </data>
+  <data name="MissingKeepAlive" xml:space="preserve">
+    <value>Chybí argument pro možnost /keepalive.</value>
+  </data>
+  <data name="InMemoryModule" xml:space="preserve">
+    <value>&lt;dotaz v paměti&gt;</value>
+  </data>
+  <data name="SymWriterOlderVersionThanRequired" xml:space="preserve">
+    <value>Verze zapisovače Windows PDB je starší, než se vyžaduje: {0}.</value>
+  </data>
+  <data name="NodeOrTokenOutOfSequence" xml:space="preserve">
+    <value>Uzel nebo token je mimo sekvenci.</value>
+  </data>
+  <data name="EmbeddingPdbUnexpectedWhenEmittingMetadata" xml:space="preserve">
+    <value>Při generování metadat se vkládání PDB nepovoluje.</value>
+  </data>
+  <data name="CantCreateReferenceToDynamicAssembly" xml:space="preserve">
+    <value>Nejde vytvořit odkaz metadat na dynamické sestavení.</value>
+  </data>
+  <data name="CoffResourceInvalidSymbol" xml:space="preserve">
+    <value>Prostředky Win32, u kterých se předpokládá, že jsou ve formátu objektů COFF, mají nejmíň jednu neplatnou hodnotu symbolu.</value>
+  </data>
+  <data name="StreamMustSupportReadAndSeek" xml:space="preserve">
+    <value>Stream musí podporovat operace read a seek.</value>
+  </data>
+  <data name="Enum1" xml:space="preserve">
+    <value>výčet</value>
+  </data>
+  <data name="InvalidDiagnosticLocationReported" xml:space="preserve">
+    <value>Zdroj vykazované diagnostiky {0} je umístěný v souboru {1}, který není součástí analyzované kompilace.</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>pole</value>
+  </data>
+  <data name="NameCannotBeEmpty" xml:space="preserve">
+    <value>Název nemůže být prázdný.</value>
+  </data>
+  <data name="CoffResourceMissingSection" xml:space="preserve">
+    <value>U prostředků Win32, u kterých se předpokládá, že jsou ve formátu objektů COFF, chybí nejmíň jedna ze sekcí .rsrc$01 a .rsrc$02.</value>
+  </data>
+  <data name="TupleElementNameCountMismatch" xml:space="preserve">
+    <value>Pokud jsou zadané názvy prvků řazené kolekce členů, musí se počet názvů členů shodovat s kardinalitou této řazené kolekce členů.</value>
+  </data>
+  <data name="InvalidContentType" xml:space="preserve">
+    <value>Neplatný typ obsahu</value>
+  </data>
+  <data name="GetMetadataMustReturnInstance" xml:space="preserve">
+    <value>{0}.GetMetadata() musí vracet instanci {1}.</value>
+  </data>
+  <data name="InvalidDiagnosticIdReported" xml:space="preserve">
+    <value>Hlášená diagnostika má ID {0}, které není platným identifikátorem.</value>
+  </data>
+  <data name="CantCreateModuleReferenceToAssembly" xml:space="preserve">
+    <value>Nejde vytvořit odkaz modulu na sestavení.</value>
+  </data>
+  <data name="DuplicateAnalyzerInstances" xml:space="preserve">
+    <value>Argument obsahuje duplicitní instance analyzátoru.</value>
+  </data>
+  <data name="NameCannotStartWithWhitespace" xml:space="preserve">
+    <value>Název nesmí začínat mezerou.</value>
+  </data>
+  <data name="Arrays_with_more_than_one_dimension_cannot_be_serialized" xml:space="preserve">
+    <value>Pole s víc než jedním rozměrem nejde serializovat.</value>
+  </data>
+  <data name="UnsupportedDiagnosticReported" xml:space="preserve">
+    <value>Ohlášená diagnostika s ID {0} se v analyzátoru nepodporuje.</value>
+  </data>
+  <data name="OutputKindNotSupported" xml:space="preserve">
+    <value>Druh výstupu se nepodporuje.</value>
+  </data>
+  <data name="SeparatorIsExpected" xml:space="preserve">
+    <value>Očekával se oddělovač.</value>
+  </data>
+  <data name="UnexpectedTypeOfNodeInList" xml:space="preserve">
+    <value>Uzel v seznamu není očekávaného typu.</value>
+  </data>
+  <data name="AnonymousTypeArgumentCountMismatch2" xml:space="preserve">
+    <value>{0} musí být buď default, nebo musí mít stejnou délku jako {1}.</value>
+  </data>
+  <data name="NameCannotBeNull" xml:space="preserve">
+    <value>Název nemůže být null.</value>
+  </data>
+  <data name="UnsupportedHashAlgorithm" xml:space="preserve">
+    <value>Nepodporovaný algoritmus hash</value>
+  </data>
+  <data name="ResourceStreamProviderShouldReturnNonNullStream" xml:space="preserve">
+    <value>Zprostředkovatel streamu prostředků by měl vrátit čitelný stream, který není null.</value>
+  </data>
+  <data name="WinRTIdentityCantBeRetargetable" xml:space="preserve">
+    <value>U identity WindowsRuntime se nedá změnit cíl.</value>
+  </data>
+  <data name="UnsupportedAnalyzerInstance" xml:space="preserve">
+    <value>Argument obsahuje instanci analyzátoru, který nepatří mezi Analyzátory pro tuto instanci CompilationWithAnalyzers.</value>
+  </data>
+  <data name="CannotTargetNetModuleWhenEmittingRefAssembly" xml:space="preserve">
+    <value>Když se generuje referenční sestavení, nejde cílit na síťový modul.</value>
+  </data>
+  <data name="Cannot_deserialize_type_0" xml:space="preserve">
+    <value>Typ {0} nejde deserializovat.</value>
+  </data>
+  <data name="StreamMustSupportRead" xml:space="preserve">
+    <value>Stream musí být čitelný.</value>
+  </data>
+  <data name="Interface1" xml:space="preserve">
+    <value>rozhraní</value>
+  </data>
+  <data name="CoffResourceInvalidRelocation" xml:space="preserve">
+    <value>Prostředky Win32, u kterých se předpokládá, že jsou ve formátu objektů COFF, mají nejmíň jednu neplatnou hodnotu hlavičky přemístění.</value>
+  </data>
+  <data name="CompilerAnalyzerThrows" xml:space="preserve">
+    <value>Analyzátor {0} způsobil výjimku typu {1} se zprávou {2}.</value>
+  </data>
+  <data name="InMemoryAssembly" xml:space="preserve">
+    <value>&lt;sestavení v paměti&gt;</value>
+  </data>
+  <data name="AnonymousTypeMemberAndNamesCountMismatch2" xml:space="preserve">
+    <value>{0} a {1} musí mít stejnou délku.</value>
+  </data>
+  <data name="TupleElementNameEmpty" xml:space="preserve">
+    <value>Názvem prvku řazené kolekce členů nemůže být prázdný řetězec.</value>
+  </data>
+  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
+    <value>Vložené texty se podporují jenom při generování souboru PDB typu Portable.</value>
+  </data>
+  <data name="InvalidOutputKindForSubmission" xml:space="preserve">
+    <value>Neplatný druh výstupu pro odeslání Očekávalo se DynamicallyLinkedLibrary.</value>
+  </data>
+  <data name="StreamMustSupportWrite" xml:space="preserve">
+    <value>Datový proud musí být zapisovatelný.</value>
+  </data>
+  <data name="InvalidAssemblyName" xml:space="preserve">
+    <value>Neplatný název sestavení: {0}</value>
+  </data>
+  <data name="InvalidAlias" xml:space="preserve">
+    <value>Neplatný alias</value>
+  </data>
+  <data name="Constructor" xml:space="preserve">
+    <value>konstruktor</value>
+  </data>
+  <data name="NoAnalyzersFound" xml:space="preserve">
+    <value>Nenašly se žádné analyzátory.</value>
+  </data>
+  <data name="AssemblyMustHaveAtLeastOneModule" xml:space="preserve">
+    <value>Sestavení musí mít nejmíň jeden modul.</value>
+  </data>
+  <data name="ResourceDataProviderShouldReturnNonNullStream" xml:space="preserve">
+    <value>Zprostředkovatel dat prostředků by měl vrátit čitelný stream, který není null.</value>
+  </data>
+  <data name="ResourceStreamEndedUnexpectedly" xml:space="preserve">
+    <value>Datový proud prostředků skončil na {0} bajtech, očekávalo se {1} bajtů.</value>
+  </data>
+  <data name="PEImageDoesntContainManagedMetadata" xml:space="preserve">
+    <value>Image PE neobsahuje spravovaná metadata.</value>
+  </data>
+  <data name="EmptyOrInvalidFileName" xml:space="preserve">
+    <value>Prázdný nebo neplatný název souboru</value>
+  </data>
+  <data name="Return1" xml:space="preserve">
+    <value>návrat</value>
+  </data>
+  <data name="AnalyzerDriverThrows" xml:space="preserve">
+    <value>Ovladač analyzátoru způsobil výjimku typu {0} se zprávou {1}.</value>
+  </data>
+  <data name="FileSizeExceedsMaximumAllowed" xml:space="preserve">
+    <value>Velikost souboru překračuje maximální povolenou velikost platného souboru metadat.</value>
+  </data>
+  <data name="SpanDoesNotIncludeEndOfLine" xml:space="preserve">
+    <value>Rozpětí nezahrnuje konec řádku.</value>
+  </data>
+  <data name="PreviousSubmissionHasErrors" xml:space="preserve">
+    <value>Předchozí odeslání obsahuje chyby.</value>
+  </data>
+  <data name="CompilationReferencesAssembliesWithDifferentAutoGeneratedVersion" xml:space="preserve">
+    <value>Kompilace odkazuje na víc sestavení, jejichž verze se liší jenom v automaticky generovaném buildu a/nebo číslech revizí.</value>
+  </data>
+  <data name="AssemblyFileNotFound" xml:space="preserve">
+    <value>Soubor sestavení se nenašel.</value>
+  </data>
+  <data name="InvalidPublicKey" xml:space="preserve">
+    <value>Neplatný veřejný klíč</value>
+  </data>
+  <data name="TheStreamCannotBeReadFrom" xml:space="preserve">
+    <value>Ze streamu se nedá číst.</value>
+  </data>
+  <data name="ReferenceOfTypeIsInvalid1" xml:space="preserve">
+    <value>Odkaz typu {0} není pro tuto kompilaci platný.</value>
+  </data>
+  <data name="DiagnosticIdCantBeNullOrWhitespace" xml:space="preserve">
+    <value>DiagnosticDescriptor musí mít ID, které není null, prázdný řetězec, ani řetězec obsahující jenom prázdné znaky.</value>
+  </data>
+  <data name="TypeMustBeSameAsHostObjectTypeOfPreviousSubmission" xml:space="preserve">
+    <value>Typ musí být stejný jako u hostitelského objektu při předchozím odeslání.</value>
+  </data>
+  <data name="TupleElementLocationCountMismatch" xml:space="preserve">
+    <value>Pokud jsou zadaná umístění prvků řazené kolekce členů, musí se počet umístění shodovat s kardinalitou této řazené kolekce členů.</value>
+  </data>
+  <data name="EndMustNotBeLessThanStart" xml:space="preserve">
+    <value>Konec musí být míň než začátek.</value>
+  </data>
+  <data name="CannotCreateReferenceToModule" xml:space="preserve">
+    <value>Nejde vytvořit odkaz na modul.</value>
+  </data>
+  <data name="CompilerAnalyzerFailure" xml:space="preserve">
+    <value>Chyba analyzátoru</value>
+  </data>
+  <data name="ExpectedNonEmptyPublicKey" xml:space="preserve">
+    <value>Očekával se neprázdný veřejný klíč.</value>
+  </data>
+  <data name="InvalidRuleSetInclude" xml:space="preserve">
+    <value>Při načítání zahrnutého souboru sady pravidel {0} došlo k chybě: {1}</value>
+  </data>
+  <data name="InvalidCharactersInAssemblyName" xml:space="preserve">
+    <value>Neplatné znaky v názvu sestavení</value>
+  </data>
+  <data name="MultithreadedAnalyzerExecutionNote" xml:space="preserve">
+    <value>POZNÁMKA: Uplynulý čas může být kratší než čas spuštění analyzátoru, protože analyzátory můžou běžet současně.</value>
+  </data>
+  <data name="ArgumentElementCannotBeNull" xml:space="preserve">
+    <value>Argument nemůže mít element, který je null.</value>
+  </data>
+  <data name="ArgumentCannotBeEmpty" xml:space="preserve">
+    <value>Argument nemůže být prázdný.</value>
+  </data>
+  <data name="Assembly" xml:space="preserve">
+    <value>sestavení</value>
+  </data>
+  <data name="TypeParameter" xml:space="preserve">
+    <value>parametr typu</value>
+  </data>
+  <data name="StartMustNotBeNegative" xml:space="preserve">
+    <value>Začátek musí být záporný.</value>
+  </data>
+  <data name="SizeHasToBePositive" xml:space="preserve">
+    <value>Velikost musí být kladná.</value>
+  </data>
+  <data name="NullValueInPathMap" xml:space="preserve">
+    <value>Hodnota v pathMap je null.</value>
+  </data>
+</root>

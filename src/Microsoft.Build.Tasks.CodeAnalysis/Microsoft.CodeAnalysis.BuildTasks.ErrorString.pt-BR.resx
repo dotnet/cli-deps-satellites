@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Vbc_RenamePDB" xml:space="preserve">
+    <value>MSB3402: houve um erro na criação do arquivo pdb "{0}". {1}</value>
+  </data>
+  <data name="General_IncorrectHostObject" xml:space="preserve">
+    <value>MSB3087: Foi passado um objeto de host incompatível para a tarefa "{0}". O objeto de host desta tarefa deve implementar a interface "{1}".</value>
+  </data>
+  <data name="General_DuplicateItemsNotSupported" xml:space="preserve">
+    <value>MSB3105: O item "{0}" foi especificado mais de uma vez no parâmetro "{1}". O parâmetro "{1}" não dá suporte a itens duplicados.</value>
+  </data>
+  <data name="Csc_AssemblyAliasContainsIllegalCharacters" xml:space="preserve">
+    <value>MSB3053: O alias do assembly "{1}" na referência "{0}" contém caracteres inválidos.</value>
+  </data>
+  <data name="General_ExpectedFileMissing" xml:space="preserve">
+    <value>O arquivo esperado "{0}" não existe.</value>
+  </data>
+  <data name="General_DuplicateItemsNotSupportedWithMetadata" xml:space="preserve">
+    <value>MSB3083: O item "{0}" foi especificado mais de uma vez no parâmetro "{1}" e ambos os itens tinham o mesmo valor "{2}" para os metadados "{3}". O parâmetro "{1}" não dá suporte a itens duplicados, a menos que eles tenham valores diferentes para os metadados "{3}".</value>
+  </data>
+  <data name="General_ParameterUnsupportedOnHostCompiler" xml:space="preserve">
+    <value>O compilador em processo do IDE não dá suporte aos valores especificados para o parâmetro "{0}". Portanto, essa tarefa fará fallback para o uso do compilador linha de comando.</value>
+  </data>
+  <data name="General_ToolFileNotFound" xml:space="preserve">
+    <value>MSB3082: a tarefa falhou porque "{0}" não foi encontrado.</value>
+  </data>
+  <data name="SharedCompilationFallback" xml:space="preserve">
+    <value>Compilação compartilhada com falha; fazendo fallback para a ferramenta: {0}</value>
+  </data>
+  <data name="CopyRefAssembly_BadDestination1" xml:space="preserve">
+    <value>Falha ao verificar o hash de conteúdo do assembly de referência de destino '{0}'. Ele será substituído.</value>
+  </data>
+  <data name="CopyRefAssembly_SourceNotRef1" xml:space="preserve">
+    <value>Não foi possível extrair o MVID de "{0}". Tem certeza de que este é um assembly de referência?</value>
+  </data>
+  <data name="CopyRefAssembly_SkippingCopy1" xml:space="preserve">
+    <value>O assembly de referência "{0}" já tem as informações mais recentes. Ele será mantido inalterado.</value>
+  </data>
+  <data name="General_CouldNotSetHostObjectParameter" xml:space="preserve">
+    <value>MSB3081: Ocorreu um problema durante a tentativa de definir o parâmetro "{0}" para o compilador em processo do IDE. {1}</value>
+  </data>
+  <data name="Csc_InvalidParameter" xml:space="preserve">
+    <value>MSB3051: O parâmetro para o compilador é inválido. {0}</value>
+  </data>
+  <data name="CopyRefAssembly_BadSource3" xml:space="preserve">
+    <value>Falha ao verificar o hash de conteúdo do assembly de referência de origem '{0}': {1}
+{2}</value>
+  </data>
+  <data name="UsingSharedCompilation" xml:space="preserve">
+    <value>Usando compilação compartilhada com o compilador do diretório: {0}</value>
+  </data>
+  <data name="Csc_InvalidParameterWarning" xml:space="preserve">
+    <value>MSB3052: O parâmetro para o compilador é inválido; "{0}{1}" será ignorado.</value>
+  </data>
+  <data name="General_CannotConvertStringToBool" xml:space="preserve">
+    <value>A cadeia de caracteres "{0}" não pode ser convertida em um valor booliano (true/false).</value>
+  </data>
+  <data name="General_InvalidAttributeMetadata" xml:space="preserve">
+    <value>O item "{0}" tem atributo "{1}" com valor "{2}" que não pôde ser convertido para "{3}".</value>
+  </data>
+  <data name="Vbc_ParameterHasInvalidValue" xml:space="preserve">
+    <value>"{1}" é um valor inválido para o parâmetro "{0}".</value>
+  </data>
+  <data name="Compiler_UnexpectedException" xml:space="preserve">
+    <value>MSB3883: Exceção inesperada: </value>
+  </data>
+  <data name="Vbc_EnumParameterHasInvalidValue" xml:space="preserve">
+    <value>MSB3401: "{1}" é um nome inválido para o parâmetro "{0}". Os valores válidos são: {2}</value>
+  </data>
+  <data name="General_ReferenceDoesNotExist" xml:space="preserve">
+    <value>MSB3104: O assembly usado como referência "{0}" não foi encontrado. Se esse assembly tiver sido produzido por um outro projeto, compile aquele projeto antes de compilar este.</value>
+  </data>
+</root>

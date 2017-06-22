@@ -1,0 +1,4300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="parsTypeAbbreviationsCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允許在類型縮寫的這個位置使用存取範圍修飾詞</value>
+  </data>
+  <data name="fscStaticLinkingNoEXE" xml:space="preserve">
+    <value>靜態連結不可包含 .EXE</value>
+  </data>
+  <data name="tcPropertyIsNotReadable" xml:space="preserve">
+    <value>無法讀取屬性 '{0}'</value>
+  </data>
+  <data name="tcInvalidUseBinding" xml:space="preserve">
+    <value>'use' 繫結必須採用 'use &lt;var&gt; = &lt;expr&gt;' 形式</value>
+  </data>
+  <data name="buildProductName" xml:space="preserve">
+    <value>Microsoft (R) F# 編譯器版本 {0}</value>
+  </data>
+  <data name="fieldIsNotAccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取記錄、結構或類別欄位 '{0}'</value>
+  </data>
+  <data name="etMethodHasRequirements" xml:space="preserve">
+    <value>提供之類型 '{1}' 上的成員 '{0}' 無效。提供之類型成員必須是公用，而不是泛型、虛擬或抽象。</value>
+  </data>
+  <data name="tcEmptyRecordInvalid" xml:space="preserve">
+    <value>'{{ }}' 不是有效的運算式。記錄必須至少包含一個欄位。空白順序是使用 Seq.empty 或空白清單 '[]' 來指定。</value>
+  </data>
+  <data name="ilDynamicInvocationNotSupported" xml:space="preserve">
+    <value>不支援 {0} 的動態引動</value>
+  </data>
+  <data name="tcStructuralEqualityNotSatisfied1" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 有 'StructuralEquality' 屬性，但型別參數 '{1}' 不滿足 'equality' 條件約束。請考慮將 'equality' 條件約束加入型別參數</value>
+  </data>
+  <data name="tcStructuralEqualityNotSatisfied2" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 有 'StructuralEquality' 屬性，但元件型別 '{1}' 不滿足 'equality' 條件約束</value>
+  </data>
+  <data name="parsConsiderUsingSeparateRecordType" xml:space="preserve">
+    <value>請考慮改用不同的記錄類型</value>
+  </data>
+  <data name="chkNoByrefReturnOfLocal" xml:space="preserve">
+    <value>目前無法使用變數 '{0}' 的位址。方法或函式無法傳回此本機值的位址。</value>
+  </data>
+  <data name="buildCannotReadAssembly" xml:space="preserve">
+    <value>無法讀取組件 '{0}'</value>
+  </data>
+  <data name="csGenericConstructRequiresStructType" xml:space="preserve">
+    <value>泛型建構要求類型 '{0}' 必須是 CLI 或 F# 結構類型</value>
+  </data>
+  <data name="etNullProvidedExpression" xml:space="preserve">
+    <value>型別提供者 '{0}' 從 GetInvokerExpression 傳回 null。</value>
+  </data>
+  <data name="buildMultipleReferencesNotAllowed" xml:space="preserve">
+    <value>不允許多次參考 '{0}.dll'</value>
+  </data>
+  <data name="parsMismatchedQuotationName" xml:space="preserve">
+    <value>不相符的引號運算子名稱，以 '{0}' 開頭</value>
+  </data>
+  <data name="keywordDescriptionAbstract" xml:space="preserve">
+    <value>指出方法，此方法可能在其宣告的類型中沒有實作，或者是虛擬方法而具有預設實作。</value>
+  </data>
+  <data name="fscStaticLinkingNoMixedDLL" xml:space="preserve">
+    <value>靜態連結不可包含混合的 Managed/Unmanaged DLL</value>
+  </data>
+  <data name="keywordDescriptionPrivate" xml:space="preserve">
+    <value>將成員的存取限制為類型或模組相同的程式碼。</value>
+  </data>
+  <data name="csTypeNotCompatibleBecauseOfPrintf" xml:space="preserve">
+    <value>類型 '{0}' 與任何類型 {1} 都不相容，原因是使用了 printf 樣式的格式字串</value>
+  </data>
+  <data name="tcMemberOperatorDefinitionInExtrinsic" xml:space="preserve">
+    <value>擴充成員無法提供運算子多載。請考慮將運算子改成定義為類型定義的一部分。</value>
+  </data>
+  <data name="chkVariableUsedInInvalidWay" xml:space="preserve">
+    <value>變數 '{0}' 的使用方式無效</value>
+  </data>
+  <data name="tcSyntaxCanOnlyBeUsedToCreateObjectTypes" xml:space="preserve">
+    <value>'{0}' 只能用來建構物件類型</value>
+  </data>
+  <data name="parsUnfinishedExpression" xml:space="preserve">
+    <value>未預期的語彙基元 '{0}' 或不完整的運算式</value>
+  </data>
+  <data name="parsUnderscoreInvalidFieldName" xml:space="preserve">
+    <value>'_' 不可做為欄位名稱</value>
+  </data>
+  <data name="parsMultipleAccessibilitiesForGetSet" xml:space="preserve">
+    <value>為屬性 getter 或 setter 指定了多個存取範圍</value>
+  </data>
+  <data name="tcConstructorsCannotBeFirstClassValues" xml:space="preserve">
+    <value>建構函式必須套用到引數，不能做為第一級值使用。如有必要，請使用匿名函式 '(fun arg1 ... argN -&gt; new Type(arg1,...,argN))'。</value>
+  </data>
+  <data name="buildInvalidVersionFile" xml:space="preserve">
+    <value>無效的版本檔案 '{0}'</value>
+  </data>
+  <data name="tcRecursiveBindingsWithMembersMustBeDirectAugmentation" xml:space="preserve">
+    <value>包含成員規格的遞迴繫結只能做為類型的直接增強指定</value>
+  </data>
+  <data name="InvalidRecursiveReferenceToAbstractSlot" xml:space="preserve">
+    <value>抽象位置的遞迴參考無效</value>
+  </data>
+  <data name="crefQuotationsCantContainInlineIL" xml:space="preserve">
+    <value>引號內不能包含內嵌組譯程式碼或陣列上的模式比對</value>
+  </data>
+  <data name="tcObjectsMustBeInitializedWithObjectExpression" xml:space="preserve">
+    <value>物件必須用物件建構運算式初始化，該運算式必須呼叫繼承的物件建構函式，並為每個欄位指派值</value>
+  </data>
+  <data name="tcUnrecognizedQueryBinaryOperator" xml:space="preserve">
+    <value>查詢運算子的引數可能需要括號，例如 'where (x &gt; y)' 或 'groupBy (x.Length / 10)'</value>
+  </data>
+  <data name="optsWarn" xml:space="preserve">
+    <value>設定警告層級 (0-5)</value>
+  </data>
+  <data name="optsHelp" xml:space="preserve">
+    <value>顯示此訊息 (簡短形式: -?)</value>
+  </data>
+  <data name="fscSystemRuntimeInteropServicesIsRequired" xml:space="preserve">
+    <value>使用 UnknownWrapper\DispatchWrapper 類別需要 System.Runtime.InteropServices 組件。</value>
+  </data>
+  <data name="typeInfoModule" xml:space="preserve">
+    <value>模組</value>
+  </data>
+  <data name="astInvalidExprLeftHandOfAssignment" xml:space="preserve">
+    <value>指派左側的運算式無效</value>
+  </data>
+  <data name="tcInvalidInlineSpecification" xml:space="preserve">
+    <value>無效的內嵌規格</value>
+  </data>
+  <data name="keywordDescriptionTypedQuotation" xml:space="preserve">
+    <value>分隔具型別的程式碼引號。</value>
+  </data>
+  <data name="tcMemberKindPropertyGetSetNotExpected" xml:space="preserve">
+    <value>只有剖析樹狀目錄中需要 MemberKind.PropertyGetSet</value>
+  </data>
+  <data name="pathIsInvalid" xml:space="preserve">
+    <value>檔名 '{0}' 有問題: 路徑中有不合法的字元。</value>
+  </data>
+  <data name="loadingDescription" xml:space="preserve">
+    <value>(正在載入描述...)</value>
+  </data>
+  <data name="csTypeDoesNotSupportComparison3" xml:space="preserve">
+    <value>類型 '{0}' 不支援 'comparison' 條件約束，因為它是記錄、等位或結構，且具有一個或多個不支援 'comparison' 條件約束的結構化項目類型。請避免使用這種類型的比較，或將 'StructuralComparison' 屬性加入類型，以判斷哪個欄位類型不支援比較</value>
+  </data>
+  <data name="csTypeDoesNotSupportComparison2" xml:space="preserve">
+    <value>類型 '{0}' 不支援 'comparison' 條件約束。例如，它不支援 'System.IComparable' 介面</value>
+  </data>
+  <data name="csTypeDoesNotSupportComparison1" xml:space="preserve">
+    <value>類型 '{0}' 不支援 'comparison' 條件約束，因為它有 'NoComparison' 屬性</value>
+  </data>
+  <data name="notAFunctionButMaybeIndexerErrorCode" xml:space="preserve">
+    <value>
+</value>
+  </data>
+  <data name="tcConditionalAttributeUsage" xml:space="preserve">
+    <value>屬性 'System.Diagnostics.ConditionalAttribute' 只有在方法或屬性類別上才有效</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleDotNetRepresentationsDiffer" xml:space="preserve">
+    <value>例外狀況定義不相容，因為 CLI 表示不同。模組包含例外狀況定義\n    {0}    \n但它的簽章卻指定\n\t{1}</value>
+  </data>
+  <data name="parsSyntaxErrorInLabeledType" xml:space="preserve">
+    <value>有標籤的型別引數中語法錯誤</value>
+  </data>
+  <data name="tcPropertyRequiresExplicitTypeParameters" xml:space="preserve">
+    <value>屬性不能有明確的類型參數。請考慮改用方法。</value>
+  </data>
+  <data name="optsUtf8output" xml:space="preserve">
+    <value>以 UTF-8 編碼輸出訊息</value>
+  </data>
+  <data name="tastConflictingModuleAndTypeDefinitionInAssembly" xml:space="preserve">
+    <value>名稱為 '{0}' 的模組和類型定義出現在這個組件兩個部分的命名空間 '{1}' 中</value>
+  </data>
+  <data name="tcNameNotBoundInPattern" xml:space="preserve">
+    <value>名稱 '{0}' 未在模式內容中繫結</value>
+  </data>
+  <data name="etTypeProviderConstructorException" xml:space="preserve">
+    <value>型別提供者建構函式擲回例外狀況: {0}</value>
+  </data>
+  <data name="etUnknownStaticArgumentKind" xml:space="preserve">
+    <value>為所提供的類型或方法 '{1}' 解析參考時，發現未知的靜態引數類型 '{0}'</value>
+  </data>
+  <data name="tcCustomOperationInvalid" xml:space="preserve">
+    <value>自訂運算子 '{0}' 的定義未使用屬性旗標的有效組合</value>
+  </data>
+  <data name="ilStaticMethodIsNotLambda" xml:space="preserve">
+    <value>GenSetStorage: {0} 是以靜態方法表示，但它不是適當的 Lambda 運算式</value>
+  </data>
+  <data name="lexOutsideEightBitUnsigned" xml:space="preserve">
+    <value>這個數字已經超出 8 位元無正負號整數允許的範圍</value>
+  </data>
+  <data name="parsAttributesIgnored" xml:space="preserve">
+    <value>已忽略這個建構中的屬性</value>
+  </data>
+  <data name="tcOperatorRequiresIn" xml:space="preserve">
+    <value>{0}' 之後必須是 'in'。使用方式: {1}。</value>
+  </data>
+  <data name="tcImplementsIEquatableExplicitly" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 明確實作了介面 'System.IEquatable&lt;_&gt;'。您必須將 'CustomEquality' 屬性套用到該型別，並為非泛型覆寫 'System.Object.Equals(obj)' 提供一致的實作。</value>
+  </data>
+  <data name="srcFileTooLarge" xml:space="preserve">
+    <value>來源檔案過大，無法內嵌於可攜式 PDB 中</value>
+  </data>
+  <data name="tcObjectConstructorRequiresArgument" xml:space="preserve">
+    <value>物件建構函式需要引數</value>
+  </data>
+  <data name="pickleErrorReadingWritingMetadata" xml:space="preserve">
+    <value>讀取/寫入 F# 編譯的 DLL '{0}' 的中繼資料時發生錯誤。這個 DLL 是用舊版 F# 編譯器編譯的嗎? (錯誤: '{1}')</value>
+  </data>
+  <data name="tcMemberOverridesIllegalInInterface" xml:space="preserve">
+    <value>介面不能包含成員覆寫的定義</value>
+  </data>
+  <data name="tcMultipleVisibilityAttributes" xml:space="preserve">
+    <value>已經為這個識別碼指定多個可見性屬性</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureIsAbstract" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章是抽象類別，但實作不是。請考慮將 [&lt;AbstractClass&gt;] 屬性新增至實作。</value>
+  </data>
+  <data name="etNullMemberDeclaringTypeDifferentFromProvidedType" xml:space="preserve">
+    <value>提供之類型 '{0}' 的成員 '{1}' 具有宣告類型 '{2}'。宣告類型必須與提供的類型相同。</value>
+  </data>
+  <data name="parsUnmatchedClassInterfaceOrStruct" xml:space="preserve">
+    <value>無對應的 'class'、'interface' 或 'struct'</value>
+  </data>
+  <data name="keywordDescriptionNamespace" xml:space="preserve">
+    <value>用以在名稱與相關類型及模組的群組之間建立關聯，以邏輯方式從其他程式碼分隔出名稱。</value>
+  </data>
+  <data name="undefinedNameNamespaceOrModule" xml:space="preserve">
+    <value>未定義命名空間或模組 '{0}'。</value>
+  </data>
+  <data name="tcUnionCaseRequiresOneArgument" xml:space="preserve">
+    <value>這個聯集接受一個引數</value>
+  </data>
+  <data name="parsUnexpectedEmptyModuleDefn" xml:space="preserve">
+    <value>未預期的空白類型 moduleDefn 清單</value>
+  </data>
+  <data name="keywordDescriptionWhen" xml:space="preserve">
+    <value>用於模式比對時的布林值條件 (when 成立條件)，以及為泛型型別參數引入條件約束時用。</value>
+  </data>
+  <data name="keywordDescriptionWith" xml:space="preserve">
+    <value>在模式比對運算式中搭配 match 關鍵字使用。也用在物件運算式、記錄複製運算式及類型運算時，以引入成員定義，並用以引入例外狀況處理常式。</value>
+  </data>
+  <data name="keywordDescriptionVoid" xml:space="preserve">
+    <value>指出 .NET void 類型。在與其他 .NET 語言交互操作時使用。</value>
+  </data>
+  <data name="keywordDescriptionThen" xml:space="preserve">
+    <value>用於條件運算式。也可在物件建構後用來執行副作用。</value>
+  </data>
+  <data name="keywordDescriptionType" xml:space="preserve">
+    <value>用以宣告類別、記錄、結構、差別聯集、列舉類型、測量單位或類型縮寫。</value>
+  </data>
+  <data name="keywordDescriptionOpen" xml:space="preserve">
+    <value>用以製作不需資格即可使用的命名空間或模組內容。</value>
+  </data>
+  <data name="keywordDescriptionNull" xml:space="preserve">
+    <value>指出物件的缺少情形。也會用在泛型參數條件約束中。</value>
+  </data>
+  <data name="keywordDescriptionCast" xml:space="preserve">
+    <value>將類型轉換為階層中較高的類型。</value>
+  </data>
+  <data name="keywordDescriptionBase" xml:space="preserve">
+    <value>用作基底類別物件的名稱。</value>
+  </data>
+  <data name="keywordDescriptionLazy" xml:space="preserve">
+    <value>用以指定只會在需要結果時才執行的計算。</value>
+  </data>
+  <data name="keywordDescriptionElse" xml:space="preserve">
+    <value>用於條件式分支。</value>
+  </data>
+  <data name="keywordDescriptionElif" xml:space="preserve">
+    <value>用於條件式分支。else if 的簡短形式。</value>
+  </data>
+  <data name="keywordDescriptionDone" xml:space="preserve">
+    <value>在詳細資訊語法中，指出重複運算式中程式碼區塊的結尾。</value>
+  </data>
+  <data name="impReferenceToDllRequiredByAssembly" xml:space="preserve">
+    <value>組件 {1} 需要 DLL {0} 的參考。匯入的類型 {2} 位在第一個組件中，但無法解析。</value>
+  </data>
+  <data name="lexOusideThirtyTwoBitFloat" xml:space="preserve">
+    <value>這個數字已經超出 32 位元浮點數允許的範圍</value>
+  </data>
+  <data name="tcTypeDefinitionsWithImplicitConstructionMustHaveOneInherit" xml:space="preserve">
+    <value>類型定義只能有一個 'inherit' 規格，而且必須是第一個宣告</value>
+  </data>
+  <data name="tcLiteralCannotHaveGenericParameters" xml:space="preserve">
+    <value>常值不能有泛型參數</value>
+  </data>
+  <data name="parsUnexpectedQuotationOperatorInTypeAliasDidYouMeanVerbatimString" xml:space="preserve">
+    <value>型別定義中不能有引號運算子 '&lt;@'。如果您想要將逐字字串當做靜態引數傳遞至型別提供者，請在 '&lt;' 和 '@' 字元之間加上一個空格。</value>
+  </data>
+  <data name="tcInvalidOperatorDefinitionRelational" xml:space="preserve">
+    <value>通常不應該重新定義 '{0}' 運算子。若要定義特定類型的多載比較語意，請在該類型的定義中實作 'System.IComparable' 介面。</value>
+  </data>
+  <data name="chkCurriedMethodsCantHaveOutParams" xml:space="preserve">
+    <value>具有局部調用引數的方法不得宣告 'out'、'ParamArray'、'optional'、'ReflectedDefinition'、'byref'、'CallerLineNumber'、'CallerMemberName' 或 'CallerFilePath' 引數</value>
+  </data>
+  <data name="buildPdbRequiresDebug" xml:space="preserve">
+    <value>'--pdb' 選項要求必須使用 '--debug' 選項</value>
+  </data>
+  <data name="optValueMarkedInlineButWasNotBoundInTheOptEnv" xml:space="preserve">
+    <value>值 '{0}' 已標記為內嵌，但是未在最佳化環境中繫結</value>
+  </data>
+  <data name="tcPropertyIsStatic" xml:space="preserve">
+    <value>屬性 '{0}' 是靜態的</value>
+  </data>
+  <data name="tcNoComparisonNeeded1" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 在結構上無法比較，因為型別參數 {1} 不滿足 'comparison' 條件約束。請考慮將 'NoComparison' 屬性加入型別 '{2}'，以釐清該型別為不可比較</value>
+  </data>
+  <data name="tcNoComparisonNeeded2" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 在結構上無法比較，因為型別 '{1}' 不滿足 'comparison' 條件約束。請考慮將 'NoComparison' 屬性加入型別 '{2}'，以釐清該型別為不可比較</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplDefinesStruct" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作定義了結構，但簽章定義了具隱藏表示法的類型</value>
+  </data>
+  <data name="tlrLambdaLiftingOptimizationsNotApplied" xml:space="preserve">
+    <value>注意: 尚未套用 Lambda-lifting 最佳化，因為使用這個區域變數會將泛型函式限制為第一級值。加入類型條件約束或許可以解決這個狀況。</value>
+  </data>
+  <data name="tcUseForInSequenceExpression" xml:space="preserve">
+    <value>不允許在循序項運算式中使用 'let! x = coll'。請改用 'for x in coll'。</value>
+  </data>
+  <data name="FieldNotContainedMutablesDiffer" xml:space="preserve">
+    <value>模組包含欄位\n    {0}    \n但它的簽章卻指定\n    {1}    \n'mutable' 修飾詞不同</value>
+  </data>
+  <data name="ilwriteMDBFileNameCannotBeChangedWarning" xml:space="preserve">
+    <value>MDB 檔案的名稱必須是 &lt;assembly-file-name&gt;.mdb。將忽略 --pdb 選項。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityStaticButInstance" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n這個方法的編譯表示是做為靜態成員，但簽章卻指示它的編譯表示是做為執行個體成員</value>
+  </data>
+  <data name="ilDllImportAttributeCouldNotBeDecoded" xml:space="preserve">
+    <value>無法解碼 DllImport 屬性</value>
+  </data>
+  <data name="chkBaseUsedInInvalidWay" xml:space="preserve">
+    <value>'base' 關鍵字的使用方式無效。基本呼叫不能用在關閉中。請考慮使用私用成員來執行基本呼叫。</value>
+  </data>
+  <data name="tcNewMustBeUsedWithNamedType" xml:space="preserve">
+    <value>'new' 必須搭配具名類型一起使用</value>
+  </data>
+  <data name="tcTypeAbbreviationHasTypeParametersMissingOnType" xml:space="preserve">
+    <value>這個類型縮寫有一個或多個未出現在所縮寫類型中的宣告型別參數。類型縮寫必須使用所縮寫類型中的所有宣告型別參數。請考慮移除一個或多個型別參數，或使用包裝基礎類型的具象類型定義，例如 'type C&lt;'a&gt; = C of ...'。</value>
+  </data>
+  <data name="optsResponseFileNameInvalid" xml:space="preserve">
+    <value>回應檔名稱 '{0}' 為空白、包含無效的字元、未使用絕對路徑指定磁碟機或太長</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAccessibilityDiffer" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章中指定的存取範圍大於實作中指定的存取範圍</value>
+  </data>
+  <data name="tcNoPropertyFoundForOverride" xml:space="preserve">
+    <value>找不到對應到這個覆寫的抽象屬性</value>
+  </data>
+  <data name="astParseEmbeddedILError" xml:space="preserve">
+    <value>剖析內嵌的 IL 時發生錯誤</value>
+  </data>
+  <data name="tcDllImportStubsCannotBeInlined" xml:space="preserve">
+    <value>無法內嵌 DLLImport Stub</value>
+  </data>
+  <data name="tcIllegalPattern" xml:space="preserve">
+    <value>不合法的模式</value>
+  </data>
+  <data name="tcSimpleMethodNameRequired" xml:space="preserve">
+    <value>此處要有簡單方法名稱</value>
+  </data>
+  <data name="tcAutoPropertyRequiresImplicitConstructionSequence" xml:space="preserve">
+    <value>'member val' 定義只能用於含有主要建構函式的類型中。請考慮在您的類型定義加入引數，例如 'type X(args) = ...'。</value>
+  </data>
+  <data name="forFlagSetTwice" xml:space="preserve">
+    <value>'{0}' 旗標設定兩次</value>
+  </data>
+  <data name="crefQuotationsCantContainObjExprs" xml:space="preserve">
+    <value>引號內不能包含物件運算式</value>
+  </data>
+  <data name="optValueMarkedInlineHasUnexpectedValue" xml:space="preserve">
+    <value>標記為 'inline' 的值有未預期的值</value>
+  </data>
+  <data name="tcMatchMayNotBeUsedWithQuery" xml:space="preserve">
+    <value>不可以在查詢中使用 'match' 運算式</value>
+  </data>
+  <data name="chkPropertySameNameIndexer" xml:space="preserve">
+    <value>屬性 '{0}' 與類型 '{1}' 中的另一個屬性同名，但其中一個接受索引子引數，另一個不接受。您的其中一個屬性可能缺少了索引子引數。</value>
+  </data>
+  <data name="lexIdentEndInMarkReserved" xml:space="preserve">
+    <value>後面接著 '{0}' 的識別碼已保留供未來使用</value>
+  </data>
+  <data name="tcExplicitTypeParameterInvalid" xml:space="preserve">
+    <value>明確的類型參數只能用在模組或成員繫結上</value>
+  </data>
+  <data name="etPropertyHasSetterButNoCanWrite" xml:space="preserve">
+    <value>提供之類型 '{1}' 上的屬性 '{0}' 具有 CanWrite=false，但 GetSetMethod() 傳回了方法</value>
+  </data>
+  <data name="optsEmitDebugInfoInQuotations" xml:space="preserve">
+    <value>發出在引號內的偵錯資訊</value>
+  </data>
+  <data name="optsNowin32manifest" xml:space="preserve">
+    <value>不要包含預設的 Win32 資訊清單</value>
+  </data>
+  <data name="typeInfoActiveRecognizer" xml:space="preserve">
+    <value>現用辨識器</value>
+  </data>
+  <data name="tcCompiledNameAttributeMisused" xml:space="preserve">
+    <value>'CompiledName' 屬性不能搭配這個語言項目一起使用</value>
+  </data>
+  <data name="keywordDescriptionMutable" xml:space="preserve">
+    <value>用以宣告變數，亦即可變更的值。</value>
+  </data>
+  <data name="buildSignatureAlreadySpecified" xml:space="preserve">
+    <value>已經指定檔案或模組 '{0}' 的簽章</value>
+  </data>
+  <data name="crefQuotationsCantSetUnionFields" xml:space="preserve">
+    <value>引號內不能包含設定聯集欄位的運算式</value>
+  </data>
+  <data name="tcTypeDefinitionIsCyclic" xml:space="preserve">
+    <value>這個類型定義涉及透過縮寫的立即循環參考</value>
+  </data>
+  <data name="optsInvalidTargetProfile" xml:space="preserve">
+    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+  </data>
+  <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
+    <value>不允許在主要建構函式中使用 'use' 繫結</value>
+  </data>
+  <data name="tcStructsCanOnlyBindThisAtMemberDeclaration" xml:space="preserve">
+    <value>結構只能在成員宣告中繫結 'this' 參數</value>
+  </data>
+  <data name="parsAllEnumFieldsRequireValues" xml:space="preserve">
+    <value>所有列舉欄位都必須指定值</value>
+  </data>
+  <data name="parsIllegalMemberVarInObjectImplementation" xml:space="preserve">
+    <value>物件運算式中不允許使用 'member val' 和 'override val' 定義。</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleAbbreviationHiddenBySignature" xml:space="preserve">
+    <value>例外狀況定義不相容，因為簽章隱藏了例外狀況縮寫。這個縮寫必須是其他 CLI 語言可見的。請考慮使縮寫在簽章中可見。模組包含例外狀況定義\n    {0}    \n但它的簽章卻指定\n\t{1}。</value>
+  </data>
+  <data name="keywordDescriptionFinally" xml:space="preserve">
+    <value>當與 with 並用時，可引入無論例外狀況發生與否皆會執行的程式碼區塊。</value>
+  </data>
+  <data name="ilCustomMarshallersCannotBeUsedInFSharp" xml:space="preserve">
+    <value>在 F# 程式碼中不能指定自訂封送處理器。請考慮使用 C# 協助程式函式。</value>
+  </data>
+  <data name="typrelOverloadNotFound" xml:space="preserve">
+    <value>'{0}' 的任何實作都沒有正確數目的引數和型別參數。需要的簽章是 '{1}'。</value>
+  </data>
+  <data name="tcMethodOverridesIllegalHere" xml:space="preserve">
+    <value>此處不允許方法覆寫和介面實作</value>
+  </data>
+  <data name="ilFieldOffsetAttributeCouldNotBeDecoded" xml:space="preserve">
+    <value>無法解碼 FieldOffset 屬性</value>
+  </data>
+  <data name="buildSignatureWithoutImplementation" xml:space="preserve">
+    <value>簽章檔 '{0}' 沒有對應的實作檔。如果實作檔的確存在，請檢查簽章檔與實作檔中的 'module' 和 'namespace' 宣告是否相符。</value>
+  </data>
+  <data name="tcInvalidIndexOperatorDefinition" xml:space="preserve">
+    <value>不能重新定義 '{0}' 運算子。請考慮使用其他運算子名稱</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSigHasAbbreviation" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章有縮寫，但實作沒有</value>
+  </data>
+  <data name="undefinedNameTypeParameter" xml:space="preserve">
+    <value>未定義類型參數 {0}。</value>
+  </data>
+  <data name="keywordDescriptionInherit" xml:space="preserve">
+    <value>用以指定基底類別或基底介面。</value>
+  </data>
+  <data name="lexfltTokenIsOffsideOfContextStartedEarlier" xml:space="preserve">
+    <value>縮排可能不正確: 這個語彙基元於內容的位置 {0} 處開始越位。請嘗試進一步縮排這個語彙基元，或使用標準的格式設定慣例。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityDisplayNamesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n顯示名稱不同</value>
+  </data>
+  <data name="tastConstantExpressionOverflow" xml:space="preserve">
+    <value>這個常值運算式或屬性引數會導致算術溢位。</value>
+  </data>
+  <data name="tcOptionalArgumentsCannotBeUsedInCustomAttribute" xml:space="preserve">
+    <value>選擇性的引數不能用在自訂屬性中</value>
+  </data>
+  <data name="optsStaticlink" xml:space="preserve">
+    <value>靜態連結指定的組件和所有依存於這個組件的被參考 DLL。請使用組件名稱 (例如 mylib) 而不是 DLL 名稱。</value>
+  </data>
+  <data name="parsEofInVerbatimStringInComment" xml:space="preserve">
+    <value>內嵌在註解中的逐字字串中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="ValueNotContainedMutabilityLiteralConstantValuesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n常值常數值和/或屬性不同</value>
+  </data>
+  <data name="lexThisUnicodeOnlyInStringLiterals" xml:space="preserve">
+    <value>這個 Unicode 編碼只在字串常值中才有效</value>
+  </data>
+  <data name="tcCallerInfoNotOptional" xml:space="preserve">
+    <value>'{0}' 只能套用至選擇性引數</value>
+  </data>
+  <data name="ilAddressOfValueHereIsInvalid" xml:space="preserve">
+    <value>這項作業涉及接受值 '{0}' 的位址，且這個值是使用區域變數或其他特殊表示方式表示。這種作法無效。</value>
+  </data>
+  <data name="optsNoframework" xml:space="preserve">
+    <value>不預設參考預設的 CLI 組件</value>
+  </data>
+  <data name="buildExpectedFileAlongSideFSharpCore" xml:space="preserve">
+    <value>找不到與 FSharp.Core 並存的檔案 '{0}'。檔案應位於 {1}。請考慮升級至最新版的 FSharp.Core，其中不再需要此檔案。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureSaysNull" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章宣稱這個類型可以使用 null 作為表示法，但實作未宣稱</value>
+  </data>
+  <data name="parsEofInComment" xml:space="preserve">
+    <value>註解中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="csMemberHasNoArgumentOrReturnProperty" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 沒有引數或可設定的傳回屬性 '{1}'。{2}。</value>
+  </data>
+  <data name="etUnsupportedConstantType" xml:space="preserve">
+    <value>不支援的常數類型 '{0}'。型別提供者所提供的引號只能包含簡單的常數。實作型別提供者可能需要調整，方法是將在提供的引號外宣告的值移為引號常值內的 'let' 繫結。</value>
+  </data>
+  <data name="patcPartialActivePatternsGenerateOneResult" xml:space="preserve">
+    <value>部分現用模式只能產生一個結果</value>
+  </data>
+  <data name="typeIsNotAccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取類型 '{0}'</value>
+  </data>
+  <data name="tcListLiteralMaxSize" xml:space="preserve">
+    <value>這個清單運算式已超過清單常值的大小上限。請使用供較大常值使用的陣列，並呼叫 Array.ToList。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationSealed" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作類型是密封的，但簽章卻隱含非密封。請考慮將 [&lt;Sealed&gt;] 屬性新增至簽章。</value>
+  </data>
+  <data name="tcNamedArgumentDidNotMatch" xml:space="preserve">
+    <value>具名引數 '{0}' 不符合任何引數或可變動的屬性</value>
+  </data>
+  <data name="tcInvalidConstraintTypeSealed" xml:space="preserve">
+    <value>無效的條件約束: 用於條件約束的類型是封閉的，表示條件約束最多只能由一個方案滿足</value>
+  </data>
+  <data name="lexUnexpectedChar" xml:space="preserve">
+    <value>未預期的字元 '{0}'</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleHiddenBySignature" xml:space="preserve">
+    <value>例外狀況定義不相容，因為簽章隱藏了 CLI 例外狀況對應。例外狀況對應必須是其他模組可見的。模組包含例外狀況定義\n    {0}    \n但它的簽章卻指定\n\t{1}</value>
+  </data>
+  <data name="parsIgnoreAttributesOnModuleAbbreviation" xml:space="preserve">
+    <value>即將忽略模組縮寫的屬性</value>
+  </data>
+  <data name="tcExpectedTypeNotUnitOfMeasure" xml:space="preserve">
+    <value>必須是類型，不是測量單位</value>
+  </data>
+  <data name="typrelTypeImplementsIComparableDefaultObjectEqualsProvided" xml:space="preserve">
+    <value>類型 '{0}' 明確實作了 'System.IComparable'，但是未提供 'Object.Equals' 的對應覆寫。系統已自動提供透過 'System.IComparable' 實作的 'Object.Equals' 的實作。請考慮明確實作覆寫 'Object.Equals'</value>
+  </data>
+  <data name="buildCouldNotResolveAssemblyRequiredByFile" xml:space="preserve">
+    <value>無法解析 '{1}' 所需的組件 '{0}'</value>
+  </data>
+  <data name="tastInvalidMutationOfConstant" xml:space="preserve">
+    <value>常數運算式無效的變動。請考慮將運算式複製到可變動的區域變數，例如 'let mutable x = ...'。</value>
+  </data>
+  <data name="optsWarnaserror" xml:space="preserve">
+    <value>將特定的警告回報為錯誤</value>
+  </data>
+  <data name="considerUpcast" xml:space="preserve">
+    <value>從 {0} 轉換為 {1} 屬於編譯時間安全的向上轉換，而非向下轉換。請考慮使用 'upcast' 而不使用 'downcast'。</value>
+  </data>
+  <data name="lexhlpIdentifierReserved" xml:space="preserve">
+    <value>識別碼 '{0}' 已保留供 F# 未來使用</value>
+  </data>
+  <data name="buildMultiFileRequiresNamespaceOrModule" xml:space="preserve">
+    <value>程式庫或多檔案應用程式中的檔案應該以命名空間或模組宣告開頭，例如 'namespace SomeNamespace.SubNamespace' 或 'module SomeNamespace.SomeModule'。只有應用程式的最後一個原始程式檔可以省略這樣的宣告。</value>
+  </data>
+  <data name="tcBindingCannotBeUseAndRec" xml:space="preserve">
+    <value>無法同時將繫結標記為 'use' 和 'rec'</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileTypeArgs" xml:space="preserve">
+    <value>類型引數中不能以輸入結尾</value>
+  </data>
+  <data name="ValueNotContainedMutabilityVirtualsDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n其中一個是虛擬的，另一個卻不是</value>
+  </data>
+  <data name="astDeprecatedIndexerNotation" xml:space="preserve">
+    <value>這個索引子標記法已從 F# 語言移除</value>
+  </data>
+  <data name="tcTypeUsedInInvalidWay" xml:space="preserve">
+    <value>類型 '{0}' 的使用方式無效。在 '{1}' 之前的值具有涉及 '{2}' 的推斷類型，這是無效的向前參考。</value>
+  </data>
+  <data name="chkDuplicateMethodWithSuffix" xml:space="preserve">
+    <value>方法重複。當元組、函式、測量單位及 (或) 提供的類型清除之後，方法 '{0}' 與類型 '{1}' 中另一個方法同名，且簽章也相同。</value>
+  </data>
+  <data name="impNotEnoughTypeParamsInScopeWhileImporting" xml:space="preserve">
+    <value>內部錯誤或形式不正確的中繼資料: 匯入時範圍中的型別參數不足</value>
+  </data>
+  <data name="ilIncorrectNumberOfTypeArguments" xml:space="preserve">
+    <value>區域呼叫的類型引數數目不正確</value>
+  </data>
+  <data name="parsSyntaxModuleSigEndDeprecated" xml:space="preserve">
+    <value>F# 程式碼中不使用語法 'module ... : sig .. end'。請考慮使用 'module ... = begin .. end'</value>
+  </data>
+  <data name="tcExpectedInterfaceType" xml:space="preserve">
+    <value>必須是介面類型</value>
+  </data>
+  <data name="tcInvalidMemberNameFixedTypes" xml:space="preserve">
+    <value>名稱 '({0})' 不應該做為成員名稱使用，因為已經在 F# 程式庫中透過固定類型為它指定標準定義</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileTypeDefinition" xml:space="preserve">
+    <value>類型定義中不能以輸入結尾</value>
+  </data>
+  <data name="impInvalidMeasureArgument2" xml:space="preserve">
+    <value>無效的測量單位參數 '{0}' 值</value>
+  </data>
+  <data name="impInvalidMeasureArgument1" xml:space="preserve">
+    <value>測量單位參數 '{1}' 的值 '{0}' 無效</value>
+  </data>
+  <data name="tastInvalidFormForPropertyGetter" xml:space="preserve">
+    <value>屬性 getter 的形式無效。使用明確語法時至少要有一個 '()' 引數。</value>
+  </data>
+  <data name="etOneOrMoreErrorsSeenDuringExtensionTypeSetting" xml:space="preserve">
+    <value>在設定提供的類型期間已發生一或多個錯誤</value>
+  </data>
+  <data name="tcConstructorForInterfacesDoNotTakeArguments" xml:space="preserve">
+    <value>介面的建構函式運算式不接受引數</value>
+  </data>
+  <data name="optsInvalidWarningLevel" xml:space="preserve">
+    <value>無效的警告層級 '{0}'</value>
+  </data>
+  <data name="tcUnionCaseNameConflictsWithGeneratedType" xml:space="preserve">
+    <value>名為 '{0}' 的聯集與產生的類型 '{1}' 衝突</value>
+  </data>
+  <data name="tcNoAbstractOrVirtualMemberFound" xml:space="preserve">
+    <value>成員 '{0}' 未對應到可用於覆寫或實作的任何抽象或虛擬方法。</value>
+  </data>
+  <data name="tcInvalidRecordConstruction" xml:space="preserve">
+    <value>無效的記錄建構</value>
+  </data>
+  <data name="ModuleContainsConstructorButTypesOfFieldsDiffer" xml:space="preserve">
+    <value>模組包含建構函式\n    {0}    \n但它的簽章卻指定\n    {1}    \n欄位的類型不同</value>
+  </data>
+  <data name="ilLabelNotFound" xml:space="preserve">
+    <value>找不到標籤 {0}</value>
+  </data>
+  <data name="activePatternChoiceHasFreeTypars" xml:space="preserve">
+    <value>現用模式 '{0}' 的結果類型包含不是由輸入決定的類型變數。發生的原因通常是因為未提及結果案例，例如 'let (|A|B|) (x:int) = A x'。使用類型條件約束就可以修正這種情況，例如 'let (|A|B|) (x:int) : Choice&lt;int,unit&gt; = A x'</value>
+  </data>
+  <data name="csMemberSignatureMismatchArityNamed" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 需要 {1} 個引數，但此處指定了 {2} 個未命名和 {3} 個具名引數。需要的簽章是 '{4}'。</value>
+  </data>
+  <data name="tastTypeOrModuleNotConcrete" xml:space="preserve">
+    <value>類型/模組 '{0}' 不是具象模組或類型</value>
+  </data>
+  <data name="optsHelpBannerOutputFiles" xml:space="preserve">
+    <value>- 輸出檔 -</value>
+  </data>
+  <data name="csSeeAvailableOverloads" xml:space="preserve">
+    <value>可用的多載顯示於下方 (或在 [錯誤清單] 視窗中)。</value>
+  </data>
+  <data name="tcCustomOperationHasIncorrectArgCount" xml:space="preserve">
+    <value>'{0}' 搭配使用的引數數目不正確。這是這個查詢或計算運算式中的自訂作業。必須是 {1} 個引數，但提供了 {2} 個。</value>
+  </data>
+  <data name="csMethodIsNotAnInstanceMethod" xml:space="preserve">
+    <value>{0} 不是執行個體方法</value>
+  </data>
+  <data name="tcObjectExpressionFormDeprecated" xml:space="preserve">
+    <value>F# 中不使用這種形式的物件運算式。請使用 'member this.MemberName ... = ...' 來定義物件運算式中的成員實作。</value>
+  </data>
+  <data name="tcUnexpectedExprAtRecInfPoint" xml:space="preserve">
+    <value>於遞迴推斷點有未預期的運算式</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAbstractMemberMissingInImpl" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章需要抽象成員 '{2}'，但實作卻未指定</value>
+  </data>
+  <data name="tcDoesNotAllowExplicitTypeArguments" xml:space="preserve">
+    <value>不應該為方法或函式 '{0}' 指定明確的型別引數，因為它未明確宣告其型別參數</value>
+  </data>
+  <data name="tastTypeHasAssemblyCodeRepresentation" xml:space="preserve">
+    <value>類型 '{0}' 有內嵌組譯程式碼表示</value>
+  </data>
+  <data name="tastRecursiveValuesMayNotBeAssignedToNonMutableField" xml:space="preserve">
+    <value>遞迴值無法直接指派給遞迴繫結內類型 '{1}' 的不可變動欄位 '{0}'。請考慮改用可變動的欄位。</value>
+  </data>
+  <data name="optsMlcompatibility" xml:space="preserve">
+    <value>忽略 ML 相容性警告</value>
+  </data>
+  <data name="memberOperatorDefinitionWithNoArguments" xml:space="preserve">
+    <value>中置運算子成員 '{0}' 沒有引數。必須是 2 個引數的元組，例如，靜態成員 (+) (x,y) = ...</value>
+  </data>
+  <data name="tcConcreteMembersIllegalInInterface" xml:space="preserve">
+    <value>介面不能包含具象成員的定義。您必須在類型上定義建構函式，以指示類型是類別。</value>
+  </data>
+  <data name="parsMissingQualificationAfterDot" xml:space="preserve">
+    <value>在 '.' 後遺漏限定性</value>
+  </data>
+  <data name="nrTypeInstantiationIsMissingAndCouldNotBeInferred" xml:space="preserve">
+    <value>遺漏泛型型別 '{0}' 的具現化，而且無法從這個成員的引數或傳回型別推斷。存取這種型別時，請考慮提供具現化，例如 '{1}'。</value>
+  </data>
+  <data name="parsActivePatternCaseMustBeginWithUpperCase" xml:space="preserve">
+    <value>現用模式大小寫識別項必須以大寫字母開頭</value>
+  </data>
+  <data name="forHIsUnnecessary" xml:space="preserve">
+    <value>這個格式規範中的 'h' 或 'H' 為不必要。您可以改用 %d、%x、%o 或 %u，這些格式經過多載，可以搭配所有基本的整數類型使用。</value>
+  </data>
+  <data name="tcExpressionFormRequiresObjectConstructor" xml:space="preserve">
+    <value>運算式形式 'expr then expr' 只能用來做為明確物件建構函式的一部分</value>
+  </data>
+  <data name="chkLimitationsOfBaseKeyword" xml:space="preserve">
+    <value>'base' 值只能用來直接呼叫覆寫成員的基底實作</value>
+  </data>
+  <data name="tastNotAConstantExpression" xml:space="preserve">
+    <value>這不是有效的常數運算式或自訂屬性值</value>
+  </data>
+  <data name="tcInvalidMixtureOfRecursiveForms" xml:space="preserve">
+    <value>這個遞迴繫結使用無效的混合遞迴形式</value>
+  </data>
+  <data name="tcImplementsGenericIComparableExplicitly" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 明確實作了介面 'System.IComparable&lt;_&gt;'。您必須將 'CustomComparison' 屬性套用到該型別，也應該為非泛型介面 System.Icomparable 提供一致的實作。</value>
+  </data>
+  <data name="tcInvalidAssignment" xml:space="preserve">
+    <value>無效的指派</value>
+  </data>
+  <data name="parsEofInString" xml:space="preserve">
+    <value>字串中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="chkFirstClassFuncNoByref" xml:space="preserve">
+    <value>第一級函式的類型不能包含 ByRef</value>
+  </data>
+  <data name="csTypeDoesNotSupportEquality2" xml:space="preserve">
+    <value>類型 '{0}' 不支援 'equality' 條件約束，因為它是函式類型</value>
+  </data>
+  <data name="csTypeDoesNotSupportEquality3" xml:space="preserve">
+    <value>類型 '{0}' 不支援 'equality' 條件約束，因為它是記錄、等位或結構，且具有一個或多個不支援 'equality' 條件約束的結構化項目類型。請避免使用這種類型的相等，或將 'StructuralEquality' 屬性加入類型，以判斷哪個欄位類型不支援相等</value>
+  </data>
+  <data name="csTypeDoesNotSupportEquality1" xml:space="preserve">
+    <value>類型 '{0}' 不支援 'equality' 條件約束，因為它有 'NoEquality' 屬性</value>
+  </data>
+  <data name="parsUnmatchedUseBang" xml:space="preserve">
+    <value>不完整的值定義。如果這是運算式，運算式的主體必須縮排成與 'use!' 關鍵字在同一欄。</value>
+  </data>
+  <data name="parsNonAtomicType" xml:space="preserve">
+    <value>此處不允許使用類型語法 'int C' 和 'C  &lt;int&gt;'。請考慮調整這種類型，寫成 'C&lt;int&gt;' 形式</value>
+  </data>
+  <data name="forPrefixFlagSpacePlusSetTwice" xml:space="preserve">
+    <value>前置詞旗標 (' ' 或 '+') 設定兩次</value>
+  </data>
+  <data name="assemblyResolutionFoundByAssemblyFoldersKey" xml:space="preserve">
+    <value>依 AssemblyFolders 登錄機碼找到</value>
+  </data>
+  <data name="tcConstructRequiresSequenceOrComputations" xml:space="preserve">
+    <value>這個建構只能用在循序項運算式或計算運算式內</value>
+  </data>
+  <data name="astParseEmbeddedILTypeError" xml:space="preserve">
+    <value>剖析內嵌的 IL 類型時發生錯誤</value>
+  </data>
+  <data name="tcIllegalAttributesForLiteral" xml:space="preserve">
+    <value>無法為 [&lt;ThreadStatic&gt;] 或 [&lt;ContextStatic&gt;] 屬性指定常值</value>
+  </data>
+  <data name="etInvalidTypeProviderAssemblyName" xml:space="preserve">
+    <value>組件 '{0}' 的 TypeProviderAssembly 屬性值 '{1}' 無效。此值必須是有效的屬性名稱</value>
+  </data>
+  <data name="tcFunctionRequiresExplicitLambda" xml:space="preserve">
+    <value>這個函式值正用來建構簽章包含 ByRef 引數的委派類型。您必須使用接受 {0} 引數的明確 Lambda 運算式。</value>
+  </data>
+  <data name="tcAbbreviationsFordotNetExceptionsCannotTakeArguments" xml:space="preserve">
+    <value>Common IL 例外狀況的縮寫不能接受引數</value>
+  </data>
+  <data name="tcEnumTypeCannotBeEnumerated" xml:space="preserve">
+    <value>類型 '{0}' 不是有效的列舉程式類型，例如，沒有傳回 bool 的 'MoveNext()' 方法，也沒有 'Current' 屬性</value>
+  </data>
+  <data name="parsEofInDirective" xml:space="preserve">
+    <value>指示詞中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="forFormatDoesntSupportPrecision" xml:space="preserve">
+    <value>'{0}' 格式不支援精確度</value>
+  </data>
+  <data name="tcConstructorRequiresCall" xml:space="preserve">
+    <value>類型 '{0}' 的建構函式必須直接或間接呼叫其隱含物件建構函式。請不要使用記錄運算式，改為呼叫隱含物件建構函式。</value>
+  </data>
+  <data name="tcCustomOperationNotUsedCorrectly" xml:space="preserve">
+    <value>'{0}' 未正確使用。這是這個查詢或計算運算式中的自訂作業。</value>
+  </data>
+  <data name="parsUnmatchedLBrackLess" xml:space="preserve">
+    <value>不成對的 '[&lt;'。必須有結束 '&gt;]'</value>
+  </data>
+  <data name="tcFixedNotAllowed" xml:space="preserve">
+    <value>使用 'fixed' 無效。'fixed' 僅能用於格式為 'use x = fixed expr' 的宣告中，其中運算式為陣列、欄位的位址、陣列元素的位址或字串</value>
+  </data>
+  <data name="etIllegalCharactersInTypeName" xml:space="preserve">
+    <value>提供的類型名稱 '{1}' 中不允許使用字元 '{0}'</value>
+  </data>
+  <data name="etStaticParameterRequiresAValue" xml:space="preserve">
+    <value>所提供之類型或方法 '{1}' 的靜態參數 '{0}' 需要值。型別提供者可以選擇使用具名引數 (例如 '{2}&lt;{3}=...&gt;') 來指定靜態參數。</value>
+  </data>
+  <data name="tcUnexpectedMeasureAnon" xml:space="preserve">
+    <value>未預期的 SynMeasure.Anon</value>
+  </data>
+  <data name="parsAssertIsNotFirstClassValue" xml:space="preserve">
+    <value>'assert' 無法當做第一個類別值使用。請改用 'assert &lt;expr&gt;'。</value>
+  </data>
+  <data name="tcCannotInheritFromVariableType" xml:space="preserve">
+    <value>無法繼承自變數類型</value>
+  </data>
+  <data name="unionCasesAreNotAccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取類型 '{0}' 的聯集或欄位</value>
+  </data>
+  <data name="tcMutableValuesSyntax" xml:space="preserve">
+    <value>可變動的函式值應該寫成 'let mutable f = (fun args -&gt; ...)'</value>
+  </data>
+  <data name="parsOnlyClassCanTakeValueArguments" xml:space="preserve">
+    <value>只有類別類型可接受數值引數</value>
+  </data>
+  <data name="buildInvalidWarningNumber" xml:space="preserve">
+    <value>無效的警告編號 '{0}'</value>
+  </data>
+  <data name="csTypeHasNonStandardDelegateType" xml:space="preserve">
+    <value>類型 '{0}' 有非標準的委派類型</value>
+  </data>
+  <data name="tcArgumentArityMismatch" xml:space="preserve">
+    <value>成員 '{0}' 不接受正確數目的引數。應為 {1} 個引數，但提供了 {2} 個。必要特徵標記為 '{3}'。{4}</value>
+  </data>
+  <data name="typeInfoPatternVariable" xml:space="preserve">
+    <value>patvar</value>
+  </data>
+  <data name="ValueNotContainedMutabilityFinalsDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n其中一個是最後的，另一個卻不是</value>
+  </data>
+  <data name="delegatesNotAllowedToHaveCurriedSignatures" xml:space="preserve">
+    <value>不允許委派有局部調用簽章</value>
+  </data>
+  <data name="optsPlatform" xml:space="preserve">
+    <value>限制這個程式碼可以在哪些平台執行: x86、Itanium、x64、anycpu32bitpreferred 或 anycpu。預設為 anycpu。</value>
+  </data>
+  <data name="tcExpectedUnitOfMeasureNotType" xml:space="preserve">
+    <value>必須是測量單位，不是類型</value>
+  </data>
+  <data name="optsWin32res" xml:space="preserve">
+    <value>指定 Win32 資源檔 (.res)</value>
+  </data>
+  <data name="tcLocalClassBindingsCannotBeInline" xml:space="preserve">
+    <value>區域類別繫結不能標記為內嵌。請考慮將定義移出類別，或不將它標記為內嵌。</value>
+  </data>
+  <data name="descriptionUnavailable" xml:space="preserve">
+    <value>(無法使用描述...)</value>
+  </data>
+  <data name="undefinedNameTypeIn" xml:space="preserve">
+    <value>'{1}' 中未定義類型 '{0}'。</value>
+  </data>
+  <data name="parsIdentifierExpected" xml:space="preserve">
+    <value>必須是識別項</value>
+  </data>
+  <data name="ppparsUnexpectedToken" xml:space="preserve">
+    <value>前置處理器運算式包含未預期的語彙基元 '{0}'</value>
+  </data>
+  <data name="forPrecisionMissingAfterDot" xml:space="preserve">
+    <value>在 '.' 後遺漏精確度</value>
+  </data>
+  <data name="crefNoSetOfHole" xml:space="preserve">
+    <value>引號可能與指派無關或與採用擷取之區域變數的位址無關</value>
+  </data>
+  <data name="optsInternalNoDescription" xml:space="preserve">
+    <value>命令列選項 '{0}' 僅供測試用途</value>
+  </data>
+  <data name="yieldUsedInsteadOfYieldBang" xml:space="preserve">
+    <value>請考慮使用 'yield!' 而不使用 'yield'。</value>
+  </data>
+  <data name="tcInheritedTypeIsNotObjectModelType" xml:space="preserve">
+    <value>繼承類型不是物件模型類型</value>
+  </data>
+  <data name="ilMainModuleEmpty" xml:space="preserve">
+    <value>程式的主要模組是空的: 執行時不會產生任何作用</value>
+  </data>
+  <data name="fscAssemblyWildcardAndDeterminism" xml:space="preserve">
+    <value>{0} 已指定版本 '{1}'，但這個值為萬用字元，且您已要求確定性組建，所以發生衝突。</value>
+  </data>
+  <data name="fscResxSourceFileDeprecated" xml:space="preserve">
+    <value>將 .resx 檔案 ({0}) 當做原始程式檔傳遞至編譯器已被取代。請使用 resgen.exe 將 .resx 檔案轉換為 .resources 檔案，然後傳遞做為 --resource 選項。如果您要使用 MSBuild，可以透過 .fsproj 專案檔中的 &lt;EmbeddedResource&gt; 項目來完成。</value>
+  </data>
+  <data name="tcModuleAbbreviationForNamespace" xml:space="preserve">
+    <value>路徑 '{0}' 是命名空間。模組縮寫不可用來縮寫命名空間。</value>
+  </data>
+  <data name="tcValueInSignatureRequiresLiteralAttribute" xml:space="preserve">
+    <value>只有當宣告有 [&lt;Literal&gt;] 屬性時，才能為簽章中的宣告指定值</value>
+  </data>
+  <data name="etProvidedTypeWithNameException" xml:space="preserve">
+    <value>存取提供之類型的 '{0}' 時發生例外狀況: {1}</value>
+  </data>
+  <data name="keywordDescriptionInternal" xml:space="preserve">
+    <value>用以指定在組件內可見，但在組件外不可見的成員。</value>
+  </data>
+  <data name="parsNoHashEndIfFound" xml:space="preserve">
+    <value>找不到 #if 或 #else 的 #endif</value>
+  </data>
+  <data name="tastInvalidMemberSignature" xml:space="preserve">
+    <value>因為先前的錯誤，導致發生無效的成員簽章</value>
+  </data>
+  <data name="tcFieldNameConflictsWithGeneratedNameForAnonymousField" xml:space="preserve">
+    <value>具名欄位 '{0}' 與匿名欄位的自動產生名稱相衝突。</value>
+  </data>
+  <data name="buildInvalidHashtimeDirective" xml:space="preserve">
+    <value>無效的指示詞。必須是 '#time'、'#time \"on\"' 或 '#time \"off\"'。</value>
+  </data>
+  <data name="parsEnumTypesCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允許在列舉類型的這個位置使用存取範圍修飾詞</value>
+  </data>
+  <data name="parsAttributesIllegalHere" xml:space="preserve">
+    <value>這裡不允許屬性</value>
+  </data>
+  <data name="optsHelpBannerLanguage" xml:space="preserve">
+    <value>- 語言 -</value>
+  </data>
+  <data name="optsUnrecognizedDebugType" xml:space="preserve">
+    <value>無法辨識的偵錯類型 '{0}'，必須是 'pdbonly' 或 'full'</value>
+  </data>
+  <data name="tcIntoNeedsRestOfQuery" xml:space="preserve">
+    <value>使用 'into' 時，之後必須接計算的其餘部分</value>
+  </data>
+  <data name="chkNoFirstClassRethrow" xml:space="preserve">
+    <value>不允許 'reraise' 函式的第一級用法</value>
+  </data>
+  <data name="parsMissingGreaterThan" xml:space="preserve">
+    <value>不成對的 '&lt;'。必須有結束 '&gt;'</value>
+  </data>
+  <data name="tastUndefinedItemRefVal" xml:space="preserve">
+    <value>來自編譯單位 '{1}' 的模組/命名空間 '{0}' 不包含 val '{2}'</value>
+  </data>
+  <data name="tcFunctionRequiresExplicitTypeArguments" xml:space="preserve">
+    <value>必須為泛型函式 '{0}' 指定明確的型別引數</value>
+  </data>
+  <data name="etPropertyCanReadButHasNoGetter" xml:space="preserve">
+    <value>提供之類型 '{1}' 上的屬性 '{0}' 具有 CanRead=true，但沒有來自 GetGetMethod() 的值</value>
+  </data>
+  <data name="chkReturnTypeNoByref" xml:space="preserve">
+    <value>方法傳回型別會包含不允許的 ByRef</value>
+  </data>
+  <data name="tcEventIsStatic" xml:space="preserve">
+    <value>事件 '{0}' 是靜態的</value>
+  </data>
+  <data name="lexTokenReserved" xml:space="preserve">
+    <value>這個語彙基元已保留供未來使用</value>
+  </data>
+  <data name="tcOpenFirstInMutRec" xml:space="preserve">
+    <value>在遞迴宣告群組中，'open' 宣告必須優先出現在每個模組中</value>
+  </data>
+  <data name="etNullOrEmptyMemberName" xml:space="preserve">
+    <value>提供的類型 '{0}' 傳回具有 null 或空白成員名稱的成員</value>
+  </data>
+  <data name="forBadFormatSpecifier" xml:space="preserve">
+    <value>不正確的格式規範 (在 l 或 L 之後): 必須是 ld、li、lo、lu、lx 或 lX。在 F# 程式碼中，您可以改用 %d、%x、%o 或 %u，這些格式經過多載，可以搭配所有基本的整數類型使用。</value>
+  </data>
+  <data name="infosInvalidProvidedLiteralValue" xml:space="preserve">
+    <value>提供的常值 '{0}' 無效</value>
+  </data>
+  <data name="tcInterfaceTypesCannotBeSealed" xml:space="preserve">
+    <value>介面類型不可以是封閉的</value>
+  </data>
+  <data name="checkLowercaseLiteralBindingInPattern" xml:space="preserve">
+    <value>小寫常值 '{0}' 正由名稱相同的新模式所遮蔽。只有大寫及模組前置的常值可做為具名的模式使用。</value>
+  </data>
+  <data name="ilUndefinedValue" xml:space="preserve">
+    <value>未定義的值 '{0}'</value>
+  </data>
+  <data name="tcConstructRequiresListArrayOrSequence" xml:space="preserve">
+    <value>這個建構只能用在清單、陣列和循序項運算式內，例如 'seq {{ ... }}'、'[ ... ]' 或 '[| ... |]' 形式的運算式。這些運算式使用語法 'for ... in ... do ... yield...' 來產生項目</value>
+  </data>
+  <data name="tcCustomAttributeMustBeReferenceType" xml:space="preserve">
+    <value>自訂屬性必須是參考類型</value>
+  </data>
+  <data name="tcStaticFieldUsedWhenInstanceFieldExpected" xml:space="preserve">
+    <value>在需要執行個體欄位的地方使用了靜態欄位</value>
+  </data>
+  <data name="parsUnmatchedParen" xml:space="preserve">
+    <value>無對應的 '('</value>
+  </data>
+  <data name="csMethodIsOverloaded" xml:space="preserve">
+    <value>無法根據這個程式點之前的類型資訊，判斷方法 '{0}' 的唯一多載。可能需要有類型註釋。</value>
+  </data>
+  <data name="csMemberIsNotAccessible" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 不是 {1}</value>
+  </data>
+  <data name="optsDebugPM" xml:space="preserve">
+    <value>發出偵錯資訊 (簡短形式: -g)</value>
+  </data>
+  <data name="fscKeyFileWarning" xml:space="preserve">
+    <value>選項 '--keyfile' 會覆寫原始程式檔或加入的模組中指定的屬性 'System.Reflection.AssemblyKeyFileAttribute'</value>
+  </data>
+  <data name="optsResponseFile" xml:space="preserve">
+    <value>如需了解更多選項，請參閱回應檔</value>
+  </data>
+  <data name="parsUnmatchedBrace" xml:space="preserve">
+    <value>無對應的 '{{'</value>
+  </data>
+  <data name="parsUnmatchedBegin" xml:space="preserve">
+    <value>無對應的 'begin'</value>
+  </data>
+  <data name="tcNonSimpleLetBindingInQuery" xml:space="preserve">
+    <value>這個 'let' 定義不可用於查詢中。只有簡單值定義可用於查詢中。</value>
+  </data>
+  <data name="chkProtectedOrBaseCalled" xml:space="preserve">
+    <value>呼叫受保護的成員，或使用 'base'。只有在成員的直接實作中才允許這種作法，因為它們可能會逸出其物件範圍。</value>
+  </data>
+  <data name="parsNonAdjacentTyargs" xml:space="preserve">
+    <value>型別引數必須放在緊鄰類型名稱的位置，例如 \"C&lt;'T&gt;\"，而不是 \"C  &lt;'T&gt;\"</value>
+  </data>
+  <data name="parsNonAdjacentTypars" xml:space="preserve">
+    <value>型別參數必須放在緊鄰類型名稱的位置，例如 \"type C&lt;'T&gt;\"，而不是 type \"C   &lt;'T&gt;\"</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInPrintf" xml:space="preserve">
+    <value>無法解決使用 'printf' 樣式的格式字串時固有的模稜兩可</value>
+  </data>
+  <data name="parsErrorInReturnForLetIncorrectIndentation" xml:space="preserve">
+    <value>這個 'let' 的傳回運算式中有錯。可能是縮排不正確。</value>
+  </data>
+  <data name="typrelCannotResolveImplicitGenericInstantiation" xml:space="preserve">
+    <value>無法解決在這個點或附近的泛型建構的隱含具現化，因為它可能解析成多個不相關的類型，例如 '{0}' 和 '{1}'。請考慮使用類型註釋來解決模稜兩可</value>
+  </data>
+  <data name="tcOptionalArgsMustComeAfterNonOptionalArgs" xml:space="preserve">
+    <value>選擇性引數必須位於引數清單末端，在所有非選擇性引數之後</value>
+  </data>
+  <data name="parsErrorParsingAsOperatorName" xml:space="preserve">
+    <value>嘗試將此剖析為運算子名稱，但是失敗</value>
+  </data>
+  <data name="optsReference" xml:space="preserve">
+    <value>參考組件 (簡短形式: -r)</value>
+  </data>
+  <data name="assemblyResolutionFoundByAssemblyFoldersExKey" xml:space="preserve">
+    <value>依 AssemblyFoldersEx 登錄機碼找到</value>
+  </data>
+  <data name="parsGetOrSetRequired" xml:space="preserve">
+    <value>需要 'get'、'set' 或 'get,set'</value>
+  </data>
+  <data name="buildArgInvalidFloat" xml:space="preserve">
+    <value>'{0}' 不是有效的浮點引數</value>
+  </data>
+  <data name="optsDCLODeprecatedSuggestAlternative" xml:space="preserve">
+    <value>命令列選項 '{0}' 已被取代。請改用 '{1}'。</value>
+  </data>
+  <data name="augCustomEqNeedsObjEquals" xml:space="preserve">
+    <value>具 'CustomEquality' 屬性的類型必須至少有 'Object.Equals(obj)'、'System.IEquatable&lt;_&gt;' 或 'System.Collections.IStructuralEquatable' 其中之一的明確實作</value>
+  </data>
+  <data name="tcUnexpectedSymbolInTypeExpression" xml:space="preserve">
+    <value>類型運算式中有未預期的 {0}</value>
+  </data>
+  <data name="tcUnrecognizedAttributeTarget" xml:space="preserve">
+    <value>無法辨識的屬性目標。有效的屬性目標為 'assembly'、'module'、'type'、'method'、'property'、'return'、'param'、'field'、'event'、'constructor'。</value>
+  </data>
+  <data name="parsMissingFunctionBody" xml:space="preserve">
+    <value>遺漏函式主體</value>
+  </data>
+  <data name="parsUnexpectedVisibilityDeclaration" xml:space="preserve">
+    <value>此處不得使用存取範圍修飾詞，但卻提供了 '{0}'。</value>
+  </data>
+  <data name="tcTypesCannotContainNestedTypes" xml:space="preserve">
+    <value>類型不能包含巢狀類型定義</value>
+  </data>
+  <data name="optsConsoleColors" xml:space="preserve">
+    <value>輸出彩色的警告和錯誤訊息</value>
+  </data>
+  <data name="tcInvalidUseOfTypeName" xml:space="preserve">
+    <value>無效的類型名稱使用方式</value>
+  </data>
+  <data name="tastValueDoesNotHaveSetterType" xml:space="preserve">
+    <value>這個值沒有有效的屬性 setter 類型</value>
+  </data>
+  <data name="buildInvalidSearchDirectory" xml:space="preserve">
+    <value>搜尋目錄 '{0}' 無效。</value>
+  </data>
+  <data name="optsLinkresource" xml:space="preserve">
+    <value>將指定的資源連結至此組件，其中 resinfo 格式是 &lt;file&gt;[,&lt;string name&gt;[,public|private]]</value>
+  </data>
+  <data name="parsIllegalDenominatorForMeasureExponent" xml:space="preserve">
+    <value>度量單位指數的分母不得為 0</value>
+  </data>
+  <data name="tcInheritCannotBeUsedOnInterfaceType" xml:space="preserve">
+    <value>'inherit' 不能用在介面類型上。請考慮改用 'interface ... with ... end' 來實作介面。</value>
+  </data>
+  <data name="parsUnexpectedIntegerLiteralForUnitOfMeasure" xml:space="preserve">
+    <value>測量單位運算式中未預期的整數常值</value>
+  </data>
+  <data name="tcNamedTypeRequired" xml:space="preserve">
+    <value>'{0}' 只能搭配具名類型一起使用</value>
+  </data>
+  <data name="csMemberSignatureMismatchArity" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 接受 {1} 個引數，但此處指定了 {2} 個。需要的簽章是 '{3}'。</value>
+  </data>
+  <data name="chkUnionCaseDefaultAugmentation" xml:space="preserve">
+    <value>聯集的預設增強指定</value>
+  </data>
+  <data name="notAFunction" xml:space="preserve">
+    <value>此值不是函式，無法套用。</value>
+  </data>
+  <data name="forMissingFormatSpecifier" xml:space="preserve">
+    <value>遺漏格式修飾詞</value>
+  </data>
+  <data name="parsIndexerPropertyRequiresAtLeastOneArgument" xml:space="preserve">
+    <value>必須至少為索引子屬性指定一個引數</value>
+  </data>
+  <data name="optsUnrecognizedTarget" xml:space="preserve">
+    <value>無法辨識的目標 '{0}'，必須是 'exe'、'winexe'、'library' 或 'module'</value>
+  </data>
+  <data name="parsWhileDoExpected" xml:space="preserve">
+    <value>'while' 運算式中遺漏 'do'。必須是 'while &lt;expr&gt; do &lt;expr&gt;'。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileFunBody" xml:space="preserve">
+    <value>Lambda 運算式的主體中不能以輸入結尾。必須是 'fun &lt;pat&gt; ... &lt;pat&gt; -&gt; &lt;expr&gt;'。</value>
+  </data>
+  <data name="docfileNoXmlSuffix" xml:space="preserve">
+    <value>此文件檔沒有 .xml 後置字元</value>
+  </data>
+  <data name="parsArrowUseIsLimited" xml:space="preserve">
+    <value>在循序項運算式和計算運算式中使用 '-&gt;' 僅限於 'for pat in expr -&gt; expr' 形式。使用 'for ... in ... do ... yield...' 語法可在更為複雜的循序項運算式中產生項目。</value>
+  </data>
+  <data name="parsGetterMustHaveAtLeastOneArgument" xml:space="preserve">
+    <value>getter 屬性必須是函式，例如 'get() = ...' 或 'get(index) = ...'</value>
+  </data>
+  <data name="parsMismatchedQuote" xml:space="preserve">
+    <value>不相符的引號，以 '{0}' 開頭</value>
+  </data>
+  <data name="lexOutsideSixtyFourBitUnsigned" xml:space="preserve">
+    <value>這個數字已經超出 64 位元無正負號整數允許的範圍</value>
+  </data>
+  <data name="itemNotFoundInTypeDuringDynamicCodeGen" xml:space="preserve">
+    <value>組件 '{3}' 的類型 '{2}' 中找不到 {0} '{1}'。可能的原因為版本不相容。您可能需要明確參考此組件的正確版本，以允許所有參考的元件使用正確的版本。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityGenericParametersAreDifferentKinds" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n簽章與實作中泛型參數的類型不同。可能是因為遺漏 [&lt;Measure&gt;] 屬性。</value>
+  </data>
+  <data name="ilTypeCannotBeUsedForLiteralField" xml:space="preserve">
+    <value>這種類型不能做為常值欄位使用</value>
+  </data>
+  <data name="optsTailcalls" xml:space="preserve">
+    <value>啟用或停用 Tail 呼叫</value>
+  </data>
+  <data name="tcEmptyCopyAndUpdateRecordInvalid" xml:space="preserve">
+    <value>複製並更新記錄運算式必須至少包含一個欄位。</value>
+  </data>
+  <data name="parsEofInStringInComment" xml:space="preserve">
+    <value>內嵌在註解中的字串中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="tcMissingCustomOperation" xml:space="preserve">
+    <value>需要 '{0}' 的自訂查詢作業，但未指定</value>
+  </data>
+  <data name="parsInvalidLiteralInType" xml:space="preserve">
+    <value>類型中的常值無效</value>
+  </data>
+  <data name="typrelMemberHasMultiplePossibleDispatchSlots" xml:space="preserve">
+    <value>成員 '{0}' 符合相同方法的多個多載。\n請將它限制為下列其中一項: {1}。</value>
+  </data>
+  <data name="tcStructUnionMultiCaseDistinctFields" xml:space="preserve">
+    <value>如果等位型別有一個以上的案例並且為結構，等位型別內所有欄位的名稱就都不得重複。</value>
+  </data>
+  <data name="etPropertyNeedsCanWriteOrCanRead" xml:space="preserve">
+    <value>提供之類型 '{1}' 上的屬性 '{0}' 不是可讀取的，也不是可寫入的，因為它具有 CanRead=false 和 CanWrite=false</value>
+  </data>
+  <data name="typeInfoGeneratedProperty" xml:space="preserve">
+    <value>產生的屬性</value>
+  </data>
+  <data name="tcStaticValFieldsMustBeMutableAndPrivate" xml:space="preserve">
+    <value>類型中的靜態 'val' 欄位必須是可變動、私用而且以 '[&lt;DefaultValue&gt;]' 屬性標記。它們會被始化成其類型的 'null' 或 'zero' 值。請一併考慮在類別類型中使用 'static let mutable' 繫結。</value>
+  </data>
+  <data name="csMethodExpectsParams" xml:space="preserve">
+    <value>這個方法預期這個位置是一個 CLI 'params' 參數。'params' 是一種傳遞變數的方法，可將可變數目的引數傳遞給 C# 一類語這的方法。請考慮傳遞這個引數的陣列</value>
+  </data>
+  <data name="tcUninitializedValFieldsMustBeMutable" xml:space="preserve">
+    <value>未初始化的 'val' 欄位必須是可變動的，並以 '[&lt;DefaultValue&gt;]' 屬性標記。請考慮使用 'let' 繫結來取代 'val' 欄位。</value>
+  </data>
+  <data name="etMustNotBeGeneric" xml:space="preserve">
+    <value>提供之類型 '{0}' 的 'IsGenericType' 為 true，但不支援泛型類型。</value>
+  </data>
+  <data name="optsCopyright" xml:space="preserve">
+    <value>Copyright (c) Microsoft Corporation. 著作權所有，並保留一切權利。</value>
+  </data>
+  <data name="crefQuotationsCantSetExceptionFields" xml:space="preserve">
+    <value>引號內不能包含設定例外狀況值中欄位的運算式</value>
+  </data>
+  <data name="lexByteArrayCannotEncode" xml:space="preserve">
+    <value>這個位元組陣列常值包含不會編碼成單一位元組的字元</value>
+  </data>
+  <data name="parsAttributesMustComeBeforeVal" xml:space="preserve">
+    <value>屬性應該放在 'val' 之前</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplDefinesButSignatureDoesNot" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作定義了 {2} '{3}'，但簽章沒有 (或雖然定義了，但順序不同)</value>
+  </data>
+  <data name="tcAnonymousUnitsOfMeasureCannotBeNested" xml:space="preserve">
+    <value>匿名的測量單位無法巢狀於另一個測量單位運算式內</value>
+  </data>
+  <data name="typrelSigImplNotCompatibleConstraintsDiffer" xml:space="preserve">
+    <value>簽章與實作不相容，因為型別參數 '{0}' 的宣告需要 {1} 形式的條件約束</value>
+  </data>
+  <data name="tcTypeOrModule" xml:space="preserve">
+    <value>類型或模組</value>
+  </data>
+  <data name="etNestedProvidedTypesDoNotTakeStaticArgumentsOrGenericParameters" xml:space="preserve">
+    <value>提供的巢狀類型不接受靜態引數或泛型參數</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileExpression" xml:space="preserve">
+    <value>運算式中不能以輸入結尾</value>
+  </data>
+  <data name="tcModuleRequiresQualifiedAccess" xml:space="preserve">
+    <value>這個宣告會開啟標記為 'RequireQualifiedAccess' 的模組 '{0}'。請將您的程式碼調整為改用模組項目的限定參考，例如 'List.map'，而不是 'map'。這項變更將確保在新建構加入至程式庫時，您的程式碼可以更為強固。</value>
+  </data>
+  <data name="tcDeclarationElementNotPermittedInAugmentation" xml:space="preserve">
+    <value>不允許在增強指定中使用這個宣告項目</value>
+  </data>
+  <data name="csCtorSignatureMismatchArity" xml:space="preserve">
+    <value>物件建構函式 '{0}' 要用到 {1} 個引數，但此處提供了 {2} 個引數。需要的簽章是 '{3}'。</value>
+  </data>
+  <data name="tcNewMemberHidesAbstractMember" xml:space="preserve">
+    <value>這個新成員會隱藏抽象成員 '{0}'。請重新命名成員或改用 'override'。</value>
+  </data>
+  <data name="tcKindOfTypeSpecifiedDoesNotMatchDefinition" xml:space="preserve">
+    <value>由其屬性指定的類型類型不符合其定義所隱含的類型</value>
+  </data>
+  <data name="fscProblemWritingBinary" xml:space="preserve">
+    <value>寫入二進位檔 '{0}' 時發生問題: {1}</value>
+  </data>
+  <data name="tcInvalidNonPrimitiveLiteralInPatternMatch" xml:space="preserve">
+    <value>非基本數值常值常數不能用在模式比對中，因為它們可以透過使用 NumericLiteral 模組對應到多種不同類型。請考慮用變數取代，並在比對子句結尾使用 'when &lt;variable&gt; = &lt;constant&gt;'。</value>
+  </data>
+  <data name="typrelSigImplNotCompatibleCompileTimeRequirementsDiffer" xml:space="preserve">
+    <value>簽章與實作不相容，因為類別/簽章中的型別參數與成員/實作中的型別參數具有不同的編譯時間需求</value>
+  </data>
+  <data name="checkRaiseFamilyFunctionArgumentCount" xml:space="preserve">
+    <value>正在忽略函式 '{0}' 中多餘的引數。預期為 {1} 個引數，但找到 {2} 個。</value>
+  </data>
+  <data name="tcCustomAttributeMustInvokeConstructor" xml:space="preserve">
+    <value>自訂屬性必須叫用物件建構函式</value>
+  </data>
+  <data name="tcSyntaxFormUsedOnlyWithRecordLabelsPropertiesAndFields" xml:space="preserve">
+    <value>語法 'expr.id' 只能搭配記錄標籤、屬性和欄位一起使用</value>
+  </data>
+  <data name="parsExpectedTypeAfterToken" xml:space="preserve">
+    <value>在這個點之後必須有類型</value>
+  </data>
+  <data name="augNoRefEqualsOnStruct" xml:space="preserve">
+    <value>'ReferenceEquality' 屬性無法用在結構上。請考慮改用 'StructuralEquality' 屬性，或實作 'System.Object.Equals(obj)' 的覆寫。</value>
+  </data>
+  <data name="typrelOverrideImplementsMoreThenOneSlot" xml:space="preserve">
+    <value>覆寫 '{0}' 實作了多個抽象位置，例如 '{1}' 和 '{2}'</value>
+  </data>
+  <data name="tcArgumentArityMismatchOneOverload" xml:space="preserve">
+    <value>成員 '{0}' 不接受正確數目的引數。一次多載接受 {1} 個引數，但提供了 {2} 個。必要特徵標記為 '{3}'。{4}</value>
+  </data>
+  <data name="parsModuleDefnMustBeSimpleName" xml:space="preserve">
+    <value>模組名稱必須是簡單名稱，不是路徑</value>
+  </data>
+  <data name="parsMutableOnAutoPropertyShouldBeGetSetNotJustSet" xml:space="preserve">
+    <value>若要表示這個屬性可以設定，請使用 'member val PropertyName = expr with get,set'。</value>
+  </data>
+  <data name="fsharpCoreNotFoundToBeCopied" xml:space="preserve">
+    <value>在編譯器的目錄中找不到 FSharp.Core.dll</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleTypesHaveDifferentBaseTypes" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為類型具有不同的基底類型</value>
+  </data>
+  <data name="csNoOverloadsFound" xml:space="preserve">
+    <value>沒有符合方法 '{0}' 的多載。</value>
+  </data>
+  <data name="nrIsNotConstructorOrLiteral" xml:space="preserve">
+    <value>這不是建構函式或常值，或者是建構函式的使用方式錯誤</value>
+  </data>
+  <data name="tcOnlyTypesRepresentingUnitsOfMeasureCanHaveMeasure" xml:space="preserve">
+    <value>只能為代表測量單位的類型指定 'Measure' 屬性</value>
+  </data>
+  <data name="csExpectedArguments" xml:space="preserve">
+    <value>引數必須是執行個體成員</value>
+  </data>
+  <data name="tcLessGenericBecauseOfAnnotation" xml:space="preserve">
+    <value>這個程式碼的一般程度小於其註釋要求的程度，因為無法一般化明確類型變數 '{0}'。它受限於必須是 '{1}'。</value>
+  </data>
+  <data name="tcInvalidOperatorDefinitionEquality" xml:space="preserve">
+    <value>通常不應該重新定義 '{0}' 運算子。若要定義類型的相等語意，請在該類型的定義中覆寫 'Object.Equals' 成員。</value>
+  </data>
+  <data name="augRefEqCantHaveObjEquals" xml:space="preserve">
+    <value>具 'ReferenceEquality' 屬性的類型不能有 'Object.Equals(obj)'、'System.IEquatable&lt;_&gt;' 或 'System.Collections.IStructuralEquatable' 的明確實作</value>
+  </data>
+  <data name="tcInvalidUseNullAsTrueValue" xml:space="preserve">
+    <value>'UseNullAsTrueValue' 屬性旗標只能搭配等位型別一起使用，該等位型別有一個零元案例和至少一個非零元案例</value>
+  </data>
+  <data name="parsUnmatchedBeginOrStruct" xml:space="preserve">
+    <value>無對應的 'begin' 或 'struct'</value>
+  </data>
+  <data name="keywordDescriptionLeftArrow" xml:space="preserve">
+    <value>將值指派給變數。</value>
+  </data>
+  <data name="parsEofInHashIf" xml:space="preserve">
+    <value>#if 區段中的檔案結尾於此處或之後開始</value>
+  </data>
+  <data name="tcUseWhenPatternGuard" xml:space="preserve">
+    <value>字元範圍比對已從 F# 中移除。請考慮改用 'when' 模式成立條件。</value>
+  </data>
+  <data name="lexHashBangMustBeFirstInFile" xml:space="preserve">
+    <value>#! 只能出現在檔案開頭的第一行。</value>
+  </data>
+  <data name="tcConstructorsDisallowedInExceptionAugmentation" xml:space="preserve">
+    <value>建構函式不能在例外狀況增強指定中指定</value>
+  </data>
+  <data name="etMustNotBeAnArray" xml:space="preserve">
+    <value>提供之類型 '{0}' 的 'IsArray' 為 true，但不支援陣列類型。</value>
+  </data>
+  <data name="chkDuplicatePropertyWithSuffix" xml:space="preserve">
+    <value>屬性重複。當元組、函式、測量單位及 (或) 提供的類型清除之後，屬性 '{0}' 與類型 '{1}' 中另一個屬性同名，且簽章也相同。</value>
+  </data>
+  <data name="tastUndefinedItemRefModuleNamespace" xml:space="preserve">
+    <value>來自編譯單位 '{1}' 的模組/命名空間 '{0}' 不包含模組/命名空間 '{2}'</value>
+  </data>
+  <data name="parsLetAndForNonRecBindings" xml:space="preserve">
+    <value>F# 程式碼中不使用非遞迴繫結的宣告形式 'let ... and ...'。請考慮使用 'let' 繫結序列</value>
+  </data>
+  <data name="typrelExplicitImplementationOfGetHashCodeOrEquals" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 有 'Object.GetHashCode' 或 'Object.Equals' 的明確實作。您必須將 'CustomEquality' 屬性套用到該型別</value>
+  </data>
+  <data name="tcInvalidUseOfDelegate" xml:space="preserve">
+    <value>無效的委派建構函式使用方式。請使用 'new Type(args)' 語法或只用 'Type(args)'。</value>
+  </data>
+  <data name="typrelSigImplNotCompatibleConstraintsDifferRemove" xml:space="preserve">
+    <value>簽章與實作不相容，因為型別參數 '{0}' 有 {1} 形式的條件約束，但實作沒有。請從簽章移除這個條件約束，或將它加入實作。</value>
+  </data>
+  <data name="etHostingAssemblyFoundWithoutHosts" xml:space="preserve">
+    <value>參考的組件 '{0}' 具有組件層級屬性 '{1}'，但找不到公用型別提供者類別</value>
+  </data>
+  <data name="optsWarnaserrorPM" xml:space="preserve">
+    <value>將所有警告回報為錯誤</value>
+  </data>
+  <data name="lexTabsNotAllowed" xml:space="preserve">
+    <value>F# 程式碼中不允許使用 TAB，除非使用 #indent \"off\" 選項</value>
+  </data>
+  <data name="etInvalidStaticArgument" xml:space="preserve">
+    <value>提供之類型的靜態引數無效。必須是 '{0}' 類型的引數。</value>
+  </data>
+  <data name="tcMutableValuesCannotBeInline" xml:space="preserve">
+    <value>可變動的值不能標記為 'inline'</value>
+  </data>
+  <data name="typrelMoreThenOneOverride" xml:space="preserve">
+    <value>有多個覆寫實作了 '{0}'</value>
+  </data>
+  <data name="tcAbstractTypeCannotBeInstantiated" xml:space="preserve">
+    <value>無法建立這種類型的執行個體，因為它已標記為抽象或不是所有方法都有實作。請考慮改用物件運算式 '{{ new ... with ... }}'。</value>
+  </data>
+  <data name="tcModuleAbbrevFirstInMutRec" xml:space="preserve">
+    <value>在遞迴宣告群組中，模組縮寫必須出現在所有 'open' 宣告之後、其他宣告之前</value>
+  </data>
+  <data name="keywordDescriptionFunction" xml:space="preserve">
+    <value>用作 fun 關鍵字的較短替代項，以及在單一引數有模式比對之 Lambda 運算式中的比對運算式。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityCompiledNamesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n編譯的名稱不同</value>
+  </data>
+  <data name="ValueNotContainedMutabilityAccessibilityMore" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n簽章中指定的存取範圍大於實作中指定的存取範圍</value>
+  </data>
+  <data name="tcInvalidObjectConstructionExpression" xml:space="preserve">
+    <value>這不是有效的物件建構運算式。明確物件建構函式必須呼叫替代建構函式，或初始化該物件的所有欄位並且指定超級類別建構函式的呼叫。</value>
+  </data>
+  <data name="optsUnknownPlatform" xml:space="preserve">
+    <value>無法辨識的平台 '{0}'，有效的值是 'x86'、'x64'、'Itanium'、'anycpu32bitpreferred' 和 'anycpu'</value>
+  </data>
+  <data name="tcNewCannotBeUsedOnInterfaceType" xml:space="preserve">
+    <value>'new' 不能用在介面類型上。請考慮改用物件運算式 '{{ new ... with ... }}'。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAbbreviationHiddenBySig" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章隱藏了某縮寫。其他 CLI 語言必須可看見該縮寫。請考慮使縮寫在簽章中可見。</value>
+  </data>
+  <data name="tastInvalidFormForPropertySetter" xml:space="preserve">
+    <value>屬性 setter 的形式無效。至少要有一個引數。</value>
+  </data>
+  <data name="tcBindMayNotBeUsedInQueries" xml:space="preserve">
+    <value>'let!'、'use!' 和 'do!' 運算式不可用於查詢</value>
+  </data>
+  <data name="parsEofInVerbatimString" xml:space="preserve">
+    <value>逐字字串中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="tcFieldIsReadonly" xml:space="preserve">
+    <value>這是唯讀欄位</value>
+  </data>
+  <data name="ilStructLayoutAttributeCouldNotBeDecoded" xml:space="preserve">
+    <value>無法解碼 StructLayout 屬性</value>
+  </data>
+  <data name="csTypeIsNotDelegateType" xml:space="preserve">
+    <value>類型 '{0}' 不是 CLI 委派類型</value>
+  </data>
+  <data name="notAFunctionButMaybeIndexer" xml:space="preserve">
+    <value>此運算式不是函式，無法套用。您要改用 expr.[index] 來存取索引子嗎?</value>
+  </data>
+  <data name="replaceWithSuggestion" xml:space="preserve">
+    <value>取代為 '{0}'</value>
+  </data>
+  <data name="structOrClassFieldIsNotAccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取結構或類別欄位 '{0}'</value>
+  </data>
+  <data name="keywordDescriptionYieldBang" xml:space="preserve">
+    <value>用於計算運算式中，以將指定計算運算式的結果附加到內含計算運算式的結果集合。</value>
+  </data>
+  <data name="nrInvalidExpression" xml:space="preserve">
+    <value>無效的運算式 '{0}'</value>
+  </data>
+  <data name="csTypeParameterCannotBeNullable" xml:space="preserve">
+    <value>這個型別參數無法具現化成 'Nullable'。施加這個限制的原因是為了確保在某些 CLI 中，將 'null' 搭配 'Nullable' 值一起使用時意義不會混淆。</value>
+  </data>
+  <data name="buildImplementationAlreadyGiven" xml:space="preserve">
+    <value>已經指定檔案或模組 '{0}' 的實作</value>
+  </data>
+  <data name="etIncorrectProvidedConstructor" xml:space="preserve">
+    <value>型別提供者 '{0}' 所提供的建構函式未在宣告類型 '{1}' 的任何建構函式中報告</value>
+  </data>
+  <data name="tcInterfacesShouldUseInheritNotInterface" xml:space="preserve">
+    <value>由其他介面繼承的介面應該使用 'inherit ...' 宣告，不要使用 'interface ...'</value>
+  </data>
+  <data name="chkEntryPointUsage" xml:space="preserve">
+    <value>標記了 'EntryPointAttribute' 屬性的函式必須是編譯順序中最後一個檔案中的最後一個宣告。</value>
+  </data>
+  <data name="nrRecordDoesNotContainSuchLabel" xml:space="preserve">
+    <value>記錄類型 '{0}' 未包含標籤 '{1}'。</value>
+  </data>
+  <data name="parsUnClosedBlockInHashLight" xml:space="preserve">
+    <value>未封閉的區塊</value>
+  </data>
+  <data name="tcPropertyOrFieldNotFoundInAttribute" xml:space="preserve">
+    <value>在這個自訂屬性類型上找不到這個屬性或欄位</value>
+  </data>
+  <data name="tastNamespaceAndModuleWithSameNameInAssembly" xml:space="preserve">
+    <value>名稱為 '{0}' 的命名空間和模組都出現在這個組件的兩個部分中</value>
+  </data>
+  <data name="optsTargetProfile" xml:space="preserve">
+    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+  </data>
+  <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
+    <value>自 F# 4.1 起，類型縮寫的協助工具會於編譯時期經過檢查。請考慮變更類型縮寫的協助工具。略過此警告會導致執行階段錯誤。</value>
+  </data>
+  <data name="lexHashEndifMustBeFirst" xml:space="preserve">
+    <value>#endif 指示詞必須顯示為一行的第一個非空白字元</value>
+  </data>
+  <data name="ilSignInvalidRSAParams" xml:space="preserve">
+    <value>RSAParameters 結構無效 - 必須是 '{{0}}'</value>
+  </data>
+  <data name="tcNoEqualityNeeded1" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 不支援結構相等，因為型別參數 {1} 不滿足 'equality' 條件約束。請考慮將 'NoEquality' 屬性加入型別 '{2}'，以釐清該型別不支援結構相等</value>
+  </data>
+  <data name="tcNoEqualityNeeded2" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 不支援結構相等，因為型別 '{1}' 不滿足 'equality' 條件約束。請考慮將 'NoEquality' 屬性加入型別 '{2}'，以釐清該型別不支援結構相等</value>
+  </data>
+  <data name="tcAttributeIsNotValidForLanguageElementUseDo" xml:space="preserve">
+    <value>這個屬性不能用在這個語言項目上。組件屬性應該附加到 'do ()' 宣告 (如果 F# 模組中需要的話)。</value>
+  </data>
+  <data name="tcThreadStaticAndContextStaticMustBeStatic" xml:space="preserve">
+    <value>Thread 和 Context 靜態變數必須是靜態的，而且必須為它們指定 [&lt;DefaultValue&gt;] 屬性，以表示值會在每個新執行緒時初始化成預設值</value>
+  </data>
+  <data name="chkNoAddressOfArrayElementAtThisPoint" xml:space="preserve">
+    <value>目前無法使用陣列元素的位址</value>
+  </data>
+  <data name="parsUnexpectedTypeParameter" xml:space="preserve">
+    <value>語法錯誤: 未預期的型別參數規格</value>
+  </data>
+  <data name="ilDefaultAugmentationAttributeCouldNotBeDecoded" xml:space="preserve">
+    <value>無法解碼 DefaultAugmentation 屬性</value>
+  </data>
+  <data name="chkValueWithDefaultValueMustHaveDefaultValue" xml:space="preserve">
+    <value>使用 'DefaultValue' 屬性之欄位的類型必須允許預設初始化，即使用 'null' 做為適當的值或做為所有欄位都允許預設初始化的結構類型。您可以使用 'DefaultValue(false)' 停用這個檢查</value>
+  </data>
+  <data name="keywordDescriptionOverride" xml:space="preserve">
+    <value>用以實作不同於基底版本的抽象或虛擬方法版本。</value>
+  </data>
+  <data name="etUnexpectedExceptionFromProvidedTypeMember" xml:space="preserve">
+    <value>提供之類型 '{0}' 成員 '{1}' 發生未預期的例外狀況: {2}</value>
+  </data>
+  <data name="chkTyparMultipleClassConstraints" xml:space="preserve">
+    <value>類型變數受到多種不同類別類型約束。類型變數只能有一個類別條件約束。</value>
+  </data>
+  <data name="etMissingStaticArgumentsToMethod" xml:space="preserve">
+    <value>此提供的方法需要靜態參數</value>
+  </data>
+  <data name="undefinedNameConstructorModuleOrNamespace" xml:space="preserve">
+    <value>未定義建構函式、模組或命名空間 '{0}'。</value>
+  </data>
+  <data name="tcTypeIsInaccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取這種類型</value>
+  </data>
+  <data name="tcAttributesOfTypeSpecifyMultipleKindsForType" xml:space="preserve">
+    <value>這種類型的屬性為類型指定了多種類型</value>
+  </data>
+  <data name="tastInvalidAddressOfMutableAcrossAssemblyBoundary" xml:space="preserve">
+    <value>這項作業以不支援的方式存取另一個組件中定義的可變動最上層值。值無法透過其位址存取。請考慮將運算式複製到可變動的區域變數，例如 'let mutable x = ...'，並視需要在作業完成後將值指派回來</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileTry" xml:space="preserve">
+    <value>'try' 運算式中不能以輸入結尾。必須是 'try &lt;expr&gt; with &lt;rules&gt;' 或 'try &lt;expr&gt; finally &lt;expr&gt;'。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileFor" xml:space="preserve">
+    <value>'for' 運算式中不能以輸入結尾。必須是 'for &lt;pat&gt; in &lt;expr&gt; do &lt;expr&gt;'。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleRepresentationsDiffer" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為表示法不同</value>
+  </data>
+  <data name="crefQuotationsCantContainThisPatternMatch" xml:space="preserve">
+    <value>引號內不能包含這種模式比對</value>
+  </data>
+  <data name="parsExpectedNameAfterToken" xml:space="preserve">
+    <value>不能以類型結尾。在這個點之後必須有名稱。</value>
+  </data>
+  <data name="etProviderError" xml:space="preserve">
+    <value>型別提供者 '{0}' 已回報錯誤: {1}</value>
+  </data>
+  <data name="ilwriteMDBMemberMissing" xml:space="preserve">
+    <value>MDB 產生失敗。找不到相容的成員 {0}</value>
+  </data>
+  <data name="tcTypeAbbreviationsCannotHaveInterfaceDeclaration" xml:space="preserve">
+    <value>類型縮寫不能有介面宣告</value>
+  </data>
+  <data name="augStructEqNeedsNoCompOrStructComp" xml:space="preserve">
+    <value>'StructuralEquality' 屬性必須搭配 'NoComparison' 或 'StructuralComparison' 屬性一起使用</value>
+  </data>
+  <data name="chkSplicingOnlyInQuotations" xml:space="preserve">
+    <value>運算式接合運算子只能用在引號內</value>
+  </data>
+  <data name="lexHashEndingNoMatchingIf" xml:space="preserve">
+    <value>#endif 沒有對應的 #if</value>
+  </data>
+  <data name="tcAttributeIsNotValidForLanguageElement" xml:space="preserve">
+    <value>這個屬性不能用在這個語言項目上</value>
+  </data>
+  <data name="optsChecked" xml:space="preserve">
+    <value>產生溢位核對</value>
+  </data>
+  <data name="optsCopyrightCommunity" xml:space="preserve">
+    <value>依 Apache 2.0 開放原始碼授權自由散發</value>
+  </data>
+  <data name="csMemberOverloadArityMismatch" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 不接受 {1} 個引數。找到接受 {2} 個引數的多載。</value>
+  </data>
+  <data name="etProviderHasWrongDesignerAssembly" xml:space="preserve">
+    <value>組件屬性 '{0}' 參考的設計工具組件 '{1}' 無法載入或不存在。{2}</value>
+  </data>
+  <data name="etUnexpectedExceptionFromProvidedMemberMember" xml:space="preserve">
+    <value>提供之類型 '{1}' 成員 '{2}' 的成員 '{0}' 發生未預期的例外狀況: {3}</value>
+  </data>
+  <data name="estApplyStaticArgumentsForMethodNotImplemented" xml:space="preserve">
+    <value>型別提供者已實作 GetStaticParametersForMethod，但 ApplyStaticArgumentsForMethod 未實作或無效</value>
+  </data>
+  <data name="optsHelpBannerResources" xml:space="preserve">
+    <value>- 資源 -</value>
+  </data>
+  <data name="fscQuotationLiteralsStaticLinking0" xml:space="preserve">
+    <value>此組件中的程式碼使用引號常值。除非所有組件都使用 F# 4.0 (含) 以上的版本編譯，否則靜態連結不得包含使用引號常值的元件。</value>
+  </data>
+  <data name="tcBinaryOperatorRequiresBody" xml:space="preserve">
+    <value>'{0}' 必須跟在 'for' 選取範圍子句後面，之後再接其餘的查詢。語法: ... {1} ...</value>
+  </data>
+  <data name="fscDelaySignWarning" xml:space="preserve">
+    <value>選項 '--delaysign' 會覆寫原始程式檔或加入的模組中指定的屬性 'System.Reflection.AssemblyDelaySignAttribute'</value>
+  </data>
+  <data name="ilAddressOfLiteralFieldIsInvalid" xml:space="preserve">
+    <value>接受常值欄位的位址無效</value>
+  </data>
+  <data name="lexOutsideThirtyTwoBitSigned" xml:space="preserve">
+    <value>這個數字已經超出 32 位元有正負號整數允許的範圍</value>
+  </data>
+  <data name="parsUnmatchedBracketBar" xml:space="preserve">
+    <value>無對應的 '[|'</value>
+  </data>
+  <data name="csMemberIsNotAccessible2" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 不是 {1}。私用成員只能從宣告類型中存取。受保護的成員只能從擴充類型存取，無法從內部 Lambda 運算式存取。</value>
+  </data>
+  <data name="methodIsNotStatic" xml:space="preserve">
+    <value>方法或物件建構函式 '{0}' 不是靜態的</value>
+  </data>
+  <data name="fscQuotationLiteralsStaticLinking" xml:space="preserve">
+    <value>組件 '{0}' 中的程式碼使用了引號常值。除非所有組件都使用 F# 4.0 (含) 以上的版本編譯，否則靜態連結不會包含使用引號常值的元件。</value>
+  </data>
+  <data name="buildInvalidFilename" xml:space="preserve">
+    <value>'{0}' 不是有效的檔名</value>
+  </data>
+  <data name="optsPublicSign" xml:space="preserve">
+    <value>僅使用強式名稱金鑰的公開金鑰公開簽署組件，並將組件標記為已簽署</value>
+  </data>
+  <data name="lexOutsideSixteenBitUnsigned" xml:space="preserve">
+    <value>這個數字已經超出 16 位元無正負號整數允許的範圍</value>
+  </data>
+  <data name="etProvidedAppliedTypeHadWrongName" xml:space="preserve">
+    <value>型別提供者 '{0}' 從 'ApplyStaticArguments' 傳回的型別無效。必須是名為 '{1}' 的型別，但傳回名為 '{2}' 的型別。</value>
+  </data>
+  <data name="abImplicitHeapAllocation" xml:space="preserve">
+    <value>可變動的本機 '{0}' 已隱含地配置為參考儲存格，因為關閉符號已將其擷取。此警告僅供參考，目的是要指出執行隱含配置的位置。</value>
+  </data>
+  <data name="parsParenFormIsForML" xml:space="preserve">
+    <value>在 F# 程式碼中，您可以使用 'expr.[expr]'。您可能需要類型註釋，來指示第一個運算式是陣列</value>
+  </data>
+  <data name="tcObjectConstructorsIllegalInInterface" xml:space="preserve">
+    <value>介面不能包含物件建構函式的定義</value>
+  </data>
+  <data name="optsInvalidSubSystemVersion" xml:space="preserve">
+    <value>'--subsystemversion' 的版本 '{0}' 無效。版本必須是 4.00 (含) 以上版本。</value>
+  </data>
+  <data name="tcNameArgumentsMustAppearLast" xml:space="preserve">
+    <value>具名引數必須出現在所有其他引數之後</value>
+  </data>
+  <data name="crefBoundVarUsedInSplice" xml:space="preserve">
+    <value>變數 '{0}' 雖括在引號中，卻做為接合運算式的一部分使用。這是不允許的作法，因為這樣可能會逸出其範圍。</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInEnum" xml:space="preserve">
+    <value>無法解決在這個位置或附近使用具有 'enum' 條件約束的泛型建構時造成的模稜兩可</value>
+  </data>
+  <data name="ilSignNoSignatureDirectory" xml:space="preserve">
+    <value>沒有簽章目錄</value>
+  </data>
+  <data name="parsUnexpectedOperatorForUnitOfMeasure" xml:space="preserve">
+    <value>測量單位運算式中未預期的中置運算子。合法的運算子為 '*'、'/' 和 '^'。</value>
+  </data>
+  <data name="typeInfoProperty" xml:space="preserve">
+    <value>屬性</value>
+  </data>
+  <data name="tcCannotInheritFromSealedType" xml:space="preserve">
+    <value>無法繼承封閉類型</value>
+  </data>
+  <data name="tcConstructIsAmbiguousInSequenceExpression" xml:space="preserve">
+    <value>這個建構是循序項運算式中模稜兩可的一部分。巢狀運算式可以使用 'let _ = (...)' 撰寫，巢狀順序則使用 'yield! seq {{... }}'。</value>
+  </data>
+  <data name="tcImplementsIStructuralEquatableExplicitly" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 明確實作了介面 'System.IStructuralEquatable'。請將 'CustomEquality' 屬性套用到該型別。</value>
+  </data>
+  <data name="parsMemberIllegalInObjectImplementation" xml:space="preserve">
+    <value>不允許在物件實作中使用這個成員</value>
+  </data>
+  <data name="impImportedAssemblyUsesNotPublicType" xml:space="preserve">
+    <value>匯入的組件使用類型 '{0}'，但該類型不是公用類型</value>
+  </data>
+  <data name="optsHelpBannerMisc" xml:space="preserve">
+    <value>- 其他 -</value>
+  </data>
+  <data name="tastUndefinedItemRefModuleNamespaceType" xml:space="preserve">
+    <value>來自編譯單位 '{1}' 的模組/命名空間 '{0}' 不包含命名空間、模組或類型 '{2}'</value>
+  </data>
+  <data name="fscRemotingError" xml:space="preserve">
+    <value>未使用常駐編譯服務，因為伺服器發生通訊問題。</value>
+  </data>
+  <data name="tcFieldValIllegalHere" xml:space="preserve">
+    <value>此處不允許欄位/val 宣告</value>
+  </data>
+  <data name="tcInvalidNewConstraint" xml:space="preserve">
+    <value>'new' 條件約束必須接受一個類型 'unit' 的引數，並傳回建構的類型</value>
+  </data>
+  <data name="optsResident" xml:space="preserve">
+    <value>使用常駐背景編譯服務改善編譯器的啟動時間。</value>
+  </data>
+  <data name="tcInvalidConstraint" xml:space="preserve">
+    <value>無效的條件約束</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationSaysNull" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作宣稱這個類型可以使用 null 作為表示法，但簽章未宣稱</value>
+  </data>
+  <data name="etErrorApplyingStaticArgumentsToMethod" xml:space="preserve">
+    <value>將靜態引數套用至所提供的方法時，發生錯誤</value>
+  </data>
+  <data name="optsResource" xml:space="preserve">
+    <value>嵌入指定的 Managed 資源</value>
+  </data>
+  <data name="tcCouldNotFindOffsetToStringData" xml:space="preserve">
+    <value>建置 'fixed' 運算式時，在參考中找不到方法 System.Runtime.CompilerServices.OffsetToStringData。</value>
+  </data>
+  <data name="tcMemberAndLocalClassBindingHaveSameName" xml:space="preserve">
+    <value>成員和區域類別繫結都有名稱 '{0}'</value>
+  </data>
+  <data name="tcBinaryOperatorRequiresVariable" xml:space="preserve">
+    <value>{0}' 之後必須是變數名稱。使用方式: {1}。</value>
+  </data>
+  <data name="tcTypeTestErased" xml:space="preserve">
+    <value>不允許這個含有提供之類型 '{0}' 的類型測試，因為這個提供的類型將在執行階段清除為 '{1}'。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationIsAbstract" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作是抽象類別，但簽章不是。請考慮將 [&lt;AbstractClass&gt;] 屬性新增至簽章。</value>
+  </data>
+  <data name="csArgumentLengthMismatch" xml:space="preserve">
+    <value>引數長度不符</value>
+  </data>
+  <data name="notAFunctionButMaybeDeclaration" xml:space="preserve">
+    <value>這個值不是函式，無法套用。您是不是忘記終止宣告了?</value>
+  </data>
+  <data name="typrelMemberCannotImplement" xml:space="preserve">
+    <value>成員 '{0}' 不可用來實作 '{1}'。需要的簽章是 '{2}'。</value>
+  </data>
+  <data name="chkMultipleGenericInterfaceInstantiations" xml:space="preserve">
+    <value>此類型會在不同的泛型具現化 '{0}' 及 '{1}' 中實作相同的介面。本版 F# 不允許此作法。</value>
+  </data>
+  <data name="fscKeyNameWarning" xml:space="preserve">
+    <value>選項 '--keycontainer' 會覆寫原始程式檔或加入的模組中指定的屬性 'System.Reflection.AssemblyNameAttribute'</value>
+  </data>
+  <data name="tcGlobalsSystemTypeNotFound" xml:space="preserve">
+    <value>需要系統類型 '{0}'，但參考的系統 DLL 均未包含此類型</value>
+  </data>
+  <data name="keywordDescriptionReturnBang" xml:space="preserve">
+    <value>用以指出在評估時提供內含計算運算式結果的計算運算式。</value>
+  </data>
+  <data name="memberOperatorDefinitionWithCurriedArguments" xml:space="preserve">
+    <value>中置運算子成員 '{0}' 有額外的局部調用引數。必須是 2 個引數的元組，例如，靜態成員 (+) (x,y) = ...</value>
+  </data>
+  <data name="tcMemberNotPermittedInInterfaceImplementation" xml:space="preserve">
+    <value>不允許在介面實作中使用這個成員</value>
+  </data>
+  <data name="memberOperatorDefinitionWithNonTripleArgument" xml:space="preserve">
+    <value>中置運算子成員 '{0}' 有 {1} 個初始引數。必須是 3 個引數的元組</value>
+  </data>
+  <data name="ilFieldHasOffsetForSequentialLayout" xml:space="preserve">
+    <value>FieldOffset 屬性僅能置於標記為 StructLayout(LayoutKind.Explicit) 類型的成員上</value>
+  </data>
+  <data name="tcConstructorCannotHaveTypeParameters" xml:space="preserve">
+    <value>建構函式不能有明確的類型參數。請考慮改用靜態建構方法。</value>
+  </data>
+  <data name="etPropertyHasGetterButNoCanRead" xml:space="preserve">
+    <value>提供之類型 '{1}' 上的屬性 '{0}' 具有 CanRead=false，但 GetGetMethod() 傳回了方法</value>
+  </data>
+  <data name="tcJoinMustUseSimplePattern" xml:space="preserve">
+    <value>在查詢中，'{0}' 必須使用簡單模式</value>
+  </data>
+  <data name="tcUnexpectedConstByteArray" xml:space="preserve">
+    <value>未預期的 Const_bytearray</value>
+  </data>
+  <data name="tlrUnexpectedTExpr" xml:space="preserve">
+    <value>未預期的 Expr.TyChoose</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileObjectMembers" xml:space="preserve">
+    <value>物件成員中不能以輸入結尾</value>
+  </data>
+  <data name="chkDuplicateMethodCurried" xml:space="preserve">
+    <value>方法 '{0}' 有局部調用引數，與類型 '{1}' 中另一個方法同名。具有局部調用引數的方法無法多載。請考慮使用接受元組引數的方法。</value>
+  </data>
+  <data name="fscBadAssemblyVersion" xml:space="preserve">
+    <value>{0} 指定的版本 '{1}'，但是此值無效，已被忽略。</value>
+  </data>
+  <data name="tcTypeParameterInvalidAsTypeConstructor" xml:space="preserve">
+    <value>型別參數不能作為型別建構函式使用</value>
+  </data>
+  <data name="ilMutableVariablesCannotEscapeMethod" xml:space="preserve">
+    <value>可變動的變數無法逸出其方法</value>
+  </data>
+  <data name="tcMeasureDeclarationsRequireStaticMembers" xml:space="preserve">
+    <value>測量宣告只能有靜態成員</value>
+  </data>
+  <data name="tcInvalidOperatorDefinition" xml:space="preserve">
+    <value>通常不應該重新定義 '{0}' 運算子。請考慮使用其他運算子名稱</value>
+  </data>
+  <data name="chkNoByrefAtThisPoint" xml:space="preserve">
+    <value>目前無法使用 ByRef 類型的值 '{0}'</value>
+  </data>
+  <data name="buildSearchDirectoryNotFound" xml:space="preserve">
+    <value>找不到搜尋目錄 '{0}'</value>
+  </data>
+  <data name="tcConstructIsAmbiguousInComputationExpression" xml:space="preserve">
+    <value>這個建構是計算運算式中模稜兩可的一部分。巢狀運算式可以使用 'let _ = (...)' 撰寫，巢狀計算則使用 'let! res = builder {{ ... }}'。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureDefinesButImplDoesNot" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章定義了 {2} '{3}'，但實作沒有 (或雖然定義了，但順序不同)</value>
+  </data>
+  <data name="typeInfoFullName" xml:space="preserve">
+    <value>完整名稱</value>
+  </data>
+  <data name="optsFullpaths" xml:space="preserve">
+    <value>輸出含完整路徑的訊息</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleFieldWasPresent" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作中有欄位 {2}，但簽章中沒有</value>
+  </data>
+  <data name="optsNoCopyFsharpCore" xml:space="preserve">
+    <value>不同時複製 FSharp.Core.dll 及所產生的二進位檔案</value>
+  </data>
+  <data name="csGenericConstructRequiresUnmanagedType" xml:space="preserve">
+    <value>泛型建構要求類型 '{0}' 必須是 Unmanaged 類型</value>
+  </data>
+  <data name="typrelExplicitImplementationOfEquals" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 有 'Object.Equals' 的明確實作。請考慮為 'Object.GetHashCode()' 實作對應的覆寫</value>
+  </data>
+  <data name="tcIllegalFormForExplicitTypeDeclaration" xml:space="preserve">
+    <value>建構函式的明確類型宣告必須採用 'ty1 * ... * tyN -&gt; resTy' 形式。可能必須在 'resTy' 周圍使用括號</value>
+  </data>
+  <data name="keywordDescriptionRec" xml:space="preserve">
+    <value>用以指出函式是遞迴的。</value>
+  </data>
+  <data name="keywordDescriptionVal" xml:space="preserve">
+    <value>在有限的情形下用於簽章中以指出值，或於類型中以宣告成員。</value>
+  </data>
+  <data name="keywordDescriptionUse" xml:space="preserve">
+    <value>用來對需要 Dispose 才能呼叫以釋放資源的值取代 let。</value>
+  </data>
+  <data name="keywordDescriptionTry" xml:space="preserve">
+    <value>用於引入可能會產生例外狀況的程式碼區塊。這會與 with 或 finally 並用。</value>
+  </data>
+  <data name="keywordDescriptionNew" xml:space="preserve">
+    <value>用以宣告、定義或叫用會建立或可建立物件的建構函式。也用於泛型參數條件約束，以指出類型必須有特定建構函式。</value>
+  </data>
+  <data name="keywordDescriptionNot" xml:space="preserve">
+    <value>實際上不是關鍵字。不過，組合的 not struct 可用作泛型參數條件約束。</value>
+  </data>
+  <data name="keywordDescriptionLet" xml:space="preserve">
+    <value>用以對值或函式建立名稱的關聯或繫結。</value>
+  </data>
+  <data name="keywordDescriptionFun" xml:space="preserve">
+    <value>用於 Lambda 運算式，也稱作匿名函式。</value>
+  </data>
+  <data name="keywordDescriptionFor" xml:space="preserve">
+    <value>用於重複的建構。</value>
+  </data>
+  <data name="keywordDescriptionEnd" xml:space="preserve">
+    <value>在類型定義及類型延伸模組中，指出成員定義區段的結尾。在詳細資訊語法中，用以指定開頭為 begin 關鍵字之程式碼區塊的結尾。</value>
+  </data>
+  <data name="chkGetterAndSetterHaveSamePropertyType" xml:space="preserve">
+    <value>屬性的 getter 和 setter 必須具有相同類型。屬性 '{0}' 的 getter 類型為 '{1}'，但 setter 類型為 '{2}'。</value>
+  </data>
+  <data name="tcInvalidTypeArgumentCount" xml:space="preserve">
+    <value>型別引數的數目不符: 提供了 '{0}'，但必須是 '{1}'。這可能與先前報告的錯誤有關。</value>
+  </data>
+  <data name="tcFieldRequiresName" xml:space="preserve">
+    <value>這個欄位需要名稱</value>
+  </data>
+  <data name="typeInfoGeneratedType" xml:space="preserve">
+    <value>產生的類型</value>
+  </data>
+  <data name="buildInvalidVersionString" xml:space="preserve">
+    <value>無效的版本字串 '{0}'</value>
+  </data>
+  <data name="tcInvalidTypeArgumentUsage" xml:space="preserve">
+    <value>此處不能指定類型引數</value>
+  </data>
+  <data name="lexOutsideNativeSigned" xml:space="preserve">
+    <value>這個數字已經超出有正負號原生整數允許的範圍</value>
+  </data>
+  <data name="tcTypeTestLossy" xml:space="preserve">
+    <value>這個類型測試或向下轉型會將提供的類型 '{0}' 清除為類型 '{1}'。</value>
+  </data>
+  <data name="parsInheritDeclarationsCannotHaveAsBindings" xml:space="preserve">
+    <value>'inherit' 宣告不能有 'as' 繫結。若要在覆寫方法時存取基底類別的成員，可以使用 'base.SomeMember' 語法，其中 'base' 是關鍵字。請移除這個 'as' 繫結。</value>
+  </data>
+  <data name="keywordDescriptionDelegate" xml:space="preserve">
+    <value>用以宣告委派。</value>
+  </data>
+  <data name="csMethodNotFound" xml:space="preserve">
+    <value>找不到方法或物件建構函式 '{0}'</value>
+  </data>
+  <data name="forBadWidth" xml:space="preserve">
+    <value>格式規範中寬度不正確</value>
+  </data>
+  <data name="tcAllowNullTypesMayOnlyInheritFromAllowNullTypes" xml:space="preserve">
+    <value>具 'AllowNullLiteral' 屬性的類型只能繼承自或實作允許使用 null 常值的類型</value>
+  </data>
+  <data name="tcStaticInitializerRequiresArgument" xml:space="preserve">
+    <value>靜態初始設定式需要引數</value>
+  </data>
+  <data name="tcSyntaxErrorUnexpectedQMark" xml:space="preserve">
+    <value>語法錯誤 - 未預期的 '?' 符號</value>
+  </data>
+  <data name="tcInvalidUseOfInterfaceType" xml:space="preserve">
+    <value>無效的介面類型使用方式</value>
+  </data>
+  <data name="parsSuccessivePatternsShouldBeSpacedOrTupled" xml:space="preserve">
+    <value>後續引數應該用空格分隔或採用 Tuple 形式</value>
+  </data>
+  <data name="csRequiredSignatureIs" xml:space="preserve">
+    <value>需要的簽章是 {0}</value>
+  </data>
+  <data name="elSysEnvExitDidntExit" xml:space="preserve">
+    <value>System.Environment.Exit 未結束</value>
+  </data>
+  <data name="tcStaticOptimizationConditionalsOnlyForFSharpLibrary" xml:space="preserve">
+    <value>靜態最佳化條件式只用於 F# 程式庫內</value>
+  </data>
+  <data name="arrayElementHasWrongType" xml:space="preserve">
+    <value>陣列建構函式運算式的所有項目都必須是同一種類型。此運算式應具備類型 '{0}'，但卻是類型 '{1}'。</value>
+  </data>
+  <data name="csTypeCannotBeResolvedAtCompileTime" xml:space="preserve">
+    <value>此處不能使用宣告的型別參數 '{0}'，因為型別參數無法於編譯時間解析</value>
+  </data>
+  <data name="buildInvalidAssemblyName" xml:space="preserve">
+    <value>'{0}' 不是有效的組件名稱</value>
+  </data>
+  <data name="tcInvalidActivePatternName" xml:space="preserve">
+    <value>這不是現用模式的有效名稱</value>
+  </data>
+  <data name="missingElseBranch" xml:space="preserve">
+    <value>'if' 運算式遺漏 'else' 分支。'then' 分支具有類型 '{0}'。因為 'if' 為運算式而非陳述式，所以請新增會傳回的值類型相同的 'else' 分支。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileTypeSignature" xml:space="preserve">
+    <value>類型簽章中不能以輸入結尾</value>
+  </data>
+  <data name="chkDuplicateMethod" xml:space="preserve">
+    <value>方法重複。方法 '{0}' 與類型 '{1}' 中另一個方法同名，且簽章也相同。</value>
+  </data>
+  <data name="typrelMethodIsOverconstrained" xml:space="preserve">
+    <value>這個方法在其類型參數中被過度限制</value>
+  </data>
+  <data name="patcMissingVariable" xml:space="preserve">
+    <value>遺漏變數 '{0}'</value>
+  </data>
+  <data name="parsInlineAssemblyCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允許在內嵌組譯程式碼類型上使用存取範圍修飾詞</value>
+  </data>
+  <data name="ilReflectedDefinitionsCannotUseSliceOperator" xml:space="preserve">
+    <value>反映的定義不能含有前置接合運算子 '%' 的用法</value>
+  </data>
+  <data name="tcInvalidUnitsOfMeasurePrefix" xml:space="preserve">
+    <value>測量單位不能做為類型的前置引數使用。請重寫成括在角括號中的後置引數。</value>
+  </data>
+  <data name="csStructConstraintInconsistent" xml:space="preserve">
+    <value>條件約束 'struct' 與 'not struct' 不一致</value>
+  </data>
+  <data name="tcLiteralDoesNotTakeArguments" xml:space="preserve">
+    <value>此常值模式不接受引數</value>
+  </data>
+  <data name="parsInvalidDeclarationSyntax" xml:space="preserve">
+    <value>無效的宣告語法</value>
+  </data>
+  <data name="csTypesDoNotSupportOperator" xml:space="preserve">
+    <value>類型 '{0}' 都不支援運算子 '{1}'</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedDelegate" xml:space="preserve">
+    <value>委派類型永遠是封閉的</value>
+  </data>
+  <data name="parsExpectedExpressionAfterToken" xml:space="preserve">
+    <value>在這個點之後必須有運算式</value>
+  </data>
+  <data name="chkTypeLessAccessibleThanType" xml:space="preserve">
+    <value>類型 '{0}' 比使用這個類型的值、成員或類型 '{1}' 更不容易存取。</value>
+  </data>
+  <data name="optsDeterministic" xml:space="preserve">
+    <value>產生確定性組件 (包括模組版本 GUID 及時間戳記)</value>
+  </data>
+  <data name="etUnexpectedNullFromProvidedTypeMember" xml:space="preserve">
+    <value>提供之類型 '{0}' 成員 '{1}' 中有未預期的 'null' 傳回值</value>
+  </data>
+  <data name="tcCouldNotFindIDisposable" xml:space="preserve">
+    <value>找不到 IDisposable 上的 Dispose，或已被多載</value>
+  </data>
+  <data name="buildInvalidPrivacy" xml:space="preserve">
+    <value>Managed 資源的無法辨識隱私設定 '{0}'，有效的選項是 'public' 和 'private'</value>
+  </data>
+  <data name="optValueMarkedInlineCouldNotBeInlined" xml:space="preserve">
+    <value>無法內嵌標記為 'inline' 的值</value>
+  </data>
+  <data name="csGenericConstructRequiresPublicDefaultConstructor" xml:space="preserve">
+    <value>泛型建構要求類型 '{0}' 必須有公用預設建構函式</value>
+  </data>
+  <data name="csMemberIsNotInstance" xml:space="preserve">
+    <value>{0} 不是執行個體成員</value>
+  </data>
+  <data name="crefQuotationsCantContainThisConstant" xml:space="preserve">
+    <value>引號內不能包含這種常數</value>
+  </data>
+  <data name="etIncorrectParameterExpression" xml:space="preserve">
+    <value>型別提供者 '{0}' 在 ParameterExpression 中使用的參數無效: {1}</value>
+  </data>
+  <data name="tcNonUniformMemberUse" xml:space="preserve">
+    <value>在這個程式點之前，泛型成員 '{0}' 已用於非統一具現化。請考慮重新排列此成員，以便讓此成員最先出現。或者，明確指定此成員的完整型別，包括引數型別、傳回型別和任何其他泛型參數和條件約束。</value>
+  </data>
+  <data name="chkCantStoreByrefValue" xml:space="preserve">
+    <value>類型將儲存 ByRef 類型的值。這是 Common IL 所不允許的作法。</value>
+  </data>
+  <data name="fscNoImplementationFiles" xml:space="preserve">
+    <value>未指定實作檔案</value>
+  </data>
+  <data name="ValueNotContainedMutabilityInlineFlagsDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n內嵌旗標不同</value>
+  </data>
+  <data name="tcInvalidNamespaceModuleTypeUnionName" xml:space="preserve">
+    <value>無效的命名空間、模組、類型或聯集名稱</value>
+  </data>
+  <data name="tcTypeAbbreviationsMayNotHaveMembers" xml:space="preserve">
+    <value>類型縮寫不能有成員</value>
+  </data>
+  <data name="tcRecImplied" xml:space="preserve">
+    <value>此模組上的 'rec' 是由外部 'rec' 宣告所默示，已略過</value>
+  </data>
+  <data name="tcTypeIsNotARecordTypeNeedConstructor" xml:space="preserve">
+    <value>這種類型不是記錄類型。類別和結構類型的值必須呼叫物件建構函式來建立。</value>
+  </data>
+  <data name="csExpectTypeWithOperatorButGivenFunction" xml:space="preserve">
+    <value>必須是支援運算子 '{0}' 的類型，但提供的卻是函式類型。您可能遺漏函式的引數。</value>
+  </data>
+  <data name="tcNamespaceCannotContainValues" xml:space="preserve">
+    <value>命名空間不能包含值。請考慮使用模組來存放值宣告。</value>
+  </data>
+  <data name="noInvokeMethodsFound" xml:space="preserve">
+    <value>找不到委派類型的 Invoke 方法</value>
+  </data>
+  <data name="parsIncompleteIf" xml:space="preserve">
+    <value>不完整的條件式。必須是 'if &lt;expr&gt; then &lt;expr&gt;' 或 'if &lt;expr&gt; then &lt;expr&gt; else &lt;expr&gt;'。</value>
+  </data>
+  <data name="tcCustomOperationMayNotBeUsedHere" xml:space="preserve">
+    <value>自訂作業不能與這個計算運算式內的 'use'、'try/with'、'try/finally'、'if/then/else' 或 'match' 運算子一起使用</value>
+  </data>
+  <data name="augStructCompNeedsStructEquality" xml:space="preserve">
+    <value>'StructuralComparison' 屬性必須搭配 'StructuralEquality' 屬性一起使用</value>
+  </data>
+  <data name="parsInvalidUseOfRec" xml:space="preserve">
+    <value>不當使用 'rec' 關鍵字</value>
+  </data>
+  <data name="tcEnumerationsMayNotHaveMembers" xml:space="preserve">
+    <value>列舉值不能有成員</value>
+  </data>
+  <data name="undefinedNameRecordLabelOrNamespace" xml:space="preserve">
+    <value>未定義記錄標籤或命名空間 '{0}'。</value>
+  </data>
+  <data name="crefQuotationsCantContainGenericExprs" xml:space="preserve">
+    <value>引號內不能使用泛型運算式</value>
+  </data>
+  <data name="optsDCLONoDescription" xml:space="preserve">
+    <value>命令列選項 '{0}' 已被取代</value>
+  </data>
+  <data name="keywordDescriptionLetBang" xml:space="preserve">
+    <value>用於非同步工作流程，以將名稱繫結到非同步計算的結果，或在其他計算運算式中，用於將名稱繫結到屬於計算類型的結果。</value>
+  </data>
+  <data name="typeInfoCallsWord" xml:space="preserve">
+    <value>呼叫</value>
+  </data>
+  <data name="lexHashElseNoMatchingIf" xml:space="preserve">
+    <value>#else 沒有對應的 #if</value>
+  </data>
+  <data name="optsClirootDescription" xml:space="preserve">
+    <value>用來覆寫編譯器尋找 mscorlib.dll 和 Framework 元件的位置</value>
+  </data>
+  <data name="csMemberSignatureMismatchArityType" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 接受 {1} 個型別引數，但此處指定了 {2} 個。需要的簽章是 '{3}'。</value>
+  </data>
+  <data name="itemNotFoundDuringDynamicCodeGen" xml:space="preserve">
+    <value>組件 '{2}' 中找不到 {0} '{1}'。可能的原因為版本不相容。您可能需要明確參考此組件的正確版本，以允許所有參考的元件使用正確的版本。</value>
+  </data>
+  <data name="tcIllegalSyntaxInTypeExpression" xml:space="preserve">
+    <value>類型運算式中不合法的語法</value>
+  </data>
+  <data name="lexOutsideIntegerRange" xml:space="preserve">
+    <value>這個數字已經超出這個整數類型允許的範圍</value>
+  </data>
+  <data name="activePatternIdentIsNotFunctionTyped" xml:space="preserve">
+    <value>現用模式 '{0}' 不是函式</value>
+  </data>
+  <data name="chkGetterSetterDoNotMatchAbstract" xml:space="preserve">
+    <value>類型為 '{1}' 之屬性 '{0}' 的 getter 與 setter 不匹配。若其中一個為抽象，另一個也必須為抽象。</value>
+  </data>
+  <data name="tcNoIntegerForLoopInQuery" xml:space="preserve">
+    <value>在查詢中，請針對涵蓋的整數使用 'for x in n .. m do ...' 格式</value>
+  </data>
+  <data name="parsEofInTripleQuoteString" xml:space="preserve">
+    <value>三引號字串中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileDefinition" xml:space="preserve">
+    <value>值、函式或成員定義中不能以輸入結尾</value>
+  </data>
+  <data name="csCtorSignatureMismatchArityProp" xml:space="preserve">
+    <value>物件建構函式 '{0}' 要用到 {1} 個引數，但此處提供了 {2} 個引數。需要的簽章是 '{3}'。如果有部分引數是要為屬性指派值，請考慮以逗號 (',') 分隔這些引數。</value>
+  </data>
+  <data name="tcCallerInfoWrongType" xml:space="preserve">
+    <value>'{0}' 必須套用至類型 '{1}' 的引數，但卻套用至類型 '{2}' 的引數</value>
+  </data>
+  <data name="tcCannotCreateExtensionOfSealedType" xml:space="preserve">
+    <value>無法建立封閉類型的擴充</value>
+  </data>
+  <data name="parsNoMatchingInForLet" xml:space="preserve">
+    <value>找不到這個 'let' 的對應 'in'</value>
+  </data>
+  <data name="parsIgnoreVisibilityOnModuleAbbreviationAlwaysPrivate" xml:space="preserve">
+    <value>模組縮寫不得包含 '{0}' 可視性屬性。模組縮寫一律為私用。</value>
+  </data>
+  <data name="augNoCompCantImpIComp" xml:space="preserve">
+    <value>具 'NoComparison' 屬性的類型通常不應該有 'System.IComparable'、'System.IComparable&lt;_&gt;' 或 'System.Collections.IStructuralComparable' 的明確實作。如果是為了互通性，請停用這個警告</value>
+  </data>
+  <data name="tcConstructRequiresComputationExpressions" xml:space="preserve">
+    <value>這個建構只能用在計算運算式內。若要從一般函式傳回值，只要撰寫沒有的 'return' 運算式。</value>
+  </data>
+  <data name="parsMutableOnAutoPropertyShouldBeGetSet" xml:space="preserve">
+    <value>屬性定義不可以宣告為可變動。若要表示這個屬性可以設定，請使用 'member val PropertyName = expr with get,set'。</value>
+  </data>
+  <data name="optsHelpBannerAdvanced" xml:space="preserve">
+    <value>- 進階 -</value>
+  </data>
+  <data name="FieldNotContainedStaticsDiffer" xml:space="preserve">
+    <value>模組包含欄位\n    {0}    \n但它的簽章卻指定\n    {1}    \n'static' 修飾詞不同</value>
+  </data>
+  <data name="chkUnionCaseCompiledForm" xml:space="preserve">
+    <value>聯集的編譯形式</value>
+  </data>
+  <data name="buildAssemblyResolutionFailed" xml:space="preserve">
+    <value>組件解析在這個位置或附近失敗</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleFieldOrderDiffer" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章與實作中的欄位順序不同</value>
+  </data>
+  <data name="tcAbstractMembersIllegalInAugmentation" xml:space="preserve">
+    <value>不允許在增強指定中使用抽象成員，必須將它們定義為類型自身的一部分</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileThen" xml:space="preserve">
+    <value>條件運算式的 'then' 分支中不能以輸入結尾。必須是 'if &lt;expr&gt; then &lt;expr&gt;' 或 'if &lt;expr&gt; then &lt;expr&gt; else &lt;expr&gt;'。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileWith" xml:space="preserve">
+    <value>'match' 或 'try' 運算式中不能以輸入結尾</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileElse" xml:space="preserve">
+    <value>條件運算式的 'else' 分支中不能以輸入結尾。必須是 'if &lt;expr&gt; then &lt;expr&gt;' 或 'if &lt;expr&gt; then &lt;expr&gt; else &lt;expr&gt;'。</value>
+  </data>
+  <data name="tcNoArgumentsForRecordValue" xml:space="preserve">
+    <value>建構記錄值時未指定任何引數</value>
+  </data>
+  <data name="lexhlpIdentifiersContainingAtSymbolReserved" xml:space="preserve">
+    <value>包含 '@' 的識別碼已保留供 F# 程式碼產生使用</value>
+  </data>
+  <data name="tcLookupMayNotBeUsedHere" xml:space="preserve">
+    <value>此處不能使用這個查詢</value>
+  </data>
+  <data name="tcMembersThatExtendInterfaceMustBePlacedInSeparateModule" xml:space="preserve">
+    <value>擴充介面、委派或列舉類型的成員必須放在模組中，與類型的定義分開。這個模組必須有 AutoOpen 屬性，或是由用戶端程式碼明確開啟，來將擴充成員帶入範圍內。</value>
+  </data>
+  <data name="tcNoInterfaceImplementationForConstructionExpression" xml:space="preserve">
+    <value>不能在建構運算式中指定介面實作</value>
+  </data>
+  <data name="tcNotSufficientlyGenericBecauseOfScope" xml:space="preserve">
+    <value>這個程式碼的一般程度不足。無法一般化類型變數 {0}，因為它會逸出其範圍。</value>
+  </data>
+  <data name="parsEofInIfOcaml" xml:space="preserve">
+    <value>IF-OCAML 區段中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="tcOnlyClassesCanHaveAbstract" xml:space="preserve">
+    <value>只能為類別指定 'AbstractClass' 屬性</value>
+  </data>
+  <data name="chkSystemVoidOnlyInTypeof" xml:space="preserve">
+    <value>'System.Void' 在 F# 中只能以 'typeof&lt;System.Void&gt;' 形式使用</value>
+  </data>
+  <data name="parsMultiArgumentGenericTypeFormDeprecated" xml:space="preserve">
+    <value>F# 程式碼中不使用語法 '(typ,...,typ) ident'。請考慮改用 'ident&lt;typ,...,typ&gt;'</value>
+  </data>
+  <data name="tcStructTypesCannotContainAbstractMembers" xml:space="preserve">
+    <value>結構類型不能包含抽象成員</value>
+  </data>
+  <data name="tcNewMemberHidesAbstractMemberWithSuffix" xml:space="preserve">
+    <value>這個新成員在清除元組、函式、測量單位和/或提供的類型後會隱藏抽象成員 '{0}'。請重新命名成員或改用 'override'。</value>
+  </data>
+  <data name="tastUnexpectedDecodeOfInterfaceDataVersionAttribute" xml:space="preserve">
+    <value>未預期的 InterfaceDataVersionAttribute 解碼</value>
+  </data>
+  <data name="lexfltSeparatorTokensOfPatternMatchMisaligned" xml:space="preserve">
+    <value>用以分隔這個模式比對之規則的 '|' 語彙基元有一欄未對齊。請考慮重新對齊程式碼或使用進一步的縮排。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityArityNotInferred" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n未針對這個值推斷 Arity</value>
+  </data>
+  <data name="tcUnexpectedPropertyInSyntaxTree" xml:space="preserve">
+    <value>語法樹狀目錄中有未預期的來源層級屬性規格</value>
+  </data>
+  <data name="tcExtraneousFieldsGivenValues" xml:space="preserve">
+    <value>已經為沒有直接關聯的欄位指定值</value>
+  </data>
+  <data name="keywordDescriptionDowncast" xml:space="preserve">
+    <value>用以將類型轉換為繼承鏈結中較低的類型。</value>
+  </data>
+  <data name="tupleRequiredInAbstractMethod" xml:space="preserve">
+    <value>\n有一或多個引數需要元組類型。請考慮用額外的括弧括住提供的引數，或檢閱介面定義。</value>
+  </data>
+  <data name="tcUnexpectedBigRationalConstant" xml:space="preserve">
+    <value>未預期的大型有理數常數</value>
+  </data>
+  <data name="ilSignBadImageFormat" xml:space="preserve">
+    <value>錯誤的影像格式</value>
+  </data>
+  <data name="etEmptyNamespaceNotAllowed" xml:space="preserve">
+    <value>在型別提供者 '{0}' 中找到空白命名空間。請將 'null' 用於全域命名空間。</value>
+  </data>
+  <data name="ModuleContainsConstructorButNamesDiffer" xml:space="preserve">
+    <value>模組包含建構函式\n    {0}    \n但它的簽章卻指定\n    {1}    \n名稱不同</value>
+  </data>
+  <data name="customOperationTextLikeJoin" xml:space="preserve">
+    <value>{0} var in collection {1} (outerKey = innerKey)。注意: '{2}' 之後須有括號</value>
+  </data>
+  <data name="parsInOrEqualExpected" xml:space="preserve">
+    <value>必須是 'in' 或 '='</value>
+  </data>
+  <data name="tastUnexpectedDecodeOfInternalsVisibleToAttribute" xml:space="preserve">
+    <value>未預期的 InternalsVisibleToAttribute 解碼</value>
+  </data>
+  <data name="ppparsIncompleteExpression" xml:space="preserve">
+    <value>前置處理器運算式不完整</value>
+  </data>
+  <data name="tcExprUndelayed" xml:space="preserve">
+    <value>TcExprUndelayed: 已延遲</value>
+  </data>
+  <data name="etDirectReferenceToGeneratedTypeNotAllowed" xml:space="preserve">
+    <value>不允許所產生型別 '{0}' 的直接參考。請改用型別定義，例如 'type TypeAlias = &lt;path&gt;'。這表示型別提供者會將產生的型別加入您的組件。</value>
+  </data>
+  <data name="lexWrongNestedHashEndif" xml:space="preserve">
+    <value>語法錯誤。錯誤的巢狀 #endif，它前面必須有語彙基元。</value>
+  </data>
+  <data name="optsWarnOn" xml:space="preserve">
+    <value>啟用預設可能關閉的特定警告</value>
+  </data>
+  <data name="tcNamedActivePattern" xml:space="preserve">
+    <value>{0} 是現用模式，無法視為具名欄位的差別聯集。</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedRecord" xml:space="preserve">
+    <value>記錄類型永遠是封閉的</value>
+  </data>
+  <data name="tcInvalidSignatureForSet" xml:space="preserve">
+    <value>無效的集合成員簽章</value>
+  </data>
+  <data name="tcNoWhileInQuery" xml:space="preserve">
+    <value>'while' 運算式不可用於查詢中</value>
+  </data>
+  <data name="lexInvalidCharLiteral" xml:space="preserve">
+    <value>這不是有效的字元常值</value>
+  </data>
+  <data name="tcReturnValuesCannotHaveNames" xml:space="preserve">
+    <value>傳回值不能有名稱</value>
+  </data>
+  <data name="tcCannotInheritFromErasedType" xml:space="preserve">
+    <value>無法繼承自清除的提供類型</value>
+  </data>
+  <data name="etErasedTypeUsedInGeneration" xml:space="preserve">
+    <value>提供者 '{0}' 在一組所產生型別的內容中，傳回非產生的型別 '{1}'。請考慮調整型別提供者以便僅傳回產生的型別。</value>
+  </data>
+  <data name="tcInvalidEnumConstraint" xml:space="preserve">
+    <value>'enum' 條件約束必須採用 'enum&lt;type&gt;' 形式</value>
+  </data>
+  <data name="ValueNotContainedMutabilityAbstractsDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n其中一個是抽象的，另一個卻不是</value>
+  </data>
+  <data name="tcInvalidMethodNameForEquality" xml:space="preserve">
+    <value>名稱 '({0})' 不應該做為成員名稱使用。若要定義類型的相等語意，請覆寫 'Object.Equals' 成員。如果要定義靜態成員以用於其他 CLI 語言，請改用名稱 '{1}'。</value>
+  </data>
+  <data name="lexOusideDecimal" xml:space="preserve">
+    <value>這個數字已經超出十進位常值允許的範圍</value>
+  </data>
+  <data name="etTooManyStaticParameters" xml:space="preserve">
+    <value>靜態參數太多。最多必須有 {0} 個參數，但收到 {1} 個未命名參數及 {2} 個具名參數。</value>
+  </data>
+  <data name="parsNoEqualShouldFollowNamespace" xml:space="preserve">
+    <value>不得將 '=' 符號跟在 'namespace' 宣告之後</value>
+  </data>
+  <data name="tcPredefinedTypeCannotBeUsedAsSuperType" xml:space="preserve">
+    <value>類型 System.ValueType、System.Enum、System.Delegate、System.MulticastDelegate 和 System.Array 不能做為物件運算式或類別中的超級類型使用</value>
+  </data>
+  <data name="buildMultipleToplevelModules" xml:space="preserve">
+    <value>這個檔案包含 'module SomeNamespace.SomeModule' 形式的多個宣告。一個檔案只允許一個這種形式的宣告。請將檔案變更成使用初始命名空間宣告，和/或使用 'module ModuleName = ...' 來定義模組。</value>
+  </data>
+  <data name="tcCannotInheritFromInterfaceType" xml:space="preserve">
+    <value>無法繼承自介面類型。請改用 interface ... with。</value>
+  </data>
+  <data name="optsCrossoptimize" xml:space="preserve">
+    <value>啟用或停用跨模組最佳化</value>
+  </data>
+  <data name="FieldNotContainedAccessibilitiesDiffer" xml:space="preserve">
+    <value>模組包含欄位\n    {0}    \n但它的簽章卻指定\n    {1}    \n簽章中指定的存取範圍大於實作中指定的存取範圍</value>
+  </data>
+  <data name="keywordDescriptionSelect" xml:space="preserve">
+    <value>用於查詢運算式，以指定要擷取的欄位或資料行。請注意這是內容關鍵字，表示這實際上不是保留字，而只會在適當內容中以關鍵字形式運作。</value>
+  </data>
+  <data name="chkNoAddressFieldAtThisPoint" xml:space="preserve">
+    <value>目前無法使用欄位 '{0}' 的位址</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInUnmanaged" xml:space="preserve">
+    <value>無法解決在這個位置或附近使用具有 'unmanaged' 條件約束的泛型建構時造成的模稜兩可</value>
+  </data>
+  <data name="tcThisTypeMayNotHaveACLIMutableAttribute" xml:space="preserve">
+    <value>這個類型定義不能有 'CLIMutable' 屬性。只有記錄類型可以有這個屬性。</value>
+  </data>
+  <data name="lexOutsideSixtyFourBitSigned" xml:space="preserve">
+    <value>這個數字已經超出 64 位元有正負號整數允許的範圍</value>
+  </data>
+  <data name="parsEnumFieldsCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允許在列舉欄位上使用存取範圍修飾詞</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleNumbersDiffer" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為 {2} 數目不同</value>
+  </data>
+  <data name="tcInvalidTypeExtension" xml:space="preserve">
+    <value>無效的類型擴充</value>
+  </data>
+  <data name="buildProblemWithFilename" xml:space="preserve">
+    <value>檔名 '{0}' 有問題: {1}</value>
+  </data>
+  <data name="lexHashEndifRequiredForElse" xml:space="preserve">
+    <value>#else 需要 #endif</value>
+  </data>
+  <data name="keywordDescriptionStruct" xml:space="preserve">
+    <value>用以宣告結構類型。也會用在泛型參數條件約束中。用於模組定義中的 OCaml 相容性。</value>
+  </data>
+  <data name="keywordDescriptionStatic" xml:space="preserve">
+    <value>用以指出不需要類型執行個體即可呼叫的方法或屬性，或在所有類型執行個體間共用的值成員。</value>
+  </data>
+  <data name="tcEntryPointAttributeRequiresFunctionInModule" xml:space="preserve">
+    <value>'EntryPointAttribute' 屬性不能用在模組的函式定義上</value>
+  </data>
+  <data name="DefaultParameterValueNotAppropriateForArgument" xml:space="preserve">
+    <value>預設值並沒有與引數相同的類型。將略過 DefaultParameterValue 屬性及任何 Optional 屬性。注意: 'null' 需要加上正確的加註類型，例如 'DefaultParameterValue(null:obj)'。</value>
+  </data>
+  <data name="csIncorrectGenericInstantiation" xml:space="preserve">
+    <value>泛型具現化錯誤。沒有名稱為 '{1}' 的 {0} 成員接受 {2} 個泛型引數。</value>
+  </data>
+  <data name="tcNamespaceCannotContainExtensionMembers" xml:space="preserve">
+    <value>命名空間不能包含擴充成員，除非在已定義類型的相同檔案和命名空間宣告群組內。請考慮使用模組來保留擴充成員的宣告。</value>
+  </data>
+  <data name="keywordDescriptionReturn" xml:space="preserve">
+    <value>用以指出要作為計算運算式結果提供的值。</value>
+  </data>
+  <data name="valueIsNotAccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取值 '{0}'</value>
+  </data>
+  <data name="lexfltIncorrentIndentationOfIn" xml:space="preserve">
+    <value>這個 'in' 語彙基元的縮排就對應的 'let' 而言並不正確</value>
+  </data>
+  <data name="impTypeRequiredUnavailable" xml:space="preserve">
+    <value>此處需要類型 '{0}'，但無法取得。您必須加入組件 '{1}' 的參考。</value>
+  </data>
+  <data name="tcOperatorDoesntAcceptInto" xml:space="preserve">
+    <value>運算子 '{0}' 不接受使用 'into'</value>
+  </data>
+  <data name="csMemberIsNotStatic" xml:space="preserve">
+    <value>{0} 不是靜態成員</value>
+  </data>
+  <data name="tcAnonymousTypeInvalidInDeclaration" xml:space="preserve">
+    <value>不允許在這個宣告中使用匿名的類型變數</value>
+  </data>
+  <data name="tcRecordFieldInconsistentTypes" xml:space="preserve">
+    <value>這個記錄包含來自不一致類型的欄位</value>
+  </data>
+  <data name="tcTypeDefinitionsWithImplicitConstructionMustHaveLocalBindingsBeforeMembers" xml:space="preserve">
+    <value>'let' 和 'do' 繫結必須在類型定義中的成員和介面定義的前面</value>
+  </data>
+  <data name="buildDirectivesInModulesAreIgnored" xml:space="preserve">
+    <value>已忽略模組內的指示詞</value>
+  </data>
+  <data name="lexOutsideSixteenBitSigned" xml:space="preserve">
+    <value>這個數字已經超出 16 位元有正負號整數允許的範圍</value>
+  </data>
+  <data name="optsProblemWithCodepage" xml:space="preserve">
+    <value>字碼頁 '{0}' 有問題: {1}</value>
+  </data>
+  <data name="tcAttributeExpressionsMustBeConstructorCalls" xml:space="preserve">
+    <value>屬性運算式必須是對物件建構函式的呼叫</value>
+  </data>
+  <data name="tcDelegateConstructorMustBePassed" xml:space="preserve">
+    <value>必須傳遞單一函式值給委派建構函式</value>
+  </data>
+  <data name="csIndexArgumentMismatch" xml:space="preserve">
+    <value>這個索引子需要 {0} 個引數，但此處指定了 {1} 個</value>
+  </data>
+  <data name="ifExpression" xml:space="preserve">
+    <value>'if' 運算式必須具備類型 '{0}'，才能滿足內容類型的需求。其目前的類型為 '{1}'。</value>
+  </data>
+  <data name="tcAbbreviatedTypesCannotBeSealed" xml:space="preserve">
+    <value>不能為縮寫的類型指定 'Sealed' 屬性</value>
+  </data>
+  <data name="optsOptimize" xml:space="preserve">
+    <value>啟用最佳化 (簡短形式: -O)</value>
+  </data>
+  <data name="tcOverrideArityMismatch" xml:space="preserve">
+    <value>這項覆寫會針對對應的抽象成員，採用不同數目的引數。找到下列抽象成員: {0}</value>
+  </data>
+  <data name="parsUnmatchedBracket" xml:space="preserve">
+    <value>無對應的 '['</value>
+  </data>
+  <data name="tcLiteralCannotBeInline" xml:space="preserve">
+    <value>常值不能標記為 'inline'</value>
+  </data>
+  <data name="augNoEqualityNeedsNoComparison" xml:space="preserve">
+    <value>'NoEquality' 屬性必須搭配 'NoComparison' 屬性一起使用</value>
+  </data>
+  <data name="crefQuotationsCantRequireByref" xml:space="preserve">
+    <value>引號內不能包含需要 ByRef 指標的運算式</value>
+  </data>
+  <data name="tcUnexpectedSlashInType" xml:space="preserve">
+    <value>類型中有未預期的 /</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedAssemblyCode" xml:space="preserve">
+    <value>組譯程式碼類型永遠是封閉的</value>
+  </data>
+  <data name="buildNoInputsSpecified" xml:space="preserve">
+    <value>未指定輸入</value>
+  </data>
+  <data name="tcNonZeroConstantCannotHaveGenericUnit" xml:space="preserve">
+    <value>非零常數不能有泛型單位。請將泛型的零寫成 0.0&lt;_&gt;。</value>
+  </data>
+  <data name="parsInvalidProperty" xml:space="preserve">
+    <value>無效的屬性 getter 或 setter</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureDeclaresDiffer" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章宣告 {2}，而實作則宣告 {3}</value>
+  </data>
+  <data name="etIllegalCharactersInNamespaceName" xml:space="preserve">
+    <value>提供的命名空間名稱 '{1}' 中不允許使用字元 '{0}'</value>
+  </data>
+  <data name="buildInvalidHashIDirective" xml:space="preserve">
+    <value>無效的指示詞。必須是 '#I \"&lt;path&gt;\"'。</value>
+  </data>
+  <data name="lexOutsideThirtyTwoBitUnsigned" xml:space="preserve">
+    <value>這個數字已經超出 32 位元無正負號整數允許的範圍</value>
+  </data>
+  <data name="chkPropertySameNameMethod" xml:space="preserve">
+    <value>屬性 '{0}' 與類型 '{1}' 中的方法同名。</value>
+  </data>
+  <data name="typeInfoEvent" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="typeInfoField" xml:space="preserve">
+    <value>欄位</value>
+  </data>
+  <data name="tastRecursiveValuesMayNotBeInConstructionOfTuple" xml:space="preserve">
+    <value>遞迴定義的值不能直接顯示為遞迴繫結內元組值的一部分建構</value>
+  </data>
+  <data name="optsDCLOHtmlDoc" xml:space="preserve">
+    <value>命令列選項 '{0}' 已被取代。HTML 文件產生現在是 F# Power Pack 的一部分，會透過工具 FsHtmlDoc.exe 進行。</value>
+  </data>
+  <data name="tcAttributesAreNotPermittedOnLetBindings" xml:space="preserve">
+    <value>不允許在運算式的 'let' 繫結上使用屬性</value>
+  </data>
+  <data name="ValueNotContainedMutabilityParameterCountsDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但其簽章卻指定\n    {2}    \n個別的型別參數計數不同</value>
+  </data>
+  <data name="tcMemberIsNotSufficientlyGeneric" xml:space="preserve">
+    <value>這個成員的一般程度不足</value>
+  </data>
+  <data name="keywordDescriptionTrueFalse" xml:space="preserve">
+    <value>用作布林值常數。</value>
+  </data>
+  <data name="crefQuotationsCantContainDescendingForLoops" xml:space="preserve">
+    <value>引號內不能包含迴圈的遞減</value>
+  </data>
+  <data name="optsBaseaddress" xml:space="preserve">
+    <value>要建置程式庫的基底位址</value>
+  </data>
+  <data name="buildProblemReadingAssembly" xml:space="preserve">
+    <value>讀取組件 '{0}' 時發生問題: {1}</value>
+  </data>
+  <data name="etNullMember" xml:space="preserve">
+    <value>提供的類型 '{0}' 傳回 null 成員</value>
+  </data>
+  <data name="impReferencedTypeCouldNotBeFoundInAssembly" xml:space="preserve">
+    <value>發現組件 '{1}' 中類型 '{0}' 的參考，但在該組件中找不到該類型</value>
+  </data>
+  <data name="tcGenericParameterHasBeenConstrained" xml:space="preserve">
+    <value>泛型型別參數的使用方式導致它始終受限為 '{0}'</value>
+  </data>
+  <data name="ValueNotContainedMutabilityOverridesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n其中一個標記為覆寫，另一個卻不是</value>
+  </data>
+  <data name="tcExpressionCountMisMatch" xml:space="preserve">
+    <value>必須是 {0} 運算式，卻得到 {1}</value>
+  </data>
+  <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
+    <value>這個類型擴充的宣告型別參數不符合原始類型 '{0}' 的宣告型別參數</value>
+  </data>
+  <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
+    <value>至少有一個覆寫未正確實作對應的抽象成員</value>
+  </data>
+  <data name="fscAssemblyVersionAttributeIgnored" xml:space="preserve">
+    <value>忽略 'AssemblyVersionAttribute'，因為已經使用命令列選項指定了版本</value>
+  </data>
+  <data name="tcDefaultValueAttributeRequiresVal" xml:space="preserve">
+    <value>'DefaultValue' 屬性只能用在 'val' 宣告上</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedStruct" xml:space="preserve">
+    <value>結構類型永遠是封閉的</value>
+  </data>
+  <data name="tcTypesCannotInheritFromMultipleConcreteTypes" xml:space="preserve">
+    <value>類型不能繼承自多個具象類型</value>
+  </data>
+  <data name="tcUnexpectedTypeArguments" xml:space="preserve">
+    <value>未預期的類型引數</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleMissingInterface" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章要求類型必須支援介面 {2}，但這個介面尚未實作</value>
+  </data>
+  <data name="optsHelpBannerCodeGen" xml:space="preserve">
+    <value>- 程式碼產生 -</value>
+  </data>
+  <data name="tcUnexpectedConstUint16Array" xml:space="preserve">
+    <value>未預期的 Const_uint16array</value>
+  </data>
+  <data name="tcMemberUsedInInvalidWay" xml:space="preserve">
+    <value>成員 '{0}' 的使用方式無效。系統推斷 '{1}' 在 '{2}' 的定義之前已經使用過，這是無效的向前參考。</value>
+  </data>
+  <data name="descriptionWordIs" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="tcUnsupportedAttribute" xml:space="preserve">
+    <value>這個屬性不能用在這個版本的 F# 中</value>
+  </data>
+  <data name="tcAttributesInvalidInPatterns" xml:space="preserve">
+    <value>不允許在模式內使用屬性</value>
+  </data>
+  <data name="tcCannotOverrideSealedMethod" xml:space="preserve">
+    <value>無法覆寫繼承的成員 '{0}'，因為它已密封</value>
+  </data>
+  <data name="tcTypeHasNoNestedTypes" xml:space="preserve">
+    <value>這種類型沒有巢狀類型</value>
+  </data>
+  <data name="buildUnexpectedFileNameCharacter" xml:space="preserve">
+    <value>檔名 '{0}' 包含無效的字元 '{1}'</value>
+  </data>
+  <data name="undefinedNameFieldConstructorOrMember" xml:space="preserve">
+    <value>未定義欄位、建構函式或成員 '{0}'。</value>
+  </data>
+  <data name="chkReflectedDefCantSplice" xml:space="preserve">
+    <value>[&lt;ReflectedDefinition&gt;] 字詞不能使用前置接合運算子 '%'</value>
+  </data>
+  <data name="csTypeInstantiationLengthMismatch" xml:space="preserve">
+    <value>類型具現化長度不符</value>
+  </data>
+  <data name="parsSetterAtMostTwoArguments" xml:space="preserve">
+    <value>屬性 setter 最多可以有兩個引數群組</value>
+  </data>
+  <data name="optsNowarn" xml:space="preserve">
+    <value>停用特定的警告訊息</value>
+  </data>
+  <data name="optsNologo" xml:space="preserve">
+    <value>隱藏編譯器著作權訊息</value>
+  </data>
+  <data name="ilFieldDoesNotHaveValidOffsetForStructureLayout" xml:space="preserve">
+    <value>類型 '{0}' 已標記為有明確配置，但是 '{1}' 卻未以 'FieldOffset' 屬性標記</value>
+  </data>
+  <data name="FieldNotContainedTypesDiffer" xml:space="preserve">
+    <value>模組包含欄位\n    {0}    \n但它的簽章卻指定\n    {1}    \n類型不同</value>
+  </data>
+  <data name="chkNoFirstClassSplicing" xml:space="preserve">
+    <value>不允許運算式接合運算子的第一級用法</value>
+  </data>
+  <data name="tcTypeCastErased" xml:space="preserve">
+    <value>這個向下轉型會將提供的類型 '{0}' 清除為類型 '{1}'。</value>
+  </data>
+  <data name="tcMemberFoundIsNotAbstractOrVirtual" xml:space="preserve">
+    <value>類型 {0} 包含成員 '{1}'，但它不是可用於覆寫或實作的虛擬或抽象方法。</value>
+  </data>
+  <data name="tcAttribArgsDiffer" xml:space="preserve">
+    <value>屬性 '{0}' 同時出現在實作和簽章中，但是屬性引數不同。編譯的程式碼中將只包含來自簽章的屬性。</value>
+  </data>
+  <data name="cannotResolveNullableOperators" xml:space="preserve">
+    <value>無法解析運算子 '{0}'。請考慮開啟模組 'Microsoft.FSharp.Linq.NullableOperators'。</value>
+  </data>
+  <data name="buildUnrecognizedOption" xml:space="preserve">
+    <value>選項無法辨認: '{0}'</value>
+  </data>
+  <data name="typeInfoExtension" xml:space="preserve">
+    <value>擴充功能</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleFieldInImplButNotSig" xml:space="preserve">
+    <value>例外狀況定義不相容，因為實作中有欄位 '{0}'，但簽章中沒有。模組包含例外狀況定義\n    {1}    \n但它的簽章卻指定\n\t{2}。</value>
+  </data>
+  <data name="csMethodFoundButIsNotStatic" xml:space="preserve">
+    <value>類型 '{0}' 有方法 '{1}' (完整名稱 '{2}')，但這個方法不是靜態的</value>
+  </data>
+  <data name="chkErrorContainsCallToRethrow" xml:space="preserve">
+    <value>呼叫 'reraise' 只能直接發生在 try-with 的處理常式中</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedEnum" xml:space="preserve">
+    <value>列舉類型永遠是封閉的</value>
+  </data>
+  <data name="csArgumentTypesDoNotMatch" xml:space="preserve">
+    <value>引數類型不符</value>
+  </data>
+  <data name="forLIsUnnecessary" xml:space="preserve">
+    <value>這個格式規範中的 'l' 或 'L' 是不必要的。在 F# 程式碼中，您可以改用 %d、%x、%o 或 %u，這些格式經過多載，可以搭配所有基本的整數類型使用。</value>
+  </data>
+  <data name="keywordDescriptionPublic" xml:space="preserve">
+    <value>允許存取來自類型外的成員。</value>
+  </data>
+  <data name="csNullableTypeDoesNotHaveNull" xml:space="preserve">
+    <value>類型 '{0}' 不是用 'null' 做為適當的值。若要替可為 Null 的類型建立 null 值，請使用 'System.Nullable()'。</value>
+  </data>
+  <data name="optRecursiveValValue" xml:space="preserve">
+    <value>遞迴的 ValValue {0}</value>
+  </data>
+  <data name="chkNoByrefsOfByrefs" xml:space="preserve">
+    <value>類型 '{0}' 不合法，因為在 byref&lt;T&gt; 中，T 不能包含 byref 類型。</value>
+  </data>
+  <data name="optsDefine" xml:space="preserve">
+    <value>定義條件式編譯的符號 (簡短形式: -d)</value>
+  </data>
+  <data name="parsAttributesIllegalOnInherit" xml:space="preserve">
+    <value>不允許在 'inherit' 宣告上使用屬性</value>
+  </data>
+  <data name="etPropertyCanWriteButHasNoSetter" xml:space="preserve">
+    <value>提供之類型 '{1}' 上的屬性 '{0}' 具有 CanWrite=true，但沒有來自 GetSetMethod() 的值</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleExceptionDeclarationsDiffer" xml:space="preserve">
+    <value>例外狀況定義不相容，因為例外狀況宣告不同。模組包含例外狀況定義\n    {0}    \n但它的簽章卻指定\n\t{1}。</value>
+  </data>
+  <data name="buildExpectedSigdataFile" xml:space="preserve">
+    <value>找不到與 FSharp.Core 並存的 FSharp.Core.sigdata。檔案應位於 {0}。請考慮升級至最新版的 FSharp.Core，其中不再需要此檔案。</value>
+  </data>
+  <data name="pplexExpectedSingleLineComment" xml:space="preserve">
+    <value>必須是單行註解或行結尾</value>
+  </data>
+  <data name="etProviderReturnedNull" xml:space="preserve">
+    <value>型別提供者傳回的 'null' 不是 '{0}' 中的有效傳回值</value>
+  </data>
+  <data name="lexHashIfMustHaveIdent" xml:space="preserve">
+    <value>#if 指示詞後面應該緊接識別碼</value>
+  </data>
+  <data name="typrelNoImplementationGivenWithSuggestion" xml:space="preserve">
+    <value>未指定 '{0}' 的任何實作。注意，所有介面成員都必須實作並列示在適當的 'interface' 宣告底下，例如 'interface ... with member ...'。</value>
+  </data>
+  <data name="parsExpectedExpressionAfterLet" xml:space="preserve">
+    <value>此 '{0}' 後跟隨的區塊未完成。每個程式碼區塊都是運算式，且必須要有結果。'{1}' 不得為區塊中最後一個程式碼項目。請考慮為此區塊提供明確結果。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileWhile" xml:space="preserve">
+    <value>'while' 運算式中不能以輸入結尾。必須是 'while &lt;expr&gt; do &lt;expr&gt;'。</value>
+  </data>
+  <data name="tcMeasureDefinitionsCannotHaveTypeParameters" xml:space="preserve">
+    <value>測量定義不能有類型參數</value>
+  </data>
+  <data name="buildDifferentVersionMustRecompile" xml:space="preserve">
+    <value>F# 編譯的 DLL '{0}' 必須重新編譯後，才能用於這個版本的 F#</value>
+  </data>
+  <data name="parsUnexpectedEndOfFileMatch" xml:space="preserve">
+    <value>'match' 運算式中不能以輸入結尾。必須是 'match &lt;expr&gt; with | &lt;pat&gt; -&gt; &lt;expr&gt; | &lt;pat&gt; -&gt; &lt;expr&gt; ...'。</value>
+  </data>
+  <data name="tcInterfaceTypesAndDelegatesCannotContainFields" xml:space="preserve">
+    <value>介面類型和委派類型不能包含欄位</value>
+  </data>
+  <data name="buildCompilingExtensionIsForML" xml:space="preserve">
+    <value>副檔名 '.ml' 和 '.mli' 是使用於 ML 相容性</value>
+  </data>
+  <data name="typeInfoNamespace" xml:space="preserve">
+    <value>命名空間</value>
+  </data>
+  <data name="csMemberSignatureMismatch" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 需要 {1} 個引數。需要的簽章是 '{2}'。</value>
+  </data>
+  <data name="tcMeasureDeclarationsRequireStaticMembersNotConstructors" xml:space="preserve">
+    <value>測量宣告只能有靜態成員: 無法使用建構函式</value>
+  </data>
+  <data name="tcStaticInitializersIllegalInInterface" xml:space="preserve">
+    <value>介面不能包含靜態初始設定式的定義</value>
+  </data>
+  <data name="crefNoInnerGenericsInQuotations" xml:space="preserve">
+    <value>加引號的運算式中不允許內部泛型函式。請考慮加入一些類型條件約束，直到這個函式不是泛型為止。</value>
+  </data>
+  <data name="optsUnknownArgumentToTheTestSwitch" xml:space="preserve">
+    <value>未知的 --test 引數: '{0}'</value>
+  </data>
+  <data name="csTypeInferenceMaxDepth" xml:space="preserve">
+    <value>類型推斷問題太複雜 (已達到反覆項目深度上限)。請考慮加入進一步的類型註釋。</value>
+  </data>
+  <data name="undefinedNameValueNamespaceTypeOrModule" xml:space="preserve">
+    <value>未定義值、命名空間、類型或模組 '{0}'。</value>
+  </data>
+  <data name="ModuleContainsConstructorButDataFieldsDiffer" xml:space="preserve">
+    <value>模組包含建構函式\n    {0}    \n但它的簽章卻指定\n    {1}    \n個別的資料欄位數不同</value>
+  </data>
+  <data name="tcStructsMayNotContainDoBindings" xml:space="preserve">
+    <value>結構不能包含 'do' 繫結，因為結構的預設建構函式不會執行這些繫結</value>
+  </data>
+  <data name="keywordDescriptionUpcast" xml:space="preserve">
+    <value>用以將類型轉換為繼承鏈結中較高的類型。</value>
+  </data>
+  <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
+    <value>{0} var in collection {1} (outerKey = innerKey) into group。注意: '{2}' 之後須有括號</value>
+  </data>
+  <data name="tcDefaultStructConstructorCall" xml:space="preserve">
+    <value>結構類型的預設、零初始化建構函式只能用在結構類型的所有欄位都允許預設初始化時</value>
+  </data>
+  <data name="tcGenericTypesCannotHaveStructLayout" xml:space="preserve">
+    <value>不能為泛型類型指定 'StructLayout' 屬性</value>
+  </data>
+  <data name="tcExplicitObjectConstructorSyntax" xml:space="preserve">
+    <value>明確的物件建構函式應該使用 'new(args) = expr' 語法</value>
+  </data>
+  <data name="keywordDescriptionUntypedQuotation" xml:space="preserve">
+    <value>分隔不具型別的程式碼引號。</value>
+  </data>
+  <data name="tcStructsMayNotContainLetBindings" xml:space="preserve">
+    <value>結構不能包含值定義，因為結構的預設建構函式不會執行這些繫結。請考慮將其他引數加入類型的主要建構函式。</value>
+  </data>
+  <data name="lexOutsideEightBitSigned" xml:space="preserve">
+    <value>這個數字已經超出 8 位元有正負號整數允許的範圍</value>
+  </data>
+  <data name="etUnsupportedMemberKind" xml:space="preserve">
+    <value>提供之類型 '{1}' 上的成員 '{0}' 無效。只允許屬性、方法和建構函式</value>
+  </data>
+  <data name="tcFieldRequiresAssignment" xml:space="preserve">
+    <value>未針對類型 '{1}' 的欄位 '{0}' 指定指派</value>
+  </data>
+  <data name="csTypeDoesNotSupportOperator" xml:space="preserve">
+    <value>類型 '{0}' 不支援運算子 '{1}'</value>
+  </data>
+  <data name="chkNoAddressStaticFieldAtThisPoint" xml:space="preserve">
+    <value>目前無法使用靜態欄位 '{0}' 的位址</value>
+  </data>
+  <data name="tcOpenUsedWithPartiallyQualifiedPath" xml:space="preserve">
+    <value>這個宣告會透過部分限定名稱開啟命名空間或模組 '{0}'。請調整這個程式碼，使用命名空間的完整路徑。這項變更將確保在新建構加入至 F# 和 CLI 程式庫時，您的程式碼可以更為強固。</value>
+  </data>
+  <data name="tcDoBangIllegalInSequenceExpression" xml:space="preserve">
+    <value>無法在循序項運算式內使用 'do!'</value>
+  </data>
+  <data name="buildImplementationAlreadyGivenDetail" xml:space="preserve">
+    <value>已經指定檔案或模組 '{0}' 的實作。因為類型推斷的關係，F# 中不同的編譯順序會有不同的結果。您必須調整檔案的順序，使簽章檔放在實作之前。在 Visual Studio 中，檔案會依照它們出現在專案檔中的順序進行類型檢查，這個順序可以用手動方式編輯，或使用方案總管調整。</value>
+  </data>
+  <data name="invalidNamespaceForProvidedType" xml:space="preserve">
+    <value>提供之類型的命名空間無效</value>
+  </data>
+  <data name="tcTypeDefinitionIsCyclicThroughInheritance" xml:space="preserve">
+    <value>這個類型定義涉及透過結構欄位或繼承關係的立即循環參考</value>
+  </data>
+  <data name="tcNonLiteralCannotBeUsedInPattern" xml:space="preserve">
+    <value>這個值不是常值，無法用在模式中</value>
+  </data>
+  <data name="tcStructsMustDeclareTypesOfImplicitCtorArgsExplicitly" xml:space="preserve">
+    <value>必須為類型的主要建構函式的每個引數指定類型，例如 'type S(x1:int, x2: int) = ...'。這些引數會決定結構的欄位。</value>
+  </data>
+  <data name="tcMutableValuesMayNotHaveGenericParameters" xml:space="preserve">
+    <value>可變動的值不能有泛型參數</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInDelegate" xml:space="preserve">
+    <value>無法解決在這個位置或附近使用具有 'delegate' 條件約束的泛型建構時造成的模稜兩可</value>
+  </data>
+  <data name="tcInvalidDelegateSpecification" xml:space="preserve">
+    <value>委派規格必須採用 'typ -&gt; typ' 形式</value>
+  </data>
+  <data name="chkNoReflectedDefinitionOnStructMember" xml:space="preserve">
+    <value>ReflectedDefinitionAttribute 不能套用到結構類型上的執行個體成員，因為執行個體成員接受隱含 'this' byref 參數</value>
+  </data>
+  <data name="parsGetAndOrSetRequired" xml:space="preserve">
+    <value>需要 'get' 和/或 'set'</value>
+  </data>
+  <data name="forDoesNotSupportPrefixFlag" xml:space="preserve">
+    <value>'{0}' 不支援前置詞 '{1}' 旗標</value>
+  </data>
+  <data name="tcTypeParameterHasBeenConstrained" xml:space="preserve">
+    <value>這個型別參數的使用方式導致它始終受限為 '{0}'</value>
+  </data>
+  <data name="tcNamedArgumentsCannotBeUsedInMemberTraits" xml:space="preserve">
+    <value>不能將具名引數指定給成員特性呼叫</value>
+  </data>
+  <data name="toolLocationHelperUnsupportedFrameworkVersion" xml:space="preserve">
+    <value>不支援指定的 .NET Framework 版本 '{0}'。請從列舉 Microsoft.Build.Utilities.TargetDotNetFrameworkVersion 指定值。</value>
+  </data>
+  <data name="tcLiteralAttributeRequiresConstantValue" xml:space="preserve">
+    <value>如果一併指定常數值，則宣告只能是 [&lt;Literal&gt;] 屬性，例如 'val x : int = 1'</value>
+  </data>
+  <data name="buildInvalidSourceFileExtension" xml:space="preserve">
+    <value>無法辨識 '{0}' 的副檔名。原始程式檔的副檔名必須是 .fs、.fsi、.fsx、.fsscript、.ml 或 .mli。</value>
+  </data>
+  <data name="tcInheritDeclarationMissingArguments" xml:space="preserve">
+    <value>這個 'inherit' 宣告指定繼承類型，但沒有引數。請考慮提供引數，例如 'inherit BaseType(args)'。</value>
+  </data>
+  <data name="optsPdb" xml:space="preserve">
+    <value>為輸出偵錯檔命名</value>
+  </data>
+  <data name="optsLib" xml:space="preserve">
+    <value>指定用於 Include 路徑的目錄，它是用來解析原始程式檔和組件 (簡短形式: -I)</value>
+  </data>
+  <data name="optsSig" xml:space="preserve">
+    <value>將組件的推斷介面列印到檔案</value>
+  </data>
+  <data name="optsBuildModule" xml:space="preserve">
+    <value>建置可以加入至其他組件的模組</value>
+  </data>
+  <data name="parsActivePatternCaseContainsPipe" xml:space="preserve">
+    <value>現用模式大小寫識別碼不得使用字元 '|'</value>
+  </data>
+  <data name="parsAccessibilityModsIllegalForAbstract" xml:space="preserve">
+    <value>不允許在這個成員上使用存取範圍修飾詞。抽象位置一定與封入類型採用相同的可見性。</value>
+  </data>
+  <data name="commaInsteadOfSemicolonInRecord" xml:space="preserve">
+    <value>記錄中使用 ';' 來分隔欄位值。請考慮以 ';' 取代 ','。</value>
+  </data>
+  <data name="typrelCannotResolveAmbiguityInOverloadedOperator" xml:space="preserve">
+    <value>無法解決在這個程式點或附近使用運算子 '{0}' 時固有的模稜兩可。請考慮使用型別註解來解決模稜兩可。</value>
+  </data>
+  <data name="undefinedNameType" xml:space="preserve">
+    <value>未定義類型 '{0}'。</value>
+  </data>
+  <data name="keywordDescriptionInline" xml:space="preserve">
+    <value>用以指出應直接整合到呼叫者程式碼中的函式。</value>
+  </data>
+  <data name="tcNotValidEnumCaseName" xml:space="preserve">
+    <value>這不是列舉案例的有效名稱</value>
+  </data>
+  <data name="tcInstanceMemberRequiresTarget" xml:space="preserve">
+    <value>這個執行個體成員需要參數來代表所叫用的物件。請將成員設為靜態成員，或使用 'member x.Member(args) = ...' 標記法。</value>
+  </data>
+  <data name="etNoStaticParameterWithName" xml:space="preserve">
+    <value>沒有名稱為 '{0}' 的靜態參數</value>
+  </data>
+  <data name="augNoEqNeedsNoObjEquals" xml:space="preserve">
+    <value>具 'NoEquality' 屬性的類型通常不應該有 'Object.Equals(obj)' 的明確實作。如果是為了互通性，請停用這個警告</value>
+  </data>
+  <data name="tastValueHasBeenCopied" xml:space="preserve">
+    <value>已複製值確保此作業不會變動原始值，或因為從成員傳回結構，再存取其他成員意味著已複製</value>
+  </data>
+  <data name="tcConstrainedTypeVariableCannotBeGeneralized" xml:space="preserve">
+    <value>無法一般化這個繫結的一個或多個明確類別或函式類型變數，因為它們受限於其他類型</value>
+  </data>
+  <data name="csCandidates" xml:space="preserve">
+    <value>候選: {0}</value>
+  </data>
+  <data name="parsUnmatchedWith" xml:space="preserve">
+    <value>無對應的 'with'，或 'with' 區塊的格式錯誤</value>
+  </data>
+  <data name="listElementHasWrongType" xml:space="preserve">
+    <value>清單建構函式運算式的所有分支都必須是同一種類型。此運算式應具備類型 '{0}'，但卻為類型 '{1}'。</value>
+  </data>
+  <data name="tcExplicitTypeSpecificationCannotBeUsedForExceptionConstructors" xml:space="preserve">
+    <value>明確的類型規格不能用於例外狀況建構函式</value>
+  </data>
+  <data name="nrRecordTypeNeedsQualifiedAccess" xml:space="preserve">
+    <value>記錄欄位 '{0}' 的記錄類型定義有 RequireQualifiedAccessAttribute。請在您使用的名稱中，加入記錄類型 ('{1}') 的名稱。</value>
+  </data>
+  <data name="tcFormalArgumentIsNotOptional" xml:space="preserve">
+    <value>對應的正式引數不是選擇性的</value>
+  </data>
+  <data name="typrelInvalidValue" xml:space="preserve">
+    <value>無效值</value>
+  </data>
+  <data name="chkUnusedValue" xml:space="preserve">
+    <value>值 '{0}' 未使用到</value>
+  </data>
+  <data name="buildOptionRequiresParameter" xml:space="preserve">
+    <value>選項需要參數: {0}</value>
+  </data>
+  <data name="tcInvalidDeclaration" xml:space="preserve">
+    <value>無效的宣告</value>
+  </data>
+  <data name="lexOutsideNativeUnsigned" xml:space="preserve">
+    <value>這個數字已經超出無正負號原生整數允許的範圍</value>
+  </data>
+  <data name="undefinedNamePatternDiscriminator" xml:space="preserve">
+    <value>未定義模式鑑別子 '{0}'。</value>
+  </data>
+  <data name="parsUnexpectedEndOfFile" xml:space="preserve">
+    <value>未預期的輸入結束</value>
+  </data>
+  <data name="tastTwoModulesWithSameNameInAssembly" xml:space="preserve">
+    <value>名稱為 '{0}' 的兩個模組出現在這個組件的兩個部分中</value>
+  </data>
+  <data name="moreThanOneInvokeMethodFound" xml:space="preserve">
+    <value>找到委派類型的多個 Invoke 方法</value>
+  </data>
+  <data name="notAFunctionButMaybeIndexerWithName" xml:space="preserve">
+    <value>此值不是函式，無法套用。您要改用 {0}.[index] 來存取索引子嗎?</value>
+  </data>
+  <data name="tcParameterInferredByref" xml:space="preserve">
+    <value>參數 '{0}' 已被推斷為具有 ByRef 類型。具有 ByRef 類型的參數都必須指定明確的類型註釋，例如 'x1: byref&lt;int&gt;'。使用時會隱含解除對 ByRef 參數的參照。</value>
+  </data>
+  <data name="tcStaticMemberShouldNotHaveThis" xml:space="preserve">
+    <value>這個靜態成員不應該有 'this' 參數。請考慮使用 'member Member(args) = ...' 標記法。</value>
+  </data>
+  <data name="csGenericConstructRequiresNonAbstract" xml:space="preserve">
+    <value>泛型建構要求類型 '{0}' 必須是非抽象的</value>
+  </data>
+  <data name="optsNoOpt" xml:space="preserve">
+    <value>只包含實作內嵌建構必要的最佳化資訊。禁止跨模組內嵌，但改進了二進位碼相容性。</value>
+  </data>
+  <data name="tcRepresentationOfTypeHiddenBySignature" xml:space="preserve">
+    <value>這個類型的表示已被簽章隱藏。必須為它指定 [&lt;Sealed&gt;]、[&lt;Class&gt;] 或 [&lt;Interface&gt;] 一類屬性，以指示類型的特徵。</value>
+  </data>
+  <data name="forDoesNotSupportZeroFlag" xml:space="preserve">
+    <value>'{0}' 格式不支援 '0' 旗標</value>
+  </data>
+  <data name="checkNotSufficientlyGenericBecauseOfScope" xml:space="preserve">
+    <value>型別推斷會造成型別變數 {0} 溢出其範圍。請考慮加入明確的型別參數宣告，或將您的程式碼調整到低於一般程度。</value>
+  </data>
+  <data name="optsDebug" xml:space="preserve">
+    <value>指定偵錯類型: full、portable、embedded、pdbonly。(如果未指定偵錯類型，即預設為 '{0}'，並允許將偵錯工具附加到正在執行的程式，'portable' 為跨平台格式，'embedded' 為輸出檔案內嵌的跨平台格式)。</value>
+  </data>
+  <data name="parsOnlyHashDirectivesAllowed" xml:space="preserve">
+    <value>在第一個 'namespace' 宣告前只能出現 '#' 編譯器指示詞</value>
+  </data>
+  <data name="optLocalValueNotFoundDuringOptimization" xml:space="preserve">
+    <value>最佳化期間找不到區域數值 {0}</value>
+  </data>
+  <data name="etIncorrectProvidedMethod" xml:space="preserve">
+    <value>型別提供者 '{0}' 提供的方法具有名稱 '{1}'，以及中繼資料語彙基元 '{2}'，其中該語彙基元未在其宣告類型 '{3}' 的方法中報告</value>
+  </data>
+  <data name="tcOperatorIncorrectSyntax" xml:space="preserve">
+    <value>{0}' 的語法不正確。使用方式: {1}。</value>
+  </data>
+  <data name="lexInvalidFloat" xml:space="preserve">
+    <value>無效的浮點數</value>
+  </data>
+  <data name="tcConstructorsIllegalInAugmentation" xml:space="preserve">
+    <value>建構函式不得是擴充成員 - 其必須在類型的原始定義中定義</value>
+  </data>
+  <data name="csCtorHasNoArgumentOrReturnProperty" xml:space="preserve">
+    <value>物件建構函式 '{0}' 沒有引數或可設定的傳回屬性 '{1}'。{2}。</value>
+  </data>
+  <data name="invalidPlatformTarget" xml:space="preserve">
+    <value>'anycpu32bitpreferred' 平台只能與 EXE 目標搭配使用。您必須改用 'anycpu'。</value>
+  </data>
+  <data name="FieldNotContainedNamesDiffer" xml:space="preserve">
+    <value>模組包含欄位\n    {0}    \n但它的簽章卻指定\n    {1}    \n名稱不同</value>
+  </data>
+  <data name="ValueNotContainedMutabilityStaticsDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n其中一個是靜態的，另一個卻不是</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationIsNotSealed" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作類型不是密封的，但簽章卻隱含密封。請考慮將 [&lt;Sealed&gt;] 屬性新增至實作。</value>
+  </data>
+  <data name="tcTryIllegalInSequenceExpression" xml:space="preserve">
+    <value>'try'/'with' 不能搭配循序項運算式一起使用</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAbstractMemberMissingInSig" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作中有抽象成員 '{2}'，但簽章中沒有</value>
+  </data>
+  <data name="typrelExplicitImplementationOfGetHashCode" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 有 'Object.GetHashCode' 的明確實作。請考慮為 'Object.Equals(obj)' 實作對應的覆寫</value>
+  </data>
+  <data name="keywordDescriptionMember" xml:space="preserve">
+    <value>用以宣告物件類型中的屬性或方法。</value>
+  </data>
+  <data name="keywordDescriptionModule" xml:space="preserve">
+    <value>用以在名稱與相關類型、值及函式的群組之間建立關聯，以邏輯方式從其他程式碼分隔出名稱。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityTypesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n類型不同</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleParameterCountsDiffer" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為個別的型別參數計數不同</value>
+  </data>
+  <data name="tcDelegatesCannotBeCurried" xml:space="preserve">
+    <value>委派規格不可以是局部調用類型。請使用 'typ * ... * typ -&gt; typ' 用於多引數委派，使用 'typ -&gt; (typ -&gt; typ)' 用於傳回函式值的委派。</value>
+  </data>
+  <data name="optValueMarkedInlineButIncomplete" xml:space="preserve">
+    <value>值 '{0}' 已標記為內嵌，但它的實作利用到無法存取的內部或私用函式</value>
+  </data>
+  <data name="tcPropertyIsNotStatic" xml:space="preserve">
+    <value>屬性 '{0}' 不是靜態的</value>
+  </data>
+  <data name="tcInvalidObjectSequenceOrRecordExpression" xml:space="preserve">
+    <value>無效的物件、順序或記錄運算式</value>
+  </data>
+  <data name="tcTypeParametersInferredAreNotStable" xml:space="preserve">
+    <value>為這個值推斷的型別參數在清除類型縮寫後會不穩定。這是因為使用類型縮寫，導致卸除或重新排列型別參數，例如 \n\ttype taggedInt&lt;'a&gt; = int or\n\ttype swap&lt;'a,'b&gt; = 'b * 'a。\n請考慮明確宣告這個值的型別參數，例如\n\tlet f&lt;'a,'b&gt; ((x,y) : swap&lt;'b,'a&gt;) : swap&lt;'a,'b&gt; = (y,x)。</value>
+  </data>
+  <data name="tcImplementsIStructuralComparableExplicitly" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 明確實作了介面 'System.IStructuralComparable'。請將 'CustomComparison' 屬性套用到該型別。</value>
+  </data>
+  <data name="parsSyntaxError" xml:space="preserve">
+    <value>語法錯誤</value>
+  </data>
+  <data name="tcInvalidRelationInJoin" xml:space="preserve">
+    <value>'{0}' 中的聯結關聯無效。必須是 'expr &lt;op&gt; expr'，其中 &lt;op&gt; 是 =、=?、?= 或 ?=?。</value>
+  </data>
+  <data name="parsFieldBinding" xml:space="preserve">
+    <value>欄位繫結必須具有 'id = expr;' 形式</value>
+  </data>
+  <data name="tcEventIsNotStatic" xml:space="preserve">
+    <value>事件 '{0}' 不是靜態的</value>
+  </data>
+  <data name="customOperationTextLikeZip" xml:space="preserve">
+    <value>{0} var in collection</value>
+  </data>
+  <data name="keywordDescriptionYield" xml:space="preserve">
+    <value>用於順序運算式中，以產生順序的值。</value>
+  </data>
+  <data name="tcNoTryFinallyInQuery" xml:space="preserve">
+    <value>'try/finally' 運算式不可用於查詢中</value>
+  </data>
+  <data name="tcIDisposableTypeShouldUseNew" xml:space="preserve">
+    <value>建議不要使用 'Type(args)' 或 'Type' 做為函式值來代表建構函式，而應使用 'new Type(args)' 來建立支援 IDisposable 介面的物件，以表示資源可由產生的值擁有</value>
+  </data>
+  <data name="tcLiteralCannotBeMutable" xml:space="preserve">
+    <value>常值不能標記為 'mutable'</value>
+  </data>
+  <data name="keywordDescriptionWhile" xml:space="preserve">
+    <value>引進重複的條件約束。</value>
+  </data>
+  <data name="csMethodIsNotAStaticMethod" xml:space="preserve">
+    <value>{0} 不是靜態方法</value>
+  </data>
+  <data name="parsAttributesAreNotPermittedOnInterfaceImplementations" xml:space="preserve">
+    <value>不允許在介面實作上使用屬性</value>
+  </data>
+  <data name="tcExpressionRequiresSequence" xml:space="preserve">
+    <value>這種運算式形式只能用在循序項運算式和計算運算式中</value>
+  </data>
+  <data name="crefQuotationsCantFetchUnionIndexes" xml:space="preserve">
+    <value>引號內不能包含擷取聯集索引的運算式</value>
+  </data>
+  <data name="keywordDescriptionClass" xml:space="preserve">
+    <value>在詳細資訊語法中，指出類別定義的開頭。</value>
+  </data>
+  <data name="keywordDescriptionBegin" xml:space="preserve">
+    <value>在詳細資訊語法中指定程式碼區塊的開頭。</value>
+  </data>
+  <data name="tcObjectConstructorsOnTypeParametersCannotTakeArguments" xml:space="preserve">
+    <value>呼叫類型參數的物件建構函式時不能指定引數</value>
+  </data>
+  <data name="keywordDescriptionMatch" xml:space="preserve">
+    <value>用以對模式比較值，以進行分支。</value>
+  </data>
+  <data name="tcUnexpectedConditionInImportedAssembly" xml:space="preserve">
+    <value>匯入的組件中有未預期的條件: 無法解碼 AttributeUsage 屬性</value>
+  </data>
+  <data name="tcUnionCaseDoesNotTakeArguments" xml:space="preserve">
+    <value>這個聯集不接受引數</value>
+  </data>
+  <data name="keywordDescriptionGlobal" xml:space="preserve">
+    <value>用以參考頂層 .NET 命名空間。</value>
+  </data>
+  <data name="tcRequireBuilderMethod" xml:space="preserve">
+    <value>這個控制建構只能用在計算運算式產生器定義 '{0}' 方法時</value>
+  </data>
+  <data name="tcImplicitMeasureFollowingSlash" xml:space="preserve">
+    <value>在 / 後有隱含的測量乘積</value>
+  </data>
+  <data name="tcTPFieldMustBeLiteral" xml:space="preserve">
+    <value>提供的欄位無效。所清除之提供類型的提供欄位必須為常值。</value>
+  </data>
+  <data name="tcUnrecognizedQueryOperator" xml:space="preserve">
+    <value>這不是已知的查詢運算子。查詢運算子是 'QueryBuilder' 類型上使用對應方法定義的識別碼，例如 'select'、'where'、'sortBy'、'thenBy'、'groupBy'、'groupValBy'、'join'、'groupJoin'、'sumBy' 和 'averageBy'。</value>
+  </data>
+  <data name="csNoMemberTakesTheseArguments" xml:space="preserve">
+    <value>沒有名稱為 '{1}' 的 {0} 成員或物件建構函式接受 {2} 個引數</value>
+  </data>
+  <data name="tcInvalidTypeForUnitsOfMeasure" xml:space="preserve">
+    <value>只有 float、float32、decimal 和有正負號的整數類型支援測量單位</value>
+  </data>
+  <data name="tcFieldIsNotStatic" xml:space="preserve">
+    <value>欄位 '{0}' 不是靜態的</value>
+  </data>
+  <data name="parsNamespaceOrModuleNotBoth" xml:space="preserve">
+    <value>檔案應該以命名空間或模組宣告開始，例如 'namespace SomeNamespace.SubNamespace' 或 'module SomeNamespace.SomeModule'，但不能兩者都有。若要在命名空間中定義模組，請使用 'module SomeModule = ...'</value>
+  </data>
+  <data name="ilSignatureForExternalFunctionContainsTypeParameters" xml:space="preserve">
+    <value>這個外部函式的簽章包含型別參數。請限制引數和傳回型別，以指示對應 C 函式的類型。</value>
+  </data>
+  <data name="followingPatternMatchClauseHasWrongType" xml:space="preserve">
+    <value>模式比對運算式的所有分支都必須是同一種類型。此運算式應具備類型 '{0}'，但卻是類型 '{1}'。</value>
+  </data>
+  <data name="typrelMethodIsSealed" xml:space="preserve">
+    <value>方法 '{0}' 是封閉的，無法覆寫</value>
+  </data>
+  <data name="parsUnmatched" xml:space="preserve">
+    <value>無對應的 '{0}'</value>
+  </data>
+  <data name="tcRequireVarConstRecogOrLiteral" xml:space="preserve">
+    <value>這不是變數、常數、現用辨識器或常值</value>
+  </data>
+  <data name="tcUndefinedField" xml:space="preserve">
+    <value>欄位 '{0}' 已經指定值，但是未出現在類型 '{1}' 中</value>
+  </data>
+  <data name="crefQuotationsCantContainStaticFieldRef" xml:space="preserve">
+    <value>引號內不能包含擷取靜態欄位的運算式</value>
+  </data>
+  <data name="tcStaticLetBindingsRequireClassesWithImplicitConstructors" xml:space="preserve">
+    <value>靜態值定義只能用於含有主要建構函式的類型中。請考慮在類型定義加入引數，例如 'type X(args) = ...'。</value>
+  </data>
+  <data name="parsAttributeOnIncompleteCode" xml:space="preserve">
+    <value>找不到以此屬性為目標的程式碼，可能是因為屬性之後的程式碼不完整。</value>
+  </data>
+  <data name="buildInvalidModuleOrNamespaceName" xml:space="preserve">
+    <value>無效的模組或命名空間名稱</value>
+  </data>
+  <data name="typeInfoCustomOperation" xml:space="preserve">
+    <value>自訂作業</value>
+  </data>
+  <data name="keywordDescriptionAssert" xml:space="preserve">
+    <value>用以在偵錯期間驗證程式碼。</value>
+  </data>
+  <data name="buildImplicitModuleIsNotLegalIdentifier" xml:space="preserve">
+    <value>這個檔案中的宣告將根據檔案名稱 '{1}' 放在隱含模組 '{0}' 中。但因為這並不是有效的 F# 識別碼，所以無法從其他檔案存取其內容。請考慮重新命名檔案，或在檔案最上方加入 'module' 或 'namespace' 宣告。</value>
+  </data>
+  <data name="fscKeyFileCouldNotBeOpened" xml:space="preserve">
+    <value>無法開啟金鑰檔 '{0}'</value>
+  </data>
+  <data name="crefQuotationsCantContainArrayPatternMatching" xml:space="preserve">
+    <value>引號內不能包含陣列模式比對</value>
+  </data>
+  <data name="tcTupleStructMismatch" xml:space="preserve">
+    <value>一個元組類型為結構元組，另一個則為參考元組</value>
+  </data>
+  <data name="csMemberSignatureMismatch4" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 還需要 {1} 個其他引數。需要的簽章是 '{2}'。遺漏引數的部分名稱是 {3}。</value>
+  </data>
+  <data name="csMemberSignatureMismatch3" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 需要 {1} 個引數。需要的簽章是 '{2}'。遺漏引數的部分名稱是 {3}。</value>
+  </data>
+  <data name="csMemberSignatureMismatch2" xml:space="preserve">
+    <value>成員或物件建構函式 '{0}' 還需要 {1} 個其他引數。需要的簽章是 '{2}'。</value>
+  </data>
+  <data name="parsUnmatchedLetBang" xml:space="preserve">
+    <value>不完整的值定義。如果這是運算式，運算式的主體必須縮排成與 'let!' 關鍵字在同一欄。</value>
+  </data>
+  <data name="parsMissingTypeArgs" xml:space="preserve">
+    <value>必須是型別引數或靜態引數</value>
+  </data>
+  <data name="fscTwoResourceManifests" xml:space="preserve">
+    <value>指定了衝突的選項: 'win32manifest' 和 'win32res'。只能使用它們其中一個。</value>
+  </data>
+  <data name="chkDuplicateProperty" xml:space="preserve">
+    <value>屬性重複。屬性 '{0}' 與類型 '{1}' 中另一個屬性同名，且簽章也相同。</value>
+  </data>
+  <data name="optsPreferredUiLang" xml:space="preserve">
+    <value>指定慣用的輸出語言文化特性 (Culture) 名稱 (例如 es-ES、ja-JP)</value>
+  </data>
+  <data name="tcSeqResultsUseYield" xml:space="preserve">
+    <value>在循序項運算式中，結果是使用 'yield' 產生的</value>
+  </data>
+  <data name="optsStrongKeyFile" xml:space="preserve">
+    <value>指定強式名稱金鑰檔</value>
+  </data>
+  <data name="parsUnexpectedIdentifier" xml:space="preserve">
+    <value>未預期的識別碼: '{0}'</value>
+  </data>
+  <data name="lexInvalidLineNumber" xml:space="preserve">
+    <value>無效的行號: '{0}'</value>
+  </data>
+  <data name="csOptionalArgumentNotPermittedHere" xml:space="preserve">
+    <value>此處不允許選擇性引數</value>
+  </data>
+  <data name="experimentalConstruct" xml:space="preserve">
+    <value>這個建構是實驗性質的</value>
+  </data>
+  <data name="parsAugmentationsIllegalOnDelegateType" xml:space="preserve">
+    <value>不允許在委派類型 moduleDefns 上使用增強指定</value>
+  </data>
+  <data name="buildArgInvalidInt" xml:space="preserve">
+    <value>'{0}' 不是有效的整數引數</value>
+  </data>
+  <data name="buildExplicitCoreLibRequiresNoFramework" xml:space="preserve">
+    <value>如果明確參考了 mscorlib.dll 或 FSharp.Core.dll，就必須同時傳遞 {0} 選項</value>
+  </data>
+  <data name="parsTypeAnnotationsOnGetSet" xml:space="preserve">
+    <value>屬性 getter 和 setter 的類型註釋必須在 'get()' 或 'set(v)' 之後指定，例如 'with get() : string = ...'</value>
+  </data>
+  <data name="optsBuildWindows" xml:space="preserve">
+    <value>建置 Windows 可執行檔</value>
+  </data>
+  <data name="optsNameOfOutputFile" xml:space="preserve">
+    <value>輸出檔的名稱 (簡短形式: -o)</value>
+  </data>
+  <data name="optsSourceLinkRequirePortablePDBs" xml:space="preserve">
+    <value>僅在發出可攜式 PDB 時才支援 --sourcelink 參數 (--debug:portable 或 --debug:embedded)</value>
+  </data>
+  <data name="CallerMemberNameIsOverriden" xml:space="preserve">
+    <value>套用至參數 '{0}' 的 CallerMemberNameAttribute 將不會有作用。CallerFilePathAttribute 會加以覆寫。</value>
+  </data>
+  <data name="etBadUnnamedStaticArgs" xml:space="preserve">
+    <value>具名靜態引數必須在所有未命名靜態引數的後面</value>
+  </data>
+  <data name="optsBuildConsole" xml:space="preserve">
+    <value>建置主控台可執行檔</value>
+  </data>
+  <data name="tcAllImplementedInterfacesShouldBeDeclared" xml:space="preserve">
+    <value>所有實作的介面都應該在類型的初始宣告上宣告</value>
+  </data>
+  <data name="tcUnexpectedPropertySpec" xml:space="preserve">
+    <value>未預期的來源層級屬性規格</value>
+  </data>
+  <data name="tcCannotCallAbstractBaseMember" xml:space="preserve">
+    <value>無法呼叫抽象基底成員: '{0}'</value>
+  </data>
+  <data name="tcConditionalAttributeRequiresMembers" xml:space="preserve">
+    <value>'ConditionalAttribute' 屬性只能用在成員上</value>
+  </data>
+  <data name="augCustomCompareNeedsIComp" xml:space="preserve">
+    <value>具 'CustomComparison' 屬性的類型必須至少有 'System.IComparable' 或 'System.Collections.IStructuralComparable' 其中之一的明確實作</value>
+  </data>
+  <data name="ValueNotContainedMutabilityDotNetNamesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \nCLI 成員名稱不同</value>
+  </data>
+  <data name="tcDefaultAmbiguous" xml:space="preserve">
+    <value>這個預設所實作的方法模稜兩可</value>
+  </data>
+  <data name="tastopsMaxArrayThirtyTwo" xml:space="preserve">
+    <value>F# 支援 1 至 32 個陣列陣序。不允許值 {0}。</value>
+  </data>
+  <data name="crefQuotationsCantContainThisType" xml:space="preserve">
+    <value>引號內不能包含這種類型</value>
+  </data>
+  <data name="assemblyResolutionNetFramework" xml:space="preserve">
+    <value>.NET Framework</value>
+  </data>
+  <data name="tcObjectExpressionsCanOnlyOverrideAbstractOrVirtual" xml:space="preserve">
+    <value>只有抽象和虛擬成員的覆寫可以在物件運算式中指定</value>
+  </data>
+  <data name="optsWriteXml" xml:space="preserve">
+    <value>將組件的 xmldoc 寫入指定檔案</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleFieldIsInImplButNotSig" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作中有欄位 '{2}'，但簽章中沒有。結構類型現在必須在類型的簽章中顯示其欄位，但欄位仍可以標示為 'private' 或 'internal'。</value>
+  </data>
+  <data name="unionCaseIsNotAccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取聯集 '{0}'</value>
+  </data>
+  <data name="augOnlyCertainTypesCanHaveAttrs" xml:space="preserve">
+    <value>只有記錄、等位、例外狀況和結構類型可以用 'ReferenceEquality'、'StructuralEquality' 和 'StructuralComparison' 屬性增強</value>
+  </data>
+  <data name="ilSignInvalidSignatureSize" xml:space="preserve">
+    <value>簽章大小無效</value>
+  </data>
+  <data name="optsWin32manifest" xml:space="preserve">
+    <value>指定 Win32 資訊清單檔案</value>
+  </data>
+  <data name="tcInvalidIndexerExpression" xml:space="preserve">
+    <value>無效的索引子運算式</value>
+  </data>
+  <data name="parsTypeNameCannotBeEmpty" xml:space="preserve">
+    <value>類型名稱不可為空白。</value>
+  </data>
+  <data name="buildCouldNotFindSourceFile" xml:space="preserve">
+    <value>找不到原始程式檔 '{0}'</value>
+  </data>
+  <data name="tcExpectModuleOrNamespaceParent" xml:space="preserve">
+    <value>必須是模組或命名空間父代 {0}</value>
+  </data>
+  <data name="tcOnlySimpleBindingsCanBeUsedInConstructionExpressions" xml:space="preserve">
+    <value>只有 'id = expr' 形式的簡單繫結可以用在建構運算式中</value>
+  </data>
+  <data name="keywordDescriptionExtern" xml:space="preserve">
+    <value>指出宣告的程式元素已在另一個二進位檔或組件中定義。</value>
+  </data>
+  <data name="optsSourceLink" xml:space="preserve">
+    <value>要內嵌於可攜式 PDB 檔案中的來源連結資訊檔案</value>
+  </data>
+  <data name="tcNewRequiresObjectConstructor" xml:space="preserve">
+    <value>'new' 只能搭配物件建構函式一起使用</value>
+  </data>
+  <data name="csCodeLessGeneric" xml:space="preserve">
+    <value>這個程式碼的一般程度低於註釋所指示的程度。系統判定使用 '_' 指定的測量單位為 '1'，也就是無維度。請考慮使程式碼變成泛型程式碼，或移除 '_'。</value>
+  </data>
+  <data name="tcIllegalStructTypeForConstantExpression" xml:space="preserve">
+    <value>這不是有效的常值運算式。將忽略 [&lt;Literal&gt;] 屬性。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleSignatureSaysNull2" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章宣稱這個類型可以使用 null 作為額外值，但實作未宣稱</value>
+  </data>
+  <data name="tcTryWithMayNotBeUsedInQueries" xml:space="preserve">
+    <value>不可以在查詢中使用 'try/with' 運算式</value>
+  </data>
+  <data name="optsStandalone" xml:space="preserve">
+    <value>將 F# 程式庫和所有依存於它的被參考 DLL 靜態連結到所產生的組件中</value>
+  </data>
+  <data name="tcAttributeAutoOpenWasIgnored" xml:space="preserve">
+    <value>組件 '{1}' 中的 'AutoOpen(\"{0}\")' 屬性未參考該組件中有效的模組或命名空間，所以已予以忽略</value>
+  </data>
+  <data name="tcFieldIsNotMutable" xml:space="preserve">
+    <value>這個欄位不是可變動的欄位</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleTypeIsDifferentKind" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為類型屬於不同類型</value>
+  </data>
+  <data name="tcEnumerationsCannotHaveInterfaceDeclaration" xml:space="preserve">
+    <value>列舉值不能有介面宣告</value>
+  </data>
+  <data name="optsBuildLibrary" xml:space="preserve">
+    <value>建置程式庫 (簡短形式: -a)</value>
+  </data>
+  <data name="buildCouldNotResolveAssembly" xml:space="preserve">
+    <value>無法解析組件 '{0}'</value>
+  </data>
+  <data name="csMemberNotAccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取接受 {1} 個引數的成員或物件建構函式 '{0}'。方法 '{2}' 的所有可存取版本都接受 {3} 個引數。</value>
+  </data>
+  <data name="optsShortFormOf" xml:space="preserve">
+    <value>'{0}' 的簡短形式</value>
+  </data>
+  <data name="tcDefaultImplementationForInterfaceHasAlreadyBeenAdded" xml:space="preserve">
+    <value>已經加入這個介面的預設實作，因為未在類型的定義指定介面的明確實作</value>
+  </data>
+  <data name="tcFieldNameIsUsedModeThanOnce" xml:space="preserve">
+    <value>具名欄位 '{0}' 使用一次以上。</value>
+  </data>
+  <data name="fscDeterministicDebugRequiresPortablePdb" xml:space="preserve">
+    <value>確定性組建僅支援可攜式 PDB (--debug:portable 或 --debug:embedded)</value>
+  </data>
+  <data name="tcInvalidObjectExpressionSyntaxForm" xml:space="preserve">
+    <value>無效的物件運算式。沒有覆寫或介面的物件應該使用不加大括號的運算式形式 'new Type(args)'。</value>
+  </data>
+  <data name="typeInfoFromFirst" xml:space="preserve">
+    <value>來自 {0}</value>
+  </data>
+  <data name="keywordDescriptionDownto" xml:space="preserve">
+    <value>在 for 運算式中，在倒數時使用。</value>
+  </data>
+  <data name="tcTypeIsNotARecordType" xml:space="preserve">
+    <value>這種類型不是記錄類型</value>
+  </data>
+  <data name="crefQuotationsCantContainAddressOf" xml:space="preserve">
+    <value>引號內不能包含接受欄位位址的運算式</value>
+  </data>
+  <data name="tcImplementsIComparableExplicitly" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 明確實作了介面 'System.IComparable'。您必須將 'CustomComparison' 屬性套用到該型別。</value>
+  </data>
+  <data name="tcIfThenElseMayNotBeUsedWithinQueries" xml:space="preserve">
+    <value>不可以在查詢中使用 if/then/else 運算式。請考慮使用 if/then 運算式，或者改用循序項運算式。</value>
+  </data>
+  <data name="etStaticParameterAlreadyHasValue" xml:space="preserve">
+    <value>已經為靜態參數 '{0}' 指定值</value>
+  </data>
+  <data name="optsEmbedSource" xml:space="preserve">
+    <value>內嵌可攜式 PDB 檔案中的特定來源檔案</value>
+  </data>
+  <data name="chkByrefUsedInInvalidWay" xml:space="preserve">
+    <value>ByRef 類型變數 '{0}' 的使用方式無效。ByRef 無法由關閉捕捉或傳遞到內部函式。</value>
+  </data>
+  <data name="tcPropertyCannotBeSet1" xml:space="preserve">
+    <value>無法設定屬性 '{0}'</value>
+  </data>
+  <data name="tcPropertyCannotBeSet0" xml:space="preserve">
+    <value>無法設定這個屬性</value>
+  </data>
+  <data name="chkNoFirstClassAddressOf" xml:space="preserve">
+    <value>不允許傳址運算子的第一級用法</value>
+  </data>
+  <data name="ValueNotContainedMutabilityOneIsConstructor" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n其中一個是建構函式/屬性，另一個卻不是</value>
+  </data>
+  <data name="tcObjectConstructionCanOnlyBeUsedInClassTypes" xml:space="preserve">
+    <value>物件建構運算式只能用來實作類別類型中的建構函式</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleFieldInSigButNotImpl" xml:space="preserve">
+    <value>例外狀況定義不相容，因為簽章需要欄位'{0}'，但實作卻未指定。模組包含例外狀況定義\n    {1}    \n但它的簽章卻指定\n\t{2}。</value>
+  </data>
+  <data name="tcNumericLiteralRequiresModule" xml:space="preserve">
+    <value>這個數值常值要求定義函式 FromZero、FromOne、FromInt32、FromInt64 和 FromString 的模組 '{0}' 必須在範圍內</value>
+  </data>
+  <data name="tcConstructorsIllegalForThisType" xml:space="preserve">
+    <value>無法為這個類型定義建構函式</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleFieldRequiredButNotSpecified" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章需要欄位 {2}，但實作卻未指定</value>
+  </data>
+  <data name="tcOptionalArgsOnlyOnMembers" xml:space="preserve">
+    <value>只允許在類型成員上使用選擇性的引數</value>
+  </data>
+  <data name="etProvidedTypeReferenceMissingArgument" xml:space="preserve">
+    <value>提供之類型的參考遺漏靜態參數 '{0}' 的值。您可能需要重新編譯一或多個參考的組件。</value>
+  </data>
+  <data name="elseBranchHasWrongType" xml:space="preserve">
+    <value>'if' 運算式的所有分支都必須是同一種類型。此運算式應具備類型 '{0}'，但卻是類型 '{1}'。</value>
+  </data>
+  <data name="erasedTo" xml:space="preserve">
+    <value>清除為</value>
+  </data>
+  <data name="tcTypeParameterArityMismatch" xml:space="preserve">
+    <value>這個值、型別或方法需要 {0} 個型別參數，卻指定了 {1} 個</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleFieldOrderDiffers" xml:space="preserve">
+    <value>例外狀況定義不相容，因為簽章與實作中的欄位順序不同。模組包含例外狀況定義\n    {0}    \n但它的簽章卻指定\n\t{1}。</value>
+  </data>
+  <data name="tcCustomOperationMayNotBeUsedInConjunctionWithNonSimpleLetBindings" xml:space="preserve">
+    <value>自訂作業不能與這個計算運算式另一部分中的非值或遞迴 'let' 繫結一起使用</value>
+  </data>
+  <data name="typrelMemberDoesNotHaveCorrectNumberOfTypeParameters" xml:space="preserve">
+    <value>成員 '{0}' 沒有正確數目的方法型別參數。需要的簽章是 '{1}'。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleDotNetTypeRepresentationIsHidden" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章隱藏了某 CLI 類型表示法</value>
+  </data>
+  <data name="tcStructuralComparisonNotSatisfied1" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 有 'StructuralComparison' 屬性，但型別參數 '{1}' 不滿足 'comparison' 條件約束。請考慮將 'comparison' 條件約束加入型別參數</value>
+  </data>
+  <data name="tcStructuralComparisonNotSatisfied2" xml:space="preserve">
+    <value>結構、記錄或等位型別 '{0}' 有 'StructuralComparison' 屬性，但元件型別 '{1}' 不滿足 'comparison' 條件約束</value>
+  </data>
+  <data name="chkNoAddressOfAtThisPoint" xml:space="preserve">
+    <value>目前無法使用變數 '{0}' 的位址</value>
+  </data>
+  <data name="typeInfoUnionCase" xml:space="preserve">
+    <value>聯集</value>
+  </data>
+  <data name="assemblyResolutionGAC" xml:space="preserve">
+    <value>全域組件快取</value>
+  </data>
+  <data name="typrelDuplicateInterface" xml:space="preserve">
+    <value>重複或多餘的介面</value>
+  </data>
+  <data name="optsInvalidResponseFile" xml:space="preserve">
+    <value>回應檔 '{0}' ( '{1}' ) 無效</value>
+  </data>
+  <data name="tcInvalidUseBangBinding" xml:space="preserve">
+    <value>'use!' 繫結的格式必須是 'use! &lt;var&gt; = &lt;expr&gt;'</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleTypeIsHidden" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為簽章隱藏了某類型表示法</value>
+  </data>
+  <data name="tcInvalidSequenceExpressionSyntaxForm" xml:space="preserve">
+    <value>無效的記錄、循序項或計算運算式。循序項運算式應該是 'seq {{ ... }}' 形式。</value>
+  </data>
+  <data name="etEventNoAdd" xml:space="preserve">
+    <value>提供的類型 '{1}' 中的事件 '{0}' 沒有來自 GetAddMethod() 的值</value>
+  </data>
+  <data name="keywordDescriptionInterface" xml:space="preserve">
+    <value>用以宣告及實作介面。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityExtensionsDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n其中一個是擴充成員，另一個卻不是</value>
+  </data>
+  <data name="parsSetSyntax" xml:space="preserve">
+    <value>必須使用 'set value = '、'set idx value = ' 或 'set (idx1,...,idxN) value = ... ' 定義屬性 setter</value>
+  </data>
+  <data name="tcInvalidArgForParameterizedPattern" xml:space="preserve">
+    <value>參數化模式標籤的引數無效</value>
+  </data>
+  <data name="ilSignInvalidBitLen" xml:space="preserve">
+    <value>位元長度無效</value>
+  </data>
+  <data name="lexHashIfMustBeFirst" xml:space="preserve">
+    <value>#if 指示詞必須顯示為一行的第一個非空白字元</value>
+  </data>
+  <data name="etMultipleStaticParameterWithName" xml:space="preserve">
+    <value>有多個名稱為 '{0}' 的靜態參數</value>
+  </data>
+  <data name="tcVolatileFieldsMustBeMutable" xml:space="preserve">
+    <value>Volatile 欄位必須標記為 'mutable'，而且不能是 Thread 靜態的</value>
+  </data>
+  <data name="tcReturnTypesForUnionMustBeSameAsType" xml:space="preserve">
+    <value>聯集的傳回類型必須與所定義的類型一樣，直到縮寫為止</value>
+  </data>
+  <data name="tcOverridesCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允許在覆寫或介面實作上使用存取範圍修飾詞</value>
+  </data>
+  <data name="lexIndentOffForML" xml:space="preserve">
+    <value>請考慮改用副檔名為 '.ml' 或 '.mli' 的檔案</value>
+  </data>
+  <data name="tcAbstractPropertyMissingGetOrSet" xml:space="preserve">
+    <value>這個屬性會覆寫或實作抽象屬性，但抽象屬性沒有對應的 {0}</value>
+  </data>
+  <data name="ilUnexpectedUnrealizedValue" xml:space="preserve">
+    <value>編譯器錯誤: 非預期的未實現值</value>
+  </data>
+  <data name="etProvidedTypeReferenceInvalidText" xml:space="preserve">
+    <value>提供之類型的參考具有靜態參數的無效值 '{0}'。您可能需要重新編譯一或多個參考的組件。</value>
+  </data>
+  <data name="ExceptionDefsNotCompatibleSignaturesDiffer" xml:space="preserve">
+    <value>例外狀況定義不相容，因為簽章與實作中的例外狀況縮寫不同。模組包含例外狀況定義\n    {0}    \n但它的簽章卻指定\n\t{1}。</value>
+  </data>
+  <data name="chkInvalidCustAttrVal" xml:space="preserve">
+    <value>無效的自訂屬性值 (不是常數或常值)</value>
+  </data>
+  <data name="tcExceptionAbbreviationsShouldNotHaveArgumentList" xml:space="preserve">
+    <value>例外狀況縮寫不應該有引數清單</value>
+  </data>
+  <data name="tcInvalidPropertyType" xml:space="preserve">
+    <value>這個屬性有無效的類型。接受多個索引子引數的屬性應該具有 'ty1 * ty2 -&gt; ty3' 格式的類型。傳回函式的屬性應該具有 '(ty1 -&gt; ty2)' 形式的類型。</value>
+  </data>
+  <data name="chkNoByrefAsTopValue" xml:space="preserve">
+    <value>ByRef 類型的值將儲存在這裡。不允許最上層 LET 繫結的 ByRef 值。</value>
+  </data>
+  <data name="tcMultipleVisibilityAttributesWithLet" xml:space="preserve">
+    <value>已經為這個識別碼指定多個可見性屬性。類別中的 'let' 繫結一定是私用的，就如同運算式內的任何 'let' 繫結一樣。</value>
+  </data>
+  <data name="crefQuotationsCantContainGenericFunctions" xml:space="preserve">
+    <value>引號內不能包含推斷或宣告為泛型的函式定義。請考慮加入一些類型條件約束，使它成為有效的加引號運算式。</value>
+  </data>
+  <data name="forBadPrecision" xml:space="preserve">
+    <value>格式規範中精確度不正確</value>
+  </data>
+  <data name="tcTypeHasNoAccessibleConstructor" xml:space="preserve">
+    <value>這種類型沒有可存取的物件建構函式</value>
+  </data>
+  <data name="etEmptyNamespaceOfTypeNotAllowed" xml:space="preserve">
+    <value>型別提供者 '{1}' 中的型別 '{0}' 具有空白命名空間。請將 'null' 用於全域命名空間。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleImplementationSaysNull2" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為實作宣稱這個類型可以使用 null 作為額外值，但簽章未宣稱</value>
+  </data>
+  <data name="tcConstructorRequiresArguments" xml:space="preserve">
+    <value>這個物件建構函式需要引數</value>
+  </data>
+  <data name="parsVisibilityIllegalOnInherit" xml:space="preserve">
+    <value>不允許在 'inherits' 宣告上使用存取範圍修飾詞</value>
+  </data>
+  <data name="tcTypeRequiresDefinition" xml:space="preserve">
+    <value>這個類型需要定義</value>
+  </data>
+  <data name="ilLiteralFieldsCannotBeSet" xml:space="preserve">
+    <value>無法設定常值欄位</value>
+  </data>
+  <data name="keywordDescriptionTo" xml:space="preserve">
+    <value>用於 for 迴圈以指出範圍。</value>
+  </data>
+  <data name="keywordDescriptionOr" xml:space="preserve">
+    <value>搭配布林值條件使用，作為布林值或運算子。相當於 ||。也用於成員條件約束。</value>
+  </data>
+  <data name="keywordDescriptionOf" xml:space="preserve">
+    <value>用於差別聯集以指出值分類的類型，並用於委派和例外狀況宣告。</value>
+  </data>
+  <data name="keywordDescriptionIf" xml:space="preserve">
+    <value>用於條件式分支建構。</value>
+  </data>
+  <data name="keywordDescriptionIn" xml:space="preserve">
+    <value>用於順序運算式及詳細資料語法中，以從繫結分隔運算式。</value>
+  </data>
+  <data name="keywordDescriptionAs" xml:space="preserve">
+    <value>用以提供物件名稱給目前的類別物件。也用以提供名稱給模式比對內的整個模式。</value>
+  </data>
+  <data name="keywordDescriptionDo" xml:space="preserve">
+    <value>用於重複的建構或用以執行命令式程式碼。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityAttributesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n可變動性屬性不同</value>
+  </data>
+  <data name="tcAbbreviationsFordotNetExceptionsMustHaveMatchingObjectConstructor" xml:space="preserve">
+    <value>Common IL 例外狀況類型的縮寫必須有對應的物件建構函式</value>
+  </data>
+  <data name="lexInvalidNumericLiteral" xml:space="preserve">
+    <value>這不是有效的數值常值。有效的數值常值包括 1、0x1、0b0001 (int)、1u (uint32)、1L (int64)、1UL (uint64)、1s (int16)、1y (sbyte)、1uy (byte)、1.0 (float)、1.0f (float32)、1.0m (decimal)、1I (BigInteger)。</value>
+  </data>
+  <data name="augCustomEqNeedsNoCompOrCustomComp" xml:space="preserve">
+    <value>'CustomEquality' 屬性必須搭配 'NoComparison' 或 'CustomComparison' 屬性一起使用</value>
+  </data>
+  <data name="parsGetterAtMostOneArgument" xml:space="preserve">
+    <value>getter 屬性最多只能有一個引數群組</value>
+  </data>
+  <data name="tcThisValueMayNotBeInlined" xml:space="preserve">
+    <value>這個成員、函式或值宣告不能宣告為 'inline'</value>
+  </data>
+  <data name="parsInvalidPrefixOperator" xml:space="preserve">
+    <value>無效的前置運算子</value>
+  </data>
+  <data name="parsUnexpectedSemicolon" xml:space="preserve">
+    <value>目前不需要分號</value>
+  </data>
+  <data name="tcCustomOperationNotUsedCorrectly2" xml:space="preserve">
+    <value>{0}' 未正確使用。使用方式: {1}。這是這個查詢或計算運算式中的自訂作業。</value>
+  </data>
+  <data name="typrelOverrideWasAmbiguous" xml:space="preserve">
+    <value>'{0}' 的覆寫模稜兩可</value>
+  </data>
+  <data name="optsStrongKeyContainer" xml:space="preserve">
+    <value>指定強式名稱金鑰容器</value>
+  </data>
+  <data name="tcObjectOfIndeterminateTypeUsedRequireTypeConstraint" xml:space="preserve">
+    <value>根據這個程式點之前的資訊，運算子 'expr.[idx]' 已經用於不定類型的物件。請考慮加入進一步的類型條件約束</value>
+  </data>
+  <data name="optsHelpBannerErrsAndWarns" xml:space="preserve">
+    <value>- 錯誤和警告 -</value>
+  </data>
+  <data name="optsSimpleresolution" xml:space="preserve">
+    <value>使用以目錄為基礎的規則解析組件參考，而不使用 MSBuild 解析</value>
+  </data>
+  <data name="chkDuplicateMethodInheritedTypeWithSuffix" xml:space="preserve">
+    <value>重複的方法。抽象方法 '{0}' 在清除元組、函式、測量單位和/或提供的類型後，會與繼承類型中的某抽象方法具有相同的名稱和簽章。</value>
+  </data>
+  <data name="tcUnitsOfMeasureInvalidInTypeConstructor" xml:space="preserve">
+    <value>測量單位不能用在類型建構函式應用程式中</value>
+  </data>
+  <data name="tcObjectConstructionExpressionCanOnlyImplementConstructorsInObjectModelTypes" xml:space="preserve">
+    <value>物件建構運算式 (亦即，含繼承規格的記錄運算式) 只能用來實作物件模型類型中的建構函式。請使用 'new ObjectType(args)' 來建構在建構函式外之物件模型類型的執行個體</value>
+  </data>
+  <data name="lexCharNotAllowedInOperatorNames" xml:space="preserve">
+    <value>不允許將 '{0}' 當做運算子名稱中的字元，它已保留供未來使用</value>
+  </data>
+  <data name="tcUseMayNotBeUsedInQueries" xml:space="preserve">
+    <value>'use' 運算式不可用於查詢中</value>
+  </data>
+  <data name="tcTypeCannotBeEnumerated" xml:space="preserve">
+    <value>類型 '{0}' 不是可以用這個語法列舉值的類型，也就是它與 seq&lt;_&gt;、IEnumerable&lt;_&gt; 或 IEnumerable 不相容，而且沒有 GetEnumerator 方法</value>
+  </data>
+  <data name="nrUnexpectedEmptyLongId" xml:space="preserve">
+    <value>未預期的空白長識別碼</value>
+  </data>
+  <data name="buildInvalidHashrDirective" xml:space="preserve">
+    <value>無效的指示詞。必須是 '#r \"&lt;file-or-assembly&gt;\"'。</value>
+  </data>
+  <data name="checkNotSufficientlyGenericBecauseOfScopeAnon" xml:space="preserve">
+    <value>型別推斷會造成推斷型別變數溢出其範圍。請考慮加入型別附註，可讓您的程式碼低於一般程度。</value>
+  </data>
+  <data name="csTypeDoesNotSupportConversion" xml:space="preserve">
+    <value>類型 '{0}' 不支援轉換成類型 '{1}'</value>
+  </data>
+  <data name="optsClirootDeprecatedMsg" xml:space="preserve">
+    <value>命令列選項 '--cliroot' 已被取代。請改用明確參考，來指定 mscorlib.dll 的複本。</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleNamesDiffer" xml:space="preserve">
+    <value>簽章與名稱的 {0} 定義不相容，因為名稱不同。類型在簽名檔稱為 '{1}'，但在實作稱為 '{2}'。</value>
+  </data>
+  <data name="ilxgenUnexpectedArgumentToMethodHandleOfDuringCodegen" xml:space="preserve">
+    <value>codegen 期間 'methodhandleof' 的引數無效</value>
+  </data>
+  <data name="parsUnexpectedSymbolEqualsInsteadOfIn" xml:space="preserve">
+    <value>運算式中有非預期的符號 '='。您其實要使用 'for x in y .. z do' 嗎?</value>
+  </data>
+  <data name="nrNoConstructorsAvailableForType" xml:space="preserve">
+    <value>沒有可供類型 '{0}' 使用的建構函式</value>
+  </data>
+  <data name="tcDuplicateSpecOfInterface" xml:space="preserve">
+    <value>介面有重複的規格</value>
+  </data>
+  <data name="fscAssemblyNotFoundInDependencySet" xml:space="preserve">
+    <value>在目標二進位檔的相依性集中找不到組件 '{0}'。以靜態方式連結的根應該使用組件名稱指定，不加 DLL 或 EXE 副檔名。如果以明確方式參考這個組件，那麼所產生的二進位檔可能實際上不一定需要這個組件，在這種情況下，它就不應該以靜態方式連結。</value>
+  </data>
+  <data name="typrelTypeImplementsIComparableShouldOverrideObjectEquals" xml:space="preserve">
+    <value>類型 '{0}' 實作了 'System.IComparable'。請考慮也加入 'Object.Equals' 的明確覆寫</value>
+  </data>
+  <data name="keyworkDescriptionAnd" xml:space="preserve">
+    <value>用於互相遞迴的繫結、屬性宣告，以及搭配泛型參數的多個條件約束。</value>
+  </data>
+  <data name="tcInvalidConstantExpression" xml:space="preserve">
+    <value>這不是有效的常數運算式</value>
+  </data>
+  <data name="optsResponseFileNotFound" xml:space="preserve">
+    <value>在 '{1}' 中找不到回應檔 '{0}'</value>
+  </data>
+  <data name="undefinedNameNamespace" xml:space="preserve">
+    <value>未定義命名空間 '{0}'。</value>
+  </data>
+  <data name="csTypesDoNotSupportOperatorNullable" xml:space="preserve">
+    <value>類型 '{0}' 都不支援運算子 '{1}'。請考慮開啟模組 'Microsoft.FSharp.Linq.NullableOperators'。</value>
+  </data>
+  <data name="parsDoCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>'do' 繫結不得包含存取範圍修飾詞，但卻提供了 '{0}'。</value>
+  </data>
+  <data name="pplexUnexpectedChar" xml:space="preserve">
+    <value>前置處理器運算式包含未預期的字元 '{0}'</value>
+  </data>
+  <data name="parsOnlyOneWithAugmentationAllowed" xml:space="preserve">
+    <value>最多只允許一個 'with' 增強指定</value>
+  </data>
+  <data name="tcParameterRequiresName" xml:space="preserve">
+    <value>有屬性的參數也必須有指定的名稱，例如 '[&lt;Attribute&gt;] Name : Type'</value>
+  </data>
+  <data name="tcFieldsDoNotDetermineUniqueRecordType" xml:space="preserve">
+    <value>這個記錄運算式或模式的欄位標籤和預期類型無法唯一決定對應的記錄類型</value>
+  </data>
+  <data name="tcRequireActivePatternWithOneResult" xml:space="preserve">
+    <value>只有剛好傳回一個結果的現用模式可以接受引數</value>
+  </data>
+  <data name="memberOperatorDefinitionWithNonPairArgument" xml:space="preserve">
+    <value>中置運算子成員 '{0}' 有 {1} 個初始引數。必須是 2 個引數的元組，例如，靜態成員 (+) (x,y) = ...</value>
+  </data>
+  <data name="typeInfoArgument" xml:space="preserve">
+    <value>引數</value>
+  </data>
+  <data name="mlCompatMessage" xml:space="preserve">
+    <value>這個建構是用於 ML 相容性。{0}。您可以使用 '--mlcompatibility' 或 '--nowarn:62' 停用這項警告</value>
+  </data>
+  <data name="forHashSpecifierIsInvalid" xml:space="preserve">
+    <value># 格式修飾詞在 F# 中無效</value>
+  </data>
+  <data name="optsDelaySign" xml:space="preserve">
+    <value>只使用強式名稱金鑰的公開金鑰延遲簽署組件</value>
+  </data>
+  <data name="keywordDescriptionException" xml:space="preserve">
+    <value>用以宣告例外狀況類型。</value>
+  </data>
+  <data name="tcOverloadsCannotHaveCurriedArguments" xml:space="preserve">
+    <value>這個方法的一個或多個覆寫有局部調用引數。請考慮重新設計這些成員，以接受 Tuple 形式的引數。</value>
+  </data>
+  <data name="nrGlobalUsedOnlyAsFirstName" xml:space="preserve">
+    <value>'global' 只能做為完整路徑的第一個名稱使用</value>
+  </data>
+  <data name="tcInvalidTypeForLiteralEnumeration" xml:space="preserve">
+    <value>常值列舉值必須為類型 int、uint、int16、uint16、int64、uint64、byte、sbyte 或 char</value>
+  </data>
+  <data name="pickleMissingDefinition" xml:space="preserve">
+    <value>讀取組件 '{2}' 的資料表 '{1}' 中位置 {0} 上之 F# 中繼資料節點時發生錯誤。節點沒有相符的宣告。請回報此警告。您可能需要重新編譯正在使用的 F# 組件。</value>
+  </data>
+  <data name="buildErrorOpeningBinaryFile" xml:space="preserve">
+    <value>開啟二進位檔案 '{0}' 時發生錯誤: {1}</value>
+  </data>
+  <data name="tcInvalidMemberNameCtor" xml:space="preserve">
+    <value>無效的成員名稱。成員不能有名稱 '.ctor' 或 '.cctor'</value>
+  </data>
+  <data name="forBadFormatSpecifierGeneral" xml:space="preserve">
+    <value>不正確的格式規範: '{0}'</value>
+  </data>
+  <data name="tcFieldNotLiteralCannotBeUsedInPattern" xml:space="preserve">
+    <value>這個欄位不是常值，無法用在模式中</value>
+  </data>
+  <data name="tcOnlyRecordFieldsAndSimpleLetCanBeMutable" xml:space="preserve">
+    <value>只有記錄欄位及簡單的非遞迴 'let' 繫結可以標記為可變動</value>
+  </data>
+  <data name="buildInvalidHashloadDirective" xml:space="preserve">
+    <value>無效的指示詞。必須是 '#load \"&lt;file&gt;\" ... \"&lt;file&gt;\"'。</value>
+  </data>
+  <data name="csMethodFoundButIsStatic" xml:space="preserve">
+    <value>類型 '{0}' 有方法 '{1}' (完整名稱 '{2}')，但這個方法是靜態的</value>
+  </data>
+  <data name="tcNoMemberFoundForOverride" xml:space="preserve">
+    <value>找不到對應到這個覆寫的抽象或介面成員</value>
+  </data>
+  <data name="tcInvalidPattern" xml:space="preserve">
+    <value>這不是有效的模式</value>
+  </data>
+  <data name="parsForDoExpected" xml:space="preserve">
+    <value>'for' 運算式中遺漏 'do'。必須是 'for &lt;pat&gt; in &lt;expr&gt; do &lt;expr&gt;'。</value>
+  </data>
+  <data name="tcOverridingMethodRequiresAllOrNoTypeParameters" xml:space="preserve">
+    <value>覆寫泛型抽象方法時，必須明確宣告所有類型參數或不宣告任何類型參數</value>
+  </data>
+  <data name="etUnsupportedProvidedExpression" xml:space="preserve">
+    <value>型別提供者有不支援的運算式 '{0}'。如果您是這個型別提供者的作者，請考慮進行調整以提供其他提供的運算式。</value>
+  </data>
+  <data name="optsSubSystemVersion" xml:space="preserve">
+    <value>指定這個組件的子系統版本</value>
+  </data>
+  <data name="tastUnexpectedByRef" xml:space="preserve">
+    <value>未預期的 ByRef 類型變數用法</value>
+  </data>
+  <data name="optFailedToInlineValue" xml:space="preserve">
+    <value>無法內嵌標記為 'inline' 的值 '{0}'，可能是因為遞迴值標記了 'inline'</value>
+  </data>
+  <data name="keywordDescriptionRightArrow" xml:space="preserve">
+    <value>在函式類型中，分隔引數並傳回值。產生運算式 (循序運算式); 相當於 yield 關鍵字。用於比對運算式</value>
+  </data>
+  <data name="tcStructsCannotHaveConstructorWithNoArguments" xml:space="preserve">
+    <value>結構不能有不含引數的物件建構函式。這是對所有 CLI 語言施加的限制，因為結構會自動支援預設建構函式。</value>
+  </data>
+  <data name="ilSignInvalidAlgId" xml:space="preserve">
+    <value>algId 無效 - 必須是 'Exponent'</value>
+  </data>
+  <data name="returnUsedInsteadOfReturnBang" xml:space="preserve">
+    <value>請考慮使用 'return!'，而不使用 'return'。</value>
+  </data>
+  <data name="derefInsteadOfNot" xml:space="preserve">
+    <value>'!' 運算子用於將 ref 儲存格取值 (Dereference)。請考慮在此使用 'not expr'。</value>
+  </data>
+  <data name="optsNoInterface" xml:space="preserve">
+    <value>不將資源加入包含 F# 特有中繼資料的產生組件</value>
+  </data>
+  <data name="parsUnexpectedInfixOperator" xml:space="preserve">
+    <value>類型運算式中未預期的中置運算子</value>
+  </data>
+  <data name="optsEmbeddedSourceRequirePortablePDBs" xml:space="preserve">
+    <value>僅在發出可攜式 PDB 時才支援 --embed 參數 (--debug:portable 或 --debug:embedded)</value>
+  </data>
+  <data name="parsInvalidPrefixOperatorDefinition" xml:space="preserve">
+    <value>無效的運算子定義。前置運算子定義必須使用有效的前置運算子名稱。</value>
+  </data>
+  <data name="tcUnnamedArgumentsDoNotFormPrefix" xml:space="preserve">
+    <value>未命名引數不會構成所呼叫方法的引數前置詞</value>
+  </data>
+  <data name="invalidFullNameForProvidedType" xml:space="preserve">
+    <value>提供之類型的完整名稱無效</value>
+  </data>
+  <data name="lexHashElseMustBeFirst" xml:space="preserve">
+    <value>#else 指示詞必須顯示為一行的第一個非空白字元</value>
+  </data>
+  <data name="tcUnionCaseFieldCannotBeUsedMoreThanOnce" xml:space="preserve">
+    <value>等位/例外狀況欄位 '{0}' 不可以重複使用。</value>
+  </data>
+  <data name="parsUnionCasesCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允許在聯集上使用存取範圍修飾詞。請使用 'type U = internal ...' 或 'type U = private ...' 為整個表示指定存取範圍。</value>
+  </data>
+  <data name="chkErrorUseOfByref" xml:space="preserve">
+    <value>類型具現化涉及 ByRef 類型。這是 Common IL 的規則所不允許的作法。</value>
+  </data>
+  <data name="tcUnknownUnion" xml:space="preserve">
+    <value>未知的聯集</value>
+  </data>
+  <data name="tcInvalidMethodNameForRelationalOperator" xml:space="preserve">
+    <value>名稱 '({0})' 不應該做為成員名稱使用。若要定義類型的比較語意，請實作 'System.IComparable' 介面。如果要定義靜態成員以用於其他 CLI 語言，請改用名稱 '{1}'。</value>
+  </data>
+  <data name="tcTypeAbbreviationsCannotHaveAugmentations" xml:space="preserve">
+    <value>類型縮寫不能有增強指定</value>
+  </data>
+  <data name="ModuleContainsConstructorButAccessibilityDiffers" xml:space="preserve">
+    <value>模組包含建構函式\n    {0}    \n但它的簽章卻指定\n    {1}    \n簽章中指定的存取範圍大於實作中指定的存取範圍</value>
+  </data>
+  <data name="ValueNotContainedMutabilityAritiesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n簽章與實作中的 Arity 不同。簽章指定 '{3}' 是函式定義或 Lambda 運算式，且接受至少 {4} 個引數，但實作則是計算的函式值。若要宣告計算的函式值是允許的實作，只要將簽章中它的類型括在括號內，例如\n\tval {5}: int -&gt; (int -&gt; int)\n而不是\n\tval {6}: int -&gt; int -&gt; int。</value>
+  </data>
+  <data name="typeInfoOtherOverloads" xml:space="preserve">
+    <value>和 {0} 個其他多載</value>
+  </data>
+  <data name="csTypeIsNotEnumType" xml:space="preserve">
+    <value>類型 '{0}' 不是 CLI 列舉類型</value>
+  </data>
+  <data name="parsModuleAbbreviationMustBeSimpleName" xml:space="preserve">
+    <value>模組縮寫必須是簡單名稱，不是路徑</value>
+  </data>
+  <data name="tastRecursiveValuesMayNotAppearInConstructionOfType" xml:space="preserve">
+    <value>遞迴值無法直接顯示為遞迴繫結內類型 '{0}' 的建構。這項功能已從 F# 語言移除。請考慮改用記錄。</value>
+  </data>
+  <data name="buildProductNameCommunity" xml:space="preserve">
+    <value>適用於 F# {0} 的 F# 編譯器</value>
+  </data>
+  <data name="typrelNamedArgumentHasBeenAssignedMoreThenOnce" xml:space="preserve">
+    <value>已經為具名引數指派多個值</value>
+  </data>
+  <data name="fscIgnoringMixedWhenLinking" xml:space="preserve">
+    <value>在靜態連結期間忽略混合的 Managed/Unmanaged 組件 '{0}'</value>
+  </data>
+  <data name="tcOnlyStructsCanHaveStructLayout" xml:space="preserve">
+    <value>只能為不含主要建構函式的結構和類別指定 'StructLayout' 屬性</value>
+  </data>
+  <data name="tcExpectedTypeParameter" xml:space="preserve">
+    <value>必須是型別參數，不是測量單位參數</value>
+  </data>
+  <data name="keywordDescriptionDefault" xml:space="preserve">
+    <value>指出抽象方法的實作; 與抽象方法宣告一併使用，以建立虛擬方法。</value>
+  </data>
+  <data name="parsEofInTripleQuoteStringInComment" xml:space="preserve">
+    <value>內嵌在註解中的三引號字串中的檔案結尾於此處或之前開始</value>
+  </data>
+  <data name="optsUseHighEntropyVA" xml:space="preserve">
+    <value>啟用高熵 ASLR</value>
+  </data>
+  <data name="ilSignPrivateKeyExpected" xml:space="preserve">
+    <value>必須是私密金鑰</value>
+  </data>
+  <data name="typeInfoActivePatternResult" xml:space="preserve">
+    <value>現用模式結果</value>
+  </data>
+  <data name="tcUnsupportedMutRecDecl" xml:space="preserve">
+    <value>遞迴宣告群組中不支援此宣告</value>
+  </data>
+  <data name="ppparsMissingToken" xml:space="preserve">
+    <value>前置處理器運算式缺少語彙基元 '{0}'</value>
+  </data>
+  <data name="fscTooManyErrors" xml:space="preserve">
+    <value>正在結束 - 錯誤太多。</value>
+  </data>
+  <data name="typrelMemberDoesNotHaveCorrectNumberOfArguments" xml:space="preserve">
+    <value>成員 '{0}' 沒有正確數目的引數。需要的簽章是 '{1}'。</value>
+  </data>
+  <data name="augInvalidAttrs" xml:space="preserve">
+    <value>這個類型使用屬性 'NoEquality'、'ReferenceEquality'、'StructuralEquality'、'NoComparison' 和 'StructuralComparison' 的無效混合</value>
+  </data>
+  <data name="tcLetAndDoRequiresImplicitConstructionSequence" xml:space="preserve">
+    <value>這個定義只能用於含有主要建構函式的類型中。請考慮在您的類型定義加入引數，例如 'type X(args) = ...'。</value>
+  </data>
+  <data name="chkAttrHasAllowMultiFalse" xml:space="preserve">
+    <value>屬性類型 '{0}' 有 'AllowMultiple=false'。無法將這個屬性的多個執行個體附加到單一語言項目。</value>
+  </data>
+  <data name="tcUseYieldBangForMultipleResults" xml:space="preserve">
+    <value>在循序項運算式中，多個結果是使用 'yield!' 產生的</value>
+  </data>
+  <data name="csTypeDoesNotSupportOperatorNullable" xml:space="preserve">
+    <value>類型 '{0}' 不支援運算子 '{1}'。請考慮開啟模組 'Microsoft.FSharp.Linq.NullableOperators'。</value>
+  </data>
+  <data name="tcStructsInterfacesEnumsDelegatesMayNotInheritFromOtherTypes" xml:space="preserve">
+    <value>結構、介面、列舉和委派不能繼承自其他類型</value>
+  </data>
+  <data name="impInvalidNumberOfGenericArguments" xml:space="preserve">
+    <value>提供之類型中類型 '{0}' 的泛型引數數目無效。必須是 '{1}' 個引數，但提供了 '{2}' 個。</value>
+  </data>
+  <data name="tcMethodNotAccessible" xml:space="preserve">
+    <value>無法從這個程式碼位置存取方法 '{0}'</value>
+  </data>
+  <data name="ilSignInvalidMagicValue" xml:space="preserve">
+    <value>CLR 標頭中的 Magic 值無效</value>
+  </data>
+  <data name="tcInvalidOptionalAssignmentToPropertyOrField" xml:space="preserve">
+    <value>無效的選擇性指派給屬性或欄位</value>
+  </data>
+  <data name="csNoMemberTakesTheseArguments3" xml:space="preserve">
+    <value>沒有名稱為 '{1}' 的 {0} 成員或物件建構函式接受 {2} 個引數。具名引數 '{3}' 未對應到任何引數或任何多載的可設定傳回屬性。</value>
+  </data>
+  <data name="csNoMemberTakesTheseArguments2" xml:space="preserve">
+    <value>沒有名稱為 '{1}' 的 {0} 成員或物件建構函式接受 {2} 個引數。注意，呼叫這個成員也會提供 {3} 個具名引數。</value>
+  </data>
+  <data name="nrInvalidFieldLabel" xml:space="preserve">
+    <value>無效的欄位標籤</value>
+  </data>
+  <data name="ilMarshalAsAttributeCannotBeDecoded" xml:space="preserve">
+    <value>無法解碼 MarshalAs 屬性</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleILDiffer" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為 IL 表示法不同</value>
+  </data>
+  <data name="buildUnexpectedTypeArgs" xml:space="preserve">
+    <value>非泛型型別 '{0}' 不需要任何型別引數，但此處指定了 {1} 個型別引數</value>
+  </data>
+  <data name="undefinedNameValueConstructorNamespaceOrType" xml:space="preserve">
+    <value>未定義值、建構函式、命名空間或類型 '{0}'。</value>
+  </data>
+  <data name="typeInfoNamespaceOrModule" xml:space="preserve">
+    <value>命名空間/模組</value>
+  </data>
+  <data name="recursiveClassHierarchy" xml:space="preserve">
+    <value>類型 '{0}' 中有遞迴的類別階層</value>
+  </data>
+  <data name="chkUnusedThisVariable" xml:space="preserve">
+    <value>遞迴物件參考 '{0}' 未使用到。有了遞迴物件參考，就會在這個類型和衍生類型的成員中加入執行階段初始化檢查。請考慮移除這個遞迴物件參考。</value>
+  </data>
+  <data name="augTypeCantHaveRefEqAndStructAttrs" xml:space="preserve">
+    <value>類型不能同時具有 'ReferenceEquality' 和 'StructuralEquality' 或 'StructuralComparison' 屬性</value>
+  </data>
+  <data name="tcConstructRequiresComputationExpression" xml:space="preserve">
+    <value>這個建構只能用在計算運算式內</value>
+  </data>
+  <data name="tastValueMustBeLocalAndMutable" xml:space="preserve">
+    <value>值必須是可變動的，才能變動內容或接受實值類型的位址，例如 'let mutable x = ...'</value>
+  </data>
+  <data name="tcExceptionAbbreviationsMustReferToValidExceptions" xml:space="preserve">
+    <value>例外狀況縮寫必須參考現有的例外狀況，或衍生自 System.Exception 的 F# 類型</value>
+  </data>
+  <data name="optsEmbedAllSource" xml:space="preserve">
+    <value>內嵌可攜式 PDB 檔案中的所有來源檔案</value>
+  </data>
+  <data name="tcOnlySimplePatternsInLetRec" xml:space="preserve">
+    <value>只有簡單的變數模式可以在 'let rec' 建構中繫結</value>
+  </data>
+  <data name="parsSuccessiveArgsShouldBeSpacedOrTupled" xml:space="preserve">
+    <value>後續引數應該用空格分隔或採用 Tuple 形式，而且涉及函式或方法應用程式的引數應該用括號括住</value>
+  </data>
+  <data name="tcNotAnException" xml:space="preserve">
+    <value>不是例外狀況</value>
+  </data>
+  <data name="tcInvalidIndexIntoActivePatternArray" xml:space="preserve">
+    <value>內部錯誤。現用模式陣列的索引無效</value>
+  </data>
+  <data name="fscAssumeStaticLinkContainsNoDependencies" xml:space="preserve">
+    <value>組件 '{0}' 是以可轉移方式被參考，而且此組件無法自動解析。靜態連結會假設這個 DLL 在 F# 程式庫或其他以靜態方式連結的 DLL 上沒有相依性。請考慮加入這個 DLL 的明確參考。</value>
+  </data>
+  <data name="fscAssemblyCultureAttributeError" xml:space="preserve">
+    <value>發出 'System.Reflection.AssemblyCultureAttribute' 屬性時發生錯誤 -- '可執行檔不可以是附屬組件，文化特性需保持空白'</value>
+  </data>
+  <data name="parsInterfacesHaveSameVisibilityAsEnclosingType" xml:space="preserve">
+    <value>介面一定與封入類型採用相同的可見性</value>
+  </data>
+  <data name="ValueNotContainedMutabilityOneIsTypeFunction" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n其中一個是類型函式，另一個卻不是。如果型別參數出現在實作中，簽章就需要明確的型別參數參數。</value>
+  </data>
+  <data name="parsSyntaxModuleStructEndDeprecated" xml:space="preserve">
+    <value>F# 程式碼中不使用語法 'module ... = struct .. end'。請考慮使用 'module ... = begin .. end'</value>
+  </data>
+  <data name="tcVolatileOnlyOnClassLetBindings" xml:space="preserve">
+    <value>'VolatileField' 屬性只能用在類別的 'let' 繫結上</value>
+  </data>
+  <data name="FieldNotContainedLiteralsDiffer" xml:space="preserve">
+    <value>模組包含欄位\n    {0}    \n但它的簽章卻指定\n    {1}    \n'literal' 修飾詞不同</value>
+  </data>
+  <data name="DefinitionsInSigAndImplNotCompatibleAbbreviationsDiffer" xml:space="preserve">
+    <value>簽章與實作中類型 '{1}' 的 {0} 定義不相容，因為縮寫不同: {2} 與 {3}</value>
+  </data>
+  <data name="tcExplicitStaticInitializerSyntax" xml:space="preserve">
+    <value>明確的靜態初始設定式應該使用 'static new(args) = expr' 語法</value>
+  </data>
+  <data name="tcOnlyFunctionsCanBeInline" xml:space="preserve">
+    <value>只有函式可以標記為 'inline'</value>
+  </data>
+  <data name="tcTypeIsNotInterfaceType0" xml:space="preserve">
+    <value>這種類型不是介面類型</value>
+  </data>
+  <data name="tcTypeIsNotInterfaceType1" xml:space="preserve">
+    <value>類型 '{0}' 不是介面類型</value>
+  </data>
+  <data name="chkObjCtorsCantUseExceptionHandling" xml:space="preserve">
+    <value>物件建構函式不能在物件初始化之前直接使用 try/with 和 try/finally。這包括 'for x in ...' 這類可以詳述這些建構用途的建構函式。這是 Common IL 的限制。</value>
+  </data>
+  <data name="tcReturnMayNotBeUsedInQueries" xml:space="preserve">
+    <value>'return' 和 'return!' 不可用於查詢中</value>
+  </data>
+  <data name="parsRecordFieldsCannotHaveVisibilityDeclarations" xml:space="preserve">
+    <value>不允許在記錄欄位上使用存取範圍修飾詞。請使用 'type R = internal ...' 或 'type R = private ...' 為整個表示指定存取範圍。</value>
+  </data>
+  <data name="keywordDescriptionUseBang" xml:space="preserve">
+    <value>用來在非同步工作流程或其他計算運算式中，對需要 Dispose 才能呼叫以釋放資源的值取代 let!。</value>
+  </data>
+  <data name="tcInheritIllegalHere" xml:space="preserve">
+    <value>此處不允許繼承宣告</value>
+  </data>
+  <data name="etNullMemberDeclaringType" xml:space="preserve">
+    <value>提供的類型 '{0}' 成員資訊 '{1}' 具有 null 宣告類型</value>
+  </data>
+  <data name="etProvidedAppliedMethodHadWrongName" xml:space="preserve">
+    <value>型別提供者 '{0}' 從 'ApplyStaticArgumentsForMethod' 傳回的方法無效。必須是名為 '{1}' 的方法，但傳回名為 '{2}' 的方法。</value>
+  </data>
+  <data name="lexInvalidUnicodeLiteral" xml:space="preserve">
+    <value>\U{0} 不是有效的 Unicode 字元逸出序列</value>
+  </data>
+  <data name="nrTypeInstantiationNeededToDisambiguateTypesWithSameName" xml:space="preserve">
+    <value>有多個名稱為 '{0}' 的類型，各接受不同數目的泛型參數。請提供類型具現化，使類型解析意義清楚，例如 '{1}'。</value>
+  </data>
+  <data name="typrelModuleNamespaceAttributesDifferInSigAndImpl" xml:space="preserve">
+    <value>簽章與實作的命名空間或模組屬性不同</value>
+  </data>
+  <data name="typrelNeedExplicitImplementation" xml:space="preserve">
+    <value>介面 '{0}' 包含在多個明確實作的介面類型中。請加入這個介面的明確實作。</value>
+  </data>
+  <data name="eventHasNonStandardType" xml:space="preserve">
+    <value>事件 '{0}' 有非標準類型。如果這個事件是在另一個 CLI 語言中宣告，您必須使用這個事件的明確 {1} 和 {2} 方法來存取這個事件。如果這個事件是在 F# 中宣告，則請將事件的類型設為 'IDelegateEvent&lt;_&gt;' 或 'IEvent&lt;_,_&gt;' 的具現化。</value>
+  </data>
+  <data name="tcReservedSyntaxForAugmentation" xml:space="preserve">
+    <value>語法 'type X with ...' 已保留供增強指定使用。針對表示已被隱藏，但是有成員的類型，現在會使用 'type X = ...' 在簽章中宣告。您也必須將 '[&lt;Sealed&gt;] 屬性加入至簽章中的類型定義</value>
+  </data>
+  <data name="undefinedNameSuggestionsIntro" xml:space="preserve">
+    <value>您可能需要下列其中一項:</value>
+  </data>
+  <data name="undefinedNameRecordLabel" xml:space="preserve">
+    <value>未定義記錄標籤 '{0}'。</value>
+  </data>
+  <data name="tcTypeTestLosesMeasures" xml:space="preserve">
+    <value>這個類型測試或向下轉型將忽略測量單位 '{0}'</value>
+  </data>
+  <data name="ilSignInvalidPKBlob" xml:space="preserve">
+    <value>公開金鑰 Blob 無效</value>
+  </data>
+  <data name="fscStaticLinkingNoProfileMismatches" xml:space="preserve">
+    <value>產生參考 System.Runtime 的組件 (例如 .NET Core 或可攜式組件) 時，參考 mscorlib 的組件 (例如 .NET Framework 組件) 無法使用靜態連結。</value>
+  </data>
+  <data name="ValueNotContainedMutabilityGenericParametersDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n簽章與實作中泛型參數的數目不同 (簽章宣告了 {3} 個，但實作宣告了 {4} 個</value>
+  </data>
+  <data name="typrelMemberDoesNotHaveCorrectKindsOfGenericParameters" xml:space="preserve">
+    <value>成員 '{0}' 沒有正確的泛型參數類型。需要的簽章是 '{1}'。</value>
+  </data>
+  <data name="typrelSigImplNotCompatibleParamCountsDiffer" xml:space="preserve">
+    <value>簽章與實作不相容，因為個別的型別參數計數不同</value>
+  </data>
+  <data name="tcTypeExceptionOrModule" xml:space="preserve">
+    <value>類型、例外狀況或模組</value>
+  </data>
+  <data name="tcExpressionWithIfRequiresParenthesis" xml:space="preserve">
+    <value>這個清單或陣列運算式包含 'if ... then ... else' 形式的項目。請將這個運算式括在括號內，表示它是清單或陣列的個別項目，以區別這一項與使用循序項運算式產生的清單</value>
+  </data>
+  <data name="csTypeDoesNotHaveNull" xml:space="preserve">
+    <value>類型 '{0}' 不是用 'null' 做為適當的值</value>
+  </data>
+  <data name="parsVisibilityDeclarationsShouldComePriorToIdentifier" xml:space="preserve">
+    <value>存取範圍修飾詞應該放在為建構命名的識別碼正前方</value>
+  </data>
+  <data name="parsUnmatchedUse" xml:space="preserve">
+    <value>不完整的值定義。如果這是運算式，運算式的主體必須縮排成與 'use' 關鍵字在同一欄。</value>
+  </data>
+  <data name="parsUnmatchedLet" xml:space="preserve">
+    <value>不完整的值或函式定義。如果這是運算式，運算式的主體必須縮排成與 'let' 關鍵字在同一欄。</value>
+  </data>
+  <data name="tcUnionCaseConstructorDoesNotHaveFieldWithGivenName" xml:space="preserve">
+    <value>等位/例外狀況 '{0}' 沒有名為 '{1}' 的欄位。</value>
+  </data>
+  <data name="tcInvalidMemberName" xml:space="preserve">
+    <value>名稱 '({0})' 不應該做為成員名稱使用。如果要定義靜態成員以用於其他 CLI 語言，請改用名稱 '{1}'。</value>
+  </data>
+  <data name="etProviderDoesNotHaveValidConstructor" xml:space="preserve">
+    <value>型別提供者沒有有效的建構函式。建構函式必須不接受任何引數，或是接受型別 'TypeProviderConfig' 的一個引數。</value>
+  </data>
+  <data name="tcRecordsUnionsAbbreviationsStructsMayNotHaveAllowNullLiteralAttribute" xml:space="preserve">
+    <value>記錄、等位、縮寫和結構類型不能有 'AllowNullLiteral' 屬性</value>
+  </data>
+  <data name="tcExpressionFormRequiresRecordTypes" xml:space="preserve">
+    <value>運算式形式 {{ expr with ... }} 只能搭配記錄類型一起使用。若要建置物件類型，請使用 {{ new Type(...) with ... }}</value>
+  </data>
+  <data name="typrelNoImplementationGiven" xml:space="preserve">
+    <value>未指定 '{0}' 的任何實作</value>
+  </data>
+  <data name="tcUnionCaseExpectsTupledArguments" xml:space="preserve">
+    <value>這個聯集需要 {0} 個 Tuple 形式的引數</value>
+  </data>
+  <data name="tastDuplicateTypeDefinitionInAssembly" xml:space="preserve">
+    <value>兩個名稱為 '{0}' 的類型定義出現在這個組件兩個部分的命名空間 '{1}' 中</value>
+  </data>
+  <data name="tcInvalidModuleName" xml:space="preserve">
+    <value>無效的模組名稱</value>
+  </data>
+  <data name="considerUpcastOperator" xml:space="preserve">
+    <value>從 {0} 轉換為 {1} 屬於編譯時間安全的向上轉換，而非向下轉換。請考慮使用 :&gt; (upcast) 運算子而不使用 :?&gt; (downcast) 運算子。</value>
+  </data>
+  <data name="forPositionalSpecifiersNotPermitted" xml:space="preserve">
+    <value>格式字串中不允許使用位置規範</value>
+  </data>
+  <data name="tcCustomOperationMayNotBeOverloaded" xml:space="preserve">
+    <value>自訂作業 '{0}' 參考的方法已多載。可能無法多載自訂作業的實作。</value>
+  </data>
+  <data name="parsUseBindingsIllegalInModules" xml:space="preserve">
+    <value>不允許在模組中使用 'use' 繫結，將當做 'let' 繫結處理</value>
+  </data>
+  <data name="optsCodepage" xml:space="preserve">
+    <value>指定用來讀取原始程式檔的字碼頁</value>
+  </data>
+  <data name="elDeprecatedOperator" xml:space="preserve">
+    <value>這個運算子的處理方式現在是直接由 F# 編譯器處理，其意義無法重新定義</value>
+  </data>
+  <data name="keywordDescriptionDynamicCast" xml:space="preserve">
+    <value>將類型轉換為階層中較低的類型。</value>
+  </data>
+  <data name="buildCouldNotReadVersionInfoFromMscorlib" xml:space="preserve">
+    <value>無法從 mscorlib.dll 讀取版本</value>
+  </data>
+  <data name="etProviderErrorWithContext" xml:space="preserve">
+    <value>型別提供者 '{0}' 已回報所提供型別 '{1}'，成員 '{2}' 的內容中出現錯誤。錯誤: {3}</value>
+  </data>
+  <data name="etErrorApplyingStaticArgumentsToType" xml:space="preserve">
+    <value>將靜態引數套用至提供的類型時發生錯誤</value>
+  </data>
+  <data name="optsHelpBannerInputFiles" xml:space="preserve">
+    <value>- 輸入檔 -</value>
+  </data>
+  <data name="parsIntegerForLoopRequiresSimpleIdentifier" xml:space="preserve">
+    <value>用於迴圈的整數必須使用簡單識別碼</value>
+  </data>
+  <data name="lexOutsideEightBitSignedHex" xml:space="preserve">
+    <value>這個數字已經超出十六進位 8 位元有正負號整數允許的範圍</value>
+  </data>
+  <data name="patternMatchGuardIsNotBool" xml:space="preserve">
+    <value>模式比對成立條件必須是類型 'bool'，但此 'when' 運算式卻是類型 '{0}'。</value>
+  </data>
+  <data name="parsEmptyTypeDefinition" xml:space="preserve">
+    <value>類型定義需要一個或多個成員或其他宣告。如果您打算定義空的類別、結構或介面，請使用 'type ... = class end'、'interface end' 或 'struct end'。</value>
+  </data>
+  <data name="csGenericConstructRequiresReferenceSemantics" xml:space="preserve">
+    <value>泛型建構要求類型 '{0}' 必須有參考語意，但它卻沒有，也就是說它是結構</value>
+  </data>
+  <data name="ValueNotContainedMutabilityNamesDiffer" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n名稱不同</value>
+  </data>
+  <data name="chkNoByrefInTypeAbbrev" xml:space="preserve">
+    <value>類型縮寫包含 ByRef。F# 不允許這種作法。</value>
+  </data>
+  <data name="ilwriteErrorCreatingMdb" xml:space="preserve">
+    <value>無法產生 MDB 偵錯資訊。無法從 'Mono.CompilerServices.SymbolWriter.dll' 組件載入 'MonoSymbolWriter' 類型。</value>
+  </data>
+  <data name="ilwriteErrorCreatingPdb" xml:space="preserve">
+    <value>建立偵錯資訊檔 '{0}' 時發生未預期的錯誤</value>
+  </data>
+  <data name="tcExpectedUnitOfMeasureMarkWithAttribute" xml:space="preserve">
+    <value>必須是測量單位參數，不是型別參數。明確的測量單位參數必須以 [&lt;Measure&gt;] 屬性標記。</value>
+  </data>
+  <data name="tcUnableToParseFormatString" xml:space="preserve">
+    <value>無法剖析格式字串 '{0}'</value>
+  </data>
+  <data name="tastUnexpectedDecodeOfAutoOpenAttribute" xml:space="preserve">
+    <value>未預期的 AutoOpenAttribute 解碼</value>
+  </data>
+  <data name="crefQuotationsCantCallTraitMembers" xml:space="preserve">
+    <value>引號內不能包含進行成員條件約束呼叫的運算式，或使用隱含解析成成員條件約束呼叫的運算子</value>
+  </data>
+  <data name="noEqualSignAfterModule" xml:space="preserve">
+    <value>程式庫或多檔案應用程式中的檔案必須以命名空間或模組宣告為開頭。在檔案開頭使用模組宣告時，不允許 '=' 符號。如果這是頂層模組，請考慮移除 = 以解決此錯誤。</value>
+  </data>
+  <data name="tcFieldAppearsTwiceInRecord" xml:space="preserve">
+    <value>欄位 '{0}' 在這個記錄運算式或模式中出現兩次</value>
+  </data>
+  <data name="etProvidedTypeHasUnexpectedName" xml:space="preserve">
+    <value>提供的類型必須命名為 '{0}' 但卻具有值為 '{1}' 的 'Name'</value>
+  </data>
+  <data name="etProvidedTypeHasUnexpectedPath" xml:space="preserve">
+    <value>提供之類型的路徑必須是 '{0}' 但卻具有路徑 '{1}'</value>
+  </data>
+  <data name="tcCustomAttributeArgumentMismatch" xml:space="preserve">
+    <value>自訂屬性的引數數目不符合屬性建構函式預期的引數數目</value>
+  </data>
+  <data name="chkMemberUsedInInvalidWay" xml:space="preserve">
+    <value>成員 '{0}' 的使用方式無效。系統推斷 '{1}' 在其定義之前已在 '{2}' 或附近使用過。這是無效的向前參考。</value>
+  </data>
+  <data name="etEventNoRemove" xml:space="preserve">
+    <value>提供的類型 '{1}' 中的事件 '{0}' 沒有來自 GetRemoveMethod() 的值</value>
+  </data>
+  <data name="ilSignRsaKeyExpected" xml:space="preserve">
+    <value>必須是 RSA 金鑰</value>
+  </data>
+  <data name="tcFSharpCoreRequiresExplicit" xml:space="preserve">
+    <value>FSharp.Core.dll 中的所有記錄、等位和結構類型都必須明確標示 'StructuralComparison' 或 'NoComparison'</value>
+  </data>
+  <data name="nrUnionTypeNeedsQualifiedAccess" xml:space="preserve">
+    <value>聯集 '{0}' 的等位型別由 RequireQualifiedAccessAttribute 定義。請在您使用的名稱中，加入等位型別 '{1}' 的名稱。</value>
+  </data>
+  <data name="tastActivePatternsLimitedToSeven" xml:space="preserve">
+    <value>現用模式不能傳回超過 7 種可能性</value>
+  </data>
+  <data name="undefinedNameValueOfConstructor" xml:space="preserve">
+    <value>未定義值或建構函式 '{0}'。</value>
+  </data>
+  <data name="tcInheritConstructionCallNotPartOfImplicitSequence" xml:space="preserve">
+    <value>這個 'inherit' 宣告具有引數，但不在含有主要建構函式的類型中。請考慮在您的類型定義加入引數，例如 'type X(args) = ...'。</value>
+  </data>
+  <data name="tcTypesAreAlwaysSealedDU" xml:space="preserve">
+    <value>差別等位類型永遠是封閉的</value>
+  </data>
+  <data name="ilUnexpectedGetSetAnnotation" xml:space="preserve">
+    <value>屬性有非預期的 GetSet 註釋</value>
+  </data>
+  <data name="tcInvalidEnumerationLiteral" xml:space="preserve">
+    <value>這不是列舉常值的有效值</value>
+  </data>
+  <data name="nrInvalidModuleExprType" xml:space="preserve">
+    <value>無效的模組/運算式/類型</value>
+  </data>
+  <data name="nicePrintOtherOverloadsN" xml:space="preserve">
+    <value>+ {0} 個多載</value>
+  </data>
+  <data name="nicePrintOtherOverloads1" xml:space="preserve">
+    <value>+ 1 個多載</value>
+  </data>
+  <data name="csExpectTypeWithOperatorButGivenTuple" xml:space="preserve">
+    <value>必須是支援運算子 '{0}' 的型別，但指定的是元組型別</value>
+  </data>
+  <data name="fscReferenceOnCommandLine" xml:space="preserve">
+    <value>組件 '{0}' 列在命令列中。請使用命令列旗標 (例如 '-r') 來參考組件。</value>
+  </data>
+  <data name="etProvidedTypeWithNullOrEmptyName" xml:space="preserve">
+    <value>提供之類型的 '{0}' 為 null 或空白。</value>
+  </data>
+  <data name="chkDuplicateMethodInheritedType" xml:space="preserve">
+    <value>重複的方法。抽象方法 '{0}' 與繼承類型中的某抽象方法具有相同的名稱和簽章。</value>
+  </data>
+  <data name="typeInfoFromNext" xml:space="preserve">
+    <value>也來自 {0}</value>
+  </data>
+  <data name="tcRuntimeSuppliedMethodCannotBeUsedInUserCode" xml:space="preserve">
+    <value>陣列方法 '{0}' 是由執行階段所提供，無法直接用於程式碼中。對於含有陣列元素的作業，請考慮使用 LanguagePrimitives.IntrinsicFunctions 模組中的 GetArray/SetArray 函式系列。</value>
+  </data>
+  <data name="parsIgnoreAttributesOnModuleAbbreviationAlwaysPrivate" xml:space="preserve">
+    <value>模組縮寫不得包含 '{0}' 存取範圍屬性。模組縮寫一律為私用。</value>
+  </data>
+  <data name="tcGeneratedTypesShouldBeInternalOrPrivate" xml:space="preserve">
+    <value>以這種方式使用型別提供者所產生的提供型別不能在其他 F# 組件中使用，而且應該標記為內部或私用。請考慮使用 'type internal TypeName = ...' 或 'type private TypeName = ...'。</value>
+  </data>
+  <data name="addIndexerDot" xml:space="preserve">
+    <value>為索引子存取新增 .。</value>
+  </data>
+  <data name="tcDllImportNotAllowed" xml:space="preserve">
+    <value>DLLImport 繫結必須是類別中的靜態成員或模組中的函式定義</value>
+  </data>
+  <data name="tcInferredGenericTypeGivesRiseToInconsistency" xml:space="preserve">
+    <value>函式或成員 '{0}' 的使用方式要求在定義處必須有進一步的類型註釋，才能確保推斷類型的一致性。推斷的簽章為 '{1}'。</value>
+  </data>
+  <data name="tcDefaultImplementationAlreadyExists" xml:space="preserve">
+    <value>這個方法已經有預設實作</value>
+  </data>
+  <data name="ValueNotContainedMutabilityInstanceButStatic" xml:space="preserve">
+    <value>模組 '{0}' 包含\n    {1}    \n但它的簽章卻指定\n    {2}    \n這個方法的編譯表示是做為執行個體成員，但簽章卻指示它的編譯表示是做為靜態成員</value>
+  </data>
+  <data name="lexInvalidByteLiteral" xml:space="preserve">
+    <value>這不是有效的位元組常值</value>
+  </data>
+</root>

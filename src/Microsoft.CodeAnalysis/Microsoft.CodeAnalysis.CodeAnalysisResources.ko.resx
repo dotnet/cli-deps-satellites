@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Struct1" xml:space="preserve">
+    <value>구조체</value>
+  </data>
+  <data name="ElementIsExpected" xml:space="preserve">
+    <value>요소가 필요합니다.</value>
+  </data>
+  <data name="PEImageNotAvailable" xml:space="preserve">
+    <value>PE 이미지를 사용할 수 없습니다.</value>
+  </data>
+  <data name="InvalidSizeOfPublicKeyToken" xml:space="preserve">
+    <value>잘못된 공용 키 토큰 크기입니다.</value>
+  </data>
+  <data name="Event1" xml:space="preserve">
+    <value>이벤트</value>
+  </data>
+  <data name="InconsistentLanguageVersions" xml:space="preserve">
+    <value>일치하지 않는 언어 버전</value>
+  </data>
+  <data name="ReferenceResolverShouldReturnReadableNonNullStream" xml:space="preserve">
+    <value>참조 확인자는 읽을 수 있고 null이 아닌 스트림을 반환해야 합니다.</value>
+  </data>
+  <data name="InvalidCompilationOptions" xml:space="preserve">
+    <value>잘못된 컴파일 옵션입니다. 제출에 서명할 수 없습니다.</value>
+  </data>
+  <data name="EmptyKeyInPathMap" xml:space="preserve">
+    <value>pathMap의 키가 비어 있습니다.</value>
+  </data>
+  <data name="RuleSetHasDuplicateRules" xml:space="preserve">
+    <value>규칙 설정 파일에서 '{1}' 및 '{2}'이(가) 다르게 동작하는 '{0}'에 대한 규칙이 중복되었습니다.</value>
+  </data>
+  <data name="TypeMustBeASubclassOfSyntaxAnnotation" xml:space="preserve">
+    <value>형식은 SyntaxAnnotation의 하위 클래스여야 합니다.</value>
+  </data>
+  <data name="CompilerAnalyzerThrowsDescription" xml:space="preserve">
+    <value>'{0}' 분석기에서 다음 예외를 throw했습니다.
+'{1}'</value>
+  </data>
+  <data name="Value_too_large_to_be_represented_as_a_30_bit_unsigned_integer" xml:space="preserve">
+    <value>값이 너무 커서 30비트 부호 없는 정수로 표시할 수 없습니다.</value>
+  </data>
+  <data name="CannotAliasModule" xml:space="preserve">
+    <value>모듈에 별칭을 지정할 수 없습니다.</value>
+  </data>
+  <data name="InvalidCharactersInAssemblyCultureName" xml:space="preserve">
+    <value>어셈블리 문화권 이름에 잘못된 문자가 있습니다.</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>모듈</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>메서드</value>
+  </data>
+  <data name="SymWriterNotDeterministic" xml:space="preserve">
+    <value>Windows PDB 기록기는 결정적 컴파일을 지원하지 않습니다. '{0}'</value>
+  </data>
+  <data name="AnalyzerNameColumnHeader" xml:space="preserve">
+    <value>분석기</value>
+  </data>
+  <data name="Class1" xml:space="preserve">
+    <value>클래스</value>
+  </data>
+  <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
+    <value>모듈 복사본은 어셈블리 메타데이터를 만드는 데 사용할 수 없습니다.</value>
+  </data>
+  <data name="IconStreamUnexpectedFormat" xml:space="preserve">
+    <value>아이콘 스트림이 필요한 형식이 아닙니다.</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>파일을 찾을 수 없습니다.</value>
+  </data>
+  <data name="RuleSetBadAttributeValue" xml:space="preserve">
+    <value>{0} 특성에 잘못된 {1} 값이 있습니다.</value>
+  </data>
+  <data name="CoffResourceInvalidSectionSize" xml:space="preserve">
+    <value>COFF 개체 형식으로 간주되는 Win32 리소스에 잘못된 섹션 크기가 있습니다.</value>
+  </data>
+  <data name="UnrecognizedResourceFileFormat" xml:space="preserve">
+    <value>인식할 수 없는 리소스 파일 형식입니다.</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>매개 변수</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>속성, 인덱서</value>
+  </data>
+  <data name="RuleSetMissingAttribute" xml:space="preserve">
+    <value>{0} 요소에 이름이 {1}인 특성이 없습니다.</value>
+  </data>
+  <data name="MetadataRefNotFoundToRemove1" xml:space="preserve">
+    <value>제거할 '{0}' MetadataReference를 찾을 수 없습니다.</value>
+  </data>
+  <data name="InvalidModuleName" xml:space="preserve">
+    <value>'{0}' 메타데이터 모듈에 잘못된 모듈 이름이 지정되었습니다('{1}').</value>
+  </data>
+  <data name="NameContainsInvalidCharacter" xml:space="preserve">
+    <value>이름에 잘못된 문자가 포함되어 있습니다.</value>
+  </data>
+  <data name="PdbStreamUnexpectedWhenEmbedding" xml:space="preserve">
+    <value>PDB를 PE 스트림에 포함할 경우 PDB 스트림을 지정하면 안 됩니다.</value>
+  </data>
+  <data name="PdbStreamUnexpectedWhenEmittingMetadataOnly" xml:space="preserve">
+    <value>메타데이터만 내보낼 때 PDB 스트림을 지정해서는 안 됩니다.</value>
+  </data>
+  <data name="AnalyzerDriverFailure" xml:space="preserve">
+    <value>분석기 드라이버 오류</value>
+  </data>
+  <data name="MustIncludePrivateMembersUnlessRefAssembly" xml:space="preserve">
+    <value>참조 어셈블리를 내보내지 않는 경우 개인 멤버를 포함해야 합니다.</value>
+  </data>
+  <data name="ChangesMustBeOrderedAndNotOverlapping" xml:space="preserve">
+    <value>변경 내용의 순서를 지정해야 하고 겹쳐서는 안 됩니다.</value>
+  </data>
+  <data name="KeepAliveIsTooSmall" xml:space="preserve">
+    <value>-1 아래의 '/keepalive' 옵션에 대한 인수가 잘못되었습니다.</value>
+  </data>
+  <data name="IOperationFeatureDisabled" xml:space="preserve">
+    <value>'IOperation' 기능을 사용할 수 없습니다.</value>
+  </data>
+  <data name="AbsolutePathExpected" xml:space="preserve">
+    <value>절대 경로가 필요합니다.</value>
+  </data>
+  <data name="InvalidDataAtOffset" xml:space="preserve">
+    <value>{0} 오프셋의 잘못된 데이터: {1}{2}*{3}{4}</value>
+  </data>
+  <data name="XmlReferencesNotSupported" xml:space="preserve">
+    <value>XML 문서에 대한 참조는 지원되지 않습니다.</value>
+  </data>
+  <data name="StreamIsTooLong" xml:space="preserve">
+    <value>스트림이 너무 깁니다.</value>
+  </data>
+  <data name="ReturnTypeCannotBeValuePointerbyRefOrOpen" xml:space="preserve">
+    <value>반환 형식에는 값 형식, 포인터, by-ref 또는 공개 제네릭 형식을 사용할 수 없습니다.</value>
+  </data>
+  <data name="TupleUnderlyingTypeMustBeTupleCompatible" xml:space="preserve">
+    <value>튜플의 기본 형식은 튜플과 호환되어야 합니다.</value>
+  </data>
+  <data name="AnalyzerDriverThrowsDescription" xml:space="preserve">
+    <value>분석기 드라이버에서 다음 예외를 throw했습니다.
+'{0}'.</value>
+  </data>
+  <data name="ExceptionContext" xml:space="preserve">
+    <value>다음 컨텍스트에서 예외가 발생했습니다.
+{0}</value>
+  </data>
+  <data name="The_type_0_is_not_understood_by_the_serialization_binder" xml:space="preserve">
+    <value>직렬화 바인더가 '{0}' 형식을 인식할 수 없습니다.</value>
+  </data>
+  <data name="InconsistentSyntaxTreeFeature" xml:space="preserve">
+    <value>일관성 없는 구문 트리 기능</value>
+  </data>
+  <data name="CannotEmbedInteropTypesFromModule" xml:space="preserve">
+    <value>모듈에서 interop 형식을 포함할 수 없습니다.</value>
+  </data>
+  <data name="SourceTextCannotBeEmbedded" xml:space="preserve">
+    <value>SourceText를 포함할 수 없습니다. 생성 시 인코딩 또는 canBeEmbedded=true를 지정하세요.</value>
+  </data>
+  <data name="Stream_contains_invalid_data" xml:space="preserve">
+    <value>스트림에 잘못된 데이터가 들어 있습니다.</value>
+  </data>
+  <data name="AnalyzerExecutionTimeColumnHeader" xml:space="preserve">
+    <value>시간(초)</value>
+  </data>
+  <data name="AsyncAnalyzerActionCannotBeRegistered" xml:space="preserve">
+    <value>분석기에서 'async' 작업을 등록하려고 했지만, 이 작업은 지원되지 않습니다.</value>
+  </data>
+  <data name="InvalidTree" xml:space="preserve">
+    <value>구문 트리가 기본 '컴파일'에 속하지 않습니다.</value>
+  </data>
+  <data name="InvalidHash" xml:space="preserve">
+    <value>잘못된 해시입니다.</value>
+  </data>
+  <data name="KeepAliveWithoutShared" xml:space="preserve">
+    <value>'/keepalive' 옵션은 '/shared' 옵션과 함께 사용되는 경우에만 유효합니다.</value>
+  </data>
+  <data name="IncludingPrivateMembersUnexpectedWhenEmittingToMetadataPeStream" xml:space="preserve">
+    <value>보조 어셈블리 출력으로 내보낼 때 개인 멤버를 포함해서는 안 됩니다.</value>
+  </data>
+  <data name="PathReturnedByResolveStrongNameKeyFileMustBeAbsolute" xml:space="preserve">
+    <value>{0}.ResolveStrongNameKeyFile에서 반환한 경로는 절대 경로여야 합니다. '{1}'</value>
+  </data>
+  <data name="FailedToResolveRuleSetName" xml:space="preserve">
+    <value>규칙 집합 파일 '{0}'을(를) 찾을 수 없습니다.</value>
+  </data>
+  <data name="KeyInPathMapEndsWithSeparator" xml:space="preserve">
+    <value>pathMap의 키가 경로 구분 기호로 끝납니다.</value>
+  </data>
+  <data name="AssemblySigningNotSupported" xml:space="preserve">
+    <value>어셈블리 서명은 지원되지 않습니다.</value>
+  </data>
+  <data name="InvalidNodeToTrack" xml:space="preserve">
+    <value>추적할 노드가 루트의 하위 항목이 아닙니다.</value>
+  </data>
+  <data name="MissingListItem" xml:space="preserve">
+    <value>지정한 항목은 목록의 요소가 아닙니다.</value>
+  </data>
+  <data name="Delegate1" xml:space="preserve">
+    <value>대리자</value>
+  </data>
+  <data name="TheStreamCannotBeWrittenTo" xml:space="preserve">
+    <value>스트림에 쓸 수 없습니다.</value>
+  </data>
+  <data name="SharedArgumentMissing" xml:space="preserve">
+    <value>'/shared:' 인수의 값은 비워 둘 수 없습니다.</value>
+  </data>
+  <data name="Deserialization_reader_for_0_read_incorrect_number_of_values" xml:space="preserve">
+    <value>'{0}'에 대한 역직렬화 판독기가 잘못된 숫자 값을 읽습니다.</value>
+  </data>
+  <data name="CannotCreateReferenceToSubmission" xml:space="preserve">
+    <value>제출에 대한 참조를 만들 수 없습니다.</value>
+  </data>
+  <data name="PathReturnedByResolveMetadataFileMustBeAbsolute" xml:space="preserve">
+    <value>{0}.ResolveMetadataFile에서 반환한 경로는 절대 경로여야 합니다. '{1}'</value>
+  </data>
+  <data name="Unresolved" xml:space="preserve">
+    <value>확인되지 않음: </value>
+  </data>
+  <data name="KeepAliveIsNotAnInteger" xml:space="preserve">
+    <value>'/keepalive' 옵션의 인수는 32비트 정수가 아닙니다.</value>
+  </data>
+  <data name="SpanDoesNotIncludeStartOfLine" xml:space="preserve">
+    <value>범위에 줄의 시작이 포함되지 않습니다.</value>
+  </data>
+  <data name="CantCreateReferenceToAssemblyWithoutLocation" xml:space="preserve">
+    <value>위치 없이 어셈블리에 대한 메타데이터 참조를 만들 수 없습니다.</value>
+  </data>
+  <data name="InvalidCultureName" xml:space="preserve">
+    <value>잘못된 문화권 이름입니다('{0}').</value>
+  </data>
+  <data name="TuplesNeedAtLeastTwoElements" xml:space="preserve">
+    <value>튜플에는 요소가 두 개 이상 있어야 합니다.</value>
+  </data>
+  <data name="MismatchedVersion" xml:space="preserve">
+    <value>Roslyn 컴파일러 서버가 빌드 작업과 다른 프로토콜 버전을 보고합니다.</value>
+  </data>
+  <data name="AnalyzerTotalExecutionTime" xml:space="preserve">
+    <value>총 분석기 실행 시간: {0}초.</value>
+  </data>
+  <data name="CompilationOptionsMustNotHaveErrors" xml:space="preserve">
+    <value>컴파일 옵션에 오류가 없어야 합니다.</value>
+  </data>
+  <data name="Cannot_serialize_type_0" xml:space="preserve">
+    <value>'{0}' 형식을 직렬화할 수 없습니다.</value>
+  </data>
+  <data name="MetadataPeStreamUnexpectedWhenEmittingMetadataOnly" xml:space="preserve">
+    <value>메타데이터만 내보낼 때 메타데이터 PE 스트림을 지정해서는 안 됩니다.</value>
+  </data>
+  <data name="EmptyOrInvalidResourceName" xml:space="preserve">
+    <value>비어 있거나 잘못된 리소스 이름입니다.</value>
+  </data>
+  <data name="ReturnTypeCannotBeVoidByRefOrOpen" xml:space="preserve">
+    <value>반환 형식에는 void, by-ref 또는 공개 제네릭 형식을 사용할 수 없습니다.</value>
+  </data>
+  <data name="SymWriterDoesNotSupportSourceLink" xml:space="preserve">
+    <value>Windows PDB 기록기는 SourceLink 기능을 지원하지 않습니다. '{0}'</value>
+  </data>
+  <data name="InvalidPublicKeyToken" xml:space="preserve">
+    <value>공개 키 토큰이 잘못되었습니다.</value>
+  </data>
+  <data name="MissingKeepAlive" xml:space="preserve">
+    <value>'/keepalive' 옵션에 인수가 없습니다.</value>
+  </data>
+  <data name="InMemoryModule" xml:space="preserve">
+    <value>&lt;메모리 내의 모듈&gt;</value>
+  </data>
+  <data name="SymWriterOlderVersionThanRequired" xml:space="preserve">
+    <value>Windows PDB 기록기가 필요한 버전보다 이전 버전입니다. '{0}'</value>
+  </data>
+  <data name="NodeOrTokenOutOfSequence" xml:space="preserve">
+    <value>노드 또는 토큰이 순서를 벗어났습니다.</value>
+  </data>
+  <data name="EmbeddingPdbUnexpectedWhenEmittingMetadata" xml:space="preserve">
+    <value>메타데이터를 내보낼 때 PDB를 포함할 수 없습니다.</value>
+  </data>
+  <data name="CantCreateReferenceToDynamicAssembly" xml:space="preserve">
+    <value>동적 어셈블리에 대한 메타데이터 참조를 만들 수 없습니다.</value>
+  </data>
+  <data name="CoffResourceInvalidSymbol" xml:space="preserve">
+    <value>COFF 개체 형식으로 간주되는 Win32 리소스에 잘못된 기호 값이 둘 이상 있습니다.</value>
+  </data>
+  <data name="StreamMustSupportReadAndSeek" xml:space="preserve">
+    <value>스트림은 읽기 및 찾기 작업을 지원해야 합니다.</value>
+  </data>
+  <data name="Enum1" xml:space="preserve">
+    <value>열거형</value>
+  </data>
+  <data name="InvalidDiagnosticLocationReported" xml:space="preserve">
+    <value>보고된 진단 '{0}'의 원본 위치가 분석되는 컴파일의 일부가 아닌 '{1}' 파일에 있습니다.</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>필드</value>
+  </data>
+  <data name="NameCannotBeEmpty" xml:space="preserve">
+    <value>이름은 비워 둘 수 없습니다.</value>
+  </data>
+  <data name="CoffResourceMissingSection" xml:space="preserve">
+    <value>COFF 형식으로 간주되는 Win32 리소스에 '.rsrc$01' 및 '.rsrc$02' 섹션이 하나 또는 둘 다 없습니다.</value>
+  </data>
+  <data name="TupleElementNameCountMismatch" xml:space="preserve">
+    <value>튜플 요소 이름을 지정하는 경우 요소 이름 수가 튜플의 카디널리티와 일치해야 합니다.</value>
+  </data>
+  <data name="InvalidContentType" xml:space="preserve">
+    <value>잘못된 콘텐츠 형식입니다.</value>
+  </data>
+  <data name="GetMetadataMustReturnInstance" xml:space="preserve">
+    <value>{0}.GetMetadata()는 {1}의 인스턴스를 반환해야 합니다.</value>
+  </data>
+  <data name="InvalidDiagnosticIdReported" xml:space="preserve">
+    <value>보고된 진단의 ID가 '{0}'인데 유효한 식별자가 아닙니다.</value>
+  </data>
+  <data name="CantCreateModuleReferenceToAssembly" xml:space="preserve">
+    <value>어셈블리에 대한 모듈 참조를 만들 수 없습니다.</value>
+  </data>
+  <data name="DuplicateAnalyzerInstances" xml:space="preserve">
+    <value>인수에 중복된 분석기 인스턴스가 포함되어 있습니다.</value>
+  </data>
+  <data name="NameCannotStartWithWhitespace" xml:space="preserve">
+    <value>이름은 공백으로 시작할 수 없습니다.</value>
+  </data>
+  <data name="Arrays_with_more_than_one_dimension_cannot_be_serialized" xml:space="preserve">
+    <value>차원이 두 개 이상인 배열을 직렬화할 수 없습니다.</value>
+  </data>
+  <data name="UnsupportedDiagnosticReported" xml:space="preserve">
+    <value>ID가 '{0}'인 보고된 진단이 분석기에서 지원되지 않습니다.</value>
+  </data>
+  <data name="OutputKindNotSupported" xml:space="preserve">
+    <value>출력 종류가 지원되지 않습니다.</value>
+  </data>
+  <data name="SeparatorIsExpected" xml:space="preserve">
+    <value>구분 기호가 필요합니다.</value>
+  </data>
+  <data name="UnexpectedTypeOfNodeInList" xml:space="preserve">
+    <value>목록의 노드가 필요한 형식이 아닙니다.</value>
+  </data>
+  <data name="AnonymousTypeArgumentCountMismatch2" xml:space="preserve">
+    <value>{0}은(는) '기본값'이거나 {1}과(와) 길이가 같아야 합니다.</value>
+  </data>
+  <data name="NameCannotBeNull" xml:space="preserve">
+    <value>이름은 null일 수 없습니다.</value>
+  </data>
+  <data name="UnsupportedHashAlgorithm" xml:space="preserve">
+    <value>지원되지 않는 해시 알고리즘입니다.</value>
+  </data>
+  <data name="ResourceStreamProviderShouldReturnNonNullStream" xml:space="preserve">
+    <value>리소스 스트림 공급자는 null이 아닌 스트림을 반환해야 합니다.</value>
+  </data>
+  <data name="WinRTIdentityCantBeRetargetable" xml:space="preserve">
+    <value>WindowsRuntime ID는 대상으로 다시 지정할 수 없습니다.</value>
+  </data>
+  <data name="UnsupportedAnalyzerInstance" xml:space="preserve">
+    <value>인수에 이 CompilationWithAnalyzers 인스턴스에 대한 '분석기'에 속하지 않는 분석기 인스턴스가 포함되어 있습니다.</value>
+  </data>
+  <data name="CannotTargetNetModuleWhenEmittingRefAssembly" xml:space="preserve">
+    <value>참조 어셈블리를 내보낼 때 NET 모듈을 대상으로 지정할 수 없습니다.</value>
+  </data>
+  <data name="Cannot_deserialize_type_0" xml:space="preserve">
+    <value>'{0}' 형식을 역직렬화할 수 없습니다.</value>
+  </data>
+  <data name="StreamMustSupportRead" xml:space="preserve">
+    <value>스트림을 읽을 수 있어야 합니다.</value>
+  </data>
+  <data name="Interface1" xml:space="preserve">
+    <value>인터페이스</value>
+  </data>
+  <data name="CoffResourceInvalidRelocation" xml:space="preserve">
+    <value>COFF 개체 형식으로 간주되는 Win32 리소스에 잘못된 재배치 헤더 값이 둘 이상 있습니다.</value>
+  </data>
+  <data name="CompilerAnalyzerThrows" xml:space="preserve">
+    <value>분석기 '{0}'에서 '{2}' 메시지와 함께 '{1}' 형식의 예외를 throw했습니다.</value>
+  </data>
+  <data name="InMemoryAssembly" xml:space="preserve">
+    <value>&lt;메모리 내의 어셈블리&gt;</value>
+  </data>
+  <data name="AnonymousTypeMemberAndNamesCountMismatch2" xml:space="preserve">
+    <value>{0}과(와) {1}의 길이가 같아야 합니다.</value>
+  </data>
+  <data name="TupleElementNameEmpty" xml:space="preserve">
+    <value>튜플 요소 이름은 빈 문자열일 수 없습니다.</value>
+  </data>
+  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
+    <value>이식 가능한 PDB를 내보낼 때만 포함된 텍스트가 지원됩니다.</value>
+  </data>
+  <data name="InvalidOutputKindForSubmission" xml:space="preserve">
+    <value>제출에 대해 잘못된 출력 종류입니다. DynamicallyLinkedLibrary가 필요합니다.</value>
+  </data>
+  <data name="StreamMustSupportWrite" xml:space="preserve">
+    <value>스트림이 쓰기 가능해야 합니다.</value>
+  </data>
+  <data name="InvalidAssemblyName" xml:space="preserve">
+    <value>잘못된 어셈블리 이름입니다('{0}').</value>
+  </data>
+  <data name="InvalidAlias" xml:space="preserve">
+    <value>잘못된 별칭입니다.</value>
+  </data>
+  <data name="Constructor" xml:space="preserve">
+    <value>생성자</value>
+  </data>
+  <data name="NoAnalyzersFound" xml:space="preserve">
+    <value>분석기를 찾을 수 없습니다.</value>
+  </data>
+  <data name="AssemblyMustHaveAtLeastOneModule" xml:space="preserve">
+    <value>어셈블리에는 모듈이 하나 이상 있어야 합니다.</value>
+  </data>
+  <data name="ResourceDataProviderShouldReturnNonNullStream" xml:space="preserve">
+    <value>리소스 데이터 공급자는 null이 아닌 스트림을 반환해야 합니다.</value>
+  </data>
+  <data name="ResourceStreamEndedUnexpectedly" xml:space="preserve">
+    <value>리소스 스트림이 {0}바이트에서 끝났는데 {1}바이트여야 합니다.</value>
+  </data>
+  <data name="PEImageDoesntContainManagedMetadata" xml:space="preserve">
+    <value>PE 이미지에 관리된 메타데이터가 포함되어 있지 않습니다.</value>
+  </data>
+  <data name="EmptyOrInvalidFileName" xml:space="preserve">
+    <value>비어 있거나 잘못된 파일 이름입니다.</value>
+  </data>
+  <data name="Return1" xml:space="preserve">
+    <value>돌아가기</value>
+  </data>
+  <data name="AnalyzerDriverThrows" xml:space="preserve">
+    <value>분석기 드라이버에서 '{1}' 메시지와 함께 '{0}' 형식의 예외를 throw했습니다.</value>
+  </data>
+  <data name="FileSizeExceedsMaximumAllowed" xml:space="preserve">
+    <value>파일 크기가 유효한 메타데이터 파일에 허용된 최대 크기를 초과했습니다.</value>
+  </data>
+  <data name="SpanDoesNotIncludeEndOfLine" xml:space="preserve">
+    <value>범위에 줄의 끝이 포함되지 않습니다.</value>
+  </data>
+  <data name="PreviousSubmissionHasErrors" xml:space="preserve">
+    <value>이전 제출에 오류가 있습니다.</value>
+  </data>
+  <data name="CompilationReferencesAssembliesWithDifferentAutoGeneratedVersion" xml:space="preserve">
+    <value>컴파일에서 버전이 자동 생성 빌드 및/또는 수정 번호만 다른 여러 어셈블리를 참조합니다.</value>
+  </data>
+  <data name="AssemblyFileNotFound" xml:space="preserve">
+    <value>어셈블리 파일을 찾을 수 없습니다.</value>
+  </data>
+  <data name="InvalidPublicKey" xml:space="preserve">
+    <value>공개 키가 잘못되었습니다.</value>
+  </data>
+  <data name="TheStreamCannotBeReadFrom" xml:space="preserve">
+    <value>스트림에서 읽을 수 없습니다.</value>
+  </data>
+  <data name="ReferenceOfTypeIsInvalid1" xml:space="preserve">
+    <value>'{0}' 형식의 참조를 이 컴파일에 사용할 수 없습니다.</value>
+  </data>
+  <data name="DiagnosticIdCantBeNullOrWhitespace" xml:space="preserve">
+    <value>DiagnosticDescriptor에 null, 빈 문자열 및 공백만 포함된 문자열이 아닌 ID가 있어야 합니다.</value>
+  </data>
+  <data name="TypeMustBeSameAsHostObjectTypeOfPreviousSubmission" xml:space="preserve">
+    <value>형식은 이전 제출의 호스트 개체 형식과 같아야 합니다.</value>
+  </data>
+  <data name="TupleElementLocationCountMismatch" xml:space="preserve">
+    <value>튜플 요소 위치가 지정된 경우, 위치 수는 튜플의 카디널리티와 일치해야 합니다.</value>
+  </data>
+  <data name="EndMustNotBeLessThanStart" xml:space="preserve">
+    <value>'end'는 'start'보다 커야 합니다.</value>
+  </data>
+  <data name="CannotCreateReferenceToModule" xml:space="preserve">
+    <value>모듈에 대한 참조를 만들 수 없습니다.</value>
+  </data>
+  <data name="CompilerAnalyzerFailure" xml:space="preserve">
+    <value>분석기 오류</value>
+  </data>
+  <data name="ExpectedNonEmptyPublicKey" xml:space="preserve">
+    <value>비어 있지 않은 공용 키가 필요합니다.</value>
+  </data>
+  <data name="InvalidRuleSetInclude" xml:space="preserve">
+    <value>포함된 규칙 설정 파일 {0}을(를) 로드하는 동안 오류가 발생했습니다. {1}</value>
+  </data>
+  <data name="InvalidCharactersInAssemblyName" xml:space="preserve">
+    <value>어셈블리 이름에 잘못된 문자가 있습니다.</value>
+  </data>
+  <data name="MultithreadedAnalyzerExecutionNote" xml:space="preserve">
+    <value>참고: 여러 분석기가 동시에 실행될 수 있으므로 경과된 시간이 분석기 실행 시간보다 짧을 수 있습니다.</value>
+  </data>
+  <data name="ArgumentElementCannotBeNull" xml:space="preserve">
+    <value>인수에는 null 요소가 있을 수 없습니다.</value>
+  </data>
+  <data name="ArgumentCannotBeEmpty" xml:space="preserve">
+    <value>인수는 비워 둘 수 없습니다.</value>
+  </data>
+  <data name="Assembly" xml:space="preserve">
+    <value>어셈블리</value>
+  </data>
+  <data name="TypeParameter" xml:space="preserve">
+    <value>형식 매개 변수</value>
+  </data>
+  <data name="StartMustNotBeNegative" xml:space="preserve">
+    <value>'start'는 음수일 수 없습니다.</value>
+  </data>
+  <data name="SizeHasToBePositive" xml:space="preserve">
+    <value>크기는 양수여야 합니다.</value>
+  </data>
+  <data name="NullValueInPathMap" xml:space="preserve">
+    <value>pathMap의 값이 null입니다.</value>
+  </data>
+</root>

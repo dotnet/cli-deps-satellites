@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="printfHashFormatSpecifierIllegal" xml:space="preserve">
+    <value># 格式修饰符在 F# 中无效</value>
+  </data>
+  <data name="invalidTupleTypeConstructorNotDefined" xml:space="preserve">
+    <value>元组类型“{0}”无效。未定义所需的构造函数。</value>
+  </data>
+  <data name="syncContextNull" xml:space="preserve">
+    <value>调用线程的 System.Threading.SynchronizationContext.Current 为 null。</value>
+  </data>
+  <data name="QtupleAccessOutOfRange" xml:space="preserve">
+    <value>元组访问超出范围</value>
+  </data>
+  <data name="unsupportedQueryCall" xml:space="preserve">
+    <value>这不是有效的查询表达式。查询中使用了方法“{0}”，但 F#-LINQ 查询转换器无法识别该方法。请查看有效查询的规范，考虑是否将部分运算移到查询表达式之外</value>
+  </data>
+  <data name="QfailedToBindTypeInAssembly" xml:space="preserve">
+    <value>未能绑定程序集“{1}”中的类型“{0}”</value>
+  </data>
+  <data name="badFormatString" xml:space="preserve">
+    <value>输入字符串的格式不正确。</value>
+  </data>
+  <data name="QincorrectInstanceType" xml:space="preserve">
+    <value>实例类型不正确</value>
+  </data>
+  <data name="QcannotBindFunction" xml:space="preserve">
+    <value>未能绑定类型 {1} 中的函数 {0}</value>
+  </data>
+  <data name="QfailedToBindField" xml:space="preserve">
+    <value>未能绑定字段“{0}”</value>
+  </data>
+  <data name="printfPrecisonSpecifierIllegal" xml:space="preserve">
+    <value>错误的格式说明符(精度)</value>
+  </data>
+  <data name="nullsNotAllowedInArray" xml:space="preserve">
+    <value>数组中的某个元素为 null。</value>
+  </data>
+  <data name="firstClassUsesOfSplice" xml:space="preserve">
+    <value>不允许优先使用“%”或“%%”</value>
+  </data>
+  <data name="QtmmCondMustBeBool" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 条件表达式的类型必须为 bool。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="unsupportedQueryProperty" xml:space="preserve">
+    <value>这不是有效的查询表达式。查询中使用了属性“{0}”，但 F#-LINQ 查询转换器无法识别该属性。请查看有效查询的规范，考虑是否将部分运算移到查询表达式之外。</value>
+  </data>
+  <data name="QtmmVarTypeNotMatchRHS" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 变量类型与 let 绑定右侧的类型不匹配。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="QcannotBindProperty" xml:space="preserve">
+    <value>未能绑定类型 {1} 中的属性 {0}</value>
+  </data>
+  <data name="inputMustBeNonNegative" xml:space="preserve">
+    <value>输入必须为非负数。</value>
+  </data>
+  <data name="objIsNotARecord" xml:space="preserve">
+    <value>该对象不是 F# 记录值。</value>
+  </data>
+  <data name="QparentCannotBeNull" xml:space="preserve">
+    <value>父类型不能为 null</value>
+  </data>
+  <data name="keyNotFoundAlt" xml:space="preserve">
+    <value>未在集合找到符合谓词的索引。</value>
+  </data>
+  <data name="keyNotFound" xml:space="preserve">
+    <value>未在集合中找到相应的项、键或索引。</value>
+  </data>
+  <data name="mailboxReceiveTimedOut" xml:space="preserve">
+    <value>Mailbox.Receive 超时。</value>
+  </data>
+  <data name="startCannotBeNaN" xml:space="preserve">
+    <value>范围的开头不能为 NaN。</value>
+  </data>
+  <data name="QincompatibleRecordLength" xml:space="preserve">
+    <value>记录长度不兼容</value>
+  </data>
+  <data name="QtmmExprTypeMismatch" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 表达式的类型不匹配。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="checkStaticInit" xml:space="preserve">
+    <value>文件或类型的静态初始化导致静态数据正被按递归方式访问，而其尚未完全初始化。</value>
+  </data>
+  <data name="notEnoughElements" xml:space="preserve">
+    <value>输入序列具有的元素数目不足。</value>
+  </data>
+  <data name="moveNextNotCalledOrFinished" xml:space="preserve">
+    <value>未调用 MoveNext 或已完成 MoveNext</value>
+  </data>
+  <data name="QtmmFunctionArgTypeMismatch" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 函数参数类型不匹配。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="QmissingUnionCase" xml:space="preserve">
+    <value>类型“{0}”不具有名为“{1}”的 F# 联合用例。</value>
+  </data>
+  <data name="QtmmRaw" xml:space="preserve">
+    <value>将表达式拼接到引用文本中时类型不匹配。要插入的表达式树的类型与拼接操作所需的类型不匹配。应为“{0}”，但收到的类型为“{1}”。请考虑使用预期表达式类型进行类型批准，例如，(%% x : {0})或(%x : {0})。</value>
+  </data>
+  <data name="privateRecordType" xml:space="preserve">
+    <value>类型“{0}”是 F# 记录类型，但其表示形式是私有的。您必须指定 BindingFlags.NonPublic，才能访问私有类型表示形式。</value>
+  </data>
+  <data name="unsupportedQueryConstructKind" xml:space="preserve">
+    <value>这不是有效的查询表达式。查询中使用了构造“{0}”，但 F#-LINQ 查询转换器无法识别该构造。请查看有效查询的规范，考虑是否将部分运算移到查询表达式之外。</value>
+  </data>
+  <data name="enumerationPastIntMaxValue" xml:space="preserve">
+    <value>基于 System.Int32 的枚举已超过 System.Int32.MaxValue。</value>
+  </data>
+  <data name="QfailedToBindProperty" xml:space="preserve">
+    <value>未能绑定属性“{0}”</value>
+  </data>
+  <data name="stepCannotBeZero" xml:space="preserve">
+    <value>范围的跨距不能为零。</value>
+  </data>
+  <data name="addressOpNotFirstClass" xml:space="preserve">
+    <value>不允许优先使用 address-of 运算符。</value>
+  </data>
+  <data name="notARecordType" xml:space="preserve">
+    <value>类型“{0}”不是 F# 记录类型。</value>
+  </data>
+  <data name="dyInvDivByIntCoerce" xml:space="preserve">
+    <value>不支持对涉及强制的 DivideByInt 进行动态调用。</value>
+  </data>
+  <data name="arraysHadDifferentLengths" xml:space="preserve">
+    <value>各个数组具有不同的长度。</value>
+  </data>
+  <data name="QtmmInitArray" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 初始化表达式与数组类型不匹配。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="delegateExpected" xml:space="preserve">
+    <value>应为委托类型。</value>
+  </data>
+  <data name="QtmmTrueAndFalseMustMatch" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 类型为 true 和 false 的分支不同。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="genericCompareFail1" xml:space="preserve">
+    <value>泛型比较过程中出错: 类型“{0}”未实现 System.IComparable 接口。此错误可能是因使用的函数(如“compare”、“max”或“min”)或数据结构(如“Set”或“Map”)中的键包含此类型的实例而导致的。</value>
+  </data>
+  <data name="QunexpectedHole" xml:space="preserve">
+    <value>表达式中存在意外的引用漏洞。</value>
+  </data>
+  <data name="outOfRange" xml:space="preserve">
+    <value>索引超出了合法范围。</value>
+  </data>
+  <data name="printfExpectedPrecision" xml:space="preserve">
+    <value>应为精度参数</value>
+  </data>
+  <data name="stepCannotBeNaN" xml:space="preserve">
+    <value>范围的跨距不能为 NaN。</value>
+  </data>
+  <data name="arrayWasEmpty" xml:space="preserve">
+    <value>输入数组为空。</value>
+  </data>
+  <data name="QstaticWithReceiverObject" xml:space="preserve">
+    <value>由于成员是静态的，因此不应出现接收器对象</value>
+  </data>
+  <data name="inputSequenceTooLong" xml:space="preserve">
+    <value>输入序列包含多个元素。</value>
+  </data>
+  <data name="setContainsNoElements" xml:space="preserve">
+    <value>集未包含任何元素。</value>
+  </data>
+  <data name="QtmmExprHasWrongType" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 表达式具有错误类型。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="QexpectedTwoTypes" xml:space="preserve">
+    <value>应正好为两个类型参数。</value>
+  </data>
+  <data name="QtmmBadFieldType" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 字段的类型不正确。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="checkInit" xml:space="preserve">
+    <value>对象或值的初始化导致对象或值正被按递归方式访问，而尚未完全初始化。</value>
+  </data>
+  <data name="invalidRecordTypeConstructorNotDefined" xml:space="preserve">
+    <value>记录类型“{0}”无效。未定义所需的构造函数。</value>
+  </data>
+  <data name="mailboxProcessorPostAndAsyncReplyTimedOut" xml:space="preserve">
+    <value>MailboxProcessor.PostAndAsyncReply 超时。</value>
+  </data>
+  <data name="QfailedToBindAssembly" xml:space="preserve">
+    <value>在处理引用数据时未能绑定程序集“{0}”</value>
+  </data>
+  <data name="printfWidthSpecifierIllegal" xml:space="preserve">
+    <value>错误的格式说明符(宽度)</value>
+  </data>
+  <data name="dyInvOpMultCoerce" xml:space="preserve">
+    <value>不支持对涉及强制的 op_Multiply 进行动态调用。</value>
+  </data>
+  <data name="QincorrectNumArgs" xml:space="preserve">
+    <value>参数数目不正确</value>
+  </data>
+  <data name="matchCasesIncomplete" xml:space="preserve">
+    <value>大小写匹配不完整</value>
+  </data>
+  <data name="mismatchIAREnd" xml:space="preserve">
+    <value>提供的 IAsyncResult 对象与此“结束”操作不匹配。</value>
+  </data>
+  <data name="inputSequenceEmpty" xml:space="preserve">
+    <value>输入序列为空。</value>
+  </data>
+  <data name="QinvalidFuncType" xml:space="preserve">
+    <value>函数类型无效</value>
+  </data>
+  <data name="mismatchIARCancel" xml:space="preserve">
+    <value>提供的 IAsyncResult 对象与此“取消”操作不匹配。</value>
+  </data>
+  <data name="invalidTupleTypes" xml:space="preserve">
+    <value>这不是 F# 反射库的有效元组类型。</value>
+  </data>
+  <data name="thenByError" xml:space="preserve">
+    <value>“thenBy”和“thenByDescending”只能用于有序输入</value>
+  </data>
+  <data name="notUsedForHashing" xml:space="preserve">
+    <value>此对象用于递归相等调用，而不能用于哈希处理。</value>
+  </data>
+  <data name="resetNotSupported" xml:space="preserve">
+    <value>此枚举器不支持重置。</value>
+  </data>
+  <data name="QwritingGetOnly" xml:space="preserve">
+    <value>正在写入仅有 getter 的属性</value>
+  </data>
+  <data name="enumerationAlreadyFinished" xml:space="preserve">
+    <value>枚举已完成。</value>
+  </data>
+  <data name="QcannotTakeAddress" xml:space="preserve">
+    <value>无法获取此引用的地址</value>
+  </data>
+  <data name="QexpectedOneType" xml:space="preserve">
+    <value>应正好为一个类型参数。</value>
+  </data>
+  <data name="dyInvOpAddCoerce" xml:space="preserve">
+    <value>不支持对涉及强制的 op_Addition 进行动态调用。</value>
+  </data>
+  <data name="tupleIndexOutOfRange" xml:space="preserve">
+    <value>元组索引“{1}”超出元组类型“{0}”的范围。</value>
+  </data>
+  <data name="printfExpectedWidth" xml:space="preserve">
+    <value>应为宽度参数</value>
+  </data>
+  <data name="notAUnionType" xml:space="preserve">
+    <value>类型“{0}”不是 F# 联合类型。</value>
+  </data>
+  <data name="QfailedToBindConstructor" xml:space="preserve">
+    <value>未能绑定构造函数</value>
+  </data>
+  <data name="QtmmLoopBodyMustBeLambdaTakingInteger" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: for 循环的主体必须是采用整数作为参数的 lambda。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="QincorrectType" xml:space="preserve">
+    <value>类型不正确</value>
+  </data>
+  <data name="controlContinuationInvokedMultipleTimes" xml:space="preserve">
+    <value>Async.FromContinuations 提供的延续被调用了多次</value>
+  </data>
+  <data name="QtmmFunTypeNotMatchDelegate" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 函数类型与委托类型不匹配。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="notAPermutation" xml:space="preserve">
+    <value>该函数不计算排列。</value>
+  </data>
+  <data name="printfMissingFormatSpecifier" xml:space="preserve">
+    <value>缺少格式说明符</value>
+  </data>
+  <data name="notATupleType" xml:space="preserve">
+    <value>类型“{0}”不是元组类型。</value>
+  </data>
+  <data name="QtmmExprNotMatchTuple" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 表达式与元组类型不匹配。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="QtmmBodyMustBeUnit" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: body 必须返回 unit。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="notComparable" xml:space="preserve">
+    <value>两个对象具有不同的类型，不可以进行比较。</value>
+  </data>
+  <data name="ThisValueCannotBeMutated" xml:space="preserve">
+    <value>无法转变此值</value>
+  </data>
+  <data name="unsupportedQueryConstruct" xml:space="preserve">
+    <value>这不是有效的查询表达式。查询中使用了下面的构造，但 F#-LINQ 查询转换器无法识别该构造:\n{0}\n请查看有效查询的规范，考虑是否将部分运算移到查询表达式之外。</value>
+  </data>
+  <data name="multipleCompilationMappings" xml:space="preserve">
+    <value>多个 CompilationMappingAttribute，最多只应有一个</value>
+  </data>
+  <data name="indexOutOfBounds" xml:space="preserve">
+    <value>索引超出了列表中元素的范围。</value>
+  </data>
+  <data name="printfSpecifierAfterIllegal" xml:space="preserve">
+    <value>错误的格式说明符(在 {0} 之后)</value>
+  </data>
+  <data name="QnonStaticNoReceiverObject" xml:space="preserve">
+    <value>该成员是非静态的(实例)，但未提供任何接收器对象</value>
+  </data>
+  <data name="QtmmIncorrectArgForUnion" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: F# 联合的参数类型不正确。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="QtupleLengthsDiffer" xml:space="preserve">
+    <value>各个元组长度不同</value>
+  </data>
+  <data name="notAFunctionType" xml:space="preserve">
+    <value>类型“{0}”不是函数类型。</value>
+  </data>
+  <data name="printfNotAFunType" xml:space="preserve">
+    <value>不是函数类型</value>
+  </data>
+  <data name="QwrongNumOfTypeArgs" xml:space="preserve">
+    <value>方法“{0}”要求 {1} 个类型参数，但提供了 {2} 个类型参数</value>
+  </data>
+  <data name="mailboxProcessorAlreadyStarted" xml:space="preserve">
+    <value>已启动 MailboxProcessor。</value>
+  </data>
+  <data name="dyInvOpAddOverload" xml:space="preserve">
+    <value>不支持对涉及重载的 op_Addition 进行动态调用。</value>
+  </data>
+  <data name="privateExceptionType" xml:space="preserve">
+    <value>类型“{0}”是 F# 异常声明的表示形式，但其表示形式是私有的。您必须指定 BindingFlags.NonPublic，才能访问私有类型表示形式。</value>
+  </data>
+  <data name="privateUnionType" xml:space="preserve">
+    <value>类型“{0}”是 F# 联合类型，但其表示形式是私有的。您必须指定 BindingFlags.NonPublic，才能访问私有类型表示形式。</value>
+  </data>
+  <data name="QtmmInvalidParam" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 方法或索引器属性的参数无效。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="mailboxProcessorPostAndReplyTimedOut" xml:space="preserve">
+    <value>MailboxProcessor.PostAndReply 超时。</value>
+  </data>
+  <data name="printfBadFloatValue" xml:space="preserve">
+    <value>错误的浮点值</value>
+  </data>
+  <data name="inputListWasEmpty" xml:space="preserve">
+    <value>输入列表为空。</value>
+  </data>
+  <data name="QtmmExpectedFunction" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 应为函数应用程序或 let 绑定中的函数类型。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="failDueToUnsupportedInputTypeInSumByOrAverageBy" xml:space="preserve">
+    <value>查询中无法识别的“sumBy”或“averageBy”运算符用法。在其原始数据属于静态类型 IQueryable 的查询中，这些运算符只能用于结果类型 int32、int64、single、double 或 decimal</value>
+  </data>
+  <data name="dyInvOpMultOverload" xml:space="preserve">
+    <value>不支持对涉及重载的 op_Multiply 进行动态调用。</value>
+  </data>
+  <data name="QunrecognizedMethodCall" xml:space="preserve">
+    <value>该参数不是可识别的方法名称。</value>
+  </data>
+  <data name="objIsNullAndNoType" xml:space="preserve">
+    <value>该对象为 null，并且未给定任何类型。  请传递一个非 null 对象，或者传递一个非 null 类型参数。</value>
+  </data>
+  <data name="QreadingSetOnly" xml:space="preserve">
+    <value>正在读取仅有 setter 的属性</value>
+  </data>
+  <data name="QtmmLowerUpperBoundMustBeInt" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 下限或上限必须为整数。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="QunionNeedsDiffNumArgs" xml:space="preserve">
+    <value>F# 联合类型需要不同数目的参数</value>
+  </data>
+  <data name="constructorForUnionCaseNotFound" xml:space="preserve">
+    <value>找不到联合用例的构造函数方法“{0}”</value>
+  </data>
+  <data name="enumerationNotStarted" xml:space="preserve">
+    <value>枚举尚未开始。请调用 MoveNext。</value>
+  </data>
+  <data name="optionValueWasNone" xml:space="preserve">
+    <value>选项值为“None”</value>
+  </data>
+  <data name="printfBadIntegerForDynamicFomatter" xml:space="preserve">
+    <value>提供给动态格式化程序的整数错误</value>
+  </data>
+  <data name="QtmmTuple" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: 参数和元组元素的类型不匹配。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="QinvalidCaseIndex" xml:space="preserve">
+    <value>不是有效的 F# 联合用例索引。</value>
+  </data>
+  <data name="inputMustBePositive" xml:space="preserve">
+    <value>输入值必须为正数。</value>
+  </data>
+  <data name="mapCannotBeMutated" xml:space="preserve">
+    <value>无法转变映射值。</value>
+  </data>
+  <data name="QtmmIncorrectArgForRecord" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: F# 记录的参数类型不正确。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="failedReadEnoughBytes" xml:space="preserve">
+    <value>未能从流中读取足够的字节。</value>
+  </data>
+  <data name="endCannotBeNaN" xml:space="preserve">
+    <value>范围的末尾不能为 NaN。</value>
+  </data>
+  <data name="QtmmGuardMustBeBool" xml:space="preserve">
+    <value>在生成“{0}”时类型不匹配: guard 必须返回 boolean。应为“{1}”，但收到的类型为“{2}”。</value>
+  </data>
+  <data name="noNegateMinValue" xml:space="preserve">
+    <value>对 2 的补数的最小值求反的操作无效。</value>
+  </data>
+  <data name="QtypeArgumentOutOfRange" xml:space="preserve">
+    <value>类型参数超出范围</value>
+  </data>
+  <data name="mailboxScanTimedOut" xml:space="preserve">
+    <value>Mailbox.Scan 超时。</value>
+  </data>
+  <data name="QillFormedAppOrLet" xml:space="preserve">
+    <value>格式错误的表达式: AppOp 或 LetOp</value>
+  </data>
+  <data name="QmissingRecordField" xml:space="preserve">
+    <value>类型“{0}”不具有名为“{1}”的 F# 记录字段。</value>
+  </data>
+  <data name="listsHadDifferentLengths" xml:space="preserve">
+    <value>各个列表具有不同的长度。</value>
+  </data>
+  <data name="QcannotBindToMethod" xml:space="preserve">
+    <value>未能绑定到方法</value>
+  </data>
+  <data name="printfBadFormatSpecifier" xml:space="preserve">
+    <value>错误的格式说明符: {0}</value>
+  </data>
+  <data name="notAnExceptionType" xml:space="preserve">
+    <value>类型“{0}”不是 F# 异常声明的表示形式。</value>
+  </data>
+  <data name="nonZeroBasedDisallowed" xml:space="preserve">
+    <value>无法在此平台上创建不是从零数开始的数组。</value>
+  </data>
+  <data name="unsupportedIfThenElse" xml:space="preserve">
+    <value>查询中不允许出现拥有多个分支的 if/then/else 条件或模式匹配表达式。可以使用 if/then/else 条件。</value>
+  </data>
+</root>

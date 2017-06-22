@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Parser.TOKEN.BAR.BAR" xml:space="preserve">
+    <value>symbol ||</value>
+  </data>
+  <data name="NONTERM.Category.ImplementationFile" xml:space="preserve">
+    <value> v souboru implementace</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot1" xml:space="preserve">
+    <value>Člen {0} neodpovídá unikátní abstraktní datové oblasti založené jenom na názvu a počtu argumentů.</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot2" xml:space="preserve">
+    <value>. Víc implementovaných rozhraní má člena s tímto názvem a počtem argumentů.</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot3" xml:space="preserve">
+    <value>. Zvažte explicitní implementaci rozhraní {0} a {1}.</value>
+  </data>
+  <data name="NonUniqueInferredAbstractSlot4" xml:space="preserve">
+    <value>. Můžou se vyžadovat další poznámky typu k určení příslušného přepsání. Toto upozornění se dá pomocí #nowarn "70" nebo --nowarn:70 vypnout.</value>
+  </data>
+  <data name="Parser.TOKEN.LEX.FAILURE" xml:space="preserve">
+    <value>selhání lex</value>
+  </data>
+  <data name="Parser.TOKEN.LPAREN.STAR.RPAREN" xml:space="preserve">
+    <value>symbol (*)</value>
+  </data>
+  <data name="NONTERM.anonLambdaExpr" xml:space="preserve">
+    <value> ve výrazu lambda</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.PAREN.APP" xml:space="preserve">
+    <value>symbol (</value>
+  </data>
+  <data name="Parser.TOKEN.CONSTRUCTOR" xml:space="preserve">
+    <value>klíčové slovo constructor</value>
+  </data>
+  <data name="NONTERM.attributeList" xml:space="preserve">
+    <value> v seznamu atributů</value>
+  </data>
+  <data name="ValNotMutable" xml:space="preserve">
+    <value>Tato hodnota není proměnlivá. Zvažte použití proměnlivého klíčového slova, třeba let mutable {0} = expression.</value>
+  </data>
+  <data name="ReservedKeyword" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.PREFIX.OP" xml:space="preserve">
+    <value>operátor předpony</value>
+  </data>
+  <data name="UpcastUnnecessary" xml:space="preserve">
+    <value>Toto přetypování směrem nahoru není nutné: oba typy jsou identické.</value>
+  </data>
+  <data name="UnitTypeExpectedWithEquality" xml:space="preserve">
+    <value>Výsledek tohoto výrazu rovnosti se implicitně zruší. Zvažte vytvoření vazby mezi výsledkem a názvem pomocí klíčového slova let, např. let výsledek = výraz.</value>
+  </data>
+  <data name="VarBoundTwice" xml:space="preserve">
+    <value>{0} má v tomto vzoru dvě vazby.</value>
+  </data>
+  <data name="UpperCaseIdentifierInPattern" xml:space="preserve">
+    <value>Identifikátory proměnných psané velkými písmeny se ve vzorech obecně nedoporučují. Můžou označovat špatně napsaný název vzoru.</value>
+  </data>
+  <data name="NONTERM.unionCaseRepr" xml:space="preserve">
+    <value> v deklaracích rozlišených případů typu union</value>
+  </data>
+  <data name="Parser.TOKEN.TO" xml:space="preserve">
+    <value>klíčové slovo to</value>
+  </data>
+  <data name="Parser.TOKEN.IF" xml:space="preserve">
+    <value>klíčové slovo if</value>
+  </data>
+  <data name="Parser.TOKEN.IN" xml:space="preserve">
+    <value>klíčové slovo in</value>
+  </data>
+  <data name="Parser.TOKEN.AS" xml:space="preserve">
+    <value>klíčové slovo as</value>
+  </data>
+  <data name="Parser.TOKEN.OR" xml:space="preserve">
+    <value>klíčové slovo or</value>
+  </data>
+  <data name="Parser.TOKEN.OF" xml:space="preserve">
+    <value>klíčové slovo of</value>
+  </data>
+  <data name="Parser.TOKEN.DO" xml:space="preserve">
+    <value>klíčové slovo do</value>
+  </data>
+  <data name="UnitTypeExpected" xml:space="preserve">
+    <value>Výsledek tohoto výrazu se implicitně ignoruje. Zvažte možnost použít ignore, aby se tato hodnota explicitně zahodila, třeba expr |&gt; ignore, nebo let, aby se výsledek svázal s názvem, třeba let result = expr.</value>
+  </data>
+  <data name="Parser.TOKEN.INTERFACE" xml:space="preserve">
+    <value>klíčové slovo interface</value>
+  </data>
+  <data name="NONTERM.fileModuleSpec" xml:space="preserve">
+    <value> v signatuře oboru názvů nebo modulu</value>
+  </data>
+  <data name="HashIncludeNotAllowedInNonScript" xml:space="preserve">
+    <value>Direktivy #I se můžou vyskytovat jenom v souborech skriptu F# (s příponou .fsx nebo .fsscript). Přesuňte tento kód do souboru skriptu nebo přidejte pro tento odkaz možnost kompilátoru -I anebo direktivu ohraničte pomocí notace #if INTERACTIVE/#endif.</value>
+  </data>
+  <data name="Parser.TOKEN.CONSTRAINT" xml:space="preserve">
+    <value>klíčové slovo constraint</value>
+  </data>
+  <data name="MSBuildReferenceResolutionError" xml:space="preserve">
+    <value>{0} (Kód={1})</value>
+  </data>
+  <data name="NONTERM.classDefnMember" xml:space="preserve">
+    <value> v definici člena</value>
+  </data>
+  <data name="Parser.TOKEN.FINALLY" xml:space="preserve">
+    <value>klíčové slovo finally</value>
+  </data>
+  <data name="NONTERM.exconCore" xml:space="preserve">
+    <value> v definici výjimky</value>
+  </data>
+  <data name="TokenName1TokenName2TokenName3" xml:space="preserve">
+    <value>. Očekával se token {0}, {1}, {2} nebo nějaký jiný.</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.QMARK" xml:space="preserve">
+    <value>symbol :?</value>
+  </data>
+  <data name="InterfaceNotRevealed" xml:space="preserve">
+    <value>Typ implementuje rozhraní {0}, které ale signatura neposkytuje. Měli byste toto rozhraní uvést v signatuře, aby bylo prostřednictvím dynamického přetypování nebo reflexe zjistitelné.</value>
+  </data>
+  <data name="Parser.TOKEN.PUBLIC" xml:space="preserve">
+    <value>klíčové slovo public</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.COLON" xml:space="preserve">
+    <value>symbol ::</value>
+  </data>
+  <data name="SeeAlso" xml:space="preserve">
+    <value>. Viz taky {0}.</value>
+  </data>
+  <data name="Parser.TOKEN.LINE.COMMENT" xml:space="preserve">
+    <value>řádkový komentář</value>
+  </data>
+  <data name="VirtualAugmentationOnNullValuedType" xml:space="preserve">
+    <value>Nadřazený typ může použít null jako hodnotu reprezentace pro svůj prázdný případ typu union. Vyvolání abstraktního nebo virtuálního člena nebo implementace rozhraní u hodnoty null způsobí výjimku. Pokud je to nutné, přidejte do prázdného konstruktoru fiktivní datovou hodnotu, abyste předešli tomu, že se null použije jako reprezentace tohoto typu.</value>
+  </data>
+  <data name="Parser.TOKEN.UPCAST" xml:space="preserve">
+    <value>klíčové slovo upcast</value>
+  </data>
+  <data name="Parser.TOKEN.OVERRIDE" xml:space="preserve">
+    <value>klíčové slovo override</value>
+  </data>
+  <data name="MatchIncomplete1" xml:space="preserve">
+    <value>Neúplné porovnávání vzorů u tohoto výrazu</value>
+  </data>
+  <data name="MatchIncomplete2" xml:space="preserve">
+    <value> Třeba hodnota {0} může označovat případ, na který se vzor nevztahuje.</value>
+  </data>
+  <data name="MatchIncomplete3" xml:space="preserve">
+    <value> Třeba hodnota {0} může označovat případ, na který se vzor nevztahuje. Pravidlo vzoru s klauzulí with se ale s touto hodnotou úspěšně shodovat může.</value>
+  </data>
+  <data name="MatchIncomplete4" xml:space="preserve">
+    <value> Nespárované prvky se budou ignorovat.</value>
+  </data>
+  <data name="BadEventTransformation" xml:space="preserve">
+    <value>Definice, která se má zkompilovat jako událost .NET, nemá očekávanou podobu. Jako události .NET se dají zkompilovat jenom členové vlastností.</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.AT.HAT.OP" xml:space="preserve">
+    <value>operátor vpony</value>
+  </data>
+  <data name="NONTERM.ifExprCases" xml:space="preserve">
+    <value> ve výrazu if/then/else</value>
+  </data>
+  <data name="Parser.TOKEN.STRING" xml:space="preserve">
+    <value>řetězcový literál</value>
+  </data>
+  <data name="Parser.TOKEN.STRUCT" xml:space="preserve">
+    <value>klíčové slovo struct</value>
+  </data>
+  <data name="Parser.TOKEN.STATIC" xml:space="preserve">
+    <value>klíčové slovo static</value>
+  </data>
+  <data name="Parser.TOKEN.RBRACK" xml:space="preserve">
+    <value>symbol ]</value>
+  </data>
+  <data name="Parser.TOKEN.RBRACE" xml:space="preserve">
+    <value>symbol }</value>
+  </data>
+  <data name="Parser.TOKEN.RARROW" xml:space="preserve">
+    <value>symbol -&gt;</value>
+  </data>
+  <data name="Parser.TOKEN.RPAREN" xml:space="preserve">
+    <value>symbol )</value>
+  </data>
+  <data name="Parser.TOKEN.RQUOTE" xml:space="preserve">
+    <value>konec citace</value>
+  </data>
+  <data name="UnresolvedReferenceNoRange" xml:space="preserve">
+    <value>Chybí požadovaný odkaz na sestavení. Musíte k sestavení {0} přidat odkaz.</value>
+  </data>
+  <data name="IntfImplInExtrinsicAugmentation" xml:space="preserve">
+    <value>Implementace rozhraní by se měly provádět při počáteční deklaraci typu.</value>
+  </data>
+  <data name="Parser.TOKEN.INLINE" xml:space="preserve">
+    <value>klíčové slovo inline</value>
+  </data>
+  <data name="LetRecCheckedAtRuntime" xml:space="preserve">
+    <value>U tohoto a dalších rekurzivních odkazů na definované objekty se bude kontrolovat stabilita inicializace za běhu pomocí zpožděného odkazování. Je to kvůli tomu, že definujete rekurzivní objekty místo rekurzivních funkcí. Toto upozornění se dá pomocí #nowarn "40" nebo --nowarn:40 potlačit.</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.QMARK.GREATER" xml:space="preserve">
+    <value>symbol :?&gt;</value>
+  </data>
+  <data name="PossibleOverload" xml:space="preserve">
+    <value>Možné přetížení: {0}. {1}.</value>
+  </data>
+  <data name="FieldNotMutable" xml:space="preserve">
+    <value>Toto pole není měnitelné.</value>
+  </data>
+  <data name="Parser.TOKEN.MEMBER" xml:space="preserve">
+    <value>klíčové slovo member</value>
+  </data>
+  <data name="Parser.TOKEN.MODULE" xml:space="preserve">
+    <value>klíčové slovo module</value>
+  </data>
+  <data name="NONTERM.valSpfn" xml:space="preserve">
+    <value> v signatuře hodnoty</value>
+  </data>
+  <data name="Parser.TOKEN.LPAREN" xml:space="preserve">
+    <value>symbol (</value>
+  </data>
+  <data name="Parser.TOKEN.LQUOTE" xml:space="preserve">
+    <value>začátek citace</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.COMPARE.OP" xml:space="preserve">
+    <value>operátor vpony</value>
+  </data>
+  <data name="Parser.TOKEN.LARROW" xml:space="preserve">
+    <value>symbol &lt;-</value>
+  </data>
+  <data name="Parser.TOKEN.DOWNCAST" xml:space="preserve">
+    <value>klíčové slovo downcast</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACE" xml:space="preserve">
+    <value>symbol {</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK" xml:space="preserve">
+    <value>symbol [</value>
+  </data>
+  <data name="ValNotLocal" xml:space="preserve">
+    <value>Tato hodnota není lokální.</value>
+  </data>
+  <data name="IndeterminateRuntimeCoercion" xml:space="preserve">
+    <value>Tento test typu nebo konverze za běhu z typu\n    {0}    \n na \n    {1}    \nzahrnuje neurčitý typ založený na informacích před tímto místem v programu. Testy typu za běhu nejsou u některých typů povolené. Je potřeba, abyste k typu doplnili další poznámky.</value>
+  </data>
+  <data name="Parser.TOKEN.BAR.RBRACK" xml:space="preserve">
+    <value>symbol |]</value>
+  </data>
+  <data name="ConstraintSolverMissingConstraint" xml:space="preserve">
+    <value>V parametru typu chybí omezení {0}.</value>
+  </data>
+  <data name="FixKeyword" xml:space="preserve">
+    <value>klíčové slovo </value>
+  </data>
+  <data name="NONTERM.Category.Pattern" xml:space="preserve">
+    <value> ve vzoru</value>
+  </data>
+  <data name="Parser.TOKEN.ASSERT" xml:space="preserve">
+    <value>klíčové slovo assert</value>
+  </data>
+  <data name="NONTERM.typeArgsActual" xml:space="preserve">
+    <value> v argumentech typu</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossibleAssignment" xml:space="preserve">
+    <value>Výsledek tohoto výrazu rovnosti se implicitně zruší. Zvažte vytvoření vazby mezi výsledkem a názvem pomocí klíčového slova let, např. let výsledek = výraz. Pokud jste chtěli mutovat hodnotu, označte hodnotu jako mutable a použijte operátor &lt;-, např. {0} &lt;- výraz.</value>
+  </data>
+  <data name="Parser.TOKEN.ORESET" xml:space="preserve">
+    <value>konec vstupu</value>
+  </data>
+  <data name="TyconBadArgs" xml:space="preserve">
+    <value>Počet argumentů typu, které typ {0} očekává, je {1}, ale počet předávaných je {2}.</value>
+  </data>
+  <data name="Parser.TOKEN.ODUMMY" xml:space="preserve">
+    <value>interní fiktivní token</value>
+  </data>
+  <data name="ErrorFromApplyingDefault1" xml:space="preserve">
+    <value>Neshoda v omezení typu při použití výchozího typu {0} na proměnnou rozhraní typu </value>
+  </data>
+  <data name="ErrorFromApplyingDefault2" xml:space="preserve">
+    <value> Zvažte přidání dalších omezení typu.</value>
+  </data>
+  <data name="Parser.TOKEN.DELEGATE" xml:space="preserve">
+    <value>klíčové slovo delegate</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.STAR.DIV.MOD.OP" xml:space="preserve">
+    <value>operátor vpony</value>
+  </data>
+  <data name="Parser.TOKEN.EXTERN" xml:space="preserve">
+    <value>klíčové slovo extern</value>
+  </data>
+  <data name="Parser.TOKEN.EQUALS" xml:space="preserve">
+    <value>symbol =</value>
+  </data>
+  <data name="Parser.TOKEN.DOT.DOT" xml:space="preserve">
+    <value>symbol ..</value>
+  </data>
+  <data name="Parser.TOKEN.DOWNTO" xml:space="preserve">
+    <value>klíčové slovo downto</value>
+  </data>
+  <data name="Parser.TOKEN.DOLLAR" xml:space="preserve">
+    <value>symbol $</value>
+  </data>
+  <data name="InvalidRuntimeCoercion" xml:space="preserve">
+    <value>Neplatný test typu nebo konverze za běhu z typu {0} na {1}\n{2}</value>
+  </data>
+  <data name="ErrorFromAddingTypeEquation2" xml:space="preserve">
+    <value>Neshoda v typu. Očekávaný typ je \n    {0},    \nale předávaný je\n    {1}    {2}.\n</value>
+  </data>
+  <data name="ErrorFromAddingTypeEquation1" xml:space="preserve">
+    <value>U tohoto výrazu se očekával typ\n    {1},    \nale tady je typu\n    {0}    {2}.</value>
+  </data>
+  <data name="Parser.TOKEN.BINDER" xml:space="preserve">
+    <value>klíčové slovo vazače</value>
+  </data>
+  <data name="NONTERM.interaction" xml:space="preserve">
+    <value> v interakci</value>
+  </data>
+  <data name="Parser.TOKEN.OBLOCKBEGIN" xml:space="preserve">
+    <value>začátek strukturovaného konstruktoru</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.STAR.STAR.OP" xml:space="preserve">
+    <value>operátor vpony</value>
+  </data>
+  <data name="IntfImplInIntrinsicAugmentation" xml:space="preserve">
+    <value>Implementace rozhraní v rozšířeních jsou už zastaralé. Implementace rozhraní by se měly provádět při počáteční deklaraci typu.</value>
+  </data>
+  <data name="TypeTestUnnecessary" xml:space="preserve">
+    <value>Tento test typu nebo přetypování směrem dolů se vždycky uloží.</value>
+  </data>
+  <data name="OverrideDoesntOverride2" xml:space="preserve">
+    <value>Člen {0} není správného typu, aby mohl přepsat odpovídající abstraktní metodu.</value>
+  </data>
+  <data name="OverrideDoesntOverride3" xml:space="preserve">
+    <value> Požadovaná signatura je {0}.</value>
+  </data>
+  <data name="OverrideDoesntOverride1" xml:space="preserve">
+    <value>Člen {0} není správného typu, aby mohl přepsat libovolné předané virtuální metody.</value>
+  </data>
+  <data name="OverrideDoesntOverride4" xml:space="preserve">
+    <value>Člen {0} je specializovaný s typem unit, ale typ unit není možné použít jako návratový typ abstraktní metody parametrizované u návratového typu.</value>
+  </data>
+  <data name="NONTERM.hashDirective" xml:space="preserve">
+    <value> v direktivě</value>
+  </data>
+  <data name="Parser.TOKEN.GLOBAL" xml:space="preserve">
+    <value>klíčové slovo global</value>
+  </data>
+  <data name="NONTERM.classMemberSpfn" xml:space="preserve">
+    <value> v signatuře člena</value>
+  </data>
+  <data name="Parser.TOKEN.ADJACENT.PREFIX.OP" xml:space="preserve">
+    <value>operátor předpony</value>
+  </data>
+  <data name="Parser.TOKEN.OFUNCTION" xml:space="preserve">
+    <value>klíčové slovo function</value>
+  </data>
+  <data name="NONTERM.hardwhiteLetBindings" xml:space="preserve">
+    <value> ve vazbě</value>
+  </data>
+  <data name="TokenName1" xml:space="preserve">
+    <value>. Očekával se token {0} nebo nějaký jiný.</value>
+  </data>
+  <data name="Parser.TOKEN.OINTERFACE.MEMBER" xml:space="preserve">
+    <value>klíčové slovo interface</value>
+  </data>
+  <data name="Parser.TOKEN.SEMICOLON.SEMICOLON" xml:space="preserve">
+    <value>symbol ;;</value>
+  </data>
+  <data name="FixReplace" xml:space="preserve">
+    <value> (kvůli syntaxi, která reflektuje odsazení)</value>
+  </data>
+  <data name="LetRecEvaluatedOutOfOrder" xml:space="preserve">
+    <value>Vazby se můžou kvůli tomuto dopřednému odkazu provádět ve špatném pořadí.</value>
+  </data>
+  <data name="FixSymbol" xml:space="preserve">
+    <value>symbol </value>
+  </data>
+  <data name="Parser.TOKEN.DECIMAL" xml:space="preserve">
+    <value>desítkový literál</value>
+  </data>
+  <data name="Obsolete1" xml:space="preserve">
+    <value>Tento konstruktor je zastaralý.</value>
+  </data>
+  <data name="Obsolete2" xml:space="preserve">
+    <value>. {0}</value>
+  </data>
+  <data name="Parser.TOKEN.DEFAULT" xml:space="preserve">
+    <value>klíčové slovo default</value>
+  </data>
+  <data name="NONTERM.recdExpr" xml:space="preserve">
+    <value> ve výrazu záznamu</value>
+  </data>
+  <data name="IndeterminateType" xml:space="preserve">
+    <value>Definovali jste vyhledávání u objektu neurčitého typu založeného na informacích před tímto místem v programu. Aby se typ objektu omezil, bude možná potřeba přidat před tímto místem v programu poznámku typu. Tím se problém s vyhledáváním pravděpodobně vyřeší.</value>
+  </data>
+  <data name="DeprecatedThreadStaticBindingWarning" xml:space="preserve">
+    <value>Vazby let, které jsou statické na úrovni vlákna nebo kontextu, jsou zastaralé. Použijte místo nich deklaraci ve třídě v podobě static val mutable &lt;ident&gt; : &lt;type&gt;. Přidáním atributu DefaultValue do této deklarace můžete určit, že se bude hodnota v každém novém vláknu inicializovat na výchozí hodnotu.</value>
+  </data>
+  <data name="TargetInvocationExceptionWrapper" xml:space="preserve">
+    <value>Vnitřní chyba: {0}</value>
+  </data>
+  <data name="NONTERM.typeConstraint" xml:space="preserve">
+    <value> v omezení typu</value>
+  </data>
+  <data name="Parser.TOKEN.FUNKY.OPERATOR.NAME" xml:space="preserve">
+    <value>název operátora</value>
+  </data>
+  <data name="UnresolvedPathReferenceNoRange" xml:space="preserve">
+    <value>Typ odkazovaný pomocí {0} je definovaný v sestavení, na které se neodkazuje. Musíte přidat odkaz na sestavení {1}.</value>
+  </data>
+  <data name="Experimental" xml:space="preserve">
+    <value>{0}. Toto upozornění se dá pomocí --nowarn:57 nebo #nowarn "57" vypnout.</value>
+  </data>
+  <data name="Failure4" xml:space="preserve">
+    <value>Vnitřní chyba: {0}</value>
+  </data>
+  <data name="Failure1" xml:space="preserve">
+    <value>Chyba analýzy</value>
+  </data>
+  <data name="Failure3" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Failure2" xml:space="preserve">
+    <value>Chyba analýzy: neočekávaný konec souboru</value>
+  </data>
+  <data name="HashLoadedScriptConsideredSource" xml:space="preserve">
+    <value>Načtené soubory můžou být jenom zdrojové soubory F# (s příponou .fs). Tento soubor skriptu F# (s příponou .fsx nebo .fsscript) se zpracuje jako zdrojový soubor F#.</value>
+  </data>
+  <data name="ConstraintSolverInfiniteTypes" xml:space="preserve">
+    <value>Typy {0} a {1} nemůžou být sjednocené.</value>
+  </data>
+  <data name="NameClash2" xml:space="preserve">
+    <value>{0} {1} se nedá definovat, protože název {2} a {3} {4} v tomto typu nebo modulu jsou v konfliktu.</value>
+  </data>
+  <data name="NameClash1" xml:space="preserve">
+    <value>Duplicitní definice: {0} {1}</value>
+  </data>
+  <data name="NONTERM.openDecl" xml:space="preserve">
+    <value> v otevřené deklaraci</value>
+  </data>
+  <data name="LetRecUnsound1" xml:space="preserve">
+    <value>Hodnota {0} se vyhodnotí v rámci její vlastní definice.</value>
+  </data>
+  <data name="LetRecUnsound2" xml:space="preserve">
+    <value>Tato hodnota se nakonec vyhodnotí v rámci její vlastní definice. Možná bude potřeba, abyste hodnotu změnili na opožděnou nebo na funkci. Hodnota {0}{1}.</value>
+  </data>
+  <data name="Parser.TOKEN.KEYWORD_STRING" xml:space="preserve">
+    <value>literál generovaný kompilátorem</value>
+  </data>
+  <data name="MissingFields" xml:space="preserve">
+    <value>Následující pole vyžadují hodnoty: {0}</value>
+  </data>
+  <data name="Parser.TOKEN.INACTIVECODE" xml:space="preserve">
+    <value>neaktivní kód</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInSubsumptionRelation" xml:space="preserve">
+    <value>Typ {0} není kompatibilní s typem {1}{2}.</value>
+  </data>
+  <data name="Parser.TOKEN.ABSTRACT" xml:space="preserve">
+    <value>klíčové slovo abstract</value>
+  </data>
+  <data name="Parser.TOKEN.NAMESPACE" xml:space="preserve">
+    <value>klíčové slovo namespace</value>
+  </data>
+  <data name="Parser.TOKEN.OBLOCKEND" xml:space="preserve">
+    <value>neúplný strukturovaný konstruktor na této pozici nebo před ní</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossiblePropertySetter" xml:space="preserve">
+    <value>Výsledek tohoto výrazu rovnosti se implicitně zruší. Zvažte vytvoření vazby mezi výsledkem a názvem pomocí klíčového slova let, např. let výsledek = výraz. Pokud jste chtěli nastavit hodnotu na vlastnost, použijte operátor &lt;-, např. {0}.{1} &lt;- výraz.</value>
+  </data>
+  <data name="TokenName1TokenName2" xml:space="preserve">
+    <value>. Očekával se token {0}, {1} nebo nějaký jiný.</value>
+  </data>
+  <data name="Parser.TOKEN.QMARK.QMARK" xml:space="preserve">
+    <value>symbol ??</value>
+  </data>
+  <data name="NotUpperCaseConstructor" xml:space="preserve">
+    <value>Rozlišené případy typu union a popisky výjimek musí být identifikátory, které jsou psané velkými písmeny.</value>
+  </data>
+  <data name="UnionPatternsBindDifferentNames" xml:space="preserve">
+    <value>Obě strany tohoto vzoru or vážou jinou sadu proměnných.</value>
+  </data>
+  <data name="LoadedSourceNotFoundIgnoring" xml:space="preserve">
+    <value>Soubor {0} se nedal načíst, protože neexistuje nebo není dostupný.</value>
+  </data>
+  <data name="FunctionValueUnexpected" xml:space="preserve">
+    <value>Tento výraz je hodnotou funkce, to znamená, že u něj chybí argumenty. Je typu {0}.</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.BRACK.APP" xml:space="preserve">
+    <value>symbol [</value>
+  </data>
+  <data name="Parser.TOKEN.MUTABLE" xml:space="preserve">
+    <value>klíčové slovo mutable</value>
+  </data>
+  <data name="NONTERM.Category.Definition" xml:space="preserve">
+    <value> v definici</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.BAR.RBRACK" xml:space="preserve">
+    <value>symbol &gt;|]</value>
+  </data>
+  <data name="IndentationProblem" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.WHITESPACE" xml:space="preserve">
+    <value>prázdný znak</value>
+  </data>
+  <data name="Parser.TOKEN.PRIVATE" xml:space="preserve">
+    <value>klíčové slovo private</value>
+  </data>
+  <data name="HashReferenceNotAllowedInNonScript" xml:space="preserve">
+    <value>Direktivy #r se můžou vyskytovat jenom v souborech skriptu F# (s příponou .fsx nebo .fsscript). Buď přesuňte tento kód do souboru skriptu, nebo nahraďte tento odkaz možností kompilátoru -r. Pokud se tato direktiva provádí jako uživatelský vstup, můžete ji ohraničit pomocí notace #if INTERACTIVE'/'#endif.</value>
+  </data>
+  <data name="Parser.TOKEN.STRING.TEXT" xml:space="preserve">
+    <value>text řetězce</value>
+  </data>
+  <data name="Parser.TOKEN.INT32.DOT.DOT" xml:space="preserve">
+    <value>celé číslo..</value>
+  </data>
+  <data name="NONTERM.fieldDecl" xml:space="preserve">
+    <value> v deklaraci pole</value>
+  </data>
+  <data name="Recursion" xml:space="preserve">
+    <value>Použití funkce {0} neodpovídá typu, který se odvozuje na jiném místě. Odvozený typ funkce je\n    {1}.    \nTyp funkce, který se na tomto místě požaduje, je \n    {2}    {3}.\nTato chyba může být způsobená omezeními, která jsou přidružená k obecné rekurzi v kolekci let rec nebo ve skupině tříd. Zvažte možnost zadat úplnou signaturu typu pro cíle rekurzivních volání včetně poznámek typu pro argumenty i návratových typů.</value>
+  </data>
+  <data name="CoercionTargetSealed" xml:space="preserve">
+    <value>Typ {0} nemá žádné správné podtypy a není potřeba ho používat jako cíl statické konverze.</value>
+  </data>
+  <data name="NONTERM.beginEndExpr" xml:space="preserve">
+    <value> ve výrazu begin/end</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACE.LESS" xml:space="preserve">
+    <value>symbol {&lt;</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.EQUALS" xml:space="preserve">
+    <value>symbol :=</value>
+  </data>
+  <data name="Parser.TOKEN.INHERIT" xml:space="preserve">
+    <value>klíčové slovo inherit</value>
+  </data>
+  <data name="Parser.TOKEN.TRY" xml:space="preserve">
+    <value>klíčové slovo try</value>
+  </data>
+  <data name="Parser.TOKEN.SIG" xml:space="preserve">
+    <value>klíčové slovo sig</value>
+  </data>
+  <data name="Parser.TOKEN.REC" xml:space="preserve">
+    <value>klíčové slovo rec</value>
+  </data>
+  <data name="Parser.TOKEN.INT" xml:space="preserve">
+    <value>celočíselný literál</value>
+  </data>
+  <data name="Parser.TOKEN.VAL" xml:space="preserve">
+    <value>klíčové slovo val</value>
+  </data>
+  <data name="Parser.TOKEN.ASR" xml:space="preserve">
+    <value>klíčové slovo asr</value>
+  </data>
+  <data name="Parser.TOKEN.AND" xml:space="preserve">
+    <value>klíčové slovo and</value>
+  </data>
+  <data name="Parser.TOKEN.AMP" xml:space="preserve">
+    <value>symbol „&amp;“</value>
+  </data>
+  <data name="Parser.TOKEN.ODO" xml:space="preserve">
+    <value>klíčové slovo do</value>
+  </data>
+  <data name="Parser.TOKEN.NEW" xml:space="preserve">
+    <value>klíčové slovo new</value>
+  </data>
+  <data name="Parser.TOKEN.END" xml:space="preserve">
+    <value>klíčové slovo end</value>
+  </data>
+  <data name="Parser.TOKEN.EOF" xml:space="preserve">
+    <value>konec vstupu</value>
+  </data>
+  <data name="Parser.TOKEN.DOT" xml:space="preserve">
+    <value>symbol .</value>
+  </data>
+  <data name="Parser.TOKEN.BAR" xml:space="preserve">
+    <value>symbol |</value>
+  </data>
+  <data name="Parser.TOKEN.FUN" xml:space="preserve">
+    <value>klíčové slovo fun</value>
+  </data>
+  <data name="Parser.TOKEN.FOR" xml:space="preserve">
+    <value>klíčové slovo for</value>
+  </data>
+  <data name="NonRigidTypar1" xml:space="preserve">
+    <value>Konstruktor způsobuje, že kód je míň obecný, než udávají jeho poznámky typu. Proměnná typu odvozená pomocí #, _ nebo jiné poznámky typu na pozici {0} nebo blízko ní se omezila na typ {1}.</value>
+  </data>
+  <data name="NonRigidTypar3" xml:space="preserve">
+    <value>Tento konstruktor způsobuje, že kód je míň obecný, než udávají jeho poznámky typu. Proměnná typu {0} se omezila na typ {1}.</value>
+  </data>
+  <data name="NonRigidTypar2" xml:space="preserve">
+    <value>Tento konstruktor způsobuje, že kód je míň obecný, než udávají jeho poznámky typu. Proměnná měrné jednotky {0} se omezila na měrnou jednotku {1}.</value>
+  </data>
+  <data name="Parser.TOKEN.COMMENT" xml:space="preserve">
+    <value>komentář</value>
+  </data>
+  <data name="OverrideInIntrinsicAugmentation" xml:space="preserve">
+    <value>Implementace přepsání v rozšířeních jsou už zastaralé. Implementace přepsání by se měly provádět při počáteční deklaraci typu.</value>
+  </data>
+  <data name="Parser.TOKEN.PLUS.MINUS.OP" xml:space="preserve">
+    <value>operátor vpony</value>
+  </data>
+  <data name="RecursiveUseCheckedAtRuntime" xml:space="preserve">
+    <value>U tohoto rekurzivního použití se bude kontrolovat stabilita inicializace za běhu. Toto upozornění je obvykle neškodné a pomocí #nowarn "21" nebo --nowarn:21 se dá potlačit.</value>
+  </data>
+  <data name="OverrideInExtrinsicAugmentation" xml:space="preserve">
+    <value>Implementace přepsání by se měly provádět při počáteční deklaraci typu.</value>
+  </data>
+  <data name="NonVirtualAugmentationOnNullValuedType" xml:space="preserve">
+    <value>Nadřazený typ může použít null jako hodnotu reprezentace pro svůj prázdný případ typu union. Tento člen se kompiluje jako statický.</value>
+  </data>
+  <data name="ErrorsFromAddingSubsumptionConstraint" xml:space="preserve">
+    <value>Neshoda v omezení typu. Typ \n    {0}    \nnení kompatibilní s typem\n    {1}.    {2}\n</value>
+  </data>
+  <data name="FileNameNotResolved" xml:space="preserve">
+    <value>Soubor {0} se nepovedlo najít v žádné(m)\n {1}.</value>
+  </data>
+  <data name="Parser.TOKEN.HIGH.PRECEDENCE.TYAPP" xml:space="preserve">
+    <value>použití typu </value>
+  </data>
+  <data name="HashDirectiveNotAllowedInNonScript" xml:space="preserve">
+    <value>Tato direktiva se dá použít jenom v souborech skriptu F# (s příponou .fsx nebo .fsscript). Buď direktivu odeberte, nebo tento kód přesuňte do souboru skriptu, anebo direktivu ohraničte pomocí notace #if INTERACTIVE/#endif.</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInEqualityRelation2" xml:space="preserve">
+    <value>Typ {0} se neshoduje s typem {1}.</value>
+  </data>
+  <data name="ConstraintSolverTypesNotInEqualityRelation1" xml:space="preserve">
+    <value>Měrná jednotka {0} se neshoduje s měrnou jednotkou {1}.</value>
+  </data>
+  <data name="Parser.TOKEN.INTERNAL" xml:space="preserve">
+    <value>klíčové slovo internal</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK.LESS" xml:space="preserve">
+    <value>symbol [&lt;</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER" xml:space="preserve">
+    <value>symbol &gt;</value>
+  </data>
+  <data name="LibraryUseOnly" xml:space="preserve">
+    <value>Tento konstruktor je zastaralý: používá se jenom v knihovně F#.</value>
+  </data>
+  <data name="ValueRestriction2" xml:space="preserve">
+    <value>Omezení hodnoty. Hodnota {0} je obecného typu\n    {1}.    \nZměňte {2} na funkci s explicitními argumenty nebo (pokud hodnota nemá být obecná) přidejte poznámku typu.</value>
+  </data>
+  <data name="ValueRestriction3" xml:space="preserve">
+    <value>Omezení hodnoty. Tento člen se odvodil jako člen obecného typu\n    {0}.    \nKonstruktory a metody get nebo set vlastnosti nemůžou být obecnější než nadřazený typ. Přidejte poznámku typu, abyste přesně určili, které typy se mají zahrnout.</value>
+  </data>
+  <data name="ValueRestriction1" xml:space="preserve">
+    <value>Omezení hodnoty. Hodnota {0} je obecného typu\n    {1}.    \nBuď změňte argumenty pro {2} na explicitní, nebo (pokud hodnota nemá být obecná) přidejte poznámku typu.</value>
+  </data>
+  <data name="ValueRestriction4" xml:space="preserve">
+    <value>Omezení hodnoty. Hodnota {0} se odvodila jako hodnota obecného typu\n    {1}.    \nBuď změňte argumenty pro {2} na explicitní, nebo (pokud hodnota nemá být obecná) přidejte poznámku typu.</value>
+  </data>
+  <data name="ValueRestriction5" xml:space="preserve">
+    <value>Omezení hodnoty. Hodnota {0} se odvodila jako hodnota obecného typu\n    {1}.    \nDefinujte {2} jako jednoduchý datový výraz, změňte ji na funkci s explicitními argumenty nebo (pokud hodnota nemá být obecná) přidejte poznámku typu.</value>
+  </data>
+  <data name="NONTERM.patternClauses" xml:space="preserve">
+    <value> v porovnávání vzorů</value>
+  </data>
+  <data name="UnexpectedEndOfInput" xml:space="preserve">
+    <value>Neočekávaný konec vstupu</value>
+  </data>
+  <data name="NONTERM.tyconDefn" xml:space="preserve">
+    <value> v definici typu</value>
+  </data>
+  <data name="NONTERM.tyconSpfn" xml:space="preserve">
+    <value> v signatuře typu</value>
+  </data>
+  <data name="NONTERM.Category.SignatureFile" xml:space="preserve">
+    <value> v souboru signatury</value>
+  </data>
+  <data name="NONTERM.quoteExpr" xml:space="preserve">
+    <value> v literálu citace</value>
+  </data>
+  <data name="HashLoadedSourceHasIssues1" xml:space="preserve">
+    <value>V načteném souboru je nejmíň jedno upozornění.\n</value>
+  </data>
+  <data name="HashLoadedSourceHasIssues2" xml:space="preserve">
+    <value>V načteném souboru je nejmíň jedna chyba.\n</value>
+  </data>
+  <data name="BakedInMemberConstraintName" xml:space="preserve">
+    <value>Kompilátor F# udělil omezením člena s názvem {0} zvláštní statut, protože některé typy .NET jsou o tento člen implicitně rozšířené. Pokud se budete pokoušet vyvolat omezení člena z vlastního kódu, může to způsobit potíže za běhu.</value>
+  </data>
+  <data name="NONTERM.localBinding" xml:space="preserve">
+    <value> ve vazbě</value>
+  </data>
+  <data name="Duplicate2" xml:space="preserve">
+    <value>Duplicitní definice: {0} {1}</value>
+  </data>
+  <data name="Duplicate1" xml:space="preserve">
+    <value>Dva členové s názvem {0} mají stejnou signaturu.</value>
+  </data>
+  <data name="Parser.TOKEN.INSTANCE" xml:space="preserve">
+    <value>klíčové slovo instance</value>
+  </data>
+  <data name="UseOfAddressOfOperator" xml:space="preserve">
+    <value>Použití nativních ukazatelů může způsobit vygenerování neověřitelného kódu .NET IL.</value>
+  </data>
+  <data name="RuntimeCoercionSourceSealed2" xml:space="preserve">
+    <value>Typ {0} nemá žádné správné podtypy a nedá se použít jako zdroj testu typu nebo konverze za běhu.</value>
+  </data>
+  <data name="RuntimeCoercionSourceSealed1" xml:space="preserve">
+    <value>Typ {0} se jako zdroj testu typu nebo konverze za běhu použít nedá.</value>
+  </data>
+  <data name="Parser.TOKEN.ODO.BANG" xml:space="preserve">
+    <value>klíčové slovo do!</value>
+  </data>
+  <data name="Parser.TOKEN.UNDERSCORE" xml:space="preserve">
+    <value>symbol _</value>
+  </data>
+  <data name="ParameterlessStructCtor" xml:space="preserve">
+    <value>Implicitní konstruktory objektu pro struktury musí přebírat aspoň jeden argument.</value>
+  </data>
+  <data name="Parser.TOKEN.PERCENT.OP" xml:space="preserve">
+    <value>symbol {0}</value>
+  </data>
+  <data name="Parser.TOKEN.RESERVED" xml:space="preserve">
+    <value>vyhrazené klíčové slovo</value>
+  </data>
+  <data name="Parser.TOKEN.SPLICE.SYMBOL" xml:space="preserve">
+    <value>symbol splice</value>
+  </data>
+  <data name="SelfRefObjCtor1" xml:space="preserve">
+    <value>U rekurzivních odkazů na definované objekty se bude kontrolovat stabilita inicializace za běhu pomocí zpožděného odkazování. Zvažte možnost přidat do členů nebo koncového výrazu v podobě &lt;výraz-konstruktoru&gt; then &lt;výraz&gt; odkazy na sebe sama.</value>
+  </data>
+  <data name="SelfRefObjCtor2" xml:space="preserve">
+    <value>U rekurzivních odkazů na definované objekty se bude kontrolovat stabilita inicializace za běhu pomocí zpožděného odkazování. Zvažte možnost přidat do příkazů do za poslední vazbou let v sekvenci konstruktoru odkazy na sebe sama.</value>
+  </data>
+  <data name="Parser.TOKEN.COLON.GREATER" xml:space="preserve">
+    <value>symbol :&gt;</value>
+  </data>
+  <data name="UnionCaseWrongArguments" xml:space="preserve">
+    <value>Počet argumentů, pro které se používá tento konstruktor, je {0}, ale očekávaný počet je {1}.</value>
+  </data>
+  <data name="Parser.TOKEN.FUNCTION" xml:space="preserve">
+    <value>klíčové slovo function</value>
+  </data>
+  <data name="Deprecated" xml:space="preserve">
+    <value>Tento konstruktor je zastaralý: {0}</value>
+  </data>
+  <data name="Parser.TOKEN.HASH.ENDIF" xml:space="preserve">
+    <value>direktiva</value>
+  </data>
+  <data name="TypeIsImplicitlyAbstract" xml:space="preserve">
+    <value>Toto je typ abstract, protože se neimplementovali někteří abstraktní členové. Pokud je to záměr, pak do typu přidejte atribut [&lt;AbstractClass&gt;].</value>
+  </data>
+  <data name="UndefinedName2" xml:space="preserve">
+    <value>Konstruktor s tímto názvem se našel v knihovně FSharp.PowerPack.dll, která obsahuje určité moduly a typy implicitně odkazované v některých dřívějších verzích F#. Abyste tento kód mohli zkompilovat, bude možná potřeba přidat explicitní odkaz na tuto knihovnu DLL.</value>
+  </data>
+  <data name="Unexpected" xml:space="preserve">
+    <value>Neočekávaný {0}</value>
+  </data>
+  <data name="Parser.TOKEN.YIELD.BANG" xml:space="preserve">
+    <value>yield!</value>
+  </data>
+  <data name="Parser.TOKEN.YIELD" xml:space="preserve">
+    <value>yield</value>
+  </data>
+  <data name="Parser.TOKEN.QMARK" xml:space="preserve">
+    <value>symbol ?</value>
+  </data>
+  <data name="Parser.TOKEN.QUOTE" xml:space="preserve">
+    <value>symbol citace</value>
+  </data>
+  <data name="StaticCoercionShouldUseBox" xml:space="preserve">
+    <value>Při konverzi z typu hodnoty \n    {0}    \nna typ \n    {1}    \nproběhne zabalení. Zvažte možnost použít místo toho klíčové slovo box.</value>
+  </data>
+  <data name="Parser.TOKEN.IDENT" xml:space="preserve">
+    <value>identifikátor</value>
+  </data>
+  <data name="Parser.TOKEN.WHILE" xml:space="preserve">
+    <value>klíčové slovo while</value>
+  </data>
+  <data name="Parser.TOKEN.MATCH" xml:space="preserve">
+    <value>klíčové slovo match</value>
+  </data>
+  <data name="Parser.TOKEN.MINUS" xml:space="preserve">
+    <value>symbol -</value>
+  </data>
+  <data name="Parser.TOKEN.OWITH" xml:space="preserve">
+    <value>klíčové slovo with</value>
+  </data>
+  <data name="Parser.TOKEN.OTHEN" xml:space="preserve">
+    <value>klíčové slovo then</value>
+  </data>
+  <data name="Parser.TOKEN.OELSE" xml:space="preserve">
+    <value>klíčové slovo else</value>
+  </data>
+  <data name="Parser.TOKEN.COLON" xml:space="preserve">
+    <value>symbol :</value>
+  </data>
+  <data name="Parser.TOKEN.COMMA" xml:space="preserve">
+    <value>symbol ,</value>
+  </data>
+  <data name="Parser.TOKEN.CONST" xml:space="preserve">
+    <value>klíčové slovo const</value>
+  </data>
+  <data name="Parser.TOKEN.CLASS" xml:space="preserve">
+    <value>klíčové slovo class</value>
+  </data>
+  <data name="Parser.TOKEN.BEGIN" xml:space="preserve">
+    <value>klíčové slovo begin</value>
+  </data>
+  <data name="Parser.TOKEN.FLOAT" xml:space="preserve">
+    <value>literál s plovoucí desetinnou čárkou</value>
+  </data>
+  <data name="Parser.TOKEN.FIXED" xml:space="preserve">
+    <value>klíčové slovo fixed</value>
+  </data>
+  <data name="Parser.TOKEN.FALSE" xml:space="preserve">
+    <value>klíčové slovo false</value>
+  </data>
+  <data name="BlockEndSentence" xml:space="preserve">
+    <value>Neúplný strukturovaný konstruktor na této pozici nebo před ní</value>
+  </data>
+  <data name="RequiredButNotSpecified" xml:space="preserve">
+    <value>Modul {0} vyžaduje {1} {2}.</value>
+  </data>
+  <data name="NONTERM.cPrototype" xml:space="preserve">
+    <value> v externí deklaraci</value>
+  </data>
+  <data name="NONTERM.Category.Type" xml:space="preserve">
+    <value> v typu</value>
+  </data>
+  <data name="NONTERM.Category.Expr" xml:space="preserve">
+    <value> ve výrazu</value>
+  </data>
+  <data name="NONTERM.attrUnionCaseDecl" xml:space="preserve">
+    <value> v případu typu union</value>
+  </data>
+  <data name="Parser.TOKEN.BYTEARRAY" xml:space="preserve">
+    <value>literál bajtového pole</value>
+  </data>
+  <data name="LetRecUnsoundInner" xml:space="preserve">
+    <value> se vyhodnotí jako {0}</value>
+  </data>
+  <data name="RuleNeverMatched" xml:space="preserve">
+    <value>Pro toto pravidlo nebude nikdy existovat shoda.</value>
+  </data>
+  <data name="ValueNotContained" xml:space="preserve">
+    <value>Modul {0} obsahuje hodnotu\n    {1},    \nale jeho signatura definuje hodnotu\n    {2}.    \n{3}.</value>
+  </data>
+  <data name="PossibleBestOverload" xml:space="preserve">
+    <value>\n\nNejlepší možné přetížení: {0}.</value>
+  </data>
+  <data name="Parser.TOKEN.LBRACK.BAR" xml:space="preserve">
+    <value>symbol [|</value>
+  </data>
+  <data name="ConstraintSolverTupleDiffLengths" xml:space="preserve">
+    <value>{0} a {1} mají v řazených kolekcích členů různou délku.</value>
+  </data>
+  <data name="Parser.TOKEN.TYPE" xml:space="preserve">
+    <value>klíčové slovo type</value>
+  </data>
+  <data name="Parser.TOKEN.TRUE" xml:space="preserve">
+    <value>klíčové slovo true</value>
+  </data>
+  <data name="Parser.TOKEN.STAR" xml:space="preserve">
+    <value>symbol *</value>
+  </data>
+  <data name="Parser.TOKEN.HASH" xml:space="preserve">
+    <value>symbol #</value>
+  </data>
+  <data name="Parser.TOKEN.WHEN" xml:space="preserve">
+    <value>klíčové slovo when</value>
+  </data>
+  <data name="Parser.TOKEN.WITH" xml:space="preserve">
+    <value>klíčové slovo with</value>
+  </data>
+  <data name="Parser.TOKEN.VOID" xml:space="preserve">
+    <value>klíčové slovo void</value>
+  </data>
+  <data name="Parser.TOKEN.LESS" xml:space="preserve">
+    <value>symbol &lt;</value>
+  </data>
+  <data name="Parser.TOKEN.LAZY" xml:space="preserve">
+    <value>klíčové slovo lazy</value>
+  </data>
+  <data name="Parser.TOKEN.OPEN" xml:space="preserve">
+    <value>klíčové slovo open</value>
+  </data>
+  <data name="Parser.TOKEN.OFUN" xml:space="preserve">
+    <value>klíčové slovo fun</value>
+  </data>
+  <data name="Parser.TOKEN.OLET" xml:space="preserve">
+    <value>klíčové slovo let nebo use</value>
+  </data>
+  <data name="Parser.TOKEN.NULL" xml:space="preserve">
+    <value>klíčové slovo null</value>
+  </data>
+  <data name="Parser.TOKEN.ELIF" xml:space="preserve">
+    <value>klíčové slovo elif</value>
+  </data>
+  <data name="Parser.TOKEN.DONE" xml:space="preserve">
+    <value>klíčové slovo done</value>
+  </data>
+  <data name="Parser.TOKEN.CHAR" xml:space="preserve">
+    <value>znakový literál</value>
+  </data>
+  <data name="Parser.TOKEN.BASE" xml:space="preserve">
+    <value>klíčové slovo base</value>
+  </data>
+  <data name="AssemblyNotResolved" xml:space="preserve">
+    <value>Odkaz na sestavení {0} se nenašel nebo je neplatný.</value>
+  </data>
+  <data name="RecoverableParseError" xml:space="preserve">
+    <value>chyba syntaxe</value>
+  </data>
+  <data name="FieldsFromDifferentTypes" xml:space="preserve">
+    <value>Pole {0} a {1} jsou odlišného typu.</value>
+  </data>
+  <data name="DefensiveCopyWarning" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="NONTERM.typeNameInfo" xml:space="preserve">
+    <value> v názvu typu</value>
+  </data>
+  <data name="Parser.TOKEN.AMP.AMP" xml:space="preserve">
+    <value>symbol &amp;&amp;</value>
+  </data>
+  <data name="InvalidInternalsVisibleToAssemblyName1" xml:space="preserve">
+    <value>Neplatný název sestavení {0} z atributu InternalsVisibleTo v {1}</value>
+  </data>
+  <data name="InvalidInternalsVisibleToAssemblyName2" xml:space="preserve">
+    <value>Neplatný název sestavení {0} z atributu InternalsVisibleTo (název souboru sestavení není dostupný)</value>
+  </data>
+  <data name="FunctionExpected" xml:space="preserve">
+    <value>Tato funkce přebírá příliš mnoho argumentů, nebo se používá v kontextu, ve kterém se funkce neočekává.</value>
+  </data>
+  <data name="UnitTypeExpectedWithPossibleAssignmentToMutable" xml:space="preserve">
+    <value>Výsledek tohoto výrazu rovnosti se implicitně zruší. Zvažte vytvoření vazby mezi výsledkem a názvem pomocí klíčového slova let, např. let výsledek = výraz. Pokud jste chtěli mutovat hodnotu, použijte operátor &lt;-, např. {0} &lt;- výraz.</value>
+  </data>
+  <data name="IndeterminateStaticCoercion" xml:space="preserve">
+    <value>Statická konverze z typu\n    {0}    \nna typ \n    {1}    \n zahrnuje neurčitý typ založený na informacích před tímto místem v programu. Statické konverze nejsou u některých typů povolené. Je potřeba, abyste k typu doplnili další poznámky.</value>
+  </data>
+  <data name="PossibleUnverifiableCode" xml:space="preserve">
+    <value>Použití tohoto konstruktoru může způsobit vygenerování neověřitelného kódu .NET IL. Toto upozornění se dá pomocí --nowarn:9 nebo #nowarn "9" vypnout.</value>
+  </data>
+  <data name="FullAbstraction" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.AMP.OP" xml:space="preserve">
+    <value>operátor vpony</value>
+  </data>
+  <data name="NONTERM.defnBindings" xml:space="preserve">
+    <value> v definicích</value>
+  </data>
+  <data name="Parser.TOKEN.SEMICOLON" xml:space="preserve">
+    <value>symbol ;</value>
+  </data>
+  <data name="Parser.TOKEN.INFIX.BAR.OP" xml:space="preserve">
+    <value>operátor vpony</value>
+  </data>
+  <data name="NONTERM.objectImplementationMembers" xml:space="preserve">
+    <value> v objektovém výrazu</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.RBRACE" xml:space="preserve">
+    <value>symbol &gt;}</value>
+  </data>
+  <data name="Parser.TOKEN.GREATER.RBRACK" xml:space="preserve">
+    <value>symbol &gt;]</value>
+  </data>
+  <data name="Parser.TOKEN.EXCEPTION" xml:space="preserve">
+    <value>klíčové slovo exception</value>
+  </data>
+</root>

@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Struct1" xml:space="preserve">
+    <value>struct</value>
+  </data>
+  <data name="ElementIsExpected" xml:space="preserve">
+    <value>öğe bekleniyor</value>
+  </data>
+  <data name="PEImageNotAvailable" xml:space="preserve">
+    <value>PE görüntüsü kullanılamıyor.</value>
+  </data>
+  <data name="InvalidSizeOfPublicKeyToken" xml:space="preserve">
+    <value>Ortak anahtar belirtecinin boyutu geçersiz.</value>
+  </data>
+  <data name="Event1" xml:space="preserve">
+    <value>event</value>
+  </data>
+  <data name="InconsistentLanguageVersions" xml:space="preserve">
+    <value>Tutarsız dil sürümleri</value>
+  </data>
+  <data name="ReferenceResolverShouldReturnReadableNonNullStream" xml:space="preserve">
+    <value>Başvuru çözümleyicisi boş olmayan okunabilir akış döndürmelidir.</value>
+  </data>
+  <data name="InvalidCompilationOptions" xml:space="preserve">
+    <value>Geçersiz derleme seçenekleri: Gönderim imzalanamıyor.</value>
+  </data>
+  <data name="EmptyKeyInPathMap" xml:space="preserve">
+    <value>pathMap öğesinde bir anahtar boş.</value>
+  </data>
+  <data name="RuleSetHasDuplicateRules" xml:space="preserve">
+    <value>Kural kümesi dosyası farklı '{1}' ve '{2}' eylemleri ile '{0}' için yinelenen kurallara sahiptir.</value>
+  </data>
+  <data name="TypeMustBeASubclassOfSyntaxAnnotation" xml:space="preserve">
+    <value>Tür SyntaxAnnotation'ın alt sınıfı olmalıdır.</value>
+  </data>
+  <data name="CompilerAnalyzerThrowsDescription" xml:space="preserve">
+    <value>'{0}' çözümleyicisi şu özel durumu oluşturdu:
+'{1}'.</value>
+  </data>
+  <data name="Value_too_large_to_be_represented_as_a_30_bit_unsigned_integer" xml:space="preserve">
+    <value>Değer, 30 bit işaretsiz tamsayı olarak temsil edilemeyecek kadar büyük.</value>
+  </data>
+  <data name="CannotAliasModule" xml:space="preserve">
+    <value>Bir modüle diğer ad verilemez.</value>
+  </data>
+  <data name="InvalidCharactersInAssemblyCultureName" xml:space="preserve">
+    <value>Derleme kültürü adında geçersiz karakterler</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>modül</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>yöntem</value>
+  </data>
+  <data name="SymWriterNotDeterministic" xml:space="preserve">
+    <value>Windows PDB yazıcısı, belirlenimci derlemeyi desteklemiyor: '{0}'</value>
+  </data>
+  <data name="AnalyzerNameColumnHeader" xml:space="preserve">
+    <value>Çözümleyici</value>
+  </data>
+  <data name="Class1" xml:space="preserve">
+    <value>class</value>
+  </data>
+  <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
+    <value>Derleme meta verileri oluşturmak için modül kopyası kullanılamaz.</value>
+  </data>
+  <data name="IconStreamUnexpectedFormat" xml:space="preserve">
+    <value>Simge akışı beklenen biçimde değil.</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>Dosya bulunamadı.</value>
+  </data>
+  <data name="RuleSetBadAttributeValue" xml:space="preserve">
+    <value>{0} özniteliği {1} geçersiz değerine sahip.</value>
+  </data>
+  <data name="CoffResourceInvalidSectionSize" xml:space="preserve">
+    <value>COFF nesnesi biçiminde olduğu varsayılan Win32 kaynakları geçersiz bölüm boyutuna sahiptir.</value>
+  </data>
+  <data name="UnrecognizedResourceFileFormat" xml:space="preserve">
+    <value>Tanınmayan kaynak dosyası biçimi.</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>parametre</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>özellik, dizin oluşturucusu</value>
+  </data>
+  <data name="RuleSetMissingAttribute" xml:space="preserve">
+    <value>{0} öğesinde {1} adlı öznitelik eksik.</value>
+  </data>
+  <data name="MetadataRefNotFoundToRemove1" xml:space="preserve">
+    <value>Kaldırılacak MetadataReference '{0}' bulunamadı.</value>
+  </data>
+  <data name="InvalidModuleName" xml:space="preserve">
+    <value>'{0}' meta veri modülünde geçersiz modül adı belirtildi: '{1}'</value>
+  </data>
+  <data name="NameContainsInvalidCharacter" xml:space="preserve">
+    <value>Ad geçersiz karakterler içeriyor.</value>
+  </data>
+  <data name="PdbStreamUnexpectedWhenEmbedding" xml:space="preserve">
+    <value>PDB, PE akışına eklenirken PDB akışı verilmemelidir.</value>
+  </data>
+  <data name="PdbStreamUnexpectedWhenEmittingMetadataOnly" xml:space="preserve">
+    <value>Yalnızca meta veriler yayınlanırken, PDB akışı sağlanmamalıdır.</value>
+  </data>
+  <data name="AnalyzerDriverFailure" xml:space="preserve">
+    <value>Çözümleyici Sürücüsü Hatası</value>
+  </data>
+  <data name="MustIncludePrivateMembersUnlessRefAssembly" xml:space="preserve">
+    <value>Bir başvuru bütünleştirilmiş kodu yayınlamıyorsa özel üyeler içermelidir.</value>
+  </data>
+  <data name="ChangesMustBeOrderedAndNotOverlapping" xml:space="preserve">
+    <value>Değişiklikler sıralanmalı ve çakışmamalıdır.</value>
+  </data>
+  <data name="KeepAliveIsTooSmall" xml:space="preserve">
+    <value>'/keepalive' seçeneğinin -1'den düşük bağımsız değişkenleri geçersiz.</value>
+  </data>
+  <data name="IOperationFeatureDisabled" xml:space="preserve">
+    <value>'IOperation' özelliği devre dışı bırakıldı.</value>
+  </data>
+  <data name="AbsolutePathExpected" xml:space="preserve">
+    <value>Mutlak yok bekleniyor.</value>
+  </data>
+  <data name="InvalidDataAtOffset" xml:space="preserve">
+    <value>{0} uzaklığında geçersiz veriler: {1}{2}*{3}{4}</value>
+  </data>
+  <data name="XmlReferencesNotSupported" xml:space="preserve">
+    <value>XML belgelerine yönelik başvurular desteklenmez.</value>
+  </data>
+  <data name="StreamIsTooLong" xml:space="preserve">
+    <value>Akış çok uzun.</value>
+  </data>
+  <data name="ReturnTypeCannotBeValuePointerbyRefOrOpen" xml:space="preserve">
+    <value>Dönüş türü bir değer türü, işaretçi, başvuru tarafından veya açık genel tür olamaz</value>
+  </data>
+  <data name="TupleUnderlyingTypeMustBeTupleCompatible" xml:space="preserve">
+    <value>Bir demet için temel alınan tür, demet ile uyumlu olmalıdır.</value>
+  </data>
+  <data name="AnalyzerDriverThrowsDescription" xml:space="preserve">
+    <value>Çözümleyici sürücüsü aşağıdaki özel durumu oluşturdu:
+'{0}'.</value>
+  </data>
+  <data name="ExceptionContext" xml:space="preserve">
+    <value>Şu bağlama sahip özel durum oluştu:
+{0}</value>
+  </data>
+  <data name="The_type_0_is_not_understood_by_the_serialization_binder" xml:space="preserve">
+    <value>'{0}' türü, serileştirme bağlayıcısı tarafından anlaşılamıyor.</value>
+  </data>
+  <data name="InconsistentSyntaxTreeFeature" xml:space="preserve">
+    <value>Tutarsız söz dizimi ağacı özellikleri</value>
+  </data>
+  <data name="CannotEmbedInteropTypesFromModule" xml:space="preserve">
+    <value>Birlikte çalışma türleri modülden katıştırılamıyor.</value>
+  </data>
+  <data name="SourceTextCannotBeEmbedded" xml:space="preserve">
+    <value>SourceText eklenemedi. Yapılandırmada kodlamayı veya canBeEmbedded=true değerini sağlayın.</value>
+  </data>
+  <data name="Stream_contains_invalid_data" xml:space="preserve">
+    <value>Akış, geçersiz veri içeriyor</value>
+  </data>
+  <data name="AnalyzerExecutionTimeColumnHeader" xml:space="preserve">
+    <value>Süre (sn)</value>
+  </data>
+  <data name="AsyncAnalyzerActionCannotBeRegistered" xml:space="preserve">
+    <value>Çözümleyici, desteklenmeyen 'asenkron' bir eylem kaydetmeye çalıştı.</value>
+  </data>
+  <data name="InvalidTree" xml:space="preserve">
+    <value>Söz dizimi ağacı temel alınan 'Compilation' öğesine ait değil.</value>
+  </data>
+  <data name="InvalidHash" xml:space="preserve">
+    <value>Geçersiz karma değer.</value>
+  </data>
+  <data name="KeepAliveWithoutShared" xml:space="preserve">
+    <value>'/keepalive' seçeneği yalnızca '/shared' seçeneği ile geçerlidir.</value>
+  </data>
+  <data name="IncludingPrivateMembersUnexpectedWhenEmittingToMetadataPeStream" xml:space="preserve">
+    <value>İkincil bütünleştirilmiş kod çıktısına yayın yapılırken özel üyeleri ekleme özelliği kullanılmamalıdır.</value>
+  </data>
+  <data name="PathReturnedByResolveStrongNameKeyFileMustBeAbsolute" xml:space="preserve">
+    <value>{0}.ResolveStrongNameKeyFile tarafından döndürülen yol mutlak olmalıdır: '{1}'</value>
+  </data>
+  <data name="FailedToResolveRuleSetName" xml:space="preserve">
+    <value>Kural kümesi dosyası '{0}' bulunamadı.</value>
+  </data>
+  <data name="KeyInPathMapEndsWithSeparator" xml:space="preserve">
+    <value>pathMap öğesinde bir anahtar yol ayırıcısıyla bitiyor.</value>
+  </data>
+  <data name="AssemblySigningNotSupported" xml:space="preserve">
+    <value>Derleme imzalama desteklenmiyor.</value>
+  </data>
+  <data name="InvalidNodeToTrack" xml:space="preserve">
+    <value>İzlenecek düğüm, kökün alt öğesi değil.</value>
+  </data>
+  <data name="MissingListItem" xml:space="preserve">
+    <value>Belirtilen öğe, bir liste öğesi değil.</value>
+  </data>
+  <data name="Delegate1" xml:space="preserve">
+    <value>delegate</value>
+  </data>
+  <data name="TheStreamCannotBeWrittenTo" xml:space="preserve">
+    <value>Akışa yazılamıyor.</value>
+  </data>
+  <data name="SharedArgumentMissing" xml:space="preserve">
+    <value>'/shared:' bağımsız değişkeninin değeri boş olamaz</value>
+  </data>
+  <data name="Deserialization_reader_for_0_read_incorrect_number_of_values" xml:space="preserve">
+    <value>'{0}' türünün seri durumdan çıkarma okuyucusu, yanlış sayıda değer okudu.</value>
+  </data>
+  <data name="CannotCreateReferenceToSubmission" xml:space="preserve">
+    <value>Bir gönderime başvuru oluşturulamaz.</value>
+  </data>
+  <data name="PathReturnedByResolveMetadataFileMustBeAbsolute" xml:space="preserve">
+    <value>{0}.ResolveMetadataFile tarafından döndürülen yol mutlak olmalıdır: '{1}'</value>
+  </data>
+  <data name="Unresolved" xml:space="preserve">
+    <value>Çözümlenmemiş: </value>
+  </data>
+  <data name="KeepAliveIsNotAnInteger" xml:space="preserve">
+    <value>'/keepalive' seçeneğinin bağımsız değişkeni 32 bitlik bir tamsayı değil.</value>
+  </data>
+  <data name="SpanDoesNotIncludeStartOfLine" xml:space="preserve">
+    <value>Yayılım bir satırın başlangıcını içermez.</value>
+  </data>
+  <data name="CantCreateReferenceToAssemblyWithoutLocation" xml:space="preserve">
+    <value>Konum olmadan bir derlemeye meta veri başvurusu oluşturulamaz.</value>
+  </data>
+  <data name="InvalidCultureName" xml:space="preserve">
+    <value>Geçersiz kültür adı: '{0}'</value>
+  </data>
+  <data name="TuplesNeedAtLeastTwoElements" xml:space="preserve">
+    <value>Demetler en az iki öğe içermelidir.</value>
+  </data>
+  <data name="MismatchedVersion" xml:space="preserve">
+    <value>Roslyn derleyici sunucusu derleme görevinden farklı protokol sürümü bildiriyor.</value>
+  </data>
+  <data name="AnalyzerTotalExecutionTime" xml:space="preserve">
+    <value>Çözümleyicinin toplam yürütme süresi: {0} saniye.</value>
+  </data>
+  <data name="CompilationOptionsMustNotHaveErrors" xml:space="preserve">
+    <value>Derleme seçeneklerinde hata bulunmamalıdır.</value>
+  </data>
+  <data name="Cannot_serialize_type_0" xml:space="preserve">
+    <value>'{0}' türü seri hale getirilemiyor.</value>
+  </data>
+  <data name="MetadataPeStreamUnexpectedWhenEmittingMetadataOnly" xml:space="preserve">
+    <value>Yalnızca meta veriler yayınlanırken, meta veri PE akışı sağlanmamalıdır.</value>
+  </data>
+  <data name="EmptyOrInvalidResourceName" xml:space="preserve">
+    <value>Boş veya geçersiz kaynak adı</value>
+  </data>
+  <data name="ReturnTypeCannotBeVoidByRefOrOpen" xml:space="preserve">
+    <value>Dönüş türü void, başvuru tarafından veya açık genel tür olamaz</value>
+  </data>
+  <data name="SymWriterDoesNotSupportSourceLink" xml:space="preserve">
+    <value>Windows PDB yazıcısı SourceLink özelliğini desteklemiyor: '{0}'</value>
+  </data>
+  <data name="InvalidPublicKeyToken" xml:space="preserve">
+    <value>Geçersiz genel anahtar belirteci</value>
+  </data>
+  <data name="MissingKeepAlive" xml:space="preserve">
+    <value>'/keepalive' seçeneği için bağımsız değişken eksik.</value>
+  </data>
+  <data name="InMemoryModule" xml:space="preserve">
+    <value>&lt;in-memory module&gt;</value>
+  </data>
+  <data name="SymWriterOlderVersionThanRequired" xml:space="preserve">
+    <value>Windows PDB yazıcısının sürümü, gerekli olan '{0}' sürümünden eski</value>
+  </data>
+  <data name="NodeOrTokenOutOfSequence" xml:space="preserve">
+    <value>Bir düğüm veya belirteç sıranın dışında.</value>
+  </data>
+  <data name="EmbeddingPdbUnexpectedWhenEmittingMetadata" xml:space="preserve">
+    <value>Meta veriler yayınlanırken PDB eklemeye izin verilmez.</value>
+  </data>
+  <data name="CantCreateReferenceToDynamicAssembly" xml:space="preserve">
+    <value>Dinamik bir derleme dosyasına bir meta veri başvurusu oluşturulamaz.</value>
+  </data>
+  <data name="CoffResourceInvalidSymbol" xml:space="preserve">
+    <value>COFF nesnesi biçiminde olduğu varsayılan Win32 kaynakları, bir veya daha fazla geçersiz sembol değerine sahiptir.</value>
+  </data>
+  <data name="StreamMustSupportReadAndSeek" xml:space="preserve">
+    <value>Akış okuma ve arama işlemlerini desteklemelidir.</value>
+  </data>
+  <data name="Enum1" xml:space="preserve">
+    <value>sabit listesi</value>
+  </data>
+  <data name="InvalidDiagnosticLocationReported" xml:space="preserve">
+    <value>Raporlanan '{0}' tanılaması, çözümlenen derlemenin bir parçası olmayan '{1}' dosyası içinde bir kaynak konumuna sahip.</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>alan</value>
+  </data>
+  <data name="NameCannotBeEmpty" xml:space="preserve">
+    <value>Ad boş olamaz.</value>
+  </data>
+  <data name="CoffResourceMissingSection" xml:space="preserve">
+    <value>COFF nesnesi biçiminde olduğu varsayılan Win32 kaynaklarında '.rsrc$01' ve '.rsrc$02' bölümlerinden biri veya her ikisi eksik</value>
+  </data>
+  <data name="TupleElementNameCountMismatch" xml:space="preserve">
+    <value>Demet öğesi adları belirtildiyse, öğe adlarının sayısı demetin kardinalitesiyle eşleşmelidir.</value>
+  </data>
+  <data name="InvalidContentType" xml:space="preserve">
+    <value>Geçersiz içerik türü</value>
+  </data>
+  <data name="GetMetadataMustReturnInstance" xml:space="preserve">
+    <value>{0}.GetMetadata() bir {1} örneği döndürmelidir.</value>
+  </data>
+  <data name="InvalidDiagnosticIdReported" xml:space="preserve">
+    <value>Bildirilen tanılama, geçerli bir tanıtıcı olmayan '{0}' kimliğine sahip.</value>
+  </data>
+  <data name="CantCreateModuleReferenceToAssembly" xml:space="preserve">
+    <value>Bir derleme dosyasına bir modül başvurusu oluşturulamaz.</value>
+  </data>
+  <data name="DuplicateAnalyzerInstances" xml:space="preserve">
+    <value>Bağımsız değişken, yinelenen çözümleyici örnekleri içeriyor.</value>
+  </data>
+  <data name="NameCannotStartWithWhitespace" xml:space="preserve">
+    <value>Ad boşluk ile başlayamaz.</value>
+  </data>
+  <data name="Arrays_with_more_than_one_dimension_cannot_be_serialized" xml:space="preserve">
+    <value>Birden çok boyutlu diziler seri hale getirilemez.</value>
+  </data>
+  <data name="UnsupportedDiagnosticReported" xml:space="preserve">
+    <value>'{0}' kimliği ile bildirilen tanılama, çözümleyici tarafından desteklenmiyor.</value>
+  </data>
+  <data name="OutputKindNotSupported" xml:space="preserve">
+    <value>Çıkış türü desteklenmiyor.</value>
+  </data>
+  <data name="SeparatorIsExpected" xml:space="preserve">
+    <value>ayırıcı bekleniyor</value>
+  </data>
+  <data name="UnexpectedTypeOfNodeInList" xml:space="preserve">
+    <value>Listedeki düğümlerden biri beklenen türde değil.</value>
+  </data>
+  <data name="AnonymousTypeArgumentCountMismatch2" xml:space="preserve">
+    <value>{0} değeri 'default' olmalı veya {1} ile aynı uzunlukta olmalıdır.</value>
+  </data>
+  <data name="NameCannotBeNull" xml:space="preserve">
+    <value>Ad null olamaz.</value>
+  </data>
+  <data name="UnsupportedHashAlgorithm" xml:space="preserve">
+    <value>Desteklenmeyen karma değer algoritması.</value>
+  </data>
+  <data name="ResourceStreamProviderShouldReturnNonNullStream" xml:space="preserve">
+    <value>Kaynak akış sağlayıcısı boş olmayan akış döndürmelidir.</value>
+  </data>
+  <data name="WinRTIdentityCantBeRetargetable" xml:space="preserve">
+    <value>WindowsRuntime kimliği yeniden hedeflendirilebilir olamaz</value>
+  </data>
+  <data name="UnsupportedAnalyzerInstance" xml:space="preserve">
+    <value>Bağımsız değişken, bu CompilationWithAnalyzers örneğinin 'Analyzers' öğesine ait olmayan bir çözümleyici örneği içeriyor.</value>
+  </data>
+  <data name="CannotTargetNetModuleWhenEmittingRefAssembly" xml:space="preserve">
+    <value>Başvuru bütünleştirilmiş kodu yayınlanırken net modülü hedeflenemez.</value>
+  </data>
+  <data name="Cannot_deserialize_type_0" xml:space="preserve">
+    <value>'{0}' türü seri durumdan çıkarılamıyor.</value>
+  </data>
+  <data name="StreamMustSupportRead" xml:space="preserve">
+    <value>Akış okunabilir olmalıdır.</value>
+  </data>
+  <data name="Interface1" xml:space="preserve">
+    <value>interface</value>
+  </data>
+  <data name="CoffResourceInvalidRelocation" xml:space="preserve">
+    <value>COFF nesnesi biçiminde olduğu varsayılan Win32 kaynakları, bir veya daha fazla geçersiz konum değiştirme üst bilgi değerine sahiptir.</value>
+  </data>
+  <data name="CompilerAnalyzerThrows" xml:space="preserve">
+    <value>'{0}' çözümleyicisi '{2}' iletisiyle '{1}' türünde bir özel durum oluşturdu.</value>
+  </data>
+  <data name="InMemoryAssembly" xml:space="preserve">
+    <value>&lt;in-memory assembly&gt;</value>
+  </data>
+  <data name="AnonymousTypeMemberAndNamesCountMismatch2" xml:space="preserve">
+    <value>{0} ile {1} aynı uzunlukta olmalıdır.</value>
+  </data>
+  <data name="TupleElementNameEmpty" xml:space="preserve">
+    <value>Demet öğesi adı boş bir dize olamaz.</value>
+  </data>
+  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
+    <value>Gömülü metinler yalnızca Taşınabilir PDB gösterilirken desteklenir.</value>
+  </data>
+  <data name="InvalidOutputKindForSubmission" xml:space="preserve">
+    <value>Gönderim için geçersiz çıkış türü. DynamicallyLinkedLibrary bekleniyor.</value>
+  </data>
+  <data name="StreamMustSupportWrite" xml:space="preserve">
+    <value>Akış yazılabilir olmalıdır.</value>
+  </data>
+  <data name="InvalidAssemblyName" xml:space="preserve">
+    <value>Geçersiz derleme adı: '{0}'</value>
+  </data>
+  <data name="InvalidAlias" xml:space="preserve">
+    <value>Geçersiz diğer ad.</value>
+  </data>
+  <data name="Constructor" xml:space="preserve">
+    <value>oluşturucu</value>
+  </data>
+  <data name="NoAnalyzersFound" xml:space="preserve">
+    <value>Çözümleyici bulunamadı</value>
+  </data>
+  <data name="AssemblyMustHaveAtLeastOneModule" xml:space="preserve">
+    <value>Derleme en az bir modüle sahip olmalıdır.</value>
+  </data>
+  <data name="ResourceDataProviderShouldReturnNonNullStream" xml:space="preserve">
+    <value>Kaynak veri sağlayıcısı boş olmayan akış döndürmelidir</value>
+  </data>
+  <data name="ResourceStreamEndedUnexpectedly" xml:space="preserve">
+    <value>Kaynak akışı {0} baytta sona erdi {1} bayt bekleniyordu.</value>
+  </data>
+  <data name="PEImageDoesntContainManagedMetadata" xml:space="preserve">
+    <value>PE görüntüsü yönetilen meta verileri içermiyor.</value>
+  </data>
+  <data name="EmptyOrInvalidFileName" xml:space="preserve">
+    <value>Boş veya geçersiz dosya adı</value>
+  </data>
+  <data name="Return1" xml:space="preserve">
+    <value>dönüş</value>
+  </data>
+  <data name="AnalyzerDriverThrows" xml:space="preserve">
+    <value>Çözümleyici sürücüsü, '{1}' iletisiyle '{0}' türünde bir özel durum oluşturdu.</value>
+  </data>
+  <data name="FileSizeExceedsMaximumAllowed" xml:space="preserve">
+    <value>Dosya boyutu geçerli meta veri dosyasının izin verilen maksimum boyutunu aşıyor.</value>
+  </data>
+  <data name="SpanDoesNotIncludeEndOfLine" xml:space="preserve">
+    <value>Yayılma, bir satırın sonunu içermiyor.</value>
+  </data>
+  <data name="PreviousSubmissionHasErrors" xml:space="preserve">
+    <value>Önceki gönderimde hatalar var.</value>
+  </data>
+  <data name="CompilationReferencesAssembliesWithDifferentAutoGeneratedVersion" xml:space="preserve">
+    <value>Derleme, sürümleri yalnızca otomatik olarak oluşturulan derleme ve/veya düzeltme numaraları bakımından farklı olan birden çok bütünleştirilmiş koda başvuruyor.</value>
+  </data>
+  <data name="AssemblyFileNotFound" xml:space="preserve">
+    <value>Derleme dosyası bulunamadı</value>
+  </data>
+  <data name="InvalidPublicKey" xml:space="preserve">
+    <value>Geçersiz genel anahtar.</value>
+  </data>
+  <data name="TheStreamCannotBeReadFrom" xml:space="preserve">
+    <value>Akıştan okunamıyor.</value>
+  </data>
+  <data name="ReferenceOfTypeIsInvalid1" xml:space="preserve">
+    <value>'{0}' türündeki başvuru bu derleme için geçerli değil.</value>
+  </data>
+  <data name="DiagnosticIdCantBeNullOrWhitespace" xml:space="preserve">
+    <value>DiagnosticDescriptor türünün null veya boş dize ya da yalnızca boşluk içeren dize olmayan bir kimliğinin olması gerekir.</value>
+  </data>
+  <data name="TypeMustBeSameAsHostObjectTypeOfPreviousSubmission" xml:space="preserve">
+    <value>Tür, önceki gönderimin konak nesnesi türü ile aynı olmalıdır.</value>
+  </data>
+  <data name="TupleElementLocationCountMismatch" xml:space="preserve">
+    <value>Demet öğelerinin konumları belirtildiyse, konumların sayısı demetin kardinalitesiyle eşleşmelidir.</value>
+  </data>
+  <data name="EndMustNotBeLessThanStart" xml:space="preserve">
+    <value>'end', 'start'tan az olmamalıdır</value>
+  </data>
+  <data name="CannotCreateReferenceToModule" xml:space="preserve">
+    <value>Bir modüle başvuru oluşturulamaz.</value>
+  </data>
+  <data name="CompilerAnalyzerFailure" xml:space="preserve">
+    <value>Çözümleyici Hatası</value>
+  </data>
+  <data name="ExpectedNonEmptyPublicKey" xml:space="preserve">
+    <value>Beklenen boş olmayan ortak anahtar</value>
+  </data>
+  <data name="InvalidRuleSetInclude" xml:space="preserve">
+    <value>Eklenen kural kümesi dosyası {0} yüklenirken bir hata oluştu: {1}</value>
+  </data>
+  <data name="InvalidCharactersInAssemblyName" xml:space="preserve">
+    <value>Derleme adında geçersiz karakterler</value>
+  </data>
+  <data name="MultithreadedAnalyzerExecutionNote" xml:space="preserve">
+    <value>NOT: Çözümleyiciler eşzamanlı olarak çalışabileceğinden, geçen süre çözümleyicinin yürütme süresinden daha az olabilir.</value>
+  </data>
+  <data name="ArgumentElementCannotBeNull" xml:space="preserve">
+    <value>Bağımsız değişken null öğe içeremez.</value>
+  </data>
+  <data name="ArgumentCannotBeEmpty" xml:space="preserve">
+    <value>Bağımsız değişken boş olamaz.</value>
+  </data>
+  <data name="Assembly" xml:space="preserve">
+    <value>derleme</value>
+  </data>
+  <data name="TypeParameter" xml:space="preserve">
+    <value>tür parametresi</value>
+  </data>
+  <data name="StartMustNotBeNegative" xml:space="preserve">
+    <value>'start' negatif olmamalıdır</value>
+  </data>
+  <data name="SizeHasToBePositive" xml:space="preserve">
+    <value>Boyut pozitif olmalıdır.</value>
+  </data>
+  <data name="NullValueInPathMap" xml:space="preserve">
+    <value>pathMap'te bir değer null.</value>
+  </data>
+</root>

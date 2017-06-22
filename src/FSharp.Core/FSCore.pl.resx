@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="printfHashFormatSpecifierIllegal" xml:space="preserve">
+    <value>Modyfikator formatu # jest nieprawidłowy w języku F#</value>
+  </data>
+  <data name="invalidTupleTypeConstructorNotDefined" xml:space="preserve">
+    <value>Typ krotki „{0}” jest nieprawidłowy. Nie zdefiniowano wymaganego konstruktora.</value>
+  </data>
+  <data name="syncContextNull" xml:space="preserve">
+    <value>Właściwość System.Threading.SynchronizationContext.Current w wątku wywołującym ma wartość zerową.</value>
+  </data>
+  <data name="QtupleAccessOutOfRange" xml:space="preserve">
+    <value>Wartość krotki jest poza dostępnym zakresem.</value>
+  </data>
+  <data name="unsupportedQueryCall" xml:space="preserve">
+    <value>To nie jest prawidłowe wyrażenie zapytania. Metoda „{0}” została użyta w zapytaniu, ale nie rozpoznaje jej translator zapytań z języka F# na język LINQ. Sprawdź specyfikacje dozwolonych zapytań i rozważ przeniesienie niektórych operacji poza wyrażenie zapytania.</value>
+  </data>
+  <data name="QfailedToBindTypeInAssembly" xml:space="preserve">
+    <value>Nie można powiązać typu „{0}” w zestawie „{1}”.</value>
+  </data>
+  <data name="badFormatString" xml:space="preserve">
+    <value>Nieprawidłowy format ciągu wejściowego.</value>
+  </data>
+  <data name="QincorrectInstanceType" xml:space="preserve">
+    <value>Błędny typ wystąpienia.</value>
+  </data>
+  <data name="QcannotBindFunction" xml:space="preserve">
+    <value>Nie można powiązać funkcji {0} w typie {1}.</value>
+  </data>
+  <data name="QfailedToBindField" xml:space="preserve">
+    <value>Nie można powiązać pola „{0}”.</value>
+  </data>
+  <data name="printfPrecisonSpecifierIllegal" xml:space="preserve">
+    <value>Błędny specyfikator formatu (dokładności).</value>
+  </data>
+  <data name="nullsNotAllowedInArray" xml:space="preserve">
+    <value>Jeden z elementów w tablicy ma wartość zerową.</value>
+  </data>
+  <data name="firstClassUsesOfSplice" xml:space="preserve">
+    <value>Używanie „%” i „%%” w pierwszej klasie jest niedozwolone.</value>
+  </data>
+  <data name="QtmmCondMustBeBool" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: wyrażenie warunku musi być wyrażeniem logicznym. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="unsupportedQueryProperty" xml:space="preserve">
+    <value>To nie jest prawidłowe wyrażenie zapytania. Właściwość „{0}” została użyta w zapytaniu, ale nie rozpoznaje jej translator zapytań z języka F# na język LINQ. Sprawdź specyfikacje dozwolonych zapytań i rozważ przeniesienie niektórych operacji poza wyrażenie zapytania.</value>
+  </data>
+  <data name="QtmmVarTypeNotMatchRHS" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: typ zmiennej nie pasuje do typu prawej części powiązania zezwolenia. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="QcannotBindProperty" xml:space="preserve">
+    <value>Nie można powiązać właściwości {0} w typie {1}.</value>
+  </data>
+  <data name="inputMustBeNonNegative" xml:space="preserve">
+    <value>Wartość wejściowa nie może być ujemna.</value>
+  </data>
+  <data name="objIsNotARecord" xml:space="preserve">
+    <value>Obiekt nie jest wartością rekordu języka F#.</value>
+  </data>
+  <data name="QparentCannotBeNull" xml:space="preserve">
+    <value>Typ nadrzędny nie może mieć wartości zerowej.</value>
+  </data>
+  <data name="keyNotFoundAlt" xml:space="preserve">
+    <value>W kolekcji nie odnaleziono indeksu pasującego do predykatu.</value>
+  </data>
+  <data name="keyNotFound" xml:space="preserve">
+    <value>W kolekcji nie odnaleziono elementu, klucza lub indeksu.</value>
+  </data>
+  <data name="mailboxReceiveTimedOut" xml:space="preserve">
+    <value>Upłynął limit czasu działania metody Mailbox.Receive.</value>
+  </data>
+  <data name="startCannotBeNaN" xml:space="preserve">
+    <value>Początkową wartością zakresu nie może być NaN.</value>
+  </data>
+  <data name="QincompatibleRecordLength" xml:space="preserve">
+    <value>Niezgodna długość rekordu.</value>
+  </data>
+  <data name="QtmmExprTypeMismatch" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: niezgodne typy wyrażeń. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="checkStaticInit" xml:space="preserve">
+    <value>Statyczne zainicjowanie pliku lub typu spowodowało cykliczny dostęp do statycznych danych przed zakończeniem inicjowania.</value>
+  </data>
+  <data name="notEnoughElements" xml:space="preserve">
+    <value>Sekwencja wejściowa zawiera niewystarczającą liczbę elementów.</value>
+  </data>
+  <data name="moveNextNotCalledOrFinished" xml:space="preserve">
+    <value>Metoda MoveNext nie została wywołana albo nie zakończyła działania.</value>
+  </data>
+  <data name="QtmmFunctionArgTypeMismatch" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: niezgodny typ argumentu funkcji. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="QmissingUnionCase" xml:space="preserve">
+    <value>Typ „{0}” nie zawiera instrukcji „case” złożenia języka F# o nazwie „{1}”.</value>
+  </data>
+  <data name="QtmmRaw" xml:space="preserve">
+    <value>Niezgodność typów podczas łączenia wyrażenia w cytowany literał. Typ wstawianego drzewa wyrażenia jest niezgodny z typem oczekiwanym przez operację łączenia. Oczekiwano typu „{0}”, natomiast stwierdzono typ „{1}”. Rozważ adnotację typu przy użyciu oczekiwanego typu wyrażenia, np. (%% x : {0}) lub (%x : {0}).</value>
+  </data>
+  <data name="privateRecordType" xml:space="preserve">
+    <value>Typ „{0}” reprezentuje typ rekordu języka F#, jednak reprezentacja ta ma charakter prywatny. Aby mieć dostęp do reprezentacji prywatnych, należy ustawić flagę BindingFlags.NonPublic.</value>
+  </data>
+  <data name="unsupportedQueryConstructKind" xml:space="preserve">
+    <value>To nie jest prawidłowe wyrażenie zapytania. Konstrukcja „{0}” została użyta w zapytaniu, ale nie rozpoznaje jej translator zapytań z języka F# na język LINQ. Sprawdź specyfikacje dozwolonych zapytań i rozważ przeniesienie niektórych operacji poza wyrażenie zapytania.</value>
+  </data>
+  <data name="enumerationPastIntMaxValue" xml:space="preserve">
+    <value>Wyliczenie oparte na obiekcie System.Int32 przekracza wartość określoną w polu System.Int32.MaxValue.</value>
+  </data>
+  <data name="QfailedToBindProperty" xml:space="preserve">
+    <value>Nie można powiązać właściwości „{0}”.</value>
+  </data>
+  <data name="stepCannotBeZero" xml:space="preserve">
+    <value>Wartością kroku w zakresie nie może być zero.</value>
+  </data>
+  <data name="addressOpNotFirstClass" xml:space="preserve">
+    <value>Używanie operatorów „address-of” w pierwszej klasie jest niedozwolone.</value>
+  </data>
+  <data name="notARecordType" xml:space="preserve">
+    <value>Typ „{0}” nie jest typem rekordu języka F#.</value>
+  </data>
+  <data name="dyInvDivByIntCoerce" xml:space="preserve">
+    <value>Dynamiczne wywołanie metody DivideByInt z wymuszeniami nie jest obsługiwane.</value>
+  </data>
+  <data name="arraysHadDifferentLengths" xml:space="preserve">
+    <value>Tablice mają różne długości.</value>
+  </data>
+  <data name="QtmmInitArray" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: inicjator nie pasuje do typu tablicy. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="delegateExpected" xml:space="preserve">
+    <value>Oczekiwano typu delegowanego.</value>
+  </data>
+  <data name="QtmmTrueAndFalseMustMatch" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: typy gałęzi prawdy i fałszu różnią się od siebie. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="genericCompareFail1" xml:space="preserve">
+    <value>Nie można wykonać standardowego porównania: typ „{0}” nie implementuje interfejsu System.IComparable. Błąd może być spowodowany użyciem funkcji takiej jak „compare”, „max” lub „min” albo struktury danych takiej jak „Set” lub „Map”, której klucze zawierają wystąpienia tego typu.</value>
+  </data>
+  <data name="QunexpectedHole" xml:space="preserve">
+    <value>Nieoczekiwana przerwa w cytacie w wyrażeniu.</value>
+  </data>
+  <data name="outOfRange" xml:space="preserve">
+    <value>Wartość indeksu leży poza dozwolonym zakresem.</value>
+  </data>
+  <data name="printfExpectedPrecision" xml:space="preserve">
+    <value>Oczekiwano argumentu dokładności.</value>
+  </data>
+  <data name="stepCannotBeNaN" xml:space="preserve">
+    <value>Wartością kroku w zakresie nie może być NaN.</value>
+  </data>
+  <data name="arrayWasEmpty" xml:space="preserve">
+    <value>Tablica wejściowa jest pusta.</value>
+  </data>
+  <data name="QstaticWithReceiverObject" xml:space="preserve">
+    <value>Obiekt odbiornika jest nieoczekiwany, ponieważ element członkowski ma charakter statyczny.</value>
+  </data>
+  <data name="inputSequenceTooLong" xml:space="preserve">
+    <value>Sekwencja wejściowa zawiera więcej niż jeden element.</value>
+  </data>
+  <data name="setContainsNoElements" xml:space="preserve">
+    <value>Zestaw nie zawiera żadnych elementów.</value>
+  </data>
+  <data name="QtmmExprHasWrongType" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: wyrażenie ma błędny typ. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="QexpectedTwoTypes" xml:space="preserve">
+    <value>Oczekiwano dokładnie dwóch argumentów typu.</value>
+  </data>
+  <data name="QtmmBadFieldType" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: błędny typ pola. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="checkInit" xml:space="preserve">
+    <value>Zainicjowanie obiektu lub wartości spowodowało cykliczny dostęp do tego obiektu/wartości przed zakończeniem inicjowania.</value>
+  </data>
+  <data name="invalidRecordTypeConstructorNotDefined" xml:space="preserve">
+    <value>Typ rekordu „{0}” jest nieprawidłowy. Nie zdefiniowano wymaganego konstruktora.</value>
+  </data>
+  <data name="mailboxProcessorPostAndAsyncReplyTimedOut" xml:space="preserve">
+    <value>Upłynął limit czasu działania metody MailboxProcessor.PostAndAsyncReply.</value>
+  </data>
+  <data name="QfailedToBindAssembly" xml:space="preserve">
+    <value>Nie można powiązać zestawu „{0}” w trakcie przetwarzania danych cytatu.</value>
+  </data>
+  <data name="printfWidthSpecifierIllegal" xml:space="preserve">
+    <value>Błędny specyfikator formatu (szerokości).</value>
+  </data>
+  <data name="dyInvOpMultCoerce" xml:space="preserve">
+    <value>Dynamiczne wywołanie metody op_Multiply z wymuszeniami nie jest obsługiwane.</value>
+  </data>
+  <data name="QincorrectNumArgs" xml:space="preserve">
+    <value>Błędna liczba argumentów.</value>
+  </data>
+  <data name="matchCasesIncomplete" xml:space="preserve">
+    <value>Instrukcje „case” do porównania są niekompletne.</value>
+  </data>
+  <data name="mismatchIAREnd" xml:space="preserve">
+    <value>Podany obiekt IAsyncResult nie pasuje do tej operacji „End”.</value>
+  </data>
+  <data name="inputSequenceEmpty" xml:space="preserve">
+    <value>Sekwencja wejściowa jest pusta.</value>
+  </data>
+  <data name="QinvalidFuncType" xml:space="preserve">
+    <value>Nieprawidłowy typ funkcji.</value>
+  </data>
+  <data name="mismatchIARCancel" xml:space="preserve">
+    <value>Podany obiekt IAsyncResult nie pasuje do tej operacji „Cancel”.</value>
+  </data>
+  <data name="invalidTupleTypes" xml:space="preserve">
+    <value>To nie jest prawidłowy typ krotki dla biblioteki odbić F#.</value>
+  </data>
+  <data name="thenByError" xml:space="preserve">
+    <value>Operatorów „thenBy” i „thenByDescending” można używać tylko wobec sortowanych danych wejściowych.</value>
+  </data>
+  <data name="notUsedForHashing" xml:space="preserve">
+    <value>Ten obiekt jest przeznaczony dla cyklicznego wywoływania porównań i nie może służyć do tworzenia skrótów.</value>
+  </data>
+  <data name="resetNotSupported" xml:space="preserve">
+    <value>Ten moduł wyliczający nie obsługuje resetowania.</value>
+  </data>
+  <data name="QwritingGetOnly" xml:space="preserve">
+    <value>Zapisywanie właściwości pobieranej</value>
+  </data>
+  <data name="enumerationAlreadyFinished" xml:space="preserve">
+    <value>Wyliczanie zostało już zakończone.</value>
+  </data>
+  <data name="QcannotTakeAddress" xml:space="preserve">
+    <value>Nie można przyjąć adresu tego cytatu.</value>
+  </data>
+  <data name="QexpectedOneType" xml:space="preserve">
+    <value>Oczekiwano dokładnie jednego argumentu typu.</value>
+  </data>
+  <data name="dyInvOpAddCoerce" xml:space="preserve">
+    <value>Dynamiczne wywołanie metody op_Addition z wymuszeniami nie jest obsługiwane.</value>
+  </data>
+  <data name="tupleIndexOutOfRange" xml:space="preserve">
+    <value>Indeks „{1}” jest poza zakresem typu krotki „{0}”.</value>
+  </data>
+  <data name="printfExpectedWidth" xml:space="preserve">
+    <value>Oczekiwano argumentu szerokości.</value>
+  </data>
+  <data name="notAUnionType" xml:space="preserve">
+    <value>Typ „{0}” nie jest typem unii języka F#.</value>
+  </data>
+  <data name="QfailedToBindConstructor" xml:space="preserve">
+    <value>Nie można powiązać konstruktora.</value>
+  </data>
+  <data name="QtmmLoopBodyMustBeLambdaTakingInteger" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: treścią pętli „for” musi być wyrażenie lambda, którego argumentem jest liczba całkowita. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="QincorrectType" xml:space="preserve">
+    <value>Błędny typ.</value>
+  </data>
+  <data name="controlContinuationInvokedMultipleTimes" xml:space="preserve">
+    <value>Kontynuacja realizowana przez metodę Async.FromContinuations została wywołana kilka razy.</value>
+  </data>
+  <data name="QtmmFunTypeNotMatchDelegate" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: typ funkcji nie pasuje do typu delegowanego. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="notAPermutation" xml:space="preserve">
+    <value>Funkcja nie oblicza permutacji.</value>
+  </data>
+  <data name="printfMissingFormatSpecifier" xml:space="preserve">
+    <value>Brak specyfikatora formatu</value>
+  </data>
+  <data name="notATupleType" xml:space="preserve">
+    <value>Typ „{0}” nie jest typem krotki.</value>
+  </data>
+  <data name="QtmmExprNotMatchTuple" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: wyrażenie nie pasuje do typu krotki. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="QtmmBodyMustBeUnit" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: z treści musi być zwracana jednostka. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="notComparable" xml:space="preserve">
+    <value>Te dwa obiekty są różnego typu, dlatego nie można ich porównać.</value>
+  </data>
+  <data name="ThisValueCannotBeMutated" xml:space="preserve">
+    <value>Ta wartość nie może ulegać mutacjom.</value>
+  </data>
+  <data name="unsupportedQueryConstruct" xml:space="preserve">
+    <value>To nie jest prawidłowe wyrażenie zapytania. Poniższa konstrukcja została użyta w zapytaniu, ale nie rozpoznaje jej translator zapytań z języka F# na język LINQ:\n{0}\nSprawdź specyfikacje dozwolonych zapytań i rozważ przeniesienie niektórych operacji poza wyrażenie zapytania.</value>
+  </data>
+  <data name="multipleCompilationMappings" xml:space="preserve">
+    <value>Wykryto kilka atrybutów CompilationMappingAttribute, podczas gdy oczekiwano najwyżej jednego.</value>
+  </data>
+  <data name="indexOutOfBounds" xml:space="preserve">
+    <value>Wartość indeksu jest spoza zakresu elementów na liście.</value>
+  </data>
+  <data name="printfSpecifierAfterIllegal" xml:space="preserve">
+    <value>Błędny specyfikator formatu (po elemencie {0}).</value>
+  </data>
+  <data name="QnonStaticNoReceiverObject" xml:space="preserve">
+    <value>Element członkowski jest (wystąpieniem) niestatycznym, jednak nie określono obiektu odbiornika.</value>
+  </data>
+  <data name="QtmmIncorrectArgForUnion" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: błędny typ argumentu złożenia języka F#. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="QtupleLengthsDiffer" xml:space="preserve">
+    <value>Długości krotek różnią się od siebie.</value>
+  </data>
+  <data name="notAFunctionType" xml:space="preserve">
+    <value>Typ „{0}” nie jest typem funkcji.</value>
+  </data>
+  <data name="printfNotAFunType" xml:space="preserve">
+    <value>To nie jest typ funkcji.</value>
+  </data>
+  <data name="QwrongNumOfTypeArgs" xml:space="preserve">
+    <value>Metoda „{0}” oczekuje argumentów typu {1}, natomiast podano argumenty typu {2}.</value>
+  </data>
+  <data name="mailboxProcessorAlreadyStarted" xml:space="preserve">
+    <value>Kolejka MailboxProcessor została już uruchomiona.</value>
+  </data>
+  <data name="dyInvOpAddOverload" xml:space="preserve">
+    <value>Dynamiczne wywołanie metody op_Addition z przeciążeniem nie jest obsługiwane.</value>
+  </data>
+  <data name="privateExceptionType" xml:space="preserve">
+    <value>Typ „{0}” reprezentuje deklarację wyjątku języka F#, jednak reprezentacja ta ma charakter prywatny. Aby mieć dostęp do reprezentacji prywatnych, należy ustawić flagę BindingFlags.NonPublic.</value>
+  </data>
+  <data name="privateUnionType" xml:space="preserve">
+    <value>Typ „{0}” reprezentuje typ unii języka F#, jednak reprezentacja ta ma charakter prywatny. Aby mieć dostęp do reprezentacji prywatnych, należy ustawić flagę BindingFlags.NonPublic.</value>
+  </data>
+  <data name="QtmmInvalidParam" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: nieprawidłowy parametr metody lub właściwości indeksatora. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="mailboxProcessorPostAndReplyTimedOut" xml:space="preserve">
+    <value>Upłynął limit czasu działania metody MailboxProcessor.PostAndReply.</value>
+  </data>
+  <data name="printfBadFloatValue" xml:space="preserve">
+    <value>Błędna wartość zmiennoprzecinkowa.</value>
+  </data>
+  <data name="inputListWasEmpty" xml:space="preserve">
+    <value>Lista wejściowa jest pusta.</value>
+  </data>
+  <data name="QtmmExpectedFunction" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: oczekiwano typu funkcji w zastosowaniu funkcji lub powiązaniu zezwolenia. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="failDueToUnsupportedInputTypeInSumByOrAverageBy" xml:space="preserve">
+    <value>Nierozpoznane użycie operatora „sumBy” lub „averageBy” w zapytaniu. W zapytaniach, których oryginalne dane są statycznego typu IQueryable, obu operatorów można używać tylko do typów wyników int32, int64, single, double lub decimal.</value>
+  </data>
+  <data name="dyInvOpMultOverload" xml:space="preserve">
+    <value>Dynamiczne wywołanie metody op_Multiply z przeciążeniem nie jest obsługiwane.</value>
+  </data>
+  <data name="QunrecognizedMethodCall" xml:space="preserve">
+    <value>Parametr nie jest rozpoznawaną nazwą metody.</value>
+  </data>
+  <data name="objIsNullAndNoType" xml:space="preserve">
+    <value>Obiekt ma wartość zerową oraz nie określono jego typu. Podaj obiekt niepusty albo parametr o zdefiniowanym typie.</value>
+  </data>
+  <data name="QreadingSetOnly" xml:space="preserve">
+    <value>Odczytywanie właściwości ustawianej</value>
+  </data>
+  <data name="QtmmLowerUpperBoundMustBeInt" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: wartości graniczne dolna i górna muszą być liczbami całkowitymi. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="QunionNeedsDiffNumArgs" xml:space="preserve">
+    <value>Typ unii języka F# wymaga innej liczby argumentów.</value>
+  </data>
+  <data name="constructorForUnionCaseNotFound" xml:space="preserve">
+    <value>Nie można odnaleźć metody „{0}” konstruktora dla instrukcji „case” złożenia.</value>
+  </data>
+  <data name="enumerationNotStarted" xml:space="preserve">
+    <value>Wyliczanie nie zostało uruchomione. Wywołaj element MoveNext.</value>
+  </data>
+  <data name="optionValueWasNone" xml:space="preserve">
+    <value>Opcja ma wartość Brak.</value>
+  </data>
+  <data name="printfBadIntegerForDynamicFomatter" xml:space="preserve">
+    <value>Do dynamicznego modułu formatującego została przekazana błędna liczba całkowita.</value>
+  </data>
+  <data name="QtmmTuple" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: niezgodne typy argumentu i elementu krotki. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="QinvalidCaseIndex" xml:space="preserve">
+    <value>Nieprawidłowy indeks instrukcji „case” złożenia języka F#.</value>
+  </data>
+  <data name="inputMustBePositive" xml:space="preserve">
+    <value>Wartość wejściowa musi być dodatnia.</value>
+  </data>
+  <data name="mapCannotBeMutated" xml:space="preserve">
+    <value>Przyporządkowane wartości nie mogą ulegać mutacjom.</value>
+  </data>
+  <data name="QtmmIncorrectArgForRecord" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: błędny typ argumentu rekordu języka F#. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="failedReadEnoughBytes" xml:space="preserve">
+    <value>Nie można odczytać wystarczającej liczby bajtów ze strumienia.</value>
+  </data>
+  <data name="endCannotBeNaN" xml:space="preserve">
+    <value>Końcową wartością zakresu nie może być NaN.</value>
+  </data>
+  <data name="QtmmGuardMustBeBool" xml:space="preserve">
+    <value>Niezgodność typów podczas kompilowania elementu „{0}”: strażnik musi zwracać wartość logiczną. Oczekiwano typu „{1}”, natomiast stwierdzono typ „{2}”.</value>
+  </data>
+  <data name="noNegateMinValue" xml:space="preserve">
+    <value>Negacja minimalnej wartości liczby zapisanej w notacji uzupełniania do dwóch jest nieprawidłowa.</value>
+  </data>
+  <data name="QtypeArgumentOutOfRange" xml:space="preserve">
+    <value>wartość argumentu typu poza zakresem</value>
+  </data>
+  <data name="mailboxScanTimedOut" xml:space="preserve">
+    <value>Upłynął limit czasu działania metody Mailbox.Scan.</value>
+  </data>
+  <data name="QillFormedAppOrLet" xml:space="preserve">
+    <value>błędnie skonstruowane wyrażenie: AppOp lub LetOp</value>
+  </data>
+  <data name="QmissingRecordField" xml:space="preserve">
+    <value>Typ „{0}” nie zawiera pola rekordu języka F# o nazwie „{1}”.</value>
+  </data>
+  <data name="listsHadDifferentLengths" xml:space="preserve">
+    <value>Listy mają różne długości.</value>
+  </data>
+  <data name="QcannotBindToMethod" xml:space="preserve">
+    <value>Nie można powiązać z metodą.</value>
+  </data>
+  <data name="printfBadFormatSpecifier" xml:space="preserve">
+    <value>Błędny specyfikator formatu:{0}</value>
+  </data>
+  <data name="notAnExceptionType" xml:space="preserve">
+    <value>Typ „{0}” nie reprezentuje deklaracji wyjątku języka F#.</value>
+  </data>
+  <data name="nonZeroBasedDisallowed" xml:space="preserve">
+    <value>Na tej platformie nie można tworzyć tablic o wartości początkowej zero.</value>
+  </data>
+  <data name="unsupportedIfThenElse" xml:space="preserve">
+    <value>W zapytaniu nie można używać wyrażenia warunkowego if/then/else ani wyrażenia porównującego wielogałęziowe wzorce. Dozwolone są proste wyrażenia warunkowe if/then/else.</value>
+  </data>
+</root>

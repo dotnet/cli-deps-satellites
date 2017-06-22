@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Vbc_RenamePDB" xml:space="preserve">
+    <value>MSB3402: 创建 pdb 文件“{0}”时出现错误。{1}</value>
+  </data>
+  <data name="General_IncorrectHostObject" xml:space="preserve">
+    <value>MSB3087: 向任务“{0}”传入了不兼容的宿主对象。此任务的宿主对象必须实现“{1}”接口。</value>
+  </data>
+  <data name="General_DuplicateItemsNotSupported" xml:space="preserve">
+    <value>MSB3105: 在“{1}”参数中指定了项“{0}”多次。“{1}”参数不支持重复项。</value>
+  </data>
+  <data name="Csc_AssemblyAliasContainsIllegalCharacters" xml:space="preserve">
+    <value>MSB3053: 引用“{0}”上的程序集别名“{1}”包含非法字符。</value>
+  </data>
+  <data name="General_ExpectedFileMissing" xml:space="preserve">
+    <value>所需文件“{0}”不存在。</value>
+  </data>
+  <data name="General_DuplicateItemsNotSupportedWithMetadata" xml:space="preserve">
+    <value>MSB3083: 在参数“{1}”中指定了项“{0}”多次，并且这两个项对于元数据“{3}”具有相同的值“{2}”。参数“{1}”不支持重复项，除非这些项具有不同的“{3}”元数据值。</value>
+  </data>
+  <data name="General_ParameterUnsupportedOnHostCompiler" xml:space="preserve">
+    <value>IDE 的进程内编译器不支持为“{0}”参数指定的值。因此，此任务将退而使用命令行编译器。</value>
+  </data>
+  <data name="General_ToolFileNotFound" xml:space="preserve">
+    <value>MSB3082: 由于找不到“{0}”，任务失败。</value>
+  </data>
+  <data name="SharedCompilationFallback" xml:space="preserve">
+    <value>共享编译失败; 回到工具: {0}</value>
+  </data>
+  <data name="CopyRefAssembly_BadDestination1" xml:space="preserve">
+    <value>未能检查目标引用程序集“{0}”的内容哈希。将对其进行覆盖。</value>
+  </data>
+  <data name="CopyRefAssembly_SourceNotRef1" xml:space="preserve">
+    <value>无法从“{0}”提取 MVID。是否确定它是引用程序集?</value>
+  </data>
+  <data name="CopyRefAssembly_SkippingCopy1" xml:space="preserve">
+    <value>引用程序集“{0}”已具有最新信息。请不要改动。</value>
+  </data>
+  <data name="General_CouldNotSetHostObjectParameter" xml:space="preserve">
+    <value>MSB3081: 尝试设置 IDE 的进程内编译器的“{0}”参数时出现问题。{1}</value>
+  </data>
+  <data name="Csc_InvalidParameter" xml:space="preserve">
+    <value>MSB3051: 编译器的参数无效。{0}</value>
+  </data>
+  <data name="CopyRefAssembly_BadSource3" xml:space="preserve">
+    <value>未能查看源引用程序集“{0}”的内容哈希: {1}
+{2}</value>
+  </data>
+  <data name="UsingSharedCompilation" xml:space="preserve">
+    <value>对来自后列目录的编译器使用共享编译: {0}</value>
+  </data>
+  <data name="Csc_InvalidParameterWarning" xml:space="preserve">
+    <value>MSB3052: 编译器的参数无效，“{0}{1}”将被忽略。</value>
+  </data>
+  <data name="General_CannotConvertStringToBool" xml:space="preserve">
+    <value>无法将字符串“{0}”转换为布尔值(true/false)。</value>
+  </data>
+  <data name="General_InvalidAttributeMetadata" xml:space="preserve">
+    <value>项“{0}”具有值为“{2}”的特性“{1}”，该值未能转换为“{3}”。</value>
+  </data>
+  <data name="Vbc_ParameterHasInvalidValue" xml:space="preserve">
+    <value>“{1}”是无效的“{0}”参数值。</value>
+  </data>
+  <data name="Compiler_UnexpectedException" xml:space="preserve">
+    <value>MSB3883: 意外的异常: </value>
+  </data>
+  <data name="Vbc_EnumParameterHasInvalidValue" xml:space="preserve">
+    <value>MSB3401: “{1}”是无效的“{0}”参数值。有效值为: {2}</value>
+  </data>
+  <data name="General_ReferenceDoesNotExist" xml:space="preserve">
+    <value>MSB3104: 未找到引用的程序集“{0}”。如果此程序集是由你的另一个项目生成的，请确保在生成该项目之后再生成此程序集。</value>
+  </data>
+</root>
