@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Build.Tasks.CodeAnalysis\Microsoft.Build.Tasks.CodeAnalysis.csproj" />
+    <ProjectReference Include="..\Microsoft.CodeAnalysis.CSharp\Microsoft.CodeAnalysis.CSharp.csproj" />
+    <ProjectReference Include="..\Microsoft.CodeAnalysis.VisualBasic\Microsoft.CodeAnalysis.VisualBasic.csproj" />
+    <ProjectReference Include="..\Microsoft.CodeAnalysis\Microsoft.CodeAnalysis.csproj" />
+  </ItemGroup>
+
+</Project>

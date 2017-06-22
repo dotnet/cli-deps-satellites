@@ -1,0 +1,22 @@
+<Project>
+  <!-- 
+    Use empty root namespace to ensure we get correct resource names.
+    The decompiled resources already have their manifest resource names in their file names
+  -->
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <Target Name="PackSatellites"
+          Condition="$(IsPackage)"
+          BeforeTargets="$(GenerateNuspecDependsOn)">
+          
+    <ItemGroup>
+      <Satellite Include="$(OutputPath)**\*.resources.dll" />
+      <Content Include="@(Satellite)" 
+               PackagePath="lib\$(TargetFramework)\%(Satellite.RecursiveDir)%(Satellite.Filename)%(Satellite.Extension)" />
+    </ItemGroup>
+    
+  </Target>
+
+</Project>

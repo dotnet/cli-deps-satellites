@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FSharp.Build\FSharp.Build.csproj" />
+    <ProjectReference Include="..\FSharp.Compiler.Private\FSharp.Compiler.Private.csproj" />
+    <ProjectReference Include="..\FSharp.Core\FSharp.Core.csproj" />
+  </ItemGroup>
+
+</Project>
