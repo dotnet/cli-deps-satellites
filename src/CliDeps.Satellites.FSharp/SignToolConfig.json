@@ -1,0 +1,13 @@
+{
+  "sign": [
+    {
+      "certificate": "Microsoft402",
+      "strongName": "StrongName",
+      "values": [ 
+         "*/FSharp.Build.resources.dll",
+         "*/FSharp.Compiler.Private.resources.dll",
+         "*/FSharp.Core.resources.dll"
+       ]
+    }
+  ]
+}

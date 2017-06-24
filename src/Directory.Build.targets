@@ -19,4 +19,18 @@
     
   </Target>
 
+  <Target Name="SignSatellites"
+          BeforeTargets="PackSatellites"
+          Condition="$(IsPackage) and '$(OS)' == 'Windows_NT'">
+    <ItemGroup>
+      <SignToolArg Include="-nugetPackagesPath $(NuGetPackageRoot)" />
+      <SignToolArg Include="-intermediateOutputPath $(IntermediateOutputPath)" />
+      <SignToolArg Include="-config $(MSBuildProjectDirectory)\SignToolConfig.json" />
+      <SignToolArg Include="-test" Condition="'$(SignType)' != 'real'" />
+      <SignToolArg Include="$(OutputPath)" />
+    </ItemGroup>
+
+    <Exec Command="$(NuGetPackageRoot)\RoslynTools.Microsoft.SignTool\$(SignToolVersion)\tools\SignTool.exe @(SignToolArg, ' ')" />
+ </Target>
+
 </Project>

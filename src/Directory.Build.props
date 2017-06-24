@@ -4,7 +4,7 @@
     <IsFSharp>$(MSBuildProjectName.Contains('FSharp'))</IsFSharp>
     <IsPackage>$(MSbuildProjectName.Contains('CliDeps'))</IsPackage>
 
-    <!-- Set up output paths -->
+    <!-- Output paths -->
     <RepoRootPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..'))\</RepoRootPath>
     <RootOutputPath>$(RepoRootPath)bin\</RootOutputPath>
     <ConfigurationRootOutputPath>$(RootOutputPath)$(Configuration)\</ConfigurationRootOutputPath>
@@ -14,6 +14,9 @@
     <OutputPath Condition="$(IsFSharp)">$(ConfigurationRootOutputPath)FSharp\</OutputPath>
     <PackageOutputPath>$(ConfigurationRootOutputPath)</PackageOutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- Don't reference entire framework, we just need System.Runtime for satellites -->
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
 
     <!-- Suppress all build output but satellites -->
     <GenerateDependencyFile>false</GenerateDependencyFile>
@@ -25,10 +28,15 @@
     <GeneratePackageOnBuild>$(IsPackage)</GeneratePackageOnBuild>
 
     <!-- Set up signing -->
-    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)..\build\35MSSharedLib1024.snk</AssemblyOriginatorKeyFile>
-    <AssemblyOriginatorKeyFile Condition="$(IsFSharp)">$(MSBuildThisFileDirectory)..\build\MSFT.snk</AssemblyOriginatorKeyFile>
+    <StrongNameKey>MSSharedLib</StrongNameKey>
+    <StrongNameKey Condition="$(IsFSharp)">MSFT</StrongNameKey>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)..\build\$(StrongNameKey).snk</AssemblyOriginatorKeyFile>
+    <SignToolConfig>$(MSBuildThisFileDirectory)..\build\$(StrongNameKey).json</SignToolConfig>
     <SignAssembly>true</SignAssembly>
-    <DelaySign>true</DelaySign>
+    
+    <!-- Use delay signing instead of public signing on full msbuild to workaround https://github.com/Microsoft/msbuild/issues/1490 -->
+    <PublicSign Condition="'$(SignType)' != 'real' and '$(MSBuildRuntimeType)' == 'Core'">true</PublicSign>
+    <DelaySign Condition="'$(PublicSign)' != 'true'">true</DelaySign>
 
     <!-- Set up assembly and package metadata -->
     <Authors>Microsoft Corporation</Authors>
@@ -46,28 +54,35 @@
     <FileVersion Condition="'$(BUILD_BUILDNUMBER)' == ''">$(VersionPrefix).0</FileVersion>
     <FileVersion Condition="'$(BUILD_BUILDNUMBER)' != ''">$(VersionPrefix).$([MSBuild]::Subtract($(BuildNumberPart1), $(BuildEpoch)))</FileVersion>
     <InformationalVersion>$(VersionPrefix).$(BuildNumber)</InformationalVersion>
-    <InformationalVersion Condition="'$(BUILD_SOURCEVERSION)' != ''">$(InformationalVersion). Commit Hash: $(BUILD_SOURCEVERSION)</InformationalVersion>    
+    <InformationalVersion Condition="'$(BUILD_SOURCEVERSION)' != ''">$(InformationalVersion). Commit Hash: $(BUILD_SOURCEVERSION)</InformationalVersion>
+    
+    <!-- Dependency versions -->
+    <SystemRuntimeVersion>4.1.0</SystemRuntimeVersion>
+    <SignToolVersion>0.3.3-beta</SignToolVersion>
+    <MicroBuildVersion>0.2.0</MicroBuildVersion>
   </PropertyGroup>
 
-  <!-- Reference only System.Runtime for compilation. Nothing else is needed for satellites. P2P references exist only for build sequencing. -->
-  <PropertyGroup>
-    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
-  </PropertyGroup>
+  <!-- Dependencies -->  
   <ItemGroup>
-    <PackageReference Include="System.Runtime" Version="4.1.0" />
+    <PackageReference Include="System.Runtime" Version="$(SystemRuntimeVersion)" />
+    <PackageReference Include="MicroBuild.Core" Version="$(MicroBuildVersion)" Condition="$(IsPackage)" />
+    <PackageReference Include="RoslynTools.Microsoft.SignTool" Version="$(SignToolVersion)" Condition="$(IsPackage)" />
   </ItemGroup>
-  <ItemDefinitionGroup>
-    <ProjectReference>
-      <PrivateAssets>All</PrivateAssets>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
- </ItemDefinitionGroup>
 
-  <!-- Prevent nupkgs from having any dependencies. -->
+  <!-- 
+    Default metadata on Project and package refenences:    
+      PrivateAssets=All: hide all depdencies from .nuspec.
+      ReferenceOutputAssembly=false: we only have have P2P references for build sequencing.
+  -->
   <ItemDefinitionGroup>
     <PackageReference>
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
+
+    <ProjectReference>
+      <PrivateAssets>All</PrivateAssets>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemDefinitionGroup>
 
 </Project>

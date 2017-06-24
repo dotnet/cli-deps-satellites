@@ -1,0 +1,14 @@
+{
+  "sign": [
+    {
+      "certificate": "Microsoft402",
+      "strongName": "MsSharedLib72",
+      "values": [ 
+         "*/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+         "*/Microsoft.CodeAnalysis.resources.dll",
+         "*/Microsoft.CodeAnalysis.CSharp.resources.dll",
+         "*/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+       ]
+    }
+  ]
+}
