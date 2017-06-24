@@ -20,4 +20,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/s
 $env:PATH="$DotnetInstallDir;$env:PATH"
 
 & dotnet restore src
-& dotnet build src /v:normal $ExtraParameters 
+if ($lastExitCode -ne 0) { throw "Restore failed" }
+
+& dotnet build src /v:normal $ExtraParameters
+if ($lastExitCode -ne 0) { throw "Build failed" }
