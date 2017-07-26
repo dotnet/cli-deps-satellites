@@ -1510,7 +1510,7 @@
     <value>XML 名前空間プレフィックス '{0}' が定義されていません。</value>
   </data>
   <data name="ERR_TypeForwardedToMultipleAssemblies" xml:space="preserve">
-    <value>アセンブリ '{1}' のモジュール '{0}' によって、型 '{2}' が複数のアセンブリ: '{3}' および '{4}' に転送中です。</value>
+    <value>アセンブリ '{1}' のモジュール '{0}' によって、型 '{2}' が複数のアセンブリ '{3}' および '{4}' に転送されています。</value>
   </data>
   <data name="WRN_XMLDocReturnsOnADeclareSub" xml:space="preserve">
     <value>XML コメント タグ 'returns' は、'declare sub' 言語要素では許可されていません。</value>

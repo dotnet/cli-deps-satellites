@@ -760,7 +760,7 @@
     <value>Restriction de valeur. La valeur '{0}' a le type générique\n    {1}    \nChangez '{2}' en fonction avec des arguments explicites ou, si votre but n'est pas d'utiliser un type générique, ajoutez une annotation de type.</value>
   </data>
   <data name="ValueRestriction3" xml:space="preserve">
-    <value>Restriction de valeur. Il a été déduit que ce membre avait un type générique\n    {0}    \nLes constructeurs, ainsi que les accesseurs Get et méthodes setter d'une propriété ne peuvent pas être plus génériques que le type englobant. Ajoutez une annotation de type pour indiquer les types exacts impliqués.</value>
+    <value>Restriction de valeur. Il a été déduit que ce membre avait un type générique\n    {0}    \nLes constructeurs, ainsi que les méthodes getter/setter d'une propriété ne peuvent pas être plus génériques que le type englobant. Ajoutez une annotation de type pour indiquer les types exacts impliqués.</value>
   </data>
   <data name="ValueRestriction1" xml:space="preserve">
     <value>Restriction de valeur. La valeur '{0}' a le type générique\n    {1}    \nRendez les arguments de '{2}' explicites ou, si votre but n'est pas d'utiliser un type générique, ajoutez une annotation de type.</value>

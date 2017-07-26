@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>Firma de ensamblados no admitida.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>El diagnóstico notificado "{0}" tiene la ubicación de origen "{1}" en el archivo "{2}", que está fuera del archivo dado.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>El nodo que se debe seguir no es descendiente de la raíz.</value>
   </data>

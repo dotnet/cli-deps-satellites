@@ -760,7 +760,7 @@
     <value>值限制。值“{0}”具有泛型类型\n    {1}    \n使“{2}”成为具有显式参数的函数，或添加类型批注(如果您不希望它是泛型的)。</value>
   </data>
   <data name="ValueRestriction3" xml:space="preserve">
-    <value>值限制。已推理出此成员具有泛型类型\n    {0}    \n构造函数和属性 getter/setter 不能比封闭类型更通用。    添加类型批注以指示涉及到的确切类型。</value>
+    <value>值限制。已推理出此成员具有泛型类型\n    {0}    \n构造函数和属性 Getter/Setter 不能比封闭类型更通用。    添加类型批注以指示涉及到的确切类型。</value>
   </data>
   <data name="ValueRestriction1" xml:space="preserve">
     <value>值限制。值“{0}”具有泛型类型\n    {1}    \n使“{2}”的参数成为显式参数，或添加类型批注(如果您不希望它是泛型的)。</value>

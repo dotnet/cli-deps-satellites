@@ -199,7 +199,7 @@
     <value>Символ "_" нельзя использовать как имя поля</value>
   </data>
   <data name="parsMultipleAccessibilitiesForGetSet" xml:space="preserve">
-    <value>Задано несколько модификаторов доступности для свойства метода считывания или присваивания значения</value>
+    <value>Задано несколько модификаторов доступности для метода получения или задания свойства</value>
   </data>
   <data name="tcConstructorsCannotBeFirstClassValues" xml:space="preserve">
     <value>Конструкторы должны применяться к аргументам и не должны использоваться как значения первого класса. При необходимости используйте анонимную функцию "(fun arg1 ... argN -&gt; new Type(arg1,...,argN))".</value>
@@ -524,7 +524,7 @@
     <value>Определение данного типа включает прямую циклическую ссылку через сокращение</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>Недопустимое значение "{0}" параметра --targetprofile; допустимые значения: mscorlib, netcore и netstandard.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>Использование привязок use в первичных конструкторах не допускается</value>
@@ -713,7 +713,7 @@
     <value>Недопустимое значение "{0}" параметра единицы измерения "{1}"</value>
   </data>
   <data name="tastInvalidFormForPropertyGetter" xml:space="preserve">
-    <value>Недопустимая форма метода считывания значения свойства. При использовании явного синтаксиса требуется как минимум один аргумент "()".</value>
+    <value>Недопустимая форма метода получения свойства. При использовании явного синтаксиса требуется как минимум один аргумент "()".</value>
   </data>
   <data name="etOneOrMoreErrorsSeenDuringExtensionTypeSetting" xml:space="preserve">
     <value>При настройке предоставленного типа были обнаружены одна или более ошибок</value>
@@ -1208,7 +1208,7 @@
     <value>Использование "-&gt;" в выражениях последовательности и вычисления ограничивается формой "for pat in expr -&gt; expr". Использование синтаксиса "for ... in ... do ... yield..." для создания элементов в более сложных выражениях последовательности.</value>
   </data>
   <data name="parsGetterMustHaveAtLeastOneArgument" xml:space="preserve">
-    <value>Свойство метода считывания значений должно быть функцией, например, "get() = ..." или "get(index) = ..."</value>
+    <value>Свойство метода получения должно быть функцией, например, "get() = ..." или "get(index) = ..."</value>
   </data>
   <data name="parsMismatchedQuote" xml:space="preserve">
     <value>Несоответствующие кавычки, начиная с "{0}"</value>
@@ -1520,7 +1520,7 @@
     <value>Пространство имен и модуль с именем "{0}" одновременно встречаются в двух частях этой сборки</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Укажите профиль целевой платформы этой сборки. Допустимые значения: mscorlib, netcore и netstandard. Значение по умолчанию — mscorlib.</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>В версии F# 4.1 доступность сокращений типов проверяется во время компиляции. Рекомендуется изменить доступность сокращений типов. Если проигнорировать это предупреждение, возможны ошибки во время выполнения.</value>
@@ -2126,7 +2126,7 @@
     <value>Активный шаблон "{0}" не является функцией</value>
   </data>
   <data name="chkGetterSetterDoNotMatchAbstract" xml:space="preserve">
-    <value>Свойство "{0}" типа "{1}" содержит несовпадающие методы считывания и получения. Если один из этих методов является абстрактным, второй также должен быть абстрактным.</value>
+    <value>Свойство "{0}" типа "{1}" содержит несовпадающие методы получения и задания. Если один из этих методов является абстрактным, второй также должен быть абстрактным.</value>
   </data>
   <data name="tcNoIntegerForLoopInQuery" xml:space="preserve">
     <value>В запросах используйте для перебора интервала целых чисел форму "for x in n .. m do ..."</value>
@@ -2534,7 +2534,7 @@
     <value>Требуется {0} выражений, получено {1}</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>Объявленные параметры типа для данного расширения типа не совпадают с объявленными параметрами на исходном типе "{0}"</value>
+    <value>В одном объявленном параметре типа или нескольких для этого расширения типа отсутствует ограничение типа или содержится неверное ограничение типа, не совпадающее с исходными ограничениями типа для "{0}"</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>Как минимум в одном переопределении неправильно реализован соответствующий абстрактный элемент</value>
@@ -3179,7 +3179,7 @@
     <value>Повторяющееся свойство. Имя и сигнатура свойства "{0}" аналогичны другому свойству в типе "{1}".</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Укажите имя языка и региональных параметров для предпочтительного языка вывода (например, es-ES, ja-JP)</value>
+    <value>Укажите предпочитаемое имя языка и региональных параметров (например, es-ES, ja-JP)</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>В выражениях последовательности результаты создаются с помощью "yield"</value>
@@ -3209,7 +3209,7 @@
     <value>При явной ссылке на mscorlib.dll или FSharp.Core.dll также должен передаваться параметр {0}</value>
   </data>
   <data name="parsTypeAnnotationsOnGetSet" xml:space="preserve">
-    <value>Аннотации типов для методов считывания и присваивания значений необходимо указывать после выражений "get()" или "set(v)", например, "with get() : string = ..."</value>
+    <value>Аннотации типов для методов получения или задания свойства необходимо указывать после выражений "get()" или "set(v)", например, "with get() : string = ..."</value>
   </data>
   <data name="optsBuildWindows" xml:space="preserve">
     <value>Выполнить сборку исполняемого файла Windows</value>
@@ -3590,7 +3590,7 @@
     <value>Атрибут "CustomEquality" необходимо использовать в сочетании с атрибутами "NoComparison" или "CustomComparison"</value>
   </data>
   <data name="parsGetterAtMostOneArgument" xml:space="preserve">
-    <value>Свойство метода считывания значения может иметь не более одной группы аргументов</value>
+    <value>Свойство метода получения может иметь не более одной группы аргументов</value>
   </data>
   <data name="tcThisValueMayNotBeInlined" xml:space="preserve">
     <value>Этот элемент, функция или значение не могут быть объявлены как inline</value>

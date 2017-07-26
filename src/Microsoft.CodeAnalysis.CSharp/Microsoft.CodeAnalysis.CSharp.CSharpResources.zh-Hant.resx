@@ -2023,7 +2023,7 @@
     <value>不能連同 DefaultParameterAttribute 或 OptionalAttribute 一起指定預設參數值</value>
   </data>
   <data name="ERR_MissingDeconstruct" xml:space="preserve">
-    <value>使用 {1} out 參數及 void 傳回型別找不到類型 '{0}' 適合的解構執行個體或擴充方法。</value>
+    <value>使用 {1} out 參數及 void 傳回型別找不到適合類型 '{0}' 的解構執行個體或擴充方法。</value>
   </data>
   <data name="ERR_BadExtensionAgg" xml:space="preserve">
     <value>擴充方法必須在非泛型靜態類別中定義</value>

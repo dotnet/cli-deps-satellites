@@ -1570,7 +1570,7 @@ Pokud chcete vložit informace o typech spolupráce pro obě sestavení, odkazuj
 Pokud chcete odstranit toto varování, můžete místo toho použít /reference (vlastnost Přibalit definované typy nastavená na False). V tomto případě uvedené informace poskytne primární definiční sestavení (PIA).</value>
   </data>
   <data name="IDS_FeatureExpressionBodiedAccessor" xml:space="preserve">
-    <value>přístupový objekt vlastnosti těla výrazu</value>
+    <value>přístupový objekt vlastnosti textu výrazu</value>
   </data>
   <data name="WRN_EqualityOpWithoutEquals" xml:space="preserve">
     <value>{0} definuje operátor == nebo !=, ale nepřepisuje funkci Object.Equals(object o).</value>
@@ -2981,7 +2981,7 @@ Poskytněte kompilátoru nějaký způsob, jak metody rozlišit. Můžete např�
     <value>Nepřepisujte metodu object.Finalize. Raději použijte destruktor.</value>
   </data>
   <data name="IDS_FeatureExpressionBodiedDeOrConstructor" xml:space="preserve">
-    <value>konstruktor a destruktor těla výrazu</value>
+    <value>konstruktor a destruktor textu výrazu</value>
   </data>
   <data name="ERR_ExplicitLayoutAndAutoImplementedProperty" xml:space="preserve">
     <value>{0}: V typu s označením StructLayout(LayoutKind.Explicit) nejde používat automaticky implementované vlastnosti.</value>

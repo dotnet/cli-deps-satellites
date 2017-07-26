@@ -524,7 +524,7 @@
     <value>Esta definición de tipo implica una referencia cíclica inmediata a través de una abreviación.</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>Valor "{0}" no válido para "--targetprofile", los valores válidos son "mscorlib", "netcore" o "netstandard".</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>No se permiten enlaces 'use' en constructores principales.</value>
@@ -1265,7 +1265,7 @@
     <value>El tipo '{0}' proporcionado tiene 'IsGenericType' establecido como true, pero no se admiten los tipos genéricos.</value>
   </data>
   <data name="optsCopyright" xml:space="preserve">
-    <value>(C) Microsoft Corporation. Reservados todos los derechos.</value>
+    <value>(C) Microsoft Corporation. Todos los derechos reservados.</value>
   </data>
   <data name="crefQuotationsCantSetExceptionFields" xml:space="preserve">
     <value>Las expresiones de código delimitadas no pueden contener expresiones que establezcan campos en valores de excepción.</value>
@@ -1520,7 +1520,7 @@
     <value>Hay un espacio de nombres y un módulo con el nombre '{0}' en dos partes de este ensamblado.</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Especifique el perfil de la plataforma de destino de este ensamblado. Los valores válidos son mscorlib, netcore o netstandard. Valor predeterminado: mscorlib.</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>A partir de F# 4.1, la accesibilidad de las abreviaturas de tipo se comprueba en tiempo de compilación. Considere la posibilidad de cambiar la accesibilidad de la abreviatura de tipo. Si pasa por alto esta advertencia, se podrían producir errores de tiempo de ejecución.</value>
@@ -2258,7 +2258,7 @@
     <value>El módulo contiene el constructor\n    {0}    \npero su signatura especifica\n    {1}    \nLos nombres difieren.</value>
   </data>
   <data name="customOperationTextLikeJoin" xml:space="preserve">
-    <value>{0} var in collection {1} (outerKey = innerKey). Note that parentheses are required after '{2}'</value>
+    <value>Variable {0} de la colección {1} (outerKey = innerKey). Tenga en cuenta que, después de "{2}", se requieren paréntesis.</value>
   </data>
   <data name="parsInOrEqualExpected" xml:space="preserve">
     <value>Se esperaba 'in' o '='.</value>
@@ -2534,7 +2534,7 @@
     <value>Se esperaban {0} expresiones y se obtuvieron {1}.</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>Los parámetros de tipo declarados para esta extensión de tipo no coinciden con los parámetros de tipo declarados en el tipo original '{0}'.</value>
+    <value>Uno o varios parámetros de tipo declarados para esta extensión de tipo tienen una restricción de tipo ausente o errónea que no coincide con las restricciones de tipo original en "{0}"</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>Al menos una invalidación no implementó correctamente su correspondiente miembro abstracto.</value>
@@ -2741,7 +2741,7 @@
     <value>Se usa para realizar la conversión a un tipo situado en un nivel superior de la cadena de herencia.</value>
   </data>
   <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
-    <value>{0} var in collection {1} (outerKey = innerKey) into group. Note that parentheses are required after '{2}'</value>
+    <value>Variable {0} de la colección {1} (outerKey = innerKey) en el grupo. Tenga en cuenta que, después de "{2}", se requieren paréntesis.</value>
   </data>
   <data name="tcDefaultStructConstructorCall" xml:space="preserve">
     <value>El constructor de inicialización cero predeterminado de un tipo struct solo se puede usar si todos los campos del tipo struct admiten inicialización predeterminada.</value>
@@ -3179,7 +3179,7 @@
     <value>Propiedad duplicada. La propiedad "{0}" tiene el mismo nombre y la misma signatura que otra propiedad del tipo "{1}".</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Especifique la referencia cultural del idioma de salida que prefiera (por ejemplo, es-ES, ja-JP)</value>
+    <value>Especifique la referencia cultural del idioma de salida que prefiera (por ejemplo, es-ES, ja-JP)</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>En expresiones de secuencia, los resultados se generan con 'yield'.</value>

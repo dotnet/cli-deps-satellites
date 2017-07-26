@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>Assemblysignierung nicht unterstützt.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>Die gemeldete Diagnose "{0}" enthält einen Quellspeicherort "{1}" in der Datei "{2}", der sich außerhalb der angegebenen Datei befindet.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>Der aufzuzeichnende Knoten ist kein untergeordnetes Element des Stamms.</value>
   </data>

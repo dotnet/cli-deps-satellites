@@ -2023,7 +2023,7 @@ Para eliminar la advertencia puede usar /reference (establezca la propiedad Embe
     <value>No se puede especificar un valor de parámetro predeterminado junto con DefaultParameterAttribute u OptionalAttribute</value>
   </data>
   <data name="ERR_MissingDeconstruct" xml:space="preserve">
-    <value>No se encontró ninguna instancia de deconstrucción o método de extensión para el tipo "{0}", con {1} parámetros out y un tipo de valor devuelto void.</value>
+    <value>No se encontró ninguna instancia de deconstrucción o método de extensión adecuado para el tipo "{0}", con {1} parámetros out y un tipo de valor devuelto void.</value>
   </data>
   <data name="ERR_BadExtensionAgg" xml:space="preserve">
     <value>Un método de extensión debe definirse en una clase estática no genérica</value>

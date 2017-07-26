@@ -2023,7 +2023,7 @@ Aby usunąć ostrzeżenie, możesz zamiast tego użyć opcji /reference (ustaw w
     <value>Nie można określić wartości domyślnej parametru w połączeniu z klasami DefaultParameterAttribute lub OptionalAttribute</value>
   </data>
   <data name="ERR_MissingDeconstruct" xml:space="preserve">
-    <value>Nie znaleziono odpowiedniego wystąpienia dekonstrukcji lub metody rozszerzenia dla typu „{0}” z parametrami wyjściowymi {1} i typem zwrotnym void.</value>
+    <value>Nie znaleziono odpowiedniego wystąpienia dekonstrukcji lub metody rozszerzenia dla typu „{0}” z {1} parametrami out i typem zwrotnym void.</value>
   </data>
   <data name="ERR_BadExtensionAgg" xml:space="preserve">
     <value>Metoda rozszerzenia musi być zdefiniowana w nieogólnej klasie statycznej.</value>

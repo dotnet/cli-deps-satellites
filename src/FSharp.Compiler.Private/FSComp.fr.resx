@@ -199,7 +199,7 @@
     <value>'_' ne peut pas être utilisé comme nom de champ</value>
   </data>
   <data name="parsMultipleAccessibilitiesForGetSet" xml:space="preserve">
-    <value>Plusieurs accessibilités fournies pour l'accesseur Get ou la méthode setter de la propriété</value>
+    <value>Plusieurs accessibilités fournies pour la méthode getter ou setter de la propriété</value>
   </data>
   <data name="tcConstructorsCannotBeFirstClassValues" xml:space="preserve">
     <value>Les constructeurs doivent être appliqués aux arguments et ne peuvent pas être utilisés en tant que valeurs de première classe. Si nécessaire, utilisez une fonction anonyme '(fun arg1 ... argN -&gt; new Type(arg1,...,argN))'.</value>
@@ -524,7 +524,7 @@
     <value>Cette définition de type implique une référence cyclique immédiate via une abréviation</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>Valeur non valide '{0}' pour '--targetprofile'. Les valeurs valides sont 'mscorlib', 'netcore' et 'netstandard'.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>Les liaisons 'use' ne sont pas autorisées dans les constructeurs principaux</value>
@@ -713,7 +713,7 @@
     <value>Valeur non valide '{0}' pour le paramètre d'unité de mesure '{1}'</value>
   </data>
   <data name="tastInvalidFormForPropertyGetter" xml:space="preserve">
-    <value>Forme non valide pour l'accesseur Get d'une propriété. Au moins un argument '()' est requis lors de l'utilisation de la syntaxe explicite.</value>
+    <value>Forme non valide pour la méthode getter d'une propriété. Au moins un argument '()' est obligatoire lors de l'utilisation de la syntaxe explicite.</value>
   </data>
   <data name="etOneOrMoreErrorsSeenDuringExtensionTypeSetting" xml:space="preserve">
     <value>Une ou plusieurs erreurs se sont produites pendant la configuration du type fourni</value>
@@ -1208,7 +1208,7 @@
     <value>L'utilisation de '-&gt;' dans les expressions de séquence et de calcul est limitée à la forme 'for pat in expr -&gt; expr'. Utilisez la syntaxe 'for ... in ... do ... yield...' pour générer des éléments dans des expressions de séquence plus complexes.</value>
   </data>
   <data name="parsGetterMustHaveAtLeastOneArgument" xml:space="preserve">
-    <value>Une propriété d'accesseur Get est censée être une fonction, par exemple 'get() = ...' ou 'get(index) = ...'</value>
+    <value>Une propriété de méthode getter est censée être une fonction, par exemple 'get() = ...' ou 'get(index) = ...'</value>
   </data>
   <data name="parsMismatchedQuote" xml:space="preserve">
     <value>Incompatibilité de quotation, qui commence par '{0}'</value>
@@ -1520,7 +1520,7 @@
     <value>Un espace de noms et un module nommés tous les deux '{0}' sont présents dans deux parties de cet assembly</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Spécifiez le profil de la version cible du .NET Framework de cet assembly. Les valeurs valides sont mscorlib, netcore et netstandard. Valeur par défaut : mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>À partir de F# 4.1, l'accessibilité des abréviations de type est vérifiée au moment de la compilation. Changez l'accessibilité de l'abréviation de type. Si vous ignorez cet avertissement, cela risque d'entraîner des erreurs d'exécution.</value>
@@ -1898,7 +1898,7 @@
     <value>Dans les définitions de type et les extensions de type, indique la fin d'une section de définitions de membre. En syntaxe détaillée, permet de spécifier la fin d'un bloc de code qui commence par le mot clé begin.</value>
   </data>
   <data name="chkGetterAndSetterHaveSamePropertyType" xml:space="preserve">
-    <value>L'accesseur Get et la méthode setter d'une propriété doivent avoir le même type. La propriété '{0}' a un accesseur Get de type '{1}' mais une méthode setter de type '{2}'.</value>
+    <value>Les méthodes getter et setter d'une propriété doivent avoir le même type. La propriété '{0}' a une méthode getter de type '{1}' alors que sa méthode setter est de type '{2}'.</value>
   </data>
   <data name="tcInvalidTypeArgumentCount" xml:space="preserve">
     <value>Le nombre d'arguments de type ne correspond pas : '{0}' fournis, '{1}' attendus. Ceci peut-être dû à une erreur signalée précédemment.</value>
@@ -2534,7 +2534,7 @@
     <value>{0} expressions attendues, {1} obtenue(s)</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>Les paramètres de type déclarés pour cette extension de type ne correspondent pas aux paramètres de type déclarés sur le type d'origine '{0}'</value>
+    <value>Un ou plusieurs des paramètres de type déclarés pour cette extension de type ont une contrainte de type manquante ou incorrecte qui ne correspond pas aux contraintes de type d'origine sur '{0}'</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>Au moins une substitution n'a pas implémenté correctement son membre abstrait correspondant</value>
@@ -3179,7 +3179,7 @@
     <value>Propriété dupliquée. La propriété '{0}' a le même nom et la même signature qu'une autre propriété dans le type '{1}'.</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Spécifiez le nom de culture de la langue de sortie par défaut (exemple : fr-FR, es-ES, ja-JP)</value>
+    <value>Spécifiez le nom de culture de la langue de sortie par défaut (exemple : es-ES, ja-JP)</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>Dans les expressions de séquence, les résultats sont générés à l'aide de 'yield'</value>
@@ -3209,7 +3209,7 @@
     <value>Lorsque mscorlib.dll ou FSharp.Core.dll est explicitement référencé, l'option {0} doit également être passée</value>
   </data>
   <data name="parsTypeAnnotationsOnGetSet" xml:space="preserve">
-    <value>Les annotations de type des accesseurs Get et méthodes setter d'une propriété doivent être spécifiées après 'get()' ou 'set(v)', par exemple 'with get() : string = ...'</value>
+    <value>Les annotations de type des méthodes getter et setter d'une propriété doivent être spécifiées après 'get()' ou 'set(v)', par exemple 'with get() : string = ...'</value>
   </data>
   <data name="optsBuildWindows" xml:space="preserve">
     <value>Générer un fichier exécutable Windows</value>
@@ -3590,7 +3590,7 @@
     <value>L'attribut 'CustomEquality' doit être utilisé conjointement avec les attributs 'NoComparison' ou 'CustomComparison'</value>
   </data>
   <data name="parsGetterAtMostOneArgument" xml:space="preserve">
-    <value>Une propriété d'accesseur Get peut avoir au maximum un groupe d'arguments</value>
+    <value>Une propriété de méthode getter peut avoir au maximum un groupe d'arguments</value>
   </data>
   <data name="tcThisValueMayNotBeInlined" xml:space="preserve">
     <value>Cette déclaration de membre, de fonction ou de valeur ne peut pas être déclarée comme étant 'inline'</value>

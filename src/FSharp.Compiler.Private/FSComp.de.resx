@@ -524,7 +524,7 @@
     <value>Diese Typdefinition umfasst einen sofortigen zyklischen Verweis über eine Abkürzung.</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>Ungültiger Wert "{0}" für "--targetprofile", gültige Werte sind "mscorlib", "netcore" oder "netstandard".</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>use-Bindungen sind in primären Konstruktoren unzulässig.</value>
@@ -1520,7 +1520,7 @@
     <value>Ein Namespace und ein Modul namens "{0}" sind beide in zwei Teilen dieser Assembly vorhanden.</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Geben Sie das Profil des Zielframeworks dieser Assembly an. Gültige Werte sind "mscorlib", "netcore" oder "netstandard". Standard – "mscorlib".</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>Ab F# 4.1 wird die Zugreifbarkeit von Typabkürzungen zur Kompilierzeit überprüft. Sie sollten die Zugreifbarkeit der Typabkürzung ggf. ändern. Das Ignorieren dieser Warnung führt möglicherweise zu Laufzeitfehlern.</value>
@@ -2258,7 +2258,7 @@
     <value>Das Modul enthält den Konstruktor\n    {0}    \nDie Signatur gibt aber Folgendes an:\n    {1}    \nDie Namen sind unterschiedlich.</value>
   </data>
   <data name="customOperationTextLikeJoin" xml:space="preserve">
-    <value>{0} var in collection {1} (outerKey = innerKey). Note that parentheses are required after '{2}'</value>
+    <value>{0}-Variable in der Sammlung {1} (outerKey = innerKey). Nach "{2}" sind Klammern erforderlich.</value>
   </data>
   <data name="parsInOrEqualExpected" xml:space="preserve">
     <value>'in' oder '=' erwartet</value>
@@ -2534,7 +2534,7 @@
     <value>Es wurden {0} Ausdrücke erwartet, aber {1} empfangen.</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>Die deklarierten Typparameter für diese Typerweiterung stimmen nicht mit den deklarierten Typparametern des ursprünglichen Typs "{0}" überein.</value>
+    <value>Mindestens ein deklarierter Typparameter für diese Typerweiterung verfügt über keine oder eine falsche Typeinschränkung, die nicht mit der ursprünglichen Typeinschränkung "{0}" übereinstimmt.</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>In mindestens einer Überschreibung ist der entsprechende abstrakte Member nicht korrekt implementiert.</value>
@@ -2741,7 +2741,7 @@
     <value>Wird zum Konvertieren in einen Typ verwendet, der in Vererbungskette höher ist. </value>
   </data>
   <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
-    <value>{0} var in collection {1} (outerKey = innerKey) into group. Note that parentheses are required after '{2}'</value>
+    <value>{0}-Variable in der Sammlung {1} (outerKey = innerKey) in der Gruppe. Nach "{2}" sind Klammern erforderlich.</value>
   </data>
   <data name="tcDefaultStructConstructorCall" xml:space="preserve">
     <value>Der mit null initialisierte Standardkonstruktor eines Strukturtyps darf nur verwendet werden, wenn alle Felder des Strukturtyps die Standardinitialisierung zulassen.</value>
@@ -3035,7 +3035,7 @@
     <value>Das {0}-Ereignis ist nicht statisch.</value>
   </data>
   <data name="customOperationTextLikeZip" xml:space="preserve">
-    <value>{0} var in collection</value>
+    <value>{0}-Variable in der Sammlung</value>
   </data>
   <data name="keywordDescriptionYield" xml:space="preserve">
     <value>Wird in einem Sequenzausdruck zum Generieren eines Werts für eine Sequenz verwendet.</value>
@@ -3179,7 +3179,7 @@
     <value>Doppelte Eigenschaft. Die Eigenschaft "{0}" hat denselben Namen und dieselbe Signatur wie eine andere Eigenschaft im Typ "{1}".</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Namen der bevorzugten Ausgabesprachenkultur angeben (z. B. "es-ES", "ja-JP")</value>
+    <value>Namen der bevorzugten Ausgabesprachenkultur angeben (z. B. "es-ES", "ja-JP")</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>In Sequenzausdrücken werden Ergebnisse mithilfe von "yield" erzeugt.</value>

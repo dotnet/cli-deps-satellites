@@ -148,10 +148,10 @@
     <value>Fehler beim Überprüfen des Inhaltshashs der Zielverweisassembly "{0}". Er wird überschrieben.</value>
   </data>
   <data name="CopyRefAssembly_SourceNotRef1" xml:space="preserve">
-    <value>Von "{0}" konnte keine MVID extrahiert werden. Sind Sie sicher, dass es sich dabei um eine Verweisassembly handelt?</value>
+    <value>Von "{0}" konnte keine MVID extrahiert werden. Sind Sie sicher, dass es sich dabei um eine Referenzassembly handelt?</value>
   </data>
   <data name="CopyRefAssembly_SkippingCopy1" xml:space="preserve">
-    <value>Die Verweisassembly "{0}" verfügt bereits über die neuesten Informationen. Bleibt unverändert.</value>
+    <value>Die Referenzassembly "{0}" verfügt bereits über die neuesten Informationen. Bleibt unverändert.</value>
   </data>
   <data name="General_CouldNotSetHostObjectParameter" xml:space="preserve">
     <value>MSB3081: Problem beim Festlegen des Parameters "{0}" für den In-Process-Compiler der IDE. {1}</value>

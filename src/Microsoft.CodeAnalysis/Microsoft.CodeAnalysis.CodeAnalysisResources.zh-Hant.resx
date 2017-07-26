@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>不支援組件簽署。</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>回報之診斷 '{0}' 中的來源位置 '{1}' 位於檔案 '{2}' 內，而該檔案不在指定的檔案內。</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>要追蹤的節點不是根的子代。</value>
   </data>

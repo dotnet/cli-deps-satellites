@@ -1431,7 +1431,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>'{0}' は抽象ですが、非抽象クラスの '{1}' に含まれています。</value>
   </data>
   <data name="ERR_TypeForwardedToMultipleAssemblies" xml:space="preserve">
-    <value>アセンブリ '{1}' のモジュール '{0}' によって、型 '{2}' が複数のアセンブリ: '{3}' および '{4}' に転送中です。</value>
+    <value>アセンブリ '{1}' のモジュール '{0}' によって、型 '{2}' が複数のアセンブリ '{3}' および '{4}' に転送されています。</value>
   </data>
   <data name="WRN_IllegalPPWarning_Title" xml:space="preserve">
     <value>#pragma 警告の後に、disable または restore が必要です</value>
@@ -1570,7 +1570,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
 警告を取り除くには、代わりに /reference (相互運用機能型の埋め込みプロパティを False に設定) を使用します。この場合、プライマリ相互運用機能アセンブリ (PIA) が相互運用の型情報を提供します。</value>
   </data>
   <data name="IDS_FeatureExpressionBodiedAccessor" xml:space="preserve">
-    <value>式本文のプロパティ アクセサー</value>
+    <value>式本体のプロパティ アクセサー</value>
   </data>
   <data name="WRN_EqualityOpWithoutEquals" xml:space="preserve">
     <value>'{0}' は演算子 == または演算子 != を定義しますが、Object.Equals(object o) をオーバーライドしません。</value>
@@ -2981,7 +2981,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>object.Finalize をオーバーライドしないでください。代わりにデストラクターを提供してください。</value>
   </data>
   <data name="IDS_FeatureExpressionBodiedDeOrConstructor" xml:space="preserve">
-    <value>式本文のコンストラクターとデストラクター</value>
+    <value>式本体のコンストラクターとデストラクター</value>
   </data>
   <data name="ERR_ExplicitLayoutAndAutoImplementedProperty" xml:space="preserve">
     <value>'{0}': 自動実装プロパティは、StructLayout(LayoutKind.Explicit) でマークされた型の内部では使用できません</value>

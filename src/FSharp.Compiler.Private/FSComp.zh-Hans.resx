@@ -199,7 +199,7 @@
     <value>“_”不能用作字段名称</value>
   </data>
   <data name="parsMultipleAccessibilitiesForGetSet" xml:space="preserve">
-    <value>为属性 getter 或 setter 给定了多个可访问性</value>
+    <value>为属性 Getter 或 Setter 给定了多个可访问性</value>
   </data>
   <data name="tcConstructorsCannotBeFirstClassValues" xml:space="preserve">
     <value>构造函数必须应用于参数，且不能用作第一类值。如有必要，请使用匿名函数“(fun arg1 ... argN -&gt; new Type(arg1,...,argN))”。</value>
@@ -524,7 +524,7 @@
     <value>此类型定义涉及一个经由缩写词的直接循环引用</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>"--targetprofile" 的值“{0}”无效，有效值为 "mscorlib"、"netcore" 或 "netstandard"。</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>主构造函数中不允许使用“use”绑定</value>
@@ -713,7 +713,7 @@
     <value>度量单位参数“{1}”的值“{0}”无效</value>
   </data>
   <data name="tastInvalidFormForPropertyGetter" xml:space="preserve">
-    <value>属性 getter 的格式无效。在使用显式语法时，至少需要一个“()”参数。</value>
+    <value>属性 Getter 的格式无效。在使用显式语法时，至少需要一个 "()" 参数。</value>
   </data>
   <data name="etOneOrMoreErrorsSeenDuringExtensionTypeSetting" xml:space="preserve">
     <value>在所提供的类型的设置过程中出现了一个或多个错误</value>
@@ -968,7 +968,7 @@
     <value>程序的主模块为空: 运行此程序时将不会有任何反应</value>
   </data>
   <data name="fscAssemblyWildcardAndDeterminism" xml:space="preserve">
-    <value>An {0} specified version '{1}', but this value is a wildcard, and you have requested a deterministic build, these are in conflict.</value>
+    <value>{0} 指定了版本“{1}”，但该值为通配符，并且你已请求确定的版本，因此存在冲突。</value>
   </data>
   <data name="fscResxSourceFileDeprecated" xml:space="preserve">
     <value>不推荐将 .resx 文件({0})作为源文件传递给编译器。请使用 resgen.exe 将 .resx 文件转换为 .resources 文件以作为 --resource 选项进行传递。如果您使用的是 MSBuild，则可以通过 .fsproj 项目文件中的 &lt;EmbeddedResource&gt; 项完成此操作。</value>
@@ -1208,7 +1208,7 @@
     <value>在序列和计算表达式中，“-&gt;”只能用于“for pat in expr -&gt; expr”格式。使用语法“for ... in ... do ... yield...”可在更复杂的序列表达式中生成元素。</value>
   </data>
   <data name="parsGetterMustHaveAtLeastOneArgument" xml:space="preserve">
-    <value>getter 属性应为一个函数，例如“get() = ...”或“get(index) = ...”</value>
+    <value>Getter 属性应为一个函数，例如 "get() = ..." 或 "get(index) = ..."</value>
   </data>
   <data name="parsMismatchedQuote" xml:space="preserve">
     <value>不匹配的引用(以“{0}”开头)</value>
@@ -1520,7 +1520,7 @@
     <value>名称均为“{0}”的一个命名空间和一个模块同时出现在此程序集的两个部分中</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>指定此程序集的目标框架配置文件。有效值为 mscorlib、netcore 或 netstandard。默认值为 - mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>从 F# 4.1 起，类型缩写词的辅助功能在编译时进行检查。请考虑更改类型缩写词的辅助功能。忽略此警告可能会导致运行时错误。</value>
@@ -1898,7 +1898,7 @@
     <value>在类型定义和类型扩展中，表示成员定义的某部分的结尾。在详细语法中，用于指定以 begin 关键字开头的程序块的结尾。</value>
   </data>
   <data name="chkGetterAndSetterHaveSamePropertyType" xml:space="preserve">
-    <value>属性的 getter 和 setter 的类型必须相同。属性“{0}”的 getter 的类型为“{1}”，而 setter 的类型为“{2}”。</value>
+    <value>属性的 Getter 和 Setter 的类型必须相同。属性“{0}”的 Getter 的类型为“{1}”，而 Setter 的类型为“{2}”。</value>
   </data>
   <data name="tcInvalidTypeArgumentCount" xml:space="preserve">
     <value>类型参数的数量不匹配: 提供了“{0}”个，应是“{1}”个。这可能与以前报告的错误有关。</value>
@@ -2126,7 +2126,7 @@
     <value>活动模式“{0}”不是一个函数</value>
   </data>
   <data name="chkGetterSetterDoNotMatchAbstract" xml:space="preserve">
-    <value>类型为“{1}”的属性“{0}”存在不匹配的 getter 和 setter。如果其中一个是抽象的，则另一个也必须是抽象的。</value>
+    <value>类型为“{1}”的属性“{0}”存在不匹配的 Getter 和 Setter。如果其中一个是抽象的，则另一个也必须是抽象的。</value>
   </data>
   <data name="tcNoIntegerForLoopInQuery" xml:space="preserve">
     <value>在查询中，应使用“for x in n .. m do ...”的形式处理整数范围</value>
@@ -2468,7 +2468,7 @@
     <value>非零常数不能具有泛型单位。对于泛型零，请编写 0.0&lt;_&gt;。</value>
   </data>
   <data name="parsInvalidProperty" xml:space="preserve">
-    <value>属性 getter 或 setter 无效</value>
+    <value>属性 Getter 或 Setter 无效</value>
   </data>
   <data name="DefinitionsInSigAndImplNotCompatibleSignatureDeclaresDiffer" xml:space="preserve">
     <value>签名和实现中类型“{1}”的 {0} 定义不兼容，因为签名声明的是 {2}，而实现声明的是 {3}</value>
@@ -2534,7 +2534,7 @@
     <value>需要 {0} 个表达式，已获取 {1} 个</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>此类型扩展的已声明类型参数与原始类型“{0}”的已声明类型参数不匹配</value>
+    <value>此类型扩展的一个或多个已声明类型参数具有缺失或错误的类型约束，与“{0}”上的原始类型约束不匹配</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>至少有一个重写未正确实现其相应的抽象成员</value>
@@ -3179,7 +3179,7 @@
     <value>重复属性。属性“{0}”与类型“{1}”中的另一个属性具有相同的名称和签名。</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> 指定首选输出语言区域性名称(例如 es-ES、ja-JP)</value>
+    <value>指定首选输出语言区域性名称(例如 es-ES、ja-JP)</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>在序列表达式中，使用“yield”生成结果</value>
@@ -3209,7 +3209,7 @@
     <value>当显式引用 mscorlib.dll 或 FSharp.Core.dll 时，同时也必须传递 {0} 选项</value>
   </data>
   <data name="parsTypeAnnotationsOnGetSet" xml:space="preserve">
-    <value>必须在“get()”或“set(v)”后面提供属性 getter 和 setter 的类型批注，例如“with get() : string = ...”</value>
+    <value>必须在 "get()" 或 "set(v)" 后面提供属性 Getter 和 Setter 的类型批注，例如 "with get() : string = ..."</value>
   </data>
   <data name="optsBuildWindows" xml:space="preserve">
     <value>生成 Windows 可执行文件</value>
@@ -3590,7 +3590,7 @@
     <value>“CustomEquality”特性必须与“NoComparison”或“CustomComparison”特性结合使用</value>
   </data>
   <data name="parsGetterAtMostOneArgument" xml:space="preserve">
-    <value>getter 属性最多可以有一个参数组</value>
+    <value>Getter 属性最多可以有一个参数组</value>
   </data>
   <data name="tcThisValueMayNotBeInlined" xml:space="preserve">
     <value>此成员、函数或值声明不能声明为“inline”</value>

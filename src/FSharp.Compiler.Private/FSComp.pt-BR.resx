@@ -524,7 +524,7 @@
     <value>Esta definição de tipo envolve uma referência cíclica imediata através de uma abreviação</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>Valor inválido '{0}' para '--targetprofile', os valores válidos são 'mscorlib', 'netcore' ou 'netstandard'.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>As associações 'use' não são permitidas em construtores primários</value>
@@ -1520,7 +1520,7 @@
     <value>Um namespace e um módulo chamado '{0}' ocorrem em duas partes deste assembly</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Especifique o perfil da estrutura de destino deste assembly. Os valores válidos são mscorlib, netcore ou netstandard. O padrão é mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>Começando no F# 4.1, a acessibilidade das abreviações de tipo é verificada no momento da compilação. Considere alterar a acessibilidade do tipo de abreviação. Ignorar este aviso pode levar a erros de tempo de execução.</value>
@@ -2534,7 +2534,7 @@
     <value>Expressões {0} esperadas, {1} obtidas</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>Os parâmetros de tipo declarados para esta extensão de tipo não correspondem aos parâmetros de tipo declarados no tipo original '{0}'</value>
+    <value>Um ou mais dos parâmetros de tipo declarados para esta extensão de tipo têm uma restrição ausente ou incorreta que não corresponde às restrições de tipo originais em '{0}'</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>Pelo menos uma substituição não foi implementada corretamente no membro abstrato correspondente</value>
@@ -3179,7 +3179,7 @@
     <value>Propriedade duplicada. A propriedade '{0}' tem o mesmo nome e assinatura que outra propriedade no tipo '{1}'.</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Especifique o nome de cultura de idioma de saída preferencial (por exemplo, es-ES, ja-JP)</value>
+    <value>Especifique o nome de cultura de idioma de saída preferencial (por exemplo, es-ES, ja-JP)</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>Em expressões de sequência, os resultados são gerados com o uso de 'yield'</value>

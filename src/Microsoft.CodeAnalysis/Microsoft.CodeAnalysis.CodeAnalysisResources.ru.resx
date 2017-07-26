@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>Подписывание сборок не поддерживается.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>В отчете о диагностике "{0}" используется исходное расположение "{1}" в файле "{2}". Это расположение находится за пределами указанного файла.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>Отслеживаемый узел не является потомком корня.</value>
   </data>

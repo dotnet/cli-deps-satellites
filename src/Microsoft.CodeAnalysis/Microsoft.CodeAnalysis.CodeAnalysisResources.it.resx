@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>La firma dell'assembly non è supportata.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>Il percorso di origine '{1}' della diagnostica restituita '{0}' è incluso nel file '{2}', che non è presente nel file specificato.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>Il nodo da tracciare non è un discendente della radice.</value>
   </data>

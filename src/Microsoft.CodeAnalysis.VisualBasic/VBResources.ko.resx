@@ -709,7 +709,7 @@
     <value>제네릭 형식 '{0}'은(는) 두 번 이상 가져올 수 없습니다.</value>
   </data>
   <data name="WRN_TupleLiteralNameMismatch_Title" xml:space="preserve">
-    <value>튜플 요소 이름은(는) 할당 대상에서 다른 이름이 지정되었거나 이름이 지정되지 않았기 때문에 무시됩니다.</value>
+    <value>튜플 요소 이름은 할당 대상에서 다른 이름이 지정되었거나 이름이 지정되지 않았기 때문에 무시됩니다.</value>
   </data>
   <data name="WRN_ReferencedAssemblyDoesNotHaveStrongName_Title" xml:space="preserve">
     <value>참조된 어셈블리에 강력한 이름이 없음</value>
@@ -1819,7 +1819,7 @@
     <value>메서드 또는 속성 내에 XML 주석이 표시될 수 없음</value>
   </data>
   <data name="ERR_BadSourceCodeKind" xml:space="preserve">
-    <value>제공한 소스 코드 종류가 지원되지 않거나 잘못되었습니다. '{0}'.</value>
+    <value>제공된 소스 코드 종류가 지원되지 않거나 잘못되었습니다. '{0}'</value>
   </data>
   <data name="WRN_CLSMemberInNonCLSType3_Title" xml:space="preserve">
     <value>포함하는 형식이 CLS 규격이 아니므로 멤버를 CLS 규격으로 표시할 수 없음</value>
