@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>アセンブリの署名はサポートされません。</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>報告された診断 '{0}' のソースの場所はファイル '{2}' 内の '{1}' ですが、これは指定されたファイルの外です。</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>追跡するノードは、ルートの子孫ではありません。</value>
   </data>
@@ -469,7 +472,7 @@
     <value>引数には、この CompilationWithAnalyzers インスタンスの 'アナライザー' に属していないアナライザー インスタンスが含まれています。</value>
   </data>
   <data name="CannotTargetNetModuleWhenEmittingRefAssembly" xml:space="preserve">
-    <value>参照アセンブリを生成している場合、モジュールをターゲットにすることはできません。</value>
+    <value>参照アセンブリを生成している場合、ネット モジュールをターゲットにすることはできません。</value>
   </data>
   <data name="Cannot_deserialize_type_0" xml:space="preserve">
     <value>型 '{0}' を逆シリアル化できません。</value>

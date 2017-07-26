@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>어셈블리 서명은 지원되지 않습니다.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>보고된 진단 '{0}'의 소스 위치 '{1}'이(가) 지정된 파일의 범위 밖인 파일 '{2}'에 있습니다.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>추적할 노드가 루트의 하위 항목이 아닙니다.</value>
   </data>

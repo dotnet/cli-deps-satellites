@@ -2967,7 +2967,7 @@
     <value>AddressOf-Ausdrücke sind im ersten Ausdruck einer "Select Case"-Anweisung nicht gültig.</value>
   </data>
   <data name="WRN_Experimental" xml:space="preserve">
-    <value>"{0}" dient nur zu Testzwecken und kann in zukünftige Aktualisierungen geändert oder entfernt werden.</value>
+    <value>"{0}" dient nur zu Testzwecken und kann in zukünftigen Aktualisierungen geändert oder entfernt werden.</value>
   </data>
   <data name="PositionIsNotWithinSyntax" xml:space="preserve">
     <value>Position ist nicht innerhalb von Syntaxbaum</value>
@@ -4340,7 +4340,7 @@
 /target:winmdobj                  Erstellt eine Windows-Metadatenzwischendatei.
 /doc[+|-]                         Generiert eine XML-Dokumentationsdatei.
 /doc:&lt;Datei&gt;                       Generiert eine XML-Dokumentationsdatei in &lt;Datei&gt;.
-/refout:&lt;Datei&gt;                    Zu generierender Verweisassemblyausgabe
+/refout:&lt;Datei&gt;                    Zu generierende Referenzassemblyausgabe
 
                                   - EINGABEDATEIEN -
 /addmodule:&lt;Dateiliste&gt;            Verweist auf Metadaten aus den angegebenen Modulen.
@@ -4385,7 +4385,7 @@
                                   die Ziel-DLL oder -EXE aus.
 /deterministic                    Generiert eine deterministische Assembly
                                   (einschließlich Modulversion-GUID und Zeitstempel)
-/refonly                          Erstellt eine Verweisassembly anstelle der Hauptausgabe
+/refonly                          Erstellt eine Referenzassembly anstelle der Hauptausgabe
 /instrument:TestCoverage          Erstellt eine Assembly, die zum Erfassen von Abdeckungsinformationen
                                   instrumentiert ist.
 /sourcelink:&lt;Datei&gt;                Quelllinkinformationen, die in die PDB-Datei eingebettet werden sollen.

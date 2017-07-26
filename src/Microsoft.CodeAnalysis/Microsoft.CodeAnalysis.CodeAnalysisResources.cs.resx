@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>Podepsání sestavení se nepodporuje.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>Zdroj vykazované diagnostiky {0} má umístění {1} v souboru {2}, což je mimo daný soubor.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>Uzel určený ke sledování není potomkem kořene.</value>
   </data>

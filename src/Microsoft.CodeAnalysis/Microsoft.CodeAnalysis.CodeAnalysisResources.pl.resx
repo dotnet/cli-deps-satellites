@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>Podpisywanie zestawu nie jest obsługiwane.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>Zgłoszone dane diagnostyczne „{0}” mają lokalizację źródłową „{1}” w pliku „{2}”, który jest spoza podanego pliku.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>Węzeł do śledzenia nie jest elementem podrzędnym elementu głównego.</value>
   </data>

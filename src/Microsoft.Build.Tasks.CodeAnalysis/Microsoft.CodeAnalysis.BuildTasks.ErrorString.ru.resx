@@ -151,7 +151,7 @@
     <value>Не удалось извлечь MVID из "{0}". Вы уверены, что это ссылочная сборка?</value>
   </data>
   <data name="CopyRefAssembly_SkippingCopy1" xml:space="preserve">
-    <value>Ссылочная сборка "{0}" уже содержит актуальные сведения. Изменения не требуются.</value>
+    <value>Базовая сборка "{0}" уже содержит актуальные сведения. Изменения не требуются.</value>
   </data>
   <data name="General_CouldNotSetHostObjectParameter" xml:space="preserve">
     <value>MSB3081: возникла проблема при установке параметра "{0}" для компилятора интегрированной среды разработки внутри процесса. {1}</value>

@@ -1338,7 +1338,7 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
     <value>'{0}': üye adları kapanış türleri ile aynı olama</value>
   </data>
   <data name="ERR_TypeVarNotFound" xml:space="preserve">
-    <value>Bağlamsal anahtar sözcük 'var' yalnızca yerel değişken bildiriminde veya komut dosyası kodunda görünebilir</value>
+    <value>Bağlamsal anahtar sözcük 'var' yalnızca yerel değişken bildiriminde veya betik kodunda görünebilir</value>
   </data>
   <data name="ERR_BadBaseNumber" xml:space="preserve">
     <value>Geçersiz görüntü tabanı numarası '{0}'</value>
@@ -2023,7 +2023,7 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
     <value>DefaultParameterAttribute veya OptionalAttribute ile birlikte varsayılan parametre değeri belirtilemez</value>
   </data>
   <data name="ERR_MissingDeconstruct" xml:space="preserve">
-    <value>'{0}' türü için {1} out parametresi ve void dönüş türü içeren Deconstruct örneği veya genişletme metodu bulunamadı.</value>
+    <value>'{0}' türü için {1} out parametresi ve void dönüş türü içeren uygun Deconstruct örneği veya genişletme metodu bulunamadı.</value>
   </data>
   <data name="ERR_BadExtensionAgg" xml:space="preserve">
     <value>Genişletme yöntemi genel olmayan bir statik sınıfta tanımlanmalıdır</value>
@@ -2945,7 +2945,7 @@ Derleyiciye yöntemleri ayrıştırma yolu verin. Örneğin, bunlara farklı adl
     <value>'{2}' türünün '{0}' genel türünde veya yönteminde '{1}' parametresi olarak kullanabilmesi için bir başvuru türü olması gerekir</value>
   </data>
   <data name="SubmissionCanOnlyInclude" xml:space="preserve">
-    <value>Gönderim yalnızca komut dosyası kodu içerebilir.</value>
+    <value>Gönderim yalnızca betik kodu içerebilir.</value>
   </data>
   <data name="ERR_NoGetToOverride" xml:space="preserve">
     <value>'{0}': '{1}' öğesi geçersiz kılınabilir bir get erişenine sahip olmadığından geçersiz kılınamıyor</value>
@@ -4841,7 +4841,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>Params parametresi tek boyutlu bir dizi olmalıdır</value>
   </data>
   <data name="WRN_MainIgnored" xml:space="preserve">
-    <value>Programın giriş noktası genel komut dosyası kodudur; '{0}' giriş noktası yoksayılır.</value>
+    <value>Programın giriş noktası genel betik kodudur; '{0}' giriş noktası yoksayılıyor.</value>
   </data>
   <data name="ERR_AbstractBaseCall" xml:space="preserve">
     <value>Soyut bir temel üye çağrılamaz: '{0}'</value>

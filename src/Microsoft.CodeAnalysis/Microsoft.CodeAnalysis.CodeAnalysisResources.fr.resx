@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>La signature d'assembly n'est pas prise en charge.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>Le diagnostic signalé '{0}' a un emplacement source '{1}' dans le fichier '{2}', qui se trouve en dehors du fichier donné.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>Le nœud à suivre n’est pas un descendant de la racine.</value>
   </data>

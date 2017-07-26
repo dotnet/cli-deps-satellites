@@ -1570,7 +1570,7 @@ Um Interoptypeninformationen für beide Assemblys einzubetten, verwenden Sie /li
 Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbetten der Interoptypen-Eigenschaft auf False festlegen). In diesem Fall stellt eine primäre Interop-Assembly (PIA) Interoptypeninformationen bereit.</value>
   </data>
   <data name="IDS_FeatureExpressionBodiedAccessor" xml:space="preserve">
-    <value>Eigenschaftszugriffsmethode für Ausdruckstext</value>
+    <value>Eigenschaftszugriffsmethode für Ausdruckskörper</value>
   </data>
   <data name="WRN_EqualityOpWithoutEquals" xml:space="preserve">
     <value>"{0}" definiert den Operator == oder !=, aber überschreibt Object.Equals(object o) nicht.</value>
@@ -2023,7 +2023,7 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
     <value>Es kann kein Standardparameterwert in Verbindung mit "DefaultParameterAttribute" oder "OptionalAttribute" angegeben werden.</value>
   </data>
   <data name="ERR_MissingDeconstruct" xml:space="preserve">
-    <value>Für den Typ "{0}" mit {1} out-Parametern und einem ungültigen Rückgabetyp wurde keine passende Dekonstruktionsinstanz oder Erweiterungsmethode gefunden.</value>
+    <value>Für den Typ "{0}" mit {1} out-Parametern und einem void-Rückgabetyp wurde keine passende Dekonstruktionsinstanz oder Erweiterungsmethode gefunden.</value>
   </data>
   <data name="ERR_BadExtensionAgg" xml:space="preserve">
     <value>Die Erweiterungsmethode muss in einer nicht generischen statischen Klasse definiert werden.</value>
@@ -2834,7 +2834,7 @@ Unterstützen Sie den Compiler bei der Unterscheidung zwischen den Methoden. Daz
     <value>invariant</value>
   </data>
   <data name="WRN_Experimental" xml:space="preserve">
-    <value>"{0}" dient nur zu Testzwecken und kann in zukünftige Aktualisierungen geändert oder entfernt werden.</value>
+    <value>"{0}" dient nur zu Testzwecken und kann in zukünftigen Aktualisierungen geändert oder entfernt werden.</value>
   </data>
   <data name="PositionIsNotWithinSyntax" xml:space="preserve">
     <value>Die Position ist nicht innerhalb des Syntaxbaums mit dem Vollbereich {0}.</value>
@@ -2981,7 +2981,7 @@ Unterstützen Sie den Compiler bei der Unterscheidung zwischen den Methoden. Daz
     <value>Überschreiben Sie nicht object.Finalize, sondern stellen Sie einen Destruktor bereit.</value>
   </data>
   <data name="IDS_FeatureExpressionBodiedDeOrConstructor" xml:space="preserve">
-    <value>Konstruktor und Destruktor für Ausdruckstext</value>
+    <value>Konstruktor und Destruktor für Ausdruckskörper</value>
   </data>
   <data name="ERR_ExplicitLayoutAndAutoImplementedProperty" xml:space="preserve">
     <value>"{0}": Automatisch implementierte Eigenschaften können nicht in einem Typ verwendet werden, der mit StructLayout(LayoutKind.Explicit) markiert ist.</value>
@@ -3252,7 +3252,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
  /optimize[+|-]                Aktiviert Optimierungen (Kurzform: /o)
  /deterministic                Generiert eine deterministische Assembly 
                                (einschließlich Modulversion-GUID und Zeitstempel)
- /refonly                      Erstellt eine Verweisassembly anstelle der Hauptausgabe.
+ /refonly                      Erstellt eine Referenzassembly anstelle der Hauptausgabe.
  /instrument:TestCoverage      Generiert eine Assembly, die für die
                                Erfassung von Code Coverage-Informationen instrumentiert ist.
  /sourcelink:&lt;Datei&gt;            Quelllinkinformationen zum Einbetten in portable PDB-Dateien.
@@ -4834,7 +4834,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Der Typ von "{0}" ist nicht CLS-kompatibel.</value>
   </data>
   <data name="ERR_AmbigBinaryOpsOnDefault" xml:space="preserve">
-    <value>Der Operator "{0}" ist mehrdeutigig bei den Operanden "default" und "default".</value>
+    <value>Der Operator "{0}" ist mehrdeutig bei den Operanden "default" und "default".</value>
   </data>
   <data name="WRN_CLS_BadArgType" xml:space="preserve">
     <value>Argumenttyp "{0}" ist nicht CLS-kompatibel.</value>

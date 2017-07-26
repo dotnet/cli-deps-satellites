@@ -5233,7 +5233,7 @@
     <value>'Exit For' yalnızca bir 'For' deyimi içinde yer alabilir.</value>
   </data>
   <data name="WRN_MainIgnored" xml:space="preserve">
-    <value>Programın giriş noktası genel komut dosyası kodudur; '{0}' giriş noktası yoksayılır.</value>
+    <value>Programın giriş noktası genel betik kodudur; '{0}' giriş noktası yoksayılıyor.</value>
   </data>
   <data name="ERR_NullableCharNotSupported" xml:space="preserve">
     <value>Burada '?' karakteri kullanılamaz.</value>

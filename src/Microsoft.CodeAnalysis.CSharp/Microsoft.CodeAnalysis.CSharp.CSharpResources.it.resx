@@ -4643,7 +4643,7 @@ nome di base del file con la classe principale o primo file)
     <value>La funzionalità '{0}' non è disponibile C# 7. Usare la versione {1} o versioni successive del linguaggio.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion4" xml:space="preserve">
-    <value>La funzionalità '{0}' non è disponibile C# 4. Usare la versione {1} o versioni successive del linguaggio.</value>
+    <value>La funzionalità '{0}' non è disponibile in C# 4. Usare la versione {1} o versioni successive del linguaggio.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion5" xml:space="preserve">
     <value>La funzionalità '{0}' non è disponibile C# 5. Usare la versione {1} o versioni successive del linguaggio.</value>

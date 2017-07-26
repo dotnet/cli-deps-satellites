@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>Assinatura de assembly não tem suporte.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>O diagnóstico relatado '{0}' tem um local de origem '{1}' no arquivo '{2}', que está fora do arquivo fornecido.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>O nó a ser rastreado não é um descendente da raiz.</value>
   </data>

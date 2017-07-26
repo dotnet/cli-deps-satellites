@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>Derleme imzalama desteklenmiyor.</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>Bildirilen tanılamanın ('{0}') kaynak konumu olan '{1}', '{2}' dosyasında ve bu konum, belirtilen dosyanın dışında.</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>İzlenecek düğüm, kökün alt öğesi değil.</value>
   </data>

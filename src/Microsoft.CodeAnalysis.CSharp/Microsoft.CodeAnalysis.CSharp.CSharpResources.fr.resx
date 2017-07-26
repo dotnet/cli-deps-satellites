@@ -1570,7 +1570,7 @@ Pour incorporer les informations de type interop pour chaque assembly, utilisez 
 Pour supprimer l'avertissement, vous pouvez utiliser la commande /reference (définissez la propriété Incorporer les types interop sur False). Dans ce cas, un assembly PIA (Primary Interop Assembly) fournit des informations de type interop.</value>
   </data>
   <data name="IDS_FeatureExpressionBodiedAccessor" xml:space="preserve">
-    <value>accesseur de propriété du corps de l'expression</value>
+    <value>accesseur de propriété du corps d'expression</value>
   </data>
   <data name="WRN_EqualityOpWithoutEquals" xml:space="preserve">
     <value>'{0}' définit l'opérateur == ou l'opérateur != mais ne se substitue pas à Object.Equals(object o)</value>
@@ -2981,7 +2981,7 @@ Permettez au compilateur de différencier les méthodes. Par exemple, vous pouve
     <value>Ne pas substituer object.Finalize. Fournir un destructeur à la place.</value>
   </data>
   <data name="IDS_FeatureExpressionBodiedDeOrConstructor" xml:space="preserve">
-    <value>constructeur et destructeur du corps de l'expression</value>
+    <value>constructeur et destructeur du corps d'expression</value>
   </data>
   <data name="ERR_ExplicitLayoutAndAutoImplementedProperty" xml:space="preserve">
     <value>'{0}' : impossible d'utiliser des propriétés implémentées automatiquement dans un type marqué avec StructLayout(LayoutKind.Explicit)</value>

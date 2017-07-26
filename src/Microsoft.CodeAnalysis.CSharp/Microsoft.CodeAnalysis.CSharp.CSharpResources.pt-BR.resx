@@ -2023,7 +2023,7 @@ Para incorporar informações de tipo de interoperabilidade para os dois assembl
     <value>Não é possível especificar um valor de parâmetro padrão junto com DefaultParameterAttribute ou OptionalAttribute</value>
   </data>
   <data name="ERR_MissingDeconstruct" xml:space="preserve">
-    <value>Nenhuma instância nem método de extensão de Desconstrução foi localizado para o tipo '{0}' com {1} parâmetros de saída e um tipo de retorno nulo.</value>
+    <value>Nenhuma instância nem método de extensão de Desconstrução adequado foi localizado para o tipo '{0}' com {1} parâmetros de saída e um tipo de retorno nulo.</value>
   </data>
   <data name="ERR_BadExtensionAgg" xml:space="preserve">
     <value>O método de extensão deve ser definido em uma classe estática não genérica</value>

@@ -306,6 +306,9 @@
   <data name="AssemblySigningNotSupported" xml:space="preserve">
     <value>不支持程序集签名。</value>
   </data>
+  <data name="InvalidDiagnosticSpanReported" xml:space="preserve">
+    <value>报告的诊断“{0}”的源位置“{1}”位于文件“{2}”中，后者不是给定文件。</value>
+  </data>
   <data name="InvalidNodeToTrack" xml:space="preserve">
     <value>要跟踪的节点不是根的后代。</value>
   </data>
