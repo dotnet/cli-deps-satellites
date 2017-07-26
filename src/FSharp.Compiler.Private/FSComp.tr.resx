@@ -524,7 +524,7 @@
     <value>Bu tür tanımı, kısaltma aracılığıyla anlık döngüsel başvuru içeriyor</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>'--targetprofile' için geçersiz değer: '{0}'; geçerli değerler: 'mscorlib', 'netcore' veya 'netstandard'.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>birincil oluşturucularda 'use' bağlamalarına izin verilmez</value>
@@ -1520,7 +1520,7 @@
     <value>Bir ad alanı ve '{0}' adlı modülün ikisi birden bu bütünleştirilmiş kodun iki yerinde geçiyor</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Bu bütünleştirilmiş kodun hedef çerçeve profilini belirtin. Geçerli değerler: mscorlib, netcore veya netstandard. Varsayılan: - mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>F# 4.1 ve sonrasında tür kısaltmalarının erişilebilirliği, derleme zamanında denetlenmektedir. Tür kısaltmasının erişilebilirliğini değiştirmeniz önerilir. Bu uyarıyı yoksaymak, çalışma zamanı hatalarına neden olabilir.</value>
@@ -2258,7 +2258,7 @@
     <value>Modül\n    {0}    \noluşturucusunu içeriyor ancak imzasında\n    {1}    \nbelirtiliyor. Adlar farklı</value>
   </data>
   <data name="customOperationTextLikeJoin" xml:space="preserve">
-    <value>{0} var in collection {1} (outerKey = innerKey). Note that parentheses are required after '{2}'</value>
+    <value>{1} koleksiyonunda {0} değişkeni (outerKey = innerKey). '{2}' öğesinden sonra parantez eklenmesi gerektiğini unutmayın</value>
   </data>
   <data name="parsInOrEqualExpected" xml:space="preserve">
     <value>'in' veya '=' bekleniyor</value>
@@ -2534,7 +2534,7 @@
     <value>{0} ifadeleri bekleniyordu, {1} alındı</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>Bu tür uzantısı için tanımlanan tür parametreleri özgün '{0}' türünde tanımlanan tür parametreleri ile eşleşmiyor</value>
+    <value>Bu tür uzantısı için bildirilen tür parametrelerinden bir veya daha fazlası, '{0}' üzerindeki özgün tür tür kısıtlamaları ile eşleşmeyen eksik veya yanlış bir tür kısıtlaması içeriyor</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>En az bir geçersiz kılma işlemi kendisine karşılık gelen soyut üyeyi doğru uygulamadı</value>
@@ -2741,7 +2741,7 @@
     <value>Devralma zincirinde daha yukarıda bulunan bir türe dönüştürmek için kullanılır.</value>
   </data>
   <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
-    <value>{0} var in collection {1} (outerKey = innerKey) into group. Note that parentheses are required after '{2}'</value>
+    <value>{1} koleksiyonunda {0} değişkeni (outerKey = innerKey) gruba eklendi. '{2}' öğesinden sonra parantez eklenmesi gerektiğini unutmayın</value>
   </data>
   <data name="tcDefaultStructConstructorCall" xml:space="preserve">
     <value>Varsayılan seçenek olan yapı türünün sıfır ile başlayan oluşturucusu yalnızca yapı türünün tüm alanları varsayılan başlatmayı kabul ediyorsa kullanılabilir</value>
@@ -3035,7 +3035,7 @@
     <value>'{0}' olayı statik değil</value>
   </data>
   <data name="customOperationTextLikeZip" xml:space="preserve">
-    <value>{0} var in collection</value>
+    <value>Koleksiyonda {0} değişkeni</value>
   </data>
   <data name="keywordDescriptionYield" xml:space="preserve">
     <value>Diziye ait bir değer üretmek için dizi ifadesinde kullanılır.</value>
@@ -3179,7 +3179,7 @@
     <value>Yinelenen özellik. '{0}' özelliği, '{1}' türündeki başka bir özellikle aynı ada ve imzaya sahip.</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Tercih edilen çıktı dili kültür adını (örn. es-ES, ja-JP) belirtin</value>
+    <value>Tercih edilen çıkış dili kültür adını (örn. es-ES, ja-JP) belirtin</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>Dizi ifadelerinde, sonuçlar 'yield' kullanılarak oluşturulur</value>

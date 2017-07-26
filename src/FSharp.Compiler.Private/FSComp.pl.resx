@@ -524,7 +524,7 @@
     <value>Ta definicja typu zawiera bezpośrednie odwołanie cykliczne za pośrednictwem skrótu</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>Nieprawidłowa wartość „{0}” dla opcji „--targetprofile”. Prawidłowe wartości to „mscorlib”, „netcore” lub „netstandard”.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>Powiązania „use” nie są dozwolone w konstruktorach podstawowych</value>
@@ -1208,7 +1208,7 @@
     <value>Użycie konstrukcji „-&gt;” w wyrażeniach obliczenia i sekwencji jest ograniczone do postaci „for wzorzec in wyrażenie -&gt; wyrażenie”. Użyj składni „for ... in ... do ... yield...”, aby wygenerować elementy w bardziej złożonych wyrażeniach sekwencji.</value>
   </data>
   <data name="parsGetterMustHaveAtLeastOneArgument" xml:space="preserve">
-    <value>Oczekiwano, że właściwość pobierająca będzie funkcją, np. „get() = ...” lub „get(indeks) = ...”</value>
+    <value>Oczekiwano, że właściwość metody pobierającej będzie funkcją, np. „get() = ...” lub „get(indeks) = ...”</value>
   </data>
   <data name="parsMismatchedQuote" xml:space="preserve">
     <value>Niezgodny cytat, począwszy od „{0}”</value>
@@ -1520,7 +1520,7 @@
     <value>Przestrzeń nazw i moduł o nazwie „{0}” występują w dwóch częściach tego zestawu</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Określ profil platformy docelowej tego zestawu. Prawidłowe wartości to mscorlib, netcore lub netstandard. Wartość domyślna to mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>Począwszy od wersji F# 4.1, dostępność skrótów typów jest sprawdzana w czasie kompilacji. Rozważ sprawdzenie dostępności skrótu typu. Zignorowanie tego ostrzeżenia może prowadzić do błędów w czasie wykonywania.</value>
@@ -2534,7 +2534,7 @@
     <value>Oczekiwano wyrażeń w liczbie {0}; otrzymano: {1}</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>Zadeklarowane parametry typu dla tego rozszerzenia typu nie są zgodne z zadeklarowanymi parametrami typu dla oryginalnego typu „{0}”</value>
+    <value>Co najmniej jeden zadeklarowany parametr typu dla tego rozszerzenia typu nie ma ograniczenia typu lub ograniczenie typu jest nieprawidłowe i niezgodne z oryginalnymi ograniczeniami typu w elemencie „{0}”</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>Co najmniej jedno przesłonięcie nie zawiera poprawnej implementacji odpowiadającego mu abstrakcyjnego elementu członkowskiego</value>
@@ -3590,7 +3590,7 @@
     <value>Atrybut „CustomEquality” musi być używany w połączeniu z atrybutami „NoComparison” lub „CustomComparison”</value>
   </data>
   <data name="parsGetterAtMostOneArgument" xml:space="preserve">
-    <value>Właściwość pobierająca może mieć najwyżej jedną grupę argumentów</value>
+    <value>Właściwość metody pobierającej może mieć najwyżej jedną grupę argumentów</value>
   </data>
   <data name="tcThisValueMayNotBeInlined" xml:space="preserve">
     <value>Ta deklaracja elementu członkowskiego, funkcji lub wartości nie może być zadeklarowana jako „inline”</value>

@@ -760,7 +760,7 @@
     <value>Omezení hodnoty. Hodnota {0} je obecného typu\n    {1}.    \nZměňte {2} na funkci s explicitními argumenty nebo (pokud hodnota nemá být obecná) přidejte poznámku typu.</value>
   </data>
   <data name="ValueRestriction3" xml:space="preserve">
-    <value>Omezení hodnoty. Tento člen se odvodil jako člen obecného typu\n    {0}.    \nKonstruktory a metody get nebo set vlastnosti nemůžou být obecnější než nadřazený typ. Přidejte poznámku typu, abyste přesně určili, které typy se mají zahrnout.</value>
+    <value>Omezení hodnoty. Tento člen se odvodil jako člen obecného typu\n    {0}.    \nKonstruktory a metody getter nebo setter vlastnosti nemůžou být obecnější než nadřazený typ. Přidejte poznámku typu, abyste přesně určili, které typy se mají zahrnout.</value>
   </data>
   <data name="ValueRestriction1" xml:space="preserve">
     <value>Omezení hodnoty. Hodnota {0} je obecného typu\n    {1}.    \nBuď změňte argumenty pro {2} na explicitní, nebo (pokud hodnota nemá být obecná) přidejte poznámku typu.</value>

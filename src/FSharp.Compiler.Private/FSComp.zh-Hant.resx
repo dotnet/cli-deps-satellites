@@ -524,7 +524,7 @@
     <value>這個類型定義涉及透過縮寫的立即循環參考</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>'--targetprofile' 的值 '{0}' 無效。有效值為 'mscorlib'、'netcore' 或 'netstandard'。</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>不允許在主要建構函式中使用 'use' 繫結</value>
@@ -1520,7 +1520,7 @@
     <value>名稱為 '{0}' 的命名空間和模組都出現在這個組件的兩個部分中</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>指定此組件的目標 Framework 設定檔。有效值為 mscorlib 或 netcore 或 netstandard。預設值 - mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>自 F# 4.1 起，類型縮寫的協助工具會於編譯時期經過檢查。請考慮變更類型縮寫的協助工具。略過此警告會導致執行階段錯誤。</value>
@@ -2534,7 +2534,7 @@
     <value>必須是 {0} 運算式，卻得到 {1}</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>這個類型擴充的宣告型別參數不符合原始類型 '{0}' 的宣告型別參數</value>
+    <value>此類型延伸模組所宣告的型別參數中，有一或多個缺少類型條件約束，或類型條件約束不正確，不符合 '{0}' 的原始類型條件約束</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>至少有一個覆寫未正確實作對應的抽象成員</value>
@@ -3179,7 +3179,7 @@
     <value>屬性重複。屬性 '{0}' 與類型 '{1}' 中另一個屬性同名，且簽章也相同。</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value>指定慣用的輸出語言文化特性 (Culture) 名稱 (例如 es-ES、ja-JP)</value>
+    <value>指定慣用輸出語言的文化特性名稱 (例如 es-ES、ja-JP)</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>在循序項運算式中，結果是使用 'yield' 產生的</value>

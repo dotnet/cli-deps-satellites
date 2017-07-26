@@ -199,7 +199,7 @@
     <value>Podtržítko se pro název pole použít nedá.</value>
   </data>
   <data name="parsMultipleAccessibilitiesForGetSet" xml:space="preserve">
-    <value>Zadali jste víc dostupností pro metodu get nebo set vlastnosti.</value>
+    <value>Zadali jste víc dostupností pro metodu getter nebo setter vlastnosti.</value>
   </data>
   <data name="tcConstructorsCannotBeFirstClassValues" xml:space="preserve">
     <value>Konstruktory se musí použít pro argumenty a nejde je použít jako hodnoty první třídy. V případě potřeby použijte anonymní funkci (fun arg1 ... argN -&gt; new Type(arg1,...,argN)).</value>
@@ -524,7 +524,7 @@
     <value>Tato definice typu zahrnuje okamžitý cyklický odkaz zprostředkovaný zkratkou.</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>Neplatná hodnota {0} pro --targetprofile. Platné hodnoty jsou mscorlib, netcore nebo netstandard.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>U primárních konstruktorů nejsou vazby use povolené.</value>
@@ -713,7 +713,7 @@
     <value>Neplatná hodnota {0} pro parametr měrné jednotky {1}</value>
   </data>
   <data name="tastInvalidFormForPropertyGetter" xml:space="preserve">
-    <value>Neplatná notace pro metodu get vlastnosti. Při použití explicitní syntaxe se vyžaduje aspoň jeden argument ().</value>
+    <value>Neplatná notace pro metodu getter vlastnosti. Při použití explicitní syntaxe se vyžaduje aspoň jeden argument ().</value>
   </data>
   <data name="etOneOrMoreErrorsSeenDuringExtensionTypeSetting" xml:space="preserve">
     <value>Při nastavení poskytnutého typu se vyskytla nejmíň jedna chyba.</value>
@@ -1520,7 +1520,7 @@
     <value>Obor názvů a modul s názvem {0} se oba vyskytují ve dvou částech tohoto sestavení.</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Zadejte profil cílového rozhraní tohoto sestavení. Platné hodnoty jsou mscorlib, netcore nebo netstandard. Výchozí je mscorlib.</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>Od jazyka F# 4.1 se dostupnost zkratek typů kontroluje při kompilaci. Zvažte možnost změnit dostupnost zkratek typů. Pokud budete toto upozornění ignorovat, může to mít za následek chyby za běhu.</value>
@@ -1898,7 +1898,7 @@
     <value>Označuje konec sekce definic členů v definicích typů a rozšířeních typů. V podrobné syntaxi se používá k určení konce bloku kódu, který začíná klíčovým slovem begin.</value>
   </data>
   <data name="chkGetterAndSetterHaveSamePropertyType" xml:space="preserve">
-    <value>Metody get a set vlastnosti musí být stejného typu. Vlastnost {0} má metodu get typu {1}, ale metodu set typu {2}.</value>
+    <value>Metody getter a setter vlastnosti musí být stejného typu. Vlastnost {0} má metodu get typu {1}, ale metodu set typu {2}.</value>
   </data>
   <data name="tcInvalidTypeArgumentCount" xml:space="preserve">
     <value>Počet argumentů typu se neshodoval: počet předaných je {0}, ale počet očekávaných je {1}. Může to souviset s dřív hlášenou chybou.</value>
@@ -2468,7 +2468,7 @@
     <value>U nenulových konstant nemůžou být obecné jednotky. Obecný nulový zápis je 0.0&lt;_&gt;.</value>
   </data>
   <data name="parsInvalidProperty" xml:space="preserve">
-    <value>Neplatná metoda get nebo set vlastnosti</value>
+    <value>Neplatná metoda getter nebo setter vlastnosti</value>
   </data>
   <data name="DefinitionsInSigAndImplNotCompatibleSignatureDeclaresDiffer" xml:space="preserve">
     <value>Definice {0} pro typ {1} v signatuře a implementaci nejsou kompatibilní, protože signatura deklaruje {2}, ale implementace deklaruje {3}.</value>
@@ -2534,7 +2534,7 @@
     <value>Očekávaný počet výrazů je {0}. Počet předaných je {1}.</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>Parametry deklarovaného typu u tohoto rozšíření typu se neshodují s parametry deklarovaného typu u původního typu {0}.</value>
+    <value>Minimálně jeden parametr deklarovaného typu u tohoto rozšíření typu neobsahuje omezení typu nebo má nesprávné omezení typu, které se neshoduje s původními omezeními typu na {0}.</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>Nejmíň jedno přepsání neimplementovalo správně odpovídající abstraktní člen.</value>
@@ -3179,7 +3179,7 @@
     <value>Duplicitní vlastnost. Vlastnost {0} má stejný název a signaturu jako jiná vlastnost v typu {1}.</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Zadejte preferovaný název jazykového prostředí (např. es-ES, ja-JP)</value>
+    <value>Zadejte preferovaný název jazykové verze (např. es-ES, ja-JP).</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>Ve výrazech pořadí se výsledky generují pomocí yield.</value>
@@ -3209,7 +3209,7 @@
     <value>Pokud se na knihovnu mscorlib.dll nebo FSharp.Core.dll odkazuje explicitně, musí se předávat taky možnost {0}.</value>
   </data>
   <data name="parsTypeAnnotationsOnGetSet" xml:space="preserve">
-    <value>Poznámky typu u metod get nebo set vlastnosti se musí předávat až po get() nebo set(v). Příklad: with get() : string = </value>
+    <value>Poznámky typu u metod getter nebo setter vlastnosti se musí předávat až po get() nebo set(v). Příklad: with get() : string = </value>
   </data>
   <data name="optsBuildWindows" xml:space="preserve">
     <value>Vytvoří spustitelný soubor systému Windows.</value>

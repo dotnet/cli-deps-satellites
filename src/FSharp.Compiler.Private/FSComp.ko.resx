@@ -524,7 +524,7 @@
     <value>이 형식 정의에는 약어를 통해 직접 순환 참조가 사용됩니다.</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>'--targetprofile'에 대한 값 '{0}'이(가) 잘못되었습니다. 올바른 값은 'mscorlib', 'netcore' 또는 'netstandard'입니다.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>'use' 바인딩은 기본 생성자에서 허용되지 않습니다.</value>
@@ -1520,7 +1520,7 @@
     <value>이 어셈블리의 두 부분에서 '{0}'(이)라는 네임스페이스와 모듈이 모두 발생합니다.</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>이 어셈블리의 대상 프레임워크 프로필을 지정하세요. 올바른 값은 mscorlib, netcore 또는 netstandard입니다. 기본값은 - mscorlib입니다.</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>F# 4.1부터 형식 약어의 액세스 가능성은 컴파일 시간에 확인합니다. 형식 약어의 액세스 가능성을 변경하세요. 이 경고를 무시하면 런타임 오류가 발생할 수 있습니다.</value>
@@ -2534,7 +2534,7 @@
     <value>{0}개의 식이 필요한데 {1}개를 받았습니다.</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>이 형식 확장에 대해 선언된 형식 매개 변수가 원래 형식 '{0}'에 선언된 형식 매개 변수와 일치하지 않습니다.</value>
+    <value>이 형식 확장에 대해 선언된 하나 이상의 형식 매개 변수에 형식 제약 조건이 없거나 잘못되어 '{0}'의 원본 형식 제약 조건과 일치하지 않습니다.</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>하나 이상의 재정의가 해당하는 추상 멤버를 올바르게 구현하지 않았습니다.</value>
@@ -3179,7 +3179,7 @@
     <value>속성이 중복되었습니다. '{0}' 속성의 이름 및 시그니처가 '{1}' 형식의 다른 속성과 같습니다.</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> 기본 출력 언어 문화권 이름 지정(예: es-ES, ja-JP)</value>
+    <value>기본 출력 언어 문화권 이름 지정(예: es-ES, ja-JP)</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>시퀀스 식에서는 'yield'를 사용하여 결과가 생성됩니다.</value>

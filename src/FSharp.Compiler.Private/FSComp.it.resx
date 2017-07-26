@@ -524,7 +524,7 @@
     <value>Questa definizione di tipo prevede un riferimento ciclico immediato tramite un'abbreviazione</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Invalid value '{0}' for '--targetprofile', valid values are 'mscorlib', 'netcore' or 'netstandard'.</value>
+    <value>Valore '{0}' non valido per '--targetprofile'. I valori validi sono 'mscorlib', 'netcore' o 'netstandard'.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>Binding 'use' non consentiti in costruttori primari</value>
@@ -1520,7 +1520,7 @@
     <value>In due parti di questo assembly sono presenti uno spazio dei nomi e un modulo entrambi denominati '{0}'</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Specify target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard. Default - mscorlib</value>
+    <value>Consente di specificare il profilo del framework di destinazione di questo assembly. I valori validi sono mscorlib, netcore o netstandard. Impostazione predefinita: mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>A partire da F# 4.1, l'accessibilità delle abbreviazioni dei tipi viene verificata in fase di compilazione. Provare a modificare l'accessibilità dell'abbreviazione dei tipi. Se si ignora questo avviso, potrebbero verificarsi errori di runtime.</value>
@@ -2534,7 +2534,7 @@
     <value>Previste {0} espressioni, ottenute {1}</value>
   </data>
   <data name="tcDeclaredTypeParametersForExtensionDoNotMatchOriginal" xml:space="preserve">
-    <value>I parametri di tipo dichiarati per questa estensione del tipo non corrispondono ai parametri di tipo dichiarati nel tipo originale '{0}'</value>
+    <value>Uno o più parametri di tipo dichiarati per questa estensione del tipo contengono un vincolo di tipo mancante o errato non corrispondente ai vincoli di tipo originali in '{0}'</value>
   </data>
   <data name="tcAtLeastOneOverrideIsInvalid" xml:space="preserve">
     <value>Almeno un override non implementa correttamente il membro astratto corrispondente</value>
@@ -3179,7 +3179,7 @@
     <value>Proprietà duplicata. Il nome e la firma della proprietà '{0}' corrispondono a quelli di un'altra proprietà nel tipo '{1}'.</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Consente di specificare il nome delle impostazioni cultura di output preferite, ad esempio es-ES, it-IT.</value>
+    <value>Consente di specificare il nome delle impostazioni cultura di output preferite, ad esempio es-ES, it-IT</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>Nelle espressioni sequenza i risultati sono generati mediante 'yield'</value>
@@ -4280,7 +4280,7 @@
     <value>I tipi forniti generati da questo utilizzo di un provider di tipi potrebbero non essere utilizzati da altri assembly F# e devono essere contrassegnati come interni o privati. Provare a utilizzare 'type internal TypeName = ...' o 'type private TypeName = ...'.</value>
   </data>
   <data name="addIndexerDot" xml:space="preserve">
-    <value>Add . for indexer access.</value>
+    <value>Aggiunge . per l'accesso all'indicizzatore.</value>
   </data>
   <data name="tcDllImportNotAllowed" xml:space="preserve">
     <value>I binding DLLImport devono essere membri statici in una classe o definizioni di funzione in un modulo</value>
