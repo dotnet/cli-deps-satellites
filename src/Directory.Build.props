@@ -49,8 +49,7 @@
     <BuildNumberPart1>$(BuildNumber.Split('-')[0])</BuildNumberPart1>
     <BuildNumberPart2>$(BuildNumber.Split('-')[1].PadLeft(2,'0'))</BuildNumberPart2>
     <Version Condition="'$(Version)' == ''">$(VersionPrefix)-pre-$(BuildNumber)</Version>
-    <AssemblyVersion Condition="'$(BUILD_BUILDNUMBER)' == ''">$(VersionPrefix).0</AssemblyVersion>
-    <AssemblyVersion Condition="'$(BUILD_BUILDNUMBER)' != ''">$(VersionPrefix).$([MSBuild]::Subtract($(BuildNumberPart1), $(BuildEpoch)))</AssemblyVersion>
+    <AssemblyVersion>$(VersionPrefix).0</AssemblyVersion>
     <FileVersion Condition="'$(BUILD_BUILDNUMBER)' == ''">$(VersionPrefix).0</FileVersion>
     <FileVersion Condition="'$(BUILD_BUILDNUMBER)' != ''">$(VersionPrefix).$([MSBuild]::Subtract($(BuildNumberPart1), $(BuildEpoch)))</FileVersion>
     <InformationalVersion>$(VersionPrefix).$(BuildNumber)</InformationalVersion>
