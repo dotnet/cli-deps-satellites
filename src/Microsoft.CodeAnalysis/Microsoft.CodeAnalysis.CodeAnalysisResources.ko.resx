@@ -178,6 +178,9 @@
   <data name="Class1" xml:space="preserve">
     <value>클래스</value>
   </data>
+  <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
+    <value>Embedded texts are only supported when emitting a PDB.</value>
+  </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>모듈 복사본은 어셈블리 메타데이터를 만드는 데 사용할 수 없습니다.</value>
   </data>
@@ -497,9 +500,6 @@
   </data>
   <data name="TupleElementNameEmpty" xml:space="preserve">
     <value>튜플 요소 이름은 빈 문자열일 수 없습니다.</value>
-  </data>
-  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
-    <value>이식 가능한 PDB를 내보낼 때만 포함된 텍스트가 지원됩니다.</value>
   </data>
   <data name="InvalidOutputKindForSubmission" xml:space="preserve">
     <value>제출에 대해 잘못된 출력 종류입니다. DynamicallyLinkedLibrary가 필요합니다.</value>

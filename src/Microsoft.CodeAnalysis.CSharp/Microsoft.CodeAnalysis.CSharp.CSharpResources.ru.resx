@@ -380,6 +380,9 @@
   <data name="WRN_CLS_NoAbstractMembers_Title" xml:space="preserve">
     <value>Только члены, совместимые с CLS, могут быть абстрактными</value>
   </data>
+  <data name="IDS_FeaturePrivateProtected" xml:space="preserve">
+    <value>private protected</value>
+  </data>
   <data name="ERR_ConflictingMachineModule" xml:space="preserve">
     <value>Сборка и модуль "{0}" не могут предназначаться для разных процессоров.</value>
   </data>
@@ -468,7 +471,7 @@
     <value>"{0}" не реализует шаблон "{1}". "{2}" неоднозначен с "{3}".</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Недопустимый параметр "{0}" для /langversion; должен быть ISO-1, ISO-2, Default, Latest или допустимой версией в диапазоне от 1 до 7.1.</value>
+    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>Полное имя псевдонима не является выражением.</value>
@@ -713,6 +716,9 @@
   <data name="ERR_FloatOverflow" xml:space="preserve">
     <value>Константа с плавающей запятой вне допустимого диапазона для типа "{0}".</value>
   </data>
+  <data name="ERR_InvalidDebugInfo" xml:space="preserve">
+    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+  </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>Не удается выдать отладочную информацию для исходного текста без кодировки.</value>
   </data>
@@ -733,6 +739,9 @@
   </data>
   <data name="XML_EndTagExpected" xml:space="preserve">
     <value>Требуется конечный тег для элемента "{0}".</value>
+  </data>
+  <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
+    <value>leading digit separator</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Аргументы типа недопустимы в операторе nameof.</value>
@@ -872,11 +881,14 @@
   <data name="ERR_GenericsUsedAcrossAssemblies" xml:space="preserve">
     <value>Тип "{0}" из сборки "{1}" не может быть использован за границами сборки, так как имеет аргумент универсального типа, являющийся внедренным типом взаимодействия.</value>
   </data>
+  <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
+    <value>The local function '{0}' is declared but never used</value>
+  </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>Оператор as должен использоваться со ссылочным типом или с типом, допускающим значение Null (тип "{0}" не допускает значение Null).</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>Абстрактный метод "{0}" не может быть помечен как virtual.</value>
+    <value>The abstract {0} '{1}' cannot be marked virtual</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>"{0}": статические классы не могут содержать определяемых пользователем операторов.</value>
@@ -1028,6 +1040,9 @@
   <data name="WRN_FilterIsConstant" xml:space="preserve">
     <value>Выражение фильтра является константой, попробуйте удалить фильтр.</value>
   </data>
+  <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
+    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+  </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>Возможность "{0}" недоступна в C# 7.1. Используйте версию языка {1} или выше.</value>
   </data>
@@ -1109,6 +1124,9 @@
   <data name="WRN_NewNotRequired" xml:space="preserve">
     <value>Член "{0}" не скрывает доступный член. Ключевое слово new не требуется.</value>
   </data>
+  <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
+    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+  </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>Номер, переданный в директиву препроцессора предупреждений #pragma, не являлся допустимым номером предупреждения. Убедитесь, что номер соответствует предупреждению, а не ошибке.</value>
   </data>
@@ -1126,6 +1144,9 @@
   </data>
   <data name="ERR_ReferenceDirectiveOnlyAllowedInScripts" xml:space="preserve">
     <value>Использование #r допускается только в скриптах.</value>
+  </data>
+  <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
+    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>Синтаксическое дерево уже имеется</value>
@@ -1322,6 +1343,9 @@
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>Недопустимый параметр псевдонима ссылки: "{0}=" — не указано имя файла</value>
   </data>
+  <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
+    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+  </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
     <value>Члены поля "{0}", доступного только для чтения, нельзя вернуть по ссылке</value>
   </data>
@@ -1347,7 +1371,7 @@
     <value>Событие среды выполнения Windows не может передаваться как параметр out или ref.</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Экземпляр типа "{0}" нельзя использовать внутри анонимной функции, выражения запроса, блока итератора или асинхронного метода.</value>
+    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>'{0}" не реализует член интерфейса "{1}". '{2}" не может реализовать "{1}", потому что не имеет соответствующего возвращаемого типа "{3}".</value>
@@ -1828,7 +1852,7 @@
     <value>Операндом оператора инкремента или декремента должна быть переменная, свойство или индексатор.</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>Параметр /embed поддерживается только при создании файлов Portable PDB (/debug:portable или /debug:embedded).</value>
+    <value>/embed switch is only supported when emitting a PDB.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>"{0}" не может одновременно внешним и абстрактным.</value>
@@ -3111,8 +3135,8 @@
   <data name="ERR_AmbigMember" xml:space="preserve">
     <value>Неоднозначность между "{0}" и "{1}"</value>
   </data>
-  <data name="ERR_PartialMethodOnlyMethods" xml:space="preserve">
-    <value>Разделяемыми могут быть только методы, классы, структуры и интерфейсы.</value>
+  <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
+    <value>Local function is declared but never used</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>Ошибка в синтаксисе командной строки: Отсутствует Guid для параметра "{1}".</value>
@@ -3191,143 +3215,146 @@
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Параметры компилятора Visual C#
+                              Visual C# Compiler Options
 
-                        - Выходные файлы -
- /out:&lt;файл&gt;                   Указывает имя выходного файла (по умолчанию: базовое имя
-                               файла с классом main или имя первого файла)
- /target:exe                   По умолчанию выполняет сборку консольного исполняемого файла (краткая
-                               форма: /t:exe)
- /target:winexe                Выполняет сборку исполняемого файла Windows (краткая форма:
+                        - OUTPUT FILES -
+ /out:&lt;file&gt;                   Specify output file name (default: base name of
+                               file with main class or first file)
+ /target:exe                   Build a console executable (default) (Short
+                               form: /t:exe)
+ /target:winexe                Build a Windows executable (Short form:
                                /t:winexe)
- /target:library               Выполняет сборку библиотеки (краткая форма: /t:library)
- /target:module                Выполняет сборку модуля, который может быть добавлен в другую
-                               сборку (краткая форма: /t:module)
- /target:appcontainerexe       Выполняет сборку исполняемого файла контейнера приложений (краткая форма:
+ /target:library               Build a library (Short form: /t:library)
+ /target:module                Build a module that can be added to another
+                               assembly (Short form: /t:module)
+ /target:appcontainerexe       Build an Appcontainer executable (Short form:
                                /t:appcontainerexe)
- /target:winmdobj              Выполняет сборку промежуточного файла среды выполнения Windows,
-                               используемого в WinMDExp (краткая форма: /t:winmdobj)
- /doc:&lt;файл&gt;                   Создаваемый XML-файл документации
- /refout:&lt;файл&gt;                Создаваемые выходные данные базовой сборки.
- /platform:&lt;строка&gt;            Ограничить платформы, на которых может выполняться этот код: x86,
+ /target:winmdobj              Build a Windows Runtime intermediate file that
+                               is consumed by WinMDExp (Short form: /t:winmdobj)
+ /doc:&lt;file&gt;                   XML Documentation file to generate
+ /refout:&lt;file&gt;                Reference assembly output to generate
+ /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
                                Itanium, x64, arm, anycpu32bitpreferred, or
-                               anycpu. Значение по умолчанию — anycpu.
+                               anycpu. The default is anycpu.
 
-                        - Входные файлы -
- /recurse:&lt;подстановочный знак&gt;           Включить все файлы в текущем каталоге и
-                               подкаталогах в соответствии с заданным
-                               подстановочным знаком
- /reference:&lt;псевдоним&gt;=&lt;файл&gt;     Сослаться на метаданные из заданного файла
-                               сборки с помощью определенного псевдонима (краткая форма: /r)
- /reference:&lt;файлы&gt;        Сослаться на метаданные из заданных файлов
-                               сборки (краткая форма: /r)
- /addmodule:&lt;файлы&gt;        Скомпоновать указанные модули вместе с этой сборкой
- /link:&lt;файлы&gt;             Внедрить метаданные из указанных файлов
-                               сборок взаимодействия (краткая форма: /l)
- /analyzer:&lt;файлы&gt;         Запускать анализаторы из этой сборки
-                               (краткая форма: /a)
- /additionalfile:&lt;файлы&gt;   Дополнительные файлы, которые не оказывают прямого влияния на создание
-                               кода, но могут использоваться анализаторами для вывода
-                               ошибок или предупреждений.
- /embed                        Внедрить все исходные файлы в PDB.
- /embed:&lt;файлы&gt;            Внедрить указанные файлы в PDB.
+                        - INPUT FILES -
+ /recurse:&lt;wildcard&gt;           Include all files in the current directory and
+                               subdirectories according to the wildcard
+                               specifications
+ /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
+                               file using the given alias (Short form: /r)
+ /reference:&lt;file list&gt;        Reference metadata from the specified assembly
+                               files (Short form: /r)
+ /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
+ /link:&lt;file list&gt;             Embed metadata from the specified interop
+                               assembly files (Short form: /l)
+ /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
+                               (Short form: /a)
+ /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
+                               generation but may be used by analyzers for producing
+                               errors or warnings.
+ /embed                        Embed all source files in the PDB.
+ /embed:&lt;file list&gt;            Embed specific files in the PDB
 
-                        - Ресурсы -
- /win32res:&lt;файл&gt;              Задает файл ресурсов Win32 (RES-файл)
- /win32icon:&lt;файл&gt;             Использовать этот значок для вывода.
- /win32manifest:&lt;файл&gt;         Задает файл манифеста Win32 (XML-файл).
- /nowin32manifest              Не включать манифест Win32 по умолчанию.
- /resource:&lt;ресурс&gt;           Внедрить указанный ресурс (краткая форма: /res)
- /linkresource:&lt;ресурс&gt;       Скомпоновать указанный ресурс вместе с этой сборкой
-                               (краткая форма: /linkres), где данные о ресурсах имеют формат
-                               &lt;файл&gt;[,&lt;имя строки&gt;[,public|private]]
+                        - RESOURCES -
+ /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
+ /win32icon:&lt;file&gt;             Use this icon for the output
+ /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
+ /nowin32manifest              Do not include the default Win32 manifest
+ /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
+ /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
+                               (Short form: /linkres) Where the resinfo format
+                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
 
-                        - Создание кода -
- /debug[+|-]                   Выдать отладочную информацию.
+                        - CODE GENERATION -
+ /debug[+|-]                   Emit debugging information
  /debug:{full|pdbonly|portable|embedded}
-                               Задать тип отладки (по умолчанию — full,
-                               portable — кроссплатформенный формат,
-                               embedded — кроссплатформенный формат, внедряемый в
-                               целевой DLL- или EXE-файл)
- /optimize[+|-]                Включить оптимизацию (краткая форма: /o)
- /deterministic                Создать детерминированную сборку
-                               (включая GUID версии модуля и метку времени)
- /refonly                      Создать базовую сборку вместо основных выходных данных.
- /instrument:TestCoverage      Создать сборку, инструментированную для сбора
-                               сведений об объеме протестированного кода.  
- /sourcelink:&lt;file&gt;            Данные о ссылке на исходные файлы для внедрения в PDB.
+                               Specify debugging type ('full' is default,
+                               'portable' is a cross-platform format,
+                               'embedded' is a cross-platform format embedded into
+                               the target .dll or .exe)
+ /optimize[+|-]                Enable optimizations (Short form: /o)
+ /deterministic                Produce a deterministic assembly
+                               (including module version GUID and timestamp)
+ /refonly                      Produce a reference assembly in place of the main output
+ /instrument:TestCoverage      Produce an assembly instrumented to collect
+                               coverage information
+ /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
 
-                        - Ошибки и предупреждения -
- /warnaserror[+|-]             Записывать все предупреждения как ошибки.
- /warnaserror[+|-]:&lt;предупреждения&gt; Записывать указанные предупреждения как ошибки.
- /warn:&lt;n&gt;                     Задать уровень генерации предупреждений (0–4) (краткая форма: /w)
- /nowarn:&lt;предупреждения&gt;           Отключить указанные предупреждения.
- /ruleset:&lt;файл&gt;               Указать файл набора правил, отключающий определенные
-                               диагностические операции.
- /errorlog:&lt;файл&gt;              Указать файл для записи всех диагностических данных
-                               компилятора и анализатора.
- /reportanalyzer               Сообщить дополнительные сведения об анализаторе, например
-                               время выполнения.
+                        - ERRORS AND WARNINGS -
+ /warnaserror[+|-]             Report all warnings as errors
+ /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
+ /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
+ /nowarn:&lt;warn list&gt;           Disable specific warning messages
+ /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
+                               diagnostics.
+ /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
+                               diagnostics.
+ /reportanalyzer               Report additional analyzer information, such as
+                               execution time.
 
-                        - Язык -
- /checked[+|-]                 Создать проверки переполнений.
- /unsafe[+|-]                  Допускать "небезопасный" код.
- /define:&lt;список символов&gt;         Определить символы условной компиляции (краткая
-                               форма: /d)
- /langversion:&lt;строка&gt;         Указать режим языковой версии: ISO-1, ISO-2, 3,
-                               4, 5, 6, 7, 7.1, Default или Latest
+                        - LANGUAGE -
+ /checked[+|-]                 Generate overflow checks
+ /unsafe[+|-]                  Allow 'unsafe' code
+ /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
+                               form: /d)
+ /langversion:?                Display the allowed values for language version
+ /langversion:&lt;string&gt;         Specify language version such as
+                               `default` (latest major version), or
+                               `latest` (latest version, including minor versions),
+                               or specific versions like `6` or `7.1`
 
-                        - Безопасность -
- /delaysign[+|-]               Использовать отложенную подпись для сборки, применяя только открытую
-                               часть ключа строгого имени
- /publicsign[+|-]              Подписать сборку, используя только открытую
-                               часть ключа строгого имени
- /keyfile:&lt;файл&gt;               Указать файл ключей строгого имени.
- /keycontainer:&lt;строка&gt;        Указать контейнер ключей строгого имени.
- /highentropyva[+|-]           Включить ASLR с высокой энтропией.
+                        - SECURITY -
+ /delaysign[+|-]               Delay-sign the assembly using only the public
+                               portion of the strong name key
+ /publicsign[+|-]              Public-sign the assembly using only the public
+                               portion of the strong name key
+ /keyfile:&lt;file&gt;               Specify a strong name key file
+ /keycontainer:&lt;string&gt;        Specify a strong name key container
+ /highentropyva[+|-]           Enable high-entropy ASLR
 
-                        - Прочее -
- @&lt;файл&gt;                       Считать файл ответов с дополнительными параметрами.
- /help                         Отображать это сообщение об использовании (краткая форма: /?)
- /nologo                       Запрещать отображение сообщения компилятора об авторских правах.
- /noconfig                     Не включать файл CSC.RSP автоматически.
- /parallel[+|-]                Параллельная сборка.
- /version                      Отобразить номер версии компилятора и выйти.
+                        - MISCELLANEOUS -
+ @&lt;file&gt;                       Read response file for more options
+ /help                         Display this usage message (Short form: /?)
+ /nologo                       Suppress compiler copyright message
+ /noconfig                     Do not auto include CSC.RSP file
+ /parallel[+|-]                Concurrent build.
+ /version                      Display the compiler version number and exit.
 
-                        - Дополнительно -
- /baseaddress:&lt;адрес&gt;        Базовый адрес библиотеки, для которой выполняется сборка.
- /checksumalgorithm:&lt;алгоритм&gt;      Задать алгоритм для расчета контрольной суммы
-                               исходного файла, хранимой в формате PDB. Поддерживаемые значения:
-                               SHA1 (по умолчанию) или SHA256.
- /codepage:&lt;n&gt;                 Задать кодовую страницу, используемую при открытии исходных
-                               файлов.
- /utf8output                   Выводить сообщения компилятора в кодировке UTF-8.
- /main:&lt;тип&gt;                  Указать тип, содержащий точку входа
-                               (все другие возможные точки входа игнорируютя) (краткая
-                               форма: /m)
- /fullpaths                    Компилятор создает полные пути.
- /filealign:&lt;n&gt;                Задать выравнивание для разделов выходных
-                               файлов.
+                        - ADVANCED -
+ /baseaddress:&lt;address&gt;        Base address for the library to be built
+ /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
+                               checksum stored in PDB. Supported values are:
+                               SHA1 (default) or SHA256.
+ /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
+                               files
+ /utf8output                   Output compiler messages in UTF-8 encoding
+ /main:&lt;type&gt;                  Specify the type that contains the entry point
+                               (ignore all other possible entry points) (Short
+                               form: /m)
+ /fullpaths                    Compiler generates fully qualified paths
+ /filealign:&lt;n&gt;                Specify the alignment used for output file
+                               sections
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Задать сопоставление для выходных данных имен исходного пути по
-                               компилятору.
- /pdb:&lt;файл&gt;                   Задать имя файла для отладочной информации (по умолчанию
-                               используется имя выходного файла с расширением PDB)
- /errorendlocation             Выводить строку и столбец конечного расположения
-                               каждой ошибки.
- /preferreduilang              Указать имя предпочтительного языка вывода.
- /nostdlib[+|-]                Не обращаться к стандартной библиотеке (mscorlib.dll).
- /subsystemversion:&lt;строка&gt;    Задать версию подсистемы этой сборки.
- /lib:&lt;файлы&gt;              Задать дополнительные каталоги для поиска
-                               ссылок.
- /errorreport:&lt;строка&gt;         Указать способ обработки внутренних ошибок компилятора:
-                               prompt, send, queue или none. По умолчанию используется
+                               Specify a mapping for source path names output by
+                               the compiler.
+ /pdb:&lt;file&gt;                   Specify debug information file name (default:
+                               output file name with .pdb extension)
+ /errorendlocation             Output line and column of the end location of
+                               each error
+ /preferreduilang              Specify the preferred output language name.
+ /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
+ /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
+ /lib:&lt;file list&gt;              Specify additional directories to search in for
+                               references
+ /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
+                               prompt, send, queue, or none. The default is
                                queue.
- /appconfig:&lt;файл&gt;             Указать файл конфигурации приложения,
-                               содержащий параметры привязки сборки.
- /moduleassemblyname:&lt;строка&gt;  Имя сборки, частью которой будет являться
-                               этот модуль.
- /modulename:&lt;строка&gt;          Задать имя исходного модуля.
+ /appconfig:&lt;file&gt;             Specify an application configuration file
+                               containing assembly binding settings
+ /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
+                               a part of
+ /modulename:&lt;string&gt;          Specify the name of the source module
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3637,7 +3664,7 @@
     <value>Невозможно применить CallerMemberNameAttribute, так как отсутствуют стандартные преобразования из типа "{0}" в тип "{1}".</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Невозможно вернуть член параметра "{0}" по ссылке, так как это не параметр ref или out</value>
+    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(Местоположение символа, связанного с предыдущей ошибкой)</value>
@@ -3682,7 +3709,7 @@
     <value>Невозможно вернуть параметр "{0}" по ссылке, так как это не параметр ref или out</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Элементы, определенные в пространстве имен, не могут объявляться в явном виде как частные, защищенные или защищенные внутренние.</value>
+    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>Параметр /moduleassemblyname может использоваться только при сборке модуля.</value>
@@ -3851,6 +3878,9 @@
   </data>
   <data name="WRN_EqualityOpWithoutGetHashCode" xml:space="preserve">
     <value>"{0}" определяет оператор "==" или оператор "!=", но не переопределяет Object.GetHashCode().</value>
+  </data>
+  <data name="IDS_LangVersions" xml:space="preserve">
+    <value>Supported language versions:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>Тип одного из параметров бинарного оператора должен быть вмещающим.</value>
@@ -4315,7 +4345,7 @@
     <value>Параметр типа "{1}" имеет ограничение "struct", поэтому "{1}" не может использоваться в качестве ограничения для "{0}".</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Предопределенный тип "{0}" не определен и не импортирован</value>
+    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>Аргумент типа не может иметь значение Null</value>
@@ -4480,7 +4510,7 @@
     <value>Аргумент {0}: не удается преобразовать из "{1}" в "{2}".</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Спецификации именованного аргумента должны появляться во всех указанных фиксированных аргументах.</value>
+    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>Ограничения для параметра типа "{0}" метода "{1}" должны соответствовать ограничениям параметра типа "{2}" метода интерфейса "{3}". Рассмотрите возможность явной реализации интерфейса.</value>
@@ -5060,6 +5090,9 @@
   </data>
   <data name="IDS_FeatureExpressionBodiedIndexer" xml:space="preserve">
     <value>индексатор, воплощающий выражение</value>
+  </data>
+  <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
+    <value>'{0}' is a local function and must therefore always have a body.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>'{0}": не может наследовать от динамического типа.</value>

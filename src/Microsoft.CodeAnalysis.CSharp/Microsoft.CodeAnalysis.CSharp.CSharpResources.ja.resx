@@ -380,6 +380,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="WRN_CLS_NoAbstractMembers_Title" xml:space="preserve">
     <value>抽象化できるのは CLS 準拠メンバーのみです</value>
   </data>
+  <data name="IDS_FeaturePrivateProtected" xml:space="preserve">
+    <value>private protected</value>
+  </data>
   <data name="ERR_ConflictingMachineModule" xml:space="preserve">
     <value>アセンブリとモジュール '{0}' で異なるプロセッサを対象にすることはできません。</value>
   </data>
@@ -468,7 +471,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>'{0}' は、パターン '{1}' を実装しません。'{2}' は、'{3}' で不適切です。</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>/langversion に対するオプション '{0}' は無効です。ISO-1、ISO-2、Default、Latest、1 から 7.1 までの範囲の有効なバージョンを指定する必要があります。</value>
+    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>エイリアスで修飾された名前は式ではありません。</value>
@@ -713,6 +716,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_FloatOverflow" xml:space="preserve">
     <value>浮動小数点定数が型 '{0}' の範囲外です。</value>
   </data>
+  <data name="ERR_InvalidDebugInfo" xml:space="preserve">
+    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+  </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>エンコーディングせずにソース テキストのデバッグ情報を作成することはできません。</value>
   </data>
@@ -733,6 +739,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   </data>
   <data name="XML_EndTagExpected" xml:space="preserve">
     <value>要素 '{0}' に終了タグが必要です。</value>
+  </data>
+  <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
+    <value>leading digit separator</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>nameof 演算子では型の引数を使用できません。</value>
@@ -872,11 +881,14 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_GenericsUsedAcrossAssemblies" xml:space="preserve">
     <value>アセンブリ '{1}' の型 '{0}' には、埋め込み相互運用型のジェネリック型引数があるため、アセンブリ境界を越えて使用することはできません。</value>
   </data>
+  <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
+    <value>The local function '{0}' is declared but never used</value>
+  </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>as 演算子は参照型または Null 許容型で使用してください ('{0}' は Null 非許容の値型です)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>抽象メソッド '{0}' を virtual に指定することはできません。</value>
+    <value>The abstract {0} '{1}' cannot be marked virtual</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>'{0}': 静的クラスにユーザー定義の演算子を含めることはできません。</value>
@@ -1028,6 +1040,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="WRN_FilterIsConstant" xml:space="preserve">
     <value>フィルター式は定数です。フィルターの削除を検討してください。</value>
   </data>
+  <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
+    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+  </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>機能 '{0}' は C# 7.1 では使用できません。{1} 以上の言語バージョンをお使いください。</value>
   </data>
@@ -1109,6 +1124,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="WRN_NewNotRequired" xml:space="preserve">
     <value>メンバー '{0}' はアクセス可能なメンバーを非表示にしません。新しいキーワードは不要です。</value>
   </data>
+  <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
+    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+  </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>#pragma 警告のプリプロセッサ ディレクティブに渡された番号は無効な警告番号です。番号がエラー番号ではなく警告番号を表していることを確認してください。</value>
   </data>
@@ -1126,6 +1144,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   </data>
   <data name="ERR_ReferenceDirectiveOnlyAllowedInScripts" xml:space="preserve">
     <value>#r はスクリプトでのみ許可されます。</value>
+  </data>
+  <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
+    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>構文ツリーが既に存在しています。</value>
@@ -1322,6 +1343,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>無効な参照エイリアス オプションです: '{0}=' -- ファイル名が指定されていません</value>
   </data>
+  <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
+    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+  </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
     <value>読み取り専用フィールド '{0}' のメンバーを参照渡しで返すことはできません</value>
   </data>
@@ -1347,7 +1371,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>Windows ランタイム イベントを out または ref のパラメーターとして渡すことはできません。</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>型 '{0}' のインスタンスは、匿名関数、クエリ式、反復子ブロック、または非同期メソッドの中では使用できません。</value>
+    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>'{0}' は、インターフェイス メンバー '{1}' を実装していません。'{2}' は一致する '{3}' の戻り値の型を持たないため、'{1}' を実装できません。</value>
@@ -1828,7 +1852,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>インクリメント演算子またはデクリメント演算子のオペランドには、変数、プロパティ、またはインデクサーを指定してください。</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed スイッチは、ポータブル PDB の生成時にのみサポートされます (/debug:portable または /debug:embedded)。</value>
+    <value>/embed switch is only supported when emitting a PDB.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>'{0}' に extern と abstract の両方を指定することはできません。</value>
@@ -3111,8 +3135,8 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_AmbigMember" xml:space="preserve">
     <value>'{0}' と '{1}' 間があいまいです</value>
   </data>
-  <data name="ERR_PartialMethodOnlyMethods" xml:space="preserve">
-    <value>メソッド、クラス、構造体、またはインターフェイスのみが partial を宣言できます</value>
+  <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
+    <value>Local function is declared but never used</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>コマンドラインの構文エラー: オプション '{1}' の GUID がありません。</value>
@@ -3191,145 +3215,146 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# Compiler のオプション
+                              Visual C# Compiler Options
 
-                        - 出力ファイル -
- /out:&lt;file&gt;                   出力ファイル名を指定します (既定: メイン クラス
-                               のあるファイルまたは最初のファイルのベース名)
- /target:exe                   コンソール実行可能ファイルをビルドします (既定) (短い 
-                               形式: /t:exe)
- /target:winexe                Windows 実行可能ファイルをビルドします (短い形式: 
+                        - OUTPUT FILES -
+ /out:&lt;file&gt;                   Specify output file name (default: base name of
+                               file with main class or first file)
+ /target:exe                   Build a console executable (default) (Short
+                               form: /t:exe)
+ /target:winexe                Build a Windows executable (Short form:
                                /t:winexe)
- /target:library               ライブラリをビルドします (短い形式: /t:library)
- /target:module                別のアセンブリに追加できるモジュールをビルド 
-                               します (短い形式: /t:module)
- /target:appcontainerexe       Appcontainer 実行可能ファイルをビルドします (短い形式: 
+ /target:library               Build a library (Short form: /t:library)
+ /target:module                Build a module that can be added to another
+                               assembly (Short form: /t:module)
+ /target:appcontainerexe       Build an Appcontainer executable (Short form:
                                /t:appcontainerexe)
- /target:winmdobj              WinMDExp で使用される 
-                               Windows ランタイムの中間ファイルをビルドします (短い形式: /t:winmdobj)
- /doc:&lt;file&gt;                   生成する XML ドキュメント ファイル
- /refout:&lt;file&gt;                生成する参照アセンブリ出力
- /platform:&lt;string&gt;            このコードを実行できるプラットフォームを x86、
-                               Itanium、x64、arm、anycpu32bitpreferred、
-                               anycpu に制限します。既定は anycpu です。
+ /target:winmdobj              Build a Windows Runtime intermediate file that
+                               is consumed by WinMDExp (Short form: /t:winmdobj)
+ /doc:&lt;file&gt;                   XML Documentation file to generate
+ /refout:&lt;file&gt;                Reference assembly output to generate
+ /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
+                               Itanium, x64, arm, anycpu32bitpreferred, or
+                               anycpu. The default is anycpu.
 
-                        - 入力ファイル -
- /recurse:&lt;wildcard&gt;           ワイルドカードの指定に従い、現行ディレクトリおよび 
-                               サブディレクトリ内のすべてのファイルを 
-                               インクルードします
- /reference:&lt;alias&gt;=&lt;file&gt;     指定されたエイリアスを使用して、指定された 
-                               アセンブリ ファイルのメタデータを参照します (短い形式: /r)
- /reference:&lt;file list&gt;        指定されたアセンブリ ファイルのメタデータを参照 
-                               します (短い形式: /r)
- /addmodule:&lt;file list&gt;        指定されたモジュールをこのアセンブリにリンクします
- /link:&lt;file list&gt;             指定された相互運用アセンブリ ファイルのメタデータを
-                               埋め込みます (短い形式: /l)
- /analyzer:&lt;file list&gt;         このアセンブリからアナライザーを実行します
-                               (短い形式: /a)
- /additionalfile:&lt;file list&gt;   コード生成には直接影響しないものの、
-                               アナライザーがエラーまたは警告を
-                               生成するときに使用する可能性のある追加ファイル。
- /embed                        すべてのソース ファイルを PDB に埋め込みます。
- /embed:&lt;file list&gt;            特定のファイルを PDB に埋め込みます
- 
-                        - リソース -
- /win32res:&lt;file&gt;              Win32 リソース ファイル (.res) を指定します
- /win32icon:&lt;file&gt;             出力にこのアイコンを使用します
- /win32manifest:&lt;file&gt;         Win32 マニフェスト ファイル (.xml) を指定します
- /nowin32manifest              既定の Win32 マニフェストはインクルードしません
- /resource:&lt;resinfo&gt;           指定されたリソースを埋め込みます (短い形式: /res)
- /linkresource:&lt;resinfo&gt;       指定されたリソースをこのアセンブリにリンクします 
-                               (短い形式: /linkres) ここで resinfo の形式 
-                               は &lt;file&gt;[,&lt;string name&gt;[,public|private]] です
+                        - INPUT FILES -
+ /recurse:&lt;wildcard&gt;           Include all files in the current directory and
+                               subdirectories according to the wildcard
+                               specifications
+ /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
+                               file using the given alias (Short form: /r)
+ /reference:&lt;file list&gt;        Reference metadata from the specified assembly
+                               files (Short form: /r)
+ /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
+ /link:&lt;file list&gt;             Embed metadata from the specified interop
+                               assembly files (Short form: /l)
+ /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
+                               (Short form: /a)
+ /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
+                               generation but may be used by analyzers for producing
+                               errors or warnings.
+ /embed                        Embed all source files in the PDB.
+ /embed:&lt;file list&gt;            Embed specific files in the PDB
 
-                        - コード生成 -
- /debug[+|-]                   デバッグ情報を生成します
+                        - RESOURCES -
+ /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
+ /win32icon:&lt;file&gt;             Use this icon for the output
+ /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
+ /nowin32manifest              Do not include the default Win32 manifest
+ /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
+ /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
+                               (Short form: /linkres) Where the resinfo format
+                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
+
+                        - CODE GENERATION -
+ /debug[+|-]                   Emit debugging information
  /debug:{full|pdbonly|portable|embedded}
-                               デバッグの種類を指定します ('full' が既定です。
-                               'portable' はクロスプラットフォーム形式です。
-                               'embedded' は、ターゲット .dll または .exe に
-                               埋め込まれるクロスプラットフォーム形式です)
- /optimize[+|-]                最適化を有効にします (短い形式: /o)
- /deterministic                決定論的アセンブリを作成します
-                               (モジュール バージョン GUID やタイムスタンプなど)
- /refonly                      メイン出力の代わりに参照アセンブリを生成します
- /instrument:TestCoverage      収集するためのインストルメント化されたアセンブリを作成します
-                               カバレッジ情報
- /sourcelink:&lt;file&gt;            ポータブル PDB に埋め込むソース リンク情報。
+                               Specify debugging type ('full' is default,
+                               'portable' is a cross-platform format,
+                               'embedded' is a cross-platform format embedded into
+                               the target .dll or .exe)
+ /optimize[+|-]                Enable optimizations (Short form: /o)
+ /deterministic                Produce a deterministic assembly
+                               (including module version GUID and timestamp)
+ /refonly                      Produce a reference assembly in place of the main output
+ /instrument:TestCoverage      Produce an assembly instrumented to collect
+                               coverage information
+ /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
 
-                        - エラーと警告 -
- /warnaserror[+|-]             すべての警告をエラーとして報告します
- /warnaserror[+|-]:&lt;warn list&gt; 特定の警告をエラーとして報告します
- /warn:&lt;n&gt;                     警告レベル (0-4) を設定します (短い形式: /w)
- /nowarn:&lt;warn list&gt;           特定の警告メッセージを無効にします
- /ruleset:&lt;file&gt;               特定の診断を無効にするルールセット ファイルを
-                               指定します。
- /errorlog:&lt;file&gt;              すべてのコンパイラとアナライザーの診断をログに記録するための
-                               ファイルを指定します。
- /reportanalyzer               追加のアナライザー情報を報告します
-                               (実行時間など)。
- 
-                        - 言語 -
- /checked[+|-]                 オーバーフロー検査を生成します
- /unsafe[+|-]                  '安全でない' コードを許可します
- /define:&lt;symbol list&gt;         条件付きコンパイル シンボルを定義します (短い 
-                               形式: /d)
- /langversion:&lt;string&gt;         言語バージョン モードを指定します: ISO-1、ISO-2、3、
-                               4、5、6、7、7.1、既定、最新
+                        - ERRORS AND WARNINGS -
+ /warnaserror[+|-]             Report all warnings as errors
+ /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
+ /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
+ /nowarn:&lt;warn list&gt;           Disable specific warning messages
+ /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
+                               diagnostics.
+ /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
+                               diagnostics.
+ /reportanalyzer               Report additional analyzer information, such as
+                               execution time.
 
-                        - セキュリティ -
- /delaysign[+|-]               厳密な名前のキーのパブリックな部分のみを使って 
-                               アセンブリを遅延署名します
- /publicsign[+|-]              厳密な名前のキーのパブリックな部分のみを使って
-                               アセンブリを公開署名します
- /keyfile:&lt;file&gt;               厳密な名前キーのファイルを指定します
- /keycontainer:&lt;string&gt;        厳密な名前キーのコンテナーを指定します
- /highentropyva[+|-]           高エントロピ ASLR を有効化します
+                        - LANGUAGE -
+ /checked[+|-]                 Generate overflow checks
+ /unsafe[+|-]                  Allow 'unsafe' code
+ /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
+                               form: /d)
+ /langversion:?                Display the allowed values for language version
+ /langversion:&lt;string&gt;         Specify language version such as
+                               `default` (latest major version), or
+                               `latest` (latest version, including minor versions),
+                               or specific versions like `6` or `7.1`
 
-                        - その他 -
- @&lt;file&gt;                       応答ファイルを読み込み、オプションを追加します
- /help                         使用法に関するメッセージを表示します (短い形式: /?)
- /nologo                       コンパイル時の著作権メッセージを表示しません
- /noconfig                     CSC.RSP ファイルを自動的に含めません
- /parallel[+|-]                ビルドを並列処理します。 
+                        - SECURITY -
+ /delaysign[+|-]               Delay-sign the assembly using only the public
+                               portion of the strong name key
+ /publicsign[+|-]              Public-sign the assembly using only the public
+                               portion of the strong name key
+ /keyfile:&lt;file&gt;               Specify a strong name key file
+ /keycontainer:&lt;string&gt;        Specify a strong name key container
+ /highentropyva[+|-]           Enable high-entropy ASLR
 
-/version                      コンパイラのバージョン番号を出力して終了します。
+                        - MISCELLANEOUS -
+ @&lt;file&gt;                       Read response file for more options
+ /help                         Display this usage message (Short form: /?)
+ /nologo                       Suppress compiler copyright message
+ /noconfig                     Do not auto include CSC.RSP file
+ /parallel[+|-]                Concurrent build.
+ /version                      Display the compiler version number and exit.
 
-                        - 詳細 -
- /baseaddress:&lt;address&gt;        ビルドするライブラリのベース アドレス
- /bugreport:&lt;file&gt;             'バグ報告' ファイルを作成します
- /checksumalgorithm:&lt;alg&gt;      PDB に格納されているソース ファイルのチェックサム 
-                               を計算するアルゴリズムを指定します。サポートされる値:
-                               SHA1 (既定) または SHA256。
- /codepage:&lt;n&gt;                 ソース ファイルを開くときに使用するコード ページを 
-                               指定します
- /utf8output                   コンパイラ メッセージを UTF-8 エンコードで出力します
- /main:&lt;type&gt;                  エントリ ポイントを含む型を指定します 
-                               (他のエントリ ポイントはすべて無視します) (短い 
-                               形式: /m)
- /fullpaths                    コンパイラは完全修飾パスを生成します
- /filealign:&lt;n&gt;                出力ファイル セクションで使用する配置を指定 
-                               します
+                        - ADVANCED -
+ /baseaddress:&lt;address&gt;        Base address for the library to be built
+ /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
+                               checksum stored in PDB. Supported values are:
+                               SHA1 (default) or SHA256.
+ /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
+                               files
+ /utf8output                   Output compiler messages in UTF-8 encoding
+ /main:&lt;type&gt;                  Specify the type that contains the entry point
+                               (ignore all other possible entry points) (Short
+                               form: /m)
+ /fullpaths                    Compiler generates fully qualified paths
+ /filealign:&lt;n&gt;                Specify the alignment used for output file
+                               sections
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               コンパイラが出力するソース パス名のマッピングを
-                               指定します。
- /pdb:&lt;file&gt;                   デバッグ情報ファイル名を指定します (既定: 
-                               .pdb 拡張子の付いた出力ファイル名)
- /errorendlocation             各エラーの終了位置の出力行と 
-                               出力列
- /preferreduilang              出力用の言語名を指定します。
- /nostdlib[+|-]                標準ライブラリ (mscorlib.dll) は参照しません
- /subsystemversion:&lt;string&gt;    このアセンブリのサブシステム バージョンを指定します
- /lib:&lt;file list&gt;              参照を検索する追加ディレクトリを指定 
-                               します
- /errorreport:&lt;string&gt;         内部コンパイラ エラーの処理方法を指定します: 
-                               prompt、send、queue、none です。既定値は 
-                               queue です。
- /appconfig:&lt;file&gt;             アセンブリ バインド設定を含む 
-                               アプリケーション構成ファイルを指定します
- /moduleassemblyname:&lt;string&gt;  このモジュールが一部となるアセンブリ名 
-                               です
- /modulename:&lt;string&gt;          ソース モジュールの名前を指定します
+                               Specify a mapping for source path names output by
+                               the compiler.
+ /pdb:&lt;file&gt;                   Specify debug information file name (default:
+                               output file name with .pdb extension)
+ /errorendlocation             Output line and column of the end location of
+                               each error
+ /preferreduilang              Specify the preferred output language name.
+ /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
+ /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
+ /lib:&lt;file list&gt;              Specify additional directories to search in for
+                               references
+ /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
+                               prompt, send, queue, or none. The default is
+                               queue.
+ /appconfig:&lt;file&gt;             Specify an application configuration file
+                               containing assembly binding settings
+ /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
+                               a part of
+ /modulename:&lt;string&gt;          Specify the name of the source module
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3639,7 +3664,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>型 '{0}' を型 '{1}' に変換する標準変換が存在しないため、CallerMemberNameAttribute を適用することはできません。</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>ref パラメーターでも out パラメーターでもないため、パラメーター '{0}' のメンバーを参照渡しで返すことはできません</value>
+    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(以前のエラーに関連するシンボルの位置)</value>
@@ -3684,7 +3709,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>ref パラメーターでも out パラメーターでもないため、パラメーターを参照 '{0}' 渡しで返すことはできません</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>名前空間で定義された要素は明示的に private、protected、または protected internal に宣言することはできません。</value>
+    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>/moduleassemblyname オプションは 'module' のターゲット型をビルドするときのみ指定できます。</value>
@@ -3853,6 +3878,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="WRN_EqualityOpWithoutGetHashCode" xml:space="preserve">
     <value>'{0}' は演算子 == または演算子 != を定義しますが、Object.GetHashCode() をオーバーライドしません。</value>
+  </data>
+  <data name="IDS_LangVersions" xml:space="preserve">
+    <value>Supported language versions:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>バイナリ演算子のパラメーターの 1 つはそれを含む型でなければなりません。</value>
@@ -4317,7 +4345,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>型パラメーター '{1}' は 'struct' 制約を含むので、'{0}' の制約として '{1}' を使用することはできません</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>定義済みの型 '{0}' は定義、またはインポートされていません</value>
+    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>型引数を null にすることはできません。</value>
@@ -4482,7 +4510,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>引数 {0}: は '{1}' から '{2}' へ変換することはできません。</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>名前付き引数は、すべての固定引数を指定した後で指定する必要があります</value>
+    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>メソッド '{1}' の型パラメーター '{0}' に対する制約は、インターフェイス メソッド '{3}' の型パラメーター '{2}' に対する制約と一致しなければなりません。明示的なインターフェイスの実装を使用することをお勧めします。</value>
@@ -5062,6 +5090,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="IDS_FeatureExpressionBodiedIndexer" xml:space="preserve">
     <value>式のようなインデクサー</value>
+  </data>
+  <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
+    <value>'{0}' is a local function and must therefore always have a body.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>'{0}': 動的な型から派生することはできません。</value>

@@ -380,6 +380,9 @@ Un bloc catch() après un bloc catch (System.Exception e) peut intercepter des e
   <data name="WRN_CLS_NoAbstractMembers_Title" xml:space="preserve">
     <value>Seuls les membres conformes CLS peuvent être abstraits</value>
   </data>
+  <data name="IDS_FeaturePrivateProtected" xml:space="preserve">
+    <value>private protected</value>
+  </data>
   <data name="ERR_ConflictingMachineModule" xml:space="preserve">
     <value>L'assembly et le module '{0}' ne peuvent pas cibler des processeurs différents.</value>
   </data>
@@ -468,7 +471,7 @@ Un bloc catch() après un bloc catch (System.Exception e) peut intercepter des e
     <value>'{0}' n'implémente pas le modèle '{1}'. '{2}' est ambigu avec '{3}'.</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Option non valide '{0}' pour /langversion. Valeur attendue : ISO-1, ISO-2, Default, Latest ou un numéro de version valide compris entre 1 et 7.1.</value>
+    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>Un nom qualifié d'alias n'est pas une expression.</value>
@@ -713,6 +716,9 @@ Un bloc catch() après un bloc catch (System.Exception e) peut intercepter des e
   <data name="ERR_FloatOverflow" xml:space="preserve">
     <value>La constante à virgule flottante sort de la plage du type '{0}'</value>
   </data>
+  <data name="ERR_InvalidDebugInfo" xml:space="preserve">
+    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+  </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>Impossible d'émettre des informations de débogage pour un texte source sans encodage.</value>
   </data>
@@ -733,6 +739,9 @@ Un bloc catch() après un bloc catch (System.Exception e) peut intercepter des e
   </data>
   <data name="XML_EndTagExpected" xml:space="preserve">
     <value>Une balise de fin était attendue pour l'élément '{0}'.</value>
+  </data>
+  <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
+    <value>leading digit separator</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Les arguments de type ne sont pas autorisés dans l'opérateur nameof.</value>
@@ -872,11 +881,14 @@ Un bloc catch() après un bloc catch (System.Exception e) peut intercepter des e
   <data name="ERR_GenericsUsedAcrossAssemblies" xml:space="preserve">
     <value>Impossible d'utiliser le type '{0}' de l'assembly '{1}' au-delà des limites de l'assembly, car il a un argument de type générique qui est un type interop incorporé.</value>
   </data>
+  <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
+    <value>The local function '{0}' is declared but never used</value>
+  </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>L'opérateur as doit être utilisé avec un type référence ou un type Nullable ('{0}' est un type valeur qui n'autorise pas les valeurs null)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>La méthode abstraite '{0}' ne peut pas être marquée comme virtual</value>
+    <value>The abstract {0} '{1}' cannot be marked virtual</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>'{0}' : les classes static ne peuvent pas contenir d'opérateurs définis par l'utilisateur</value>
@@ -1028,6 +1040,9 @@ Un bloc catch() après un bloc catch (System.Exception e) peut intercepter des e
   <data name="WRN_FilterIsConstant" xml:space="preserve">
     <value>L'expression de filtre est une constante ; supprimez le filtre</value>
   </data>
+  <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
+    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+  </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>La fonctionnalité '{0}' n'est pas disponible dans C# 7.1. Utilisez la version de langage {1} ou une version ultérieure.</value>
   </data>
@@ -1109,6 +1124,9 @@ Supprimez l'avertissement seulement si vous êtes sûr de ne pas vouloir attendr
   <data name="WRN_NewNotRequired" xml:space="preserve">
     <value>Le membre '{0}' ne masque pas de membre accessible. Le mot clé new n'est pas nécessaire.</value>
   </data>
+  <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
+    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+  </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>Un numéro transmis à la directive de préprocesseur d'avertissement #pragma n'est pas correct. Veuillez vérifier que ce numéro représente un avertissement et non une erreur.</value>
   </data>
@@ -1126,6 +1144,9 @@ Supprimez l'avertissement seulement si vous êtes sûr de ne pas vouloir attendr
   </data>
   <data name="ERR_ReferenceDirectiveOnlyAllowedInScripts" xml:space="preserve">
     <value>#r n'est autorisé que dans les scripts</value>
+  </data>
+  <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
+    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>Arborescence de syntaxe déjà présente</value>
@@ -1322,6 +1343,9 @@ Supprimez l'avertissement seulement si vous êtes sûr de ne pas vouloir attendr
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>Option d'alias de référence non valide : '{0}=' -- nom de fichier manquant</value>
   </data>
+  <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
+    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+  </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
     <value>Impossible de retourner les membres du champ readonly '{0}' par référence</value>
   </data>
@@ -1347,7 +1371,7 @@ Supprimez l'avertissement seulement si vous êtes sûr de ne pas vouloir attendr
     <value>Un événement Windows Runtime ne peut pas être passé comme paramètre out ou ref.</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Impossible d'utiliser une instance de type '{0}' dans une fonction anonyme , une expression de requête, un bloc itérateur ou une méthode async</value>
+    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>'{0}' n'implémente pas le membre d'interface '{1}'. '{2}' ne peut pas implémenter '{1}', car il ne possède pas le type de retour correspondant '{3}'.</value>
@@ -1828,7 +1852,7 @@ Pour supprimer l'avertissement, vous pouvez utiliser la commande /reference (dé
     <value>L'opérande d'un opérateur d'incrémentation ou de décrémentation doit être une variable, une propriété ou un indexeur</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>Le commutateur /embed est uniquement pris en charge durant l'émission d'un fichier PDB portable (/debug:portable ou /debug:embedded).</value>
+    <value>/embed switch is only supported when emitting a PDB.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>'{0}' ne peut pas être à la fois extern et abstract</value>
@@ -3111,8 +3135,8 @@ Si une telle classe est utilisée en tant que classe de base et si la classe dé
   <data name="ERR_AmbigMember" xml:space="preserve">
     <value>Ambiguïté entre '{0}' et '{1}'</value>
   </data>
-  <data name="ERR_PartialMethodOnlyMethods" xml:space="preserve">
-    <value>Seules les méthodes, classes, structs ou interfaces peuvent être partielles</value>
+  <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
+    <value>Local function is declared but never used</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>Erreur de syntaxe de ligne de commande : Guid manquant pour l'option '{1}'</value>
@@ -3191,143 +3215,146 @@ Si une telle classe est utilisée en tant que classe de base et si la classe dé
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Options du compilateur Visual C#
+                              Visual C# Compiler Options
 
-                        - FICHIERS DE SORTIE -
- /out:&lt;fichier&gt;                Spécifier un nom de fichier de sortie (par défaut : nom de base du
-                               fichier avec classe principale ou premier fichier)
- /target:exe                   Générer un fichier exécutable console (par défaut) (forme
-                               abrégée : /t:exe)
- /target:winexe                Générer un fichier exécutable Windows (forme abrégée :
+                        - OUTPUT FILES -
+ /out:&lt;file&gt;                   Specify output file name (default: base name of
+                               file with main class or first file)
+ /target:exe                   Build a console executable (default) (Short
+                               form: /t:exe)
+ /target:winexe                Build a Windows executable (Short form:
                                /t:winexe)
- /target:library               Générer une bibliothèque (forme abrégée : /t:library)
- /target:module                Générer un module qui peut être ajouté à un autre
-                               assembly (forme abrégée : /t:module)
- /target:appcontainerexe       Générer un exécutable Appcontainer (forme abrégée :
+ /target:library               Build a library (Short form: /t:library)
+ /target:module                Build a module that can be added to another
+                               assembly (Short form: /t:module)
+ /target:appcontainerexe       Build an Appcontainer executable (Short form:
                                /t:appcontainerexe)
- /target:winmdobj              Générer un fichier intermédiaire Windows Runtime
-                               consommé par WinMDExp (forme abrégée : /t:winmdobj)
- /doc:&lt;fichier&gt;                Fichier de documentation XML à générer
- /refout:&lt;fichier&gt;             Référencer la sortie d'assembly à générer
- /platform:&lt;chaîne&gt;            Limiter les plateformes sur lesquelles ce code peut s'exécuter : x86,
-                               Itanium, x64, arm, anycpu32bitpreferred ou
-                               anycpu. La valeur par défaut est anycpu.
+ /target:winmdobj              Build a Windows Runtime intermediate file that
+                               is consumed by WinMDExp (Short form: /t:winmdobj)
+ /doc:&lt;file&gt;                   XML Documentation file to generate
+ /refout:&lt;file&gt;                Reference assembly output to generate
+ /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
+                               Itanium, x64, arm, anycpu32bitpreferred, or
+                               anycpu. The default is anycpu.
 
-                        - FICHIERS D'ENTRÉE -
- /recurse:&lt;générique&gt;          Inclure tous les fichiers dans le répertoire et
-                               les sous-répertoires actifs en fonction des
-                               spécifications de caractères génériques
- /reference:&lt;alias&gt;=&lt;fichier&gt;  Référencer les métadonnées à partir du
-                               fichier d'assembly spécifié via l'alias indiqué (forme abrégée : /r)
- /reference:&lt;liste_fichiers&gt;   Référencer les métadonnées à partir
-                               des fichiers d'assembly spécifiés (forme abrégée : /r)
- /addmodule:&lt;liste_fichiers&gt;   Lier les modules spécifiés dans cet assembly
- /link:&lt;liste_fichiers&gt;        Incorporer les métadonnées à partir des
-                               fichiers d'assembly d'interopérabilité spécifiés (forme abrégée : /l)
- /analyzer:&lt;liste_fichiers&gt;    Exécuter les analyseurs à partir de cet assembly
-                               (Forme abrégée : /a)
- /additionalfile:&lt;liste_fich.&gt; Fichiers supplémentaires qui n'affectent pas directement
-                               la génération de code mais qui peuvent être utilisés par les analyseurs pour produire
-                               des erreurs ou des avertissements.
- /embed                        Incorporer tous les fichiers sources dans le fichier PDB.
- /embed:&lt;liste_fichiers&gt;       Incorporer des fichiers spécifiques dans le fichier PDB
+                        - INPUT FILES -
+ /recurse:&lt;wildcard&gt;           Include all files in the current directory and
+                               subdirectories according to the wildcard
+                               specifications
+ /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
+                               file using the given alias (Short form: /r)
+ /reference:&lt;file list&gt;        Reference metadata from the specified assembly
+                               files (Short form: /r)
+ /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
+ /link:&lt;file list&gt;             Embed metadata from the specified interop
+                               assembly files (Short form: /l)
+ /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
+                               (Short form: /a)
+ /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
+                               generation but may be used by analyzers for producing
+                               errors or warnings.
+ /embed                        Embed all source files in the PDB.
+ /embed:&lt;file list&gt;            Embed specific files in the PDB
 
-                        - RESSOURCES -
- /win32res:&lt;fichier&gt;           Spécifier un fichier de ressources Win32 (.res)
- /win32icon:&lt;fichier&gt;          Utiliser cette icône pour la sortie
- /win32manifest:&lt;fichier&gt;      Spécifier un fichier manifeste (.xml) Win32
- /nowin32manifest              Ne pas inclure le manifeste Win32 par défaut
- /resource:&lt;resinfo&gt;           Incorporer la ressource spécifiée (forme abrégée : /res)
- /linkresource:&lt;resinfo&gt;       Lier la ressource spécifiée à cet assembly
-                               (forme abrégée : /linkres), où le format resinfo
-                               est &lt;fichier&gt;[,&lt;nom_chaîne&gt;[,public|private]]
+                        - RESOURCES -
+ /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
+ /win32icon:&lt;file&gt;             Use this icon for the output
+ /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
+ /nowin32manifest              Do not include the default Win32 manifest
+ /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
+ /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
+                               (Short form: /linkres) Where the resinfo format
+                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
 
-                        - GÉNÉRATION DE CODE -
- /debug[+|-]                   Émettre des informations de débogage
+                        - CODE GENERATION -
+ /debug[+|-]                   Emit debugging information
  /debug:{full|pdbonly|portable|embedded}
-                               Spécifier le type de débogage ('full' est la valeur par défaut,
-                               'portable' est un format multiplateforme,
-                               'embedded' est un format multiplateforme incorporé dans
-                               le fichier .dll ou .exe cible)
- /optimize[+|-]                Activer les optimisations (forme abrégée : /o)
- /deterministic                Produire un assembly déterministe
-                               (en incluant le GUID et l'horodateur de la version du module)
- /refonly                      Produire un assembly de référence à la place de la sortie principale
- /instrument:TestCoverage      Produire un assembly instrumenté pour collecter
-                               les informations de couverture
- /sourcelink:&lt;fichier&gt;         Informations du lien source à incorporer dans le fichier PDB.
+                               Specify debugging type ('full' is default,
+                               'portable' is a cross-platform format,
+                               'embedded' is a cross-platform format embedded into
+                               the target .dll or .exe)
+ /optimize[+|-]                Enable optimizations (Short form: /o)
+ /deterministic                Produce a deterministic assembly
+                               (including module version GUID and timestamp)
+ /refonly                      Produce a reference assembly in place of the main output
+ /instrument:TestCoverage      Produce an assembly instrumented to collect
+                               coverage information
+ /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
 
-                        - ERREURS ET AVERTISSEMENTS -
- /warnaserror[+|-]             Signaler tous les avertissements comme des erreurs
- /warnaserror[+|-]:&lt;avertiss.&gt; Signaler des avertissements spécifiques comme des erreurs
- /warn:&lt;n&gt;                     Définir le niveau d'avertissement (0-4) (forme abrégée : /w)
- /nowarn:&lt;liste avertiss.&gt;     Désactiver des messages d'avertissement spécifiques
- /ruleset:&lt;fichier&gt;            Spécifier un fichier ruleset qui désactive des
-                               diagnostics spécifiques.
- /errorlog:&lt;fichier&gt;           Spécifier un fichier pour journaliser tous les diagnostics du compilateur
-                               et de l'analyseur.
- /reportanalyzer               Indiquer des informations supplémentaires sur l'analyseur, comme
-                               la durée d'exécution.
+                        - ERRORS AND WARNINGS -
+ /warnaserror[+|-]             Report all warnings as errors
+ /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
+ /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
+ /nowarn:&lt;warn list&gt;           Disable specific warning messages
+ /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
+                               diagnostics.
+ /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
+                               diagnostics.
+ /reportanalyzer               Report additional analyzer information, such as
+                               execution time.
 
-                        - LANGAGE -
- /checked[+|-]                 Générer des contrôles de dépassement de capacité
- /unsafe[+|-]                  Autoriser du code 'unsafe'
- /define:&lt;liste_symboles&gt;      Définir les symboles de compilation conditionnelle (forme
-                               abrégée : /d)
- /langversion:&lt;chaîne&gt;         Spécifier le mode de version de langage : ISO-1, ISO-2, 3,
-                               4, 5, 6, 7, 7.1, Default ou Latest
+                        - LANGUAGE -
+ /checked[+|-]                 Generate overflow checks
+ /unsafe[+|-]                  Allow 'unsafe' code
+ /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
+                               form: /d)
+ /langversion:?                Display the allowed values for language version
+ /langversion:&lt;string&gt;         Specify language version such as
+                               `default` (latest major version), or
+                               `latest` (latest version, including minor versions),
+                               or specific versions like `6` or `7.1`
 
-                        - SÉCURITÉ -
- /delaysign[+|-]               Différer la signature de l'assembly en utilisant uniquement
-                               la partie publique de la clé de nom fort
- /publicsign[+|-]              Signer publiquement l'assembly en utilisant uniquement
-                               la partie publique de la clé de nom fort
- /keyfile:&lt;fichier&gt;            Spécifier un fichier de clé de nom fort
- /keycontainer:&lt;chaîne&gt;        Spécifier un conteneur de clé de nom fort
- /highentropyva[+|-]           Activer la randomisation du format d'espace d'adresse d'entropie élevée
+                        - SECURITY -
+ /delaysign[+|-]               Delay-sign the assembly using only the public
+                               portion of the strong name key
+ /publicsign[+|-]              Public-sign the assembly using only the public
+                               portion of the strong name key
+ /keyfile:&lt;file&gt;               Specify a strong name key file
+ /keycontainer:&lt;string&gt;        Specify a strong name key container
+ /highentropyva[+|-]           Enable high-entropy ASLR
 
-                        - DIVERS -
- @&lt;fichier&gt;                    Lire le fichier réponse pour plus d'options
- /help                         Afficher ce message d'utilisation (forme abrégée : /?)
- /nologo                       Supprimer le message de copyright du compilateur
- /noconfig                     Ne pas inclure automatiquement un fichier CSC.RSP
- /parallel[+|-]                Build simultanée.
- /version                      Afficher le numéro de version du compilateur et quitter le processus.
+                        - MISCELLANEOUS -
+ @&lt;file&gt;                       Read response file for more options
+ /help                         Display this usage message (Short form: /?)
+ /nologo                       Suppress compiler copyright message
+ /noconfig                     Do not auto include CSC.RSP file
+ /parallel[+|-]                Concurrent build.
+ /version                      Display the compiler version number and exit.
 
-                        - AVANCÉ -
- /baseaddress:&lt;adresse&gt;        Adresse de base de la bibliothèque à générer
- /checksumalgorithm:&lt;alg&gt;      Spécifier l'algorithme de calcul de la somme de contrôle
-                               de fichier source stockée dans le fichier PDB. Valeurs prises en charge :
-                               SHA1 (par défaut) ou SHA256.
- /codepage:&lt;n&gt;                 Spécifier la page de codes à utiliser à l'ouverture
-                               des fichiers sources
- /utf8output                   Messages du compilateur de sortie encodés en UTF-8
- /main:&lt;type&gt;                  Spécifier le type qui contient le point d'entrée
-                               (ignorer tous les autres points d'entrée possibles) (forme
-                               abrégée : /m)
- /fullpaths                    Le compilateur génère des chemins qualifiés complets
- /filealign:&lt;n&gt;                Spécifier l'alignement utilisé pour les
-                               sections du fichier de sortie
+                        - ADVANCED -
+ /baseaddress:&lt;address&gt;        Base address for the library to be built
+ /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
+                               checksum stored in PDB. Supported values are:
+                               SHA1 (default) or SHA256.
+ /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
+                               files
+ /utf8output                   Output compiler messages in UTF-8 encoding
+ /main:&lt;type&gt;                  Specify the type that contains the entry point
+                               (ignore all other possible entry points) (Short
+                               form: /m)
+ /fullpaths                    Compiler generates fully qualified paths
+ /filealign:&lt;n&gt;                Specify the alignment used for output file
+                               sections
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Spécifier un mappage pour les noms de chemins sources sortis par
-                               le compilateur.
- /pdb:&lt;fichier&gt;                Spécifier le nom du fichier des informations de débogage (par défaut :
-                               nom du fichier de sortie avec l'extension .pdb)
- /errorendlocation             Ligne et colonne de sortie de l'emplacement final de
-                               chaque erreur
- /preferreduilang              Spécifier le nom du langage de sortie préféré.
- /nostdlib[+|-]                Ne pas référencer la bibliothèque standard (mscorlib.dll)
- /subsystemversion:&lt;chaîne&gt;    Spécifier la version du sous-système de cet assembly
- /lib:&lt;liste fichiers&gt;         Spécifier des répertoires supplémentaires dans lesquels rechercher les
-                               références
- /errorreport:&lt;chaîne&gt;         Spécifier comment gérer les erreurs internes du compilateur :
-                               prompt, send, queue ou none. La valeur par défaut est
+                               Specify a mapping for source path names output by
+                               the compiler.
+ /pdb:&lt;file&gt;                   Specify debug information file name (default:
+                               output file name with .pdb extension)
+ /errorendlocation             Output line and column of the end location of
+                               each error
+ /preferreduilang              Specify the preferred output language name.
+ /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
+ /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
+ /lib:&lt;file list&gt;              Specify additional directories to search in for
+                               references
+ /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
+                               prompt, send, queue, or none. The default is
                                queue.
- /appconfig:&lt;fichier&gt;          Spécifier un fichier de configuration de l'application
-                               contenant des paramètres de liaison d'assembly
- /moduleassemblyname:&lt;chaîne&gt;  Nom de l'assembly dont ce module
-                               doit faire partie
- /modulename:&lt;chaîne&gt;          Spécifier le nom du module source
+ /appconfig:&lt;file&gt;             Specify an application configuration file
+                               containing assembly binding settings
+ /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
+                               a part of
+ /modulename:&lt;string&gt;          Specify the name of the source module
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3637,7 +3664,7 @@ Si une telle classe est utilisée en tant que classe de base et si la classe dé
     <value>Impossible d'appliquer CallerMemberNameAttribute, car il n'existe pas de conversion standard du type '{0}' en type '{1}'</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Impossible de retourner un membre du paramètre '{0}' par référence, car il ne s'agit pas d'un paramètre ref ou out</value>
+    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(Emplacement du symbole par rapport à l'erreur précédente)</value>
@@ -3682,7 +3709,7 @@ Si une telle classe est utilisée en tant que classe de base et si la classe dé
     <value>Impossible de retourner un paramètre '{0}' par référence, car il ne s'agit pas d'un paramètre ref ou out</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Les éléments définis dans un espace de noms ne peuvent pas être explicitement déclarés comme private, protected ou protected internal</value>
+    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>L'option /moduleassemblyname ne peut être spécifiée que lors de la génération d'un type cible de 'module'</value>
@@ -3851,6 +3878,9 @@ Si une telle classe est utilisée en tant que classe de base et si la classe dé
   </data>
   <data name="WRN_EqualityOpWithoutGetHashCode" xml:space="preserve">
     <value>'{0}' définit l'opérateur == ou l'opérateur != mais ne se substitue pas à Object.GetHashCode()</value>
+  </data>
+  <data name="IDS_LangVersions" xml:space="preserve">
+    <value>Supported language versions:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>Un des paramètres d'un opérateur binaire doit être le type conteneur</value>
@@ -4315,7 +4345,7 @@ Si une telle classe est utilisée en tant que classe de base et si la classe dé
     <value>Le paramètre de type '{1}' a la contrainte 'struct', donc '{1}' ne peut pas être utilisé comme contrainte pour '{0}'</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Le type prédéfini '{0}' n'est pas défini ou importé</value>
+    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>L'argument de type ne peut pas avoir la valeur null</value>
@@ -4480,7 +4510,7 @@ Si une telle classe est utilisée en tant que classe de base et si la classe dé
     <value>Argument {0} : conversion impossible de '{1}' en '{2}'</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Les spécifications d'argument nommé doivent s'afficher après la spécification de tous les arguments fixes</value>
+    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>Les contraintes pour le paramètre de type '{0}' de la méthode '{1}' doivent correspondre aux contraintes pour le paramètre de type '{2}' de la méthode d'interface '{3}'. Utilisez plutôt une implémentation d'interface explicite.</value>
@@ -5060,6 +5090,9 @@ Si une telle classe est utilisée en tant que classe de base et si la classe dé
   </data>
   <data name="IDS_FeatureExpressionBodiedIndexer" xml:space="preserve">
     <value>indexeur expression-bodied</value>
+  </data>
+  <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
+    <value>'{0}' is a local function and must therefore always have a body.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>'{0}' : dérivation impossible du type dynamic</value>

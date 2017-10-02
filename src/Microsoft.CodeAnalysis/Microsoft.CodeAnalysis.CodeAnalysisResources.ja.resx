@@ -178,6 +178,9 @@
   <data name="Class1" xml:space="preserve">
     <value>クラス</value>
   </data>
+  <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
+    <value>Embedded texts are only supported when emitting a PDB.</value>
+  </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>モジュールのコピーは、アセンブリ メタデータの作成には使用できません。</value>
   </data>
@@ -497,9 +500,6 @@
   </data>
   <data name="TupleElementNameEmpty" xml:space="preserve">
     <value>タプル要素名を空の文字列にすることはできません。</value>
-  </data>
-  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
-    <value>埋め込みのテキストは、ポータブル PDB の生成時にのみサポートされます。</value>
   </data>
   <data name="InvalidOutputKindForSubmission" xml:space="preserve">
     <value>送信の出力の種類が無効です。DynamicallyLinkedLibrary が必要です。</value>
