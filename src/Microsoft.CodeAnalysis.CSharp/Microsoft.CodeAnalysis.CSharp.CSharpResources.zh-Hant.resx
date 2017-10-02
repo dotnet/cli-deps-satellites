@@ -380,6 +380,9 @@
   <data name="WRN_CLS_NoAbstractMembers_Title" xml:space="preserve">
     <value>只有符合 CLS 規範的成員，才可為抽象</value>
   </data>
+  <data name="IDS_FeaturePrivateProtected" xml:space="preserve">
+    <value>private protected</value>
+  </data>
   <data name="ERR_ConflictingMachineModule" xml:space="preserve">
     <value>組件與模組 '{0}' 的目標處理器不可不同。</value>
   </data>
@@ -468,7 +471,7 @@
     <value>'{0}' 未實作 '{1}' 模式，因為 '{2}' 與 '{3}' 之間模稜兩可。</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>/langversion 的選項 '{0}' 無效; 必須為 ISO-1、ISO-2 、Default、Latest 或是範圍 1 到 7.1 之間的有效版本。</value>
+    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>別名限定的名稱不是運算式。</value>
@@ -713,6 +716,9 @@
   <data name="ERR_FloatOverflow" xml:space="preserve">
     <value>浮點常數的值超出類型 '{0}' 的範圍</value>
   </data>
+  <data name="ERR_InvalidDebugInfo" xml:space="preserve">
+    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+  </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>無法在不編碼的情況下，對原始程式文字發出偵錯資訊。</value>
   </data>
@@ -733,6 +739,9 @@
   </data>
   <data name="XML_EndTagExpected" xml:space="preserve">
     <value>必須是元素 '{0}' 的結束標記。</value>
+  </data>
+  <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
+    <value>leading digit separator</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Nameof 運算子中不可使用類型引數。</value>
@@ -872,11 +881,14 @@
   <data name="ERR_GenericsUsedAcrossAssemblies" xml:space="preserve">
     <value>因為組件 '{1}' 的類型 '{0}' 具有屬於內嵌 Interop 類型的泛型類型引數，所以不可跨組件的界限使用。</value>
   </data>
+  <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
+    <value>The local function '{0}' is declared but never used</value>
+  </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>as 運算子必須搭配參考類型或可為 Null 的類型一起使用 ('{0}' 是不可為 Null 的實值類型)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>抽象方法 '{0}' 不可標記為 virtual</value>
+    <value>The abstract {0} '{1}' cannot be marked virtual</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>'{0}': 靜態類別不可包含使用者定義的運算子</value>
@@ -1028,6 +1040,9 @@
   <data name="WRN_FilterIsConstant" xml:space="preserve">
     <value>篩選條件運算式為常數，請考慮移除此篩選條件。</value>
   </data>
+  <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
+    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+  </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>C# 7.1 中無法使用 '{0}' 功能。請使用語言版本 {1} 或更高的版本。</value>
   </data>
@@ -1109,6 +1124,9 @@
   <data name="WRN_NewNotRequired" xml:space="preserve">
     <value>成員 '{0}' 並未隱藏可存取的成員。不需要 new 關鍵字。</value>
   </data>
+  <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
+    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+  </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>傳遞給 #pragma 警告前置處理器指示詞的號碼不是有效的警告號碼。請驗證號碼代表警告，而不是錯誤。</value>
   </data>
@@ -1126,6 +1144,9 @@
   </data>
   <data name="ERR_ReferenceDirectiveOnlyAllowedInScripts" xml:space="preserve">
     <value>#r 只可用於指令碼中</value>
+  </data>
+  <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
+    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>語法樹狀結構已存在</value>
@@ -1322,6 +1343,9 @@
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>參考別名選項無效: '{0}=' -- 遺漏檔案名稱</value>
   </data>
+  <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
+    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+  </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
     <value>無法以傳址方式傳回唯讀欄位 '{0}' 的成員</value>
   </data>
@@ -1347,7 +1371,7 @@
     <value>Windows 執行階段事件不可以 out 或 ref 參數形式傳遞。</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>類型 '{0}' 的執行個體不可用於匿名函式、查詢運算式、Iterator 區塊或非同步方法中。</value>
+    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>'{0}' 未實作介面成員 '{1}'。'{2}' 無法實作 '{1}'，因為其沒有符合的傳回類型 '{3}'。</value>
@@ -1828,7 +1852,7 @@
     <value>遞增或遞減運算子的運算元必須是變數、屬性或索引子。</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>發出可攜式 PDB 時才支援 /embed 參數 (/debug:portable 或 /debug:embedded)。</value>
+    <value>/embed switch is only supported when emitting a PDB.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>'{0}' 不可同時為外部與抽象</value>
@@ -3111,8 +3135,8 @@
   <data name="ERR_AmbigMember" xml:space="preserve">
     <value>'{0}' 與 '{1}' 之間模稜兩可</value>
   </data>
-  <data name="ERR_PartialMethodOnlyMethods" xml:space="preserve">
-    <value>只有方法、類別、結構或介面可以是 partial</value>
+  <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
+    <value>Local function is declared but never used</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>命令列語法錯誤: 遺漏選項 '{1}' 的 Guid</value>
@@ -3191,143 +3215,146 @@
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# 編譯器選項
+                              Visual C# Compiler Options
 
-                        - 輸出檔案 -
- /out:&lt;檔案&gt;                   指定輸出檔案名稱 (預設: 具有主要類別的檔案或
-                               第一個檔案的基底名稱)
- /target:exe                   建置主控台可執行檔 (預設) (簡短 
-                               形式: /t:exe)
- /target:winexe                建置 Windows 可執行檔 (簡短形式: 
+                        - OUTPUT FILES -
+ /out:&lt;file&gt;                   Specify output file name (default: base name of
+                               file with main class or first file)
+ /target:exe                   Build a console executable (default) (Short
+                               form: /t:exe)
+ /target:winexe                Build a Windows executable (Short form:
                                /t:winexe)
- /target:library               建置程式庫 (簡短形式: /t:library)
- /target:module                建置可加入其他組件中的 
-                               模組 (簡短形式: /t:module)
- /target:appcontainerexe       建置 Appcontainer 可執行檔 (簡短形式: 
+ /target:library               Build a library (Short form: /t:library)
+ /target:module                Build a module that can be added to another
+                               assembly (Short form: /t:module)
+ /target:appcontainerexe       Build an Appcontainer executable (Short form:
                                /t:appcontainerexe)
- /target:winmdobj              建置 WinMDExp 所使用的 
-                               Windows 執行階段中繼檔案 (簡短模式: /t:winmdobj)
- /doc:&lt;檔案&gt;                   要產生的 XML 文件檔案
- /refout:&lt;file&gt;                要產生的參考組件輸出
- /platform:&lt;字串&gt;            限制此程式碼可以在哪些平台上執行: x86、
-                               Itanium、x64、arm、anycpu32bitpreferred 或 
-                               anycpu。預設為 anycpu。
+ /target:winmdobj              Build a Windows Runtime intermediate file that
+                               is consumed by WinMDExp (Short form: /t:winmdobj)
+ /doc:&lt;file&gt;                   XML Documentation file to generate
+ /refout:&lt;file&gt;                Reference assembly output to generate
+ /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
+                               Itanium, x64, arm, anycpu32bitpreferred, or
+                               anycpu. The default is anycpu.
 
-                        - 輸入檔案 -
- /recurse:&lt;萬用字元&gt;           依據指定的萬用字元，包含
-                               目前目錄與子目錄中的所有
-                               檔案
- /reference:&lt;別名&gt;=&lt;檔案&gt;     使用指定的別名，參考指定組件檔
-                               的中繼資料 (簡短形式: /r)
- /reference:&lt;檔案清單&gt;        參考指定組件檔的中繼資料
-                               檔案 (簡短形式: /r)
- /addmodule:&lt;檔案清單&gt;        將指定的模組連結至這個組件
- /link:&lt;檔案清單&gt;             從指定的 Interop 組件檔內嵌
-                               中繼資料 (簡短形式: /l)
- /analyzer:&lt;檔案清單&gt;         從此組件執行分析器
-                               (簡短形式: /a)
- /additionalfile:&lt;檔案清單&gt;   不會直接影響程式碼產生，
-                               但分析器可用以產生錯誤或警告的
-                               其他檔案。
- /embed                        內嵌 PDB 中的所有來源檔案。
- /embed:&lt;檔案清單&gt;            內嵌 PDB 中的特定檔案
+                        - INPUT FILES -
+ /recurse:&lt;wildcard&gt;           Include all files in the current directory and
+                               subdirectories according to the wildcard
+                               specifications
+ /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
+                               file using the given alias (Short form: /r)
+ /reference:&lt;file list&gt;        Reference metadata from the specified assembly
+                               files (Short form: /r)
+ /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
+ /link:&lt;file list&gt;             Embed metadata from the specified interop
+                               assembly files (Short form: /l)
+ /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
+                               (Short form: /a)
+ /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
+                               generation but may be used by analyzers for producing
+                               errors or warnings.
+ /embed                        Embed all source files in the PDB.
+ /embed:&lt;file list&gt;            Embed specific files in the PDB
 
-                        - 資源 -
- /win32res:&lt;檔案&gt;              指定 Win32 資源檔 (.res)
- /win32icon:&lt;檔案&gt;             將此圖示提供輸出使用
- /win32manifest:&lt;檔案&gt;         指定 Win32 資訊清單檔案 (.xml)
- /nowin32manifest              不包含預設 Win32 資訊清單
- /resource:&lt;resinfo&gt;           內嵌指定的資源 (簡短形式: /res)
- /linkresource:&lt;resinfo&gt;       將指定的資源連結至這個組件 
-                               (簡短形式: /linkres) 其中 resinfo 的格式 
-                               為 &lt;檔案&gt;[,&lt;字串名稱&gt;[,公開|私人]]
+                        - RESOURCES -
+ /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
+ /win32icon:&lt;file&gt;             Use this icon for the output
+ /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
+ /nowin32manifest              Do not include the default Win32 manifest
+ /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
+ /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
+                               (Short form: /linkres) Where the resinfo format
+                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
 
-                        - 產生程式碼 -
- /debug[+|-]                   發出偵錯資訊
+                        - CODE GENERATION -
+ /debug[+|-]                   Emit debugging information
  /debug:{full|pdbonly|portable|embedded}
-                               指定偵錯類型 ('full' 為預設，
-                               'portable' 為跨平台格式，
-                               'embedded' 為內嵌 target .dll 或 .exe 中的
-                               跨平台格式)
- /optimize[+|-]                啟用最佳化 (簡短形式: /o)
- /deterministic                產生確定性組件
-                               (包括模組版本 GUID 與時間戳記)
- /refonly                      產生參考組件取代主要輸出
- /instrument:TestCoverage      產生已檢測的組件以收集
-                               涵蓋範圍資訊
- /sourcelink:&lt;檔案&gt;            要內嵌可攜式 PDB 中的來源連結。
+                               Specify debugging type ('full' is default,
+                               'portable' is a cross-platform format,
+                               'embedded' is a cross-platform format embedded into
+                               the target .dll or .exe)
+ /optimize[+|-]                Enable optimizations (Short form: /o)
+ /deterministic                Produce a deterministic assembly
+                               (including module version GUID and timestamp)
+ /refonly                      Produce a reference assembly in place of the main output
+ /instrument:TestCoverage      Produce an assembly instrumented to collect
+                               coverage information
+ /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
 
-                        - 錯誤及警告 -
- /warnaserror[+|-]             將所有警告回報為錯誤
- /warnaserror[+|-]:&lt;警告清單&gt; 將特定警告回報為錯誤
- /warn:&lt;n&gt;                     設定警告層級 (0-4) (簡短形式: /w)
- /nowarn:&lt;警告清單&gt;           停用特定的警告訊息
- /ruleset:&lt;檔案&gt;               指定可停用特定診斷的
-                               規則集檔案。
- /errorlog:&lt;檔案&gt;              指定要記錄所有編譯器和分析器診斷的
-                               檔案。
- /reportanalyzer               回報其他分析器資訊，例如
-                               執行時間。
- 
-                        - 語言 -
- /checked[+|-]                 產生溢位核對
- /unsafe[+|-]                  允許 'unsafe' 程式碼
- /define:&lt;符號清單&gt;         定義條件式編譯符號 (簡短 
-                               形式: /d)
- /langversion:&lt;字串&gt;         指定語言版本模式: ISO-1、ISO-2、3、
-                               4、5、6、7、7.1、預設或最新
+                        - ERRORS AND WARNINGS -
+ /warnaserror[+|-]             Report all warnings as errors
+ /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
+ /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
+ /nowarn:&lt;warn list&gt;           Disable specific warning messages
+ /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
+                               diagnostics.
+ /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
+                               diagnostics.
+ /reportanalyzer               Report additional analyzer information, such as
+                               execution time.
 
-                        - 安全性 -
- /delaysign[+|-]               只使用強式名稱金鑰的公開部分
-                               延遲簽署組件
- /publicsign[+|-]              只使用強式名稱金鑰的公開
-                               部分公開簽署組件
- /keyfile:&lt;檔案&gt;               指定強式名稱金鑰檔
- /keycontainer:&lt;字串&gt;        指定強式名稱金鑰容器
- /highentropyva[+|-]           啟用高度 Entropy ASLR
+                        - LANGUAGE -
+ /checked[+|-]                 Generate overflow checks
+ /unsafe[+|-]                  Allow 'unsafe' code
+ /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
+                               form: /d)
+ /langversion:?                Display the allowed values for language version
+ /langversion:&lt;string&gt;         Specify language version such as
+                               `default` (latest major version), or
+                               `latest` (latest version, including minor versions),
+                               or specific versions like `6` or `7.1`
 
-                        - 其他 -
- @&lt;檔案&gt;                       讀取回應檔以取得更多選項
- /help                         顯示本使用方式訊息 (簡短形式: /?)
- /nologo                       隱藏編譯器著作權訊息
- /noconfig                     不要自動包含 CSC.RSP 檔案
- /parallel[+|-]                並行建置。
- /version                      顯示編譯器版本號碼並結束。
+                        - SECURITY -
+ /delaysign[+|-]               Delay-sign the assembly using only the public
+                               portion of the strong name key
+ /publicsign[+|-]              Public-sign the assembly using only the public
+                               portion of the strong name key
+ /keyfile:&lt;file&gt;               Specify a strong name key file
+ /keycontainer:&lt;string&gt;        Specify a strong name key container
+ /highentropyva[+|-]           Enable high-entropy ASLR
 
-                        - 進階 -
- /baseaddress:&lt;位址&gt;        要建置的程式庫基底位址
- /checksumalgorithm:&lt;alg&gt;      為計算儲存在 PDB 中的原始程式檔總和檢查碼
-                               指定演算法。支援的值為:
-                               SHA1 (預設) 或 SHA256。
- /codepage:&lt;n&gt;                 指定開啟原始程式檔時要使用的
-                               字碼頁
- /utf8output                   以 UTF-8 編碼方式輸出編譯器訊息
- /main:&lt;類型&gt;                  指定包含進入點
-                               (忽略所有其他可能的進入點) 的類型 (簡短 
-                               形式: /m)
- /fullpaths                    編譯器產生完整路徑
- /filealign:&lt;n&gt;                指定用於輸出檔案區段的
-                               對齊
+                        - MISCELLANEOUS -
+ @&lt;file&gt;                       Read response file for more options
+ /help                         Display this usage message (Short form: /?)
+ /nologo                       Suppress compiler copyright message
+ /noconfig                     Do not auto include CSC.RSP file
+ /parallel[+|-]                Concurrent build.
+ /version                      Display the compiler version number and exit.
+
+                        - ADVANCED -
+ /baseaddress:&lt;address&gt;        Base address for the library to be built
+ /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
+                               checksum stored in PDB. Supported values are:
+                               SHA1 (default) or SHA256.
+ /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
+                               files
+ /utf8output                   Output compiler messages in UTF-8 encoding
+ /main:&lt;type&gt;                  Specify the type that contains the entry point
+                               (ignore all other possible entry points) (Short
+                               form: /m)
+ /fullpaths                    Compiler generates fully qualified paths
+ /filealign:&lt;n&gt;                Specify the alignment used for output file
+                               sections
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               為編譯器輸出的來源路徑名稱
-                               指定對應。
- /pdb:&lt;檔案&gt;                   指定偵錯資訊檔案名稱 (預設: 
-                               副檔名為 .pdb 的輸出檔案名稱)
- /errorendlocation             輸出每個錯誤之結束位置的
-                               行與欄
- /preferreduilang              指定慣用的輸出語言名稱。
- /nostdlib[+|-]                不要參考標準程式庫 (mscorlib.dll)
- /subsystemversion:&lt;字串&gt;    指定這個組件的子系統版本
- /lib:&lt;檔案清單&gt;              指定要搜尋的其他目錄以供
-                               參考
- /errorreport:&lt;字串&gt;         指定如何處理內部編譯器錯誤: 
-                               prompt、send、queue 或 none。預設為 
-                               queue。
- /appconfig:&lt;檔案&gt;             指定包含組件繫結設定的
-                               應用程式設定檔
- /moduleassemblyname:&lt;字串&gt;  組件名稱，其中將包含
-                               此模組
- /modulename:&lt;字串&gt;          指定來源模組的名稱
+                               Specify a mapping for source path names output by
+                               the compiler.
+ /pdb:&lt;file&gt;                   Specify debug information file name (default:
+                               output file name with .pdb extension)
+ /errorendlocation             Output line and column of the end location of
+                               each error
+ /preferreduilang              Specify the preferred output language name.
+ /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
+ /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
+ /lib:&lt;file list&gt;              Specify additional directories to search in for
+                               references
+ /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
+                               prompt, send, queue, or none. The default is
+                               queue.
+ /appconfig:&lt;file&gt;             Specify an application configuration file
+                               containing assembly binding settings
+ /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
+                               a part of
+ /modulename:&lt;string&gt;          Specify the name of the source module
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3637,7 +3664,7 @@
     <value>無法套用 CallerMemberNameAttribute，因為沒有從類型 '{0}' 標準轉換成類型 '{1}'。</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>無法以傳址方式傳回參數 '{0}' 的成員，因為其非 ref 或 out 參數</value>
+    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(與之前錯誤相關符號的位置)</value>
@@ -3682,7 +3709,7 @@
     <value>無法以傳址方式 '{0}' 傳回參數，因為其非 ref 或 out 參數</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>無法明確宣告在命名空間中定義的項目為 private、protected 或 protected internal</value>
+    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>只有在建置 'module' 的目標類型時，才可指定 /moduleassemblyname 選項。</value>
@@ -3851,6 +3878,9 @@
   </data>
   <data name="WRN_EqualityOpWithoutGetHashCode" xml:space="preserve">
     <value>'{0}' 定義了運算子 == 或運算子 !=，但不會覆寫 Object.GetHashCode()。</value>
+  </data>
+  <data name="IDS_LangVersions" xml:space="preserve">
+    <value>Supported language versions:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>二元運算子的一個參數必須為包含類型</value>
@@ -4315,7 +4345,7 @@
     <value>類型參數 '{1}' 有 'struct' 條件約束，因此 '{1}' 不可做為 '{0}' 的條件約束。</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>未定義或匯入預先定義的類型 '{0}'</value>
+    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>類型引數不可為 null</value>
@@ -4480,7 +4510,7 @@
     <value>引數 {0}: 無法從 '{1}' 轉換成 '{2}'</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>具名引數規格必須出現在所有已指定的固定引數之後</value>
+    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>方法 '{1}' 之類型參數 '{0}' 的條件約束，必須符合介面方法 '{3}' 之類型參數 '{2}' 的條件約束。請考慮改用明確的介面實作。</value>
@@ -5060,6 +5090,9 @@
   </data>
   <data name="IDS_FeatureExpressionBodiedIndexer" xml:space="preserve">
     <value>運算式主體索引子</value>
+  </data>
+  <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
+    <value>'{0}' is a local function and must therefore always have a body.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>'{0}': 無法衍生自動態類型</value>

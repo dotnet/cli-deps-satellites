@@ -178,6 +178,9 @@
   <data name="Class1" xml:space="preserve">
     <value>class</value>
   </data>
+  <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
+    <value>Embedded texts are only supported when emitting a PDB.</value>
+  </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Derleme meta verileri oluşturmak için modül kopyası kullanılamaz.</value>
   </data>
@@ -497,9 +500,6 @@
   </data>
   <data name="TupleElementNameEmpty" xml:space="preserve">
     <value>Demet öğesi adı boş bir dize olamaz.</value>
-  </data>
-  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
-    <value>Gömülü metinler yalnızca Taşınabilir PDB gösterilirken desteklenir.</value>
   </data>
   <data name="InvalidOutputKindForSubmission" xml:space="preserve">
     <value>Gönderim için geçersiz çıkış türü. DynamicallyLinkedLibrary bekleniyor.</value>

@@ -178,6 +178,9 @@
   <data name="Class1" xml:space="preserve">
     <value>classe</value>
   </data>
+  <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
+    <value>Embedded texts are only supported when emitting a PDB.</value>
+  </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Impossible d'utiliser le module de copie pour créer des métadonnées d'assembly.</value>
   </data>
@@ -497,9 +500,6 @@
   </data>
   <data name="TupleElementNameEmpty" xml:space="preserve">
     <value>Le nom d'élément tuple ne peut pas être une chaîne vide.</value>
-  </data>
-  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
-    <value>Les textes incorporés sont uniquement pris en charge durant l'émission d'un fichier PDB portable.</value>
   </data>
   <data name="InvalidOutputKindForSubmission" xml:space="preserve">
     <value>Type de sortie non valide pour la soumission. DynamicallyLinkedLibrary attendu.</value>

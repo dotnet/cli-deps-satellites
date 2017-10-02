@@ -178,6 +178,9 @@
   <data name="Class1" xml:space="preserve">
     <value>Klasse</value>
   </data>
+  <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
+    <value>Embedded texts are only supported when emitting a PDB.</value>
+  </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Modulkopie kann nicht zum Erstellen von Assembly-Metadaten verwendet werden.</value>
   </data>
@@ -497,9 +500,6 @@
   </data>
   <data name="TupleElementNameEmpty" xml:space="preserve">
     <value>Ein Tupelelement darf kein leerer String sein.</value>
-  </data>
-  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
-    <value>Eingebettete Texte werden nur unterstützt, wenn portable PDB-Dateien ausgegeben werden.</value>
   </data>
   <data name="InvalidOutputKindForSubmission" xml:space="preserve">
     <value>Die Übermittlung weist einen ungültigen Ausgabetyp auf. DynamicallyLinkedLibrary erwartet.</value>

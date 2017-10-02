@@ -178,6 +178,9 @@
   <data name="Class1" xml:space="preserve">
     <value>klasa</value>
   </data>
+  <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
+    <value>Embedded texts are only supported when emitting a PDB.</value>
+  </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Nie można użyć kopii modułu do utworzenia metadanych zestawu.</value>
   </data>
@@ -497,9 +500,6 @@
   </data>
   <data name="TupleElementNameEmpty" xml:space="preserve">
     <value>Nazwa elementu krotki nie może być pustym ciągiem.</value>
-  </data>
-  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
-    <value>Osadzony tekst jest obsługiwany tylko w przypadku emitowania przenośnego pliku PDB.</value>
   </data>
   <data name="InvalidOutputKindForSubmission" xml:space="preserve">
     <value>Nieprawidłowy rodzaj wyjścia przesłanego elementu. Oczekiwano elementu DynamicallyLinkedLibrary.</value>

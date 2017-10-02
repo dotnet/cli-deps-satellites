@@ -380,6 +380,9 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   <data name="WRN_CLS_NoAbstractMembers_Title" xml:space="preserve">
     <value>Nur CLS-kompatible Elemente können abstrakt sein</value>
   </data>
+  <data name="IDS_FeaturePrivateProtected" xml:space="preserve">
+    <value>private protected</value>
+  </data>
   <data name="ERR_ConflictingMachineModule" xml:space="preserve">
     <value>Die Assembly und das Modul "{0}" können nicht verschiedene Zielprozessoren haben.</value>
   </data>
@@ -468,7 +471,7 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>"{0}" implementiert das Muster "{1}" nicht. "{2}" ist mit "{3}" nicht eindeutig.</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Ungültige Option "{0}" für "/langversion". Zulässige Optionen sind "ISO-1", "ISO-2", "Default", "Latest" oder eine gültige Version zwischen 1 und 7.1.</value>
+    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>Ein aliasqualifizierter Name ist kein Ausdruck.</value>
@@ -713,6 +716,9 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   <data name="ERR_FloatOverflow" xml:space="preserve">
     <value>Die Gleitkommakonstante liegt außerhalb des Bereichs von Typ "{0}".</value>
   </data>
+  <data name="ERR_InvalidDebugInfo" xml:space="preserve">
+    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+  </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>Debuginformationen für einen Quelltext können nur codiert ausgegeben werden.</value>
   </data>
@@ -733,6 +739,9 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   </data>
   <data name="XML_EndTagExpected" xml:space="preserve">
     <value>Eine Endkennung für Element "{0}" wurde erwartet.</value>
+  </data>
+  <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
+    <value>leading digit separator</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Typargumente sind im nameof-Operator unzulässig.</value>
@@ -872,11 +881,14 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   <data name="ERR_GenericsUsedAcrossAssemblies" xml:space="preserve">
     <value>Der Typ "{0}" aus der Assembly "{1}" kann nichtüber Assemblygrenzen hinweg verwendet werden, da er ein generisches Typargument besitzt, bei dem es sich um einen eingebetteten Interoptyp handelt.</value>
   </data>
+  <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
+    <value>The local function '{0}' is declared but never used</value>
+  </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>Der as-Operator muss mit einem Referenztyp oder einem Typ, der NULL-Werte zulässt, verwendet werden. ("{0}" ist ein Werttyp, der keine NULL-Werte zulässt.)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>Die abstrakte Methode "{0}" kann nicht als virtuell markiert werden.</value>
+    <value>The abstract {0} '{1}' cannot be marked virtual</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>"{0}": Statische Klassen können keine benutzerdefinierten Operatoren enthalten.</value>
@@ -1028,6 +1040,9 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   <data name="WRN_FilterIsConstant" xml:space="preserve">
     <value>Der Filterausdruck ist eine Konstante. Sie sollte den Filter entfernen.</value>
   </data>
+  <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
+    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+  </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>Das Feature "{0}" ist in C# 7.1 nicht verfügbar. Verwenden Sie die Sprachversion {1} oder höher.</value>
   </data>
@@ -1109,6 +1124,9 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
   <data name="WRN_NewNotRequired" xml:space="preserve">
     <value>Das Mitglied "{0}" blendet kein verfügbares Mitglied aus. Das neue Schlüsselwort ist nicht erforderlich.</value>
   </data>
+  <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
+    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+  </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>Eine Zahl, die an die Präprozessordirektive der #pragma-Warnung übergeben wurde, war keine gültige Warnungszahl. Vergewissern Sie sich, dass die Zahl eine Warnung und keinen Fehler darstellt.</value>
   </data>
@@ -1126,6 +1144,9 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
   </data>
   <data name="ERR_ReferenceDirectiveOnlyAllowedInScripts" xml:space="preserve">
     <value>#r ist nur in Skripts zulässig.</value>
+  </data>
+  <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
+    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>Der Syntaxbaum ist bereits vorhanden.</value>
@@ -1322,6 +1343,9 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>Ungültige Verweisaliasoption: "{0}=". Fehlender Dateiname.</value>
   </data>
+  <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
+    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+  </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
     <value>Member des schreibgeschützten Felds "{0}" können nicht als Verweis zurückgegeben werden.</value>
   </data>
@@ -1347,7 +1371,7 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
     <value>Ein Windows-Runtime-Ereignis darf nicht als out- oder ref-Parameter übergeben werden.</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Eine Instanz des Typs "{0}" kann nicht in einer anonymen Funktion, einem Abfrageausdruck, einem Iteratorblock oder einer Async-Methode verwendet werden.</value>
+    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>"{0}" implementiert den Schnittstellenmember "{1}" nicht. "{2}" hat nicht den entsprechenden Rückgabetyp "{3}" und kann "{1}" daher nicht implementieren.</value>
@@ -1828,7 +1852,7 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
     <value>Der Operand eines Inkrement- oder Dekrementoperators muss eine Variable, eine Eigenschaft oder ein Indexer sein.</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>Der Schalter "/embed" wird nur unterstützt, wenn portable PDB-Dateien ausgegeben werden ("/debug:portable" oder "/debug:embedded").</value>
+    <value>/embed switch is only supported when emitting a PDB.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>"{0}" kann nicht gleichzeitig extern und abstrakt sein.</value>
@@ -3111,8 +3135,8 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   <data name="ERR_AmbigMember" xml:space="preserve">
     <value>Mehrdeutigkeit zwischen "{0}" und "{1}"</value>
   </data>
-  <data name="ERR_PartialMethodOnlyMethods" xml:space="preserve">
-    <value>Nur Methoden, Klassen, Strukturen oder Schnittstellen können partiell sein.</value>
+  <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
+    <value>Local function is declared but never used</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>Befehlszeilen-Syntaxfehler: Fehlende GUID für Option "{1}".</value>
@@ -3191,143 +3215,146 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C#-Compileroptionen 
+                              Visual C# Compiler Options
 
-                        - AUSGABEDATEIEN -
- /out:&lt; Datei &gt;                   Gibt den Namen der Ausgabedatei an (Standardeinstellung: Basisname der
-                               Datei mit der Hauptklasse oder der ersten Datei)
- /target:exe                   Erstellt eine ausführbare Konsolendatei (Standardeinstellung) (Kurzform:
+                        - OUTPUT FILES -
+ /out:&lt;file&gt;                   Specify output file name (default: base name of
+                               file with main class or first file)
+ /target:exe                   Build a console executable (default) (Short
                                form: /t:exe)
- /target:winexe                winexe                Erstellt eine ausführbare Windows-Datei (Kurzform:
+ /target:winexe                Build a Windows executable (Short form:
                                /t:winexe)
- /target:library               Erstellt eine Bibliothek (Kurzform: /t:library)
- /target:module                Erstellt ein Modul, das einer anderen Assembly
-                               hinzugefügt werden kann (Kurzform: /t:module)
- /target:appcontainerexe       Erstellt eine ausführbare App-Containerdatei (Kurzform:
+ /target:library               Build a library (Short form: /t:library)
+ /target:module                Build a module that can be added to another
+                               assembly (Short form: /t:module)
+ /target:appcontainerexe       Build an Appcontainer executable (Short form:
                                /t:appcontainerexe)
- /target:winmdobj              Erstellt eine temporäre Windows-Runtime-Zwischendatei, die
-                               von WinMDExp verwendet wird (Kurzform: /t:winmdobj)
- /doc:&lt; Datei &gt;                   Die zu generierende XML-Dokumentationsdatei
- /refout:&lt;Datei&gt;                Die zu generierende Referenzverweisausgabe
- /platform:&lt; Zeichenfolge &gt;            Schränkt ein, auf welchen Plattformen dieser Code ausgeführt werden kann: x86,
-                               Itanium, x64, arm, anycpu32bitpreferred oder
-                               anycpu. Die Standardeinstellung ist "anycpu".
+ /target:winmdobj              Build a Windows Runtime intermediate file that
+                               is consumed by WinMDExp (Short form: /t:winmdobj)
+ /doc:&lt;file&gt;                   XML Documentation file to generate
+ /refout:&lt;file&gt;                Reference assembly output to generate
+ /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
+                               Itanium, x64, arm, anycpu32bitpreferred, or
+                               anycpu. The default is anycpu.
 
-                        - EINGABEDATEIEN -
- /recurse:&lt; Platzhalter &gt;           Schließt alle Dateien im aktuellen Verzeichnis und
-                               in Unterverzeichnissen gemäß Platzhalter-
-                               spezifikationen ein 
- /reference:&lt;Alias&gt;=&lt;Datei&gt;     Verweist auf Metadaten aus der angegebenen Assembly-
-                               datei mithilfe eines angegebenen Alias (Kurzform: /r)
- /reference:&lt;Dateiliste&gt;        Verweist aus Metadaten der angegebenen Assembly-
-                               dateien (Kurzform: /r)
- /addmodule:&lt;Dateiliste&gt;        Verknüpft die angegebenen Module in dieser Assembly.
- /link:&lt;Dateiliste&gt;             Bettet Metadaten der angegebenen Interop-
-                               assemblydateien ein (Kurzform: /l)
- /analyzer:&lt; Dateiliste &gt;         Führt die Analyse aus dieser Assembly aus.
-                               (Kurzform: /a)
- /additionalfile:&lt; Dateiliste &gt;   Zusätzliche Dateien, die sich nicht direkt auf die Code-
-                               generierung auswirken, aber von der Analyse zum Erzeugen von
-                               Fehlern oder Warnungen verwendet werden können.
- /embed                        Bettet alle Quelldateien in die PDB-Datei ein.
- /embed:&lt;Dateiliste&gt;            Bettet bestimmte Dateien in die PDB-Datei ein.
+                        - INPUT FILES -
+ /recurse:&lt;wildcard&gt;           Include all files in the current directory and
+                               subdirectories according to the wildcard
+                               specifications
+ /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
+                               file using the given alias (Short form: /r)
+ /reference:&lt;file list&gt;        Reference metadata from the specified assembly
+                               files (Short form: /r)
+ /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
+ /link:&lt;file list&gt;             Embed metadata from the specified interop
+                               assembly files (Short form: /l)
+ /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
+                               (Short form: /a)
+ /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
+                               generation but may be used by analyzers for producing
+                               errors or warnings.
+ /embed                        Embed all source files in the PDB.
+ /embed:&lt;file list&gt;            Embed specific files in the PDB
 
-                        - RESSOURCEN -
- /win32res:&lt;Datei&gt;              Gibt eine Win32-Ressourcendatei (RES-Datei) an.
- /win32icon:&lt;Datei&gt;             Verwendet dieses Symbol für die Ausgabe.
- /win32manifest:&lt;Datei&gt;         Gibt eine Win32-Manifestdatei (XML-Datei) an.
- /nowin32manifest              Schließt das Win32-Standardmanifest nicht ein.
- /resource:&lt;resinfo&gt;           Bettet die angegebene Ressource ein (Kurzform: /res)
- /linkresource:&lt;resinfo&gt;       Verknüpft die angegebene Ressource mit dieser Assembly
-                               (Kurzform: /linkres). Dabei ist das ResInfo-Format
-                               &lt;Datei&gt;[,&lt;Zeichenfolgenname&gt;[,public|private]]
+                        - RESOURCES -
+ /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
+ /win32icon:&lt;file&gt;             Use this icon for the output
+ /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
+ /nowin32manifest              Do not include the default Win32 manifest
+ /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
+ /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
+                               (Short form: /linkres) Where the resinfo format
+                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
 
-                        - CODEGENERIERUNG -
- /debug[+|-]                   Gibt Debuginformationen aus 
+                        - CODE GENERATION -
+ /debug[+|-]                   Emit debugging information
  /debug:{full|pdbonly|portable|embedded}
-                               Gibt den Debugtyp an ("full" ist der Standardwert,
-                               "portable" ist ein plattformübergreifendes Format,
-                               "embedded" ist ein plattformübergreifendes Format, das in die
-                               Ziel-DLL oder -EXE eingebettet ist).
- /optimize[+|-]                Aktiviert Optimierungen (Kurzform: /o)
- /deterministic                Generiert eine deterministische Assembly 
-                               (einschließlich Modulversion-GUID und Zeitstempel)
- /refonly                      Erstellt eine Referenzassembly anstelle der Hauptausgabe.
- /instrument:TestCoverage      Generiert eine Assembly, die für die
-                               Erfassung von Code Coverage-Informationen instrumentiert ist.
- /sourcelink:&lt;Datei&gt;            Quelllinkinformationen zum Einbetten in portable PDB-Dateien.
+                               Specify debugging type ('full' is default,
+                               'portable' is a cross-platform format,
+                               'embedded' is a cross-platform format embedded into
+                               the target .dll or .exe)
+ /optimize[+|-]                Enable optimizations (Short form: /o)
+ /deterministic                Produce a deterministic assembly
+                               (including module version GUID and timestamp)
+ /refonly                      Produce a reference assembly in place of the main output
+ /instrument:TestCoverage      Produce an assembly instrumented to collect
+                               coverage information
+ /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
 
-                        - FEHLER UND WARNUNGEN -
- /warnaserror[+|-]             Meldet alle Warnungen als Fehler.
- /warnaserror[+|-]:&lt;Warnungsliste&gt; Meldet bestimmte Warnungen als Fehler.
- /warn:&lt;n&gt;                     Legt die Warnstufe fest (0–4) (Kurzform: /w)
- /nowarn:&lt; Warnungsliste &gt;           Deaktiviert bestimmte Warnmeldungen.
- /ruleset:&lt;Datei&gt;               Gibt eine Rulesetdatei an, die bestimmte Diagnosevorgänge
-                               deaktiviert.
- /errorlog:&lt;Datei&gt;              Gibt eine Datei zur Protokollierung aller Diagnosevorgänge von Compiler und
-                               Analyzer an.
- /reportanalyzer               Berichtet zusätzliche Analyseinformationen wie etwa die
-                               Ausführungszeit.
+                        - ERRORS AND WARNINGS -
+ /warnaserror[+|-]             Report all warnings as errors
+ /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
+ /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
+ /nowarn:&lt;warn list&gt;           Disable specific warning messages
+ /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
+                               diagnostics.
+ /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
+                               diagnostics.
+ /reportanalyzer               Report additional analyzer information, such as
+                               execution time.
 
-                        - SPRACHE -
- /checked[+|-]                 Generiert Überlaufüberprüfungen
- /unsafe[+|-]                  Lässt "unsicheren" Code zu.
- /define:&lt;Symbolliste&gt;         Definiert bedingte Kompilationssymbole (Kurz-
+                        - LANGUAGE -
+ /checked[+|-]                 Generate overflow checks
+ /unsafe[+|-]                  Allow 'unsafe' code
+ /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
                                form: /d)
- /langversion:&lt;Zeichenfolge&gt;         Gibt den Sprachversionsmodus an: ISO-1, ISO-2, 3,
-                               4, 5, 6, 7, 7.1, Standard oder Aktuell
+ /langversion:?                Display the allowed values for language version
+ /langversion:&lt;string&gt;         Specify language version such as
+                               `default` (latest major version), or
+                               `latest` (latest version, including minor versions),
+                               or specific versions like `6` or `7.1`
 
-                        - SICHERHEIT -
- /delaysign[+|-]               Signiert die Assembly verzögert nur mit dem öffentlichen
-                               Teil des starken Namensschlüssels.
- /publicsign[+|-]              Signiert die Assembly öffentlich nur mit dem öffentlichen
-                               Teil des starken Namensschlüssels.
- /keyfile:&lt;Datei&gt;               Gibt eine Datei für den starken Namensschlüssel an.
- /keycontainer:&lt;Zeichenfolge&gt;        Gibt einen Container für den starken Namensschlüssel an.
- /highentropyva[+|-]           Aktiviert ASLR mit hoher Entropie.
+                        - SECURITY -
+ /delaysign[+|-]               Delay-sign the assembly using only the public
+                               portion of the strong name key
+ /publicsign[+|-]              Public-sign the assembly using only the public
+                               portion of the strong name key
+ /keyfile:&lt;file&gt;               Specify a strong name key file
+ /keycontainer:&lt;string&gt;        Specify a strong name key container
+ /highentropyva[+|-]           Enable high-entropy ASLR
 
-                        - VERSCHIEDENES -
- @&lt;Datei&gt;                       Weitere Optionen finden Sie in der Antwortdatei.
- /help                         Zeigt diese Syntaxmeldung an (Kurzform: /?)
- /nologo                       Unterdrückt die Copyrightmeldung des Compilers.
- /noconfig                     Schließt die CSC.RSP-Datei nicht automatisch ein.
- /parallel[+|-]                Gleichzeitige Erstellung.
- /version                      Zeigt die Compilerversionsnummer und die Beendigung an.
+                        - MISCELLANEOUS -
+ @&lt;file&gt;                       Read response file for more options
+ /help                         Display this usage message (Short form: /?)
+ /nologo                       Suppress compiler copyright message
+ /noconfig                     Do not auto include CSC.RSP file
+ /parallel[+|-]                Concurrent build.
+ /version                      Display the compiler version number and exit.
 
-                        - ERWEITERT -
- /baseaddress:&lt;Adresse&gt;        Die Basisadresse für die zu erstellende Bibliothek.
- /checksumalgorithm:&lt;alg&gt;      Gibt einen Algorithmus für das Berechnen der Quelldatei-
-                               prüfsumme an, die in der PDB-Datei gespeichert ist. Unterstützte Werte sind:
-                               SHA1 (Standard) oder SHA256.
- /codepage:&lt;n&gt;                 Gibt die beim Öffnen von Quelldateien zu verwendende
-                               Codepage an.
- /utf8output                   Ausgabecompilermeldungen in UTF-8-Codierung
- /main:&lt;Typ&gt;                  Gibt den Typ an, der den Einstiegspunkt enthält
-                               (alle anderen möglichen Einstiegspunkte werden ignoriert) (Kurz-
+                        - ADVANCED -
+ /baseaddress:&lt;address&gt;        Base address for the library to be built
+ /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
+                               checksum stored in PDB. Supported values are:
+                               SHA1 (default) or SHA256.
+ /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
+                               files
+ /utf8output                   Output compiler messages in UTF-8 encoding
+ /main:&lt;type&gt;                  Specify the type that contains the entry point
+                               (ignore all other possible entry points) (Short
                                form: /m)
- /fullpaths                    Der Compiler generiert vollqualifizierte Pfade.
- /filealign:&lt;n&gt;                Gibt die Ausrichtung an, die für Ausgabedateiabschnitte
-                               verwendet werden soll.
+ /fullpaths                    Compiler generates fully qualified paths
+ /filealign:&lt;n&gt;                Specify the alignment used for output file
+                               sections
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Gibt eine Zuordnung für die Quellpfadnamen an, die vom 
-                               the Compiler ausgegeben werden.
- /pdb:&lt;Datei&gt;                   Gibt den Namen der Debuginformationsdatei an (Standard:
-                               Ausgabedateiname mit der Erweiterung .pdb)
- /errorendlocation             Die Ausgabezeile und -spalte des Endpunkts
-                               jedes Fehlers 
- /preferreduilang              Gibt den bevorzugten Namen der Ausgabesprache an.
+                               Specify a mapping for source path names output by
+                               the compiler.
+ /pdb:&lt;file&gt;                   Specify debug information file name (default:
+                               output file name with .pdb extension)
+ /errorendlocation             Output line and column of the end location of
+                               each error
+ /preferreduilang              Specify the preferred output language name.
  /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
- /subsystemversion:&lt;Zeichenfolge&gt;    Verweist nicht auf die Standardbibliothek 
- /lib:&lt;Dateiliste&gt;              Gibt zusätzliche Verzeichnisse an, in denen nach Verweisen
-                               gesucht werden soll.
- /errorreport:&lt;Zeichenfolge&gt;         Gibt die Verarbeitung interner Compilerfehler an:
-                               "prompt", "send", "queue" oder "none". Der Standardwert ist
-                               "queue".
- /appconfig:&lt;Datei&gt;             Gibt eine Anwendungskonfigurationsdatei
-                               mit Assemblybindungseinstellungen an.
- /moduleassemblyname:&lt;Zeichenfolge&gt;  Der Name der Assembly, zu der dieses Modul
-                               gehören wird .
- /modulename:&lt;Zeichenfolge&gt;          Gibt den Quellmodulnamen an.
+ /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
+ /lib:&lt;file list&gt;              Specify additional directories to search in for
+                               references
+ /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
+                               prompt, send, queue, or none. The default is
+                               queue.
+ /appconfig:&lt;file&gt;             Specify an application configuration file
+                               containing assembly binding settings
+ /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
+                               a part of
+ /modulename:&lt;string&gt;          Specify the name of the source module
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3637,7 +3664,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>CallerMemberNameAttribute kann nicht angewendet werden, da keine Standardkonvertierungen von Typ "{0}" in Typ "{1}" verfügbar sind.</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Ein Member des Parameters "{0}" kann nicht als Verweis zurückgegeben werden, weil es sich nicht um einen ref- oder out-Parameter handelt.</value>
+    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(Position des Symbols für den vorherigen Fehler)</value>
@@ -3682,7 +3709,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Ein Parameter kann nicht als Verweis "{0}" zurückgegeben werden, weil es sich nicht um einen ref- oder out-Parameter handelt.</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Die in einem Namespace definierten Elemente dürfen nicht explizit als "private", "protected" oder "protected internal" deklariert werden.</value>
+    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>Die Option /moduleassemblyname kann nur beim Erstellen des Zieltyps "module" angegeben werden.</value>
@@ -3851,6 +3878,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="WRN_EqualityOpWithoutGetHashCode" xml:space="preserve">
     <value>"{0}" definiert den Operator == oder !=, aber überschreibt Object.GetHashCode() nicht.</value>
+  </data>
+  <data name="IDS_LangVersions" xml:space="preserve">
+    <value>Supported language versions:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>Einer der Parameter eines binären Operators muss der enthaltende Typ sein.</value>
@@ -4315,7 +4345,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Der {1}-Typparameter enthält die Einschränkung "struct". "{1}" kann daher nicht als Einschränkung für "{0}" verwendet werden.</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Der vordefinierte Typ "{0}" ist nicht definiert oder importiert.</value>
+    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>Das Typargument kann nicht NULL sein.</value>
@@ -4480,7 +4510,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Argument "{0}": Konvertierung von "{1}" in "{2}" nicht möglich.</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Die Spezifikationen für benannte Argumente müssen nach Angabe aller festen Argumente angezeigt werden.</value>
+    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>Die Einschränkungen für den "{0}"-Typparameter der "{1}"-Methode müssen mit den Einschränkungen für den "{2}"-Typparameter der "{3}"-Schnittstellenmethode übereinstimmen. Verwenden Sie stattdessen eine explizite Schnittstellenimplementierung.</value>
@@ -5060,6 +5090,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="IDS_FeatureExpressionBodiedIndexer" xml:space="preserve">
     <value>Ausdruckskörperindexer</value>
+  </data>
+  <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
+    <value>'{0}' is a local function and must therefore always have a body.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>"{0}": Keine Ableitung vom dynamischen Typ möglich.</value>

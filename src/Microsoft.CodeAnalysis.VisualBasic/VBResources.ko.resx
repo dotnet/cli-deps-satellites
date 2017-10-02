@@ -447,7 +447,7 @@
     <value>'{0}' 어셈블리 참조가 잘못되어 확인할 수 없습니다.</value>
   </data>
   <data name="ERR_DuplicateAccessCategoryUsed" xml:space="preserve">
-    <value>'Public', 'Private', 'Protected', 'Friend' 또는 'Protected Friend' 중 하나만 지정할 수 있습니다.</value>
+    <value>Only one of 'Public', 'Private', 'Protected', 'Friend', 'Protected Friend', or 'Private Protected' can be specified.</value>
   </data>
   <data name="WRN_LambdaPassedToRemoveHandler_Title" xml:space="preserve">
     <value>이벤트 처리기에서 람다 식이 제거되지 않음</value>
@@ -717,6 +717,9 @@
   <data name="ERR_PropertyNameConflictInMyCollection" xml:space="preserve">
     <value>'{0}'의 이름이 '{1}' 형식을 'My' 그룹에 노출하는 데 사용한 멤버와 같습니다. 형식 또는 형식의 바깥쪽 네임스페이스의 이름을 바꾸세요.</value>
   </data>
+  <data name="ERR_ExpectedNamedArgumentInAttributeList" xml:space="preserve">
+    <value>Named argument expected.</value>
+  </data>
   <data name="ERR_NameNotEvent2" xml:space="preserve">
     <value>'{0}'은(는) '{1}'의 이벤트가 아닙니다.</value>
   </data>
@@ -752,6 +755,9 @@
   </data>
   <data name="ERR_VarianceOutParamDisallowed1" xml:space="preserve">
     <value>'{0}'이(가) 'Out' 형식 매개 변수이므로 '{0}' 형식을 이 컨텍스트에서 사용할 수 없습니다.</value>
+  </data>
+  <data name="ERR_InvalidDebugInfo" xml:space="preserve">
+    <value>Unable to read debug information of method '{0}' (token 0x{1}) from assembly '{2}'</value>
   </data>
   <data name="ERR_DefaultMissingFromProperty2" xml:space="preserve">
     <value>'{0}'과(와) '{1}' 중 하나만 'Default'로 선언되었으므로 서로 오버로드할 수 없습니다.</value>
@@ -946,6 +952,9 @@
   </data>
   <data name="WRN_IfTooManyTypesObjectAssumed" xml:space="preserve">
     <value>두 개 이상의 형식이 가능하므로 공용 형식을 유추할 수 없습니다. 'Object'로 간주합니다.</value>
+  </data>
+  <data name="FEATURE_LeadingDigitSeparator" xml:space="preserve">
+    <value>leading digit separator</value>
   </data>
   <data name="ERR_ExpectedStringLiteral" xml:space="preserve">
     <value>문자열 상수가 필요합니다.</value>
@@ -1446,6 +1455,9 @@
   <data name="ERR_RedimNoSizes" xml:space="preserve">
     <value>'ReDim' 문에는 배열의 각 차원에 대한 새 범위 목록이 괄호 안에 있어야 합니다.</value>
   </data>
+  <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
+    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+  </data>
   <data name="ERR_InvalidAttributeUsageOnAccessor" xml:space="preserve">
     <value>이 선언 형식에서는 '{0}' 특성이 유효하지 않으므로 '{2}'의 '{1}'에 적용할 수 없습니다.</value>
   </data>
@@ -1912,7 +1924,7 @@
     <value>'End Set'은 짝이 되는 'Set' 뒤에 와야 합니다.</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed 스위치는 이식 가능한 PDB를 내보낼 때만 지원됩니다(/debug:portable 또는 /debug:embedded).</value>
+    <value>/embed switch is only supported when emitting a PDB.</value>
   </data>
   <data name="WRN_VarianceDeclarationAmbiguous3" xml:space="preserve">
     <value>'{2}'에 있는 'In' 및 'Out' 매개 변수로 인해 '{0}' 인터페이스가 구현된 다른 인터페이스 '{1}'에 대해 모호합니다.</value>
@@ -2221,6 +2233,9 @@
   </data>
   <data name="ERR_InvInsideInterface" xml:space="preserve">
     <value>인터페이스 본문 안에는 문을 사용할 수 없습니다.</value>
+  </data>
+  <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInLateboundInvocation" xml:space="preserve">
+    <value>Named argument specifications must appear after all fixed arguments have been specified in a late bound invocation.</value>
   </data>
   <data name="ERR_NamedParamNotFound1" xml:space="preserve">
     <value>'{0}'은(는) 메서드 매개 변수가 아닙니다.</value>
@@ -2533,6 +2548,9 @@
   </data>
   <data name="ERR_ContinueWhileNotWithinWhile" xml:space="preserve">
     <value>'Continue While'은 'While' 문 내부에만 사용할 수 있습니다.</value>
+  </data>
+  <data name="FEATURE_PrivateProtected" xml:space="preserve">
+    <value>Private Protected</value>
   </data>
   <data name="ERR_TooManyArgs2" xml:space="preserve">
     <value>'{1}'에 정의된 확장 메서드 '{0}'의 인수가 너무 많습니다.</value>
@@ -3955,7 +3973,7 @@
     <value>메서드에는 ParamArray 매개 변수와 Optional 매개 변수를 함께 사용할 수 없습니다.</value>
   </data>
   <data name="ERR_StructureCantUseProtected" xml:space="preserve">
-    <value>구조체의 메서드는 'Protected' 또는 'Protected Friend'로 선언할 수 없습니다.</value>
+    <value>Method in a structure cannot be declared 'Protected', 'Protected Friend', or 'Private Protected'.</value>
   </data>
   <data name="WRN_QueryMissingAsClauseinVarDecl" xml:space="preserve">
     <value>형식을 유추할 수 없어 범위 변수가 Object 형식으로 간주됩니다. 'As' 절을 사용하여 다른 형식을 지정하세요.</value>
@@ -3965,6 +3983,9 @@
   </data>
   <data name="ERR_PartialTypeBadMustInherit1" xml:space="preserve">
     <value>'MustInherit'은 다른 부분 형식(Partial Type) 중 하나에 지정된 'NotInheritable'과 함께 사용할 수 없으므로 '{0}' 부분 형식에 지정할 수 없습니다.</value>
+  </data>
+  <data name="IDS_LangVersions" xml:space="preserve">
+    <value>Supported language versions:</value>
   </data>
   <data name="ERR_RemoveParamWrongForWinRT" xml:space="preserve">
     <value>Windows 런타임 이벤트에서 'RemoveHandler' 메서드 매개 변수의 형식은 'EventRegistrationToken'이어야 합니다.</value>
@@ -4325,162 +4346,164 @@
     <value>'Is'가 필요합니다.</value>
   </data>
   <data name="IDS_VBCHelp" xml:space="preserve">
-    <value>                  Visual Basic 컴파일러 옵션
+    <value>                  Visual Basic Compiler Options
 
-                                  - 출력 파일 -
-/out:&lt;file&gt;                       출력 파일 이름을 지정합니다.
-/target:exe                       콘솔 응용 프로그램을 만듭니다(기본값). 
-                                  (약식: /t)
-/target:winexe                    Windows 응용 프로그램을 만듭니다.
-/target:library                   라이브러리 어셈블리를 만듭니다.
-/target:module                    어셈블리에 추가할 수 있는 모듈을 
-                                  만듭니다.
-/target:appcontainerexe           AppContainer에서 실행되는 Windows 응용 프로그램을 
-                                  만듭니다.
-/target:winmdobj                  Windows 메타데이터 중간 파일을 만듭니다.
-/doc[+|-]                         XML 문서 파일을 생성합니다.
-/doc:&lt;file&gt;                       XML 문서 파일을 &lt;file&gt;에 생성합니다.
-/refout:&lt;file&gt;                생성할 참조 어셈블리 출력
+                                  - OUTPUT FILE -
+/out:&lt;file&gt;                       Specifies the output file name.
+/target:exe                       Create a console application (default). 
+                                  (Short form: /t)
+/target:winexe                    Create a Windows application.
+/target:library                   Create a library assembly.
+/target:module                    Create a module that can be added to an 
+                                  assembly.
+/target:appcontainerexe           Create a Windows application that runs in 
+                                  AppContainer.
+/target:winmdobj                  Create a Windows Metadata intermediate file
+/doc[+|-]                         Generates XML documentation file.
+/doc:&lt;file&gt;                       Generates XML documentation file to &lt;file&gt;.
+/refout:&lt;file&gt;                    Reference assembly output to generate
 
-                                  - 입력 파일 -
-/addmodule:&lt;file_list&gt;            지정된 모듈에서 메타데이터를 참조합니다.
-/link:&lt;file_list&gt;                 지정된 interop 어셈블리의 메타데이터를 
-                                  포함합니다. (약식: /l)
-/recurse:&lt;wildcard&gt;               와일드카드 지정에 따라 현재 디렉터리와 
-                                  하위 디렉터리에 있는 모든 파일을
-                                  포함합니다.
-/reference:&lt;file_list&gt;            지정한 어셈블리 파일에서 메타데이터를 
-                                  참조합니다. (약식: /r)
-/analyzer:&lt;file_list&gt;             이 어셈블리에서 분석기를 실행합니다.
-                                  (약식: /a)
-/additionalfile:&lt;file list&gt;       코드 생성에 직접적인 영향을 주지 않지만
-                                  오류 또는 경고 생성을 위해 분석기에서 사용될 수 있는
-                                  추가 파일입니다.
+                                  - INPUT FILES -
+/addmodule:&lt;file_list&gt;            Reference metadata from the specified modules
+/link:&lt;file_list&gt;                 Embed metadata from the specified interop 
+                                  assembly. (Short form: /l)
+/recurse:&lt;wildcard&gt;               Include all files in the current directory 
+                                  and subdirectories according to the
+                                  wildcard specifications.
+/reference:&lt;file_list&gt;            Reference metadata from the specified 
+                                  assembly. (Short form: /r)
+/analyzer:&lt;file_list&gt;             Run the analyzers from this assembly
+                                  (Short form: /a)
+/additionalfile:&lt;file list&gt;       Additional files that don't directly affect code
+                                  generation but may be used by analyzers for producing
+                                  errors or warnings.
 
-                                  - 리소스 -
-/linkresource:&lt;resinfo&gt;           지정된 파일을 외부 어셈블리 
-                                  리소스로 연결합니다.
+                                  - RESOURCES -
+/linkresource:&lt;resinfo&gt;           Links the specified file as an external 
+                                  assembly resource.
                                   resinfo:&lt;file&gt;[,&lt;name&gt;[,public|private]] 
-                                  (약식: /linkres)
-/nowin32manifest                  기본 매니페스트는 출력 PE의 매니페스트 섹션에 
-                                  포함되면 안 됩니다.
-/resource:&lt;resinfo&gt;               지정한 파일을 포함된 어셈블리 
-                                  리소스로 추가합니다.
+                                  (Short form: /linkres)
+/nowin32manifest                  The default manifest should not be embedded 
+                                  in the manifest section of the output PE.
+/resource:&lt;resinfo&gt;               Adds the specified file as an embedded 
+                                  assembly resource.
                                   resinfo:&lt;file&gt;[,&lt;name&gt;[,public|private]] 
-                                  (약식: /res)
-/win32icon:&lt;file&gt;                 기본 Win32 리소스에 사용되는 Win32 아이콘 파일(.ico)을 
-                                  지정합니다.
-/win32manifest:&lt;file&gt;             제공된 파일은 출력 PE의 매니페스트
-                                  섹션에 포함됩니다.
-/win32resource:&lt;file&gt;             Win32 리소스 파일(.res)을 지정합니다.
+                                  (Short form: /res)
+/win32icon:&lt;file&gt;                 Specifies a Win32 icon file (.ico) for the 
+                                  default Win32 resources.
+/win32manifest:&lt;file&gt;             The provided file is embedded in the manifest
+                                  section of the output PE.
+/win32resource:&lt;file&gt;             Specifies a Win32 resource file (.res).
 
-                                  - 코드 생성 -
-/optimize[+|-]                    최적화를 사용합니다.
-/removeintchecks[+|-]             정수 확인을 제거합니다. 기본값은 off입니다.
-/debug[+|-]                       디버깅 정보를 내보냅니다.
-/debug:full                       전체 디버깅 정보를 내보냅니다(기본값).
-/debug:pdbonly                    전체 디버깅 정보를 내보냅니다.
-/debug:portable                   크로스 플랫폼 디버깅 정보를 내보냅니다.
-/debug:embedded                   크로스 플랫폼 디버깅 정보를 대상 .dll 또는 .exe로 
-                                  내보냅니다.
-/deterministic                    결정적 어셈블리를 생성합니다.
-                                  (모듈 버전 GUID 및 타임스탬프 포함)
-/refonly                          주 출력 대신 참조 어셈블리 생성
-/instrument:TestCoverage          검사 정보를 수집하기 위해 계측한
-                                  어셈블리를 생성합니다.
-/sourcelink:&lt;file&gt;                PDB에 포함할 소스 링크 정보입니다.
+                                  - CODE GENERATION -
+/optimize[+|-]                    Enable optimizations.
+/removeintchecks[+|-]             Remove integer checks. Default off.
+/debug[+|-]                       Emit debugging information.
+/debug:full                       Emit full debugging information (default).
+/debug:pdbonly                    Emit full debugging information.
+/debug:portable                   Emit cross-platform debugging information.
+/debug:embedded                   Emit cross-platform debugging information into 
+                                  the target .dll or .exe.
+/deterministic                    Produce a deterministic assembly
+                                  (including module version GUID and timestamp)
+/refonly                          Produce a reference assembly in place of the main output
+/instrument:TestCoverage          Produce an assembly instrumented to collect
+                                  coverage information
+/sourcelink:&lt;file&gt;                Source link info to embed into PDB.
 
-                                  - 오류 및 경고 -
-/nowarn                           모든 경고를 사용하지 않습니다.
-/nowarn:&lt;number_list&gt;             개별 경고 목록을 사용하지 않습니다.
-/warnaserror[+|-]                 모든 경고를 오류로 처리합니다.
-/warnaserror[+|-]:&lt;number_list&gt;   경고 목록을 오류로 처리합니다.
-/ruleset:&lt;file&gt;                   특정 진단을 사용하지 않도록 하는 규칙 집합을
-                                  지정합니다.
-/errorlog:&lt;file&gt;                  모든 컴파일러 및 분석기 진단을 기록할 파일을
-                                  지정합니다.
-/reportanalyzer                   추가 분석기 정보(예: 실행 시간)를
-                                  보고합니다.
+                                  - ERRORS AND WARNINGS -
+/nowarn                           Disable all warnings.
+/nowarn:&lt;number_list&gt;             Disable a list of individual warnings.
+/warnaserror[+|-]                 Treat all warnings as errors.
+/warnaserror[+|-]:&lt;number_list&gt;   Treat a list of warnings as errors.
+/ruleset:&lt;file&gt;                   Specify a ruleset file that disables specific
+                                  diagnostics.
+/errorlog:&lt;file&gt;                  Specify a file to log all compiler and analyzer
+                                  diagnostics.
+/reportanalyzer                   Report additional analyzer information, such as
+                                  execution time.
 
-                                  - 언어 -
-/define:&lt;symbol_list&gt;             전역 조건부 컴파일 기호를 
-                                  선언합니다. symbol_list:name=value,... 
-                                  (약식: /d)
-/imports:&lt;import_list&gt;            참조된 메타데이터 파일에 네임스페이스의 
-                                  전역 가져오기를 선언합니다. 
+                                  - LANGUAGE -
+/define:&lt;symbol_list&gt;             Declare global conditional compilation 
+                                  symbol(s). symbol_list:name=value,... 
+                                  (Short form: /d)
+/imports:&lt;import_list&gt;            Declare global Imports for namespaces in 
+                                  referenced metadata files. 
                                   import_list:namespace,...
-/langversion:&lt;number&gt;             언어 버전 
-                                  9|9.0|10|10.0|11|11.0|12|12.0|14|14.0|15|
-                                  15.0|15.3|default|latest를 지정합니다.
-/optionexplicit[+|-]              변수의 명시적 선언을 요구합니다.
-/optioninfer[+|-]                 변수의 형식 유추를 허용합니다.
-/rootnamespace:&lt;string&gt;           모든 형식 선언의 루트 네임스페이스를 
-                                  지정합니다.
-/optionstrict[+|-]                엄격한 언어 의미 체계를 적용합니다.
-/optionstrict:custom              엄격한 언어 의미 체계가 사용되지 않을 때 
-                                  경고합니다.
-/optioncompare:binary             이진 스타일 문자열 비교를 지정합니다.
-                                  기본값입니다.
-/optioncompare:text               텍스트 스타일 문자열 비교를 지정합니다.
+/langversion:?                    Display the allowed values for language version
+/langversion:&lt;string&gt;             Specify language version such as
+                                  `default` (latest major version), or
+                                  `latest` (latest version, including minor versions),
+                                  or specific versions like `14` or `15.3`
+/optionexplicit[+|-]              Require explicit declaration of variables.
+/optioninfer[+|-]                 Allow type inference of variables.
+/rootnamespace:&lt;string&gt;           Specifies the root Namespace for all type 
+                                  declarations.
+/optionstrict[+|-]                Enforce strict language semantics.
+/optionstrict:custom              Warn when strict language semantics are not
+                                  respected.
+/optioncompare:binary             Specifies binary-style string comparisons.
+                                  This is the default.
+/optioncompare:text               Specifies text-style string comparisons.
 
-                                  - 기타 -
-/help                             사용법 메시지를 표시합니다. (약식: /?)
-/noconfig                         VBC.RSP 파일을 자동으로 포함하지 않습니다.
-/nologo                           컴파일러 저작권 배너를 표시하지 않습니다.
-/quiet                            자동 출력 모드입니다.
-/verbose                          자세한 메시지를 표시합니다.
-/parallel[+|-]                    동시 빌드입니다. 
-/version                          컴파일러 버전 번호를 표시하고 종료합니다. 
+                                  - MISCELLANEOUS -
+/help                             Display this usage message. (Short form: /?)
+/noconfig                         Do not auto-include VBC.RSP file.
+/nologo                           Do not display compiler copyright banner.
+/quiet                            Quiet output mode.
+/verbose                          Display verbose messages.
+/parallel[+|-]                    Concurrent build. 
+/version                          Display the compiler version number and exit.
 
-                                  - 고급 -
-/baseaddress:&lt;number&gt;             16진수로 지정된 라이브러리 또는 모듈의 기준 
-                                  주소입니다.
-/checksumalgorithm:&lt;alg&gt;          PDB에 저장된 소스 파일 체크섬을 계산하기 위한 
-                                  알고리즘을 지정합니다. 지원되는 값은
-                                  SHA1(기본값) 또는 SHA256입니다.
-/codepage:&lt;number&gt;                소스 파일을 열 때 사용할 코드 페이지를 
-                                  지정합니다.
-/delaysign[+|-]                   강력한 이름 키의 공개 부분만 사용하여
-                                  어셈블리 서명을 연기합니다.
-/publicsign[+|-]                  강력한 이름 키의 공개 부분만 사용하여
-                                  어셈블리에 공개 서명합니다.
-/errorreport:&lt;string&gt;             내부 컴파일러 오류를 처리하는 방법을
-                                  prompt, send, none 또는 queue(기본값)
-                                  중에서 선택합니다.
-/filealign:&lt;number&gt;               출력 파일 섹션에 사용되는 맞춤을 
-                                  지정합니다.
-/highentropyva[+|-]               높은 엔트로피 ASLR을 사용합니다.
-/keycontainer:&lt;string&gt;            강력한 이름의 키 컨테이너를 지정합니다.
-/keyfile:&lt;file&gt;                   강력한 이름의 키 파일을 지정합니다.
-/libpath:&lt;path_list&gt;              메타데이터 참조에 대해 검색할 디렉터리 
-                                  목록이며 세미콜론으로 구분됩니다.
-/main:&lt;class&gt;                     Sub Main을 포함하는 클래스 또는 모듈을 
-                                  지정합니다. System.Windows.Forms.Form에서 상속하는 
-                                  클래스를 사용할 수도 있습니다. 
-                                  (약식: /m)
-/moduleassemblyname:&lt;string&gt;      이 모듈이 속할 어셈블리의 
-                                  이름입니다.
-/netcf                            .NET Compact Framework를 대상으로 지정합니다.
-/nostdlib                         표준 라이브러리(system.dll 및 VBC.RSP 파일)를 
-                                  참조하지 않습니다.
+                                  - ADVANCED -
+/baseaddress:&lt;number&gt;             The base address for a library or module 
+                                  (hex).
+/checksumalgorithm:&lt;alg&gt;          Specify algorithm for calculating source file 
+                                  checksum stored in PDB. Supported values are:
+                                  SHA1 (default) or SHA256.
+/codepage:&lt;number&gt;                Specifies the codepage to use when opening 
+                                  source files.
+/delaysign[+|-]                   Delay-sign the assembly using only the public
+                                  portion of the strong name key.
+/publicsign[+|-]                  Public-sign the assembly using only the public
+                                  portion of the strong name key.
+/errorreport:&lt;string&gt;             Specifies how to handle internal compiler
+                                  errors; must be prompt, send, none, or queue
+                                  (default).
+/filealign:&lt;number&gt;               Specify the alignment used for output file 
+                                  sections.
+/highentropyva[+|-]               Enable high-entropy ASLR.
+/keycontainer:&lt;string&gt;            Specifies a strong name key container.
+/keyfile:&lt;file&gt;                   Specifies a strong name key file.
+/libpath:&lt;path_list&gt;              List of directories to search for metadata 
+                                  references. (Semi-colon delimited.)
+/main:&lt;class&gt;                     Specifies the Class or Module that contains 
+                                  Sub Main. It can also be a Class that 
+                                  inherits from System.Windows.Forms.Form. 
+                                  (Short form: /m)
+/moduleassemblyname:&lt;string&gt;      Name of the assembly which this module will 
+                                  be a part of.
+/netcf                            Target the .NET Compact Framework.
+/nostdlib                         Do not reference standard libraries 
+                                  (system.dll and VBC.RSP file).
 /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                                  컴파일러에서 소스 경로 이름 출력에 대한
-                                  매핑을 지정합니다.
-/platform:&lt;string&gt;                이 코드를 실행할 수 있는 플랫폼을 
-                                  x86, x64, Itanium, arm,
-                                  AnyCPU32BitPreferred 또는 anycpu(기본값)로 제한합니다.
-/preferreduilang                  기본 출력 언어 이름을 지정합니다.
-/sdkpath:&lt;path&gt;                   .NET Framework SDK 디렉터리의 
-                                  위치(mscorlib.dll)입니다.
-/subsystemversion:&lt;version&gt;       출력 PE의 하위 시스템 버전을 지정합니다. 
+                                  Specify a mapping for source path names output by
+                                  the compiler.
+/platform:&lt;string&gt;                Limit which platforms this code can run on; 
+                                  must be x86, x64, Itanium, arm,
+                                  AnyCPU32BitPreferred or anycpu (default).
+/preferreduilang                  Specify the preferred output language name.
+/sdkpath:&lt;path&gt;                   Location of the .NET Framework SDK directory
+                                  (mscorlib.dll).
+/subsystemversion:&lt;version&gt;       Specify subsystem version of the output PE. 
                                   version:&lt;number&gt;[.&lt;number&gt;]
-/utf8output[+|-]                  UTF8 문자 인코딩으로 컴파일러 출력을 
-                                  내보냅니다.
-@&lt;file&gt;                           텍스트 파일에서 명령줄 설정을 삽입합니다.
-/vbruntime[+|-|*]                 기본 Visual Basic 런타임을 사용하거나 사용하지 않고
-                                  컴파일합니다.
-/vbruntime:&lt;file&gt;                 &lt;file&gt;에서 대체 Visual Basic 런타임을 사용하여 
-                                  컴파일합니다.
+/utf8output[+|-]                  Emit compiler output in UTF8 character 
+                                  encoding.
+@&lt;file&gt;                           Insert command-line settings from a text file
+/vbruntime[+|-|*]                 Compile with/without the default Visual Basic
+                                  runtime.
+/vbruntime:&lt;file&gt;                 Compile with the alternate Visual Basic 
+                                  runtime in &lt;file&gt;.
 </value>
   </data>
   <data name="ERR_ReturnFromNonGenericTaskAsync" xml:space="preserve">
@@ -4493,7 +4516,7 @@
     <value>형식 매개 변수 제약 조건이 서로 다르므로 '{0}'은(는) '{1}'을(를) 재정의할 수 없습니다.</value>
   </data>
   <data name="ERR_ExpectedNamedArgument" xml:space="preserve">
-    <value>명명된 인수가 필요합니다.</value>
+    <value>Named argument expected. Please use language version {0} or greater to use non-trailing named arguments.</value>
   </data>
   <data name="ERR_CircularEvaluation1" xml:space="preserve">
     <value>'{0}' 상수는 자신의 값에 종속될 수 없습니다.</value>

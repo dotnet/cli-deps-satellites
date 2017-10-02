@@ -178,6 +178,9 @@
   <data name="Class1" xml:space="preserve">
     <value>класс</value>
   </data>
+  <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
+    <value>Embedded texts are only supported when emitting a PDB.</value>
+  </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Копию модуля нельзя использовать для создания метаданных сборки.</value>
   </data>
@@ -497,9 +500,6 @@
   </data>
   <data name="TupleElementNameEmpty" xml:space="preserve">
     <value>Имя элемента кортежа не может быть пустой строкой.</value>
-  </data>
-  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
-    <value>Внедренный текст поддерживается только при создании файлов Portable PDB.</value>
   </data>
   <data name="InvalidOutputKindForSubmission" xml:space="preserve">
     <value>Недопустимый тип выходных данных для сообщения. Ожидался DynamicallyLinkedLibrary.</value>

@@ -178,6 +178,9 @@
   <data name="Class1" xml:space="preserve">
     <value>類別</value>
   </data>
+  <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
+    <value>Embedded texts are only supported when emitting a PDB.</value>
+  </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>不可使用模組複本建立組件中繼資料。</value>
   </data>
@@ -497,9 +500,6 @@
   </data>
   <data name="TupleElementNameEmpty" xml:space="preserve">
     <value>元組元素名稱不可為空字串。</value>
-  </data>
-  <data name="EmbeddedTextsRequirePortablePdb" xml:space="preserve">
-    <value>只在發出可攜式 PDB 時才支援內嵌的文字。</value>
   </data>
   <data name="InvalidOutputKindForSubmission" xml:space="preserve">
     <value>提交的輸出種類無效。必須是 DynamicallyLinkedLibrary。</value>

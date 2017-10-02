@@ -42,7 +42,7 @@
     <Authors>Microsoft Corporation</Authors>
     <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
     <BuildEpoch>20170101</BuildEpoch>
-    <VersionPrefix>2.3.0</VersionPrefix>
+    <VersionPrefix>2.6.0</VersionPrefix>
     <VersionPrefix Condition="$(IsFSharp)">4.4.1</VersionPrefix>
     <BuildNumber Condition="'$(BuildNumber)' == ''">$(BUILD_BUILDNUMBER)</BuildNumber>
     <BuildNumber Condition="'$(BuildNumber)' == ''">99999999-99</BuildNumber>
