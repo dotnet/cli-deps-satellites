@@ -1520,7 +1520,7 @@
     <value>Ein Namespace und ein Modul namens "{0}" sind beide in zwei Teilen dieser Assembly vorhanden.</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Geben Sie das Profil des Zielframeworks dieser Assembly an. Gültige Werte sind "mscorlib", "netcore" oder "netstandard". Standard – "mscorlib".</value>
+    <value>Geben Sie das Profil des Zielframeworks dieser Assembly an. Gültige Werte sind mscorlib, netcore oder netstandard. Standard – mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>Ab F# 4.1 wird die Zugreifbarkeit von Typabkürzungen zur Kompilierzeit überprüft. Sie sollten die Zugreifbarkeit der Typabkürzung ggf. ändern. Das Ignorieren dieser Warnung führt möglicherweise zu Laufzeitfehlern.</value>
@@ -1619,7 +1619,7 @@
     <value>Überlaufprüfungen generieren</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>Frei verteilt unter der Apache 2.0-Open-Source-Lizenz</value>
+    <value>Kostenlose Verteilung im Rahmen der MIT-Open Source-Lizenz. https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>Der Member oder Objektkonstruktor "{0}" akzeptiert {1} Argument(e) nicht. Eine Überladung wurde gefunden, die {2} Argumente akzeptiert.</value>
@@ -2339,7 +2339,7 @@
     <value>Das Modul enthält das Feld\n    {0}    \nDie Signatur gibt aber Folgendes an:\n    {1}    \nIn der Signatur ist eine höhere Zugreifbarkeit angegeben als in der Implementierung.</value>
   </data>
   <data name="keywordDescriptionSelect" xml:space="preserve">
-    <value>Wird in Abfrageausdrücken verwendet, um festzulegen, welche Felder oder Spalten extrahiert werden. Dies ist kontextabhängiges Schlüsselwort, d. h. es ist kein reserviertes Wort und funktioniert nur im entsprechenden Kontext als Schlüsselwort. </value>
+    <value>Wird in Abfrageausdrücken verwendet, um festzulegen, welche Felder oder Spalten extrahiert werden. Dies ist kontextabhängiges Schlüsselwort, d. h. es ist kein reserviertes Wort und funktioniert nur im entsprechenden Kontext als Schlüsselwort.</value>
   </data>
   <data name="chkNoAddressFieldAtThisPoint" xml:space="preserve">
     <value>Die Adresse des Felds "{0}" kann an diesem Punkt nicht verwendet werden.</value>
@@ -2898,6 +2898,9 @@
   </data>
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>Ungültiger Wert.</value>
+  </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>Die Argumentnamen in Signatur "{0}" und Implementierung "{1}" stimmen nicht überein. Der Argumentname aus der Signaturdatei wird verwendet. Dadurch kann es beim Debuggen oder bei der Profilerstellung zu Problemen kommen.</value>
   </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>Der Wert "{0}" wird nicht verwendet.</value>

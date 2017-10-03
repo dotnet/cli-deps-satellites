@@ -524,7 +524,7 @@
     <value>Cette définition de type implique une référence cyclique immédiate via une abréviation</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Valeur non valide '{0}' pour '--targetprofile'. Les valeurs valides sont 'mscorlib', 'netcore' et 'netstandard'.</value>
+    <value>Valeur '{0}' non valide pour '--targetprofile'. Les valeurs valides sont 'mscorlib', 'netcore' ou 'netstandard'.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>Les liaisons 'use' ne sont pas autorisées dans les constructeurs principaux</value>
@@ -1520,7 +1520,7 @@
     <value>Un espace de noms et un module nommés tous les deux '{0}' sont présents dans deux parties de cet assembly</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Spécifiez le profil de la version cible du .NET Framework de cet assembly. Les valeurs valides sont mscorlib, netcore et netstandard. Valeur par défaut : mscorlib</value>
+    <value>Spécifiez le profil de framework cible de cet assembly. Les valeurs valides sont mscorlib, netcore ou netstandard. Par défaut - mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>À partir de F# 4.1, l'accessibilité des abréviations de type est vérifiée au moment de la compilation. Changez l'accessibilité de l'abréviation de type. Si vous ignorez cet avertissement, cela risque d'entraîner des erreurs d'exécution.</value>
@@ -1619,7 +1619,7 @@
     <value>Générer des contrôles de dépassement de capacité</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>Distribué gratuitement sous licence open source Apache 2.0</value>
+    <value>Distribué gratuitement sous licence Open Source du MIT. https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>Le membre ou le constructeur d'objet '{0}' n'accepte pas {1} argument(s). Une surcharge acceptant {2} arguments a été trouvée.</value>
@@ -2898,6 +2898,9 @@
   </data>
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>Valeur non valide</value>
+  </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>Les noms d'arguments dans la signature '{0}' et l'implémentation '{1}' ne correspondent pas. Le nom d'argument du fichier de signature va être utilisé. Cela peut entraîner des problèmes durant le débogage ou le profilage.</value>
   </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>La valeur '{0}' est inutilisée</value>

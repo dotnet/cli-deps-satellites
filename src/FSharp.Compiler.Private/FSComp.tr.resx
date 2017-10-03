@@ -524,7 +524,7 @@
     <value>Bu tür tanımı, kısaltma aracılığıyla anlık döngüsel başvuru içeriyor</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>'--targetprofile' için geçersiz değer: '{0}'; geçerli değerler: 'mscorlib', 'netcore' veya 'netstandard'.</value>
+    <value>'--targetprofile' için geçersiz değer '{0}'; geçerli değerler: 'mscorlib', 'netcore' veya 'netstandard'.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>birincil oluşturucularda 'use' bağlamalarına izin verilmez</value>
@@ -1619,7 +1619,7 @@
     <value>Taşma denetimleri oluştur</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>Apache 2.0 Open Source License altında serbestçe dağıtılabilir</value>
+    <value>MIT Açık Kaynak Lisansı altında ücretsiz olarak dağıtılır. https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>Üye veya nesne oluşturucu '{0}', {1} bağımsız değişkenlerini almaz. {2} bağımsız değişkenler alınırken aşırı yükleme bulundu.</value>
@@ -2258,7 +2258,7 @@
     <value>Modül\n    {0}    \noluşturucusunu içeriyor ancak imzasında\n    {1}    \nbelirtiliyor. Adlar farklı</value>
   </data>
   <data name="customOperationTextLikeJoin" xml:space="preserve">
-    <value>{1} koleksiyonunda {0} değişkeni (outerKey = innerKey). '{2}' öğesinden sonra parantez eklenmesi gerektiğini unutmayın</value>
+    <value>{1} koleksiyonunda (outerKey = innerKey) {0} değişken. '{2}' öğesinden sonra parantezlerin gerekli olduğuna dikkat edin</value>
   </data>
   <data name="parsInOrEqualExpected" xml:space="preserve">
     <value>'in' veya '=' bekleniyor</value>
@@ -2741,7 +2741,7 @@
     <value>Devralma zincirinde daha yukarıda bulunan bir türe dönüştürmek için kullanılır.</value>
   </data>
   <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
-    <value>{1} koleksiyonunda {0} değişkeni (outerKey = innerKey) gruba eklendi. '{2}' öğesinden sonra parantez eklenmesi gerektiğini unutmayın</value>
+    <value>{1} koleksiyonunda (outerKey = innerKey) gruba yönelik {0} değişken. '{2}' öğesinden sonra parantezlerin gerekli olduğuna dikkat edin</value>
   </data>
   <data name="tcDefaultStructConstructorCall" xml:space="preserve">
     <value>Varsayılan seçenek olan yapı türünün sıfır ile başlayan oluşturucusu yalnızca yapı türünün tüm alanları varsayılan başlatmayı kabul ediyorsa kullanılabilir</value>
@@ -2840,7 +2840,7 @@
     <value>Bütünleştirilmiş kodun çıkartılan arabirimini dosyaya yazdır</value>
   </data>
   <data name="optsBuildModule" xml:space="preserve">
-    <value>Başka bir derlemeye eklenebilir bir modül oluştur</value>
+    <value>Başka bir bütünleştirilmiş koda eklenebilir bir modül oluştur</value>
   </data>
   <data name="parsActivePatternCaseContainsPipe" xml:space="preserve">
     <value>'|' karakterine ektin desen örneği tanımlayıcılarında izin verilmez</value>
@@ -2898,6 +2898,9 @@
   </data>
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>Geçersiz değer</value>
+  </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>'{0}' imzasındaki ve '{1}' uygulamasındaki bağımsız değişken adları eşleşmiyor. İmza dosyasındaki bağımsız değişken adı kullanılacak. Bu, hata ayıklama veya profil oluşturma sırasında sorunlara neden olabilir.</value>
   </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>'{0}' değeri kullanılmıyor</value>
@@ -3035,7 +3038,7 @@
     <value>'{0}' olayı statik değil</value>
   </data>
   <data name="customOperationTextLikeZip" xml:space="preserve">
-    <value>Koleksiyonda {0} değişkeni</value>
+    <value>Koleksiyonda {0} değişken</value>
   </data>
   <data name="keywordDescriptionYield" xml:space="preserve">
     <value>Diziye ait bir değer üretmek için dizi ifadesinde kullanılır.</value>
@@ -3719,7 +3722,7 @@
     <value># biçimlendirme değiştiricisi F# içinde geçersizdir</value>
   </data>
   <data name="optsDelaySign" xml:space="preserve">
-    <value>Derlemeyi tanımlayıcı ad anahtarının yalnızca ortak kısmını kullanarak gecikmeli imzala</value>
+    <value>Bütünleştirilmiş kodu tanımlayıcı ad anahtarının yalnızca ortak kısmını kullanarak gecikmeli imzala</value>
   </data>
   <data name="keywordDescriptionException" xml:space="preserve">
     <value>Bir özel durum türünü bildirmek için kullanılır.</value>
@@ -3773,7 +3776,7 @@
     <value>Tür sağlayıcısından desteklenmeyen '{0}' ifadesi. Bu tür sağlayıcısının yazarı sizseniz, farklı bir sağlanan ifade sağlayacak şekilde ayarlamayı düşünün.</value>
   </data>
   <data name="optsSubSystemVersion" xml:space="preserve">
-    <value>Bu derlemenin alt sistem sürümünü belirtin</value>
+    <value>Bu bütünleştirilmiş kodun alt sistem sürümünü belirtin</value>
   </data>
   <data name="tastUnexpectedByRef" xml:space="preserve">
     <value>Beklenmeyen byref olarak belirtilmiş değişken kullanımı</value>

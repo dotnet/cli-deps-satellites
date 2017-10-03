@@ -1619,7 +1619,7 @@
     <value>Gerar verificações de estouro</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>Distribuído gratuitamente sob a Licença de Software Livre do Apache 2.0</value>
+    <value>Livremente distribuído sob a Licença de Software Livre do MIT. https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>O construtor de membro ou objeto '{0}' não obtém argumentos {1}. Uma sobrecarga foi encontrada ao obter argumentos {2}.</value>
@@ -2258,7 +2258,7 @@
     <value>O módulo contém o construtor\n    {0}    \n, mas sua assinatura especifica\n    {1}    \nOs nomes diferem</value>
   </data>
   <data name="customOperationTextLikeJoin" xml:space="preserve">
-    <value>{0} var na coleção {1} (outerKey = innerKey). Observe que os parênteses são necessários após '{2}'</value>
+    <value>Var {0} na coleção {1} (outerKey = innerKey). Observe que os parênteses são necessários após '{2}'</value>
   </data>
   <data name="parsInOrEqualExpected" xml:space="preserve">
     <value>'in' ou '=' esperado</value>
@@ -2741,7 +2741,7 @@
     <value>Usada para converter para um tipo que é superior na cadeia de herança.</value>
   </data>
   <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
-    <value>{0} var na coleção {1} (outerKey = innerKey) para o grupo. Observe que os parênteses são necessários após '{2}'</value>
+    <value>Var {0} na coleção {1} (outerKey = innerKey) no grupo. Observe que os parênteses são necessários após '{2}'</value>
   </data>
   <data name="tcDefaultStructConstructorCall" xml:space="preserve">
     <value>O construtor padrão de um tipo struct iniciado com zero só pode ser usado se todos os campos do tipo struct admitirem inicialização padrão</value>
@@ -2899,6 +2899,9 @@
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>Valor inválido</value>
   </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>Os nomes de argumento na assinatura '{0}' e na implementação'{1}' não coincidem. O nome do argumento do arquivo de assinatura será usado. Isso pode causar problemas durante a depuração ou a criação de perfil.</value>
+  </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>O valor '{0}' é não usado.</value>
   </data>
@@ -3035,7 +3038,7 @@
     <value>O evento '{0}' não é estático</value>
   </data>
   <data name="customOperationTextLikeZip" xml:space="preserve">
-    <value>{0} var na coleção</value>
+    <value>Var {0} na coleção</value>
   </data>
   <data name="keywordDescriptionYield" xml:space="preserve">
     <value>Usado em uma expressão de sequência para produzir um valor de uma sequência.</value>

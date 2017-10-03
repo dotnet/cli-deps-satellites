@@ -263,7 +263,7 @@
   </data>
   <data name="notAFunctionButMaybeIndexerErrorCode" xml:space="preserve">
     <value>
-</value>
+    </value>
   </data>
   <data name="tcConditionalAttributeUsage" xml:space="preserve">
     <value>屬性 'System.Diagnostics.ConditionalAttribute' 只有在方法或屬性類別上才有效</value>
@@ -347,7 +347,7 @@
     <value>未預期的空白類型 moduleDefn 清單</value>
   </data>
   <data name="keywordDescriptionWhen" xml:space="preserve">
-    <value>用於模式比對時的布林值條件 (when 成立條件)，以及為泛型型別參數引入條件約束時用。</value>
+    <value>用於模式比對時的布林值條件 (when 成立條件)，以及為泛型型別參數引入條件約束子句時用。</value>
   </data>
   <data name="keywordDescriptionWith" xml:space="preserve">
     <value>在模式比對運算式中搭配 match 關鍵字使用。也用在物件運算式、記錄複製運算式及類型運算時，以引入成員定義，並用以引入例外狀況處理常式。</value>
@@ -524,7 +524,7 @@
     <value>這個類型定義涉及透過縮寫的立即循環參考</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>'--targetprofile' 的值 '{0}' 無效。有效值為 'mscorlib'、'netcore' 或 'netstandard'。</value>
+    <value>'--targetprofile' 的值 '{0}' 無效。有效值是 'mscorlib'、'netcore' 或 'netstandard'。</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>不允許在主要建構函式中使用 'use' 繫結</value>
@@ -944,7 +944,7 @@
     <value>'{1}' 中未定義類型 '{0}'。</value>
   </data>
   <data name="parsIdentifierExpected" xml:space="preserve">
-    <value>必須是識別項</value>
+    <value>必須是識別碼</value>
   </data>
   <data name="ppparsUnexpectedToken" xml:space="preserve">
     <value>前置處理器運算式包含未預期的語彙基元 '{0}'</value>
@@ -1520,7 +1520,7 @@
     <value>名稱為 '{0}' 的命名空間和模組都出現在這個組件的兩個部分中</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>指定此組件的目標 Framework 設定檔。有效值為 mscorlib 或 netcore 或 netstandard。預設值 - mscorlib</value>
+    <value>指定此組件的目標 Framework 設定檔。有效值是 mscorlib、netcore 或 netstandard。預設為 mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>自 F# 4.1 起，類型縮寫的協助工具會於編譯時期經過檢查。請考慮變更類型縮寫的協助工具。略過此警告會導致執行階段錯誤。</value>
@@ -1619,7 +1619,7 @@
     <value>產生溢位核對</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>依 Apache 2.0 開放原始碼授權自由散發</value>
+    <value>依 MIT 開放原始碼授權自由散發。https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>成員或物件建構函式 '{0}' 不接受 {1} 個引數。找到接受 {2} 個引數的多載。</value>
@@ -2258,7 +2258,7 @@
     <value>模組包含建構函式\n    {0}    \n但它的簽章卻指定\n    {1}    \n名稱不同</value>
   </data>
   <data name="customOperationTextLikeJoin" xml:space="preserve">
-    <value>{0} var in collection {1} (outerKey = innerKey)。注意: '{2}' 之後須有括號</value>
+    <value>{0} var in collection {1} (outerKey = innerKey)。請注意，'{2}' 之後必須有括號</value>
   </data>
   <data name="parsInOrEqualExpected" xml:space="preserve">
     <value>必須是 'in' 或 '='</value>
@@ -2741,7 +2741,7 @@
     <value>用以將類型轉換為繼承鏈結中較高的類型。</value>
   </data>
   <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
-    <value>{0} var in collection {1} (outerKey = innerKey) into group。注意: '{2}' 之後須有括號</value>
+    <value>{0} var in collection {1} (outerKey = innerKey) into group。請注意，'{2}' 之後必須有參數</value>
   </data>
   <data name="tcDefaultStructConstructorCall" xml:space="preserve">
     <value>結構類型的預設、零初始化建構函式只能用在結構類型的所有欄位都允許預設初始化時</value>
@@ -2898,6 +2898,9 @@
   </data>
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>無效值</value>
+  </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>簽章 '{0}' 與實作 '{1}' 的引數名稱不相符。系統會使用簽章檔案的引數名稱。這可能會在偵錯或分析時造成問題。</value>
   </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>值 '{0}' 未使用到</value>
