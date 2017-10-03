@@ -968,7 +968,7 @@
     <value>Il modulo principale del programma è vuoto. L'esecuzione non produrrà alcun effetto</value>
   </data>
   <data name="fscAssemblyWildcardAndDeterminism" xml:space="preserve">
-    <value>An {0} specified version '{1}', but this value is a wildcard, and you have requested a deterministic build, these are in conflict.</value>
+    <value>In un elemento {0} è stata specificata la versione '{1}', ma questo valore è un carattere jolly ed è stata richiesta una compilazione deterministica e tali opzioni sono in conflitto.</value>
   </data>
   <data name="fscResxSourceFileDeprecated" xml:space="preserve">
     <value>Il passaggio di un file con estensione resx ({0}) come file di origine al compilatore è deprecato. Utilizzare resgen.exe per trasformare il file con estensione resx in un file con estensione resources da passare come opzione --resource. Se si utilizza MSBuild, tale operazione può esser eseguita mediante un elemento &lt;EmbeddedResource&gt; nel file di progetto con estensione fsproj.</value>
@@ -1619,7 +1619,7 @@
     <value>Genera controlli dell'overflow</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>Distribuito gratuitamente in conformità ai termini della licenza Open Source di Apache 2.0</value>
+    <value>Distribuito gratuitamente in conformità ai termini della licenza Open Source di MIT. https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>Il costruttore di oggetti o membro '{0}' non utilizza {1} argomento/i. Trovato overload con {2} argomenti.</value>
@@ -2899,6 +2899,9 @@
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>Valore non valido</value>
   </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>I nomi degli argomenti nella firma '{0}' e nell'implementazione '{1}' non corrispondono. Verrà usato il nome dell'argomento del file di firma. Questa situazione potrebbe causare problemi durante il debug o la profilatura.</value>
+  </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>Valore '{0}' non utilizzato</value>
   </data>
@@ -3236,7 +3239,7 @@
     <value>Specifica di proprietà a livello di origine non prevista</value>
   </data>
   <data name="tcCannotCallAbstractBaseMember" xml:space="preserve">
-    <value>Impossibile chiamare un membro di base astratto: '{0}'</value>
+    <value>Non è possibile chiamare un membro di base astratto: '{0}'</value>
   </data>
   <data name="tcConditionalAttributeRequiresMembers" xml:space="preserve">
     <value>L'attributo 'ConditionalAttribute' può essere utilizzato solo nei membri</value>

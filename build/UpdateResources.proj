@@ -1,23 +1,33 @@
 <Project>
 
   <PropertyGroup>
-    <FSharpSatelliteDirectory>\\cpvsbuild\drops\FSharp\Microbuild\20170726.1\Binaries\coreclr\bin\localize\</FSharpSatelliteDirectory>
+    <FSharpSatelliteDirectory>\\cpvsbuild\drops\FSharp\Builds\Microbuild-Dev15-RTM\20170926.5\Binaries\net40\bin\localize\</FSharpSatelliteDirectory>
     <RoslynSatelliteDirectory>\\cpvsbuild\drops\VS\d15rel\raw\26927.01\binaries.x86ret\Localized\simship\</RoslynSatelliteDirectory>
     <IntermediateOutputPath>..\bin\Intermediate\</IntermediateOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <Satellite Include="$(FSharpSatelliteDirectory)*\*.resources.dll" 
-               Exclude="$(FSharpSatelliteDirectory)ENU\*.resources.dll" />
+               Exclude="$(FSharpSatelliteDirectory)ENU\*.resources.dll;
+                        $(FSharpSatelliteDirectory)*\FSharp.LanguageService.resources.dll;
+                        $(FSharpSatelliteDirectory)*\FSharp.LanguageService.Base.resources.dll;
+                        $(FSharpSatelliteDirectory)*\FSharp.ProjectSystem.*.resources.dll;
+                        $(FSharpSatelliteDirectory)*\FSharp.UIResources.resources.dll;
+                        $(FSharpSatelliteDirectory)*\FSharp.VS.FSI.resources.dll;
+                        " />
+                        
 
     <Satellite Include="$(RoslynSatelliteDirectory)*\ExternalApis\Roslyn\*.resources.dll"
-               Exclude="$(RoslynSatelliteDirectory)ENU\ExternalApis\Roslyn\*.resources.dll" />
+               Exclude="$(RoslynSatelliteDirectory)ENU\ExternalApis\Roslyn\*.resources.dll;
+                        $(RoslynSatelliteDirectory)*\ExternalApis\Roslyn\Microsoft.CodeAnalysis.Scripting.resources.dll;
+                        $(RoslynSatelliteDirectory)*\ExternalApis\Roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll;
+                        " />
   </ItemGroup>
 
   <Target Name="Build" 
           DependsOnTargets="DecompileSatellite;
                             DecompileResource;
-                            DeleteUnusedAssemblies" />
+                            " />
   
   <Target Name="DecompileSatellite" Inputs="@(Satellite)" Outputs="%(Satellite.Identity).batch">
     <MakeDir Directories="$(IntermediateOutputPath)%(Satellite.Filename)\" />
@@ -41,10 +51,4 @@
     <MakeDir Directories="..\src\%(Resource.Assembly)" />
     <Exec Command="resgen %(Resource.FullPath) ..\src\%(Resource.Assembly)\$(ResourceFilename).$(ResourceLanguage).resx" />
   </Target>
-
-  <Target Name="DeleteUnusedAssemblies">
-    <RemoveDir Directories="..\src\Microsoft.CodeAnalysis.Scripting;
-                            ..\src\Microsoft.CodeAnalysis.CSharp.Scripting" />
-  </Target>
-
 </Project>

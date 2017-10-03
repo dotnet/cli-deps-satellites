@@ -524,7 +524,7 @@
     <value>Определение данного типа включает прямую циклическую ссылку через сокращение</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Недопустимое значение "{0}" параметра --targetprofile; допустимые значения: mscorlib, netcore и netstandard.</value>
+    <value>Недопустимое значение "{0}" параметра "--targetprofile"; допустимые значения: "netcore" или "netstandard".</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>Использование привязок use в первичных конструкторах не допускается</value>
@@ -1520,7 +1520,7 @@
     <value>Пространство имен и модуль с именем "{0}" одновременно встречаются в двух частях этой сборки</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Укажите профиль целевой платформы этой сборки. Допустимые значения: mscorlib, netcore и netstandard. Значение по умолчанию — mscorlib.</value>
+    <value>Укажите профиль целевой платформы этой сборки. Допустимые значения: "netcore" или "netstandard". Значение по умолчанию: "mscorlib"</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>В версии F# 4.1 доступность сокращений типов проверяется во время компиляции. Рекомендуется изменить доступность сокращений типов. Если проигнорировать это предупреждение, возможны ошибки во время выполнения.</value>
@@ -1619,7 +1619,7 @@
     <value>Сформировать проверки переполнений</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>Распространяется бесплатно по лицензии Apache 2.0 Open Source License</value>
+    <value>Свободно распространяется в соответствии с лицензией MIT Open Source: https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>Конструктор элемента или объекта "{0}" не принимает следующее число аргументов: {1}. Обнаружена перегрузка, принимающая следующее число аргументов: {2}.</value>
@@ -1796,7 +1796,7 @@
     <value>Элемент инфиксного оператора "{0}" имеет {1} начальных аргументов. Ожидался кортеж из 3 аргументов</value>
   </data>
   <data name="ilFieldHasOffsetForSequentialLayout" xml:space="preserve">
-    <value>Атрибут FieldOffset может назначаться только членам типов, для которых используется StructLayout(LayoutKind.Explicit).</value>
+    <value>Атрибут FieldOffset может назначаться только элементам типов, для которых используется StructLayout(LayoutKind.Explicit).</value>
   </data>
   <data name="tcConstructorCannotHaveTypeParameters" xml:space="preserve">
     <value>Конструктор не может иметь явных параметров типа. Возможно, требуется использовать статический метод.</value>
@@ -2126,7 +2126,7 @@
     <value>Активный шаблон "{0}" не является функцией</value>
   </data>
   <data name="chkGetterSetterDoNotMatchAbstract" xml:space="preserve">
-    <value>Свойство "{0}" типа "{1}" содержит несовпадающие методы получения и задания. Если один из этих методов является абстрактным, второй также должен быть абстрактным.</value>
+    <value>Свойство "{0}" типа "{1}" содержит несовпадающие методы считывания и получения. Если один из этих методов является абстрактным, второй также должен быть абстрактным.</value>
   </data>
   <data name="tcNoIntegerForLoopInQuery" xml:space="preserve">
     <value>В запросах используйте для перебора интервала целых чисел форму "for x in n .. m do ..."</value>
@@ -2258,7 +2258,7 @@
     <value>Модуль содержит конструктор\n    {0}    \nоднако его сигнатура задает\n    {1}    \nИмена различаются</value>
   </data>
   <data name="customOperationTextLikeJoin" xml:space="preserve">
-    <value>Переменная {0} в коллекции {1} (outerKey = innerKey). Обратите внимание, что после "{2}" нужны круглые скобки</value>
+    <value>переменную {0} в коллекции {1} (outerKey = innerKey). Учтите, что после "{2}" необходимо использовать круглые скобки</value>
   </data>
   <data name="parsInOrEqualExpected" xml:space="preserve">
     <value>Ожидалось "in" или "="</value>
@@ -2741,7 +2741,7 @@
     <value>Используется для преобразования в тип, который находится выше в цепочке наследования.</value>
   </data>
   <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
-    <value>Переменная {0} из коллекции {1} (outerKey = innerKey) в группе. Обратите внимание, что после "{2}" нужны круглые скобки</value>
+    <value>переменную {0} в коллекции {1} (outerKey = innerKey) в группу. Учтите, что после "{2}" необходимо использовать круглые скобки</value>
   </data>
   <data name="tcDefaultStructConstructorCall" xml:space="preserve">
     <value>Конструктор нулевой инициализации типа структуры по умолчанию может использоваться только в случае, если все поля типа структуры допускают инициализацию по умолчанию.</value>
@@ -2873,7 +2873,7 @@
     <value>Тип с атрибутом "NoEquality" обычно не должен содержать явную реализацию метода "Object.Equals(obj)". Если эта операция выполняется в целях обеспечения совместимости, отключите это предупреждение</value>
   </data>
   <data name="tastValueHasBeenCopied" xml:space="preserve">
-    <value>Значение было скопировано, чтобы не допустить изменения исходного значения этой операцией, или так как копирование выполняется неявно при возвращении структуры из члена и последующего получения доступа к другому члену</value>
+    <value>Это значение было скопировано, чтобы не допустить изменения исходного значения при выполнении этой операции или по причине того, что копия неявная при извлечении структуры из элемента и последующем доступе к другому элементу</value>
   </data>
   <data name="tcConstrainedTypeVariableCannotBeGeneralized" xml:space="preserve">
     <value>Один или несколько явных классов или переменных типов функций для данной привязки не могут быть обобщены, так как они были ограничены на другие типы.</value>
@@ -2898,6 +2898,9 @@
   </data>
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>Недопустимое значение</value>
+  </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>Имена аргументов в сигнатуре "{0}" и реализации "{1}" не совпадают. Будет использоваться имя аргумента из файла с сигнатурой. Это может вызвать проблемы при отладке или профилировании.</value>
   </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>Значение "{0}" не используется</value>
@@ -3035,7 +3038,7 @@
     <value>Событие "{0}" не является статическим</value>
   </data>
   <data name="customOperationTextLikeZip" xml:space="preserve">
-    <value>Переменная {0} в коллекции</value>
+    <value>переменную {0} в коллекции</value>
   </data>
   <data name="keywordDescriptionYield" xml:space="preserve">
     <value>Используется в выражении последовательности для получения значения для последовательности.</value>
@@ -3236,7 +3239,7 @@
     <value>Недопустимая спецификация свойства уровня источника</value>
   </data>
   <data name="tcCannotCallAbstractBaseMember" xml:space="preserve">
-    <value>Не удается вызвать абстрактный член базового класса: '{0}'</value>
+    <value>Не удается вызвать абстрактный элемент базового класса: '{0}'</value>
   </data>
   <data name="tcConditionalAttributeRequiresMembers" xml:space="preserve">
     <value>Атрибут "ConditionalAttribute" может использоваться только с элементами</value>

@@ -500,7 +500,7 @@
     <value>Właściwość „{0}” w udostępnionym typie „{1}” ma właściwość CanWrite=false, ale metoda GetSetMethod() zwróciła metodę</value>
   </data>
   <data name="optsEmitDebugInfoInQuotations" xml:space="preserve">
-    <value>Emituj informacje debugowania w cudzysłowach</value>
+    <value>Emituj informacje debugowania w wyrażeniach cytowanych</value>
   </data>
   <data name="optsNowin32manifest" xml:space="preserve">
     <value>Nie dołączaj domyślnego manifestu Win32</value>
@@ -524,7 +524,7 @@
     <value>Ta definicja typu zawiera bezpośrednie odwołanie cykliczne za pośrednictwem skrótu</value>
   </data>
   <data name="optsInvalidTargetProfile" xml:space="preserve">
-    <value>Nieprawidłowa wartość „{0}” dla opcji „--targetprofile”. Prawidłowe wartości to „mscorlib”, „netcore” lub „netstandard”.</value>
+    <value>Nieprawidłowa wartość „{0}” dla opcji „--targetprofile”. Prawidłowe wartości to „mscorlib”, „netcore” i „netstandardx”.</value>
   </data>
   <data name="parsUseBindingsIllegalInImplicitClassConstructors" xml:space="preserve">
     <value>Powiązania „use” nie są dozwolone w konstruktorach podstawowych</value>
@@ -1208,7 +1208,7 @@
     <value>Użycie konstrukcji „-&gt;” w wyrażeniach obliczenia i sekwencji jest ograniczone do postaci „for wzorzec in wyrażenie -&gt; wyrażenie”. Użyj składni „for ... in ... do ... yield...”, aby wygenerować elementy w bardziej złożonych wyrażeniach sekwencji.</value>
   </data>
   <data name="parsGetterMustHaveAtLeastOneArgument" xml:space="preserve">
-    <value>Oczekiwano, że właściwość metody pobierającej będzie funkcją, np. „get() = ...” lub „get(indeks) = ...”</value>
+    <value>Oczekiwano, że właściwość pobierająca będzie funkcją, np. „get() = ...” lub „get(indeks) = ...”</value>
   </data>
   <data name="parsMismatchedQuote" xml:space="preserve">
     <value>Niezgodny cytat, począwszy od „{0}”</value>
@@ -1520,7 +1520,7 @@
     <value>Przestrzeń nazw i moduł o nazwie „{0}” występują w dwóch częściach tego zestawu</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Określ profil platformy docelowej tego zestawu. Prawidłowe wartości to mscorlib, netcore lub netstandard. Wartość domyślna to mscorlib</value>
+    <value>Określ profil platformy docelowej tego zestawu. Prawidłowe wartości to mscorlib, netcore i netstandard. Wartość domyślna to mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>Począwszy od wersji F# 4.1, dostępność skrótów typów jest sprawdzana w czasie kompilacji. Rozważ sprawdzenie dostępności skrótu typu. Zignorowanie tego ostrzeżenia może prowadzić do błędów w czasie wykonywania.</value>
@@ -1619,7 +1619,7 @@
     <value>Generuj operacje sprawdzenia przepełnienia</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>Udostępniane bezpłatnie w ramach licencji open source Apache 2.0</value>
+    <value>Swobodnie dystrybuowane na licencji MIT Open Source.  https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>Konstruktor elementu członkowskiego lub obiektu „{0}” nie pobiera argumentów w liczbie {1}. Znaleziono przesłonięcie pobierające argumenty o następującej liczbie: {2}.</value>
@@ -2258,7 +2258,7 @@
     <value>Moduł zawiera konstruktora\n    {0},    \nale jego sygnatura określa\n    {1}    \nNazwy są różne</value>
   </data>
   <data name="customOperationTextLikeJoin" xml:space="preserve">
-    <value>{0} zmienna in kolekcja {1} (klucz_zewnętrzny = klucz_wewnętrzny). Pamiętaj, że po „{2}” wymagane są nawiasy.</value>
+    <value>{0} zmienna in kolekcja {1} (klucz_zewnętrzny = klucz_wewnętrzny). Pamiętaj, że po elemencie „{2}” wymagane są nawiasy</value>
   </data>
   <data name="parsInOrEqualExpected" xml:space="preserve">
     <value>Oczekiwano konstrukcji „in” lub „=”</value>
@@ -2741,7 +2741,7 @@
     <value>Używane do konwertowania na typ znajdujący się wyżej w łańcuchu dziedziczenia.</value>
   </data>
   <data name="customOperationTextLikeGroupJoin" xml:space="preserve">
-    <value>{0} zmienna in kolekcja {1} (klucz_zewnętrzny = klucz_wewnętrzny) into grupa. Pamiętaj, że po „{2}” wymagane są nawiasy.</value>
+    <value>{0} zmienna in kolekcja {1} (klucz_zewnętrzny = klucz_wewnętrzny) into grupa. Pamiętaj, że po elemencie „{2}” wymagane są nawiasy</value>
   </data>
   <data name="tcDefaultStructConstructorCall" xml:space="preserve">
     <value>Domyślny konstruktor typu struktury inicjujący wartość zero może być używany tylko wtedy, gdy wszystkie pola typu struktury akceptują domyślną inicjalizację</value>
@@ -2898,6 +2898,9 @@
   </data>
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>Nieprawidłowa wartość</value>
+  </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>Nazwy argumentów w sygnaturze „{0}” i implementacji „{1}” nie są zgodne. Zostanie użyta nazwa argumentu z pliku sygnatury. Może to spowodować problemy podczas debugowania lub profilowania.</value>
   </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>Wartość „{0}” nie jest używana</value>
@@ -3179,7 +3182,7 @@
     <value>Zduplikowana właściwość. Właściwość „{0}” ma taką samą nazwę i sygnaturę co inna właściwość w typie „{1}”.</value>
   </data>
   <data name="optsPreferredUiLang" xml:space="preserve">
-    <value> Określ nazwę kultury preferowanego języka wyjściowego (np. es-ES, ja-JP)</value>
+    <value>Określ nazwę kultury preferowanego języka wyjściowego (np. es-ES, ja-JP)</value>
   </data>
   <data name="tcSeqResultsUseYield" xml:space="preserve">
     <value>W wyrażeniach sekwencji wyniki są generowane przy użyciu elementu „yield”</value>
@@ -3590,7 +3593,7 @@
     <value>Atrybut „CustomEquality” musi być używany w połączeniu z atrybutami „NoComparison” lub „CustomComparison”</value>
   </data>
   <data name="parsGetterAtMostOneArgument" xml:space="preserve">
-    <value>Właściwość metody pobierającej może mieć najwyżej jedną grupę argumentów</value>
+    <value>Właściwość pobierająca może mieć najwyżej jedną grupę argumentów</value>
   </data>
   <data name="tcThisValueMayNotBeInlined" xml:space="preserve">
     <value>Ta deklaracja elementu członkowskiego, funkcji lub wartości nie może być zadeklarowana jako „inline”</value>

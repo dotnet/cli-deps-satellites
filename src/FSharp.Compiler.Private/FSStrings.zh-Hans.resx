@@ -229,7 +229,7 @@
     <value>。应为 {0}、{1}、{2} 或其他标记。</value>
   </data>
   <data name="Parser.TOKEN.COLON.QMARK" xml:space="preserve">
-    <value>符号“:?”</value>
+    <value>符号“:</value>
   </data>
   <data name="InterfaceNotRevealed" xml:space="preserve">
     <value>类型实现了接口“{0}”，而签名未显示此接口。您应在签名中列出此接口，因为通过动态类型强制转换和/或反射将可以发现此接口。</value>
@@ -238,7 +238,7 @@
     <value>关键字“public”</value>
   </data>
   <data name="Parser.TOKEN.COLON.COLON" xml:space="preserve">
-    <value>符号“::”</value>
+    <value>符号“:</value>
   </data>
   <data name="SeeAlso" xml:space="preserve">
     <value>。请参见 {0}。</value>
@@ -313,7 +313,7 @@
     <value>将检查对要定义的对象的此引用和其他递归引用，以查看其在运行时能否通过使用延迟的引用来完整地进行初始化。这是因为您定义的是一个或多个递归对象，而不是递归函数。可以使用“#nowarn "40"”或“--nowarn:40”来禁止显示此警告。</value>
   </data>
   <data name="Parser.TOKEN.COLON.QMARK.GREATER" xml:space="preserve">
-    <value>符号“:?&gt;”</value>
+    <value>符号“:</value>
   </data>
   <data name="PossibleOverload" xml:space="preserve">
     <value>可能的重载: “{0}”。{1}。</value>
@@ -586,7 +586,7 @@
     <value>。应为 {0}、{1} 或其他标记。</value>
   </data>
   <data name="Parser.TOKEN.QMARK.QMARK" xml:space="preserve">
-    <value>符号“??”</value>
+    <value>符号“?</value>
   </data>
   <data name="NotUpperCaseConstructor" xml:space="preserve">
     <value>可区分的联合用例和异常标签必须是大写的标识符</value>
@@ -646,7 +646,7 @@
     <value>符号“{&lt;”</value>
   </data>
   <data name="Parser.TOKEN.COLON.EQUALS" xml:space="preserve">
-    <value>符号“:=”</value>
+    <value>符号“:</value>
   </data>
   <data name="Parser.TOKEN.INHERIT" xml:space="preserve">
     <value>关键字“inherit”</value>
@@ -760,7 +760,7 @@
     <value>值限制。值“{0}”具有泛型类型\n    {1}    \n使“{2}”成为具有显式参数的函数，或添加类型批注(如果您不希望它是泛型的)。</value>
   </data>
   <data name="ValueRestriction3" xml:space="preserve">
-    <value>值限制。已推理出此成员具有泛型类型\n    {0}    \n构造函数和属性 Getter/Setter 不能比封闭类型更通用。    添加类型批注以指示涉及到的确切类型。</value>
+    <value>值限制。已推理出此成员具有泛型类型\n    {0}    \n构造函数和属性 getter/setter 不能比封闭类型更通用。    添加类型批注以指示涉及到的确切类型。</value>
   </data>
   <data name="ValueRestriction1" xml:space="preserve">
     <value>值限制。值“{0}”具有泛型类型\n    {1}    \n使“{2}”的参数成为显式参数，或添加类型批注(如果您不希望它是泛型的)。</value>
@@ -844,7 +844,7 @@
     <value>将检查对要定义的对象的递归引用，以查看其在运行时能否通过使用延迟的引用来完整地进行初始化。请考虑在构造序列中的最后一个“let”绑定后的“do”语句中放置自引用。</value>
   </data>
   <data name="Parser.TOKEN.COLON.GREATER" xml:space="preserve">
-    <value>符号“:&gt;”</value>
+    <value>符号“:</value>
   </data>
   <data name="UnionCaseWrongArguments" xml:space="preserve">
     <value>此构造函数应用于 {0} 个参数，但应为 {1} 个参数</value>
@@ -874,7 +874,7 @@
     <value>yield</value>
   </data>
   <data name="Parser.TOKEN.QMARK" xml:space="preserve">
-    <value>符号“?”</value>
+    <value>符号“?</value>
   </data>
   <data name="Parser.TOKEN.QUOTE" xml:space="preserve">
     <value>引用符号</value>
@@ -904,7 +904,7 @@
     <value>关键字“else”</value>
   </data>
   <data name="Parser.TOKEN.COLON" xml:space="preserve">
-    <value>符号“:”</value>
+    <value>符号“:</value>
   </data>
   <data name="Parser.TOKEN.COMMA" xml:space="preserve">
     <value>符号“,”</value>

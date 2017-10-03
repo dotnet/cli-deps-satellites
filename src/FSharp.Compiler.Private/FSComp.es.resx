@@ -968,7 +968,7 @@
     <value>El módulo principal del programa está vacío: no ocurrirá nada cuando se ejecute.</value>
   </data>
   <data name="fscAssemblyWildcardAndDeterminism" xml:space="preserve">
-    <value>An {0} specified version '{1}', but this value is a wildcard, and you have requested a deterministic build, these are in conflict.</value>
+    <value>Un objeto {0} especificó la versión "{1}", pero este valor es un carácter comodín y ha solicitado una compilación determinista. Estas opciones están en conflicto.</value>
   </data>
   <data name="fscResxSourceFileDeprecated" xml:space="preserve">
     <value>El paso de un archivo .resx ({0}) como archivo de código fuente al compilador está en desuso. Use resgen.exe para transformar el archivo .resx en un archivo .resources, que se pasará como opción --resource. Si usa MSBuild, esta operación se puede realizar mediante un elemento &lt;recursoIncrustado&gt; en el archivo de proyecto .fsproj.</value>
@@ -1520,7 +1520,7 @@
     <value>Hay un espacio de nombres y un módulo con el nombre '{0}' en dos partes de este ensamblado.</value>
   </data>
   <data name="optsTargetProfile" xml:space="preserve">
-    <value>Especifique el perfil de la plataforma de destino de este ensamblado. Los valores válidos son mscorlib, netcore o netstandard. Valor predeterminado: mscorlib.</value>
+    <value>Especifique el perfil de la plataforma de destino de este ensamblado. Los valores válidos son mscorlib, netcore o netstandard. Valor predeterminado: mscorlib</value>
   </data>
   <data name="tcTypeAbbreviationsCheckedAtCompileTime" xml:space="preserve">
     <value>A partir de F# 4.1, la accesibilidad de las abreviaturas de tipo se comprueba en tiempo de compilación. Considere la posibilidad de cambiar la accesibilidad de la abreviatura de tipo. Si pasa por alto esta advertencia, se podrían producir errores de tiempo de ejecución.</value>
@@ -1619,7 +1619,7 @@
     <value>Generar comprobaciones de desbordamiento</value>
   </data>
   <data name="optsCopyrightCommunity" xml:space="preserve">
-    <value>Distribuido libremente bajo licencia de código abierto de Apache 2.0</value>
+    <value>Distribuido de forma gratuita bajo licencia de código abierto de MIT. https://github.com/Microsoft/visualfsharp/blob/master/License.txt</value>
   </data>
   <data name="csMemberOverloadArityMismatch" xml:space="preserve">
     <value>El constructor de objeto o miembro '{0}' no toma {1} argumentos. Se encontró una sobrecarga que toma {2} argumentos.</value>
@@ -2899,6 +2899,9 @@
   <data name="typrelInvalidValue" xml:space="preserve">
     <value>Valor no válido</value>
   </data>
+  <data name="ArgumentsInSigAndImplMismatch" xml:space="preserve">
+    <value>Los nombres de argumento de la signatura "{0}" y de la implementación "{1}" no coinciden. Se usará el nombre de argumento del archivo de signatura. Esto puede causar problemas durante la depuración o la generación de perfiles.</value>
+  </data>
   <data name="chkUnusedValue" xml:space="preserve">
     <value>El valor '{0}' no se usa.</value>
   </data>
@@ -3335,7 +3338,7 @@
     <value>Compilar una biblioteca (forma corta: -a)</value>
   </data>
   <data name="buildCouldNotResolveAssembly" xml:space="preserve">
-    <value>No se pudo resolver el ensamblado '{0}'.</value>
+    <value>No se pudo resolver el ensamblado '{0}'</value>
   </data>
   <data name="csMemberNotAccessible" xml:space="preserve">
     <value>Un constructor de objeto o miembro '{0}' que toma {1} argumentos no es accesible desde este lugar del código. Todas las versiones accesibles del método '{2}' toman {3} argumentos.</value>
@@ -3968,7 +3971,7 @@
     <value>Las abreviaciones de excepciones deben hacer referencia a excepciones existentes o tipos de F# que se deriven de System.Exception.</value>
   </data>
   <data name="optsEmbedAllSource" xml:space="preserve">
-    <value>Inserta todos los archivos de código fuente en el archivo PDB portátil.</value>
+    <value>Insertar todos los archivos de código fuente en el archivo PDB portátil</value>
   </data>
   <data name="tcOnlySimplePatternsInLetRec" xml:space="preserve">
     <value>Solo se pueden enlazar patrones de variable simple en construcciones 'let rec'.</value>

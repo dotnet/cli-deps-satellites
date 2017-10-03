@@ -883,7 +883,7 @@
     <value>從實值類型 \n    {0}    \n到類型 \n    {1}    \n的強制型轉將涉及 Boxing。請考慮改用 'box'</value>
   </data>
   <data name="Parser.TOKEN.IDENT" xml:space="preserve">
-    <value>識別碼</value>
+    <value>識別項</value>
   </data>
   <data name="Parser.TOKEN.WHILE" xml:space="preserve">
     <value>關鍵字 'while'</value>
