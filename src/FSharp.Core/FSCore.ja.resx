@@ -318,6 +318,9 @@
   <data name="QinvalidFuncType" xml:space="preserve">
     <value>無効な関数型</value>
   </data>
+  <data name="thisValueCannotBeMutated" xml:space="preserve">
+    <value>この値は変換できません</value>
+  </data>
   <data name="mismatchIARCancel" xml:space="preserve">
     <value>提供された IAsyncResult オブジェクトはこの '取り消し' 操作と一致しません。</value>
   </data>
@@ -389,9 +392,6 @@
   </data>
   <data name="notComparable" xml:space="preserve">
     <value>2 つのオブジェクトの型が異なり、比較できません。</value>
-  </data>
-  <data name="ThisValueCannotBeMutated" xml:space="preserve">
-    <value>この値は変換できません</value>
   </data>
   <data name="unsupportedQueryConstruct" xml:space="preserve">
     <value>これは有効なクエリ式ではありません。クエリで次の構造が使用されていますが、F# から LINQ へのクエリ トランスレーターに認識されません:\n{0}\n許可されたクエリの仕様を確認し、一部の操作をクエリ式の外に移動することを検討してください。</value>

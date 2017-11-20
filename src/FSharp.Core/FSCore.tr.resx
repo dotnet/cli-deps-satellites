@@ -318,6 +318,9 @@
   <data name="QinvalidFuncType" xml:space="preserve">
     <value>Geçersiz işlev türü</value>
   </data>
+  <data name="thisValueCannotBeMutated" xml:space="preserve">
+    <value>Bu değer değiştirilemez</value>
+  </data>
   <data name="mismatchIARCancel" xml:space="preserve">
     <value>Sağlanan IAsyncResult nesnesi bu 'Cancel' işlemiyle eşleşmiyor.</value>
   </data>
@@ -389,9 +392,6 @@
   </data>
   <data name="notComparable" xml:space="preserve">
     <value>İki nesne farklı türlere sahip ve karşılaştırılamaz.</value>
-  </data>
-  <data name="ThisValueCannotBeMutated" xml:space="preserve">
-    <value>Bu değer değiştirilemez</value>
   </data>
   <data name="unsupportedQueryConstruct" xml:space="preserve">
     <value>Bu geçerli bir sorgu ifadesi değil. Aşağıdaki yapı sorguda kullanıldı, ancak F#-to-LINQ çevirmeni tarafından tanınmıyor:\n{0}\nİzin verilen soruların belirtimini denetleyin ve işlemlerden bazılarını sorgu ifadesinin dışına taşımayı düşünün.</value>

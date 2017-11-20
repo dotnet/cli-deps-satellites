@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>這個數字已經超出十進位常值允許的範圍</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>讀取組件 '{0}' 的 F# 中繼資料時發生錯誤。已使用保留的建構。您可能需要升級 F# 編譯器，或使用不會使用特定建構的舊版組件。</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>靜態參數太多。最多必須有 {0} 個參數，但收到 {1} 個未命名參數及 {2} 個具名參數。</value>
   </data>

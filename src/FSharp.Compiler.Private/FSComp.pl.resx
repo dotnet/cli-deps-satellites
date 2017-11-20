@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>Ta liczba jest poza dozwolonym zakresem literałów dziesiętnych</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>Wystąpił błąd podczas odczytu metadanych języka F# zestawu „{0}”. Wykorzystano zarezerwowaną konstrukcję. Konieczne może być uaktualnienie kompilatora języka F# lub użycie starszej wersji zestawu, która nie korzysta z tej konkretnej konstrukcji.</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>Zbyt wiele parametrów statycznych. Oczekiwano co najwyżej następującej liczby parametrów: {0}, ale uzyskano następującą liczbę parametrów nienazwanych i nazwanych: {1} i {2} .</value>
   </data>

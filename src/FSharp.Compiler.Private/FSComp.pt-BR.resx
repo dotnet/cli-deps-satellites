@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>Este número está fora do intervalo permitido para literais decimais</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>Ocorreu um erro ao ler os metadados F# do assembly '{0}'. Um constructo reservado foi utilizado. Talvez seja necessário atualizar o compilador F# ou usar uma versão anterior do assembly que não faça uso de um constructo específico.</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>Excesso de parâmetros estáticos. Eram esperados no máximo {0} parâmetros, mas {1} parâmetros não nomeados e {2} parâmetros nomeados foram recebidos.</value>
   </data>

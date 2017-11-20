@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>この数値は、10 進リテラルに使用できる範囲から外れています</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>アセンブリ '{0}' の F# メタデータを読み取り中にエラーが発生しました。予約済みのコンストラクトが使用されました。F# コンパイラをアップグレードするか、特定のコンストラクトを使用しない以前のバージョンのアセンブリを使用する必要がある場合があります。</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>静的パラメーターが多すぎます。静的パラメーターの最大数は {0} 個ですが、名前のないパラメーターが {1} 個、名前付きパラメーターが {2} 個あります。</value>
   </data>

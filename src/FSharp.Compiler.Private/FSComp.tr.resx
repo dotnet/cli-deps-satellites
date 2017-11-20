@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>Bu sayı, ondalık sabit değerleri için izin verilen aralığın dışında</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>'{0}' bütünleştirilmiş kodunun F# meta verileri okunurken bir hata oluştu. Ayrılmış bir yapı kullanıldı. F# derleyicinizi yükseltmeniz veya bütünleştirilmiş kodun, belirli bir yapıdan yararlanmayan daha eski sürümünü kullanmanız gerekebilir.</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>Çok fazla statik parametre. En çok {0} parametre bekleniyordu, ancak {1} adlandırılmamış ve {2} adlandırılmış parametre alındı.</value>
   </data>
@@ -2951,7 +2954,7 @@
     <value>Tür çıkarımı, {0} tür değişkeninin kapsamından çıkmasına neden oldu. Açık bir tür parametresi bildirimi ekleyebilir ya da kodunuzu ayarlayarak daha az genel hale getirebilirsiniz.</value>
   </data>
   <data name="optsDebug" xml:space="preserve">
-    <value>Hata ayıklama türünü belirtin: full, portable, embedded, pdbonly. (Hata ayıklama türü belirtilmemişse '{0}' varsayılandır ve çalışan bir programa hata ayıklayıcı iliştirmeyi etkinleştirir. 'portable' platformlar arası bir biçimdir, 'embedded' çıkış dosyasına gömülü bir platformlar arası biçimdir).</value>
+    <value>Hata ayıklama türünü belirtin: full, portable, embedded, pdbonly. (Hata ayıklama türü belirtilmemişse '{0}' varsayılandır ve çalışan bir programa hata ayıklayıcı iliştirmeyi etkinleştirir. 'portable' bir çoklu platform biçimidir, 'embedded' çıkış dosyasına gömülü bir çoklu platform biçimidir).</value>
   </data>
   <data name="parsOnlyHashDirectivesAllowed" xml:space="preserve">
     <value>İlk 'namespace' bildiriminden önce yalnızca '#' derleyici yönergeleri gerçekleşebilir</value>

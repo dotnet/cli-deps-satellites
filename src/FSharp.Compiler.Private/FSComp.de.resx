@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>Diese Zahl liegt außerhalb des zulässigen Bereichs für Dezimalliterale.</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>Fehler beim Lesen der F#-Metadaten der Assembly "{0}". Ein reserviertes Konstrukt wurde verwendet. Möglicherweise müssen Sie Ihren F#-Compiler aktualisieren oder eine frühere Version der Assembly verwenden, die kein spezifisches Konstrukt einsetzt.</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>Zu viele statische Parameter. Es wurden höchstens {0} Parameter erwartet, zurückgegeben wurden jedoch {1} unbenannte und {2} benannte Parameter.</value>
   </data>
