@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <FSharpSatelliteDirectory>\\cpvsbuild\drops\FSharp\Builds\Microbuild-Dev15-RTM\20170926.5\Binaries\net40\bin\localize\</FSharpSatelliteDirectory>
-    <RoslynSatelliteDirectory>\\cpvsbuild\drops\VS\d15rel\raw\26927.01\binaries.x86ret\Localized\simship\</RoslynSatelliteDirectory>
+    <RoslynSatelliteDirectory>\\cpvsbuild\drops\VS\d15rel\raw\27119.00\binaries.x86ret\Localized\simship\</RoslynSatelliteDirectory>
     <IntermediateOutputPath>..\bin\Intermediate\</IntermediateOutputPath>
   </PropertyGroup>
 

@@ -231,6 +231,9 @@
   <data name="ERR_GotoIntoFor" xml:space="preserve">
     <value>'GoTo {0}' n'est pas valide, car '{0}' se trouve à l'intérieur d'une instruction 'For' ou 'For Each' qui ne contient pas cette instruction.</value>
   </data>
+  <data name="IArgumentIsNotVisualBasicArgument" xml:space="preserve">
+    <value>{0} n'est pas un argument Visual Basic valide</value>
+  </data>
   <data name="WRN_DefAsgUseNullRefStr_Title" xml:space="preserve">
     <value>La variable est utilisée avant de se voir attribuer une valeur</value>
   </data>
@@ -447,7 +450,7 @@
     <value>La référence d'assembly '{0}' n'est pas valide et ne peut pas être résolue.</value>
   </data>
   <data name="ERR_DuplicateAccessCategoryUsed" xml:space="preserve">
-    <value>Only one of 'Public', 'Private', 'Protected', 'Friend', 'Protected Friend', or 'Private Protected' can be specified.</value>
+    <value>Vous pouvez spécifier uniquement une instance de type 'Public', 'Private', 'Protected', 'Friend', 'Protected Friend' ou 'Private Protected'.</value>
   </data>
   <data name="WRN_LambdaPassedToRemoveHandler_Title" xml:space="preserve">
     <value>L’expression lambda ne sera pas supprimée de ce gestionnaire d’événements</value>
@@ -718,7 +721,7 @@
     <value>'{0}' porte le même nom qu'un autre membre utilisé pour le type '{1}' exposé dans un groupe 'My'. Renommez le type ou son espace de noms englobant.</value>
   </data>
   <data name="ERR_ExpectedNamedArgumentInAttributeList" xml:space="preserve">
-    <value>Named argument expected.</value>
+    <value>Argument nommé attendu.</value>
   </data>
   <data name="ERR_NameNotEvent2" xml:space="preserve">
     <value>'{0}' n'est pas un événement de '{1}'.</value>
@@ -757,7 +760,7 @@
     <value>Impossible d'utiliser le type '{0}' dans ce contexte, car '{0}' est un paramètre de type 'Out'.</value>
   </data>
   <data name="ERR_InvalidDebugInfo" xml:space="preserve">
-    <value>Unable to read debug information of method '{0}' (token 0x{1}) from assembly '{2}'</value>
+    <value>Impossible de lire les informations de débogage de la méthode '{0}' (jeton 0x{1}) dans l'assembly '{2}'</value>
   </data>
   <data name="ERR_DefaultMissingFromProperty2" xml:space="preserve">
     <value>'{0}' et '{1}' ne peuvent pas se surcharger mutuellement, car seul l'un d'entre eux est déclaré 'Default'.</value>
@@ -806,6 +809,9 @@
   </data>
   <data name="ERR_QueryOperatorNotFound" xml:space="preserve">
     <value>La définition de la méthode '{0}' n'est pas accessible dans ce contexte.</value>
+  </data>
+  <data name="IConversionExpressionIsNotVisualBasicConversion" xml:space="preserve">
+    <value>{0} n'est pas une expression de conversion Visual Basic valide</value>
   </data>
   <data name="ERR_InaccessibleMember3" xml:space="preserve">
     <value>'{0}.{1}' n'est pas accessible dans ce contexte, car il est '{2}'.</value>
@@ -954,7 +960,7 @@
     <value>Impossible de déduire un type commun, car plusieurs types sont possibles. Type 'Object' pris par défaut.</value>
   </data>
   <data name="FEATURE_LeadingDigitSeparator" xml:space="preserve">
-    <value>leading digit separator</value>
+    <value>séparateur numérique de début</value>
   </data>
   <data name="ERR_ExpectedStringLiteral" xml:space="preserve">
     <value>Constante de chaîne attendue.</value>
@@ -1456,7 +1462,7 @@
     <value>Les instructions 'ReDim' requièrent une liste entre parenthèses des nouvelles limites de chaque dimension du tableau.</value>
   </data>
   <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
-    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+    <value>L'argument nommé '{0}' est utilisé hors-position mais est suivi d'un argument sans nom</value>
   </data>
   <data name="ERR_InvalidAttributeUsageOnAccessor" xml:space="preserve">
     <value>L'attribut '{0}' ne peut pas être appliqué à '{1}' de '{2}', car il n'est pas valide dans ce type de déclaration.</value>
@@ -1924,7 +1930,7 @@
     <value>'End Set' doit être précédé d'un 'Set' correspondant.</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed switch is only supported when emitting a PDB.</value>
+    <value>Le commutateur /embed est uniquement pris en charge durant l'émission d'un fichier PDB.</value>
   </data>
   <data name="WRN_VarianceDeclarationAmbiguous3" xml:space="preserve">
     <value>La présence des paramètres 'In' et 'Out' dans '{2}' crée une ambiguïté entre l'interface '{0}' et une autre interface '{1}' implémentée.</value>
@@ -2235,7 +2241,7 @@
     <value>L'instruction ne peut pas apparaître dans le corps d'une interface.</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInLateboundInvocation" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified in a late bound invocation.</value>
+    <value>Les spécifications d'argument nommé doivent s'afficher après la spécification de tous les arguments fixes dans un appel avec liaison tardive.</value>
   </data>
   <data name="ERR_NamedParamNotFound1" xml:space="preserve">
     <value>'{0}' n'est pas un paramètre de méthode.</value>
@@ -3973,7 +3979,7 @@
     <value>La méthode ne peut pas comporter simultanément des paramètres ParamArray et Optional.</value>
   </data>
   <data name="ERR_StructureCantUseProtected" xml:space="preserve">
-    <value>Method in a structure cannot be declared 'Protected', 'Protected Friend', or 'Private Protected'.</value>
+    <value>Une méthode dans une structure ne peut pas être déclarée 'Protected', 'Protected Friend' ou 'Private Protected'.</value>
   </data>
   <data name="WRN_QueryMissingAsClauseinVarDecl" xml:space="preserve">
     <value>La variable de portée est considérée comme étant de type Object, car son type ne peut pas être déduit. Utilisez une clause 'As' pour indiquer un type différent.</value>
@@ -3985,7 +3991,7 @@
     <value>'MustInherit' ne peut pas être spécifié pour le type partiel '{0}', car il ne peut pas être combiné avec 'NotInheritable' spécifié pour l'un de ses autres types partiels.</value>
   </data>
   <data name="IDS_LangVersions" xml:space="preserve">
-    <value>Supported language versions:</value>
+    <value>Versions de langage prises en charge :</value>
   </data>
   <data name="ERR_RemoveParamWrongForWinRT" xml:space="preserve">
     <value>Dans un événement Windows Runtime, le type du paramètre de méthode 'RemoveHandler' doit être 'EventRegistrationToken'</value>
@@ -4346,164 +4352,164 @@
     <value>'Is' attendu.</value>
   </data>
   <data name="IDS_VBCHelp" xml:space="preserve">
-    <value>                  Visual Basic Compiler Options
+    <value>                  Options du compilateur Visual Basic
 
-                                  - OUTPUT FILE -
-/out:&lt;file&gt;                       Specifies the output file name.
-/target:exe                       Create a console application (default). 
-                                  (Short form: /t)
-/target:winexe                    Create a Windows application.
-/target:library                   Create a library assembly.
-/target:module                    Create a module that can be added to an 
+                                  - FICHIER DE SORTIE -
+/out:&lt;fichier&gt;                    Spécifie le nom du fichier de sortie.
+/target:exe                       Créer une application console (par défaut). 
+                                  (Forme abrégée : /t)
+/target:winexe                    Créer une application Windows.
+/target:library                   Créer un assembly de bibliothèque.
+/target:module                    Créer un module qui peut être ajouté à un 
                                   assembly.
-/target:appcontainerexe           Create a Windows application that runs in 
+/target:appcontainerexe           Créer une application Windows qui s'exécute dans 
                                   AppContainer.
-/target:winmdobj                  Create a Windows Metadata intermediate file
-/doc[+|-]                         Generates XML documentation file.
-/doc:&lt;file&gt;                       Generates XML documentation file to &lt;file&gt;.
-/refout:&lt;file&gt;                    Reference assembly output to generate
+/target:winmdobj                  Créer un fichier intermédiaire de métadonnées Windows
+/doc[+|-]                         Génère un fichier de documentation XML.
+/doc:&lt;fichier&gt;                    Génère un fichier de documentation XML dans &lt;fichier&gt;.
+/refout:&lt;fichier&gt;                 Référencer la sortie d'assembly à générer
 
-                                  - INPUT FILES -
-/addmodule:&lt;file_list&gt;            Reference metadata from the specified modules
-/link:&lt;file_list&gt;                 Embed metadata from the specified interop 
-                                  assembly. (Short form: /l)
-/recurse:&lt;wildcard&gt;               Include all files in the current directory 
-                                  and subdirectories according to the
-                                  wildcard specifications.
-/reference:&lt;file_list&gt;            Reference metadata from the specified 
-                                  assembly. (Short form: /r)
-/analyzer:&lt;file_list&gt;             Run the analyzers from this assembly
-                                  (Short form: /a)
-/additionalfile:&lt;file list&gt;       Additional files that don't directly affect code
-                                  generation but may be used by analyzers for producing
-                                  errors or warnings.
+                                  - FICHIERS D'ENTRÉE -
+/addmodule:&lt;liste_fichiers&gt;   Référencer les métadonnées à partir des modules spécifiés
+/link:&lt;liste_fichiers&gt;            Incorporer les métadonnées à partir de 
+                                  l'assembly d'interopérabilité spécifié. (Forme abrégée : /l)
+/recurse:&lt;générique&gt;              Inclure tous les fichiers dans le répertoire 
+                                  et les sous-répertoires actifs en fonction des
+                                  spécifications des caractères génériques.
+/reference:&lt;liste_fichiers&gt;       Référencer les métadonnées à partir de 
+                                  l'assembly spécifié. (Forme abrégée : /r)
+/analyzer:&lt;liste_fichiers&gt;        Exécuter les analyseurs à partir de cet assembly
+                                  (Forme abrégée : /a)
+/additionalfile:&lt;liste_fich.&gt;     Fichiers supplémentaires qui n'affectent pas directement
+                                  la génération de code mais qui peuvent être utilisés par les analyseurs pour produire
+                                  des erreurs ou des avertissements.
 
-                                  - RESOURCES -
-/linkresource:&lt;resinfo&gt;           Links the specified file as an external 
-                                  assembly resource.
-                                  resinfo:&lt;file&gt;[,&lt;name&gt;[,public|private]] 
-                                  (Short form: /linkres)
-/nowin32manifest                  The default manifest should not be embedded 
-                                  in the manifest section of the output PE.
-/resource:&lt;resinfo&gt;               Adds the specified file as an embedded 
-                                  assembly resource.
-                                  resinfo:&lt;file&gt;[,&lt;name&gt;[,public|private]] 
-                                  (Short form: /res)
-/win32icon:&lt;file&gt;                 Specifies a Win32 icon file (.ico) for the 
-                                  default Win32 resources.
-/win32manifest:&lt;file&gt;             The provided file is embedded in the manifest
-                                  section of the output PE.
-/win32resource:&lt;file&gt;             Specifies a Win32 resource file (.res).
+                                  - RESSOURCES -
+/linkresource:&lt;resinfo&gt;           Lie le fichier spécifié sous forme de 
+                                  ressource d'assembly externe.
+                                  resinfo:&lt;fichier&gt;[,&lt;nom&gt;[,public|private]] 
+                                  (Forme abrégée : /linkres)
+/nowin32manifest                  Le manifeste par défaut ne doit pas être incorporé 
+                                  dans la section manifest du PE de sortie.
+/resource:&lt;resinfo&gt;               Ajoute le fichier spécifié en tant que 
+                                  ressource d'assembly incorporée.
+                                  resinfo:&lt;fichier&gt;[,&lt;nom&gt;[,public|private]] 
+                                  (Forme abrégée : /res)
+/win32icon:&lt;fichier&gt;              Spécifie un fichier icône Win32 (.ico) pour les 
+                                  ressources Win32 par défaut.
+/win32manifest:&lt;fichier&gt;          Le fichier fourni est incorporé dans la section manifest
+                                  du PE de sortie.
+/win32resource:&lt;fichier&gt;          Spécifie un fichier de ressources Win32 (.res).
 
-                                  - CODE GENERATION -
-/optimize[+|-]                    Enable optimizations.
-/removeintchecks[+|-]             Remove integer checks. Default off.
-/debug[+|-]                       Emit debugging information.
-/debug:full                       Emit full debugging information (default).
-/debug:pdbonly                    Emit full debugging information.
-/debug:portable                   Emit cross-platform debugging information.
-/debug:embedded                   Emit cross-platform debugging information into 
-                                  the target .dll or .exe.
-/deterministic                    Produce a deterministic assembly
-                                  (including module version GUID and timestamp)
-/refonly                          Produce a reference assembly in place of the main output
-/instrument:TestCoverage          Produce an assembly instrumented to collect
-                                  coverage information
-/sourcelink:&lt;file&gt;                Source link info to embed into PDB.
+                                  - GÉNÉRATION DE CODE -
+/optimize[+|-]                    Activer les optimisations.
+/removeintchecks[+|-]             Supprimer les contrôles sur les entiers. La valeur par défaut est off.
+/debug[+|-]                       Émettre des informations de débogage.
+/debug:full                       Émettre des informations de débogage complètes (par défaut).
+/debug:pdbonly                    Émettre des informations de débogage complètes.
+/debug:portable                   Émettre des informations de débogage multiplateformes.
+/debug:embedded                   Émettre des informations de débogage multiplateformes dans 
+                                  le fichier .dll ou .exe cible.
+/deterministic                    Produire un assembly déterministe
+                                  (en incluant le GUID et l'horodatage de la version du module)
+/refonly                          Produire un assembly de référence à la place de la sortie principale
+/instrument:TestCoverage          Produire un assembly instrumenté pour collecter
+                                  les informations de couverture
+/sourcelink:&lt;fichier&gt;             Informations du lien source à incorporer dans le fichier PDB.
 
-                                  - ERRORS AND WARNINGS -
-/nowarn                           Disable all warnings.
-/nowarn:&lt;number_list&gt;             Disable a list of individual warnings.
-/warnaserror[+|-]                 Treat all warnings as errors.
-/warnaserror[+|-]:&lt;number_list&gt;   Treat a list of warnings as errors.
-/ruleset:&lt;file&gt;                   Specify a ruleset file that disables specific
-                                  diagnostics.
-/errorlog:&lt;file&gt;                  Specify a file to log all compiler and analyzer
-                                  diagnostics.
-/reportanalyzer                   Report additional analyzer information, such as
-                                  execution time.
+                                  - ERREURS ET AVERTISSEMENTS -
+/nowarn                           Désactiver tous les avertissements.
+/nowarn:&lt;liste_numéros&gt;           Désactiver une liste d'avertissements individuels.
+/warnaserror[+|-]                 Traiter tous les avertissements comme des erreurs.
+/warnaserror[+|-]:&lt;liste_numéros&gt; Traiter une liste d'avertissements comme des erreurs.
+/ruleset:&lt;fichier&gt;                Spécifier un fichier ruleset qui désactive des
+                                  diagnostics spécifiques.
+/errorlog:&lt;fichier&gt;               Spécifier un fichier pour journaliser tous les diagnostics du compilateur
+                                  et de l'analyseur.
+/reportanalyzer                   Signaler des informations supplémentaires sur l'analyseur, comme
+                                  la durée d'exécution.
 
-                                  - LANGUAGE -
-/define:&lt;symbol_list&gt;             Declare global conditional compilation 
-                                  symbol(s). symbol_list:name=value,... 
-                                  (Short form: /d)
-/imports:&lt;import_list&gt;            Declare global Imports for namespaces in 
-                                  referenced metadata files. 
-                                  import_list:namespace,...
-/langversion:?                    Display the allowed values for language version
-/langversion:&lt;string&gt;             Specify language version such as
-                                  `default` (latest major version), or
-                                  `latest` (latest version, including minor versions),
-                                  or specific versions like `14` or `15.3`
-/optionexplicit[+|-]              Require explicit declaration of variables.
-/optioninfer[+|-]                 Allow type inference of variables.
-/rootnamespace:&lt;string&gt;           Specifies the root Namespace for all type 
-                                  declarations.
-/optionstrict[+|-]                Enforce strict language semantics.
-/optionstrict:custom              Warn when strict language semantics are not
-                                  respected.
-/optioncompare:binary             Specifies binary-style string comparisons.
-                                  This is the default.
-/optioncompare:text               Specifies text-style string comparisons.
+                                  - LANGAGE -
+/define:&lt;liste_symboles&gt;          Déclarer des symboles de compilation 
+                                  conditionnelle globale. liste_symboles:name=value,... 
+                                  (Forme abrégée : /d)
+/imports:&lt;liste_importations&gt;     Déclarer des importations globales pour les espaces de noms dans 
+                                  les fichiers de métadonnées référencés. 
+                                  liste_importations:namespace,...
+/langversion:?                    Afficher les valeurs autorisées pour la version du langage
+/langversion:&lt;chaîne&gt;             Spécifier la version du langage, par exemple
+                                  'default' (dernière version principale) ou
+                                  'latest' (dernière version, en incluant les versions mineures),
+                                  ou des versions spécifiques comme '14' ou '15.3'
+/optionexplicit[+|-]              Imposer une déclaration explicite des variables.
+/optioninfer[+|-]                 Autoriser l'inférence de type des variables.
+/rootnamespace:&lt;chaîne&gt;           Spécifie l'espace de noms racine pour toutes les 
+                                  déclarations de type.
+/optionstrict[+|-]                Appliquer une sémantique stricte du langage.
+/optionstrict:custom              Avertir quand la sémantique stricte du langage n'est pas
+                                  respectée.
+/optioncompare:binary             Spécifie des comparaisons de chaînes de style binaire.
+                                  Il s'agit de la valeur par défaut.
+/optioncompare:text               Spécifie des comparaisons de chaînes de style texte.
 
-                                  - MISCELLANEOUS -
-/help                             Display this usage message. (Short form: /?)
-/noconfig                         Do not auto-include VBC.RSP file.
-/nologo                           Do not display compiler copyright banner.
-/quiet                            Quiet output mode.
-/verbose                          Display verbose messages.
-/parallel[+|-]                    Concurrent build. 
-/version                          Display the compiler version number and exit.
+                                  - DIVERS -
+/help                             Afficher ce message d'utilisation. (Forme abrégée : /?)
+/noconfig                         Ne pas inclure automatiquement un fichier VBC.RSP.
+/nologo                           Ne pas afficher la bannière de copyright du compilateur.
+/quiet                            Mode de sortie silencieux.
+/verbose                          Afficher des messages documentés.
+/parallel[+|-]                    Build simultanée. 
+/version                          Afficher le numéro de version du compilateur et quitter le processus.
 
-                                  - ADVANCED -
-/baseaddress:&lt;number&gt;             The base address for a library or module 
+                                  - AVANCÉ -
+/baseaddress:&lt;numéro&gt;             Adresse de base d'une bibliothèque ou d'un module 
                                   (hex).
-/checksumalgorithm:&lt;alg&gt;          Specify algorithm for calculating source file 
-                                  checksum stored in PDB. Supported values are:
-                                  SHA1 (default) or SHA256.
-/codepage:&lt;number&gt;                Specifies the codepage to use when opening 
-                                  source files.
-/delaysign[+|-]                   Delay-sign the assembly using only the public
-                                  portion of the strong name key.
-/publicsign[+|-]                  Public-sign the assembly using only the public
-                                  portion of the strong name key.
-/errorreport:&lt;string&gt;             Specifies how to handle internal compiler
-                                  errors; must be prompt, send, none, or queue
-                                  (default).
-/filealign:&lt;number&gt;               Specify the alignment used for output file 
-                                  sections.
-/highentropyva[+|-]               Enable high-entropy ASLR.
-/keycontainer:&lt;string&gt;            Specifies a strong name key container.
-/keyfile:&lt;file&gt;                   Specifies a strong name key file.
-/libpath:&lt;path_list&gt;              List of directories to search for metadata 
-                                  references. (Semi-colon delimited.)
-/main:&lt;class&gt;                     Specifies the Class or Module that contains 
-                                  Sub Main. It can also be a Class that 
-                                  inherits from System.Windows.Forms.Form. 
-                                  (Short form: /m)
-/moduleassemblyname:&lt;string&gt;      Name of the assembly which this module will 
-                                  be a part of.
-/netcf                            Target the .NET Compact Framework.
-/nostdlib                         Do not reference standard libraries 
-                                  (system.dll and VBC.RSP file).
+/checksumalgorithm:&lt;alg&gt;          Spécifier l'algorithme de calcul de la somme de contrôle 
+                                  de fichier source stockée dans le fichier PDB. Valeurs prises en charge :
+                                  SHA1 (par défaut) ou SHA256.
+/codepage:&lt;numéro&gt;                Spécifie la page de codes à utiliser à l'ouverture 
+                                  des fichiers sources.
+/delaysign[+|-]                   Différer la signature de l'assembly en utilisant uniquement
+                                  la partie publique de la clé de nom fort.
+/publicsign[+|-]                  Signer publiquement l'assembly en utilisant uniquement
+                                  la partie publique de la clé de nom fort.
+/errorreport:&lt;chaîne&gt;             Spécifie comment prendre en charge les erreurs internes du
+                                  compilateur ; doit avoir la valeur prompt, send, none ou queue
+                                  (par défaut).
+/filealign:&lt;numéro&gt;               Spécifier l'alignement utilisé pour les 
+                                  sections du fichier de sortie.
+/highentropyva[+|-]               Activer la randomisation du format d'espace d'adresse d'entropie élevée.
+/keycontainer:&lt;chaîne&gt;            Spécifie un conteneur de clé de nom fort.
+/keyfile:&lt;fichier&gt;                Spécifie un fichier de clé de nom fort.
+/libpath:&lt;liste_chemins&gt;          Liste de répertoires où rechercher des 
+                                  références de métadonnées. (Valeurs délimitées par des points-virgules.)
+/main:&lt;classe&gt;                    Spécifie la classe ou le module qui contient 
+                                  Sub Main. Il peut également s'agir d'une classe qui 
+                                  hérite de System.Windows.Forms.Form. 
+                                  (Forme abrégée : /m)
+/moduleassemblyname:&lt;chaîne&gt;      Nom de l'assembly dont ce module 
+                                  doit faire partie.
+/netcf                            Cibler le .NET Compact Framework.
+/nostdlib                         Ne pas référencer les bibliothèques standard 
+                                  (fichiers system.dll et VBC.RSP).
 /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                                  Specify a mapping for source path names output by
-                                  the compiler.
-/platform:&lt;string&gt;                Limit which platforms this code can run on; 
-                                  must be x86, x64, Itanium, arm,
-                                  AnyCPU32BitPreferred or anycpu (default).
-/preferreduilang                  Specify the preferred output language name.
-/sdkpath:&lt;path&gt;                   Location of the .NET Framework SDK directory
+                                  Spécifier un mappage pour les noms de chemins sources sortis par
+                                  le compilateur.
+/platform:&lt;chaîne&gt;                Limiter les plateformes sur lesquelles ce code peut s'exécuter ; 
+                                  doit correspondre à x86, x64, Itanium, arm,
+                                  AnyCPU32BitPreferred ou anycpu (par défaut).
+/preferreduilang                  Spécifier le nom du langage de sortie préféré.
+/sdkpath:&lt;chemin&gt;                 Emplacement du répertoire du SDK .NET Framework
                                   (mscorlib.dll).
-/subsystemversion:&lt;version&gt;       Specify subsystem version of the output PE. 
-                                  version:&lt;number&gt;[.&lt;number&gt;]
-/utf8output[+|-]                  Emit compiler output in UTF8 character 
-                                  encoding.
-@&lt;file&gt;                           Insert command-line settings from a text file
-/vbruntime[+|-|*]                 Compile with/without the default Visual Basic
-                                  runtime.
-/vbruntime:&lt;file&gt;                 Compile with the alternate Visual Basic 
-                                  runtime in &lt;file&gt;.
+/subsystemversion:&lt;version&gt;       Spécifier la version du sous-système du PE de sortie. 
+                                  version:&lt;numéro&gt;[.&lt;numéro&gt;]
+/utf8output[+|-]                  Émettre la sortie du compilateur au format 
+                                  d'encodage de caractères UTF8.
+@&lt;fichier&gt;                        Insérer les paramètres de ligne de commande à partir d'un fichier texte
+/vbruntime[+|-|*]                 Compiler avec/sans le
+                                  runtime Visual Basic par défaut.
+/vbruntime:&lt;fichier&gt;              Compiler avec le 
+                                  runtime Visual Basic de remplacement dans &lt;fichier&gt;.
 </value>
   </data>
   <data name="ERR_ReturnFromNonGenericTaskAsync" xml:space="preserve">
@@ -4516,7 +4522,7 @@
     <value>'{0}' ne peut pas se substituer à '{1}', car leurs contraintes de paramètre de type les différencient.</value>
   </data>
   <data name="ERR_ExpectedNamedArgument" xml:space="preserve">
-    <value>Named argument expected. Please use language version {0} or greater to use non-trailing named arguments.</value>
+    <value>Argument nommé attendu. Utilisez la version de langage {0} ou une version ultérieure pour permettre l'emploi d'arguments nommés non placés en position de fin.</value>
   </data>
   <data name="ERR_CircularEvaluation1" xml:space="preserve">
     <value>La constante '{0}' ne peut pas dépendre de sa propre valeur.</value>

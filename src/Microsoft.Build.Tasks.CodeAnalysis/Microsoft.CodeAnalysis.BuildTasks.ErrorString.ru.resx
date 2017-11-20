@@ -145,7 +145,7 @@
     <value>Сбой общей компиляции; возврат к средству {0}</value>
   </data>
   <data name="CopyRefAssembly_BadDestination1" xml:space="preserve">
-    <value>Не удалось проверить хеш содержимого для конечной ссылочной сборки "{0}". Он будет перезаписан.</value>
+    <value>Не удалось проверить хеш содержимого для конечной базовой сборки "{0}". Он будет перезаписан.</value>
   </data>
   <data name="CopyRefAssembly_SourceNotRef1" xml:space="preserve">
     <value>Не удалось извлечь MVID из "{0}". Вы уверены, что это ссылочная сборка?</value>
@@ -160,7 +160,7 @@
     <value>MSB3051: недопустимый параметр для компилятора. {0}</value>
   </data>
   <data name="CopyRefAssembly_BadSource3" xml:space="preserve">
-    <value>Не удалось проверить хеш содержимого для исходной ссылочной сборки "{0}": {1}
+    <value>Не удалось проверить хеш содержимого для исходной базовой сборки "{0}": {1}
 {2}</value>
   </data>
   <data name="UsingSharedCompilation" xml:space="preserve">

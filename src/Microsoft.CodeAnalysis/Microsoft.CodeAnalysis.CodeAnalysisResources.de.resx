@@ -179,7 +179,7 @@
     <value>Klasse</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>Eingebettete Texte werden nur bei Ausgabe einer PDB-Datei unterstützt.</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Modulkopie kann nicht zum Erstellen von Assembly-Metadaten verwendet werden.</value>
@@ -227,16 +227,13 @@
     <value>Fehler des Analysetreibers.</value>
   </data>
   <data name="MustIncludePrivateMembersUnlessRefAssembly" xml:space="preserve">
-    <value>Muss private Member enthalten, sofern keine Verweisassembly ausgegeben wird.</value>
+    <value>Muss private Member enthalten, sofern keine Referenzassembly ausgegeben wird.</value>
   </data>
   <data name="ChangesMustBeOrderedAndNotOverlapping" xml:space="preserve">
     <value>Die Änderungen müssen sortiert sein und dürfen sich nicht überschneiden.</value>
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>Argumente für "/keepalive"-Option kleiner als -1 sind ungültig.</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>Das Feature "IOperation" ist deaktiviert.</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>Absoluter Pfad erwartet.</value>
@@ -475,7 +472,7 @@
     <value>Das Argument enthält eine Analyseinstanz, die nicht zu den "Analyzers" für diese CompilationWithAnalyzers-Instanz gehört.</value>
   </data>
   <data name="CannotTargetNetModuleWhenEmittingRefAssembly" xml:space="preserve">
-    <value>Verweisen auf Netzmodul beim Ausgeben der Verweisassembly nicht möglich.</value>
+    <value>Verweisen auf Netzmodul beim Ausgeben der Referenzassembly nicht möglich.</value>
   </data>
   <data name="Cannot_deserialize_type_0" xml:space="preserve">
     <value>Typ "{0}" kann nicht deserialisiert werden.</value>

@@ -179,7 +179,7 @@
     <value>클래스</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>PDB를 내보낼 때만 포함된 텍스트가 지원됩니다.</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>모듈 복사본은 어셈블리 메타데이터를 만드는 데 사용할 수 없습니다.</value>
@@ -234,9 +234,6 @@
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>-1 아래의 '/keepalive' 옵션에 대한 인수가 잘못되었습니다.</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>'IOperation' 기능을 사용할 수 없습니다.</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>절대 경로가 필요합니다.</value>

@@ -179,7 +179,7 @@
     <value>klasa</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>Osadzony tekst jest obsługiwany tylko w przypadku emitowania pliku PDB.</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Nie można użyć kopii modułu do utworzenia metadanych zestawu.</value>
@@ -234,9 +234,6 @@
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>Argumenty opcji „/keepalive” mniejsze niż -1 są nieprawidłowe.</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>Funkcja „IOperation” została wyłączona.</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>Oczekiwano ścieżki bezwzględnej.</value>

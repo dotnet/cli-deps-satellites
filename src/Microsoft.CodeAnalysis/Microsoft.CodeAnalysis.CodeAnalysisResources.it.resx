@@ -179,7 +179,7 @@
     <value>classe</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>I testi incorporati sono supportati solo quando si crea un file PDB.</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Non è possibile usare la copia del modulo per creare i metadati di un assembly.</value>
@@ -234,9 +234,6 @@
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>Gli argomenti dell'opzione '/keepalive' il cui valore è inferiore a -1 non sono validi.</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>La funzionalità 'IOperation' è disabilitata.</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>È previsto il percorso assoluto.</value>

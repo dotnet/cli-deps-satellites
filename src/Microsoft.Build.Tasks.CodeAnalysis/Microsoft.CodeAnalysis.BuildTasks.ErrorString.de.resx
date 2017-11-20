@@ -145,7 +145,7 @@
     <value>Fehler bei der freigegebenen Kompilierung. Fallback auf folgendes Tool: {0}</value>
   </data>
   <data name="CopyRefAssembly_BadDestination1" xml:space="preserve">
-    <value>Fehler beim Überprüfen des Inhaltshashs der Zielverweisassembly "{0}". Er wird überschrieben.</value>
+    <value>Fehler beim Überprüfen des Inhaltshashs der Zielreferenzassembly "{0}". Er wird überschrieben.</value>
   </data>
   <data name="CopyRefAssembly_SourceNotRef1" xml:space="preserve">
     <value>Von "{0}" konnte keine MVID extrahiert werden. Sind Sie sicher, dass es sich dabei um eine Referenzassembly handelt?</value>
@@ -160,7 +160,7 @@
     <value>MSB3051: Der Parameter für den Compiler ist ungültig. {0}</value>
   </data>
   <data name="CopyRefAssembly_BadSource3" xml:space="preserve">
-    <value>Fehler beim Überprüfen des Inhaltshashs der Quellverweisassembly "{0}": {1}
+    <value>Fehler beim Überprüfen des Inhaltshashs der Quellreferenzassembly "{0}": {1}
 {2}</value>
   </data>
   <data name="UsingSharedCompilation" xml:space="preserve">
