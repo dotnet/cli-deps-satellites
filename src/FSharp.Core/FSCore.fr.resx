@@ -318,6 +318,9 @@
   <data name="QinvalidFuncType" xml:space="preserve">
     <value>Type de fonction non valide</value>
   </data>
+  <data name="thisValueCannotBeMutated" xml:space="preserve">
+    <value>Cette valeur ne peut pas être mutée</value>
+  </data>
   <data name="mismatchIARCancel" xml:space="preserve">
     <value>L'objet IAsyncResult fournir ne correspond pas à cette opération 'Cancel'.</value>
   </data>
@@ -389,9 +392,6 @@
   </data>
   <data name="notComparable" xml:space="preserve">
     <value>Les deux objets ont des types différents et ne sont pas comparables.</value>
-  </data>
-  <data name="ThisValueCannotBeMutated" xml:space="preserve">
-    <value>Cette valeur ne peut pas être mutée</value>
   </data>
   <data name="unsupportedQueryConstruct" xml:space="preserve">
     <value>Cette expression de requête n'est pas valide. La construction suivante a été utilisée dans une requête, mais n'est pas reconnue par le traducteur de requête F#-to-LINQ :\n{0}\nVérifiez la spécification des requêtes autorisées et envisagez de retirer certaines opérations de l'expression de requête.</value>

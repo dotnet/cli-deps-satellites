@@ -222,6 +222,9 @@
   <data name="WRN_CallerLineNumberPreferredOverCallerMemberName_Title" xml:space="preserve">
     <value>CallerMemberNameAttribute は効果がなく、CallerLineNumberAttribute によってオーバーライドされます</value>
   </data>
+  <data name="ERR_RefReturnReadonlyNotField2" xml:space="preserve">
+    <value>{0} '{1}' のメンバーは読み取り専用の変数であるため、書き込み可能な参照によって返すことはできません</value>
+  </data>
   <data name="ERR_AbstractHasBody" xml:space="preserve">
     <value>'{0}' は abstract に指定されているため本体を宣言できません。</value>
   </data>
@@ -300,10 +303,13 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>動的オブジェクトを分解することはできません。</value>
   </data>
   <data name="ERR_RefReturnLvalueExpected" xml:space="preserve">
-    <value>参照渡しで返すことができないため、このコンテキストで使用できない式があります</value>
+    <value>参照によって渡したり返したりすることができないため、このコンテキストで使用できない式があります</value>
   </data>
   <data name="ERR_OneAliasPerReference" xml:space="preserve">
     <value>extern エイリアスを宣言する /reference オプションにはファイル名が 1 つだけ指定できます。複数のエイリアスまたはファイル名を指定するには、複数の /reference オプションを使用してください。</value>
+  </data>
+  <data name="ERR_StackAllocConversionNotPossible" xml:space="preserve">
+    <value>型 '{0}' の stackalloc 式を型 '{1}' に変換することはできません。</value>
   </data>
   <data name="ERR_UnclosedExpressionHole" xml:space="preserve">
     <value>'{' で始まる挿入式の終了区切り文字 '}' がありません。</value>
@@ -425,9 +431,6 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="WRN_InvalidAssemblyName" xml:space="preserve">
     <value>アセンブリ参照 '{0}' は無効であり、解決できません。</value>
   </data>
-  <data name="ERR_BadOutWithThis" xml:space="preserve">
-    <value>パラメーター修飾子 'out' は 'this' と共に使用できません</value>
-  </data>
   <data name="ERR_DeconstructRequiresExpression" xml:space="preserve">
     <value>分解の割り当てには、右側の型を持つ式が必要です。</value>
   </data>
@@ -437,6 +440,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_ThisStructNotInAnonMeth" xml:space="preserve">
     <value>構造体内部の匿名メソッド、ラムダ式、またはクエリ式は、'this' のインスタンス メンバーにアクセスできません。'this' を匿名メソッド、ラムダ式、またはクエリ式の外部のローカル変数にコピーして、そのローカルを使用してください。</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField2" xml:space="preserve">
+    <value>読み取り専用の変数であるため、{0} '{1}' のメンバーに割り当てることはできません</value>
+  </data>
   <data name="ERR_InterfaceImplementedByConditional" xml:space="preserve">
     <value>条件付きメンバー '{0}' はインターフェイス メンバー '{1}' を型 '{2}' で実装できません。</value>
   </data>
@@ -444,7 +450,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>静的クラス '{0}' は型 '{1}' から派生することはできません。静的クラスはオブジェクトから派生する必要があります。</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic2" xml:space="preserve">
-    <value>静的な読み取り専用フィールド '{0}' のフィールドを参照渡しで返すことはできません</value>
+    <value>静的な読み取り専用フィールド '{0}' のフィールドを書き込み可能な参照渡しで返すことはできません</value>
   </data>
   <data name="ERR_ForwardedTypeInThisAssembly" xml:space="preserve">
     <value>型 '{0}' はこのアセンブリ内で定義されていますが、これには型フォワーダーが指定されています。</value>
@@ -471,7 +477,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>'{0}' は、パターン '{1}' を実装しません。'{2}' は、'{3}' で不適切です。</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
+    <value>/langversion のオプション '{0}' は無効です。サポートされている値を一覧表示するには、'/langversion:?' を使用します。</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>エイリアスで修飾された名前は式ではありません。</value>
@@ -717,13 +723,16 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>浮動小数点定数が型 '{0}' の範囲外です。</value>
   </data>
   <data name="ERR_InvalidDebugInfo" xml:space="preserve">
-    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+    <value>メソッド '{0}' (トークン 0x{1:X8}) のデバッグ情報をアセンブリ '{2}' から読み取ることができません</value>
   </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>エンコーディングせずにソース テキストのデバッグ情報を作成することはできません。</value>
   </data>
   <data name="ERR_BadResourceVis" xml:space="preserve">
     <value>無効なオプション '{0}' です。リソースの参照可能範囲は 'public' または 'private' でなければなりません。</value>
+  </data>
+  <data name="ERR_ExplicitReservedAttr" xml:space="preserve">
+    <value>'{0}' は使用しないでください。コンパイラの使用のために予約されています。</value>
   </data>
   <data name="WRN_BadRestoreNumber_Title" xml:space="preserve">
     <value>警告はグローバルに無効にされたため復元できません</value>
@@ -741,7 +750,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>要素 '{0}' に終了タグが必要です。</value>
   </data>
   <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
-    <value>leading digit separator</value>
+    <value>先頭の桁区切り記号</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>nameof 演算子では型の引数を使用できません。</value>
@@ -860,6 +869,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_BadVisReturnType" xml:space="preserve">
     <value>アクセシビリティに一貫性がありません。戻り値の型 '{1}' のアクセシビリティはメソッド '{0}' よりも低く設定されています。</value>
   </data>
+  <data name="ERR_FieldsInRoStruct" xml:space="preserve">
+    <value>読み取り専用の構造体のインスタンス フィールドは、読み取り専用である必要があります。</value>
+  </data>
   <data name="UseLiteralForTokens" xml:space="preserve">
     <value>Microsoft.CodeAnalysis.CSharp.SyntaxFactory.Literal を使用して、文字のリテラル トークンを作成してください。</value>
   </data>
@@ -882,13 +894,13 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>アセンブリ '{1}' の型 '{0}' には、埋め込み相互運用型のジェネリック型引数があるため、アセンブリ境界を越えて使用することはできません。</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
-    <value>The local function '{0}' is declared but never used</value>
+    <value>ローカル関数 '{0}' は宣言されていますが、一度も使用されていません</value>
   </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>as 演算子は参照型または Null 許容型で使用してください ('{0}' は Null 非許容の値型です)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>The abstract {0} '{1}' cannot be marked virtual</value>
+    <value>抽象 {0} '{1}' を virtual に指定することはできません</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>'{0}': 静的クラスにユーザー定義の演算子を含めることはできません。</value>
@@ -1031,6 +1043,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_BadAwaitWithoutAsyncLambda" xml:space="preserve">
     <value>'await' 演算子は、非同期の {0} でのみ使用できます。この {0} を 'async' 修飾子でマークすることを検討してください。</value>
   </data>
+  <data name="ERR_RefExtensionMustBeValueTypeOrConstrainedToOne" xml:space="preserve">
+    <value>'ref' 拡張メソッド '{0}' の最初のパラメーターは、値型または構造体に制限されたジェネリック型でなければなりません。</value>
+  </data>
   <data name="ChainingSpeculativeModelIsNotSupported" xml:space="preserve">
     <value>予測セマンティック モデルのチェーンはサポートしていません。非予測 ParentModel から予測モデルを作成する必要があります。</value>
   </data>
@@ -1041,7 +1056,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>フィルター式は定数です。フィルターの削除を検討してください。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
-    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+    <value>機能 '{0}' は C# 7.2 では使用できません。{1} 以上の言語バージョンをお使いください。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>機能 '{0}' は C# 7.1 では使用できません。{1} 以上の言語バージョンをお使いください。</value>
@@ -1125,7 +1140,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>メンバー '{0}' はアクセス可能なメンバーを非表示にしません。新しいキーワードは不要です。</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+    <value>動的呼び出しでは、すべての固定引数を指定した後に名前付き引数を指定する必要があります。</value>
   </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>#pragma 警告のプリプロセッサ ディレクティブに渡された番号は無効な警告番号です。番号がエラー番号ではなく警告番号を表していることを確認してください。</value>
@@ -1146,13 +1161,13 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>#r はスクリプトでのみ許可されます。</value>
   </data>
   <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
-    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
+    <value>動的な型のある引数は、推定された型の引数のある汎用ローカル関数 '{0}' に渡すことはできません。</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>構文ツリーが既に存在しています。</value>
   </data>
-  <data name="ERR_BadRefWithThis" xml:space="preserve">
-    <value>パラメーター修飾子 'ref' は 'this' と共に使用することはできません。</value>
+  <data name="ERR_BadParameterModifiersOrder" xml:space="preserve">
+    <value>パラメーター修飾子 '{0}' は、修飾子 '{1}' の後に使用することはできません</value>
   </data>
   <data name="ERR_InvalidOutputName" xml:space="preserve">
     <value>無効な出力名: {0}</value>
@@ -1241,6 +1256,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_ExternHasConstructorInitializer" xml:space="preserve">
     <value>'{0}' を extern にして、コンストラクター初期化子を含めることはできません</value>
   </data>
+  <data name="IDS_StackAllocExpression" xml:space="preserve">
+    <value>stackalloc {0}[{1}]</value>
+  </data>
   <data name="ERR_AutoPropertyCannotBeRefReturning" xml:space="preserve">
     <value>自動実装プロパティは参照渡しで返すことができません</value>
   </data>
@@ -1301,6 +1319,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_BadTypeforThis" xml:space="preserve">
     <value>拡張メソッドの最初のパラメーターを型 '{0}' にすることはできません。</value>
   </data>
+  <data name="IDS_FeatureReadOnlyReferences" xml:space="preserve">
+    <value>読み取り専用の参照</value>
+  </data>
   <data name="ERR_BadSKunknown" xml:space="preserve">
     <value>'{0}' は {1} です。これは特定のコンテンツでは無効になります。</value>
   </data>
@@ -1343,11 +1364,14 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>無効な参照エイリアス オプションです: '{0}=' -- ファイル名が指定されていません</value>
   </data>
+  <data name="ERR_FieldAutoPropCantBeByRefLike" xml:space="preserve">
+    <value>フィールドまたは自動実装プロパティは、それが ref 構造体のインスタンス メンバーである場合を除いて、型 '{0}' にすることができません。</value>
+  </data>
   <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
-    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+    <value>名前付き引数 '{0}' の場所が正しくありません。後ろに名前なし引数があります</value>
   </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
-    <value>読み取り専用フィールド '{0}' のメンバーを参照渡しで返すことはできません</value>
+    <value>読み取り専用フィールド '{0}' のメンバーを書き込み可能な参照渡しで返すことはできません</value>
   </data>
   <data name="ERR_BadDynamicMethodArg" xml:space="preserve">
     <value>型 '{0}' の式を、動的にディスパッチされる操作の引数として使用することはできません。</value>
@@ -1371,7 +1395,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>Windows ランタイム イベントを out または ref のパラメーターとして渡すことはできません。</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
+    <value>型 '{0}' のインスタンスは、入れ子になった関数、クエリ式、反復子ブロック、または非同期メソッドの中では使用できません</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>'{0}' は、インターフェイス メンバー '{1}' を実装していません。'{2}' は一致する '{3}' の戻り値の型を持たないため、'{1}' を実装できません。</value>
@@ -1445,6 +1469,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="WRN_RefCultureMismatch_Title" xml:space="preserve">
     <value>参照先のアセンブリには異なるカルチャ設定があります</value>
   </data>
+  <data name="ERR_InExtensionMustBeValueType" xml:space="preserve">
+    <value>'in' 拡張メソッド '{0}' の最初のパラメーターは値型でなければなりません。</value>
+  </data>
   <data name="ERR_NoConversionForNubDefaultParam" xml:space="preserve">
     <value>'{0}' は単純型ではないため、型 '{0}' の値を Null 許容パラメーター '{1}' の既定のパラメーターとして使用することはできません。</value>
   </data>
@@ -1516,6 +1543,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   </data>
   <data name="ThisMethodCanOnlyBeUsedToCreateTokens" xml:space="preserve">
     <value>このメソッドは、トークンの作成にのみ使用できます - {0} はトークンの種類ではありません。</value>
+  </data>
+  <data name="ERR_OverloadRefKind" xml:space="preserve">
+    <value>'{0}' は、パラメーター修飾子 '{2}' と '{3}' だけが異なるオーバーロードされた {1} を定義できません</value>
   </data>
   <data name="ERR_NameNotInContextPossibleMissingReference" xml:space="preserve">
     <value>現在のコンテキストに '{0}' という名前は存在しません (アセンブリ '{1}' に対する参照が指定されていることを確認してください)。</value>
@@ -1710,9 +1740,6 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_IntegralTypeValueExpected" xml:space="preserve">
     <value>整数型の値が必要です。</value>
   </data>
-  <data name="ERR_MultiParamMod" xml:space="preserve">
-    <value>パラメーターに、指定したすべての修飾子を設定することはできません。パラメーターに含まれる修飾子が多すぎます。</value>
-  </data>
   <data name="ERR_NotYetImplementedInRoslyn" xml:space="preserve">
     <value>この言語機能 ('{0}') はまだ実装されていません。</value>
   </data>
@@ -1812,6 +1839,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_ClassDoesntImplementInterface" xml:space="preserve">
     <value>'{0}': 含む型は、インターフェイス '{1}' を実装しません。</value>
   </data>
+  <data name="ERR_RefStructInterfaceImpl" xml:space="preserve">
+    <value>'{0}': ref 構造体はインターフェイスを実装できません</value>
+  </data>
   <data name="ERR_QueryNoProviderStandard" xml:space="preserve">
     <value>ソース型 '{0}' のクエリ パターンの実装が見つかりませんでした。'{1}' が見つかりません。'System.Core.dll' の参照または 'System.Linq' のディレクティブの使用が指定されていることを確認してください。</value>
   </data>
@@ -1836,6 +1866,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="WRN_TooManyLinesForDebugger_Title" xml:space="preserve">
     <value>ソース ファイルは、PDB 内で表せる 16,707,565 行の限界を超えているため、デバッグ情報は不正確になります</value>
   </data>
+  <data name="IDS_FeatureRefStructs" xml:space="preserve">
+    <value>ref 構造体</value>
+  </data>
   <data name="ERR_AutoPropertyInitializerInInterface" xml:space="preserve">
     <value>インターフェイス内の自動実装プロパティは初期化子を持つことができません。</value>
   </data>
@@ -1852,7 +1885,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>インクリメント演算子またはデクリメント演算子のオペランドには、変数、プロパティ、またはインデクサーを指定してください。</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed switch is only supported when emitting a PDB.</value>
+    <value>/embed スイッチは、PDB を生成する場合にのみサポートされます。</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>'{0}' に extern と abstract の両方を指定することはできません。</value>
@@ -1889,6 +1922,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   </data>
   <data name="ERR_MustHaveRefReturn" xml:space="preserve">
     <value>値渡しの返却は、値渡しで返すメソッドでのみ使用できます</value>
+  </data>
+  <data name="ERR_EscapeStackAlloc" xml:space="preserve">
+    <value>stackalloc 式の型 '{0}' の結果は、それを含んでいるメソッドの外部に公開される可能性があるため、このコンテキストでは使用できません</value>
   </data>
   <data name="ERR_InvalidFwdType" xml:space="preserve">
     <value>無効な型が TypeForwardedTo 属性の引数として指定されました。</value>
@@ -2077,7 +2113,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>クラス型制約 '{0}' は、他の制約の前に指定されなければなりません。</value>
   </data>
   <data name="ERR_CantChangeRefReturnOnOverride" xml:space="preserve">
-    <value>オーバーライドされたメンバー '{1}' と一致するには、'{0}' が参照渡しで{2}返す必要があります</value>
+    <value>'{0}' は、オーバーライドされるメンバー '{1}' の参照渡しの戻り値に一致する必要があります</value>
   </data>
   <data name="WRN_CallerLineNumberPreferredOverCallerFilePath_Title" xml:space="preserve">
     <value>CallerFilePathAttribute は効果がなく、CallerLineNumberAttribute によってオーバーライドされます</value>
@@ -2094,6 +2130,12 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_TypeArgsNotAllowed" xml:space="preserve">
     <value>{1} '{0}' は型引数と一緒には使用できません</value>
   </data>
+  <data name="ERR_EscapeLocal" xml:space="preserve">
+    <value>参照される変数が宣言のスコープ外に公開される可能性があるため、このコンテキストでローカル '{0}' を使用することはできません。</value>
+  </data>
+  <data name="ERR_EscapeOther" xml:space="preserve">
+    <value>間接的に変数が宣言のスコープ外に公開される可能性があるため、このコンテキストで式は使用できません。</value>
+  </data>
   <data name="ERR_PartialMethodOnlyOneLatent" xml:space="preserve">
     <value>部分メソッドには、複数の定義宣言を指定することはできません</value>
   </data>
@@ -2105,6 +2147,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   </data>
   <data name="ERR_BadAwaitArg" xml:space="preserve">
     <value>'await' では、型 {0} に適切な GetAwaiter メソッドがあることが必要です</value>
+  </data>
+  <data name="ERR_EscapeCall2" xml:space="preserve">
+    <value>パラメーター '{1}' によって参照される変数が宣言のスコープ外に公開される可能性があるため、このコンテキストで '{0}' の結果のメンバーを使用することはできません。</value>
   </data>
   <data name="ERR_MemberReserved" xml:space="preserve">
     <value>型 '{1}' は、'{0}' と呼ばれるメンバーを同じパラメーターの型で既に予約しています。</value>
@@ -2202,6 +2247,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="WRN_NonObsoleteOverridingObsolete_Title" xml:space="preserve">
     <value>メンバーは古い形式のメンバーをオーバーライドします</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField" xml:space="preserve">
+    <value>読み取り専用の変数であるため、{0} '{1}' に割り当てることができません</value>
+  </data>
   <data name="ERR_BadAsyncLocalType" xml:space="preserve">
     <value>非同期メソッドは参照渡しのローカル変数を持つことができません</value>
   </data>
@@ -2235,6 +2283,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_PatternIsSubsumed" xml:space="preserve">
     <value>switch case は既に以前のケースで処理されています。</value>
   </data>
+  <data name="ERR_EscapeCall" xml:space="preserve">
+    <value>パラメーター '{1}' によって参照される変数が宣言のスコープ外に公開される可能性があるため、このコンテキストで '{0}' の結果を使用することはできません。</value>
+  </data>
   <data name="ERR_ForwardedTypeIsNested" xml:space="preserve">
     <value>型 '{0}' は、'{1}' の入れ子にされた型なので、転送できません。</value>
   </data>
@@ -2258,6 +2309,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   </data>
   <data name="ERR_CantOverrideBogusMethod" xml:space="preserve">
     <value>'{0}': '{1}' はこの言語でサポートされていないため、オーバーライドできません。</value>
+  </data>
+  <data name="ERR_BadParameterModifiers" xml:space="preserve">
+    <value> パラメーター修飾子 '{0}' は '{1}' と一緒に使用することはできません</value>
   </data>
   <data name="ERR_NonInvocableMemberCalled" xml:space="preserve">
     <value>実行不可能なメンバー '{0}' をメソッドのように使用することはできません。</value>
@@ -2391,6 +2445,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_BadEmptyThrow" xml:space="preserve">
     <value>引数なしの throw ステートメントは catch 句以外では使えません。</value>
   </data>
+  <data name="ERR_BadSpecialByRefIterator" xml:space="preserve">
+    <value>'{0}' は ref 構造体であるため、非同期または反復子のメソッド内で型 '{0}' の列挙子に対して foreach ステートメントは機能しません。</value>
+  </data>
   <data name="WRN_UnreferencedEvent" xml:space="preserve">
     <value>イベント '{0}' は使用されていません。</value>
   </data>
@@ -2448,6 +2505,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_InvalidSpecifier" xml:space="preserve">
     <value>'{0}' は有効な形式指定子ではありません。</value>
   </data>
+  <data name="ERR_RefConditionalAndAwait" xml:space="preserve">
+    <value>'await' は、ref 条件演算子を含む式の中で使用できません</value>
+  </data>
   <data name="ERR_DuplicateImportSimple" xml:space="preserve">
     <value>同じ簡易名 '{0}' でアセンブリが既にインポートされています。参照の 1 つ (例: '{1}') を削除するか、サイド バイ サイドを有効にするために署名してください。</value>
   </data>
@@ -2490,6 +2550,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   <data name="ERR_ExternAliasNotAllowed" xml:space="preserve">
     <value>このコンテキストでは 'extern エイリアス' は無効です。</value>
   </data>
+  <data name="ERR_RefConditionalNeedsTwoRefs" xml:space="preserve">
+    <value>条件演算子の両辺の値は、両方とも ref 値にするか、両方とも ref 以外の値にする必要があります</value>
+  </data>
   <data name="ERR_NoPIANestedType" xml:space="preserve">
     <value>型 '{0}' は入れ子型であるため埋め込むことができません。'相互運用機能型の埋め込み' プロパティを false に設定することを検討してください。</value>
   </data>
@@ -2507,9 +2570,6 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   </data>
   <data name="IDS_XMLNOINCLUDE" xml:space="preserve">
     <value> 次のインクルード タグで一致する要素が見つかりませんでした。</value>
-  </data>
-  <data name="ERR_FeatureIsExperimental" xml:space="preserve">
-    <value>機能 '{0}' は '実験的でサポート対象外です。有効にするには、'/features:{1}' をご使用ください。</value>
   </data>
   <data name="WRN_EqualsWithoutGetHashCode_Title" xml:space="preserve">
     <value>型は Object.Equals(object o) をオーバーライドしますが、Object.GetHashCode() をオーバーライドしません</value>
@@ -2582,6 +2642,9 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
   </data>
   <data name="WRN_AttributeIgnoredWhenPublicSigning_Title" xml:space="preserve">
     <value>公開署名が指定されると、属性は無視されます。</value>
+  </data>
+  <data name="ERR_TypeReserved" xml:space="preserve">
+    <value>型名 '{0}' は、コンパイラによる使用のために予約されています。</value>
   </data>
   <data name="ERR_QueryInnerKey" xml:space="preserve">
     <value>名前 '{0}' は 'equals' の右辺のスコープにありません。'equals' の両辺の式を交換してみてください。</value>
@@ -2764,6 +2827,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_BadAttributeArgument" xml:space="preserve">
     <value>属性引数は、定数式、typeof 式、または属性パラメーター型の配列の作成式でなければなりません。</value>
   </data>
+  <data name="IDS_FeatureReadOnlyStructs" xml:space="preserve">
+    <value>読み取り専用の構造体</value>
+  </data>
   <data name="IDS_ThrowExpression" xml:space="preserve">
     <value>&lt;スロー式&gt;</value>
   </data>
@@ -2908,6 +2974,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_ReadonlyValueTypeInObjectInitializer" xml:space="preserve">
     <value>型 '{1}' の読み取り専用フィールド '{0}' のメンバーは、値の型であるため、オブジェクト初期化子と共に割り当てることはできません。</value>
   </data>
+  <data name="ERR_FieldlikeEventsInRoStruct" xml:space="preserve">
+    <value>読み取り専用の構造体では、フィールドに類似したイベントを使用することができません。</value>
+  </data>
   <data name="ERR_BadAsyncLacksBody" xml:space="preserve">
     <value>'async' 修飾子は、本体があるメソッドでのみ使用できます。</value>
   </data>
@@ -2954,7 +3023,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>長さが '{0}' の配列初期化子が必要です。</value>
   </data>
   <data name="ERR_RefReturnReadonly" xml:space="preserve">
-    <value>読み取り専用フィールドを参照渡しで返すことはできません</value>
+    <value>読み取り専用フィールドを書き込み可能な参照渡しで返すことはできません</value>
   </data>
   <data name="ERR_V6SwitchGoverningTypeValueExpected" xml:space="preserve">
     <value>C# 6 以前のものにおいて、switch 式または case ラベルには、bool、char、string、integral、enum、または対応する null 許容型を使用する必要があります。</value>
@@ -2988,9 +3057,6 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_AnonymousTypePropertyAssignedBadValue" xml:space="preserve">
     <value>'{0}' を匿名型のプロパティに割り当てることはできません</value>
-  </data>
-  <data name="ERR_OverloadRefOutCtor" xml:space="preserve">
-    <value>オーバーロードされたコンストラクター '{0}' は、ref と out でのみ他のコンストラクターと異なるため、定義できません。</value>
   </data>
   <data name="ERR_CantOpenFileWrite" xml:space="preserve">
     <value>ファイル '{0}' を開いて書き込むことができません -- '{1}'</value>
@@ -3045,9 +3111,6 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_ConstValueRequired" xml:space="preserve">
     <value>const フィールドに値を指定する必要があります。</value>
-  </data>
-  <data name="ERR_RefReturnReceiver" xml:space="preserve">
-    <value>受信側を参照渡しで返すことができないため、'{0}' を参照渡しで返すことはできません</value>
   </data>
   <data name="WRN_BadRestoreNumber" xml:space="preserve">
     <value>警告 'CS{0}' はグローバルで無効にされたため、復元することはできません。</value>
@@ -3136,7 +3199,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>'{0}' と '{1}' 間があいまいです</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
-    <value>Local function is declared but never used</value>
+    <value>ローカル関数は宣言されていますが、一度も使用されていません</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>コマンドラインの構文エラー: オプション '{1}' の GUID がありません。</value>
@@ -3215,146 +3278,146 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# Compiler Options
+                              Visual C# Compiler のオプション
 
-                        - OUTPUT FILES -
- /out:&lt;file&gt;                   Specify output file name (default: base name of
-                               file with main class or first file)
- /target:exe                   Build a console executable (default) (Short
-                               form: /t:exe)
- /target:winexe                Build a Windows executable (Short form:
+                        - 出力ファイル -
+ /out:&lt;file&gt;                   出力ファイル名を指定します (既定: メイン クラス
+                               のあるファイルまたは最初のファイルのベース名)
+ /target:exe                   コンソール実行可能ファイルをビルドします (既定) (短い
+                               形式: /t:exe)
+ /target:winexe                Windows 実行可能ファイルをビルドします (短い形式:
                                /t:winexe)
- /target:library               Build a library (Short form: /t:library)
- /target:module                Build a module that can be added to another
-                               assembly (Short form: /t:module)
- /target:appcontainerexe       Build an Appcontainer executable (Short form:
+ /target:library               ライブラリをビルドします (短い形式: /t:library)
+ /target:module                別のアセンブリに追加できるモジュールをビルド
+                               します (短い形式: /t:module)
+ /target:appcontainerexe       Appcontainer 実行可能ファイルをビルドします (短い形式:
                                /t:appcontainerexe)
- /target:winmdobj              Build a Windows Runtime intermediate file that
-                               is consumed by WinMDExp (Short form: /t:winmdobj)
- /doc:&lt;file&gt;                   XML Documentation file to generate
- /refout:&lt;file&gt;                Reference assembly output to generate
- /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
-                               Itanium, x64, arm, anycpu32bitpreferred, or
-                               anycpu. The default is anycpu.
+ /target:winmdobj              WinMDExp で使用される
+                               Windows ランタイムの中間ファイルをビルドします (短い形式: /t:winmdobj)
+ /doc:&lt;file&gt;                   生成する XML ドキュメント ファイル
+ /refout:&lt;file&gt;                生成する参照アセンブリ出力
+ /platform:&lt;string&gt;            このコードを実行できるプラットフォームを x86、
+                               Itanium、x64、arm、anycpu32bitpreferred、
+                               anycpu に制限します。既定は anycpu です。
 
-                        - INPUT FILES -
- /recurse:&lt;wildcard&gt;           Include all files in the current directory and
-                               subdirectories according to the wildcard
-                               specifications
- /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
-                               file using the given alias (Short form: /r)
- /reference:&lt;file list&gt;        Reference metadata from the specified assembly
-                               files (Short form: /r)
- /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
- /link:&lt;file list&gt;             Embed metadata from the specified interop
-                               assembly files (Short form: /l)
- /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
-                               (Short form: /a)
- /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
-                               generation but may be used by analyzers for producing
-                               errors or warnings.
- /embed                        Embed all source files in the PDB.
- /embed:&lt;file list&gt;            Embed specific files in the PDB
+                        - 入力ファイル -
+ /recurse:&lt;wildcard&gt;           ワイルドカードの指定に従い、現行ディレクトリおよび
+                               サブディレクトリ内のすべてのファイルを
+                               インクルードします
+ /reference:&lt;alias&gt;=&lt;file&gt;     指定されたエイリアスを使用して、指定された
+                               アセンブリ ファイルのメタデータを参照します (短い形式: /r)
+ /reference:&lt;file list&gt;        指定されたアセンブリ ファイルのメタデータを参照
+                               します (短い形式: /r)
+ /addmodule:&lt;file list&gt;        指定されたモジュールをこのアセンブリにリンクします
+ /link:&lt;file list&gt;             指定された相互運用アセンブリ ファイルのメタデータを
+                               埋め込みます (短い形式: /l)
+ /analyzer:&lt;file list&gt;         このアセンブリからアナライザーを実行します
+                               (短い形式: /a)
+ /additionalfile:&lt;file list&gt;   コード生成には直接影響しないものの、
+                               アナライザーがエラーまたは警告を
+                               生成するときに使用する可能性のある追加ファイル。
+ /embed                        すべてのソース ファイルを PDB に埋め込みます。
+ /embed:&lt;file list&gt;            特定のファイルを PDB に埋め込みます
 
-                        - RESOURCES -
- /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
- /win32icon:&lt;file&gt;             Use this icon for the output
- /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
- /nowin32manifest              Do not include the default Win32 manifest
- /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
- /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
-                               (Short form: /linkres) Where the resinfo format
-                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
+                        - リソース -
+ /win32res:&lt;file&gt;              Win32 リソース ファイル (.res) を指定します
+ /win32icon:&lt;file&gt;             出力にこのアイコンを使用します
+ /win32manifest:&lt;file&gt;         Win32 マニフェスト ファイル (.xml) を指定します
+ /nowin32manifest              既定の Win32 マニフェストはインクルードしません
+ /resource:&lt;resinfo&gt;           指定されたリソースを埋め込みます (短い形式: /res)
+ /linkresource:&lt;resinfo&gt;       指定されたリソースをこのアセンブリにリンクします
+                               (短い形式: /linkres) ここで resinfo の形式
+                               は &lt;file&gt;[,&lt;string name&gt;[,public|private]] です
 
-                        - CODE GENERATION -
- /debug[+|-]                   Emit debugging information
+                        - コード生成 -
+ /debug[+|-]                   デバッグ情報を生成します
  /debug:{full|pdbonly|portable|embedded}
-                               Specify debugging type ('full' is default,
-                               'portable' is a cross-platform format,
-                               'embedded' is a cross-platform format embedded into
-                               the target .dll or .exe)
- /optimize[+|-]                Enable optimizations (Short form: /o)
- /deterministic                Produce a deterministic assembly
-                               (including module version GUID and timestamp)
- /refonly                      Produce a reference assembly in place of the main output
- /instrument:TestCoverage      Produce an assembly instrumented to collect
-                               coverage information
- /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
+                               デバッグの種類を指定します ('full' が既定です。
+                               'portable' はクロスプラットフォーム形式です。
+                               'embedded' は、ターゲット .dll または .exe に
+                               埋め込まれるクロスプラットフォーム形式です)
+ /optimize[+|-]                最適化を有効にします (短い形式: /o)
+ /deterministic                決定論的アセンブリを作成します
+                               (モジュール バージョン GUID やタイムスタンプなど)
+ /refonly                      メイン出力の代わりに参照アセンブリを生成します
+ /instrument:TestCoverage      収集するためのインストルメント化されたアセンブリを作成します
+                               カバレッジ情報
+ /sourcelink:&lt;file&gt;            PDB に埋め込むソース リンク情報。
 
-                        - ERRORS AND WARNINGS -
- /warnaserror[+|-]             Report all warnings as errors
- /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
- /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
- /nowarn:&lt;warn list&gt;           Disable specific warning messages
- /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
-                               diagnostics.
- /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
-                               diagnostics.
- /reportanalyzer               Report additional analyzer information, such as
-                               execution time.
+                        - エラーと警告 -
+ /warnaserror[+|-]             すべての警告をエラーとして報告します
+ /warnaserror[+|-]:&lt;warn list&gt; 特定の警告をエラーとして報告します
+ /warn:&lt;n&gt;                     警告レベル (0-4) を設定します (短い形式: /w)
+ /nowarn:&lt;warn list&gt;           特定の警告メッセージを無効にします
+ /ruleset:&lt;file&gt;               特定の診断を無効にするルールセット ファイルを
+                               指定します。
+ /errorlog:&lt;file&gt;              すべてのコンパイラとアナライザーの診断をログに記録するための
+                               ファイルを指定します。
+ /reportanalyzer               追加のアナライザー情報を報告します
+                               (実行時間など)。
 
-                        - LANGUAGE -
- /checked[+|-]                 Generate overflow checks
- /unsafe[+|-]                  Allow 'unsafe' code
- /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
-                               form: /d)
- /langversion:?                Display the allowed values for language version
- /langversion:&lt;string&gt;         Specify language version such as
-                               `default` (latest major version), or
-                               `latest` (latest version, including minor versions),
-                               or specific versions like `6` or `7.1`
+                        - 言語 -
+ /checked[+|-]                 オーバーフロー検査を生成します
+ /unsafe[+|-]                  '安全でない' コードを許可します
+ /define:&lt;symbol list&gt;         条件付きコンパイル シンボルを定義します (短い
+                               形式: /d)
+ /langversion:?                言語バージョンに許容される値を表示します
+ /langversion:&lt;string&gt;         `default` (最新のメジャー バージョン)や
+                               `latest` (マイナー バージョンを含む最新バージョン)
+                               または `6` や `7.1` の特定バージョンなどの
+                               言語バージョンを指定します。
 
                         - SECURITY -
- /delaysign[+|-]               Delay-sign the assembly using only the public
-                               portion of the strong name key
- /publicsign[+|-]              Public-sign the assembly using only the public
-                               portion of the strong name key
- /keyfile:&lt;file&gt;               Specify a strong name key file
- /keycontainer:&lt;string&gt;        Specify a strong name key container
- /highentropyva[+|-]           Enable high-entropy ASLR
+ /delaysign[+|-]               厳密な名前キーのパブリックな部分のみを使って 
+                               アセンブリを遅延署名します
+ /publicsign[+|-]              厳密な名前キーのパブリックな部分のみを使って
+                               アセンブリを公開署名します
+ /keyfile:&lt;file&gt;               厳密な名前キーのファイルを指定します
+ /keycontainer:&lt;string&gt;        厳密な名前キーのコンテナーを指定します
+ /highentropyva[+|-]           高エントロピ ASLR を有効化します
 
-                        - MISCELLANEOUS -
- @&lt;file&gt;                       Read response file for more options
- /help                         Display this usage message (Short form: /?)
- /nologo                       Suppress compiler copyright message
- /noconfig                     Do not auto include CSC.RSP file
- /parallel[+|-]                Concurrent build.
- /version                      Display the compiler version number and exit.
+                        - その他 -
+ @&lt;file&gt;                       応答ファイルを読み取り、オプションを追加します
+ /help                         使用法に関するメッセージを表示します (短い形式: /?)
+ /nologo                       コンパイル時の著作権メッセージを表示しません
+ /noconfig                     CSC.RSP ファイルを自動的に含めません
+ /parallel[+|-]                ビルドを並列処理します。
+ /version                      コンパイラのバージョン番号を出力して終了します。
 
-                        - ADVANCED -
- /baseaddress:&lt;address&gt;        Base address for the library to be built
- /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
-                               checksum stored in PDB. Supported values are:
-                               SHA1 (default) or SHA256.
- /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
-                               files
- /utf8output                   Output compiler messages in UTF-8 encoding
- /main:&lt;type&gt;                  Specify the type that contains the entry point
-                               (ignore all other possible entry points) (Short
-                               form: /m)
- /fullpaths                    Compiler generates fully qualified paths
- /filealign:&lt;n&gt;                Specify the alignment used for output file
-                               sections
+                        - 詳細 -
+ /baseaddress:&lt;address&gt;        ビルドするライブラリのベース アドレス
+ /checksumalgorithm:&lt;alg&gt;      PDB に格納されているソース ファイルのチェックサム
+                               を計算するアルゴリズムを指定します。サポートされる値:
+                               SHA1 (既定) または SHA256。
+ /codepage:&lt;n&gt;                 ソース ファイルを開くときに使用するコード ページを
+                               指定します
+ /utf8output                   コンパイラ メッセージを UTF-8 エンコードで出力します
+ /main:&lt;type&gt;                  エントリ ポイントを含む型を指定します
+                               (他のエントリ ポイントはすべて無視します) (短い
+                               形式: /m)
+ /fullpaths                    コンパイラは完全修飾パスを生成します
+ /filealign:&lt;n&gt;                出力ファイル セクションで使用する配置を指定
+                               します
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Specify a mapping for source path names output by
-                               the compiler.
- /pdb:&lt;file&gt;                   Specify debug information file name (default:
-                               output file name with .pdb extension)
- /errorendlocation             Output line and column of the end location of
-                               each error
- /preferreduilang              Specify the preferred output language name.
- /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
- /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
- /lib:&lt;file list&gt;              Specify additional directories to search in for
-                               references
- /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
-                               prompt, send, queue, or none. The default is
-                               queue.
- /appconfig:&lt;file&gt;             Specify an application configuration file
-                               containing assembly binding settings
- /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
-                               a part of
- /modulename:&lt;string&gt;          Specify the name of the source module
+                               コンパイラが出力するソース パス名のマッピングを
+                               指定します。
+ /pdb:&lt;file&gt;                   デバッグ情報ファイル名を指定します (既定:
+                               .pdb 拡張子の付いた出力ファイル名)
+ /errorendlocation             各エラーの終了位置の出力行と
+                               出力列
+ /preferreduilang              出力用の言語名を指定します。
+ /nostdlib[+|-]                標準ライブラリ (mscorlib.dll) は参照しません
+ /subsystemversion:&lt;string&gt;    このアセンブリのサブシステム バージョンを指定します
+ /lib:&lt;file list&gt;              参照を検索する追加ディレクトリを指定
+                               します
+ /errorreport:&lt;string&gt;         内部コンパイラ エラーの処理方法を指定します: 
+                               prompt、send、queue、none です。既定値は
+                               queue です。
+ /appconfig:&lt;file&gt;             アセンブリ バインド設定を含む
+                               アプリケーション構成ファイルを指定します
+ /moduleassemblyname:&lt;string&gt;  このモジュールが一部となるアセンブリ名
+                               です
+ /modulename:&lt;string&gt;          ソース モジュールの名前を指定します
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3372,9 +3435,6 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_InvalidSignaturePublicKey" xml:space="preserve">
     <value>無効な署名公開キーが AssemblySignatureKeyAttribute で指定されました。</value>
   </data>
-  <data name="ERR_OverloadRefOut" xml:space="preserve">
-    <value>'{0}' は、ref と out でのみ異なるオーバーロードされたメソッドを定義することはできません。</value>
-  </data>
   <data name="WRN_TupleLiteralNameMismatch" xml:space="preserve">
     <value>ターゲット型 '{1}' によって異なる名前が指定されている、または名前が何も指定されていないため、タプル要素名 '{0}' は無視されます。</value>
   </data>
@@ -3389,9 +3449,6 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_AmbigContext" xml:space="preserve">
     <value>'{0}' は、'{1}' と '{2}' 間のあいまいな参照です。</value>
-  </data>
-  <data name="ERR_ParamsCantBeRefOut" xml:space="preserve">
-    <value>params パラメーターは、ref または out として宣言することはできません。</value>
   </data>
   <data name="WRN_CmdOptionConflictsSource_Title" xml:space="preserve">
     <value>オプションは、ソース ファイルまたは追加されたモジュールで指定された属性をオーバーライドします</value>
@@ -3453,9 +3510,6 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_NoDynamicPhantomOnBaseCtor" xml:space="preserve">
     <value>コンストラクターの呼び出しは動的にディスパッチされる必要がありますが、この呼び出しはコンストラクター初期化子の一部であるためディスパッチできません。動的な引数をキャストしてください。</value>
   </data>
-  <data name="ERR_RefReturnCall2" xml:space="preserve">
-    <value>パラメーター '{1}' に渡される引数を参照渡しで返すことはできないため、'{0}' の結果のメンバーを参照渡しで返すことはできません</value>
-  </data>
   <data name="ERR_TypeInferenceFailedForImplicitlyTypedOutVariable" xml:space="preserve">
     <value>暗黙的に型指定された out 変数 '{0}' の型を推論できません。</value>
   </data>
@@ -3467,6 +3521,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_ImplicitlyTypedVariableMultipleDeclarator" xml:space="preserve">
     <value>暗黙的に型指定された変数は、複数の宣言子を持つことができません。</value>
+  </data>
+  <data name="ERR_RefReturnReadonlyNotField" xml:space="preserve">
+    <value>{0} '{1}' は読み取り専用の変数であるため、書き込み可能な参照によって返すことはできません</value>
   </data>
   <data name="ERR_NamespaceUnexpected" xml:space="preserve">
     <value>名前空間にフィールドやメソッドのようなメンバーを直接含めることはできません</value>
@@ -3630,9 +3687,6 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_InvalidAssemblyCulture" xml:space="preserve">
     <value>アセンブリ カルチャ文字列に埋め込み NUL 文字を含めることはできません。</value>
   </data>
-  <data name="ERR_AddrOnReadOnlyLocal" xml:space="preserve">
-    <value>読み取り専用のローカル変数のアドレスを取得することはできません。</value>
-  </data>
   <data name="ERR_PatternNullableType" xml:space="preserve">
     <value>パターンで Null 許容型 '{0}' を使用することはできません。代わりに基になる型 '{1}' をご使用ください。</value>
   </data>
@@ -3664,7 +3718,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>型 '{0}' を型 '{1}' に変換する標準変換が存在しないため、CallerMemberNameAttribute を適用することはできません。</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
+    <value>ref パラメーターでも out パラメーターでもないため、パラメーター '{0}' のメンバーを参照渡しで返すことはできません</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(以前のエラーに関連するシンボルの位置)</value>
@@ -3687,8 +3741,8 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="WRN_InvalidSearchPathDir_Title" xml:space="preserve">
     <value>無効な検索パスが指定されています</value>
   </data>
-  <data name="ERR_RefReturnCall" xml:space="preserve">
-    <value>パラメーター '{1}' に渡される引数を参照渡しで返すことはできないため、'{0}' の結果を参照渡しで返すことはできません</value>
+  <data name="ERR_RefReturnThis" xml:space="preserve">
+    <value>参照渡しで 'this' を返すことはできません。</value>
   </data>
   <data name="ERR_NoCanonicalView" xml:space="preserve">
     <value>埋め込み相互運用型 '{0}' と一致する相互運用型が見つかりません。アセンブリ参照が指定されていることを確認してください。</value>
@@ -3709,7 +3763,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>ref パラメーターでも out パラメーターでもないため、パラメーターを参照 '{0}' 渡しで返すことはできません</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
+    <value>名前空間で定義された要素は明示的に private、protected、protected internal、または private protected に宣言することはできません</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>/moduleassemblyname オプションは 'module' のターゲット型をビルドするときのみ指定できます。</value>
@@ -3745,7 +3799,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>'{0}' は lock ステートメントによって要求された参照型ではありません。</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic" xml:space="preserve">
-    <value>静的な読み取り専用フィールドを参照渡しで返すことはできません</value>
+    <value>静的な読み取り専用フィールドを書き込み可能な参照渡しで返すことはできません</value>
   </data>
   <data name="WRN_CLS_BadInterfaceMember_Title" xml:space="preserve">
     <value>CLS 準拠のインターフェイスは CLS 準拠のメンバーのみを持つ必要があります</value>
@@ -3809,6 +3863,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_PropertyLacksGet" xml:space="preserve">
     <value>get アクセサーがないため、プロパティまたはインデクサー '{0}' をこのコンテキストで使用することはできません</value>
+  </data>
+  <data name="ERR_AutoPropsInRoStruct" xml:space="preserve">
+    <value>読み取り専用の構造体に含まれる自動実装インスタンスのプロパティは、読み取り専用である必要があります。</value>
   </data>
   <data name="ERR_LanguageVersionCannotHaveLeadingZeroes" xml:space="preserve">
     <value>指定された言語バージョン '{0}' の先頭にゼロを含めることはできません</value>
@@ -3880,7 +3937,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>'{0}' は演算子 == または演算子 != を定義しますが、Object.GetHashCode() をオーバーライドしません。</value>
   </data>
   <data name="IDS_LangVersions" xml:space="preserve">
-    <value>Supported language versions:</value>
+    <value>サポートされる言語バージョン:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>バイナリ演算子のパラメーターの 1 つはそれを含む型でなければなりません。</value>
@@ -3947,6 +4004,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_UnexpectedSemicolon" xml:space="preserve">
     <value>メソッドまたはアクセサー ブロックの後のセミコロンの使用が正しくありません。</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField2" xml:space="preserve">
+    <value>{0} '{1}' のメンバーは読み取り専用の変数であるため、ref 値としても out 値としても使用できません</value>
   </data>
   <data name="ERR_LocalTypeNameClash" xml:space="preserve">
     <value>アセンブリ '{1}' から相互運用型 '{0}' を埋め込むと、現在のアセンブリで名前の競合が発生します。'相互運用機能型の埋め込み' プロパティを false に設定することを検討してください。</value>
@@ -4050,6 +4110,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_ArrayOfStaticClass" xml:space="preserve">
     <value>'{0}': 配列要素をスタティック型にすることはできません。</value>
   </data>
+  <data name="IDS_SK_CONSTRUCTOR" xml:space="preserve">
+    <value>コンストラクター</value>
+  </data>
   <data name="ERR_InvalidQM" xml:space="preserve">
     <value>'{0}' と '{1}' の間に暗黙的な変換がないため、条件式の型がわかりません。</value>
   </data>
@@ -4061,6 +4124,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_InaccessibleSetter" xml:space="preserve">
     <value>set アクセサーにアクセスできないため、プロパティまたはインデクサー '{0}' はこのコンテキストでは使用できません。</value>
+  </data>
+  <data name="IConversionExpressionIsNotCSharpConversion" xml:space="preserve">
+    <value>{0} は有効な C# 変換式ではありません</value>
   </data>
   <data name="ERR_NamedArgumentUsedInPositional" xml:space="preserve">
     <value>名前付き引数 '{0}' は、場所引数が既に指定されているパラメーターを指定します</value>
@@ -4204,7 +4270,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>オブジェクト '{0}' は複数回破棄することができます。</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongRefReturn" xml:space="preserve">
-    <value>'{0}' はインターフェイス メンバー '{1}' を実装しません。'{2}' は{3}渡しで返さないため、'{1}' を実装できません</value>
+    <value>'{0}' はインターフェイス メンバー '{1}' を実装しません。'{2}' は参照渡しで返される対応する値がないため、'{1}' を実装できません。</value>
   </data>
   <data name="ERR_FixedNeedsLvalue" xml:space="preserve">
     <value>固定サイズ バッファーには、ローカルまたはフィールドをとおしてのみアクセスできます</value>
@@ -4345,7 +4411,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>型パラメーター '{1}' は 'struct' 制約を含むので、'{0}' の制約として '{1}' を使用することはできません</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
+    <value>定義済みの型 '{0}' が定義またはインポートされていないか、複数の参照先アセンブリで宣言されています</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>型引数を null にすることはできません。</value>
@@ -4406,6 +4472,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_BadCastInFixed" xml:space="preserve">
     <value>固定ステートメントの代入式の右辺はキャスト式ではない可能性があります。</value>
+  </data>
+  <data name="IDS_FeatureRefExtensionMethods" xml:space="preserve">
+    <value>ref 拡張メソッド</value>
   </data>
   <data name="ERR_AssgReadonly2" xml:space="preserve">
     <value>読み取り専用フィールド '{0}' のメンバーは変更できません (コンストラクターまたは変数初期化子では可)。</value>
@@ -4503,6 +4572,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_ComRefCallInExpressionTree" xml:space="preserve">
     <value>式ツリーのラムダには、引数で ref を省略した COM 呼び出しを含めることはできません</value>
   </data>
+  <data name="ERR_ParamsCantBeWithModifier" xml:space="preserve">
+    <value>params パラメーターは、{0} として宣言することはできません</value>
+  </data>
   <data name="ERR_BadForeachDecl" xml:space="preserve">
     <value>foreach ステートメントには、型と識別子の両方が必要です。</value>
   </data>
@@ -4510,7 +4582,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>引数 {0}: は '{1}' から '{2}' へ変換することはできません。</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
+    <value>名前付き引数は、すべての固定引数を指定した後に指定する必要があります。末尾以外の名前付き引数を許可するには、言語バージョン {0} 以上を使用してください。</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>メソッド '{1}' の型パラメーター '{0}' に対する制約は、インターフェイス メソッド '{3}' の型パラメーター '{2}' に対する制約と一致しなければなりません。明示的なインターフェイスの実装を使用することをお勧めします。</value>
@@ -4532,6 +4604,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_UnexpectedToken" xml:space="preserve">
     <value>予期しないトークン '{0}'</value>
+  </data>
+  <data name="ERR_RefConditionalDifferentTypes" xml:space="preserve">
+    <value>式は、代替 ref 値と一致するために、型 '{0}' である必要があります</value>
   </data>
   <data name="ERR_CantDeriveFromSealedType" xml:space="preserve">
     <value>'{0}': シール型 '{1}' から派生することはできません。</value>
@@ -4620,6 +4695,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   <data name="ERR_IllegalFixedType" xml:space="preserve">
     <value>固定サイズ バッファーの型は次のうちの 1 つでなければなりません: bool、byte、short、int、long、char、sbyte、ushort、uint、ulong、float または double</value>
   </data>
+  <data name="ERR_CallArgMixing" xml:space="preserve">
+    <value>パラメーター '{1}' によって参照される変数が宣言のスコープ外に公開される可能性があるため、'{0}' に対してこの引数の組み合わせは許可されません。</value>
+  </data>
   <data name="ERR_ConstOutOfRange" xml:space="preserve">
     <value>定数値 '{0}' を '{1}' に変換できません</value>
   </data>
@@ -4672,7 +4750,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>機能 '{0}' は C# 6 では使用できません。{1} 以上の言語バージョンをお使いください。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7" xml:space="preserve">
-    <value>機能 '{0}' は C# 7 では使用できません。{1} 以上の言語バージョンをお使いください。</value>
+    <value>機能 '{0}' は C# 7.0 では使用できません。{1} 以上の言語バージョンをご使用ください。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion4" xml:space="preserve">
     <value>機能 '{0}' は C# 4 では使用できません。{1} 以上の言語バージョンをお使いください。</value>
@@ -4760,6 +4838,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_SubexpressionNotInNameof" xml:space="preserve">
     <value>サブ式は nameof への引数に使用できません。</value>
+  </data>
+  <data name="ERR_MismatchedRefEscapeInTernary" xml:space="preserve">
+    <value>ref 三項演算子のブランチから、互換性のない宣言スコープを持つ変数を参照することはできません</value>
   </data>
   <data name="ERR_FixedDimsRequired" xml:space="preserve">
     <value>固定サイズ バッファー フィールドには、フィールド名の後に配列サイズの指定子が必要です。</value>
@@ -4913,6 +4994,9 @@ C# では out と ref を区別しますが、CLR では同じと認識します
   </data>
   <data name="ERR_PatternDynamicType" xml:space="preserve">
     <value>パターン内で型 'dynamic' を使用することはできません。</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField" xml:space="preserve">
+    <value>{0} '{1}' は、読み取り専用の変数であるため、ref 値または out 値として使用することはできません</value>
   </data>
   <data name="ERR_CallingFinalizeDeprecated" xml:space="preserve">
     <value>デストラクター と object.Finalize を直接呼び出すことはできません。使用可能であれば IDisposable.Dispose を呼び出してください。</value>
@@ -5092,7 +5176,7 @@ C# では out と ref を区別しますが、CLR では同じと認識します
     <value>式のようなインデクサー</value>
   </data>
   <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
-    <value>'{0}' is a local function and must therefore always have a body.</value>
+    <value>'{0}' はローカル関数であるため、常に本体が必要です。</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>'{0}': 動的な型から派生することはできません。</value>

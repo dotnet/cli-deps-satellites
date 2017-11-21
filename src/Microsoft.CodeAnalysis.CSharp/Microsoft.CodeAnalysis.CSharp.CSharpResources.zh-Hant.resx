@@ -222,6 +222,9 @@
   <data name="WRN_CallerLineNumberPreferredOverCallerMemberName_Title" xml:space="preserve">
     <value>CallerMemberNameAttribute 將沒有效果; CallerLineNumberAttribute 會覆寫它</value>
   </data>
+  <data name="ERR_RefReturnReadonlyNotField2" xml:space="preserve">
+    <value>無法以可寫入傳址方式傳回 {0} '{1}' 的成員，因為它是唯讀變數</value>
+  </data>
   <data name="ERR_AbstractHasBody" xml:space="preserve">
     <value>因為 '{0}' 已標記為抽象，所以它無法宣告主體。</value>
   </data>
@@ -300,10 +303,13 @@
     <value>無法解構動態物件。</value>
   </data>
   <data name="ERR_RefReturnLvalueExpected" xml:space="preserve">
-    <value>無法在此內容中使用運算式，因為其可能不會以傳址方式傳回</value>
+    <value>因為參考可能不會傳遞或傳回運算式，所以無法於此內容中使用運算式</value>
   </data>
   <data name="ERR_OneAliasPerReference" xml:space="preserve">
     <value>宣告外部別名的 /reference 選項只能有一個檔名。若要指定多個別名或檔名，請用多個 /reference 選項。</value>
+  </data>
+  <data name="ERR_StackAllocConversionNotPossible" xml:space="preserve">
+    <value>類型 '{0}' 的 stackalloc 運算式不可能轉換成類型 '{1}'。</value>
   </data>
   <data name="ERR_UnclosedExpressionHole" xml:space="preserve">
     <value>以 '{' 開頭的插入運算式遺漏結束分隔符號 '}' </value>
@@ -425,9 +431,6 @@
   <data name="WRN_InvalidAssemblyName" xml:space="preserve">
     <value>組件參考 '{0}' 無效，無法解析。</value>
   </data>
-  <data name="ERR_BadOutWithThis" xml:space="preserve">
-    <value> 參數修飾詞 'out' 不可與 'this' 一起使用 </value>
-  </data>
   <data name="ERR_DeconstructRequiresExpression" xml:space="preserve">
     <value>需要具有右邊類型的運算式，才能解構指派。</value>
   </data>
@@ -437,6 +440,9 @@
   <data name="ERR_ThisStructNotInAnonMeth" xml:space="preserve">
     <value>結構內部的匿名方法、Lambda 運算式和查詢運算式無法存取 'this' 的執行個體成員。請考慮將 'this' 複製到匿名方法、Lambda 運算式或查詢運算式外部的區域變數，並改用這個區域變數。</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField2" xml:space="preserve">
+    <value>無法指派給 {0} '{1}' 的成員，因為它是唯讀變數</value>
+  </data>
   <data name="ERR_InterfaceImplementedByConditional" xml:space="preserve">
     <value>Conditional 成員 '{0}' 無法在類型 '{2}' 中實作介面成員 '{1}'</value>
   </data>
@@ -444,7 +450,7 @@
     <value>靜態類別 '{0}' 不可衍生自類型 '{1}'。靜態類別必須衍生自 object。</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic2" xml:space="preserve">
-    <value>無法以傳址方式傳回靜態唯讀欄位 '{0}' 的欄位</value>
+    <value>無法以可寫入傳址方式傳回靜態唯讀欄位 '{0}' 的欄位</value>
   </data>
   <data name="ERR_ForwardedTypeInThisAssembly" xml:space="preserve">
     <value>類型 '{0}' 定義於此組件中，但已為其指定類型轉送子。</value>
@@ -471,7 +477,7 @@
     <value>'{0}' 未實作 '{1}' 模式，因為 '{2}' 與 '{3}' 之間模稜兩可。</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
+    <value>/langversion 的選項 '{0}' 無效。請使用 '/langversion:?' 來列出支援的值。</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>別名限定的名稱不是運算式。</value>
@@ -717,13 +723,16 @@
     <value>浮點常數的值超出類型 '{0}' 的範圍</value>
   </data>
   <data name="ERR_InvalidDebugInfo" xml:space="preserve">
-    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+    <value>無法從組件 '{2}' 讀取方法 '{0}' 的偵錯資訊 (權杖 0x{1:X8})</value>
   </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>無法在不編碼的情況下，對原始程式文字發出偵錯資訊。</value>
   </data>
   <data name="ERR_BadResourceVis" xml:space="preserve">
     <value>選項 '{0}' 無效; 資源可見度必須是 'public' 或 'private'。</value>
+  </data>
+  <data name="ERR_ExplicitReservedAttr" xml:space="preserve">
+    <value>請勿使用 '{0}'。此保留供編譯器使用。</value>
   </data>
   <data name="WRN_BadRestoreNumber_Title" xml:space="preserve">
     <value>無法還原警告，因為已全域予以停用</value>
@@ -741,7 +750,7 @@
     <value>必須是元素 '{0}' 的結束標記。</value>
   </data>
   <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
-    <value>leading digit separator</value>
+    <value>前置數字分隔符號</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Nameof 運算子中不可使用類型引數。</value>
@@ -860,6 +869,9 @@
   <data name="ERR_BadVisReturnType" xml:space="preserve">
     <value>不一致的存取範圍: 傳回類型 '{1}' 比方法 '{0}' 的存取範圍小</value>
   </data>
+  <data name="ERR_FieldsInRoStruct" xml:space="preserve">
+    <value>唯讀結構的執行個體欄位必須為唯讀。</value>
+  </data>
   <data name="UseLiteralForTokens" xml:space="preserve">
     <value>使用 Microsoft.CodeAnalysis.CSharp.SyntaxFactory.Literal 來建立字元常值語彙基元。</value>
   </data>
@@ -882,13 +894,13 @@
     <value>因為組件 '{1}' 的類型 '{0}' 具有屬於內嵌 Interop 類型的泛型類型引數，所以不可跨組件的界限使用。</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
-    <value>The local function '{0}' is declared but never used</value>
+    <value>區域函式 '{0}' 已宣告，但從未使用</value>
   </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>as 運算子必須搭配參考類型或可為 Null 的類型一起使用 ('{0}' 是不可為 Null 的實值類型)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>The abstract {0} '{1}' cannot be marked virtual</value>
+    <value>抽象 {0} '{1}' 不可標記為虛擬</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>'{0}': 靜態類別不可包含使用者定義的運算子</value>
@@ -1031,6 +1043,9 @@
   <data name="ERR_BadAwaitWithoutAsyncLambda" xml:space="preserve">
     <value>'await' 運算子只可用在非同步 {0} 中。請考慮以 'async' 修飾詞標記此 {0}。</value>
   </data>
+  <data name="ERR_RefExtensionMustBeValueTypeOrConstrainedToOne" xml:space="preserve">
+    <value>'ref' 擴充方法 '{0}' 的第一個參數，必須是限制為結構的實值型別或泛型型別。</value>
+  </data>
   <data name="ChainingSpeculativeModelIsNotSupported" xml:space="preserve">
     <value>不支援鏈結理論式語意模型。應從非理論式 ParentModel 建立理論式模型。</value>
   </data>
@@ -1041,7 +1056,7 @@
     <value>篩選條件運算式為常數，請考慮移除此篩選條件。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
-    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+    <value>C# 7.2 無法使用 '{0}' 功能。請使用語言版本 {1} 或更高的版本。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>C# 7.1 中無法使用 '{0}' 功能。請使用語言版本 {1} 或更高的版本。</value>
@@ -1125,7 +1140,7 @@
     <value>成員 '{0}' 並未隱藏可存取的成員。不需要 new 關鍵字。</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+    <value>必須在所有固定引數皆已在動態引動過程中指定之後，具名引數規格才可出現。</value>
   </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>傳遞給 #pragma 警告前置處理器指示詞的號碼不是有效的警告號碼。請驗證號碼代表警告，而不是錯誤。</value>
@@ -1146,13 +1161,13 @@
     <value>#r 只可用於指令碼中</value>
   </data>
   <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
-    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
+    <value>無法將具有動態類型的引數傳遞到具有推斷類型引數的一般區域函式 '{0}'。</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>語法樹狀結構已存在</value>
   </data>
-  <data name="ERR_BadRefWithThis" xml:space="preserve">
-    <value> 參數修飾詞 'ref' 不可與 'this' 一起使用</value>
+  <data name="ERR_BadParameterModifiersOrder" xml:space="preserve">
+    <value>參數修飾詞 '{0}' 不可用於修飾詞 '{1}' 之後</value>
   </data>
   <data name="ERR_InvalidOutputName" xml:space="preserve">
     <value>無效的輸出名稱: {0}</value>
@@ -1241,6 +1256,9 @@
   <data name="ERR_ExternHasConstructorInitializer" xml:space="preserve">
     <value>'{0}' 不可同時為外部並具有建構函式初始設定式</value>
   </data>
+  <data name="IDS_StackAllocExpression" xml:space="preserve">
+    <value>stackalloc {0}[{1}]</value>
+  </data>
   <data name="ERR_AutoPropertyCannotBeRefReturning" xml:space="preserve">
     <value>無法以傳址方式傳回自動實作屬性</value>
   </data>
@@ -1301,6 +1319,9 @@
   <data name="ERR_BadTypeforThis" xml:space="preserve">
     <value>擴充方法的第一個參數不可為類型 '{0}'</value>
   </data>
+  <data name="IDS_FeatureReadOnlyReferences" xml:space="preserve">
+    <value>唯讀參考</value>
+  </data>
   <data name="ERR_BadSKunknown" xml:space="preserve">
     <value>'{0}' 是 {1}，其在指定內容中無效。</value>
   </data>
@@ -1343,11 +1364,14 @@
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>參考別名選項無效: '{0}=' -- 遺漏檔案名稱</value>
   </data>
+  <data name="ERR_FieldAutoPropCantBeByRefLike" xml:space="preserve">
+    <value>欄位或自動實作屬性的類型不可為 '{0}'，除非它是 ref struct 的執行個體成員。</value>
+  </data>
   <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
-    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+    <value>具名引數 '{0}' 未用在正確的位置，但後面接著未命名引數</value>
   </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
-    <value>無法以傳址方式傳回唯讀欄位 '{0}' 的成員</value>
+    <value>無法以可寫入傳址方式傳回唯讀欄位 '{0}' 的成員</value>
   </data>
   <data name="ERR_BadDynamicMethodArg" xml:space="preserve">
     <value>無法將類型 '{0}' 的運算式用做為動態分派作業的引數。</value>
@@ -1371,7 +1395,7 @@
     <value>Windows 執行階段事件不可以 out 或 ref 參數形式傳遞。</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
+    <value>類型 '{0}' 的執行個體不可用於巢狀函式、查詢運算式、迭代器區塊或非同步方法中</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>'{0}' 未實作介面成員 '{1}'。'{2}' 無法實作 '{1}'，因為其沒有符合的傳回類型 '{3}'。</value>
@@ -1445,6 +1469,9 @@
   <data name="WRN_RefCultureMismatch_Title" xml:space="preserve">
     <value>參考的組件具有不同文化特性設定</value>
   </data>
+  <data name="ERR_InExtensionMustBeValueType" xml:space="preserve">
+    <value>'in' 擴充方法 '{0}' 中的第一個參數，必須是實值型別。</value>
+  </data>
   <data name="ERR_NoConversionForNubDefaultParam" xml:space="preserve">
     <value>類型 '{0}' 的值不可用做為可為 Null 之參數 '{1}' 的預設參數，因為 '{0}' 不是簡單類型。</value>
   </data>
@@ -1516,6 +1543,9 @@
   </data>
   <data name="ThisMethodCanOnlyBeUsedToCreateTokens" xml:space="preserve">
     <value>此方法只可用以建立語彙基元 - {0} 不是語彙基元種類。</value>
+  </data>
+  <data name="ERR_OverloadRefKind" xml:space="preserve">
+    <value>'{0}' 無法定義多載的 {1}，後者僅在參數修飾詞 '{2}' 和 '{3}' 有所不同</value>
   </data>
   <data name="ERR_NameNotInContextPossibleMissingReference" xml:space="preserve">
     <value>名稱 '{0}' 不存在於目前的內容中 (是否遺漏了組件 '{1}' 的參考?)</value>
@@ -1710,9 +1740,6 @@
   <data name="ERR_IntegralTypeValueExpected" xml:space="preserve">
     <value>必須是整數類型的值</value>
   </data>
-  <data name="ERR_MultiParamMod" xml:space="preserve">
-    <value>一個參數無法擁有所有指定的修飾詞; 該參數上有太多修飾詞。</value>
-  </data>
   <data name="ERR_NotYetImplementedInRoslyn" xml:space="preserve">
     <value>尚未實作語言功能 ('{0}')。</value>
   </data>
@@ -1812,6 +1839,9 @@
   <data name="ERR_ClassDoesntImplementInterface" xml:space="preserve">
     <value>'{0}': 包含類型未實作介面 '{1}'</value>
   </data>
+  <data name="ERR_RefStructInterfaceImpl" xml:space="preserve">
+    <value>'{0}': ref struct 無法實作介面</value>
+  </data>
   <data name="ERR_QueryNoProviderStandard" xml:space="preserve">
     <value>找不到來源類型 '{0}' 的查詢模式實作。找不到 '{1}'。是否遺漏了 'System.Core.dll' 的參考或 'System.Linq' 的 using 指示詞?</value>
   </data>
@@ -1836,6 +1866,9 @@
   <data name="WRN_TooManyLinesForDebugger_Title" xml:space="preserve">
     <value>原始程式檔已超過 PDB 所能顯示的上限 16,707,565 行; 偵錯資訊可能會不正確。</value>
   </data>
+  <data name="IDS_FeatureRefStructs" xml:space="preserve">
+    <value>ref struct</value>
+  </data>
   <data name="ERR_AutoPropertyInitializerInInterface" xml:space="preserve">
     <value>介面內自動實作的屬性，不可有初始設定式。</value>
   </data>
@@ -1852,7 +1885,7 @@
     <value>遞增或遞減運算子的運算元必須是變數、屬性或索引子。</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed switch is only supported when emitting a PDB.</value>
+    <value>只有在發出 PDB 時才支援 /embed 參數。</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>'{0}' 不可同時為外部與抽象</value>
@@ -1889,6 +1922,9 @@
   </data>
   <data name="ERR_MustHaveRefReturn" xml:space="preserve">
     <value>傳值傳回只能用於以傳值方式傳回的方法</value>
+  </data>
+  <data name="ERR_EscapeStackAlloc" xml:space="preserve">
+    <value>無法在此內容中使用類型 '{0}' 的 stackalloc 運算式結果，因為它會公開在包含方法之外</value>
   </data>
   <data name="ERR_InvalidFwdType" xml:space="preserve">
     <value>指定做為 TypeForwardedTo 屬性引數的類型無效</value>
@@ -2077,7 +2113,7 @@
     <value>類別類型條件約束 '{0}' 必須在所有其他條件約束之前</value>
   </data>
   <data name="ERR_CantChangeRefReturnOnOverride" xml:space="preserve">
-    <value>必須{2}以傳址方式傳回 '{0}'，才能符合覆寫成員 '{1}'</value>
+    <value>'{0}' 必須符合覆寫成員 '{1}' 的傳址方式傳回</value>
   </data>
   <data name="WRN_CallerLineNumberPreferredOverCallerFilePath_Title" xml:space="preserve">
     <value>CallerFilePathAttribute 將沒有效果; CallerLineNumberAttribute 會覆寫它</value>
@@ -2094,6 +2130,12 @@
   <data name="ERR_TypeArgsNotAllowed" xml:space="preserve">
     <value>{1} '{0}' 不可搭配類型引數一起使用</value>
   </data>
+  <data name="ERR_EscapeLocal" xml:space="preserve">
+    <value>無法在此內容中使用本機 '{0}'，因為它會將參考的變數公開在其宣告範圍外</value>
+  </data>
+  <data name="ERR_EscapeOther" xml:space="preserve">
+    <value>無法在此內容中使用運算式，因為它會在其宣告範圍外間接公開變數</value>
+  </data>
   <data name="ERR_PartialMethodOnlyOneLatent" xml:space="preserve">
     <value>部分方法不可有多重定義宣告</value>
   </data>
@@ -2105,6 +2147,9 @@
   </data>
   <data name="ERR_BadAwaitArg" xml:space="preserve">
     <value>'await' 要求類型 {0} 必須要有適合的 GetAwaiter 方法</value>
+  </data>
+  <data name="ERR_EscapeCall2" xml:space="preserve">
+    <value>無法在此內容中使用 '{0}' 結果的成員，因為它會將參數 '{1}' 參考的變數公開在其宣告範圍外</value>
   </data>
   <data name="ERR_MemberReserved" xml:space="preserve">
     <value>類型 '{1}' 已保留了一個具有相同參數類型且名為 '{0}' 的成員</value>
@@ -2202,6 +2247,9 @@
   <data name="WRN_NonObsoleteOverridingObsolete_Title" xml:space="preserve">
     <value>成員會覆寫過時成員</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField" xml:space="preserve">
+    <value>無法指派至 {0} '{1}'，因為它不是唯讀變數</value>
+  </data>
   <data name="ERR_BadAsyncLocalType" xml:space="preserve">
     <value>Async 方法不能有傳址本機</value>
   </data>
@@ -2235,6 +2283,9 @@
   <data name="ERR_PatternIsSubsumed" xml:space="preserve">
     <value>先前的案例已處理切換案例。</value>
   </data>
+  <data name="ERR_EscapeCall" xml:space="preserve">
+    <value>無法在此內容中使用 '{0}' 的結果，因為它會將參數 '{1}' 參考的變數公開在其宣告範圍外</value>
+  </data>
   <data name="ERR_ForwardedTypeIsNested" xml:space="preserve">
     <value>無法轉送類型 '{0}'，因為其為 '{1}' 的巢狀類型。</value>
   </data>
@@ -2258,6 +2309,9 @@
   </data>
   <data name="ERR_CantOverrideBogusMethod" xml:space="preserve">
     <value>'{0}': 因為此語言不支援 '{1}'，所以無法覆寫。</value>
+  </data>
+  <data name="ERR_BadParameterModifiers" xml:space="preserve">
+    <value> 參數修飾詞 '{0}' 不可搭配 '{1}' 使用</value>
   </data>
   <data name="ERR_NonInvocableMemberCalled" xml:space="preserve">
     <value>非可叫用成員 '{0}' 不能用做為方法。</value>
@@ -2391,6 +2445,9 @@
   <data name="ERR_BadEmptyThrow" xml:space="preserve">
     <value>沒有引數的 throw 陳述式不可用於 catch 子句之外</value>
   </data>
+  <data name="ERR_BadSpecialByRefIterator" xml:space="preserve">
+    <value>foreach 陳述式無法對 async 或 iterator 方法中類型 '{0}' 的列舉值進行操作，因為 '{0}' 為 ref struct。</value>
+  </data>
   <data name="WRN_UnreferencedEvent" xml:space="preserve">
     <value>事件 '{0}' 從未使用過</value>
   </data>
@@ -2448,6 +2505,9 @@
   <data name="ERR_InvalidSpecifier" xml:space="preserve">
     <value>'{0}' 不是有效的格式規範</value>
   </data>
+  <data name="ERR_RefConditionalAndAwait" xml:space="preserve">
+    <value>包含 ref 條件運算子的運算式無法使用 'await'</value>
+  </data>
   <data name="ERR_DuplicateImportSimple" xml:space="preserve">
     <value>匯入了具有相同簡單名稱 '{0}' 的組件。請嘗試移除其中一個參考 (例如 '{1}')，或簽署它們以啟用並存。</value>
   </data>
@@ -2490,6 +2550,9 @@
   <data name="ERR_ExternAliasNotAllowed" xml:space="preserve">
     <value>'extern alias' 在此內容中無效</value>
   </data>
+  <data name="ERR_RefConditionalNeedsTwoRefs" xml:space="preserve">
+    <value>這兩個條件運算子的值都必須是 ref 值，或兩個都不是 ref 值</value>
+  </data>
   <data name="ERR_NoPIANestedType" xml:space="preserve">
     <value>無法內嵌類型 '{0}'，因為其為巢狀類型。請考慮將 [內嵌 Interop 類型] 屬性設定為 false。</value>
   </data>
@@ -2507,9 +2570,6 @@
   </data>
   <data name="IDS_XMLNOINCLUDE" xml:space="preserve">
     <value> 找不到與下列 include 標記相符的項目 </value>
-  </data>
-  <data name="ERR_FeatureIsExperimental" xml:space="preserve">
-    <value>功能 '{0}' 為實驗性且不受支援; 使用 '/features:{1}' 將其啟用。</value>
   </data>
   <data name="WRN_EqualsWithoutGetHashCode_Title" xml:space="preserve">
     <value>類型會覆寫 Object.Equals(object o)，但不會覆寫 Object.GetHashCode()</value>
@@ -2582,6 +2642,9 @@
   </data>
   <data name="WRN_AttributeIgnoredWhenPublicSigning_Title" xml:space="preserve">
     <value>如有指定公用簽章，屬性將予忽略。</value>
+  </data>
+  <data name="ERR_TypeReserved" xml:space="preserve">
+    <value>類型名稱 '{0}' 保留供編譯器使用。</value>
   </data>
   <data name="ERR_QueryInnerKey" xml:space="preserve">
     <value>名稱 '{0}' 不在 'equals' 右側的範圍內。請考慮交換 'equals' 任一側的運算式。</value>
@@ -2764,6 +2827,9 @@
   <data name="ERR_BadAttributeArgument" xml:space="preserve">
     <value>屬性引數必須是常數運算式、typeof 運算式或屬性參數類型的陣列建立運算式</value>
   </data>
+  <data name="IDS_FeatureReadOnlyStructs" xml:space="preserve">
+    <value>唯讀結構</value>
+  </data>
   <data name="IDS_ThrowExpression" xml:space="preserve">
     <value>&lt;throw 運算式&gt;</value>
   </data>
@@ -2908,6 +2974,9 @@
   <data name="ERR_ReadonlyValueTypeInObjectInitializer" xml:space="preserve">
     <value>類型為 '{1}' 的唯讀欄位 '{0}' 之成員，無法以物件初始設定式進行指派，因為其為實值類型。</value>
   </data>
+  <data name="ERR_FieldlikeEventsInRoStruct" xml:space="preserve">
+    <value>唯讀結構中不允許欄位型的事件。</value>
+  </data>
   <data name="ERR_BadAsyncLacksBody" xml:space="preserve">
     <value>'async' 修飾詞只可用於具有主體的方法。</value>
   </data>
@@ -2954,7 +3023,7 @@
     <value>必須是長度為 '{0}' 的陣列初始設定式</value>
   </data>
   <data name="ERR_RefReturnReadonly" xml:space="preserve">
-    <value>無法以傳址方式傳回唯讀欄位</value>
+    <value>無法以可寫入傳址方式傳回唯讀欄位</value>
   </data>
   <data name="ERR_V6SwitchGoverningTypeValueExpected" xml:space="preserve">
     <value>Switch 運算式或 case 標籤必須是 bool、char、string、integral、enum 或 C# 6 及舊版中對應的可為 Null 類型。</value>
@@ -2988,9 +3057,6 @@
   </data>
   <data name="ERR_AnonymousTypePropertyAssignedBadValue" xml:space="preserve">
     <value>無法將 '{0}' 指派給匿名型別屬性</value>
-  </data>
-  <data name="ERR_OverloadRefOutCtor" xml:space="preserve">
-    <value>無法定義多載建構函式 '{0}'，因為其與另一個建構函式只有 ref 與 out 有所差異</value>
   </data>
   <data name="ERR_CantOpenFileWrite" xml:space="preserve">
     <value>無法開啟 '{0}' 進行寫入 -- '{1}'</value>
@@ -3045,9 +3111,6 @@
   </data>
   <data name="ERR_ConstValueRequired" xml:space="preserve">
     <value>需要為 const 欄位提供值</value>
-  </data>
-  <data name="ERR_RefReturnReceiver" xml:space="preserve">
-    <value>無法以傳址方式傳回 '{0}'，因為可能無法以傳址方式傳回其接收器</value>
   </data>
   <data name="WRN_BadRestoreNumber" xml:space="preserve">
     <value>無法還原警告 'CS{0}'，因為其已全域停用。</value>
@@ -3136,7 +3199,7 @@
     <value>'{0}' 與 '{1}' 之間模稜兩可</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
-    <value>Local function is declared but never used</value>
+    <value>區域函式已宣告但從未使用</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>命令列語法錯誤: 遺漏選項 '{1}' 的 Guid</value>
@@ -3215,146 +3278,146 @@
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# Compiler Options
+                              Visual C# 編譯器選項
 
-                        - OUTPUT FILES -
- /out:&lt;file&gt;                   Specify output file name (default: base name of
-                               file with main class or first file)
- /target:exe                   Build a console executable (default) (Short
-                               form: /t:exe)
- /target:winexe                Build a Windows executable (Short form:
+                        - 輸出檔案 -
+ /out:&lt;檔案&gt;                  指定輸出檔案名稱 (預設: 具有主要
+                               類別的檔案或第一個檔案的基底名稱)
+ /target:exe                   建置主控台可執行檔 (預設) (簡短
+                               形式: /t:exe)
+ /target:winexe                建置 Windows 可執行檔 (簡短形式:
                                /t:winexe)
- /target:library               Build a library (Short form: /t:library)
- /target:module                Build a module that can be added to another
-                               assembly (Short form: /t:module)
- /target:appcontainerexe       Build an Appcontainer executable (Short form:
+ /target:library               建置程式庫 (簡短形式: /t:library)
+ /target:module                建置可新增至其他組件的
+                               模組 (簡短形式: /t:module)
+ /target:appcontainerexe       建置 Appcontainer 可執行檔 (簡短形式:
                                /t:appcontainerexe)
- /target:winmdobj              Build a Windows Runtime intermediate file that
-                               is consumed by WinMDExp (Short form: /t:winmdobj)
- /doc:&lt;file&gt;                   XML Documentation file to generate
- /refout:&lt;file&gt;                Reference assembly output to generate
- /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
-                               Itanium, x64, arm, anycpu32bitpreferred, or
-                               anycpu. The default is anycpu.
+ /target:winmdobj              建置 WinMDExp 所使用的 Windows 執行階段
+                               中繼檔案 (簡短形式: /t:winmdobj)
+ /doc:&lt;檔案&gt;                   要產生的 XML 文件檔案
+ /refout:&lt;檔案&gt;                要產生的參考組件輸出
+ /platform:&lt;字串&gt;            限制此程式碼可執行的平台: x86、
+                                Itanium、x64、arm、anycpu32bitpreferred 或
+                               anycpu。預設為 anycpu。
 
-                        - INPUT FILES -
- /recurse:&lt;wildcard&gt;           Include all files in the current directory and
-                               subdirectories according to the wildcard
-                               specifications
- /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
-                               file using the given alias (Short form: /r)
- /reference:&lt;file list&gt;        Reference metadata from the specified assembly
-                               files (Short form: /r)
- /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
- /link:&lt;file list&gt;             Embed metadata from the specified interop
-                               assembly files (Short form: /l)
- /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
-                               (Short form: /a)
- /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
-                               generation but may be used by analyzers for producing
-                               errors or warnings.
- /embed                        Embed all source files in the PDB.
- /embed:&lt;file list&gt;            Embed specific files in the PDB
+                        - 輸入檔案 -
+ /recurse:&lt;萬用字元&gt;           根據萬用字元規格，包含
+                               目前目錄和子目錄中的所有
+                               檔案
+ /reference:&lt;別名&gt;=&lt;檔案&gt;     使用給定的別名，參考指定組件檔
+                               的中繼資料 (簡短形式: /r)
+ /reference:&lt;檔案清單&gt;         參考指定組件檔的
+                               中繼資料 (簡短形式: /r)
+ /addmodule:&lt;檔案清單&gt;        將指定的模組連結至這個組件中
+ /link:&lt;檔案清單&gt;             從指定的 Interop 組件檔內嵌
+                               中繼資料 (簡短形式: /l)
+ /analyzer:&lt;檔案清單&gt;          從這個組件執行分析器
+                               (簡短形式: /a)
+ /additionalfile:&lt;檔案清單&gt;   不會直接影響程式碼產生，
+                               但分析器可用以產生錯誤或警告的
+                               其他檔案。
+ /embed                        內嵌 PDB 中的所有來源檔案。
+ /embed:&lt;檔案清單&gt;            內嵌 PDB 中的特定檔案
 
-                        - RESOURCES -
- /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
- /win32icon:&lt;file&gt;             Use this icon for the output
- /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
- /nowin32manifest              Do not include the default Win32 manifest
- /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
- /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
-                               (Short form: /linkres) Where the resinfo format
-                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
+                        - 資源 -
+ /win32res:&lt;檔案&gt;              指定 Win32 資源檔 (.res)
+ /win32icon:&lt;檔案&gt;             在輸出使用此圖示
+ /win32manifest:&lt;檔案&gt;          指定 Win32 資訊清單檔案 (.xml)
+ /nowin32manifest              不要包含預設 Win32 資訊清單
+ /resource:&lt;資源資訊&gt;           內嵌指定的資源 (簡短形式: /res)
+ /linkresource:&lt;資源資訊&gt;       將指定的資源連結至這個組件
+                               (簡短形式: /linkres) 其中 resinfo 的格式
+                               為 &lt;檔案&gt;[,&lt;字串名稱&gt;[,public|private]]
 
-                        - CODE GENERATION -
- /debug[+|-]                   Emit debugging information
+                        - 程式碼產生 -
+ /debug[+|-]                   發出偵錯資訊
  /debug:{full|pdbonly|portable|embedded}
-                               Specify debugging type ('full' is default,
-                               'portable' is a cross-platform format,
-                               'embedded' is a cross-platform format embedded into
-                               the target .dll or .exe)
- /optimize[+|-]                Enable optimizations (Short form: /o)
- /deterministic                Produce a deterministic assembly
-                               (including module version GUID and timestamp)
- /refonly                      Produce a reference assembly in place of the main output
- /instrument:TestCoverage      Produce an assembly instrumented to collect
-                               coverage information
- /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
+                               指定偵錯類型 ('full' 為預設，
+                               'portable' 為跨平台格式，
+                               'embedded' 為內嵌至 target .dll 或 .exe 中的
+                               跨平台格式)
+ /optimize[+|-]                啟用最佳化 (簡短形式: /o)
+ /deterministic                產生確定性組件
+                               (包括模組版本 GUID 與時間戳記)
+ /refonly                      產生參考組件以代替主要輸出
+ /instrument:TestCoverage      產生檢測組件，以收集
+                               涵蓋範圍資訊
+ /sourcelink:&lt;檔案&gt;            要內嵌至 PDB 中的來源連結資訊。
 
-                        - ERRORS AND WARNINGS -
- /warnaserror[+|-]             Report all warnings as errors
- /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
- /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
- /nowarn:&lt;warn list&gt;           Disable specific warning messages
- /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
-                               diagnostics.
- /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
-                               diagnostics.
- /reportanalyzer               Report additional analyzer information, such as
-                               execution time.
+                        - 錯誤與警告 -
+ /warnaserror[+|-]             將所有警告回報為錯誤
+ /warnaserror[+|-]:&lt;警告清單&gt; 將特定警告回報為錯誤
+ /warn:&lt;n&gt;                     設定警告層級 (0-4) (簡短形式: /w)
+ /nowarn:&lt;警告清單&gt;           停用特定的警告訊息
+ /ruleset:&lt;檔案&gt;                指定會停用特定診斷的
+                                規則集檔案。
+ /errorlog:&lt;檔案&gt;               指定要記錄所有編譯器和分析器診斷的
+                               檔案。
+ /reportanalyzer               回報其他分析器資訊，例如
+                               執行時間。
 
-                        - LANGUAGE -
- /checked[+|-]                 Generate overflow checks
- /unsafe[+|-]                  Allow 'unsafe' code
- /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
-                               form: /d)
- /langversion:?                Display the allowed values for language version
- /langversion:&lt;string&gt;         Specify language version such as
-                               `default` (latest major version), or
-                               `latest` (latest version, including minor versions),
-                               or specific versions like `6` or `7.1`
+                        - 語言 -
+ /checked[+|-]                 產生溢位檢查
+ /unsafe[+|-]                  允許 'unsafe' 程式碼
+ /define:&lt;符號清單&gt;         定義條件式編譯符號 (簡短
+                               形式: /d)
+ /langversion:?                顯示語言版本允許的值
+ /langversion:&lt;字串&gt;         指定語言版本，例如
+                               `default` (最新的主要版本)、
+                               `latest` (最新版本，包含次要版本)
+                               或特定版本，例如 `6` 或 `7.1`
 
-                        - SECURITY -
- /delaysign[+|-]               Delay-sign the assembly using only the public
-                               portion of the strong name key
- /publicsign[+|-]              Public-sign the assembly using only the public
-                               portion of the strong name key
- /keyfile:&lt;file&gt;               Specify a strong name key file
- /keycontainer:&lt;string&gt;        Specify a strong name key container
- /highentropyva[+|-]           Enable high-entropy ASLR
+                        - 安全性 -
+ /delaysign[+|-]                只使用強式名稱金鑰的公開部分
+                               延遲簽署組件
+ /publicsign[+|-]              只使用強式名稱金鑰的公開部分
+                               公開簽署組件
+ /keyfile:&lt;檔案&gt;                指定強式名稱金鑰檔
+ /keycontainer:&lt;字串&gt;         指定強式名稱金鑰容器
+ /highentropyva[+|-]           啟用高熵 ASLR
 
-                        - MISCELLANEOUS -
- @&lt;file&gt;                       Read response file for more options
- /help                         Display this usage message (Short form: /?)
- /nologo                       Suppress compiler copyright message
- /noconfig                     Do not auto include CSC.RSP file
- /parallel[+|-]                Concurrent build.
- /version                      Display the compiler version number and exit.
+                        - 其他 -
+ @&lt;檔案&gt;                        讀取回應檔以取得更多選項
+ /help                         顯示這個使用訊息 (簡短形式: /?)
+ /nologo                       隱藏編譯器著作權訊息
+ /noconfig                     不自動納入 CSC.RSP 檔
+ /parallel[+|-]                 並行建置。
+ /version                      顯示編譯器版本號碼並結束。
 
-                        - ADVANCED -
- /baseaddress:&lt;address&gt;        Base address for the library to be built
- /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
-                               checksum stored in PDB. Supported values are:
-                               SHA1 (default) or SHA256.
- /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
-                               files
- /utf8output                   Output compiler messages in UTF-8 encoding
- /main:&lt;type&gt;                  Specify the type that contains the entry point
-                               (ignore all other possible entry points) (Short
-                               form: /m)
- /fullpaths                    Compiler generates fully qualified paths
- /filealign:&lt;n&gt;                Specify the alignment used for output file
-                               sections
+                        - 進階 -
+ /baseaddress:&lt;位址&gt;        要建置的程式庫基底位址
+ /checksumalgorithm:&lt;演算法&gt;      為計算儲存在 PDB 中的原始
+                               程式檔總和檢查碼指定演算法。支援的值為:
+                               SHA1 (預設) 或 SHA256。
+ /codepage:&lt;n&gt;                 指定開啟原始程式檔時要使用的
+                               字碼頁
+ /utf8output                   以 UTF-8 編碼方式輸出編譯器訊息
+ /main:&lt;類型&gt;                  指定包含進入點
+                               (忽略所有其他可能的進入點) (簡短
+                               形式: /m)
+ /fullpaths                    編譯器會產生完整路徑
+ /filealign:&lt;n&gt;                 指定用於輸出檔案區段的
+                               對齊方式
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Specify a mapping for source path names output by
-                               the compiler.
- /pdb:&lt;file&gt;                   Specify debug information file name (default:
-                               output file name with .pdb extension)
- /errorendlocation             Output line and column of the end location of
-                               each error
- /preferreduilang              Specify the preferred output language name.
- /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
- /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
- /lib:&lt;file list&gt;              Specify additional directories to search in for
-                               references
- /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
-                               prompt, send, queue, or none. The default is
-                               queue.
- /appconfig:&lt;file&gt;             Specify an application configuration file
-                               containing assembly binding settings
- /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
-                               a part of
- /modulename:&lt;string&gt;          Specify the name of the source module
+                               為編譯器輸出的來源路徑名稱
+                               指定對應。
+ /pdb:&lt;檔案&gt;                   指定偵錯資訊檔案名稱 (預設:
+                               副檔名為 .pdb 的輸出檔案名稱)
+ /errorendlocation             輸出每個錯誤之結束位置的
+                               行與欄
+ /preferreduilang              指定慣用的輸出語言名稱。
+ /nostdlib[+|-]                不要參考標準程式庫 (mscorlib.dll)
+ /subsystemversion:&lt;字串&gt;    指定這個組件的子系統版本
+ /lib:&lt;檔案清單&gt;              指定要搜尋的其他目錄以供
+                               參考
+ /errorreport:&lt;字串&gt;         指定如何處理內部編譯器錯誤:
+                               prompt、send、queue 或 none。預設為 
+                               queue。
+ /appconfig:&lt;檔案&gt;             指定包含組件繫結設定的
+                               應用程式設定檔
+ /moduleassemblyname:&lt;字串&gt;  組件名稱，其中將會包含
+                               此模組
+ /modulename:&lt;字串&gt;          指定來源模組的名稱
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3372,9 +3435,6 @@
   <data name="ERR_InvalidSignaturePublicKey" xml:space="preserve">
     <value>AssemblySignatureKeyAttribute 中指定的簽章公開金鑰無效。</value>
   </data>
-  <data name="ERR_OverloadRefOut" xml:space="preserve">
-    <value>'{0}' 不可定義只有 ref 和 out 不同的多載方法</value>
-  </data>
   <data name="WRN_TupleLiteralNameMismatch" xml:space="preserve">
     <value>因為目標類型 '{1}' 指定了不同的名稱或未指定名稱，所以會忽略元組項目名稱 '{0}'。</value>
   </data>
@@ -3389,9 +3449,6 @@
   </data>
   <data name="ERR_AmbigContext" xml:space="preserve">
     <value>'{0}' 是 '{1}' 與 '{2}' 之間模稜兩可的參考</value>
-  </data>
-  <data name="ERR_ParamsCantBeRefOut" xml:space="preserve">
-    <value>params 參數不可宣告為 ref 或 out</value>
   </data>
   <data name="WRN_CmdOptionConflictsSource_Title" xml:space="preserve">
     <value>選項會覆寫原始程式檔或加入的模組中所指定的屬性</value>
@@ -3453,9 +3510,6 @@
   <data name="ERR_NoDynamicPhantomOnBaseCtor" xml:space="preserve">
     <value>建構函式呼叫必須以動態方式分派，但因為其為建構函式初始設定式的一部分，所以無法動態分派。請考慮將動態引數轉型。</value>
   </data>
-  <data name="ERR_RefReturnCall2" xml:space="preserve">
-    <value>無法以傳址方式傳回 '{0}' 結果的成員，因為無法以傳址方式傳回傳遞至參數 '{1}' 的引數</value>
-  </data>
   <data name="ERR_TypeInferenceFailedForImplicitlyTypedOutVariable" xml:space="preserve">
     <value>無法推斷隱含型別 out 變數 '{0}' 的類型。</value>
   </data>
@@ -3467,6 +3521,9 @@
   </data>
   <data name="ERR_ImplicitlyTypedVariableMultipleDeclarator" xml:space="preserve">
     <value>隱含類型變數不可有多重宣告子</value>
+  </data>
+  <data name="ERR_RefReturnReadonlyNotField" xml:space="preserve">
+    <value>無法以可寫入傳址方式傳回 {0} '{1}'，因為它是唯讀變數</value>
   </data>
   <data name="ERR_NamespaceUnexpected" xml:space="preserve">
     <value>命名空間不能直接包含如欄位或方法等成員</value>
@@ -3630,9 +3687,6 @@
   <data name="ERR_InvalidAssemblyCulture" xml:space="preserve">
     <value>組件文化特性字串可能不包含內嵌的 NUL 字元。</value>
   </data>
-  <data name="ERR_AddrOnReadOnlyLocal" xml:space="preserve">
-    <value>無法取得唯讀區域變數的位址</value>
-  </data>
   <data name="ERR_PatternNullableType" xml:space="preserve">
     <value>在模式中使用可為 Null 的型別 '{0}' 不合法; 請改用基礎類型 '{1}'。</value>
   </data>
@@ -3664,7 +3718,7 @@
     <value>無法套用 CallerMemberNameAttribute，因為沒有從類型 '{0}' 標準轉換成類型 '{1}'。</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
+    <value>無法以傳址方式傳回參數 '{0}' 的成員，因為它不是 ref 或 out 參數</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(與之前錯誤相關符號的位置)</value>
@@ -3687,8 +3741,8 @@
   <data name="WRN_InvalidSearchPathDir_Title" xml:space="preserve">
     <value>指定的搜尋路徑無效</value>
   </data>
-  <data name="ERR_RefReturnCall" xml:space="preserve">
-    <value>無法以傳址方式傳回 '{0}' 的結果，因為無法以傳址方式傳回傳遞至參數 '{1}' 的引數</value>
+  <data name="ERR_RefReturnThis" xml:space="preserve">
+    <value>無法以傳址方式傳回「這個」。</value>
   </data>
   <data name="ERR_NoCanonicalView" xml:space="preserve">
     <value>找不到符合內嵌 Interop 類型 '{0}' 的 Interop 類型。是否遺漏了組件參考?</value>
@@ -3709,7 +3763,7 @@
     <value>無法以傳址方式 '{0}' 傳回參數，因為其非 ref 或 out 參數</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
+    <value>在命名空間中定義的元素無法明確宣告為 private、protected、protected internal 或 private protected</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>只有在建置 'module' 的目標類型時，才可指定 /moduleassemblyname 選項。</value>
@@ -3745,7 +3799,7 @@
     <value>'{0}' 不是 lock 陳述式所需的參考類型</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic" xml:space="preserve">
-    <value>無法以傳址方式傳回靜態唯讀欄位</value>
+    <value>無法以可寫入傳址方式傳回靜態的唯讀欄位</value>
   </data>
   <data name="WRN_CLS_BadInterfaceMember_Title" xml:space="preserve">
     <value>符合 CLS 規範的介面內，所有成員都必須符合 CLS 規範</value>
@@ -3809,6 +3863,9 @@
   </data>
   <data name="ERR_PropertyLacksGet" xml:space="preserve">
     <value>屬性或索引子 '{0}' 無法用在此內容中，因為它缺少 get 存取子。</value>
+  </data>
+  <data name="ERR_AutoPropsInRoStruct" xml:space="preserve">
+    <value>使用唯讀結構的自動實作執行個體屬性必須為唯讀。</value>
   </data>
   <data name="ERR_LanguageVersionCannotHaveLeadingZeroes" xml:space="preserve">
     <value>指定的語言版本 '{0}' 不可以零作為開頭</value>
@@ -3880,7 +3937,7 @@
     <value>'{0}' 定義了運算子 == 或運算子 !=，但不會覆寫 Object.GetHashCode()。</value>
   </data>
   <data name="IDS_LangVersions" xml:space="preserve">
-    <value>Supported language versions:</value>
+    <value>支援的語言版本:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>二元運算子的一個參數必須為包含類型</value>
@@ -3947,6 +4004,9 @@
   </data>
   <data name="ERR_UnexpectedSemicolon" xml:space="preserve">
     <value>方法或存取子區塊後的分號無效</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField2" xml:space="preserve">
+    <value>{0} '{1}' 的成員不可用為 ref 或 out 值，因為它是唯讀變數</value>
   </data>
   <data name="ERR_LocalTypeNameClash" xml:space="preserve">
     <value>從組件 '{1}' 內嵌 Interop 類型 '{0}'，會造成目前組件中的名稱衝相突。請考慮將 [內嵌 Interop 類型] 屬性設定為 false。</value>
@@ -4050,6 +4110,9 @@
   <data name="ERR_ArrayOfStaticClass" xml:space="preserve">
     <value>'{0}': 陣列元素不可為靜態類型</value>
   </data>
+  <data name="IDS_SK_CONSTRUCTOR" xml:space="preserve">
+    <value>建構函式</value>
+  </data>
   <data name="ERR_InvalidQM" xml:space="preserve">
     <value>無法確認條件運算式的類型，因為 '{0}' 和 '{1}' 之間沒有隱含轉換。</value>
   </data>
@@ -4061,6 +4124,9 @@
   </data>
   <data name="ERR_InaccessibleSetter" xml:space="preserve">
     <value>無法在此內容中使用屬性或索引子 '{0}'，因為無法存取 set 存取子。</value>
+  </data>
+  <data name="IConversionExpressionIsNotCSharpConversion" xml:space="preserve">
+    <value>{0} 不是有效的 C# 轉換運算式</value>
   </data>
   <data name="ERR_NamedArgumentUsedInPositional" xml:space="preserve">
     <value>具名引數 '{0}' 會指定已指定其位置引數的參數</value>
@@ -4204,7 +4270,7 @@
     <value>可以多次處置物件 '{0}'。</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongRefReturn" xml:space="preserve">
-    <value>'{0}' 未實作介面成員 '{1}'。'{2}' 無法實作 '{1}' 因為其並非由 {3} 傳回</value>
+    <value>'{0}' 未實作介面成員 '{1}'。因為 '{2}' 沒有相符的傳址方式傳回，所以無法實作 '{1}'。</value>
   </data>
   <data name="ERR_FixedNeedsLvalue" xml:space="preserve">
     <value>固定大小緩衝區只能透過區域變數或欄位存取</value>
@@ -4345,7 +4411,7 @@
     <value>類型參數 '{1}' 有 'struct' 條件約束，因此 '{1}' 不可做為 '{0}' 的條件約束。</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
+    <value>預先定義的類型 '{0}' 未定義或未匯入，或已在多個參考的組件中宣告</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>類型引數不可為 null</value>
@@ -4406,6 +4472,9 @@
   </data>
   <data name="ERR_BadCastInFixed" xml:space="preserve">
     <value>fixed 陳述式指派的右側，不可為 cast 運算式。</value>
+  </data>
+  <data name="IDS_FeatureRefExtensionMethods" xml:space="preserve">
+    <value>ref 擴充方法</value>
   </data>
   <data name="ERR_AssgReadonly2" xml:space="preserve">
     <value>唯讀欄位 '{0}' 的成員不可修改 (除非在建構函式或變數初始設定式中)</value>
@@ -4503,6 +4572,9 @@
   <data name="ERR_ComRefCallInExpressionTree" xml:space="preserve">
     <value>運算式樹狀架構 Lambda 不可包含引數上省略 ref 的 COM 呼叫</value>
   </data>
+  <data name="ERR_ParamsCantBeWithModifier" xml:space="preserve">
+    <value>params 參數不可宣告為 {0}</value>
+  </data>
   <data name="ERR_BadForeachDecl" xml:space="preserve">
     <value>在 foreach 陳述式中同時需要類型與識別項</value>
   </data>
@@ -4510,7 +4582,7 @@
     <value>引數 {0}: 無法從 '{1}' 轉換成 '{2}'</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
+    <value>必須在所有固定引數皆已指定之後，具名引數規格才可出現。請使用語言版本 {0} 或更高的版本，以允許非後置的具名引數。</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>方法 '{1}' 之類型參數 '{0}' 的條件約束，必須符合介面方法 '{3}' 之類型參數 '{2}' 的條件約束。請考慮改用明確的介面實作。</value>
@@ -4532,6 +4604,9 @@
   </data>
   <data name="ERR_UnexpectedToken" xml:space="preserve">
     <value>未預期的語彙基元 '{0}'</value>
+  </data>
+  <data name="ERR_RefConditionalDifferentTypes" xml:space="preserve">
+    <value>運算式類型必須是 '{0}'，才符合替代的 ref 值</value>
   </data>
   <data name="ERR_CantDeriveFromSealedType" xml:space="preserve">
     <value>'{0}': 無法衍生自密封類型 '{1}'</value>
@@ -4620,6 +4695,9 @@
   <data name="ERR_IllegalFixedType" xml:space="preserve">
     <value>固定大小緩衝區類型必須是下列其中一項: bool、byte、short、int、long、char、sbyte、ushort、uint、ulong、float 或 double。</value>
   </data>
+  <data name="ERR_CallArgMixing" xml:space="preserve">
+    <value>不允許對 '{0}' 使用此引數組合，因為它會在其宣告範圍外公開參數 '{1}' 所參考的變數</value>
+  </data>
   <data name="ERR_ConstOutOfRange" xml:space="preserve">
     <value>常數值 '{0}' 不可轉換成 '{1}'</value>
   </data>
@@ -4672,7 +4750,7 @@
     <value>C# 6 中無法使用 '{0}' 功能。請使用語言版本 {1} 或更高的版本。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7" xml:space="preserve">
-    <value>C# 7 中無法使用 '{0}' 功能。請使用語言版本 {1} 或更高的版本。</value>
+    <value>C# 7.0 中未提供功能 '{0}'。請使用語言版本 {1} 或更高版本。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion4" xml:space="preserve">
     <value>C# 4 中無法使用 '{0}' 功能。請使用語言版本 {1} 或更高的版本。</value>
@@ -4760,6 +4838,9 @@
   </data>
   <data name="ERR_SubexpressionNotInNameof" xml:space="preserve">
     <value>nameof 的引數中不可使用子運算式。</value>
+  </data>
+  <data name="ERR_MismatchedRefEscapeInTernary" xml:space="preserve">
+    <value>ref 三元運算子分支無法參考具有不相容宣告範圍的變數</value>
   </data>
   <data name="ERR_FixedDimsRequired" xml:space="preserve">
     <value>固定大小緩衝區欄位在欄位名稱後面必須有陣列大小規範</value>
@@ -4913,6 +4994,9 @@
   </data>
   <data name="ERR_PatternDynamicType" xml:space="preserve">
     <value>在模式中使用類型 'dynamic' 不合法。</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField" xml:space="preserve">
+    <value>{0} '{1}' 無法用為 ref 或 out 值，因為它是唯讀變數</value>
   </data>
   <data name="ERR_CallingFinalizeDeprecated" xml:space="preserve">
     <value>無法直接呼叫解構函式與 object.Finalize。請考慮呼叫 IDisposable.Dispose (若有的話)。</value>
@@ -5092,7 +5176,7 @@
     <value>運算式主體索引子</value>
   </data>
   <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
-    <value>'{0}' is a local function and must therefore always have a body.</value>
+    <value>'{0}' 是區域函式，因此必須具有主體。</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>'{0}': 無法衍生自動態類型</value>

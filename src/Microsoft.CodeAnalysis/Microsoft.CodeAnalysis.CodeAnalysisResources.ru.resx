@@ -179,7 +179,7 @@
     <value>класс</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>Внедренный текст поддерживается только при создании PDB-файла.</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Копию модуля нельзя использовать для создания метаданных сборки.</value>
@@ -227,16 +227,13 @@
     <value>Сбой драйвера анализатора</value>
   </data>
   <data name="MustIncludePrivateMembersUnlessRefAssembly" xml:space="preserve">
-    <value>Должно включать закрытые члены, если не выдается ссылочная сборка.</value>
+    <value>Должно включать закрытые члены, если не выдается базовая сборка.</value>
   </data>
   <data name="ChangesMustBeOrderedAndNotOverlapping" xml:space="preserve">
     <value>Изменения должны идти в строгом порядке и не накладываться.</value>
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>Аргументы для параметра "/keepalive" со значением ниже –1 являются недопустимыми.</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>Компонент "IOperation" отключен.</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>Ожидался абсолютный путь.</value>
@@ -475,7 +472,7 @@
     <value>Аргумент содержит экземпляр анализатора, который не относится к объекту "Analyzers" для этого экземпляра CompilationWithAnalyzers.</value>
   </data>
   <data name="CannotTargetNetModuleWhenEmittingRefAssembly" xml:space="preserve">
-    <value>Не удается нацелиться на сетевой модуль при выводе ссылочной сборки.</value>
+    <value>Не удается нацелиться на сетевой модуль при выводе базовой сборки.</value>
   </data>
   <data name="Cannot_deserialize_type_0" xml:space="preserve">
     <value>Невозможно десериализовать тип "{0}".</value>

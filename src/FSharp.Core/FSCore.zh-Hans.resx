@@ -318,6 +318,9 @@
   <data name="QinvalidFuncType" xml:space="preserve">
     <value>函数类型无效</value>
   </data>
+  <data name="thisValueCannotBeMutated" xml:space="preserve">
+    <value>无法转变此值</value>
+  </data>
   <data name="mismatchIARCancel" xml:space="preserve">
     <value>提供的 IAsyncResult 对象与此“取消”操作不匹配。</value>
   </data>
@@ -389,9 +392,6 @@
   </data>
   <data name="notComparable" xml:space="preserve">
     <value>两个对象具有不同的类型，不可以进行比较。</value>
-  </data>
-  <data name="ThisValueCannotBeMutated" xml:space="preserve">
-    <value>无法转变此值</value>
   </data>
   <data name="unsupportedQueryConstruct" xml:space="preserve">
     <value>这不是有效的查询表达式。查询中使用了下面的构造，但 F#-LINQ 查询转换器无法识别该构造:\n{0}\n请查看有效查询的规范，考虑是否将部分运算移到查询表达式之外。</value>

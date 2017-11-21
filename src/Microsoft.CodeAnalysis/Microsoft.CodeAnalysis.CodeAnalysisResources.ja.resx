@@ -179,7 +179,7 @@
     <value>クラス</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>埋め込みのテキストは、PDB の生成時にのみサポートされます。</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>モジュールのコピーは、アセンブリ メタデータの作成には使用できません。</value>
@@ -234,9 +234,6 @@
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>-1 より小さい '/keepalive' オプションへの引数は無効です。</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>機能 'IOperation' は無効になっています。</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>絶対パスが必要です。</value>

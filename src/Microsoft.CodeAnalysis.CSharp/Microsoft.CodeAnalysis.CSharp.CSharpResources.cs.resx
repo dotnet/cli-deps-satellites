@@ -222,6 +222,9 @@
   <data name="WRN_CallerLineNumberPreferredOverCallerMemberName_Title" xml:space="preserve">
     <value>CallerMemberNameAttribute nebude mít žádný efekt. Přepisuje ho CallerLineNumberAttribute.</value>
   </data>
+  <data name="ERR_RefReturnReadonlyNotField2" xml:space="preserve">
+    <value>Členy {0} {1} nejde vrátit zapisovatelným odkazem, protože to je proměnná jen pro čtení.</value>
+  </data>
   <data name="ERR_AbstractHasBody" xml:space="preserve">
     <value>{0} nemůže deklarovat tělo, protože je označené jako abstraktní.</value>
   </data>
@@ -300,10 +303,13 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
     <value>Dynamické objekty nejde dekonstruovat.</value>
   </data>
   <data name="ERR_RefReturnLvalueExpected" xml:space="preserve">
-    <value>Výraz nejde použít v tomto kontextu, protože se nesmí vracet odkazem.</value>
+    <value>Výraz nelze v tomto kontextu použít, protože nesmí být předaný nebo vrácený odkazem.</value>
   </data>
   <data name="ERR_OneAliasPerReference" xml:space="preserve">
     <value>Parametr /reference deklarující externí alias může mít jenom jeden název souboru. Pokud chcete zadat víc aliasů nebo názvů souborů, použijte více parametrů /reference.</value>
+  </data>
+  <data name="ERR_StackAllocConversionNotPossible" xml:space="preserve">
+    <value>Převod výrazu stackalloc typu {0} na typ {1} není možný.</value>
   </data>
   <data name="ERR_UnclosedExpressionHole" xml:space="preserve">
     <value>Chybí uzavírací oddělovač } pro interpolovaný výraz začínající na {.</value>
@@ -425,9 +431,6 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
   <data name="WRN_InvalidAssemblyName" xml:space="preserve">
     <value>Odkaz na sestavení {0} je neplatný a nedá se vyhodnotit.</value>
   </data>
-  <data name="ERR_BadOutWithThis" xml:space="preserve">
-    <value> Modifikátor parametru out nejde kombinovat s modifikátorem this. </value>
-  </data>
   <data name="ERR_DeconstructRequiresExpression" xml:space="preserve">
     <value>Dekonstrukční přiřazení vyžaduje výraz s typem na pravé straně.</value>
   </data>
@@ -437,6 +440,9 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
   <data name="ERR_ThisStructNotInAnonMeth" xml:space="preserve">
     <value>Anonymní metody, výrazy lambda a dotazovací výrazy uvnitř struktur nemají přístup ke členům instance this. Jako náhradu zkopírujte objekt this do lokální proměnné vně anonymní metody, výrazu lambda nebo dotazovacího výrazu a použijte lokální proměnnou.</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField2" xml:space="preserve">
+    <value>Nejde přiřadit členovi {0} {1}, protože to je proměnná jen pro čtení.</value>
+  </data>
   <data name="ERR_InterfaceImplementedByConditional" xml:space="preserve">
     <value>Podmíněný člen {0} nemůže implementovat člen rozhraní {1} v typu {2}.</value>
   </data>
@@ -444,7 +450,7 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
     <value>Statická třída {0} se nemůže odvozovat z typu {1}. Tyto třídy se musí odvozovat z objektu.</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic2" xml:space="preserve">
-    <value>Pole statického pole jen pro čtení {0} nejde vrátit odkazem.</value>
+    <value>Pole statického pole jen pro čtení {0} nejdou vrátit zapisovatelným odkazem.</value>
   </data>
   <data name="ERR_ForwardedTypeInThisAssembly" xml:space="preserve">
     <value>V tomto sestavení je definovaný typ {0}, je ale pro něj zadané předávání typů.</value>
@@ -471,7 +477,7 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
     <value>{0} neimplementuje vzorek {1}. {2} je nejednoznačný vzhledem k: {3}.</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
+    <value>Neplatný parametr {0} pro /langversion. Podporované hodnoty vypíšete pomocí /langversion:?.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>Název kvalifikovaný pomocí aliasu není výraz.</value>
@@ -717,13 +723,16 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
     <value>Konstanta s pohyblivou řádovou čárkou je mimo rozsah typu {0}.</value>
   </data>
   <data name="ERR_InvalidDebugInfo" xml:space="preserve">
-    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+    <value>Informace o ladění metody {0} (token 0x{1:X8}) ze sestavení {2} nelze přečíst.</value>
   </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>Nejde vygenerovat ladicí informace pro zdrojový text bez kódování.</value>
   </data>
   <data name="ERR_BadResourceVis" xml:space="preserve">
     <value>Neplatná možnost {0}. Viditelnost zdroje musí být public nebo private.</value>
+  </data>
+  <data name="ERR_ExplicitReservedAttr" xml:space="preserve">
+    <value>Nepoužívejte {0}. Je vyhrazený pro použití v kompilátoru.</value>
   </data>
   <data name="WRN_BadRestoreNumber_Title" xml:space="preserve">
     <value>Nejde obnovit varování, protože bylo globálně zakázané.</value>
@@ -741,7 +750,7 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
     <value>Očekávala se koncová značka pro element {0}.</value>
   </data>
   <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
-    <value>leading digit separator</value>
+    <value>oddělovač úvodní číslice</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Argumenty typů nejsou v operátoru nameof povoleny.</value>
@@ -860,6 +869,9 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
   <data name="ERR_BadVisReturnType" xml:space="preserve">
     <value>Nekonzistentní dostupnost: Typ vrácené hodnoty {1} je míň dostupný než metoda {0}.</value>
   </data>
+  <data name="ERR_FieldsInRoStruct" xml:space="preserve">
+    <value>Pole instancí struktur jen pro čtení musí být jen pro čtení.</value>
+  </data>
   <data name="UseLiteralForTokens" xml:space="preserve">
     <value>Pomocí Microsoft.CodeAnalysis.CSharp.SyntaxFactory.Literal můžete vytvořit znakové literálové tokeny.</value>
   </data>
@@ -882,13 +894,13 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
     <value>Typ {0} ze sestavení {1} se nedá použít přes hranice sestavení, protože má argument obecného typu, který je vloženým definičním typem.</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
-    <value>The local function '{0}' is declared but never used</value>
+    <value>Lokální funkce {0} je deklarovaná, ale vůbec se nepoužívá.</value>
   </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>Operátor as je třeba použít s typem odkazu nebo s typem připouštějícím hodnotu null ({0} je typ hodnoty, který nepřipouští hodnotu null).</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>The abstract {0} '{1}' cannot be marked virtual</value>
+    <value>Abstraktní {0} {1} nelze označit jako virtuální.</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>{0}: Statické třídy nemůžou obsahovat operátory definované uživatelem.</value>
@@ -1031,6 +1043,9 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
   <data name="ERR_BadAwaitWithoutAsyncLambda" xml:space="preserve">
     <value>Operátor await jde použít jenom v asynchronní metodě {0}. Zvažte označení této metody modifikátorem async.</value>
   </data>
+  <data name="ERR_RefExtensionMustBeValueTypeOrConstrainedToOne" xml:space="preserve">
+    <value>První parametr rozšiřující metody ref {0} musí být typem hodnoty nebo obecným typem omezeným na strukturu.</value>
+  </data>
   <data name="ChainingSpeculativeModelIsNotSupported" xml:space="preserve">
     <value>Zřetězení spekulativního sémantického modelu se nepodporuje. Měli byste vytvořit spekulativní model z nespekulativního modelu ParentModel.</value>
   </data>
@@ -1041,7 +1056,7 @@ Blok catch() po bloku catch (System.Exception e) může zachytit výjimky, kter�
     <value>Výraz filtru je konstanta. Zvažte odebrání filtru.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
-    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+    <value>Funkce {0} není dostupná v jazyce C# 7.2. Použijte prosím jazyk verze {1} nebo vyšší.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>Funkce {0} není dostupná v jazyce C# 7.1. Použijte prosím jazyk verze {1} nebo vyšší.</value>
@@ -1125,7 +1140,7 @@ Potlačení upozornění zvažte jenom v případě, když určitě nechcete če
     <value>Člen {0} neskrývá přístupný člen. Klíčové slovo new se nevyžaduje.</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+    <value>Specifikace pojmenovaných argumentů musí následovat po specifikaci všech pevných argumentů v dynamickém vyvolání.</value>
   </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>Číslo, které bylo předané do direktivy preprocesoru varování #pragma, nepředstavovalo platné číslo varování. Ověřte, že číslo představuje varování, ne chybu.</value>
@@ -1146,13 +1161,13 @@ Potlačení upozornění zvažte jenom v případě, když určitě nechcete če
     <value>#r je povolený jenom ve skriptech.</value>
   </data>
   <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
-    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
+    <value>Obecné lokální funkci {0} s odvozenými argumenty typu nelze předat argument s dynamickým typem.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>Strom syntaxe už je přítomný.</value>
   </data>
-  <data name="ERR_BadRefWithThis" xml:space="preserve">
-    <value> Modifikátor parametru ref nejde kombinovat s modifikátorem this. </value>
+  <data name="ERR_BadParameterModifiersOrder" xml:space="preserve">
+    <value>Modifikátor parametru {0} nejde použít za modifikátorem {1}.</value>
   </data>
   <data name="ERR_InvalidOutputName" xml:space="preserve">
     <value>Neplatný název výstupu: {0}</value>
@@ -1241,6 +1256,9 @@ Potlačení upozornění zvažte jenom v případě, když určitě nechcete če
   <data name="ERR_ExternHasConstructorInitializer" xml:space="preserve">
     <value>{0} nemůže být extern a mít inicializátor konstruktoru.</value>
   </data>
+  <data name="IDS_StackAllocExpression" xml:space="preserve">
+    <value>stackalloc {0}[{1}]</value>
+  </data>
   <data name="ERR_AutoPropertyCannotBeRefReturning" xml:space="preserve">
     <value>Automaticky implementované vlastnosti nejde vrátit odkazem.</value>
   </data>
@@ -1301,6 +1319,9 @@ Potlačení upozornění zvažte jenom v případě, když určitě nechcete če
   <data name="ERR_BadTypeforThis" xml:space="preserve">
     <value>První parametr metody rozšíření nesmí být typu {0}.</value>
   </data>
+  <data name="IDS_FeatureReadOnlyReferences" xml:space="preserve">
+    <value>odkazy jen pro čtení</value>
+  </data>
   <data name="ERR_BadSKunknown" xml:space="preserve">
     <value>{0} je {1}, což není platné v daném kontextu.</value>
   </data>
@@ -1343,11 +1364,14 @@ Potlačení upozornění zvažte jenom v případě, když určitě nechcete če
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>Neplatný parametr aliasu odkazu: {0}= – nenašel se název souboru.</value>
   </data>
+  <data name="ERR_FieldAutoPropCantBeByRefLike" xml:space="preserve">
+    <value>Vlastnost pole nebo automaticky implementovaná vlastnost nemůže být typu {0}, pokud není členem instance struktury REF.</value>
+  </data>
   <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
-    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+    <value>Pojmenovaný argument {0} se používá mimo pozici, je ale následovaný nepojmenovaným argumentem.</value>
   </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
-    <value>Členy pole jen pro čtení {0} nejde vrátit odkazem.</value>
+    <value>Členy pole jen pro čtení {0} nejde vrátit zapisovatelným odkazem.</value>
   </data>
   <data name="ERR_BadDynamicMethodArg" xml:space="preserve">
     <value>Nejde použít výraz typu {0} jako argument pro dynamicky odbavenou operaci.</value>
@@ -1371,7 +1395,7 @@ Potlačení upozornění zvažte jenom v případě, když určitě nechcete če
     <value>Událost Windows Runtimu se nesmí předat jako parametr out nebo ref.</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
+    <value>Instance typu {0} nelze použít uvnitř vnořené funkce, výrazu dotazu, bloku iterátoru nebo asynchronní metody.</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>{0} neimplementuje člen rozhraní {1}. {2} nemůže implementovat člen {1}, protože nemá odpovídající návratový typ {3}.</value>
@@ -1445,6 +1469,9 @@ Potlačení upozornění zvažte jenom v případě, když určitě nechcete če
   <data name="WRN_RefCultureMismatch_Title" xml:space="preserve">
     <value>Odkazované sestavení má jiné nastavení jazykové verze.</value>
   </data>
+  <data name="ERR_InExtensionMustBeValueType" xml:space="preserve">
+    <value>První parametr rozšiřující metody in {0} musí být typem hodnoty.</value>
+  </data>
   <data name="ERR_NoConversionForNubDefaultParam" xml:space="preserve">
     <value>Hodnotu typu {0} nejde použít jako výchozí hodnotu parametru {1} s možnou hodnotou null, protože {0} není jednoduchý typ.</value>
   </data>
@@ -1516,6 +1543,9 @@ Potlačení upozornění zvažte jenom v případě, když určitě nechcete če
   </data>
   <data name="ThisMethodCanOnlyBeUsedToCreateTokens" xml:space="preserve">
     <value>Tato metoda se dá používat jenom k vytváření tokenů – {0} není druh tokenu.</value>
+  </data>
+  <data name="ERR_OverloadRefKind" xml:space="preserve">
+    <value>{0} nemůže definovat přetíženou {1}, která se liší jenom v modifikátorech parametrů {2} a {3}.</value>
   </data>
   <data name="ERR_NameNotInContextPossibleMissingReference" xml:space="preserve">
     <value>Název {0} v aktuálním kontextu neexistuje. (Nechybí odkaz na sestavení {1}?)</value>
@@ -1710,9 +1740,6 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="ERR_IntegralTypeValueExpected" xml:space="preserve">
     <value>Očekává se hodnota integrálního typu.</value>
   </data>
-  <data name="ERR_MultiParamMod" xml:space="preserve">
-    <value>Parametr nemůže mít všechny zadané modifikátory. U parametru je příliš moc modifikátorů.</value>
-  </data>
   <data name="ERR_NotYetImplementedInRoslyn" xml:space="preserve">
     <value>Tato jazyková funkce ({0}) zatím není implementovaná.</value>
   </data>
@@ -1812,6 +1839,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="ERR_ClassDoesntImplementInterface" xml:space="preserve">
     <value>{0}: Nadřazený typ neimplementuje rozhraní {1}.</value>
   </data>
+  <data name="ERR_RefStructInterfaceImpl" xml:space="preserve">
+    <value>{0}: Struktury REF nemůžou implementovat rozhraní.</value>
+  </data>
   <data name="ERR_QueryNoProviderStandard" xml:space="preserve">
     <value>Nenašla se implementace vzorku dotazu pro typ zdroje {0}. Nenašel se prvek {1}. Nechybí odkaz na System.Core.dll nebo na direktivu using pro System.Linq?</value>
   </data>
@@ -1836,6 +1866,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="WRN_TooManyLinesForDebugger_Title" xml:space="preserve">
     <value>U zdrojového souboru se překročil limit 16 707 565 řádků, které může soubor PDB obsahovat. Ladicí informace budou nesprávné.</value>
   </data>
+  <data name="IDS_FeatureRefStructs" xml:space="preserve">
+    <value>struktury REF</value>
+  </data>
   <data name="ERR_AutoPropertyInitializerInInterface" xml:space="preserve">
     <value>Automaticky implementované vlastnosti uvnitř rozhraní nemůžou mít inicializátory.</value>
   </data>
@@ -1852,7 +1885,7 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
     <value>Operandem operátoru přičtení nebo odečtení musí být proměnná, vlastnost nebo indexer.</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed switch is only supported when emitting a PDB.</value>
+    <value>Přepínač /embed je podporovaný jen při vydávání souboru PDB.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>{0} nemůže být extern i abstract.</value>
@@ -1889,6 +1922,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   </data>
   <data name="ERR_MustHaveRefReturn" xml:space="preserve">
     <value>Vrácení podle hodnoty se dají používat jenom v metodách, které vracejí podle hodnoty.</value>
+  </data>
+  <data name="ERR_EscapeStackAlloc" xml:space="preserve">
+    <value>Výsledek výrazu stackalloc typu {0} nejde v tomto kontextu použít, protože může být vystavený mimo obsahující metodu.</value>
   </data>
   <data name="ERR_InvalidFwdType" xml:space="preserve">
     <value>Neplatný typ zadaný jako argument atributu TypeForwardedTo</value>
@@ -2077,7 +2113,7 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
     <value>Omezení typu třídy {0} musí předcházet všem dalším omezením.</value>
   </data>
   <data name="ERR_CantChangeRefReturnOnOverride" xml:space="preserve">
-    <value>{0} se musí {2}vracet odkazem, aby odpovídal přepsanému členu {1}.</value>
+    <value>{0} musí odpovídat návratu podle odkazu přepsaného člena {1}.</value>
   </data>
   <data name="WRN_CallerLineNumberPreferredOverCallerFilePath_Title" xml:space="preserve">
     <value>CallerFilePathAttribute nebude mít žádný efekt. Přepisuje ho CallerLineNumberAttribute.</value>
@@ -2094,6 +2130,12 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="ERR_TypeArgsNotAllowed" xml:space="preserve">
     <value>{1} {0} nejde použít s argumenty typů.</value>
   </data>
+  <data name="ERR_EscapeLocal" xml:space="preserve">
+    <value>V tomto kontextu nejde použít místní {0}, protože může vystavit odkazované proměnné mimo jejich rozsah deklarace.</value>
+  </data>
+  <data name="ERR_EscapeOther" xml:space="preserve">
+    <value>V tomto kontextu nejde výraz použít, protože může nepřímo vystavit proměnné mimo jejich rozsah deklarace.</value>
+  </data>
   <data name="ERR_PartialMethodOnlyOneLatent" xml:space="preserve">
     <value>Částečná metoda nesmí mít víc definujících deklarací.</value>
   </data>
@@ -2105,6 +2147,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   </data>
   <data name="ERR_BadAwaitArg" xml:space="preserve">
     <value>Operátor await vyžaduje, aby typ {0} měl odpovídající metodu GetAwaiter.</value>
+  </data>
+  <data name="ERR_EscapeCall2" xml:space="preserve">
+    <value>V tomto kontextu nejde použít člena výsledku z {0}, protože může vystavit proměnné, na které odkazuje parametr {1}, mimo jejich rozsah deklarace.</value>
   </data>
   <data name="ERR_MemberReserved" xml:space="preserve">
     <value>Typ {1} už rezervuje člen s názvem {0} se stejnými typy parametrů.</value>
@@ -2202,6 +2247,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="WRN_NonObsoleteOverridingObsolete_Title" xml:space="preserve">
     <value>Člen přepisuje nezastaralý člen.</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField" xml:space="preserve">
+    <value>Nejde přiřadit k položce {0} {1}, protože to je proměnná jen pro čtení.</value>
+  </data>
   <data name="ERR_BadAsyncLocalType" xml:space="preserve">
     <value>Asynchronní metody nemůžou mít lokální proměnné podle odkazu.</value>
   </data>
@@ -2235,6 +2283,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="ERR_PatternIsSubsumed" xml:space="preserve">
     <value>Větev příkazu switch se už zpracovala předchozí větví.</value>
   </data>
+  <data name="ERR_EscapeCall" xml:space="preserve">
+    <value>V tomto kontextu nejde použít výsledek z {0}, protože může vystavit proměnné, na které odkazuje parametr {1}, mimo jejich rozsah deklarace.</value>
+  </data>
   <data name="ERR_ForwardedTypeIsNested" xml:space="preserve">
     <value>Nejde předat typ {0}, protože se jedná o vnořený typ {1}.</value>
   </data>
@@ -2258,6 +2309,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   </data>
   <data name="ERR_CantOverrideBogusMethod" xml:space="preserve">
     <value>{0} nemůže přepsat {1}, protože ho tento jazyk nepodporuje.</value>
+  </data>
+  <data name="ERR_BadParameterModifiers" xml:space="preserve">
+    <value> Modifikátor parametru {0} nejde použít s modifikátorem {1}.</value>
   </data>
   <data name="ERR_NonInvocableMemberCalled" xml:space="preserve">
     <value>Nevyvolatelného člena {0} nejde použít jako metodu.</value>
@@ -2391,6 +2445,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="ERR_BadEmptyThrow" xml:space="preserve">
     <value>Příkaz throw bez argumentů není povolený vně klauzule catch.</value>
   </data>
+  <data name="ERR_BadSpecialByRefIterator" xml:space="preserve">
+    <value>Výraz foreach nejde použít na enumerátorech typu {0} v asynchronních metodách nebo metodách iterátoru, protože {0} je struktura REF.</value>
+  </data>
   <data name="WRN_UnreferencedEvent" xml:space="preserve">
     <value>Událost {0} se nikdy nepoužívá.</value>
   </data>
@@ -2448,6 +2505,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="ERR_InvalidSpecifier" xml:space="preserve">
     <value>{0} není platným specifikátorem formátu.</value>
   </data>
+  <data name="ERR_RefConditionalAndAwait" xml:space="preserve">
+    <value>Await nejde použít ve výrazu, který obsahuje podmíněný operátor REF.</value>
+  </data>
   <data name="ERR_DuplicateImportSimple" xml:space="preserve">
     <value>Už se naimportovalo sestavení se stejným jednoduchým názvem {0}. Zkuste odebrat jeden z odkazů (např. {1}) nebo je podepište, aby mohly fungovat vedle sebe.</value>
   </data>
@@ -2490,6 +2550,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   <data name="ERR_ExternAliasNotAllowed" xml:space="preserve">
     <value>Alias extern není v tomto kontextu platný.</value>
   </data>
+  <data name="ERR_RefConditionalNeedsTwoRefs" xml:space="preserve">
+    <value>Obě hodnoty podmíněného operátoru musí být hodnoty ref nebo ani jedna z nich nesmí být hodnota ref.</value>
+  </data>
   <data name="ERR_NoPIANestedType" xml:space="preserve">
     <value>Typ {0} nemůže být vložený, protože je vnořeným typem. Zvažte nastavení vlastnosti Vložit typy spolupráce na false.</value>
   </data>
@@ -2507,9 +2570,6 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   </data>
   <data name="IDS_XMLNOINCLUDE" xml:space="preserve">
     <value> Pro následující značku include se nenašly žádné vyhovující prvky. </value>
-  </data>
-  <data name="ERR_FeatureIsExperimental" xml:space="preserve">
-    <value>Funkce {0} je experimentální a nepodporuje se; povolte ji příkazem /features:{1}.</value>
   </data>
   <data name="WRN_EqualsWithoutGetHashCode_Title" xml:space="preserve">
     <value>Typ přepisuje Object.Equals(object o), ale nepřepisuje Object.GetHashCode().</value>
@@ -2582,6 +2642,9 @@ Pokud chcete odstranit toto varování, můžete místo toho použít /reference
   </data>
   <data name="WRN_AttributeIgnoredWhenPublicSigning_Title" xml:space="preserve">
     <value>Atribut se ignoruje, když je zadané veřejné podepisování.</value>
+  </data>
+  <data name="ERR_TypeReserved" xml:space="preserve">
+    <value>Název typu {0} je vyhrazený pro použití kompilátorem.</value>
   </data>
   <data name="ERR_QueryInnerKey" xml:space="preserve">
     <value>Název {0} není v oboru pravé strany operátoru equals. Zvažte možnost vzájemné záměny výrazů na obou stranách operátoru equals.</value>
@@ -2764,6 +2827,9 @@ Poskytněte kompilátoru nějaký způsob, jak metody rozlišit. Můžete např�
   <data name="ERR_BadAttributeArgument" xml:space="preserve">
     <value>Argumentem atributu musí být konstantní výraz, výraz typeof nebo výraz vytvoření pole s typem parametru atributu.</value>
   </data>
+  <data name="IDS_FeatureReadOnlyStructs" xml:space="preserve">
+    <value>struktury jen pro čtení</value>
+  </data>
   <data name="IDS_ThrowExpression" xml:space="preserve">
     <value>&lt;výraz throw&gt;</value>
   </data>
@@ -2908,6 +2974,9 @@ Poskytněte kompilátoru nějaký způsob, jak metody rozlišit. Můžete např�
   <data name="ERR_ReadonlyValueTypeInObjectInitializer" xml:space="preserve">
     <value>Členy vlastnosti {0} typu {1} nejde přiřadit k inicializátoru objektu, protože tento inicializátor je hodnotového typu.</value>
   </data>
+  <data name="ERR_FieldlikeEventsInRoStruct" xml:space="preserve">
+    <value>Události podobné poli nejsou povolené ve strukturách jen pro čtení.</value>
+  </data>
   <data name="ERR_BadAsyncLacksBody" xml:space="preserve">
     <value>Modifikátor async se dá použít jenom v metodách, které mají tělo.</value>
   </data>
@@ -2954,7 +3023,7 @@ Poskytněte kompilátoru nějaký způsob, jak metody rozlišit. Můžete např�
     <value>Očekává se inicializátor pole s délkou {0}.</value>
   </data>
   <data name="ERR_RefReturnReadonly" xml:space="preserve">
-    <value>Pole jen pro čtení nejde vrátit odkazem.</value>
+    <value>Pole jen pro čtení nejde vrátit zapisovatelným odkazem.</value>
   </data>
   <data name="ERR_V6SwitchGoverningTypeValueExpected" xml:space="preserve">
     <value>Výraz switch nebo popisek větve musí být bool, char, string, integral, enum nebo odpovídající typ s možnou hodnotou null v jazyce C# 6 nebo starším.</value>
@@ -2988,9 +3057,6 @@ Poskytněte kompilátoru nějaký způsob, jak metody rozlišit. Můžete např�
   </data>
   <data name="ERR_AnonymousTypePropertyAssignedBadValue" xml:space="preserve">
     <value>{0} nejde přiřadit k anonymní vlastnosti typu.</value>
-  </data>
-  <data name="ERR_OverloadRefOutCtor" xml:space="preserve">
-    <value>Nejde definovat přetížený konstruktor {0}, protože se liší od jiného konstruktoru jen deklaracemi ref a out.</value>
   </data>
   <data name="ERR_CantOpenFileWrite" xml:space="preserve">
     <value>{0} se nedá otevřít pro zápis -- {1}.</value>
@@ -3045,9 +3111,6 @@ Poskytněte kompilátoru nějaký způsob, jak metody rozlišit. Můžete např�
   </data>
   <data name="ERR_ConstValueRequired" xml:space="preserve">
     <value>Pole const vyžaduje zadání hodnoty.</value>
-  </data>
-  <data name="ERR_RefReturnReceiver" xml:space="preserve">
-    <value>{0} nejde vrátit odkazem, protože jeho příjemce se nemůže vracet odkazem</value>
   </data>
   <data name="WRN_BadRestoreNumber" xml:space="preserve">
     <value>Nejde obnovit varování CS{0}, protože je globálně zakázané.</value>
@@ -3136,7 +3199,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>Došlo k nejednoznačnosti mezi metodami nebo vlastnostmi {0} a {1}.</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
-    <value>Local function is declared but never used</value>
+    <value>Lokální funkce je deklarovaná, ale vůbec se nepoužívá.</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>Chyba syntaxe příkazového řádku: Chybí GUID pro možnost {1}.</value>
@@ -3215,146 +3278,146 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# Compiler Options
+                              Parametry kompilátoru Visual C#
 
-                        - OUTPUT FILES -
- /out:&lt;file&gt;                   Specify output file name (default: base name of
-                               file with main class or first file)
- /target:exe                   Build a console executable (default) (Short
-                               form: /t:exe)
- /target:winexe                Build a Windows executable (Short form:
+                        – VÝSTUPNÍ SOUBORY –
+ /out:&lt;soubor&gt;                 Určuje název výstupního souboru (výchozí: základní název
+                               souboru s hlavní třídou nebo prvního souboru).
+ /target:exe                   Vytvoří spustitelný soubor konzoly (výchozí). 
+                               (Krátký tvar: /t:exe)
+ /target:winexe                Vytvoří spustitelný soubor Windows. (Krátký tvar: 
                                /t:winexe)
- /target:library               Build a library (Short form: /t:library)
- /target:module                Build a module that can be added to another
-                               assembly (Short form: /t:module)
- /target:appcontainerexe       Build an Appcontainer executable (Short form:
+ /target:library               Vytvoří knihovnu. (Krátký tvar: /t:library)
+ /target:module                Vytvoří modul, který se dá přidat do jiného 
+                               sestavení. (Krátký tvar: /t:module)
+ /target:appcontainerexe       Vytvoří spustitelný soubor kontejneru Appcontainer. (Krátký tvar: 
                                /t:appcontainerexe)
- /target:winmdobj              Build a Windows Runtime intermediate file that
-                               is consumed by WinMDExp (Short form: /t:winmdobj)
- /doc:&lt;file&gt;                   XML Documentation file to generate
- /refout:&lt;file&gt;                Reference assembly output to generate
- /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
-                               Itanium, x64, arm, anycpu32bitpreferred, or
-                               anycpu. The default is anycpu.
+ /target:winmdobj              Vytvoří pomocný soubor modulu Windows Runtime, který 
+                               využívá knihovna WinMDExp. (Krátký tvar: /t:winmdobj)
+ /doc:&lt;soubor&gt;                 Soubor dokumentace XML, který se má generovat.
+ /refout:&lt;file&gt;                Výstup referenčního sestavení, který se bude generovat
+ /platform:&lt;řetězec&gt;           Omezuje platformy, na kterých se dá tento kód spustit: x86,
+                               Itanium, x64, arm, anycpu32bitpreferred nebo 
+                               anycpu. Výchozí je anycpu.
 
-                        - INPUT FILES -
- /recurse:&lt;wildcard&gt;           Include all files in the current directory and
-                               subdirectories according to the wildcard
-                               specifications
- /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
-                               file using the given alias (Short form: /r)
- /reference:&lt;file list&gt;        Reference metadata from the specified assembly
-                               files (Short form: /r)
- /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
- /link:&lt;file list&gt;             Embed metadata from the specified interop
-                               assembly files (Short form: /l)
- /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
-                               (Short form: /a)
- /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
-                               generation but may be used by analyzers for producing
-                               errors or warnings.
- /embed                        Embed all source files in the PDB.
- /embed:&lt;file list&gt;            Embed specific files in the PDB
+                        – VSTUPNÍ SOUBORY–
+ /recurse:&lt;zástupný znak&gt;      Zahrne všechny soubory v aktuálním adresáři 
+                               a podadresářích podle zadaného 
+                               zástupného znaku.
+ /reference:&lt;alias&gt;=&lt;soubor&gt;   Odkazuje na metadata ze zadaného souboru 
+                               sestavení pomocí daného aliasu. (Krátký tvar: /r)
+ /reference:&lt;seznam souborů&gt;   Odkazuje na metadata ze zadaných souborů 
+                               sestavení. (Krátký tvar: /r)
+ /addmodule:&lt;seznam souborů&gt;   Připojí zadané moduly do tohoto sestavení.
+ /link:&lt;seznam souborů&gt;        Vloží metadata ze zadaných souborů 
+                               definičních sestavení. (Krátký tvar: /l)
+ /analyzer:&lt;seznam souborů&gt;    Spustí analyzátory z tohoto sestavení.
+                               (Krátký tvar: /a)
+ /additionalfile:&lt;sez.souborů&gt; Další soubory, které přímo neovlivňují generování
+                               kódu, ale analyzátory můžou jejich pomocí
+                               produkovat chyby nebo upozornění.
+ /embed                        Vloží všechny zdrojové soubory do PDB.
+ /embed:&lt;seznam souborů&gt;       Vloží konkrétní soubory do PDB.
 
-                        - RESOURCES -
- /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
- /win32icon:&lt;file&gt;             Use this icon for the output
- /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
- /nowin32manifest              Do not include the default Win32 manifest
- /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
- /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
-                               (Short form: /linkres) Where the resinfo format
-                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
+                        – PROSTŘEDKY –
+ /win32res:&lt;soubor&gt;            Určuje soubor prostředků Win32 (.res).
+ /win32icon:&lt;soubor&gt;           Použije pro výstup zadanou ikonu.
+ /win32manifest:&lt;soubor&gt;       Určuje soubor manifestu Win32 (.xml).
+ /nowin32manifest              Nezahrne výchozí manifest Win32.
+ /resource:&lt;resinfo&gt;           Vloží zadaný prostředek. (Krátký tvar: /res)
+ /linkresource:&lt;resinfo&gt;       Propojí zadaný prostředek s tímto sestavením. 
+                               (Krátký tvar: /linkres) Prostředek má formát 
+                               &lt;soubor&gt;[,&lt;název řetězce&gt;[,public|private]].
 
-                        - CODE GENERATION -
- /debug[+|-]                   Emit debugging information
+                        – GENEROVÁNÍ KÓDU –
+ /debug[+|-]                   Generuje ladicí informace.
  /debug:{full|pdbonly|portable|embedded}
-                               Specify debugging type ('full' is default,
-                               'portable' is a cross-platform format,
-                               'embedded' is a cross-platform format embedded into
-                               the target .dll or .exe)
- /optimize[+|-]                Enable optimizations (Short form: /o)
- /deterministic                Produce a deterministic assembly
-                               (including module version GUID and timestamp)
- /refonly                      Produce a reference assembly in place of the main output
- /instrument:TestCoverage      Produce an assembly instrumented to collect
-                               coverage information
- /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
+                               Určuje typ ladění (výchozí je možnost full, 
+                               portable je formát napříč platformami,
+                               embedded je formát napříč platformami vložený do 
+                               cílového souboru .dll nebo .exe).
+ /optimize[+|-]                Povolí optimalizace. (Krátký tvar: /o)
+ /deterministic                Vytvoří deterministické sestavení
+                               (včetně GUID verze modulu a časového razítka).
+ /refonly                      Vytvoří referenční sestavení na místě hlavního výstupu.
+ /instrument:TestCoverage      Vytvoří sestavení instrumentované ke shromažďování
+                               informací o pokrytí.
+ /sourcelink:&lt;soubor&gt;          Informace o zdrojovém odkazu vkládané do souboru PDB typu Portable.
 
-                        - ERRORS AND WARNINGS -
- /warnaserror[+|-]             Report all warnings as errors
- /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
- /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
- /nowarn:&lt;warn list&gt;           Disable specific warning messages
- /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
-                               diagnostics.
- /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
-                               diagnostics.
- /reportanalyzer               Report additional analyzer information, such as
-                               execution time.
+                        – CHYBY A UPOZORNĚNÍ –
+ /warnaserror[+|-]             Hlásí všechna upozornění jako chyby.
+ /warnaserror[+|-]:&lt;seznam upozornění&gt; Hlásí zadaná upozornění jako chyby.
+ /warn:&lt;n&gt;                     Nastaví úroveň pro upozornění (0–4). (Krátký tvar: /w)
+ /nowarn:&lt;seznam upozornění&gt;   Zakáže zadaná upozornění.
+ /ruleset:&lt;soubor&gt;             Určuje soubor sady pravidel, která zakazuje
+                               specifickou diagnostiku.
+ /errorlog:&lt;soubor&gt;            Určuje soubor pro protokolování veškeré
+                               diagnostiky kompilátoru a analyzátoru.
+ /reportanalyzer               Hlásí další informace analyzátoru, např.
+                               dobu spuštění.
 
-                        - LANGUAGE -
- /checked[+|-]                 Generate overflow checks
- /unsafe[+|-]                  Allow 'unsafe' code
- /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
-                               form: /d)
- /langversion:?                Display the allowed values for language version
- /langversion:&lt;string&gt;         Specify language version such as
-                               `default` (latest major version), or
-                               `latest` (latest version, including minor versions),
-                               or specific versions like `6` or `7.1`
+                        – JAZYK –
+ /checked[+|-]                 Generuje kontroly přetečení.
+ /unsafe[+|-]                  Povoluje nezabezpečený kód.
+ /define:&lt;seznam symbolů&gt;      Definuje symboly podmíněné kompilace. (Krátký 
+                               tvar: /d)
+ /langversion:?                Zobrazí povolené hodnoty jazykové verze.
+ /langversion:&lt;řetězec&gt;        Určuje jazykovou verzi, například 
+                               default (nejnovější hlavní verze), nebo 
+                               latest (nejnovější verze včetně podverzí) nebo
+                               konkrétní verze jako 6 nebo 7.1.
 
-                        - SECURITY -
- /delaysign[+|-]               Delay-sign the assembly using only the public
-                               portion of the strong name key
- /publicsign[+|-]              Public-sign the assembly using only the public
-                               portion of the strong name key
- /keyfile:&lt;file&gt;               Specify a strong name key file
- /keycontainer:&lt;string&gt;        Specify a strong name key container
- /highentropyva[+|-]           Enable high-entropy ASLR
+                        – ZABEZPEČENÍ –
+ /delaysign[+|-]               Vytvoří zpožděný podpis sestavení s využitím 
+                               veřejné části klíče silného názvu.
+ /publicsign[+|-]              Vytvoří veřejný podpis sestavení s využitím jenom veřejné
+                               části klíče silného názvu.
+ /keyfile:&lt;soubor&gt;             Určuje soubor klíče se silným názvem.
+ /keycontainer:&lt;řetězec&gt;       Určuje kontejner klíče se silným názvem.
+ /highentropyva[+|-]           Povolí ASLR s vysokou entropií.
 
-                        - MISCELLANEOUS -
- @&lt;file&gt;                       Read response file for more options
- /help                         Display this usage message (Short form: /?)
- /nologo                       Suppress compiler copyright message
- /noconfig                     Do not auto include CSC.RSP file
- /parallel[+|-]                Concurrent build.
- /version                      Display the compiler version number and exit.
+                        – RŮZNÉ –
+ @&lt;soubor&gt;                     Načte další možnosti ze souboru odpovědí.
+ /help                         Zobrazí tuto zprávu o použití. (Krátký tvar: /?)
+ /nologo                       Potlačí zprávu o autorských právech kompilátoru.
+ /noconfig                     Nezahrnuje automaticky soubor CSC.RSP.
+ /parallel[+|-]                Souběžné sestavení 
+ /version                      Zobrazí číslo verze kompilátoru a ukončí se.
 
-                        - ADVANCED -
- /baseaddress:&lt;address&gt;        Base address for the library to be built
- /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
-                               checksum stored in PDB. Supported values are:
-                               SHA1 (default) or SHA256.
- /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
-                               files
- /utf8output                   Output compiler messages in UTF-8 encoding
- /main:&lt;type&gt;                  Specify the type that contains the entry point
-                               (ignore all other possible entry points) (Short
-                               form: /m)
- /fullpaths                    Compiler generates fully qualified paths
- /filealign:&lt;n&gt;                Specify the alignment used for output file
-                               sections
+                        – POKROČILÉ –
+ /baseaddress:&lt;adresa&gt;         Základní adresa pro knihovnu, která se má sestavit
+ /checksumalgorithm:&lt;alg&gt;      Určuje algoritmus pro výpočet kontrolního součtu 
+                               zdrojového souboru uloženého v PDB. Podporované hodnoty:
+                               SHA1 (výchozí) nebo SHA256.
+ /codepage:&lt;n&gt;                 Určuje znakovou stránku, která se má použít 
+                               při otevírání zdrojových souborů.
+ /utf8output                   Určuje výstup zpráv kompilátoru v kódování UTF-8.
+ /main:&lt;typ&gt;                   Určuje typ obsahující vstupní bod (ignoruje 
+                               všechny ostatní potenciální vstupní body). (Krátký 
+                               tvar: /m)
+ /fullpaths                    Kompilátor generuje úplné cesty.
+ /filealign:&lt;n&gt;                Určuje zarovnání použité pro oddíly výstupního 
+                               souboru.
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Specify a mapping for source path names output by
-                               the compiler.
- /pdb:&lt;file&gt;                   Specify debug information file name (default:
-                               output file name with .pdb extension)
- /errorendlocation             Output line and column of the end location of
-                               each error
- /preferreduilang              Specify the preferred output language name.
- /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
- /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
- /lib:&lt;file list&gt;              Specify additional directories to search in for
-                               references
- /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
-                               prompt, send, queue, or none. The default is
-                               queue.
- /appconfig:&lt;file&gt;             Specify an application configuration file
-                               containing assembly binding settings
- /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
-                               a part of
- /modulename:&lt;string&gt;          Specify the name of the source module
+                               Určuje mapování pro výstup zdrojových názvů cest
+                               kompilátorem.
+ /pdb:&lt;soubor&gt;                 Určuje název souboru ladicích informací (výchozí: 
+                               název výstupního souboru s příponou .pdb).
+ /errorendlocation             Vypíše řádek a sloupec koncového umístění 
+                               jednotlivých chyb.
+ /preferreduilang              Určuje název upřednostňovaného výstupního jazyka.
+ /nostdlib[+|-]                Neodkazuje na standardní knihovnu (mscorlib.dll).
+ /subsystemversion:&lt;řetězec&gt;   Určuje verzi subsystému tohoto sestavení.
+ /lib:&lt;seznam souborů&gt;         Určuje další adresáře, ve kterých se mají 
+                               hledat reference.
+ /errorreport:&lt;řetězec&gt;        Určuje způsob zpracování interních chyb kompilátoru: 
+                               prompt, send, queue nebo none. Výchozí možnost 
+                               je queue (zařadit do fronty).
+ /appconfig:&lt;soubor&gt;           Určuje konfigurační soubor aplikace, 
+                               který obsahuje nastavení vazby sestavení.
+ /moduleassemblyname:&lt;řetězec&gt; Určuje název sestavení, jehož součástí bude 
+                               tento modul.
+ /modulename:&lt;řetězec&gt;         Určuje název zdrojového modulu.
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3372,9 +3435,6 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   <data name="ERR_InvalidSignaturePublicKey" xml:space="preserve">
     <value>V atributu AssemblySignatureKeyAttribute je uvedený neplatný veřejný klíč podpisu.</value>
   </data>
-  <data name="ERR_OverloadRefOut" xml:space="preserve">
-    <value>{0} nemůže definovat přetěžované metody, které se liší jenom deklarací ref a out.</value>
-  </data>
   <data name="WRN_TupleLiteralNameMismatch" xml:space="preserve">
     <value>Název elementu řazené kolekce členů {0} se ignoruje, protože cílovým typem {1} je určený jiný nebo žádný název.</value>
   </data>
@@ -3389,9 +3449,6 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_AmbigContext" xml:space="preserve">
     <value>{0} je nejednoznačný odkaz mezi {1} a {2}.</value>
-  </data>
-  <data name="ERR_ParamsCantBeRefOut" xml:space="preserve">
-    <value>Pro parametr params nejde použít deklaraci ref nebo out.</value>
   </data>
   <data name="WRN_CmdOptionConflictsSource_Title" xml:space="preserve">
     <value>Možnost přepíše atribut zadaný ve zdrojovém souboru nebo přidaném modulu.</value>
@@ -3453,9 +3510,6 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   <data name="ERR_NoDynamicPhantomOnBaseCtor" xml:space="preserve">
     <value>Volání konstruktoru je nutné odbavit dynamicky, což ale není možné, protože je součástí inicializátoru konstruktoru. Zvažte použití dynamických argumentů.</value>
   </data>
-  <data name="ERR_RefReturnCall2" xml:space="preserve">
-    <value>Člen výsledku pro {0} nejde vrátit odkazem, protože odkazem nejde vrátit argument předaný do parametru {1}.</value>
-  </data>
   <data name="ERR_TypeInferenceFailedForImplicitlyTypedOutVariable" xml:space="preserve">
     <value>Nejde odvodit typ implicitně typované externí proměnné {0}.</value>
   </data>
@@ -3467,6 +3521,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_ImplicitlyTypedVariableMultipleDeclarator" xml:space="preserve">
     <value>Proměnné s implicitním typem nemůžou mít víc deklarátorů.</value>
+  </data>
+  <data name="ERR_RefReturnReadonlyNotField" xml:space="preserve">
+    <value>Nejde vrátit {0} {1} zapisovatelným odkazem, protože to je proměnná jen pro čtení.</value>
   </data>
   <data name="ERR_NamespaceUnexpected" xml:space="preserve">
     <value>Obor názvů nemůže přímo obsahovat členy, jako jsou pole a metody.</value>
@@ -3630,9 +3687,6 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   <data name="ERR_InvalidAssemblyCulture" xml:space="preserve">
     <value>Řetězce jazykové verze sestavení nesmí obsahovat vložené znaky NUL.</value>
   </data>
-  <data name="ERR_AddrOnReadOnlyLocal" xml:space="preserve">
-    <value>Nejde převzít adresu lokální proměnné určené jen ke čtení.</value>
-  </data>
   <data name="ERR_PatternNullableType" xml:space="preserve">
     <value>Ve vzoru se nepovoluje použití typu s možnou hodnotou null {0}; místo toho použijte základní typ {1}.</value>
   </data>
@@ -3664,7 +3718,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>CallerMemberNameAttribute nejde použít, protože neexistuje žádný standardní převod z typu {0} na {1}.</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
+    <value>Člen parametru {0} nejde vrátit podle odkazu, protože nejde o parametr ref nebo out.</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(Umístění symbolu vzhledem k předchozí chybě)</value>
@@ -3687,8 +3741,8 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   <data name="WRN_InvalidSearchPathDir_Title" xml:space="preserve">
     <value>Byla zadaná neplatná vyhledávací cesta.</value>
   </data>
-  <data name="ERR_RefReturnCall" xml:space="preserve">
-    <value>Výsledek pro {0} nejde vrátit odkazem, protože odkazem nejde vrátit argument předaný do parametru {1}.</value>
+  <data name="ERR_RefReturnThis" xml:space="preserve">
+    <value>Nejde vrátit this podle odkazu.</value>
   </data>
   <data name="ERR_NoCanonicalView" xml:space="preserve">
     <value>Nejde najít typ spolupráce, který odpovídá vloženému typu {0}. Nechybí odkaz na sestavení?</value>
@@ -3709,7 +3763,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>Parametr nejde vrátit odkazem {0}, protože nejde o parametr Ref nebo Out.</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
+    <value>Elementy definované v názvovém prostoru nelze explicitně deklarovat jako private, protected, protected internal nebo private protected.</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>Parametr /moduleassemblyname jde zadat jenom při vytváření typu cíle module.</value>
@@ -3745,7 +3799,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>{0} není typu odkaz, jak vyžaduje příkaz lock</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic" xml:space="preserve">
-    <value>Statické pole jen pro čtení nejde vrátit odkazem.</value>
+    <value>Statické pole jen pro čtení nejde vrátit zapisovatelným odkazem.</value>
   </data>
   <data name="WRN_CLS_BadInterfaceMember_Title" xml:space="preserve">
     <value>Rozhraní kompatibilní se specifikací CLS musí obsahovat jenom členy kompatibilní se specifikací CLS.</value>
@@ -3809,6 +3863,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_PropertyLacksGet" xml:space="preserve">
     <value>Vlastnost nebo indexer {0} nejde v tomto kontextu použít, protože neobsahuje přistupující objekt get.</value>
+  </data>
+  <data name="ERR_AutoPropsInRoStruct" xml:space="preserve">
+    <value>Vlastnosti automaticky implementované instance ve strukturách jen pro čtení musí být jen pro čtení.</value>
   </data>
   <data name="ERR_LanguageVersionCannotHaveLeadingZeroes" xml:space="preserve">
     <value>Zadaná verze jazyka {0} nemůže obsahovat úvodní nuly.</value>
@@ -3880,7 +3937,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>{0} definuje operátor == nebo !=, ale nepřepisuje funkci Object.GetHashCode().</value>
   </data>
   <data name="IDS_LangVersions" xml:space="preserve">
-    <value>Supported language versions:</value>
+    <value>Podporované jazykové verze:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>Jeden z parametrů binárního operátoru musí být nadřazeného typu.</value>
@@ -3947,6 +4004,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_UnexpectedSemicolon" xml:space="preserve">
     <value>Středník není platný za metodou nebo blokem přistupujícího objektu.</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField2" xml:space="preserve">
+    <value>Členy {0} {1} nejde použít jako hodnotu ref nebo out, protože je to proměnná jen pro čtení.</value>
   </data>
   <data name="ERR_LocalTypeNameClash" xml:space="preserve">
     <value>Vložení typu spolupráce {0} ze sestavení {1} způsobí konflikt názvů v aktuálním sestavení. Zvažte nastavení vlastnosti Vložit typy spolupráce na false.</value>
@@ -4050,6 +4110,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   <data name="ERR_ArrayOfStaticClass" xml:space="preserve">
     <value>{0}: Prvky pole nemůžou být statického typu.</value>
   </data>
+  <data name="IDS_SK_CONSTRUCTOR" xml:space="preserve">
+    <value>konstruktor</value>
+  </data>
   <data name="ERR_InvalidQM" xml:space="preserve">
     <value>Nejde zjistit typ podmíněného výrazu, protože mezi typy {0} a {1} nedochází k implicitnímu převodu</value>
   </data>
@@ -4061,6 +4124,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_InaccessibleSetter" xml:space="preserve">
     <value>Vlastnost nebo indexer {0} nejde v tomto kontextu použít, protože přistupující objekt jet není dostupný.</value>
+  </data>
+  <data name="IConversionExpressionIsNotCSharpConversion" xml:space="preserve">
+    <value>Výraz {0} není platným výrazem převodu C#.</value>
   </data>
   <data name="ERR_NamedArgumentUsedInPositional" xml:space="preserve">
     <value>Pojmenovaný argument {0} určuje parametr, pro který už byl poskytnut poziční argument.</value>
@@ -4204,7 +4270,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>Objekt {0} se dá uvolnit víc než jednou.</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongRefReturn" xml:space="preserve">
-    <value>{0} neimplementuje člen rozhraní {1}. {2} nemůže implementovat {1}, protože nevrací podle {3}.</value>
+    <value>{0} neimplementuje člena rozhraní {1}. {2} nemůže implementovat {1}, protože nemá odpovídající návrat podle odkazu.</value>
   </data>
   <data name="ERR_FixedNeedsLvalue" xml:space="preserve">
     <value>K vyrovnávacím pamětem s pevnou velikostí jde získat přístup jenom prostřednictvím lokálních proměnných nebo polí.</value>
@@ -4345,7 +4411,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>Parametr typu {1} má omezení struct, takže není možné používat {1} jako omezení pro {0}.</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
+    <value>Předdefinovaný typ {0} není definovaný nebo naimportovaný, nebo je deklarovaný v několika odkazovaných sestaveních.</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>Argument typu nemůže být null.</value>
@@ -4406,6 +4472,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_BadCastInFixed" xml:space="preserve">
     <value>Pravá strana přiřazení příkazu fixed nemůže být výrazem přetypování.</value>
+  </data>
+  <data name="IDS_FeatureRefExtensionMethods" xml:space="preserve">
+    <value>rozšiřující metody REF</value>
   </data>
   <data name="ERR_AssgReadonly2" xml:space="preserve">
     <value>Členy pole jen pro čtení {0} nejde měnit (kromě případu, kdy se nacházejí uvnitř konstruktoru nebo inicializátoru proměnné).</value>
@@ -4503,6 +4572,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   <data name="ERR_ComRefCallInExpressionTree" xml:space="preserve">
     <value>Strom výrazu lambda nesmí obsahovat volání COM, které v argumentech vynechává parametr Ref.</value>
   </data>
+  <data name="ERR_ParamsCantBeWithModifier" xml:space="preserve">
+    <value>Parametr params nejde deklarovat jako {0}.</value>
+  </data>
   <data name="ERR_BadForeachDecl" xml:space="preserve">
     <value>V příkazu foreach se vyžaduje typ i identifikátor.</value>
   </data>
@@ -4510,7 +4582,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>Argument {0}: Nejde převést z {1} na {2}.</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
+    <value>Specifikace pojmenovaných argumentů musí následovat po specifikaci všech pevných argumentů. Pokud chcete povolit pojmenované argumenty, které nejsou na konci, použijte prosím jazyk verze {0} nebo vyšší.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>Omezení pro parametr typu {0} metody {1} se musí shodovat s omezeními u parametru typu {2} metody rozhraní {3}. Místo toho zvažte použití explicitní implementace rozhraní.</value>
@@ -4532,6 +4604,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_UnexpectedToken" xml:space="preserve">
     <value>Neočekávaný token {0}</value>
+  </data>
+  <data name="ERR_RefConditionalDifferentTypes" xml:space="preserve">
+    <value>Výraz musí být typu {0}, aby odpovídal alternativní hodnotě ref.</value>
   </data>
   <data name="ERR_CantDeriveFromSealedType" xml:space="preserve">
     <value>{0}: Nejde odvozovat ze zapečetěného typu {1}.</value>
@@ -4620,6 +4695,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   <data name="ERR_IllegalFixedType" xml:space="preserve">
     <value>Typ vyrovnávací paměti pevné velikosti musí být následující: bool, byte, short, int, long, char, sbyte, ushort, uint, ulong, float nebo double.</value>
   </data>
+  <data name="ERR_CallArgMixing" xml:space="preserve">
+    <value>Tato kombinace argumentů pro {0} je zakázaná, protože může vystavit proměnné, na které odkazuje parametr {1}, mimo jejich rozsah deklarace.</value>
+  </data>
   <data name="ERR_ConstOutOfRange" xml:space="preserve">
     <value>Konstantní hodnotu {0} nejde převést na typ {1}.</value>
   </data>
@@ -4672,7 +4750,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>Funkce {0} není dostupná v jazyce C# 6. Použijte prosím jazyk verze {1} nebo vyšší.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7" xml:space="preserve">
-    <value>Funkce {0} není dostupná v jazyce C# 7. Použijte prosím jazyk verze {1} nebo vyšší.</value>
+    <value>Funkce {0} není dostupná v jazyce C# 7.0. Použijte prosím jazyk verze {1} nebo vyšší.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion4" xml:space="preserve">
     <value>Funkce {0} není dostupná v jazyce C# 4. Použijte prosím jazyk verze {1} nebo vyšší.</value>
@@ -4760,6 +4838,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_SubexpressionNotInNameof" xml:space="preserve">
     <value>Dílčí výraz se jako argument nameof nedá použít.</value>
+  </data>
+  <data name="ERR_MismatchedRefEscapeInTernary" xml:space="preserve">
+    <value>Větve tříhodnotového operátoru REF nemůžou odkazovat na proměnné s nekompatibilními obory deklarace.</value>
   </data>
   <data name="ERR_FixedDimsRequired" xml:space="preserve">
     <value>Pole vyrovnávací paměti s pevnou velikostí musí mít za názvem pole uvedený specifikátor velikosti pole.</value>
@@ -4913,6 +4994,9 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
   </data>
   <data name="ERR_PatternDynamicType" xml:space="preserve">
     <value>Není povoleno použít typ dynamic ve vzorku.</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField" xml:space="preserve">
+    <value>Nejde použít {0} {1} jako hodnotu ref nebo out, protože je to proměnná jen pro čtení.</value>
   </data>
   <data name="ERR_CallingFinalizeDeprecated" xml:space="preserve">
     <value>Destruktory a metodu object.Finalize nejde volat přímo. Zvažte možnost volání metody IDisposable.Dispose, pokud je k dispozici.</value>
@@ -5092,7 +5176,7 @@ Pokud se taková třída používá jako základní třída a pokud odvozující
     <value>indexer s výrazem v těle</value>
   </data>
   <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
-    <value>'{0}' is a local function and must therefore always have a body.</value>
+    <value>{0} je lokální funkce a musí proto vždy obsahovat text.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>{0}: Nejde odvozovat z dynamického typu.</value>

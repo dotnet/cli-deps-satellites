@@ -222,6 +222,9 @@
   <data name="WRN_CallerLineNumberPreferredOverCallerMemberName_Title" xml:space="preserve">
     <value>CallerMemberNameAttribute 将不起任何作用；它由 CallerLineNumberAttribute 重写</value>
   </data>
+  <data name="ERR_RefReturnReadonlyNotField2" xml:space="preserve">
+    <value>不能通过可写的引用返回 {0} '{1}' 的成员，因为它是只读变量</value>
+  </data>
   <data name="ERR_AbstractHasBody" xml:space="preserve">
     <value>“{0}”无法声明主体，因为它标记为 abstract</value>
   </data>
@@ -300,10 +303,13 @@
     <value>无法析构动态对象。</value>
   </data>
   <data name="ERR_RefReturnLvalueExpected" xml:space="preserve">
-    <value>不能在此上下文中使用表达式，因为表达式无法按引用返回</value>
+    <value>不能在此上下文中使用表达式，因为表达式无法按引用传递或返回</value>
   </data>
   <data name="ERR_OneAliasPerReference" xml:space="preserve">
     <value>一个声明外部别名的 /reference 选项只能有一个文件名。要指定多个别名或文件名，请使用多个 /reference 选项。</value>
+  </data>
+  <data name="ERR_StackAllocConversionNotPossible" xml:space="preserve">
+    <value>不能将 stackalloc 表达式的类型从“{0}”转换为“{1}”。</value>
   </data>
   <data name="ERR_UnclosedExpressionHole" xml:space="preserve">
     <value>以“{”开头的插补的表达式缺少结束分隔符“}”。</value>
@@ -425,9 +431,6 @@
   <data name="WRN_InvalidAssemblyName" xml:space="preserve">
     <value>程序集引用“{0}”无效，无法解析</value>
   </data>
-  <data name="ERR_BadOutWithThis" xml:space="preserve">
-    <value> 参数修饰符“out”不能与“this”一起使用 </value>
-  </data>
   <data name="ERR_DeconstructRequiresExpression" xml:space="preserve">
     <value>析构任务要求表达式属于右侧的某个类型。</value>
   </data>
@@ -437,6 +440,9 @@
   <data name="ERR_ThisStructNotInAnonMeth" xml:space="preserve">
     <value>结构内部的匿名方法、lambda 表达式和查询表达式无法访问 "this" 的实例成员。请考虑将 "this" 复制到匿名方法、lambda 表达式或查询表达式外部的某个局部变量并改用该局部变量。</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField2" xml:space="preserve">
+    <value>不能分配到 {0} '{1}' 的成员，因为它是只读变量</value>
+  </data>
   <data name="ERR_InterfaceImplementedByConditional" xml:space="preserve">
     <value>条件成员“{0}”无法实现类型“{2}”中的接口成员“{1}”</value>
   </data>
@@ -444,7 +450,7 @@
     <value>静态类“{0}”不能从类型“{1}”派生。静态类必须从对象派生。</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic2" xml:space="preserve">
-    <value>静态只读字段“{0}”的字段无法按引用返回</value>
+    <value>静态只读字段“{0}”的字段无法通过可写的引用返回</value>
   </data>
   <data name="ERR_ForwardedTypeInThisAssembly" xml:space="preserve">
     <value>类型“{0}”是在此程序集中定义的，但又为它指定了一个类型转发器</value>
@@ -471,7 +477,7 @@
     <value>“{0}”不实现“{1}”模式。“{2}”与“{3}”一起使用时目的不明确。</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
+    <value>/langversion 的选项“{0}”无效。使用 "/langversion:?" 列出支持的值。</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>别名限定名称不是表达式。</value>
@@ -717,13 +723,16 @@
     <value>浮点常量超出“{0}”类型的范围</value>
   </data>
   <data name="ERR_InvalidDebugInfo" xml:space="preserve">
-    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+    <value>无法从程序集“{2}”读取方法“{0}”(令牌 0x{1:X8})的调试信息</value>
   </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>无法在不进行编码的情况下发出源文本的调试信息。</value>
   </data>
   <data name="ERR_BadResourceVis" xml:space="preserve">
     <value>选项“{0}”无效；资源可见性必须是“public”或“private”</value>
+  </data>
+  <data name="ERR_ExplicitReservedAttr" xml:space="preserve">
+    <value>请勿使用“{0}”。这是保留给编译器使用的。</value>
   </data>
   <data name="WRN_BadRestoreNumber_Title" xml:space="preserve">
     <value>警告已全局禁用，无法还原</value>
@@ -741,7 +750,7 @@
     <value>元素“{0}”需要结束标记。</value>
   </data>
   <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
-    <value>leading digit separator</value>
+    <value>前导数字分隔符</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Nameof 运算符中不允许使用类型参数。</value>
@@ -860,6 +869,9 @@
   <data name="ERR_BadVisReturnType" xml:space="preserve">
     <value>可访问性不一致: 返回类型“{1}”的可访问性低于方法“{0}”</value>
   </data>
+  <data name="ERR_FieldsInRoStruct" xml:space="preserve">
+    <value>只读结构的实例字段必须为只读。</value>
+  </data>
   <data name="UseLiteralForTokens" xml:space="preserve">
     <value>使用 Microsoft.CodeAnalysis.CSharp.SyntaxFactory.Literal 可创建字符文本标记。</value>
   </data>
@@ -882,13 +894,13 @@
     <value>无法跨程序集边界使用程序集“{1}”中的类型“{0}”，因为它有身为嵌入的互操作类型的泛型类型参数。</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
-    <value>The local function '{0}' is declared but never used</value>
+    <value>声明了本地函数“{0}”，但从未使用过</value>
   </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>as 运算符必须与引用类型或可以为 null 的类型一起使用(“{0}”是不可以为 null 值的类型)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>The abstract {0} '{1}' cannot be marked virtual</value>
+    <value>抽象 {0}“{1}”不能标记为虚拟</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>“{0}”: 静态类不能包含用户定义的运算符</value>
@@ -1031,6 +1043,9 @@
   <data name="ERR_BadAwaitWithoutAsyncLambda" xml:space="preserve">
     <value>“await”运算符只能在异步 {0} 中使用。请考虑使用“async”修饰符标记此 {0}。</value>
   </data>
+  <data name="ERR_RefExtensionMustBeValueTypeOrConstrainedToOne" xml:space="preserve">
+    <value>"ref" 扩展方法“{0}”的第一个参数必须是值类型或受结构约束的泛型类型。</value>
+  </data>
   <data name="ChainingSpeculativeModelIsNotSupported" xml:space="preserve">
     <value>不支持链接推理语义模型。应从非推理 ParentModel 创建推理模型。</value>
   </data>
@@ -1041,7 +1056,7 @@
     <value>筛选器表达式是常量，请考虑删除筛选器</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
-    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+    <value>功能“{0}”在 C# 7.2 中不可用。请使用 {1} 或更高的语言版本。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>功能“{0}”在 C# 7.1 中不可用。请使用 {1} 或更高的语言版本。</value>
@@ -1125,7 +1140,7 @@
     <value>成员“{0}”不会隐藏可访问成员。不需要关键字 new。</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+    <value>命名参数规范必须出现在已在动态调用中指定所有固定参数之后。</value>
   </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>传递到 #pragma 警告预处理器指令的编号不是有效的警告编号。验证该编号是否表示警告而不是错误。</value>
@@ -1146,13 +1161,13 @@
     <value>仅脚本中允许使用 #r</value>
   </data>
   <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
-    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
+    <value>不可将动态类型的参数传递到具有推断类型参数的泛型本地函数“{0}”。</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>语法树已存在</value>
   </data>
-  <data name="ERR_BadRefWithThis" xml:space="preserve">
-    <value> 参数修饰符“ref”不能与“this”一起使用 </value>
+  <data name="ERR_BadParameterModifiersOrder" xml:space="preserve">
+    <value>参数修饰符“{0}”不能在“{1}”修饰符后使用</value>
   </data>
   <data name="ERR_InvalidOutputName" xml:space="preserve">
     <value>无效输出名: {0}</value>
@@ -1241,6 +1256,9 @@
   <data name="ERR_ExternHasConstructorInitializer" xml:space="preserve">
     <value>“{0}”不能是外部的，也不能具有构造函数初始值设定项</value>
   </data>
+  <data name="IDS_StackAllocExpression" xml:space="preserve">
+    <value>stackalloc {0}[{1}]</value>
+  </data>
   <data name="ERR_AutoPropertyCannotBeRefReturning" xml:space="preserve">
     <value>自动实现的属性无法按引用返回</value>
   </data>
@@ -1301,6 +1319,9 @@
   <data name="ERR_BadTypeforThis" xml:space="preserve">
     <value>扩展方法的第一个参数的类型不能是“{0}”</value>
   </data>
+  <data name="IDS_FeatureReadOnlyReferences" xml:space="preserve">
+    <value>只读引用</value>
+  </data>
   <data name="ERR_BadSKunknown" xml:space="preserve">
     <value>“{0}”是一个 {1}，这在给定的上下文中无效</value>
   </data>
@@ -1343,11 +1364,14 @@
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>无效的引用别名选项:“{0}=”-- 缺少文件名</value>
   </data>
+  <data name="ERR_FieldAutoPropCantBeByRefLike" xml:space="preserve">
+    <value>字段或自动实现的属性不能是类型“{0}”，除非它是 ref 结构的实例成员。</value>
+  </data>
   <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
-    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+    <value>命名参数“{0}”的使用位置不当，但后跟一个未命名参数</value>
   </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
-    <value>只读字段“{0}”的成员无法按引用返回</value>
+    <value>只读字段“{0}”的成员无法通过可写的引用返回</value>
   </data>
   <data name="ERR_BadDynamicMethodArg" xml:space="preserve">
     <value>无法将类型为“{0}”的表达式用作动态调度的操作的参数。</value>
@@ -1371,7 +1395,7 @@
     <value>无法作为 out 或 ref 参数传递 Windows 运行时事件。</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
+    <value>“{0}”类型的实例不能在嵌套函数、查询表达式、迭代器块或异步方法中使用</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>“{0}”不实现接口成员“{1}”。“{2}”无法实现“{1}”，因为它没有“{3}”的匹配返回类型。</value>
@@ -1445,6 +1469,9 @@
   <data name="WRN_RefCultureMismatch_Title" xml:space="preserve">
     <value>引用程序集具有不同区域性设置</value>
   </data>
+  <data name="ERR_InExtensionMustBeValueType" xml:space="preserve">
+    <value>"in" 扩展方法“{0}”的第一个参数必须是值类型。</value>
+  </data>
   <data name="ERR_NoConversionForNubDefaultParam" xml:space="preserve">
     <value>无法将类型为“{0}”的值用作可以为 null 的参数“{1}”的默认参数，因为“{0}”不是简单类型</value>
   </data>
@@ -1516,6 +1543,9 @@
   </data>
   <data name="ThisMethodCanOnlyBeUsedToCreateTokens" xml:space="preserve">
     <value>此方法只能用于创建标记 - {0} 不出标记类型。</value>
+  </data>
+  <data name="ERR_OverloadRefKind" xml:space="preserve">
+    <value>“{0}”不能定义仅在参数修饰符“{2}”和“{3}”上存在区别的重载 {1}</value>
   </data>
   <data name="ERR_NameNotInContextPossibleMissingReference" xml:space="preserve">
     <value>当前上下文中不存在名称“{0}”(是否缺少对程序集“{1}”的引用?)</value>
@@ -1710,9 +1740,6 @@
   <data name="ERR_IntegralTypeValueExpected" xml:space="preserve">
     <value>应输入整型值</value>
   </data>
-  <data name="ERR_MultiParamMod" xml:space="preserve">
-    <value>参数不能具有所有指定的修饰符；该参数上的修饰符太多</value>
-  </data>
   <data name="ERR_NotYetImplementedInRoslyn" xml:space="preserve">
     <value>尚未实现此语言功能(“{0}”)。</value>
   </data>
@@ -1812,6 +1839,9 @@
   <data name="ERR_ClassDoesntImplementInterface" xml:space="preserve">
     <value>“{0}”: 包含类型不实现接口“{1}”</value>
   </data>
+  <data name="ERR_RefStructInterfaceImpl" xml:space="preserve">
+    <value>{0}: ref 结构不能实现接口</value>
+  </data>
   <data name="ERR_QueryNoProviderStandard" xml:space="preserve">
     <value>未能找到源类型“{0}”的查询模式的实现。未找到“{1}”。是否缺少对“System.Core.dll”的引用，或者缺少针对“System.Linq”的 using 指令?</value>
   </data>
@@ -1836,6 +1866,9 @@
   <data name="WRN_TooManyLinesForDebugger_Title" xml:space="preserve">
     <value>源文件已超过在 PDB 中可表示的 16,707,565 行的限制；调试信息将不正确</value>
   </data>
+  <data name="IDS_FeatureRefStructs" xml:space="preserve">
+    <value>ref 结构</value>
+  </data>
   <data name="ERR_AutoPropertyInitializerInInterface" xml:space="preserve">
     <value>接口中自动实现的属性不能具有初始值设定项。</value>
   </data>
@@ -1852,7 +1885,7 @@
     <value>递增或递减运算符的操作数必须是变量、属性或索引器</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed switch is only supported when emitting a PDB.</value>
+    <value>仅在发出 PDB 时才支持 /embed 开关。</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>“{0}”不能既是外部的又是抽象的</value>
@@ -1889,6 +1922,9 @@
   </data>
   <data name="ERR_MustHaveRefReturn" xml:space="preserve">
     <value>按值返回只能在按值返回的方法中使用</value>
+  </data>
+  <data name="ERR_EscapeStackAlloc" xml:space="preserve">
+    <value>不能在此上下文中使用类型“{0}”的 stackalloc 表达式的结果，因为它可能会在包含方法以外公开</value>
   </data>
   <data name="ERR_InvalidFwdType" xml:space="preserve">
     <value>指定为 TypeForwardedTo 特性的参数的类型无效</value>
@@ -2077,7 +2113,7 @@
     <value>类类型约束“{0}”必须在其他任何约束之前</value>
   </data>
   <data name="ERR_CantChangeRefReturnOnOverride" xml:space="preserve">
-    <value>“{0}”必须{2}按引用返回，才能与重写成员“{1}”匹配</value>
+    <value>“{0}”必须与重写成员“{1}”的引用返回匹配</value>
   </data>
   <data name="WRN_CallerLineNumberPreferredOverCallerFilePath_Title" xml:space="preserve">
     <value>CallerFilePathAttribute 将不起任何作用；它由 CallerLineNumberAttribute 重写</value>
@@ -2094,6 +2130,12 @@
   <data name="ERR_TypeArgsNotAllowed" xml:space="preserve">
     <value>{1}“{0}”不能与类型参数一起使用</value>
   </data>
+  <data name="ERR_EscapeLocal" xml:space="preserve">
+    <value>不能在此上下文中使用本地“{0}”，因为它可能会在其声明范围以外公开引用的变量</value>
+  </data>
+  <data name="ERR_EscapeOther" xml:space="preserve">
+    <value>不能在此上下文中使用表达式，因为它可能在其声明范围以外间接地公开变量</value>
+  </data>
   <data name="ERR_PartialMethodOnlyOneLatent" xml:space="preserve">
     <value>分部方法不能有多个定义声明</value>
   </data>
@@ -2105,6 +2147,9 @@
   </data>
   <data name="ERR_BadAwaitArg" xml:space="preserve">
     <value>“await”要求类型 {0} 包含适当的 GetAwaiter 方法</value>
+  </data>
+  <data name="ERR_EscapeCall2" xml:space="preserve">
+    <value>不能在此上下文中使用“{0}”的结果的成员，因为它可能会其声明范围以外公开由参数 {1} 引用的变量</value>
   </data>
   <data name="ERR_MemberReserved" xml:space="preserve">
     <value>类型“{1}”已保留了一个名为“{0}”的具有相同参数类型的成员</value>
@@ -2202,6 +2247,9 @@
   <data name="WRN_NonObsoleteOverridingObsolete_Title" xml:space="preserve">
     <value>成员将重写过时的成员</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField" xml:space="preserve">
+    <value>无法分配到 {0} '{1}' ，因为它是只读变量</value>
+  </data>
   <data name="ERR_BadAsyncLocalType" xml:space="preserve">
     <value>异步方法不能有按引用局部变量</value>
   </data>
@@ -2235,6 +2283,9 @@
   <data name="ERR_PatternIsSubsumed" xml:space="preserve">
     <value>switch case 已被上一事例处理。</value>
   </data>
+  <data name="ERR_EscapeCall" xml:space="preserve">
+    <value>不能在此上下文中使用“{0}”的结果，因为它可能会其声明范围以外公开由参数 {1} 引用的变量</value>
+  </data>
   <data name="ERR_ForwardedTypeIsNested" xml:space="preserve">
     <value>类型“{0}”是“{1}”的嵌套类型，无法转发</value>
   </data>
@@ -2258,6 +2309,9 @@
   </data>
   <data name="ERR_CantOverrideBogusMethod" xml:space="preserve">
     <value>“{0}”: 无法重写“{1}”，因为该语言不支持它</value>
+  </data>
+  <data name="ERR_BadParameterModifiers" xml:space="preserve">
+    <value>参数修饰符“{0}”不能与“{1}”一起使用</value>
   </data>
   <data name="ERR_NonInvocableMemberCalled" xml:space="preserve">
     <value>不可调用的成员“{0}”不能像方法一样使用。</value>
@@ -2391,6 +2445,9 @@
   <data name="ERR_BadEmptyThrow" xml:space="preserve">
     <value>无参数的 throw 语句不允许在 catch 子句之外使用</value>
   </data>
+  <data name="ERR_BadSpecialByRefIterator" xml:space="preserve">
+    <value>foreach 语句无法在类型“{0}”的枚举器上使用异步或迭代器方法操作，因为“{0}”是 ref 结构。</value>
+  </data>
   <data name="WRN_UnreferencedEvent" xml:space="preserve">
     <value>从不使用事件“{0}”</value>
   </data>
@@ -2448,6 +2505,9 @@
   <data name="ERR_InvalidSpecifier" xml:space="preserve">
     <value>“{0}”不是有效的格式说明符</value>
   </data>
+  <data name="ERR_RefConditionalAndAwait" xml:space="preserve">
+    <value>不能在包含 ref 条件运算符的表达式中使用 "await"</value>
+  </data>
   <data name="ERR_DuplicateImportSimple" xml:space="preserve">
     <value>已导入具有相同简单名称“{0}”的程序集。请尝试删除这些引用之一(例如“{1}”)，或对它们进行签名以并行启用。</value>
   </data>
@@ -2490,6 +2550,9 @@
   <data name="ERR_ExternAliasNotAllowed" xml:space="preserve">
     <value>“外部别名”在此上下文中无效</value>
   </data>
+  <data name="ERR_RefConditionalNeedsTwoRefs" xml:space="preserve">
+    <value>这两个条件运算符的值必须都是 ref 值或者都不是 ref 值</value>
+  </data>
   <data name="ERR_NoPIANestedType" xml:space="preserve">
     <value>无法嵌入类型“{0}”，因为它是嵌套类型。请考虑将“嵌入互操作类型”属性设置为 false。</value>
   </data>
@@ -2507,9 +2570,6 @@
   </data>
   <data name="IDS_XMLNOINCLUDE" xml:space="preserve">
     <value>未找到下列包含标记的匹配元素 </value>
-  </data>
-  <data name="ERR_FeatureIsExperimental" xml:space="preserve">
-    <value>功能“{0}”是不受支持的实验性功能；使用“/features:{1}”来实现。</value>
   </data>
   <data name="WRN_EqualsWithoutGetHashCode_Title" xml:space="preserve">
     <value>类型重写 Object.Equals(object o)，但不重写 Object.GetHashCode()</value>
@@ -2582,6 +2642,9 @@
   </data>
   <data name="WRN_AttributeIgnoredWhenPublicSigning_Title" xml:space="preserve">
     <value>指定公共签名时，将忽略特性。</value>
+  </data>
+  <data name="ERR_TypeReserved" xml:space="preserve">
+    <value>类型名称“{0}”是保留给编译器使用的。</value>
   </data>
   <data name="ERR_QueryInnerKey" xml:space="preserve">
     <value>名称“{0}”不在“equals”右侧的范围中。请考虑交换“equals”两侧的表达式。</value>
@@ -2764,6 +2827,9 @@
   <data name="ERR_BadAttributeArgument" xml:space="preserve">
     <value>特性实参必须是特性形参类型的常量表达式、typeof 表达式或数组创建表达式</value>
   </data>
+  <data name="IDS_FeatureReadOnlyStructs" xml:space="preserve">
+    <value>只读结构</value>
+  </data>
   <data name="IDS_ThrowExpression" xml:space="preserve">
     <value>&lt;throw 表达式&gt;</value>
   </data>
@@ -2908,6 +2974,9 @@
   <data name="ERR_ReadonlyValueTypeInObjectInitializer" xml:space="preserve">
     <value>无法使用对象初始值设定项为类型为“{1}”的只读字段“{0}”的成员赋值，因为它是值类型</value>
   </data>
+  <data name="ERR_FieldlikeEventsInRoStruct" xml:space="preserve">
+    <value>在只读结构中不允许类似字段的事件。</value>
+  </data>
   <data name="ERR_BadAsyncLacksBody" xml:space="preserve">
     <value>只能在具有正文的方法中使用 "async" 修饰符。</value>
   </data>
@@ -2954,7 +3023,7 @@
     <value>应为一个长度为“{0}”的数组初始值设定项</value>
   </data>
   <data name="ERR_RefReturnReadonly" xml:space="preserve">
-    <value>只读字段无法按引用返回</value>
+    <value>只读字段无法通过可写的引用返回</value>
   </data>
   <data name="ERR_V6SwitchGoverningTypeValueExpected" xml:space="preserve">
     <value>switch 表达式或事例标签必须是 bool、char、string、integral、enum 或 C#6 及更早版本中相应的可以为 null 的类型。</value>
@@ -2988,9 +3057,6 @@
   </data>
   <data name="ERR_AnonymousTypePropertyAssignedBadValue" xml:space="preserve">
     <value>无法将“{0}”分配给匿名类型属性</value>
-  </data>
-  <data name="ERR_OverloadRefOutCtor" xml:space="preserve">
-    <value>无法定义重载的构造函数“{0}”，因为它与另一构造函数仅在 ref 和 out 上存在不同</value>
   </data>
   <data name="ERR_CantOpenFileWrite" xml:space="preserve">
     <value>无法打开“{0}”进行写入 --“{1}”</value>
@@ -3045,9 +3111,6 @@
   </data>
   <data name="ERR_ConstValueRequired" xml:space="preserve">
     <value>常量字段要求提供一个值</value>
-  </data>
-  <data name="ERR_RefReturnReceiver" xml:space="preserve">
-    <value>无法按引用返回“{0}”，因为其接收器不能按引用返回</value>
   </data>
   <data name="WRN_BadRestoreNumber" xml:space="preserve">
     <value>“CS{0}”警告已被全局禁用，无法还原</value>
@@ -3136,7 +3199,7 @@
     <value>在“{0}”和“{1}”之间具有二义性</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
-    <value>Local function is declared but never used</value>
+    <value>已声明本地函数，但从未使用过</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>命令行语法错误: 选项“{1}”缺少 Guid</value>
@@ -3215,146 +3278,146 @@
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# Compiler Options
+                              Visual C# 编译器选项
 
-                        - OUTPUT FILES -
- /out:&lt;file&gt;                   Specify output file name (default: base name of
-                               file with main class or first file)
- /target:exe                   Build a console executable (default) (Short
-                               form: /t:exe)
- /target:winexe                Build a Windows executable (Short form:
+                        - 输出文件 -
+ /out:&lt;file&gt;                   指定输出文件名称(默认: 具有主类的文件或
+                               第一个文件的基名称)
+ /target:exe                   生成控制台可执行文件(默认)(缩
+                               写: /t:exe)
+ /target:winexe                生成 Windows 可执行文件(缩写: 
                                /t:winexe)
- /target:library               Build a library (Short form: /t:library)
- /target:module                Build a module that can be added to another
-                               assembly (Short form: /t:module)
- /target:appcontainerexe       Build an Appcontainer executable (Short form:
+ /target:library               生成库(缩写: /t:library)
+ /target:module                生成可添加到另一个程序集的
+                               模块(缩写: /t:module)
+ /target:appcontainerexe       生成 Appcontainer 可执行文件(缩写: 
                                /t:appcontainerexe)
- /target:winmdobj              Build a Windows Runtime intermediate file that
-                               is consumed by WinMDExp (Short form: /t:winmdobj)
- /doc:&lt;file&gt;                   XML Documentation file to generate
- /refout:&lt;file&gt;                Reference assembly output to generate
- /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
-                               Itanium, x64, arm, anycpu32bitpreferred, or
-                               anycpu. The default is anycpu.
+ /target:winmdobj              生成 WinMDExp 使用的
+                               Windows 运行时中间文件(缩写: /t:winmdobj)
+ /doc:&lt;file&gt;                   要生成的 XML 文档文件
+ /refout:&lt;file&gt;                要生成的引用程序集输出
+ /platform:&lt;string&gt;            限制此代码可以在其上运行的平台: x86、
+                               Itanium、x64、arm、anycpu32bitpreferred 或
+                               anycpu。默认平台为 anycpu。
 
-                        - INPUT FILES -
- /recurse:&lt;wildcard&gt;           Include all files in the current directory and
-                               subdirectories according to the wildcard
-                               specifications
- /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
-                               file using the given alias (Short form: /r)
- /reference:&lt;file list&gt;        Reference metadata from the specified assembly
-                               files (Short form: /r)
- /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
- /link:&lt;file list&gt;             Embed metadata from the specified interop
-                               assembly files (Short form: /l)
- /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
-                               (Short form: /a)
- /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
-                               generation but may be used by analyzers for producing
-                               errors or warnings.
- /embed                        Embed all source files in the PDB.
- /embed:&lt;file list&gt;            Embed specific files in the PDB
+                        - 输入文件 -
+ /recurse:&lt;wildcard&gt;           根据通配符规范包括当前目录和
+                               子目录中的所有
+                               文件
+ /reference:&lt;alias &gt;=&lt;file&gt;     使用给定别名从指定程序集
+                               引用元数据(缩写: /r)
+ /reference:&lt;file list&gt;        从指定程序集文件引用
+                               元数据(缩写: /r)
+ /addmodule:&lt;file list&gt;        将指定模块链接到此程序集中
+ /link:&lt;file list&gt;             嵌入指定互操作程序集文件中的
+                               元数据(缩写: /l)
+ /analyzer:&lt;file list&gt;         运行此程序集中的分析器
+                               (缩写: /a)
+ /additionalfile:&lt;file list&gt;   不会直接影响代码生成
+                               但可能被分析器用于生成
+                               错误或警告的其他文件。
+ /embed                        嵌入 PDB 中的所有源文件。
+ /embed:&lt;file list&gt;            嵌入 PDB 中的特定文件
 
-                        - RESOURCES -
- /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
- /win32icon:&lt;file&gt;             Use this icon for the output
- /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
- /nowin32manifest              Do not include the default Win32 manifest
- /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
- /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
-                               (Short form: /linkres) Where the resinfo format
-                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
+                        - 资源 -
+ /win32res:&lt;file&gt;              指定 Win32 资源文件(.res)
+ /win32icon:&lt;file&gt;             使用此图标输出
+ /win32manifest:&lt;file&gt;         指定 Win32 清单文件(.xml)
+ /nowin32manifest              不包括默认的 Win32 清单
+ /resource:&lt;resinfo&gt;           嵌入指定资源(缩写: /res)
+ /linkresource:&lt;resinfo&gt;       将指定资源链接到此程序集
+                               (缩写: /linkres)其中 resinfo 的格式
+                               是 &lt;文件&gt;[,&lt;字符串名称&gt;[,public|private]]
 
-                        - CODE GENERATION -
- /debug[+|-]                   Emit debugging information
+                        - 代码生成 -
+ /debug[+|-]                   发出调试信息
  /debug:{full|pdbonly|portable|embedded}
-                               Specify debugging type ('full' is default,
-                               'portable' is a cross-platform format,
-                               'embedded' is a cross-platform format embedded into
-                               the target .dll or .exe)
- /optimize[+|-]                Enable optimizations (Short form: /o)
- /deterministic                Produce a deterministic assembly
-                               (including module version GUID and timestamp)
- /refonly                      Produce a reference assembly in place of the main output
- /instrument:TestCoverage      Produce an assembly instrumented to collect
-                               coverage information
- /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
+                               指定调试类型(默认为 "full"，
+                               "portable" 为跨平台格式，
+                               "embedded" 为嵌入目标 .dll 或 .exe 的
+                               跨平台格式)
+ /optimize[+|-]                启用优化(缩写: /o)
+ /deterministic                生成确定性的程序集
+                               (包括模块版本 GUID 和时间戳)
+ /refonly                      生成引用程序集来替换主要输出
+ /instrument:TestCoverage      生成对其检测以收集覆盖率信息的
+                               程序集
+ /sourcelink:&lt;file&gt;            要嵌入到 PDB 中的源链接信息。
 
-                        - ERRORS AND WARNINGS -
- /warnaserror[+|-]             Report all warnings as errors
- /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
- /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
- /nowarn:&lt;warn list&gt;           Disable specific warning messages
- /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
-                               diagnostics.
- /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
-                               diagnostics.
- /reportanalyzer               Report additional analyzer information, such as
-                               execution time.
+                        - 错误和警告 -
+ /warnaserror[+|-]             将所有警告报告为错误
+ /warnaserror[+|-]:&lt;warn list&gt; 将特定警告报告为错误
+ /warn:&lt;n&gt;                     设置警告级别(0-4)(缩写: /w)
+ /nowarn:&lt;warn list&gt;           禁用特定警告消息
+ /ruleset:&lt;file&gt;               指定禁用特定诊断的
+                               规则集文件。
+ /errorlog:&lt;file&gt;              指定用于记录所有编译器和分析器诊断的
+                               文件。
+ /reportanalyzer               报告其他分析器信息，如
+                               执行时间。
+ 
+                        - 语言 -
+ /checked[+|-]                 生成溢出检查
+ /unsafe[+|-]                  允许 "unsafe" 代码
+ /define:&lt;symbol list&gt;         定义条件编译符号(缩 
+                               写: /d)
+ /langversion:?                显示允许的语言版本值
+ /langversion:&lt;string&gt;         指定语言版本，如
+                               “default” (最新主要版本)、
+                               “latest” (最新版本，包括次要版本)
+                               或 “6”、”7.1”等特定版本
 
-                        - LANGUAGE -
- /checked[+|-]                 Generate overflow checks
- /unsafe[+|-]                  Allow 'unsafe' code
- /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
-                               form: /d)
- /langversion:?                Display the allowed values for language version
- /langversion:&lt;string&gt;         Specify language version such as
-                               `default` (latest major version), or
-                               `latest` (latest version, including minor versions),
-                               or specific versions like `6` or `7.1`
+                        - 安全 -
+ /delaysign[+|-]               仅使用强名称密钥的公共部分对程序集
+                               进行延迟签名
+ /publicsign[+|-]              仅使用强名称密钥的公共部分对程序集
+                               进行公共签名
+ /keyfile:&lt;file&gt;               指定强名称密钥文件
+ /keycontainer:&lt;string&gt;        指定强名称密钥容器
+ /highentropyva[+|-]           启用高平均信息量 ASLR
 
-                        - SECURITY -
- /delaysign[+|-]               Delay-sign the assembly using only the public
-                               portion of the strong name key
- /publicsign[+|-]              Public-sign the assembly using only the public
-                               portion of the strong name key
- /keyfile:&lt;file&gt;               Specify a strong name key file
- /keycontainer:&lt;string&gt;        Specify a strong name key container
- /highentropyva[+|-]           Enable high-entropy ASLR
+                        - 杂项 -
+ @&lt;file&gt;                       读取响应文件以获取更多选项
+ /help                         显示此用法消息(缩写: /?)
+ /nologo                       取消显示编译器版权消息
+ /noconfig                     不自动包括 CSC.RSP 文件
+ /parallel[+|-]                并发生成。
+ /version                      显示编译器版本号并退出。
 
-                        - MISCELLANEOUS -
- @&lt;file&gt;                       Read response file for more options
- /help                         Display this usage message (Short form: /?)
- /nologo                       Suppress compiler copyright message
- /noconfig                     Do not auto include CSC.RSP file
- /parallel[+|-]                Concurrent build.
- /version                      Display the compiler version number and exit.
-
-                        - ADVANCED -
- /baseaddress:&lt;address&gt;        Base address for the library to be built
- /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
-                               checksum stored in PDB. Supported values are:
-                               SHA1 (default) or SHA256.
- /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
-                               files
- /utf8output                   Output compiler messages in UTF-8 encoding
- /main:&lt;type&gt;                  Specify the type that contains the entry point
-                               (ignore all other possible entry points) (Short
-                               form: /m)
- /fullpaths                    Compiler generates fully qualified paths
- /filealign:&lt;n&gt;                Specify the alignment used for output file
-                               sections
+                        - 高级 -
+ /baseaddress:&lt;address&gt;        要生成的库的基址
+ /checksumalgorithm:&lt;alg&gt;      指定计算存储在 PDB 中的源文件
+                               校验和的算法。支持的值是:
+                               SHA1 (默认)或 SHA256。
+ /codepage:&lt;n&gt;                 指定打开源文件时要使用的
+                               代码页
+ /utf8output                   以 UTF-8 编码格式输出编译器消息
+ /main:&lt;type&gt;                  指定包含入口点的类型
+                               (忽略所有其他可能的入口点)(缩 
+                               写: /m)
+ /fullpaths                    编译器生成完全限定路径
+ /filealign:&lt;n&gt;                指定用于输出文件节的
+                               对齐方式
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Specify a mapping for source path names output by
-                               the compiler.
- /pdb:&lt;file&gt;                   Specify debug information file name (default:
-                               output file name with .pdb extension)
- /errorendlocation             Output line and column of the end location of
-                               each error
- /preferreduilang              Specify the preferred output language name.
- /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
- /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
- /lib:&lt;file list&gt;              Specify additional directories to search in for
-                               references
- /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
-                               prompt, send, queue, or none. The default is
-                               queue.
- /appconfig:&lt;file&gt;             Specify an application configuration file
-                               containing assembly binding settings
- /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
-                               a part of
- /modulename:&lt;string&gt;          Specify the name of the source module
+                               通过编译器指定源路径名称输出的
+                               映射。
+ /pdb:&lt;file&gt;                   指定调试信息文件名称(默认: 
+                               具有 .pdb 扩展名的输出文件名)
+ /errorendlocation             输出每个错误的结束位置
+                               行和列
+ /preferreduilang              指定首选输出语言名称。
+ /nostdlib[+|-]                不引用标准库(mscorlib.dll)
+ /subsystemversion:&lt;string&gt;    指定此程序集的子系统版本
+ /lib:&lt;file list&gt;              指定要在其中搜索引用的附加
+                               目录
+ /errorreport:&lt;string&gt;         指定如何处理内部编译器错误:
+                               prompt、send、queue 或 none。默认为
+                               queue。
+ /appconfig:&lt;file&gt;             指定包含程序集绑定设置的
+                               应用程序配置文件
+ /moduleassemblyname:&lt;string&gt;  此模块所属程序集
+                               的名称
+ /modulename:&lt;string&gt;          指定源模块的名称
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3372,9 +3435,6 @@
   <data name="ERR_InvalidSignaturePublicKey" xml:space="preserve">
     <value>在 AssemblySignatureKeyAttribute 中指定的签名公钥无效。</value>
   </data>
-  <data name="ERR_OverloadRefOut" xml:space="preserve">
-    <value>“{0}”无法定义仅在 ref 和 out 上存在不同的重载方法</value>
-  </data>
   <data name="WRN_TupleLiteralNameMismatch" xml:space="preserve">
     <value>由于目标类型“{1}”指定了其他名称或未指定名称，因此元组元素名称“{0}”被忽略。</value>
   </data>
@@ -3389,9 +3449,6 @@
   </data>
   <data name="ERR_AmbigContext" xml:space="preserve">
     <value>“{0}”是“{1}”和“{2}”之间的不明确的引用</value>
-  </data>
-  <data name="ERR_ParamsCantBeRefOut" xml:space="preserve">
-    <value>params 参数不能声明为 ref 或 out</value>
   </data>
   <data name="WRN_CmdOptionConflictsSource_Title" xml:space="preserve">
     <value>选项重写源文件或添加的模块中给出的特性</value>
@@ -3453,9 +3510,6 @@
   <data name="ERR_NoDynamicPhantomOnBaseCtor" xml:space="preserve">
     <value>构造函数调用需要进行动态调度，但无法如此，因为它是构造函数初始值的一部分。请考虑强制转换动态参数。</value>
   </data>
-  <data name="ERR_RefReturnCall2" xml:space="preserve">
-    <value>无法按引用返回“{0}”的结果的成员，因为传递给形式参数“{1}”的实际参数不能按引用返回</value>
-  </data>
   <data name="ERR_TypeInferenceFailedForImplicitlyTypedOutVariable" xml:space="preserve">
     <value>无法推断出隐式类型化 out 变量“{0}”的类型。</value>
   </data>
@@ -3467,6 +3521,9 @@
   </data>
   <data name="ERR_ImplicitlyTypedVariableMultipleDeclarator" xml:space="preserve">
     <value>隐式类型化的变量不能有多个声明符</value>
+  </data>
+  <data name="ERR_RefReturnReadonlyNotField" xml:space="preserve">
+    <value>不能通过可写的引用返回 {0} '{1}'，因为它是只读变量</value>
   </data>
   <data name="ERR_NamespaceUnexpected" xml:space="preserve">
     <value>命名空间不能直接包含字段或方法之类的成员</value>
@@ -3630,9 +3687,6 @@
   <data name="ERR_InvalidAssemblyCulture" xml:space="preserve">
     <value>程序集区域性字符串可能不包含嵌入式 NUL 字符。</value>
   </data>
-  <data name="ERR_AddrOnReadOnlyLocal" xml:space="preserve">
-    <value>无法获得只读局部变量的地址</value>
-  </data>
   <data name="ERR_PatternNullableType" xml:space="preserve">
     <value>在模式中使用可以为 null 的类型“{0}”是非法的；请改用基础类型“{1}”。</value>
   </data>
@@ -3664,7 +3718,7 @@
     <value>无法应用 CallerMemberNameAttribute，因为不存在从类型“{0}”到类型“{1}”的标准转换</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
+    <value>参数“{0}”不是 ref 或 out 参数，无法按引用返回其成员</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(与前一个错误相关的符号位置)</value>
@@ -3687,8 +3741,8 @@
   <data name="WRN_InvalidSearchPathDir_Title" xml:space="preserve">
     <value>指定的搜索路径无效</value>
   </data>
-  <data name="ERR_RefReturnCall" xml:space="preserve">
-    <value>无法按引用返回“{0}”的结果，因为传递给形式参数“{1}”的实际参数不能按引用返回</value>
+  <data name="ERR_RefReturnThis" xml:space="preserve">
+    <value>不能通过引用返回 "this"。</value>
   </data>
   <data name="ERR_NoCanonicalView" xml:space="preserve">
     <value>找不到与嵌入互操作类型“{0}”相匹配的互操作类型。是否缺少程序集引用?</value>
@@ -3709,7 +3763,7 @@
     <value>无法按引用“{0}”返回参数，因为它不是 ref 或 out 参数</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
+    <value>命名空间中定义的元素无法显式声明为 private、protected、protected internal 或 private protected</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>只有在生成 "module" 目标类型时才能指定 /moduleassemblyname 选项</value>
@@ -3745,7 +3799,7 @@
     <value>“{0}”不是 lock 语句要求的引用类型</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic" xml:space="preserve">
-    <value>静态只读字段无法按引用返回</value>
+    <value>静态只读字段无法通过可写的引用返回</value>
   </data>
   <data name="WRN_CLS_BadInterfaceMember_Title" xml:space="preserve">
     <value>符合 CLS 的接口必须仅有符合 CLS 的成员</value>
@@ -3809,6 +3863,9 @@
   </data>
   <data name="ERR_PropertyLacksGet" xml:space="preserve">
     <value>属性或索引器“{0}”不能用在此上下文中，因为它缺少 get 访问器</value>
+  </data>
+  <data name="ERR_AutoPropsInRoStruct" xml:space="preserve">
+    <value>在只读结构中的自动实现实例属性必须为只读。</value>
   </data>
   <data name="ERR_LanguageVersionCannotHaveLeadingZeroes" xml:space="preserve">
     <value>指定的语言版本“{0}”不能含前导零</value>
@@ -3880,7 +3937,7 @@
     <value>“{0}”定义运算符 == 或运算符 !=，但不重写 Object.GetHashCode()</value>
   </data>
   <data name="IDS_LangVersions" xml:space="preserve">
-    <value>Supported language versions:</value>
+    <value>支持的语言版本:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>二元运算符的参数之一必须是包含类型</value>
@@ -3947,6 +4004,9 @@
   </data>
   <data name="ERR_UnexpectedSemicolon" xml:space="preserve">
     <value>方法或访问器块后面的分号无效</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField2" xml:space="preserve">
+    <value>{0} '{1}' 的成员不能作为 ref 或 out 值使用，因为它是只读变量</value>
   </data>
   <data name="ERR_LocalTypeNameClash" xml:space="preserve">
     <value>嵌入来自程序集“{1}”的互操作类型“{0}”会导致当前程序集中发生名称冲突。请考虑将“嵌入互操作类型”属性设置为 false。</value>
@@ -4050,6 +4110,9 @@
   <data name="ERR_ArrayOfStaticClass" xml:space="preserve">
     <value>“{0}”: 数组元素不能是静态类型的</value>
   </data>
+  <data name="IDS_SK_CONSTRUCTOR" xml:space="preserve">
+    <value>构造函数</value>
+  </data>
   <data name="ERR_InvalidQM" xml:space="preserve">
     <value>无法确定条件表达式的类型，因为“{0}”和“{1}”之间没有隐式转换</value>
   </data>
@@ -4061,6 +4124,9 @@
   </data>
   <data name="ERR_InaccessibleSetter" xml:space="preserve">
     <value>属性或索引器“{0}”不能用在此上下文中，因为 set 访问器不可访问</value>
+  </data>
+  <data name="IConversionExpressionIsNotCSharpConversion" xml:space="preserve">
+    <value>{0} 不是有效的 C# 转换表达式</value>
   </data>
   <data name="ERR_NamedArgumentUsedInPositional" xml:space="preserve">
     <value>命名参数“{0}”指定的形参已被赋予位置参数</value>
@@ -4204,7 +4270,7 @@
     <value>可以多次释放对象“{0}”。</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongRefReturn" xml:space="preserve">
-    <value>“{0}”未实现接口成员“{1}”。“{2}”无法实现“{1}”，因为它不按{3}返回</value>
+    <value>“{0}”未实现接口成员“{1}”。“{2}”无法实现“{1}”，因为它与引用返回不匹配。</value>
   </data>
   <data name="ERR_FixedNeedsLvalue" xml:space="preserve">
     <value>只能通过局部变量或字段访问固定大小缓冲区</value>
@@ -4345,7 +4411,7 @@
     <value>类型参数“{1}”具有 "struct" 约束，因此“{1}”不能用作“{0}”的约束</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
+    <value>未定义或未导入预定义类型“{0}”，或在多个引用的程序集中声明了该类型</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>类型参数不能是 null</value>
@@ -4406,6 +4472,9 @@
   </data>
   <data name="ERR_BadCastInFixed" xml:space="preserve">
     <value>fixed 语句赋值的右边不能是强制转换表达式</value>
+  </data>
+  <data name="IDS_FeatureRefExtensionMethods" xml:space="preserve">
+    <value>ref 扩展方法</value>
   </data>
   <data name="ERR_AssgReadonly2" xml:space="preserve">
     <value>无法修改只读字段“{0}”的成员(在构造函数或变量初始值设定项中除外)</value>
@@ -4503,6 +4572,9 @@
   <data name="ERR_ComRefCallInExpressionTree" xml:space="preserve">
     <value>表达式树 lambda 不能包含参数中省略 ref 的 COM 调用</value>
   </data>
+  <data name="ERR_ParamsCantBeWithModifier" xml:space="preserve">
+    <value>params 参数不能声明为 {0}</value>
+  </data>
   <data name="ERR_BadForeachDecl" xml:space="preserve">
     <value>在 foreach 语句中，类型和标识符都是必需的</value>
   </data>
@@ -4510,7 +4582,7 @@
     <value>参数 {0}: 无法从“{1}”转换为“{2}”</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
+    <value>命名参数规范必须出现在所有固定参数都已指定完毕后。请使用语言版本 {0} 或更高版本，以允许非尾随命名参数。</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>方法“{1}”的类型参数“{0}”的约束必须与接口方法“{3}”的类型参数“{2}”的约束相匹配。请考虑改用显式接口实现。</value>
@@ -4532,6 +4604,9 @@
   </data>
   <data name="ERR_UnexpectedToken" xml:space="preserve">
     <value>意外标记“{0}”</value>
+  </data>
+  <data name="ERR_RefConditionalDifferentTypes" xml:space="preserve">
+    <value>表达式必须为与替代 ref 值相匹配的类型“{0}”</value>
   </data>
   <data name="ERR_CantDeriveFromSealedType" xml:space="preserve">
     <value>“{0}”: 无法从密封类型“{1}”派生</value>
@@ -4620,6 +4695,9 @@
   <data name="ERR_IllegalFixedType" xml:space="preserve">
     <value>固定大小的缓冲区类型必须为下列类型之一: bool、byte、short、int、long、char、sbyte、ushort、uint、ulong、float 或 double</value>
   </data>
+  <data name="ERR_CallArgMixing" xml:space="preserve">
+    <value>不允许使用“{0}”的这种参数组合，因为它可能会在其声明范围之外公开由参数 {1} 引用的变量</value>
+  </data>
   <data name="ERR_ConstOutOfRange" xml:space="preserve">
     <value>常量值“{0}”无法转换为“{1}”</value>
   </data>
@@ -4672,7 +4750,7 @@
     <value>功能“{0}”在 C# 6 中不可用。请使用 {1} 或更高的语言版本。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7" xml:space="preserve">
-    <value>功能“{0}”在 C# 7 中不可用。请使用 {1} 或更高的语言版本。</value>
+    <value>C# 7.0 中不支持功能“{0}”。请使用 {1} 或更高的语言版本。</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion4" xml:space="preserve">
     <value>功能“{0}”在 C# 4 中不可用。请使用 {1} 或更高的语言版本。</value>
@@ -4760,6 +4838,9 @@
   </data>
   <data name="ERR_SubexpressionNotInNameof" xml:space="preserve">
     <value>子表达式不能在 nameof 的参数中使用。</value>
+  </data>
+  <data name="ERR_MismatchedRefEscapeInTernary" xml:space="preserve">
+    <value>ref 三元运算符的分支不能引用具有不兼容的声明范围的变量</value>
   </data>
   <data name="ERR_FixedDimsRequired" xml:space="preserve">
     <value>固定大小缓冲区字段的字段名称后必须带有数组大小说明符</value>
@@ -4913,6 +4994,9 @@
   </data>
   <data name="ERR_PatternDynamicType" xml:space="preserve">
     <value>在模式中使用类型“动态”是不合法的。</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField" xml:space="preserve">
+    <value>不能将 {0} '{1}' 作为 ref 或 out 值使用，因为它是只读变量</value>
   </data>
   <data name="ERR_CallingFinalizeDeprecated" xml:space="preserve">
     <value>无法直接调用析构函数和 object.Finalize。如果可用，请考虑调用 IDisposable.Dispose。</value>
@@ -5092,7 +5176,7 @@
     <value>expression-bodied 索引器</value>
   </data>
   <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
-    <value>'{0}' is a local function and must therefore always have a body.</value>
+    <value>“{0}”是本地函数，因此始终必须具有一个主体。</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>“{0}”: 无法从动态类型派生</value>

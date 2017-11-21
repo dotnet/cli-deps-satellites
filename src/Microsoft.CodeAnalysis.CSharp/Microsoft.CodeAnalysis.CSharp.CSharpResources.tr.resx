@@ -222,6 +222,9 @@
   <data name="WRN_CallerLineNumberPreferredOverCallerMemberName_Title" xml:space="preserve">
     <value>CallerMemberNameAttribute öğesinin etkisi olmayacak; CallerLineNumberAttribute tarafından geçersiz kılındı</value>
   </data>
+  <data name="ERR_RefReturnReadonlyNotField2" xml:space="preserve">
+    <value>{0} '{1}' üyeleri, salt okunur değişken olduğundan yazılabilir başvuru ile döndürülemez</value>
+  </data>
   <data name="ERR_AbstractHasBody" xml:space="preserve">
     <value>Soyut olarak işaretlendiğinden '{0}' bir gövde tanımlayamıyor</value>
   </data>
@@ -300,10 +303,13 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
     <value>Dinamik nesneler ayrıştırılamıyor.</value>
   </data>
   <data name="ERR_RefReturnLvalueExpected" xml:space="preserve">
-    <value>İfade başvuru ile döndürülemeyeceğinden, bu bağlamda bir ifade kullanılamaz</value>
+    <value>Başvuru ile geçirilemeyeceğinden veya döndürülemeyeceğinden, bu bağlamda bir ifade kullanılamaz</value>
   </data>
   <data name="ERR_OneAliasPerReference" xml:space="preserve">
     <value>Bir extern diğer adı bildiren /reference seçeneğinde yalnızca bir dosya adı olabilir. Birden fazla diğer ad veya dosya adı belirtmek için birden fazla /reference seçeneği kullanın.</value>
+  </data>
+  <data name="ERR_StackAllocConversionNotPossible" xml:space="preserve">
+    <value>'{0}' türünde bir stackalloc ifadesinin türü, '{1}' türüne dönüştürülemez.</value>
   </data>
   <data name="ERR_UnclosedExpressionHole" xml:space="preserve">
     <value>'{' ile başlatılan ara değerli bir ifadede eksik '}' kapatma sınırlayıcısı.</value>
@@ -425,9 +431,6 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
   <data name="WRN_InvalidAssemblyName" xml:space="preserve">
     <value>'{0}' derleme başvurusu geçersiz ve çözümlenemez</value>
   </data>
-  <data name="ERR_BadOutWithThis" xml:space="preserve">
-    <value>'out' parametre değiştiricisi 'this' ile kullanılamaz </value>
-  </data>
   <data name="ERR_DeconstructRequiresExpression" xml:space="preserve">
     <value>Ayrıştırma ataması sağ tarafında tür bulunan bir ifade gerektirir.</value>
   </data>
@@ -437,6 +440,9 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
   <data name="ERR_ThisStructNotInAnonMeth" xml:space="preserve">
     <value>Struct içindeki anonim yöntemler, lambda ifadeleri ve sorgu ifadeleri 'this' değişkeninin örnek üyelerine erişemez. Bunun yerine 'this' öğesini anonim yöntemin, lambda ifadesinin veya sorgu ifadesinin dışındaki yerel değişkene kopyalamayı ve yereli kullanmayı deneyin.</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField2" xml:space="preserve">
+    <value>Salt okunur değişken olduğundan bir {0} '{1}' üyesine atama yapılamaz</value>
+  </data>
   <data name="ERR_InterfaceImplementedByConditional" xml:space="preserve">
     <value>'{0}' Conditional üyesi '{2}' türünde '{1}' arabirim üyesini uygulayamaz</value>
   </data>
@@ -444,7 +450,7 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
     <value>'{0}' statik sınıfı '{1}' türünden türeyemez. Statik sınıflar nesneden türemelidir.</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic2" xml:space="preserve">
-    <value>'{0}' statik salt okunur alanına ait alanlar başvuru ile döndürülemez</value>
+    <value>'{0}' statik salt okunur alanına ait alanlar, yazılabilir başvuru ile döndürülemez</value>
   </data>
   <data name="ERR_ForwardedTypeInThisAssembly" xml:space="preserve">
     <value>'{0}' türü bu derlemede tanımlanır, ancak bunun için bir tür ileticisi belirtilir</value>
@@ -471,7 +477,7 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
     <value>'{0}', '{1}' kalıbını uygulamaz. '{2}', '{3}' ile belirsiz.</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
+    <value>/langversion için geçersiz '{0}' seçeneği. Desteklenen değerleri listelemek için '/langversion:?' komutunu kullanın.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>Diğer adla nitelenmiş ad, bir ifade değil.</value>
@@ -717,13 +723,16 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
     <value>Kayan noktalı sabit '{0}' türünün aralığı dışında</value>
   </data>
   <data name="ERR_InvalidDebugInfo" xml:space="preserve">
-    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+    <value>'{2}' bütünleştirilmiş kodundan '{0}' metodunun hata ayıklama bilgileri okunamıyor (belirteç 0x{1:X8}) </value>
   </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>Kodlama olmadan bir kaynak metin için hata ayıklama bilgileri yayılamıyor.</value>
   </data>
   <data name="ERR_BadResourceVis" xml:space="preserve">
     <value>Geçersiz seçenek '{0}'; Kaynak görünürlüğü 'public' veya 'private' olmalıdır</value>
+  </data>
+  <data name="ERR_ExplicitReservedAttr" xml:space="preserve">
+    <value>'{0}' kullanmayın. Bu, derleyici kullanımı için ayrılmıştır.</value>
   </data>
   <data name="WRN_BadRestoreNumber_Title" xml:space="preserve">
     <value>Genel olarak devre dışı bırakıldığından uyarı geri yüklenemiyor</value>
@@ -741,7 +750,7 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
     <value>'{0}' öğesi için bir bitiş etiketi bekleniyor.</value>
   </data>
   <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
-    <value>leading digit separator</value>
+    <value>ilk basamak ayıracı</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>nameof işlecinde tür bağımsız değişkenlerine izin verilmez.</value>
@@ -860,6 +869,9 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
   <data name="ERR_BadVisReturnType" xml:space="preserve">
     <value>Tutarsız erişilebilirlik: '{1}' dönüş türü, '{0}' yönteminden daha az erişilebilir</value>
   </data>
+  <data name="ERR_FieldsInRoStruct" xml:space="preserve">
+    <value>Salt okunur yapı birimlerinin örnek alanları salt okunur olmalıdır.</value>
+  </data>
   <data name="UseLiteralForTokens" xml:space="preserve">
     <value>Değişmez değerli karakter belirteçleri oluşturmak için Microsoft.CodeAnalysis.CSharp.SyntaxFactory.Literal öğesini kullanın.</value>
   </data>
@@ -882,13 +894,13 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
     <value>'{1}' bütünleştirilmiş kodundaki '{0}' türü, gömülü birlikte çalışma türü olan bir genel tür bağımsız değişkeni içerdiğinden bütünleştirilmiş kod sınırları arasında kullanılamaz.</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
-    <value>The local function '{0}' is declared but never used</value>
+    <value>'{0}' yerel değişkeni tanımlı ancak hiç kullanılmadı</value>
   </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>As işleci bir başvuru türüyle veya null olabilen bir türle birlikte kullanılmalıdır ('{0}', null olamayan bir değer türüdür)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>The abstract {0} '{1}' cannot be marked virtual</value>
+    <value>Soyut {0} '{1}' sanal olarak işaretlenemiyor</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>'{0}': statik sınıflar kullanıcı tanımlı işleçler içeremez</value>
@@ -1031,6 +1043,9 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
   <data name="ERR_BadAwaitWithoutAsyncLambda" xml:space="preserve">
     <value>'Await' işleci yalnızca zaman uyumsuz bir {0} ile kullanılabilir. Bu {0} öğesini 'async' değiştiricisi ile işaretlemeyi düşünün.</value>
   </data>
+  <data name="ERR_RefExtensionMustBeValueTypeOrConstrainedToOne" xml:space="preserve">
+    <value>'ref' genişletme metodu '{0}' için ilk parametre, değer türünde veya struct ile kısıtlanmış genel türde olmalıdır.</value>
+  </data>
   <data name="ChainingSpeculativeModelIsNotSupported" xml:space="preserve">
     <value>Kurgusal anlam modelini zincirleme desteklenmiyor. Kurgusal olmayan ParentModel öğesinden kurgusal bir model oluşturmalısınız.</value>
   </data>
@@ -1041,7 +1056,7 @@ RuntimeCompatibilityAttribute AssemblyInfo.cs dosyasında false olarak ayarlanm�
     <value>Filtre ifadesi bir sabittir, filtreyi kaldırmayı deneyin</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
-    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+    <value>'{0}' özelliği C# 7.2'de kullanılamaz. Lütfen {1} veya daha yüksek bir dil sürümü kullanın.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>'{0}' özelliği C# 7.1'de kullanılamıyor. Lütfen {1} veya daha yüksek dil sürümünü kullanın.</value>
@@ -1125,7 +1140,7 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
     <value>'{0}' üyesi, erişilebilir bir üyeyi gizlemez. Yeni anahtar sözcük gerekli değil.</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+    <value>Adlandırılmış bağımsız değişken belirtimleri, sabit bağımsız değişkenlerin tümü dinamik çağrıyla belirtildikten sonra yer görüntülenmelidir.</value>
   </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>#pragma uyarı önişlemcisi yönergesine geçirilen bir sayı geçerli bir uyarı sayısı değildi. Sayının bir hatayı değil, bir uyarıyı temsil ettiğini doğrulayın.</value>
@@ -1146,13 +1161,13 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
     <value>#r öğesine yalnızca komut dosyalarında izin verilir</value>
   </data>
   <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
-    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
+    <value>Dinamik türde bağımsız değişken, gösterilen türde bağımsız değişkenleri olan genel '{0}' yerel işlevine geçirilemez.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>Sözdizimi ağacı zaten var</value>
   </data>
-  <data name="ERR_BadRefWithThis" xml:space="preserve">
-    <value>'ref' parametre değiştiricisi 'this' ile kullanılamaz </value>
+  <data name="ERR_BadParameterModifiersOrder" xml:space="preserve">
+    <value>'{0}' parametre değiştiricisi, '{1}' değiştiricisinden sonra kullanılamaz</value>
   </data>
   <data name="ERR_InvalidOutputName" xml:space="preserve">
     <value>Geçersiz çıkış adı: {0}</value>
@@ -1241,6 +1256,9 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
   <data name="ERR_ExternHasConstructorInitializer" xml:space="preserve">
     <value>'{0}' extern ise oluşturucu başlatıcısına sahip olamaz</value>
   </data>
+  <data name="IDS_StackAllocExpression" xml:space="preserve">
+    <value>stackalloc {0}[{1}]</value>
+  </data>
   <data name="ERR_AutoPropertyCannotBeRefReturning" xml:space="preserve">
     <value>Otomatik olarak uygulanan özellikler başvuru ile döndürülemez</value>
   </data>
@@ -1301,6 +1319,9 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
   <data name="ERR_BadTypeforThis" xml:space="preserve">
     <value>Genişletme yönteminin ilk parametresi '{0}' türünde olamaz</value>
   </data>
+  <data name="IDS_FeatureReadOnlyReferences" xml:space="preserve">
+    <value>salt okunur başvurular</value>
+  </data>
   <data name="ERR_BadSKunknown" xml:space="preserve">
     <value>'{0}' verilen bağlamda geçerli olmayan bir {1} öğesidir</value>
   </data>
@@ -1343,11 +1364,14 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>Geçersiz başvuru diğer adı seçeneği: '{0}=' -- dosya adı eksik</value>
   </data>
+  <data name="ERR_FieldAutoPropCantBeByRefLike" xml:space="preserve">
+    <value>Bir başvuru yapı biriminin örnek üyesi olmadığı sürece alan veya otomatik uygulanan özellik, '{0}' türünde olamaz.</value>
+  </data>
   <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
-    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+    <value>'{0}' adlandırılmış bağımsız değişkeni, pozisyonu dışında kullanıldı ancak ardından adlandırılmamış bir bağımsız değişken geliyor</value>
   </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
-    <value>Salt okunur '{0}' alanının üyeleri başvuru ile döndürülemez</value>
+    <value>'{0}' salt okunur alanının üyeleri, yazılabilir başvuru ile döndürülemez</value>
   </data>
   <data name="ERR_BadDynamicMethodArg" xml:space="preserve">
     <value>'{0}' türündeki bir ifade dinamik olarak dağıtılan işlemin bağımsız değişkeni olarak kullanılamaz.</value>
@@ -1371,7 +1395,7 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
     <value>Bir Windows Çalışma Zamanı olayı out veya ref parametresi olarak geçirilemeyebilir.</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
+    <value>'{0}' türünün örneği iç içe geçmiş bir işlevde, sorgu ifadesinde, yineleyici bloğunda veya zaman uyumsuz bir metotta kullanılamaz</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>'{0}, '{1}' arabirim üyesini uygulamıyor. '{3}' eşleşen dönüş türüne sahip olmadığından '{2}' '{1}' öğesini uygulayamaz.</value>
@@ -1445,6 +1469,9 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
   <data name="WRN_RefCultureMismatch_Title" xml:space="preserve">
     <value>Başvurulan derleme farklı kültür ayarına sahip</value>
   </data>
+  <data name="ERR_InExtensionMustBeValueType" xml:space="preserve">
+    <value>'in' genişletme metodu '{0}' için ilk parametre, değer türünde olmalıdır.</value>
+  </data>
   <data name="ERR_NoConversionForNubDefaultParam" xml:space="preserve">
     <value>'{0}' basit bir tür olmadığından, '{0}' türündeki bir değer null yapılabilir '{1}' parametresi için varsayılan parametre olarak kullanılamaz</value>
   </data>
@@ -1516,6 +1543,9 @@ Yalnızca asenkron çağrının tamamlanmasını beklemek istemediğinizden ve �
   </data>
   <data name="ThisMethodCanOnlyBeUsedToCreateTokens" xml:space="preserve">
     <value>Bu yöntem yalnızca belirteç oluşturmak için kullanılabilir - {0} bir belirteç türü değildir.</value>
+  </data>
+  <data name="ERR_OverloadRefKind" xml:space="preserve">
+    <value>'{0}', yalnızca '{2}' ve '{3}' parametre değiştiricilerinde değişen aşırı yüklenmiş bir {1} tanımlayamaz</value>
   </data>
   <data name="ERR_NameNotInContextPossibleMissingReference" xml:space="preserve">
     <value>'{0}' adı geçerli bağlamda yok ('{1}' derlemesine başvurunuz mu eksik?)</value>
@@ -1710,9 +1740,6 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="ERR_IntegralTypeValueExpected" xml:space="preserve">
     <value>Tam sayı türünde bir değer bekleniyor</value>
   </data>
-  <data name="ERR_MultiParamMod" xml:space="preserve">
-    <value>Bir parametre tüm belirtilen değiştiricilere sahip olamaz; parametrede çok fazla değiştirici var</value>
-  </data>
   <data name="ERR_NotYetImplementedInRoslyn" xml:space="preserve">
     <value>Bu dil özelliği ('{0}') henüz uygulanmadı.</value>
   </data>
@@ -1812,6 +1839,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="ERR_ClassDoesntImplementInterface" xml:space="preserve">
     <value>'{0}': içeren tür '{1}' arabirimini uygulamıyor</value>
   </data>
+  <data name="ERR_RefStructInterfaceImpl" xml:space="preserve">
+    <value>'{0}': başvuru yapı birimleri arabirim uygulayamaz</value>
+  </data>
   <data name="ERR_QueryNoProviderStandard" xml:space="preserve">
     <value>'{0}' sorgu türü için sorgu deseninin bir uygulaması bulunamadı.  '{1}' bulunamadı. Bir 'System.Core.dll' başvurusunu mu unuttunuz veya bir 'System.Linq' yönergesi mi kullanıyorsunuz?</value>
   </data>
@@ -1836,6 +1866,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="WRN_TooManyLinesForDebugger_Title" xml:space="preserve">
     <value>Kaynak dosyası PDB'de görüntülenebilecek 16.707.565 satır sınırını aştı; hata ayıklama bilgileri hatalı olacak</value>
   </data>
+  <data name="IDS_FeatureRefStructs" xml:space="preserve">
+    <value>başvuru yapı birimleri</value>
+  </data>
   <data name="ERR_AutoPropertyInitializerInInterface" xml:space="preserve">
     <value>Arabirimlerin içine otomatik olarak uygulanan özelliklerin başlatıcıları olamaz.</value>
   </data>
@@ -1852,7 +1885,7 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
     <value>Artırma veya azaltma işlecinin işleyicisi bir değişken, özellik veya dizin erişimcisi olmalıdır</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed switch is only supported when emitting a PDB.</value>
+    <value>/embed anahtarı yalnızca PDB yayınlanırken desteklenir.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>'{0}' hem dış hem soyut olamaz</value>
@@ -1889,6 +1922,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   </data>
   <data name="ERR_MustHaveRefReturn" xml:space="preserve">
     <value>Değer ile dönüşler yalnızca değer ile döndürülen metotlarda kullanılabilir</value>
+  </data>
+  <data name="ERR_EscapeStackAlloc" xml:space="preserve">
+    <value>'{0}' türündeki bir stackalloc ifadesinin sonucu, içerik metodunun dışında kullanıma sunulabileceğinden bu bağlamda kullanılamaz</value>
   </data>
   <data name="ERR_InvalidFwdType" xml:space="preserve">
     <value>TypeForwardedTo özniteliği için bağımsız değişken olarak geçersiz tür belirtildi</value>
@@ -2077,7 +2113,7 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
     <value>'{0}' sınıf türü kısıtlaması tüm diğer kısıtlamalardan önce gelmelidir</value>
   </data>
   <data name="ERR_CantChangeRefReturnOnOverride" xml:space="preserve">
-    <value>Geçersiz kılınan '{1}' üyesi ile eşleşmesi için '{0}' öğesinin {2}başvuru ile dönmesi gerekir</value>
+    <value>'{0}', '{1}' üyesinin başvuru dönüşüyle eşleşmelidir</value>
   </data>
   <data name="WRN_CallerLineNumberPreferredOverCallerFilePath_Title" xml:space="preserve">
     <value>CallerFilePathAttribute öğesinin etkisi olmayacak; CallerLineNumberAttribute tarafından geçersiz kılındı</value>
@@ -2094,6 +2130,12 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="ERR_TypeArgsNotAllowed" xml:space="preserve">
     <value>{1} '{0}' öğesi, tür bağımsız değişkenleri ile kullanılamaz</value>
   </data>
+  <data name="ERR_EscapeLocal" xml:space="preserve">
+    <value>Yerel '{0}', başvurulan değişkenleri kendi bildirim kapsamı dışında kullanıma sunabileceğinden bu bağlamda kullanılamaz</value>
+  </data>
+  <data name="ERR_EscapeOther" xml:space="preserve">
+    <value>İfade, değişkenleri kendi bildirim kapsamı dışında dolaylı olarak kullanıma sunabileceğinden bu bağlamda kullanılamaz</value>
+  </data>
   <data name="ERR_PartialMethodOnlyOneLatent" xml:space="preserve">
     <value>Kısmi yöntemin birden fazla tanımlama bildirimi olamaz</value>
   </data>
@@ -2105,6 +2147,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   </data>
   <data name="ERR_BadAwaitArg" xml:space="preserve">
     <value>'await' {0} türünün uygun bir GetAwaiter yöntemi olmasını gerektirir</value>
+  </data>
+  <data name="ERR_EscapeCall2" xml:space="preserve">
+    <value>'{0}' sonucunun üyesi, '{1}' parametresi tarafından başvurulan değişkenleri kendi bildirim kapsamı dışında kullanıma sunabileceğinden bu bağlamda kullanılamaz</value>
   </data>
   <data name="ERR_MemberReserved" xml:space="preserve">
     <value>'{1}' türü aynı parametre türlerine sahip '{0}' adlı bir üyeyi zaten ayırıyor</value>
@@ -2202,6 +2247,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="WRN_NonObsoleteOverridingObsolete_Title" xml:space="preserve">
     <value>Üye eski üyeyi geçersiz kılar</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField" xml:space="preserve">
+    <value>Salt okunur değişken olduğundan {0} '{1}' hedefine atama yapılamaz</value>
+  </data>
   <data name="ERR_BadAsyncLocalType" xml:space="preserve">
     <value>Zaman uyumsuz metotlar, başvuruya göre yerel değerlere sahip olamaz</value>
   </data>
@@ -2235,6 +2283,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="ERR_PatternIsSubsumed" xml:space="preserve">
     <value>Switch case, önceki bir case tarafından zaten işlendi.</value>
   </data>
+  <data name="ERR_EscapeCall" xml:space="preserve">
+    <value>'{0}' sonucu, '{1}' parametresi tarafından başvurulan değişkenleri kendi bildirim kapsamı dışında kullanıma sunabileceğinden bu bağlamda kullanılamaz</value>
+  </data>
   <data name="ERR_ForwardedTypeIsNested" xml:space="preserve">
     <value>'{1}' öğesinin iç içe yerleştirilmiş bir türü olduğundan '{0}' türü iletilemiyor</value>
   </data>
@@ -2258,6 +2309,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   </data>
   <data name="ERR_CantOverrideBogusMethod" xml:space="preserve">
     <value>'{0}': dil tarafından desteklenmediği için '{1}' öğesi geçersiz kılınamıyor</value>
+  </data>
+  <data name="ERR_BadParameterModifiers" xml:space="preserve">
+    <value>'{0}' parametre değiştiricisi, '{1}' ile kullanılamaz</value>
   </data>
   <data name="ERR_NonInvocableMemberCalled" xml:space="preserve">
     <value>Çağrılamaz üye '{0}' yöntem gibi kullanılamaz.</value>
@@ -2391,6 +2445,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="ERR_BadEmptyThrow" xml:space="preserve">
     <value>Bağımsız değişken içermeyen bir throw deyimi bir catch yan tümcesinin dışında kullanılamaz</value>
   </data>
+  <data name="ERR_BadSpecialByRefIterator" xml:space="preserve">
+    <value>'{0}' bir başvuru yapısı olduğundan foreach deyimi, async veya iterator metotlarındaki '{0}' türü numaralandırıcılar üzerinde çalışamaz.</value>
+  </data>
   <data name="WRN_UnreferencedEvent" xml:space="preserve">
     <value>'{0}' olayı hiçbir zaman kullanılmaz</value>
   </data>
@@ -2448,6 +2505,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="ERR_InvalidSpecifier" xml:space="preserve">
     <value>'{0}' geçerli bir biçim belirtici değil</value>
   </data>
+  <data name="ERR_RefConditionalAndAwait" xml:space="preserve">
+    <value>'await', başvuru koşullu operatörü içeren bir deyim içinde kullanılamaz</value>
+  </data>
   <data name="ERR_DuplicateImportSimple" xml:space="preserve">
     <value>Aynı '{0}' kolay adına sahip derleme zaten alınmış. Başvurulardan birini kaldırmayı (örn. '{1}') veya yan yana etkinleştirmek için imzalamayı deneyin.</value>
   </data>
@@ -2490,6 +2550,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   <data name="ERR_ExternAliasNotAllowed" xml:space="preserve">
     <value>'extern diğer ad' bu bağlamda geçerli değil</value>
   </data>
+  <data name="ERR_RefConditionalNeedsTwoRefs" xml:space="preserve">
+    <value>Her iki koşul operatörü değeri de başvuru değeri olmalı ya da hiçbiri başvuru değeri olmamalıdır</value>
+  </data>
   <data name="ERR_NoPIANestedType" xml:space="preserve">
     <value>İç içe yerleştirilmiş bir tür olduğundan '{0}' türü gömülemiyor. 'Embed Interop Types' özelliğini false olarak ayarlamayı deneyin.</value>
   </data>
@@ -2507,9 +2570,6 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   </data>
   <data name="IDS_XMLNOINCLUDE" xml:space="preserve">
     <value> Aşağıdaki include etiketiyle eşleşen bir öğe bulunamadı </value>
-  </data>
-  <data name="ERR_FeatureIsExperimental" xml:space="preserve">
-    <value>'{0}' özelliği deneyseldir ve desteklenmez; etkinleştirmek için '/features:{1}' kullanın.</value>
   </data>
   <data name="WRN_EqualsWithoutGetHashCode_Title" xml:space="preserve">
     <value>Tür Object.Equals(object o) öğesini geçersiz kılar, ancak Object.GetHashCode() öğesini geçersiz kılmaz</value>
@@ -2582,6 +2642,9 @@ Uyarıyı kaldırmak için, /reference kullanabilirsiniz (Birlikte Çalışma T�
   </data>
   <data name="WRN_AttributeIgnoredWhenPublicSigning_Title" xml:space="preserve">
     <value>Ortak imzalama belirtildiğinde öznitelik yoksayılır.</value>
+  </data>
+  <data name="ERR_TypeReserved" xml:space="preserve">
+    <value>'{0}' tür adı, derleyici tarafından kullanılmak üzere ayrılmıştır.</value>
   </data>
   <data name="ERR_QueryInnerKey" xml:space="preserve">
     <value>'{0}' adı 'equals' öğesinin sağ tarafındaki kapsamda değil.  İfadeleri 'equals' öğesinin iki tarafına değiştirmeyi düşünün.</value>
@@ -2764,6 +2827,9 @@ Derleyiciye yöntemleri ayrıştırma yolu verin. Örneğin, bunlara farklı adl
   <data name="ERR_BadAttributeArgument" xml:space="preserve">
     <value>Öznitelik bağımsız değişkeni bir öznitelik parametresi türünün dizi oluşturma ifadesi, sabit bir ifade veya typeof ifadesi olmalıdır</value>
   </data>
+  <data name="IDS_FeatureReadOnlyStructs" xml:space="preserve">
+    <value>salt okunur yapılar</value>
+  </data>
   <data name="IDS_ThrowExpression" xml:space="preserve">
     <value>&lt;throw ifadesi&gt;</value>
   </data>
@@ -2908,6 +2974,9 @@ Derleyiciye yöntemleri ayrıştırma yolu verin. Örneğin, bunlara farklı adl
   <data name="ERR_ReadonlyValueTypeInObjectInitializer" xml:space="preserve">
     <value>'{1}' türündeki salt okunur '{0}' alanının üyeleri, değer türünde olduğundan nesne başlatıcısıyla atanamadı</value>
   </data>
+  <data name="ERR_FieldlikeEventsInRoStruct" xml:space="preserve">
+    <value>Salt okunur yapı birimlerinde alan benzeri olaylara izin verilmez.</value>
+  </data>
   <data name="ERR_BadAsyncLacksBody" xml:space="preserve">
     <value>'Async' değiştiricisi yalnızca gövdesi olan metotlarda kullanılabilir.</value>
   </data>
@@ -2954,7 +3023,7 @@ Derleyiciye yöntemleri ayrıştırma yolu verin. Örneğin, bunlara farklı adl
     <value>'{0}' yüksekliğinin bir dizi başlatıcısı bekleniyor</value>
   </data>
   <data name="ERR_RefReturnReadonly" xml:space="preserve">
-    <value>Salt okunur bir alan başvuru ile döndürülemez</value>
+    <value>Salt okunur bir alan, yazılabilir başvuru ile döndürülemez</value>
   </data>
   <data name="ERR_V6SwitchGoverningTypeValueExpected" xml:space="preserve">
     <value>Bir switch ifadesi veya case etiketi C# 6 veya daha önceki bir sürümde bool, char, string, integral, enum veya karşılık gelen null atanabilir tür olmalıdır.</value>
@@ -2988,9 +3057,6 @@ Derleyiciye yöntemleri ayrıştırma yolu verin. Örneğin, bunlara farklı adl
   </data>
   <data name="ERR_AnonymousTypePropertyAssignedBadValue" xml:space="preserve">
     <value>'{0}', anonim type özelliğine atanamıyor</value>
-  </data>
-  <data name="ERR_OverloadRefOutCtor" xml:space="preserve">
-    <value>Başka bir oluşturucudan yalnızca ref ve out öğelerinde farklılık gösterdiğinden '{0}' aşırı yüklü oluşturucusu tanımlanamıyor</value>
   </data>
   <data name="ERR_CantOpenFileWrite" xml:space="preserve">
     <value>'{0}' yazma için açılamıyor -- '{1}'</value>
@@ -3045,9 +3111,6 @@ Derleyiciye yöntemleri ayrıştırma yolu verin. Örneğin, bunlara farklı adl
   </data>
   <data name="ERR_ConstValueRequired" xml:space="preserve">
     <value>Const alan bir değer sağlanmasını gerektirir</value>
-  </data>
-  <data name="ERR_RefReturnReceiver" xml:space="preserve">
-    <value>'{0}' öğesinin alıcısı başvuru ile döndürülemediğinden, bu öğe başvuru ile döndürülemez</value>
   </data>
   <data name="WRN_BadRestoreNumber" xml:space="preserve">
     <value>Küresel olarak devre dışı bırakıldığından 'CS{0}' uyarısı geri yüklenemedi</value>
@@ -3136,7 +3199,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>'{0}' ve '{1}' arasında belirsizlik var</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
-    <value>Local function is declared but never used</value>
+    <value>Yerel değişken tanımlı ancak hiç kullanılmadı</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>Komut satırı sözdizimi hatası: '{1}' seçeneği için Guid eksik</value>
@@ -3215,146 +3278,146 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# Compiler Options
+                              Visual C# Derleyici Seçenekleri
 
-                        - OUTPUT FILES -
- /out:&lt;file&gt;                   Specify output file name (default: base name of
-                               file with main class or first file)
- /target:exe                   Build a console executable (default) (Short
-                               form: /t:exe)
- /target:winexe                Build a Windows executable (Short form:
+                        - ÇIKIŞ DOSYALARI -
+ /out:&lt;file&gt;                   Çıkış dosyası adı belirtin (varsayılan: ana sınıfı
+                               içeren dosyanın veya ilk dosyanın temel adı)
+ /target:exe                   Çalıştırılabilir konsol dosyası oluştur (varsayılan) (Kısa
+                               biçim: /t:exe)
+ /target:winexe                Windows yürütülebilir dosyası oluştur (Kısa biçim:
                                /t:winexe)
- /target:library               Build a library (Short form: /t:library)
- /target:module                Build a module that can be added to another
-                               assembly (Short form: /t:module)
- /target:appcontainerexe       Build an Appcontainer executable (Short form:
+ /target:library               Kitaplık oluştur (Kısa biçim: /t:library)
+ /target:module                Başka bir derlemeye eklenebilir bir modül
+                               oluştur (Kısa biçim: /t:module)
+ /target:appcontainerexe       Bir Appcontainer yürütülebilir dosyası oluştur (Kısa biçim:
                                /t:appcontainerexe)
- /target:winmdobj              Build a Windows Runtime intermediate file that
-                               is consumed by WinMDExp (Short form: /t:winmdobj)
- /doc:&lt;file&gt;                   XML Documentation file to generate
- /refout:&lt;file&gt;                Reference assembly output to generate
- /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
+ /target:winmdobj              WinMDExp tarafından kullanılan bir
+                               Windows Çalışma Zamanı ara dosyası oluştur (Kısa biçim: /t:winmdobj)
+ /doc:&lt;file&gt;                   Oluşturulacak XML Belgeleri dosyası
+ /refout:&lt;file&gt;                Oluşturulacak başvuru derlemesi çıkışı
+ /platform:&lt;string&gt;            Bu kodun üstünde çalışacağı platformları sınırlar: x86,
                                Itanium, x64, arm, anycpu32bitpreferred, or
-                               anycpu. The default is anycpu.
+                               anycpu. Varsayılan anycpu.
 
-                        - INPUT FILES -
- /recurse:&lt;wildcard&gt;           Include all files in the current directory and
-                               subdirectories according to the wildcard
-                               specifications
- /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
-                               file using the given alias (Short form: /r)
- /reference:&lt;file list&gt;        Reference metadata from the specified assembly
-                               files (Short form: /r)
- /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
- /link:&lt;file list&gt;             Embed metadata from the specified interop
-                               assembly files (Short form: /l)
- /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
-                               (Short form: /a)
- /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
-                               generation but may be used by analyzers for producing
-                               errors or warnings.
- /embed                        Embed all source files in the PDB.
- /embed:&lt;file list&gt;            Embed specific files in the PDB
+                        - GİRİŞ DOSYALARI -
+ /recurse:&lt;wildcard&gt;           Geçerli dizindeki ve
+                                alt dizinlerdeki tüm dosyaları joker karakteri
+                               belirtimlerine göre ekle
+ /reference:&lt;alias&gt;=&lt;file&gt;     Verilen diğer adı kullanarak belirtilen
+                               derlemedeki meta verilere başvur (Kısa biçim: /r)
+ /reference:&lt;file list&gt;        Belirtilen derleme dosyasındaki meta verilere
+                               başvur (Kısa biçim: /r)
+ /addmodule:&lt;file list&gt;        Belirtilen modülleri bu derlemeye bağla
+ /link:&lt;file list&gt;             Belirtilen birlikte çalışma derleme dosyalarından
+                               meta veri ekleyin (Kısa biçim: /l)
+ /analyzer:&lt;file list&gt;         Çözümleyicileri bu derlemeden çalıştır
+                               (Kısa biçim: /a)
+ /additionalfile:&lt;file list&gt;   Kod oluşumunu doğrudan etkilemeyen ama çözümleyiciler
+                               tarafından hata veya uyarı oluşturmada
+                               kullanılabilen ek dosyalar.
+ /embed                        Tüm kaynak dosyalarını PDB'ye ekle.
+ /embed:&lt;file list&gt;            Belirli dosyaları PDB'ye ekle
 
-                        - RESOURCES -
- /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
- /win32icon:&lt;file&gt;             Use this icon for the output
- /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
- /nowin32manifest              Do not include the default Win32 manifest
- /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
- /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
-                               (Short form: /linkres) Where the resinfo format
-                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
+                        - KAYNAKLAR -
+ /win32res:&lt;file&gt;              Bir Win32 kaynak dosyası (.res) belirt
+ /win32icon:&lt;file&gt;             Çıkış için bu simgeyi kullan
+ /win32manifest:&lt;file&gt;         Bir Win32 bildirim dosyası (.xml) belirt
+ /nowin32manifest              Varsayılan Win32 bildirimini dahil etme
+ /resource:&lt;resinfo&gt;           Belirtilen kaynağı ekle (Kısa biçim: /res)
+ /linkresource:&lt;resinfo&gt;       Belirtilen kaynağı bu bütünleştirilmiş koda bağla
+                               (Kısa biçim: /linkres) Kaynak bilgisi biçimi:
+                                &lt;file&gt;[,&lt;string name&gt;[,public|private]]
 
-                        - CODE GENERATION -
- /debug[+|-]                   Emit debugging information
+                        - KOD OLUŞTURMA -
+ /debug[+|-]                   Hata ayıklama bilgilerini yayımla
  /debug:{full|pdbonly|portable|embedded}
-                               Specify debugging type ('full' is default,
-                               'portable' is a cross-platform format,
-                               'embedded' is a cross-platform format embedded into
-                               the target .dll or .exe)
- /optimize[+|-]                Enable optimizations (Short form: /o)
- /deterministic                Produce a deterministic assembly
-                               (including module version GUID and timestamp)
- /refonly                      Produce a reference assembly in place of the main output
- /instrument:TestCoverage      Produce an assembly instrumented to collect
-                               coverage information
- /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
+                               Hata ayıklama türünü belirt (varsayılan: 'full',
+                               'portable' platformlar arası bir biçim,
+                               'embedded' hedef .dll veya .exe dosyasına
+                               eklenmiş platformlar arası bir biçim
+ /optimize[+|-]                İyileştirmeleri etkinleştir (Kısa biçim: /o)
+ /deterministic                Belirlenimci bir bütünleştirilmiş kod oluştur
+                               (modül sürümü GUID'i ve zaman damgası dahil)
+ /refonly                      Ana çıkışın yerine başvuru derlemesi oluştur
+ /instrument:TestCoverage      Kapsam bilgilerini toplamak üzere
+                               işaretlenen bir bütünleştirilmiş kod üret
+ /sourcelink:&lt;file&gt;            PDB'ye eklenecek kaynak bağlantı bilgisi.
 
-                        - ERRORS AND WARNINGS -
- /warnaserror[+|-]             Report all warnings as errors
- /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
- /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
- /nowarn:&lt;warn list&gt;           Disable specific warning messages
- /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
-                               diagnostics.
- /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
-                               diagnostics.
- /reportanalyzer               Report additional analyzer information, such as
-                               execution time.
+                        - HATALAR VE UYARILAR -
+ /warnaserror[+|-]             Tüm uyarıları hata olarak bildir
+ /warnaserror[+|-]:&lt;warn list&gt; Belirli uyarıları hata olarak bildir
+ /warn:&lt;n&gt;                     Uyarı düzeyi ayarla (0-4) (Kısa biçim: /w)
+ /nowarn:&lt;warn list&gt;           Belirli uyarı iletilerini devre dışı bırak
+ /ruleset:&lt;file&gt;               Belirli tanılamaları devre dışı bırakan bir
+                                kural kümesi dosyası belirt.
+ /errorlog:&lt;file&gt;              Bütün derleyici ve çözümleyici tanılamalarını günlüğe kaydetmek için
+                               bir dosya belirt.
+ /reportanalyzer               Yürütme zamanı gibi ek yürütme
+                               bilgilerini bildir.
 
-                        - LANGUAGE -
- /checked[+|-]                 Generate overflow checks
- /unsafe[+|-]                  Allow 'unsafe' code
- /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
-                               form: /d)
- /langversion:?                Display the allowed values for language version
- /langversion:&lt;string&gt;         Specify language version such as
-                               `default` (latest major version), or
-                               `latest` (latest version, including minor versions),
-                               or specific versions like `6` or `7.1`
+                        - DİL -
+ /checked[+|-]                 Taşma denetimleri oluştur
+ /unsafe[+|-]                  'Unsafe' koda izin ver
+ /define:&lt;symbol list&gt;         Koşullu derleme sembolleri tanımla (Kısa
+                               biçim: /d)
+ /langversion:?                Dil sürümü için izin verilen değerleri görüntüle
+ /langversion:&lt;string&gt;         Dil sürümünü belirt. Örneğin:
+                               `default` (en son birincil sürüm), or
+                               `latest` (daha küçük sürümleri de içeren en son sürüm),
+                               veya `6` ya da `7.1` gibi belirli sürümler
 
-                        - SECURITY -
- /delaysign[+|-]               Delay-sign the assembly using only the public
-                               portion of the strong name key
- /publicsign[+|-]              Public-sign the assembly using only the public
-                               portion of the strong name key
- /keyfile:&lt;file&gt;               Specify a strong name key file
- /keycontainer:&lt;string&gt;        Specify a strong name key container
- /highentropyva[+|-]           Enable high-entropy ASLR
+                        - GÜVENLİK -
+ /delaysign[+|-]               Derlemeyi kesin ad anahtarının yalnızca ortak
+                               kısmını kullanarak gecikmeli imzala
+ /publicsign[+|-]              Bütünleştirilmiş kodu, güçlü adlı anahtarın yalnızca genel
+                               kısmını kullanarak genel olarak imzala
+ /keyfile:&lt;file&gt;               Güçlü ad anahtarı dosyası belirt
+ /keycontainer:&lt;string&gt;        Güçlü ad anahtarı kapsayıcısı belirt
+ /highentropyva[+|-]           Yüksek entropili ASLR'yi etkinleştir
 
-                        - MISCELLANEOUS -
- @&lt;file&gt;                       Read response file for more options
- /help                         Display this usage message (Short form: /?)
- /nologo                       Suppress compiler copyright message
- /noconfig                     Do not auto include CSC.RSP file
- /parallel[+|-]                Concurrent build.
- /version                      Display the compiler version number and exit.
+                        - DİĞER -
+ @&lt;file&gt;                       Daha fazla seçenek için yanıt dosyasını okuyun
+ /help                         Bu kullanım iletisini görüntüle (Kısa biçim: /?)
+ /nologo                       Derleyici telif hakkı iletisini gösterme
+ /noconfig                     CSC.RSP dosyasını otomatik olarak dahil etme
+ /parallel[+|-]                Eşzamanlı derleme.
+ /version                      Derleyici sürüm numarasını görüntüle ve çık.
 
-                        - ADVANCED -
- /baseaddress:&lt;address&gt;        Base address for the library to be built
- /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
-                               checksum stored in PDB. Supported values are:
-                               SHA1 (default) or SHA256.
- /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
-                               files
- /utf8output                   Output compiler messages in UTF-8 encoding
- /main:&lt;type&gt;                  Specify the type that contains the entry point
-                               (ignore all other possible entry points) (Short
-                               form: /m)
- /fullpaths                    Compiler generates fully qualified paths
- /filealign:&lt;n&gt;                Specify the alignment used for output file
-                               sections
+                        - GELİŞMİŞ -
+ /baseaddress:&lt;address&gt;        Derlenecek kitaplığın temel adresi
+ /checksumalgorithm:&lt;alg&gt;      PDB'de depolanan kaynak dosya sağlama toplamını 
+                               hesaplama algoritmasını belirtin. Desteklenen değerler:
+                               SHA1 (varsayılan) or SHA256.
+ /codepage:&lt;n&gt;                 Kaynak dosyalarını açarken kullanılacak kod sayfasını
+                               belirtin
+ /utf8output                   Derleyici iletilerini UTF-8 ana kodlamasında
+ /görüntüle:&lt;type&gt;                  Giriş noktasını içeren türü belirtin
+                               (diğer tüm olası girdi noktalarını yoksayar) (Kısa
+                               biçim: /m)
+ /fullpaths                    Derleyici, tamamen nitelikli yollar oluşturur
+ /filealign:&lt;n&gt;                Çıkış dosyası bölümleri için kullanılan hizalamayı
+                               belirtin
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Specify a mapping for source path names output by
-                               the compiler.
- /pdb:&lt;file&gt;                   Specify debug information file name (default:
-                               output file name with .pdb extension)
- /errorendlocation             Output line and column of the end location of
-                               each error
- /preferreduilang              Specify the preferred output language name.
- /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
- /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
- /lib:&lt;file list&gt;              Specify additional directories to search in for
-                               references
- /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
-                               prompt, send, queue, or none. The default is
+                               Derleyici tarafından gösterilen kaynak yolu adları için bir eşleme
+                               belirtin.
+ /pdb:&lt;file&gt;                   Hata ayıklama bilgileri dosyasının adını belirtin (varsayılan:
+                               .pdb uzantılı çıkış dosyası adı)
+ /errorendlocation             Her hatanın bitiş konumunun satır ve sütununu
+                               göster
+ /preferreduilang              Tercih edilen çıkış dilini belirtin.
+ /nostdlib[+|-]                Standard kitaplığa (mscorlib.dll) başvurma
+ /subsystemversion:&lt;string&gt;    Bu bütünleştirilmiş kodun alt sistem sürümünü belirtin
+ /lib:&lt;file list&gt;              İçinde başvuruların aranacağı ek dizinleri
+                               belirtin
+ /errorreport:&lt;string&gt;         İç derleyici hatalarının nasıl işleneceğini belirtin:
+                               prompt, send, queue veya none. Varsayılan:
                                queue.
- /appconfig:&lt;file&gt;             Specify an application configuration file
-                               containing assembly binding settings
- /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
-                               a part of
- /modulename:&lt;string&gt;          Specify the name of the source module
+ /appconfig:&lt;file&gt;             Bütünleştirilmiş kod bağlama ayarlarını içeren bir uygulama
+                               yapılandırma dosyası belirtin
+ /moduleassemblyname:&lt;string&gt;  Bu modülün parçası olacağı bütünleştirilmiş kodun
+                               adı
+ /modulename:&lt;string&gt;          Kaynak modülün adını belirtin
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3372,9 +3435,6 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   <data name="ERR_InvalidSignaturePublicKey" xml:space="preserve">
     <value>AssemblySignatureKeyAttribute içinde geçersiz imza ortak anahtarı belirtildi.</value>
   </data>
-  <data name="ERR_OverloadRefOut" xml:space="preserve">
-    <value>'{0}', yalnızca ref ve out öğelerinde farklılık gösteren aşırı yüklü yöntemleri tanımlayamıyor</value>
-  </data>
   <data name="WRN_TupleLiteralNameMismatch" xml:space="preserve">
     <value>'{0}' demet öğesi adı, hedef tür olan '{1}' tarafından farklı bir ad belirtildiği veya hiçbir ad belirtilmediği için yoksayılıyor.</value>
   </data>
@@ -3389,9 +3449,6 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_AmbigContext" xml:space="preserve">
     <value>'{0}', '{1}' ile '{2}' arasında belirsiz bir başvuru</value>
-  </data>
-  <data name="ERR_ParamsCantBeRefOut" xml:space="preserve">
-    <value>Params parametresi ref veya out olarak ifade edilemez</value>
   </data>
   <data name="WRN_CmdOptionConflictsSource_Title" xml:space="preserve">
     <value>Seçenek, bir kaynak dosyada veya eklenen modülde verilen özniteliği geçersiz kılar</value>
@@ -3453,9 +3510,6 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   <data name="ERR_NoDynamicPhantomOnBaseCtor" xml:space="preserve">
     <value>Oluşturucu çağrısının dinamik olarak dağıtılması gerekiyor, ancak bir oluşturucu başlatıcısının parçası olduğundan dağıtılamıyor. Dinamik bağımsız değişkenlere tür atamayı düşünün.</value>
   </data>
-  <data name="ERR_RefReturnCall2" xml:space="preserve">
-    <value>'{1}' parametresine geçirilen bağımsız değişken başvuru ile döndürülemediğinden, '{0}' sonucunun bir üyesi başvuru ile döndürülemez</value>
-  </data>
   <data name="ERR_TypeInferenceFailedForImplicitlyTypedOutVariable" xml:space="preserve">
     <value>Türü örtük olarak belirlenen '{0}' out değişkeninin türü çıkarsanamıyor.</value>
   </data>
@@ -3467,6 +3521,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_ImplicitlyTypedVariableMultipleDeclarator" xml:space="preserve">
     <value>Açıkça yazılmış değişkenlerin birden çok bildirimcisi olamaz</value>
+  </data>
+  <data name="ERR_RefReturnReadonlyNotField" xml:space="preserve">
+    <value>{0} '{1}', salt okunur değişken olduğundan yazılabilir başvuru ile döndürülemez </value>
   </data>
   <data name="ERR_NamespaceUnexpected" xml:space="preserve">
     <value>Ad uzayı, alanlar veya yöntemler gibi üyeleri doğrudan içeremez</value>
@@ -3630,9 +3687,6 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   <data name="ERR_InvalidAssemblyCulture" xml:space="preserve">
     <value>Derleme kültürü dizeleri gömülü NUL karakterler içeremez.</value>
   </data>
-  <data name="ERR_AddrOnReadOnlyLocal" xml:space="preserve">
-    <value>Salt okunur yerel değişkenin adresi alınamıyor</value>
-  </data>
   <data name="ERR_PatternNullableType" xml:space="preserve">
     <value>Boş değer atanabilir '{0}' türünün bir desende kullanılması yasaktır; bunun yerine temel alınan '{1}' türünü kullanın.</value>
   </data>
@@ -3664,7 +3718,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>'{0}' türünden '{1}' türüne standart dönüştürme olmadığından CallerMemberNameAttribute uygulanamıyor</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
+    <value>'{0}' parametresinin üyelerinden biri, ref veya out parametresi olmadığından başvuru ile döndürülemiyor</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(Önceki hatayla ilgili sembolün konumu)</value>
@@ -3687,8 +3741,8 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   <data name="WRN_InvalidSearchPathDir_Title" xml:space="preserve">
     <value>Geçersiz arama yolu belirtildi</value>
   </data>
-  <data name="ERR_RefReturnCall" xml:space="preserve">
-    <value>'{1}' parametresine geçirilen bağımsız değişken başvuru ile döndürülemediğinden, bir '{0}' sonucu başvuru ile döndürülemez</value>
+  <data name="ERR_RefReturnThis" xml:space="preserve">
+    <value>'This' başvuruya göre döndürülemez.</value>
   </data>
   <data name="ERR_NoCanonicalView" xml:space="preserve">
     <value>Gömülü birlikte çalışma türü '{0}' ile eşleşen birlikte çalışma türü bulunamıyor. Bir derleme başvurunuz mu eksik?</value>
@@ -3709,7 +3763,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>'{0}' parametresi bir ref veya out parametresi olmadığından başvuru ile döndürülemez</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
+    <value>Ad alanında tanımlanan öğeler private, protected, protected internal veya private protected olarak açıkça bildirilemez</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>/moduleassemblyname seçeneği yalnızca 'module' öğesinin hedef türü oluşturulurken belirtilebilir</value>
@@ -3745,7 +3799,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>'{0}' kilit deyimi tarafından gereken bir başvuru türü değil</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic" xml:space="preserve">
-    <value>Statik bir salt okunur alan, başvuru ile döndürülemez</value>
+    <value>Statik bir salt okunur alan, yazılabilir başvuru ile döndürülemez</value>
   </data>
   <data name="WRN_CLS_BadInterfaceMember_Title" xml:space="preserve">
     <value>CLS uyumlu arabirimler yalnızca CLS uyumlu üyelere sahip olmalı</value>
@@ -3809,6 +3863,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_PropertyLacksGet" xml:space="preserve">
     <value>'{0}' özelliği veya dizin erişimcisi, alma erişimcisi olmadığından bu bağlamda kullanılamaz</value>
+  </data>
+  <data name="ERR_AutoPropsInRoStruct" xml:space="preserve">
+    <value>Salt okunur yapılarına otomatik olarak uygulanan örnek özellikler salt okunur olmalıdır.</value>
   </data>
   <data name="ERR_LanguageVersionCannotHaveLeadingZeroes" xml:space="preserve">
     <value>Belirtilen dil sürümünün ('{0}') başında sıfır olamaz</value>
@@ -3880,7 +3937,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>'{0}' işleç == veya işleç != öğesini tanımlar ancak Object.GetHashCode() öğesini geçersiz kılmaz</value>
   </data>
   <data name="IDS_LangVersions" xml:space="preserve">
-    <value>Supported language versions:</value>
+    <value>Desteklenen dil sürümleri:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>İkili işlecin parametrelerinden biri kapsayan tür olmalıdır</value>
@@ -3947,6 +4004,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_UnexpectedSemicolon" xml:space="preserve">
     <value>Yöntem veya erişimci bloğundan sonraki noktalı virgül geçerli değil</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField2" xml:space="preserve">
+    <value>{0} '{1}' üyeleri salt okunur değişken olduğundan ref veya out değeri olarak kullanılamaz</value>
   </data>
   <data name="ERR_LocalTypeNameClash" xml:space="preserve">
     <value>'{1}' derlemesinden '{0}' birlikte çalışma türünün katıştırılması geçerli derlemede ad çakışmasına neden oluyor. 'Embed Interop Types' özelliğini false olarak ayarlamayı deneyin.</value>
@@ -4050,6 +4110,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   <data name="ERR_ArrayOfStaticClass" xml:space="preserve">
     <value>'{0}': dizi öğeleri statik türünde olamaz</value>
   </data>
+  <data name="IDS_SK_CONSTRUCTOR" xml:space="preserve">
+    <value>oluşturucu</value>
+  </data>
   <data name="ERR_InvalidQM" xml:space="preserve">
     <value>'{0}' ve '{1}' arasında hiçbir açık dönüştürme olmadığından koşul ifadesinin türü belirlenemiyor</value>
   </data>
@@ -4061,6 +4124,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_InaccessibleSetter" xml:space="preserve">
     <value>Ayarlama erişimcisine erişilemediğinden '{0}' özelliği veya dizin erişimcisi bu bağlamda kullanılamaz</value>
+  </data>
+  <data name="IConversionExpressionIsNotCSharpConversion" xml:space="preserve">
+    <value>{0}, geçerli bir C# dönüştürme ifadesi değil</value>
   </data>
   <data name="ERR_NamedArgumentUsedInPositional" xml:space="preserve">
     <value>'{0}' adlandırılmış bağımsız değişkeni konumsal bir bağımsız değişkenin zaten verildiği bir parametreyi belirtiyor</value>
@@ -4204,7 +4270,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>'{0}' nesnesi birden çok kez atılabilir.</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongRefReturn" xml:space="preserve">
-    <value>'{0}', '{1}' arabirim üyesini uygulamıyor. '{2}', {3} ile dönmediğinden '{1}' öğesini uygulayamaz</value>
+    <value>'{0}', '{1}' arabirim üyesini uygulamıyor. '{2}', başvuruyla eşleşen dönüşü olmadığından '{1}' uygulayamaz.</value>
   </data>
   <data name="ERR_FixedNeedsLvalue" xml:space="preserve">
     <value>Sabit boyutlu arabelleklere yalnızca yerel öğeler veya alanlar üzerinden erişilebilir</value>
@@ -4345,7 +4411,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>'{1}' tür parametresinde 'struct' kısıtlaması olduğundan '{1}' '{0}' için kısıtlama olarak kullanılamaz</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
+    <value>Önceden tanımlı '{0}' türü, tanımlanmaz, içeri aktarılmaz veya birden fazla başvuru derlemesinde bildirilmez</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>Tür bağımsız değişkeni null olamaz</value>
@@ -4406,6 +4472,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_BadCastInFixed" xml:space="preserve">
     <value>Fixed deyimi atamasının sağ tarafı bir dönüştürme ifadesi olamaz</value>
+  </data>
+  <data name="IDS_FeatureRefExtensionMethods" xml:space="preserve">
+    <value>başvuru genişletme yöntemleri</value>
   </data>
   <data name="ERR_AssgReadonly2" xml:space="preserve">
     <value>'{0}' salt okunur alanın üyeleri (oluşturucu veya değişken başlatıcı dışında) değiştirilemez</value>
@@ -4503,6 +4572,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   <data name="ERR_ComRefCallInExpressionTree" xml:space="preserve">
     <value>İfade ağacı lambdası, bağımsız değişkenlerinde ref kullanılmayan bir COM çağrısı içeremez</value>
   </data>
+  <data name="ERR_ParamsCantBeWithModifier" xml:space="preserve">
+    <value>params parametresi {0} olarak tanımlanamaz</value>
+  </data>
   <data name="ERR_BadForeachDecl" xml:space="preserve">
     <value>Bir foreach deyiminde hem tür hem tanımlayıcı gereklidir</value>
   </data>
@@ -4510,7 +4582,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>{0} bağımsız değişkeni: '{1}' öğesinden '{2}' öğesine dönüştürülemiyor</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
+    <value>Adlandırılmış bağımsız değişken belirtimleri, sabit bağımsız değişkenlerin tümü belirtildikten sonra görüntülenmelidir. Sonda olmayan adlandırılmış bağımsız değişkenlere izin vermek için {0} veya daha yüksek bir dil sürümü kullanın.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>'{1}' yönteminin '{0}' tür parametreleri için kısıtlamalar '{3}' arabirim yönteminin '{2}' tür parametresi için kısıtlamalarla eşleşmelidir. Yerine açık arabirim uygulaması kullanmayı düşünün.</value>
@@ -4532,6 +4604,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_UnexpectedToken" xml:space="preserve">
     <value>Beklenmeyen belirteç '{0}'</value>
+  </data>
+  <data name="ERR_RefConditionalDifferentTypes" xml:space="preserve">
+    <value>Alternatif başvuru değeriyle eşleşmesi için deyimin '{0}' türünde olması gerekir</value>
   </data>
   <data name="ERR_CantDeriveFromSealedType" xml:space="preserve">
     <value>'{0}': korumalı '{1}' türünden türetilemiyor</value>
@@ -4620,6 +4695,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   <data name="ERR_IllegalFixedType" xml:space="preserve">
     <value>Sabit boyutlu arabellek türü şunlardan biri olmalıdır: bool, byte, short, int, long, char, sbyte, ushort, uint, ulong, float veya double</value>
   </data>
+  <data name="ERR_CallArgMixing" xml:space="preserve">
+    <value>'{0}', '{1}' parametresi tarafından başvurulan değişkenleri kendi bildirim kapsamı dışında kullanıma sunabileceğinden buna yönelik bağımsız değişken bileşimine izin verilmiyor</value>
+  </data>
   <data name="ERR_ConstOutOfRange" xml:space="preserve">
     <value>'{0}' sabit değeri bir '{1}' değerine dönüştürülemez.</value>
   </data>
@@ -4672,7 +4750,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>'{0}' özelliği C# 6'da kullanılamıyor. Lütfen {1} veya daha yüksek dil sürümünü kullanın.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7" xml:space="preserve">
-    <value>'{0}' özelliği C# 7'de kullanılamıyor. Lütfen {1} veya daha yüksek dil sürümünü kullanın.</value>
+    <value>'{0}' özelliği C# 7.0'da kullanılamıyor. Lütfen {1} veya üzeri bir dil sürümü kullanın.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion4" xml:space="preserve">
     <value>'{0}' özelliği C# 4'te kullanılamıyor. Lütfen {1} veya daha yüksek dil sürümünü kullanın.</value>
@@ -4760,6 +4838,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_SubexpressionNotInNameof" xml:space="preserve">
     <value>Alt ifade bir nameof bağımsız değişkeninde kullanılamaz.</value>
+  </data>
+  <data name="ERR_MismatchedRefEscapeInTernary" xml:space="preserve">
+    <value>Başvuru üçlü operatörünün dalları, bildirim kapsamı uyumsuz olan değişkenlere başvuruda bulunamaz</value>
   </data>
   <data name="ERR_FixedDimsRequired" xml:space="preserve">
     <value>Sabit boyutlu arabellek alanında alan uzayından sonra dizi boyutu belirticisi gelmelidir</value>
@@ -4913,6 +4994,9 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
   </data>
   <data name="ERR_PatternDynamicType" xml:space="preserve">
     <value>Bir desende 'dynamic' türünün kullanılmasına izin verilmiyor.</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField" xml:space="preserve">
+    <value>{0} '{1}', salt okunur değişken olduğundan ref veya out değeri olarak kullanılamaz</value>
   </data>
   <data name="ERR_CallingFinalizeDeprecated" xml:space="preserve">
     <value>Yıkıcılar ve object.Finalize doğrudan çağrılamaz. Kullanılabiliyorsa IDisposable.Dispose çağırmayı düşünün.</value>
@@ -5092,7 +5176,7 @@ Bu sınıf temel sınıf olarak kullanılırsa ve türetilen sınıf bir yıkıc
     <value>ifade gövdeli dizin oluşturucu</value>
   </data>
   <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
-    <value>'{0}' is a local function and must therefore always have a body.</value>
+    <value>'{0}' yerel bir işlev olduğundan her zaman gövdesi olmalıdır.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>'{0}': dinamik türden türetilemez</value>

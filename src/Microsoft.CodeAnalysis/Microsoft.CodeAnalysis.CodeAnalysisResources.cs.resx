@@ -179,7 +179,7 @@
     <value>třída</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>Vložené texty jsou podporované jen při vydávání souboru PDB.</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Kopie modulu se nedá použít k vytvoření metadat sestavení.</value>
@@ -234,9 +234,6 @@
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>Argumenty možnosti /keepalive nižší než -1 nejsou platné.</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>Funkce IOperation je zakázaná.</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>Očekávala se absolutní cesta.</value>

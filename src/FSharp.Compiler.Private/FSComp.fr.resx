@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>Ce nombre se trouve en dehors de la plage autorisée pour les littéraux décimaux</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>Une erreur s'est produite durant la lecture des métadonnées F# de l'assembly '{0}'. Une construction réservée a été utilisée. Vous devrez peut-être mettre à niveau votre compilateur F# ou utiliser une version antérieure de l'assembly qui ne fait pas appel à une construction spécifique.</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>Paramètres statiques trop nombreux. {0} paramètres au maximum étaient attendus, mais {1} paramètres non nommés et {2} paramètres nommés ont été reçus.</value>
   </data>

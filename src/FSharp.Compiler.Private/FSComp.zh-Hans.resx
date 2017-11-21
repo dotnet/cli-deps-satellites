@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>此数字在允许的十进制文本范围之外</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>读取程序集“{0}”的 F# 元数据时出错。已使用保留的构造。可能需要升级 F# 编译器或使用未利用特定构造的程序集的早期版本。</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>静态参数太多。最多应为 {0} 个参数，但是获得了 {1} 个未命名参数和 {2} 个命名参数。</value>
   </data>

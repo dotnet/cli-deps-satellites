@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>Toto číslo je mimo povolený rozsah pro desítkové literály.</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>Při čtení metadat F# sestavení {0} došlo k chybě. Použil se vyhrazený konstruktor. Možná budete muset upgradovat kompilátor F# nebo použít starší verzi sestavení, která nevyužívá konkrétní konstruktor.</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>Příliš mnoho statických parametrů. Maximální očekávaný počet parametrů je {0}, ale počet přijatých parametrů je {1} (nepojmenované) a {2} (pojmenované).</value>
   </data>

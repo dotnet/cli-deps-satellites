@@ -222,6 +222,9 @@
   <data name="WRN_CallerLineNumberPreferredOverCallerMemberName_Title" xml:space="preserve">
     <value>Атрибут CallerMemberNameAttribute не будет работать: он переопределяется атрибутом CallerLineNumberAttribute</value>
   </data>
+  <data name="ERR_RefReturnReadonlyNotField2" xml:space="preserve">
+    <value>Члены {0} "{1}" невозможно вернуть по ссылке для записи, так как это переменная только для чтения</value>
+  </data>
   <data name="ERR_AbstractHasBody" xml:space="preserve">
     <value>"{0}" не может объявить тело, потому что помечен как abstract.</value>
   </data>
@@ -300,10 +303,13 @@
     <value>Невозможно деконструировать динамические объекты.</value>
   </data>
   <data name="ERR_RefReturnLvalueExpected" xml:space="preserve">
-    <value>Выражение невозможно использовать в данном контексте, так как его невозможно вернуть по ссылке</value>
+    <value>Невозможно использовать выражение в этом контексте, так как его невозможно передать или вернуть по ссылке</value>
   </data>
   <data name="ERR_OneAliasPerReference" xml:space="preserve">
     <value>В параметре /reference, объявляющем внешний псевдоним, можно задать только одно имя файла. Чтобы задать несколько псевдонимов или имен файлов, следует использовать несколько параметров /reference.</value>
+  </data>
+  <data name="ERR_StackAllocConversionNotPossible" xml:space="preserve">
+    <value>Невозможно преобразовать выражение stackalloc типа "{0}" в тип "{1}".</value>
   </data>
   <data name="ERR_UnclosedExpressionHole" xml:space="preserve">
     <value>Отсутствует закрывающий разделитель "}" для интерполированного выражения, начинающегося с "{".</value>
@@ -381,7 +387,7 @@
     <value>Только члены, совместимые с CLS, могут быть абстрактными</value>
   </data>
   <data name="IDS_FeaturePrivateProtected" xml:space="preserve">
-    <value>private protected</value>
+    <value>частный защищенный</value>
   </data>
   <data name="ERR_ConflictingMachineModule" xml:space="preserve">
     <value>Сборка и модуль "{0}" не могут предназначаться для разных процессоров.</value>
@@ -425,9 +431,6 @@
   <data name="WRN_InvalidAssemblyName" xml:space="preserve">
     <value>Ссылка сборки "{0}" является недопустимой и не может быть разрешена.</value>
   </data>
-  <data name="ERR_BadOutWithThis" xml:space="preserve">
-    <value> Модификатор параметра "out" не может использоваться с "this". </value>
-  </data>
   <data name="ERR_DeconstructRequiresExpression" xml:space="preserve">
     <value>Назначению деконструкции требуется выражение с типом справа.</value>
   </data>
@@ -437,6 +440,9 @@
   <data name="ERR_ThisStructNotInAnonMeth" xml:space="preserve">
     <value>Анонимные методы, лямбда-выражения и выражения запроса внутри структуры не имеют доступа к членам экземпляра "this". Возможно, следует скопировать "this" в локальную переменную за пределами анонимного метода, лямбда-выражения или выражения запроса и использовать эту локальную переменную.</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField2" xml:space="preserve">
+    <value>Не удается присвоить значение члену {0} "{1}", так как это переменная только для чтения</value>
+  </data>
   <data name="ERR_InterfaceImplementedByConditional" xml:space="preserve">
     <value>Условный член "{0}" не может реализовать член интерфейса "{1}" в типе "{2}".</value>
   </data>
@@ -444,7 +450,7 @@
     <value>Статический класс "{0}" не может быть производным от типа "{1}". Статические классы должны быть производными от object.</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic2" xml:space="preserve">
-    <value>Поля статического поля "{0}", доступного только для чтения, нельзя вернуть по ссылке</value>
+    <value>Поля статического поля "{0}", доступного только для чтения, нельзя вернуть по ссылке для записи</value>
   </data>
   <data name="ERR_ForwardedTypeInThisAssembly" xml:space="preserve">
     <value>Тип "{0}" определен в этой сборке, но для нее указан метод передачи типа.</value>
@@ -471,7 +477,7 @@
     <value>"{0}" не реализует шаблон "{1}". "{2}" неоднозначен с "{3}".</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
+    <value>Недопустимый параметр "{0}" для /langversion. Используйте "/langversion:?" для вывода списка поддерживаемых значений.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>Полное имя псевдонима не является выражением.</value>
@@ -717,13 +723,16 @@
     <value>Константа с плавающей запятой вне допустимого диапазона для типа "{0}".</value>
   </data>
   <data name="ERR_InvalidDebugInfo" xml:space="preserve">
-    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+    <value>Не удается считать сведения об отладке метода "{0}" (маркер 0x{1:X8}) из сборки "{2}".</value>
   </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>Не удается выдать отладочную информацию для исходного текста без кодировки.</value>
   </data>
   <data name="ERR_BadResourceVis" xml:space="preserve">
     <value>Недопустимый параметр "{0}"; видимость ресурса должна быть либо "public", либо "private".</value>
+  </data>
+  <data name="ERR_ExplicitReservedAttr" xml:space="preserve">
+    <value>Не используйте "{0}". Этот атрибут зарезервирован для использования компилятором.</value>
   </data>
   <data name="WRN_BadRestoreNumber_Title" xml:space="preserve">
     <value>Невозможно восстановить предупреждение, так как оно было отключено глобально</value>
@@ -741,7 +750,7 @@
     <value>Требуется конечный тег для элемента "{0}".</value>
   </data>
   <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
-    <value>leading digit separator</value>
+    <value>разделитель начальных цифр</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Аргументы типа недопустимы в операторе nameof.</value>
@@ -860,6 +869,9 @@
   <data name="ERR_BadVisReturnType" xml:space="preserve">
     <value>Несогласованность по доступности: доступность возвращаемого типа "{1}" ниже доступности метода "{0}"</value>
   </data>
+  <data name="ERR_FieldsInRoStruct" xml:space="preserve">
+    <value>Поля экземпляров в структурах только для чтения должны быть доступны только для чтения.</value>
+  </data>
   <data name="UseLiteralForTokens" xml:space="preserve">
     <value>Чтобы создать токены символьных литералов, используйте Microsoft.CodeAnalysis.CSharp.SyntaxFactory.Literal.</value>
   </data>
@@ -882,13 +894,13 @@
     <value>Тип "{0}" из сборки "{1}" не может быть использован за границами сборки, так как имеет аргумент универсального типа, являющийся внедренным типом взаимодействия.</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
-    <value>The local function '{0}' is declared but never used</value>
+    <value>Локальная функция "{0}" объявлена, но не используется.</value>
   </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>Оператор as должен использоваться со ссылочным типом или с типом, допускающим значение Null (тип "{0}" не допускает значение Null).</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>The abstract {0} '{1}' cannot be marked virtual</value>
+    <value>Абстрактный метод {0} "{1}" не может быть помечен как virtual.</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>"{0}": статические классы не могут содержать определяемых пользователем операторов.</value>
@@ -1031,6 +1043,9 @@
   <data name="ERR_BadAwaitWithoutAsyncLambda" xml:space="preserve">
     <value>Оператор "await" можно использовать только в методах с модификатором async {0}. Попробуйте пометить {0} модификатором "async".</value>
   </data>
+  <data name="ERR_RefExtensionMustBeValueTypeOrConstrainedToOne" xml:space="preserve">
+    <value>Первый параметр метода расширения "ref" "{0}" должен иметь тип значения или универсальный тип, ограниченный структурой.</value>
+  </data>
   <data name="ChainingSpeculativeModelIsNotSupported" xml:space="preserve">
     <value>Построение цепочки наблюдающей семантической модели не поддерживается. Необходимо создать наблюдающую модель из ненаблюдающей ParentModel.</value>
   </data>
@@ -1041,7 +1056,7 @@
     <value>Выражение фильтра является константой, попробуйте удалить фильтр.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
-    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+    <value>Компонент "{0}" недоступен в C# 7.2. Используйте версию языка {1} или выше.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>Возможность "{0}" недоступна в C# 7.1. Используйте версию языка {1} или выше.</value>
@@ -1125,7 +1140,7 @@
     <value>Член "{0}" не скрывает доступный член. Ключевое слово new не требуется.</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+    <value>Спецификации именованных аргументов должны создаваться после всех указанных фиксированных аргументов в динамическом вызове.</value>
   </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>Номер, переданный в директиву препроцессора предупреждений #pragma, не являлся допустимым номером предупреждения. Убедитесь, что номер соответствует предупреждению, а не ошибке.</value>
@@ -1146,13 +1161,13 @@
     <value>Использование #r допускается только в скриптах.</value>
   </data>
   <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
-    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
+    <value>Невозможно передать аргумент с динамическим типом в универсальную локальную функцию "{0}" с выводимыми аргументами типа.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>Синтаксическое дерево уже имеется</value>
   </data>
-  <data name="ERR_BadRefWithThis" xml:space="preserve">
-    <value> Модификатор параметра "ref" не может использоваться с "this". </value>
+  <data name="ERR_BadParameterModifiersOrder" xml:space="preserve">
+    <value>Модификатор параметра "{0}" не может использоваться после модификатора "{1}"</value>
   </data>
   <data name="ERR_InvalidOutputName" xml:space="preserve">
     <value>Недопустимое имя выходных данных: {0}</value>
@@ -1241,6 +1256,9 @@
   <data name="ERR_ExternHasConstructorInitializer" xml:space="preserve">
     <value>Параметр "{0}" не может быть внешним и иметь инициализатор конструктора</value>
   </data>
+  <data name="IDS_StackAllocExpression" xml:space="preserve">
+    <value>stackalloc {0}[{1}]</value>
+  </data>
   <data name="ERR_AutoPropertyCannotBeRefReturning" xml:space="preserve">
     <value>Автоматически реализованные свойства не могут возвращать данные по ссылке</value>
   </data>
@@ -1301,6 +1319,9 @@
   <data name="ERR_BadTypeforThis" xml:space="preserve">
     <value>Первый параметр метода расширения не может иметь тип "{0}".</value>
   </data>
+  <data name="IDS_FeatureReadOnlyReferences" xml:space="preserve">
+    <value>ссылки только для чтения</value>
+  </data>
   <data name="ERR_BadSKunknown" xml:space="preserve">
     <value>'{0}" является {1}, который недопустим в данном контексте.</value>
   </data>
@@ -1343,11 +1364,14 @@
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>Недопустимый параметр псевдонима ссылки: "{0}=" — не указано имя файла</value>
   </data>
+  <data name="ERR_FieldAutoPropCantBeByRefLike" xml:space="preserve">
+    <value>Поле или автоматически реализуемое свойство не может быть типа "{0}", если это не член экземпляра ссылочной структуры.</value>
+  </data>
   <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
-    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+    <value>Именованный аргумент "{0}" используется не на своем месте, но за ним следует неименованный аргумент</value>
   </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
-    <value>Члены поля "{0}", доступного только для чтения, нельзя вернуть по ссылке</value>
+    <value>Члены поля "{0}", доступного только для чтения, нельзя вернуть по ссылке, доступной для записи</value>
   </data>
   <data name="ERR_BadDynamicMethodArg" xml:space="preserve">
     <value>Не удается использовать выражение типа "{0}" в качестве аргумента для динамически отправляемой операции.</value>
@@ -1371,7 +1395,7 @@
     <value>Событие среды выполнения Windows не может передаваться как параметр out или ref.</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
+    <value>Экземпляр типа "{0}" нельзя использовать внутри вложенной функции, выражения запроса, блока итератора или асинхронного метода.</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>'{0}" не реализует член интерфейса "{1}". '{2}" не может реализовать "{1}", потому что не имеет соответствующего возвращаемого типа "{3}".</value>
@@ -1445,6 +1469,9 @@
   <data name="WRN_RefCultureMismatch_Title" xml:space="preserve">
     <value>Сборка, на которую указывает ссылка, содержит другой параметр языка и региональных параметров</value>
   </data>
+  <data name="ERR_InExtensionMustBeValueType" xml:space="preserve">
+    <value>Первый параметр метода расширения "in" "{0}" должен иметь тип значения.</value>
+  </data>
   <data name="ERR_NoConversionForNubDefaultParam" xml:space="preserve">
     <value>Значение типа "{0}" нельзя использовать в качестве параметра по умолчанию для допускающего значение Null параметра "{1}", так как "{0}" не является простым типом</value>
   </data>
@@ -1516,6 +1543,9 @@
   </data>
   <data name="ThisMethodCanOnlyBeUsedToCreateTokens" xml:space="preserve">
     <value>Этот метод можно использовать только для создания токенов — {0} не является видом токена.</value>
+  </data>
+  <data name="ERR_OverloadRefKind" xml:space="preserve">
+    <value>"{0}" не может определять перегруженный {1}, который отличается только модификаторами параметров "{2}" и "{3}"</value>
   </data>
   <data name="ERR_NameNotInContextPossibleMissingReference" xml:space="preserve">
     <value>Имя "{0}" не существует в текущем контексте (возможно, отсутствует ссылка на сборку "{1}"?)</value>
@@ -1710,9 +1740,6 @@
   <data name="ERR_IntegralTypeValueExpected" xml:space="preserve">
     <value>Требуется значение целочисленного типа.</value>
   </data>
-  <data name="ERR_MultiParamMod" xml:space="preserve">
-    <value>Параметр не может содержать все указанные модификаторы; слишком много модификаторов для параметра.</value>
-  </data>
   <data name="ERR_NotYetImplementedInRoslyn" xml:space="preserve">
     <value>Эта возможность языка ("{0}") еще не реализована.</value>
   </data>
@@ -1812,6 +1839,9 @@
   <data name="ERR_ClassDoesntImplementInterface" xml:space="preserve">
     <value>'{0}": вмещающий тип не реализует интерфейс "{1}".</value>
   </data>
+  <data name="ERR_RefStructInterfaceImpl" xml:space="preserve">
+    <value>"{0}": ссылочные структуры не могут реализовывать интерфейсы</value>
+  </data>
   <data name="ERR_QueryNoProviderStandard" xml:space="preserve">
     <value>Не удалось найти реализацию шаблона запроса для исходного типа "{0}".  "{1}" не найден.  Возможно, не хватает ссылки на "System.Core.dll" или директивы using для "System.Linq".</value>
   </data>
@@ -1836,6 +1866,9 @@
   <data name="WRN_TooManyLinesForDebugger_Title" xml:space="preserve">
     <value>Файл с исходным текстом программы превысил установленный в PDB-файле предел в 16 707 565 строк; отладочная информация будет неправильной</value>
   </data>
+  <data name="IDS_FeatureRefStructs" xml:space="preserve">
+    <value>ссылочные структуры</value>
+  </data>
   <data name="ERR_AutoPropertyInitializerInInterface" xml:space="preserve">
     <value>Автоматически реализованные в интерфейсах свойства не могут иметь инициализаторы.</value>
   </data>
@@ -1852,7 +1885,7 @@
     <value>Операндом оператора инкремента или декремента должна быть переменная, свойство или индексатор.</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed switch is only supported when emitting a PDB.</value>
+    <value>Параметр /embed поддерживается только при создании PDB-файла.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>"{0}" не может одновременно внешним и абстрактным.</value>
@@ -1889,6 +1922,9 @@
   </data>
   <data name="ERR_MustHaveRefReturn" xml:space="preserve">
     <value>Возвращаемые по значению данные можно использовать только в методах, которые возвращают данные по значению</value>
+  </data>
+  <data name="ERR_EscapeStackAlloc" xml:space="preserve">
+    <value>Результат выражения stackalloc типа "{0}" нельзя использовать в этом контексте, так как он может быть доступен вне содержащего метода.</value>
   </data>
   <data name="ERR_InvalidFwdType" xml:space="preserve">
     <value>В качестве аргумента для атрибута TypeForwardedTo указан недопустимый тип.</value>
@@ -2077,7 +2113,7 @@
     <value>Все другие ограничения должны следовать после ограничения типа класса "{0}".</value>
   </data>
   <data name="ERR_CantChangeRefReturnOnOverride" xml:space="preserve">
-    <value>"{0}" должен {2}возвращать данные по ссылке, чтобы соответствовать переопределенному члену "{1}"</value>
+    <value>"{0}" должен соответствовать возвращаемому по ссылке типу переопределенного члена "{1}"</value>
   </data>
   <data name="WRN_CallerLineNumberPreferredOverCallerFilePath_Title" xml:space="preserve">
     <value>Атрибут CallerFilePathAttribute не будет работать: он переопределяется атрибутом CallerLineNumberAttribute</value>
@@ -2094,6 +2130,12 @@
   <data name="ERR_TypeArgsNotAllowed" xml:space="preserve">
     <value>{1} "{0}" нельзя использовать с аргументами типа</value>
   </data>
+  <data name="ERR_EscapeLocal" xml:space="preserve">
+    <value>Локальный "{0}" нельзя использовать в этом контексте, так как из-за этого переменные, на которые имеются ссылки, могут стать доступными за пределами их области объявления.</value>
+  </data>
+  <data name="ERR_EscapeOther" xml:space="preserve">
+    <value>Выражение нельзя использовать в этом контексте, так как из-за этого переменные могут стать косвенно доступными за пределами их области объявления.</value>
+  </data>
   <data name="ERR_PartialMethodOnlyOneLatent" xml:space="preserve">
     <value>Разделяемый метод не может иметь несколько определяющих объявлений.</value>
   </data>
@@ -2105,6 +2147,9 @@
   </data>
   <data name="ERR_BadAwaitArg" xml:space="preserve">
     <value>Для применения оператора "await" у типа {0} должен быть подходящий метод GetAwaiter.</value>
+  </data>
+  <data name="ERR_EscapeCall2" xml:space="preserve">
+    <value>Элемент результата "{0}" нельзя использовать в этом контексте, так как из-за этого переменные, на которые ссылается параметр "{1}", могут стать доступными за пределами их области объявления.</value>
   </data>
   <data name="ERR_MemberReserved" xml:space="preserve">
     <value>Тип "{1}" уже резервирует член "{0}" с такими же типами параметров.</value>
@@ -2202,6 +2247,9 @@
   <data name="WRN_NonObsoleteOverridingObsolete_Title" xml:space="preserve">
     <value>Член переопределяет устаревший член</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField" xml:space="preserve">
+    <value>Не удается присвоить значение {0} "{1}", так как это переменная только для чтения</value>
+  </data>
   <data name="ERR_BadAsyncLocalType" xml:space="preserve">
     <value>Асинхронные методы не могут иметь локальных переменных по ссылке</value>
   </data>
@@ -2235,6 +2283,9 @@
   <data name="ERR_PatternIsSubsumed" xml:space="preserve">
     <value>Метка case оператора switch уже обработана предыдущей меткой case.</value>
   </data>
+  <data name="ERR_EscapeCall" xml:space="preserve">
+    <value>Результат "{0}" нельзя использовать в этом контексте, так как из-за этого переменные, на которые ссылается параметр "{1}", могут стать доступными за пределами их области объявления.</value>
+  </data>
   <data name="ERR_ForwardedTypeIsNested" xml:space="preserve">
     <value>Не удается переадресовать тип "{0}", так как он является вложенным типом "{1}".</value>
   </data>
@@ -2258,6 +2309,9 @@
   </data>
   <data name="ERR_CantOverrideBogusMethod" xml:space="preserve">
     <value>'{0}": невозможно переопределение "{1}", так как такая операция в данном языке не поддерживается.</value>
+  </data>
+  <data name="ERR_BadParameterModifiers" xml:space="preserve">
+    <value> Модификатор параметра "{0}" не может использоваться с "{1}"</value>
   </data>
   <data name="ERR_NonInvocableMemberCalled" xml:space="preserve">
     <value>Невызываемый член "{0}" не может использоваться как метод.</value>
@@ -2391,6 +2445,9 @@
   <data name="ERR_BadEmptyThrow" xml:space="preserve">
     <value>Оператор throw без аргументов не может использоваться вне предложения catch.</value>
   </data>
+  <data name="ERR_BadSpecialByRefIterator" xml:space="preserve">
+    <value>Оператор foreach нельзя использовать с перечислителями типа "{0}" в методах с модификатором Async или Iterator, так как "{0}" является ссылочной структурой.</value>
+  </data>
   <data name="WRN_UnreferencedEvent" xml:space="preserve">
     <value>Событие "{0}" никогда не используется.</value>
   </data>
@@ -2448,6 +2505,9 @@
   <data name="ERR_InvalidSpecifier" xml:space="preserve">
     <value>'{0}" не является допустимым описателем формата.</value>
   </data>
+  <data name="ERR_RefConditionalAndAwait" xml:space="preserve">
+    <value>await не может использоваться в выражении, содержащем условный оператор ref</value>
+  </data>
   <data name="ERR_DuplicateImportSimple" xml:space="preserve">
     <value>Сборка с аналогичным простым именем "{0}" уже была импортирована. Попробуйте удалить одну из ссылок (например "{1}") или подпишите их для параллельного использования.</value>
   </data>
@@ -2490,6 +2550,9 @@
   <data name="ERR_ExternAliasNotAllowed" xml:space="preserve">
     <value>"внешний псевдоним" недопустим в этом контексте.</value>
   </data>
+  <data name="ERR_RefConditionalNeedsTwoRefs" xml:space="preserve">
+    <value>Либо оба значения ссылочного оператора должны быть ссылочными, либо ни одно из них не должно быть ссылочным</value>
+  </data>
   <data name="ERR_NoPIANestedType" xml:space="preserve">
     <value>Не удается внедрить тип "{0}", так как он является вложенным. Попробуйте задать свойству "Внедрить типы взаимодействия" значение False.</value>
   </data>
@@ -2507,9 +2570,6 @@
   </data>
   <data name="IDS_XMLNOINCLUDE" xml:space="preserve">
     <value>Не обнаружено элементов, соответствующих тегу include. </value>
-  </data>
-  <data name="ERR_FeatureIsExperimental" xml:space="preserve">
-    <value>Возможность "{0}" является экспериментальной и не поддерживается. Для ее включения используйте "/features:{1}".</value>
   </data>
   <data name="WRN_EqualsWithoutGetHashCode_Title" xml:space="preserve">
     <value>Тип переопределяет Object.Equals(object o), но не переопределяет Object.GetHashCode()</value>
@@ -2582,6 +2642,9 @@
   </data>
   <data name="WRN_AttributeIgnoredWhenPublicSigning_Title" xml:space="preserve">
     <value>Атрибут пропускается при указании общедоступного подписывания.</value>
+  </data>
+  <data name="ERR_TypeReserved" xml:space="preserve">
+    <value>Имя типа "{0}" зарезервировано для использования компилятором.</value>
   </data>
   <data name="ERR_QueryInnerKey" xml:space="preserve">
     <value>Имя "{0}" находится вне области правой части конструкции "equals".  Возможно, требуется поменять местами выражения с обеих сторон "equals".</value>
@@ -2764,6 +2827,9 @@
   <data name="ERR_BadAttributeArgument" xml:space="preserve">
     <value>Аргументом атрибута должно быть константное выражение, выражение typeof или выражение создания массива того же типа, что и параметр атрибута.</value>
   </data>
+  <data name="IDS_FeatureReadOnlyStructs" xml:space="preserve">
+    <value>структуры только для чтения</value>
+  </data>
   <data name="IDS_ThrowExpression" xml:space="preserve">
     <value>&lt;выражение throw&gt;</value>
   </data>
@@ -2908,6 +2974,9 @@
   <data name="ERR_ReadonlyValueTypeInObjectInitializer" xml:space="preserve">
     <value>Членам поля только для чтения "{0}" типа "{1}" не могут быть присвоены значения с помощью инициализатора объекта, так как они имеют тип значения.</value>
   </data>
+  <data name="ERR_FieldlikeEventsInRoStruct" xml:space="preserve">
+    <value>Подобные полям события не допускаются в структурах только для чтения.</value>
+  </data>
   <data name="ERR_BadAsyncLacksBody" xml:space="preserve">
     <value>Модификатор "async" можно использовать только в методах, имеющих тело.</value>
   </data>
@@ -2954,7 +3023,7 @@
     <value>Требуется инициализатор массива длиной "{0}".</value>
   </data>
   <data name="ERR_RefReturnReadonly" xml:space="preserve">
-    <value>Поле, доступное только для чтения, невозможно вернуть по ссылке</value>
+    <value>Поле, доступное только для чтения, невозможно вернуть по ссылке, доступной для записи</value>
   </data>
   <data name="ERR_V6SwitchGoverningTypeValueExpected" xml:space="preserve">
     <value>Выражение switch или метка case должны быть логическим значением, символом, строкой, целым числом, перечислением или соответствующим типом, принимающим значение NULL, в C# 6 и более ранних версиях.</value>
@@ -2988,9 +3057,6 @@
   </data>
   <data name="ERR_AnonymousTypePropertyAssignedBadValue" xml:space="preserve">
     <value>Невозможно присвоить "{0}" свойству анонимного типа.</value>
-  </data>
-  <data name="ERR_OverloadRefOutCtor" xml:space="preserve">
-    <value>Не удается определить перегруженный конструктор "{0}", так как он отличается от другого конструктора только параметрами ref и out.</value>
   </data>
   <data name="ERR_CantOpenFileWrite" xml:space="preserve">
     <value>Не удается открыть "{0}" для записи — "{1}".</value>
@@ -3045,9 +3111,6 @@
   </data>
   <data name="ERR_ConstValueRequired" xml:space="preserve">
     <value>Требуется указать значение поля const.</value>
-  </data>
-  <data name="ERR_RefReturnReceiver" xml:space="preserve">
-    <value>Невозможно вернуть "{0}" по ссылке, так как его получатель невозможно вернуть по ссылке</value>
   </data>
   <data name="WRN_BadRestoreNumber" xml:space="preserve">
     <value>Не удается восстановить предупреждение "CS{0}", так как оно было глобально отключено.</value>
@@ -3136,7 +3199,7 @@
     <value>Неоднозначность между "{0}" и "{1}"</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
-    <value>Local function is declared but never used</value>
+    <value>Локальная функция объявлена, но не используется</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>Ошибка в синтаксисе командной строки: Отсутствует Guid для параметра "{1}".</value>
@@ -3215,146 +3278,146 @@
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# Compiler Options
+                              Параметры компилятора Visual C#
 
-                        - OUTPUT FILES -
- /out:&lt;file&gt;                   Specify output file name (default: base name of
-                               file with main class or first file)
- /target:exe                   Build a console executable (default) (Short
-                               form: /t:exe)
- /target:winexe                Build a Windows executable (Short form:
+                        - ВЫХОДНЫЕ ФАЙЛЫ -
+ /out:&lt;файл&gt;                   Указывает имя выходного файла (по умолчанию: базовое имя
+                               файла с классом main или имя первого файла)
+ /target:exe                   По умолчанию выполняет сборку консольного исполняемого файла (краткая
+                               форма: /t:exe)
+ /target:winexe                Выполняет сборку исполняемого файла Windows (краткая форма:
                                /t:winexe)
- /target:library               Build a library (Short form: /t:library)
- /target:module                Build a module that can be added to another
-                               assembly (Short form: /t:module)
- /target:appcontainerexe       Build an Appcontainer executable (Short form:
+ /target:library               Выполняет сборку библиотеки (краткая форма: /t:library)
+ /target:module                Выполняет сборку модуля, который может быть добавлен в другую
+                               сборку (краткая форма: /t:module)
+ /target:appcontainerexe       Выполняет сборку исполняемого файла контейнера приложений (краткая форма:
                                /t:appcontainerexe)
- /target:winmdobj              Build a Windows Runtime intermediate file that
-                               is consumed by WinMDExp (Short form: /t:winmdobj)
- /doc:&lt;file&gt;                   XML Documentation file to generate
- /refout:&lt;file&gt;                Reference assembly output to generate
- /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
-                               Itanium, x64, arm, anycpu32bitpreferred, or
-                               anycpu. The default is anycpu.
+ /target:winmdobj              Выполняет сборку промежуточного файла среды выполнения Windows,
+                               используемого в WinMDExp (краткая форма: /t:winmdobj)
+ /doc:&lt;файл&gt;                   Создаваемый XML-файл документации
+ /refout:&lt;файл&gt;                Создаваемые выходные данные базовой сборки.
+ /platform:&lt;строка&gt;            Ограничить платформы, на которых может выполняться этот код: x86,
+                               Itanium, x64, arm, anycpu32bitpreferred или
+                               anycpu. Значение по умолчанию — anycpu.
 
-                        - INPUT FILES -
- /recurse:&lt;wildcard&gt;           Include all files in the current directory and
-                               subdirectories according to the wildcard
-                               specifications
- /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
-                               file using the given alias (Short form: /r)
- /reference:&lt;file list&gt;        Reference metadata from the specified assembly
-                               files (Short form: /r)
- /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
- /link:&lt;file list&gt;             Embed metadata from the specified interop
-                               assembly files (Short form: /l)
- /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
-                               (Short form: /a)
- /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
-                               generation but may be used by analyzers for producing
-                               errors or warnings.
- /embed                        Embed all source files in the PDB.
- /embed:&lt;file list&gt;            Embed specific files in the PDB
+                        - ВХОДНЫЕ ФАЙЛЫ -
+ /recurse:&lt;подстановочный знак&gt;           Включить все файлы в текущем каталоге и
+                               подкаталогах в соответствии с заданным
+                               подстановочным знаком
+ /reference:&lt;псевдоним&gt;=&lt;файл&gt;     Ссылаться на метаданные из заданного файла
+                               сборки с помощью определенного псевдонима (краткая форма: /r)
+ /reference:&lt;список файлов&gt;        Ссылаться на метаданные из заданных файлов
+                               сборки (краткая форма: /r)
+ /addmodule:&lt;список файлов&gt;        Скомпоновать указанные модули вместе с этой сборкой
+ /link:&lt;список файлов&gt;             Внедрить метаданные из указанных файлов
+                               сборок взаимодействия (краткая форма: /l)
+ /analyzer:&lt;список файлов&gt;         Запускать анализаторы из этой сборки
+                               (краткая форма: /a)
+ /additionalfile:&lt;список файлов&gt;   Дополнительные файлы, которые не оказывают прямого влияния на создание
+                               кода, но могут использоваться анализаторами для вывода
+                               ошибок или предупреждений.
+ /embed                        Внедрить все исходные файлы в PDB.
+ /embed:&lt;список файлов&gt;            Внедрить указанные файлы в PDB.
 
-                        - RESOURCES -
- /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
- /win32icon:&lt;file&gt;             Use this icon for the output
- /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
- /nowin32manifest              Do not include the default Win32 manifest
- /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
- /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
-                               (Short form: /linkres) Where the resinfo format
-                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
+                        - РЕСУРСЫ -
+ /win32res:&lt;файл&gt;              Задает файл ресурсов Win32 (RES-файл)
+ /win32icon:&lt;файл&gt;             Использовать этот значок для вывода.
+ /win32manifest:&lt;файл&gt;         Задает файл манифеста Win32 (XML-файл).
+ /nowin32manifest              Не включать манифест Win32 по умолчанию.
+ /resource:&lt;ресурс&gt;           Внедрить указанный ресурс (краткая форма: /res)
+ /linkresource:&lt;ресурс&gt;       Скомпоновать указанный ресурс вместе с этой сборкой
+                               (краткая форма: /linkres), где данные о ресурсах имеют формат
+                               &lt;файл&gt;[,&lt;имя строки&gt;[,public|private]]
 
-                        - CODE GENERATION -
- /debug[+|-]                   Emit debugging information
+                        - СОЗДАНИЕ КОДА -
+ /debug[+|-]                   Выдать отладочную информацию.
  /debug:{full|pdbonly|portable|embedded}
-                               Specify debugging type ('full' is default,
-                               'portable' is a cross-platform format,
-                               'embedded' is a cross-platform format embedded into
-                               the target .dll or .exe)
- /optimize[+|-]                Enable optimizations (Short form: /o)
- /deterministic                Produce a deterministic assembly
-                               (including module version GUID and timestamp)
- /refonly                      Produce a reference assembly in place of the main output
- /instrument:TestCoverage      Produce an assembly instrumented to collect
-                               coverage information
- /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
+                               Задать тип отладки (по умолчанию — "full",
+                               "portable" — кроссплатформенный формат,
+                               "embedded" — кроссплатформенный формат, внедряемый в
+                               целевой DLL- или EXE-файл)
+ /optimize[+|-]                Включить оптимизацию (краткая форма: /o)
+ /deterministic                Создать детерминированную сборку
+                               (включая GUID версии модуля и метку времени)
+ /refonly                      Создать базовую сборку вместо основных выходных данных.
+ /instrument:TestCoverage      Создать сборку, инструментированную для сбора
+                               сведений об объеме протестированного кода. 
+ /sourcelink:&lt;файл&gt;            Данные о ссылке на исходные файлы для внедрения в PDB.
 
-                        - ERRORS AND WARNINGS -
- /warnaserror[+|-]             Report all warnings as errors
- /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
- /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
- /nowarn:&lt;warn list&gt;           Disable specific warning messages
- /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
-                               diagnostics.
- /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
-                               diagnostics.
- /reportanalyzer               Report additional analyzer information, such as
-                               execution time.
+                        - ОШИБКИ И ПРЕДУПРЕЖДЕНИЯ -
+ /warnaserror[+|-]             Записывать все предупреждения как ошибки.
+ /warnaserror[+|-]:&lt;предупреждения&gt; Записывать указанные предупреждения как ошибки.
+ /warn:&lt;n&gt;                     Задать уровень генерации предупреждений (0–4) (краткая форма: /w)
+ /nowarn:&lt;предупреждения&gt;           Отключить указанные предупреждения.
+ /ruleset:&lt;файл&gt;               Указать файл набора правил, отключающий определенные
+                               диагностические операции.
+ /errorlog:&lt;файл&gt;              Указать файл для записи всех диагностических данных
+                               компилятора и анализатора.
+ /reportanalyzer               Сообщить дополнительные сведения об анализаторе, например
+                               время выполнения.
 
-                        - LANGUAGE -
- /checked[+|-]                 Generate overflow checks
- /unsafe[+|-]                  Allow 'unsafe' code
- /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
-                               form: /d)
- /langversion:?                Display the allowed values for language version
- /langversion:&lt;string&gt;         Specify language version such as
-                               `default` (latest major version), or
-                               `latest` (latest version, including minor versions),
-                               or specific versions like `6` or `7.1`
+                        - ЯЗЫК -
+ /checked[+|-]                 Создать проверки переполнений.
+ /unsafe[+|-]                  Допускать "небезопасный" код.
+ /define:&lt;список символов&gt;         Определить символы условной компиляции (краткая
+                               форма: /d)
+ /langversion:?         Указать допустимые значения для версии языка
+ /langversion:&lt;строка&gt;         Указать языковую версию, например
+                               "default" (последняя основная версия) или
+                               "latest" (последняя версия, включая дополнительные),
+                               или конкретные версии, например 6 или 7.1.
 
-                        - SECURITY -
- /delaysign[+|-]               Delay-sign the assembly using only the public
-                               portion of the strong name key
- /publicsign[+|-]              Public-sign the assembly using only the public
-                               portion of the strong name key
- /keyfile:&lt;file&gt;               Specify a strong name key file
- /keycontainer:&lt;string&gt;        Specify a strong name key container
- /highentropyva[+|-]           Enable high-entropy ASLR
+                        - БЕЗОПАСНОСТЬ -
+ /delaysign[+|-]               Использовать отложенную подпись для сборки, применяя только открытую
+                               часть ключа строгого имени
+ /publicsign[+|-]              Подписать сборку, используя только открытую
+                               часть ключа строгого имени
+ /keyfile:&lt;файл&gt;               Указать файл ключей строгого имени.
+ /keycontainer:&lt;строка&gt;        Указать контейнер ключей строгого имени.
+ /highentropyva[+|-]           Включить ASLR с высокой энтропией.
 
-                        - MISCELLANEOUS -
- @&lt;file&gt;                       Read response file for more options
- /help                         Display this usage message (Short form: /?)
- /nologo                       Suppress compiler copyright message
- /noconfig                     Do not auto include CSC.RSP file
- /parallel[+|-]                Concurrent build.
- /version                      Display the compiler version number and exit.
+                        - ПРОЧЕЕ -
+ @&lt;файл&gt;                       Считать файл ответов с дополнительными параметрами.
+ /help                         Отображать это сообщение об использовании (краткая форма: /?)
+ /nologo                       Запрещать отображение сообщения компилятора об авторских правах.
+ /noconfig                     Не включать файл CSC.RSP автоматически.
+ /parallel[+|-]                Параллельная сборка.
+ /version                      Отобразить номер версии компилятора и выйти.
 
-                        - ADVANCED -
- /baseaddress:&lt;address&gt;        Base address for the library to be built
- /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
-                               checksum stored in PDB. Supported values are:
-                               SHA1 (default) or SHA256.
- /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
-                               files
- /utf8output                   Output compiler messages in UTF-8 encoding
- /main:&lt;type&gt;                  Specify the type that contains the entry point
-                               (ignore all other possible entry points) (Short
-                               form: /m)
- /fullpaths                    Compiler generates fully qualified paths
- /filealign:&lt;n&gt;                Specify the alignment used for output file
-                               sections
+                        - ДОПОЛНИТЕЛЬНО -
+ /baseaddress:&lt;адрес&gt;        Базовый адрес библиотеки, для которой выполняется сборка.
+ /checksumalgorithm:&lt;алгоритм&gt;      Задать алгоритм для расчета контрольной суммы
+                               исходного файла, хранимой в формате PDB. Поддерживаемые значения:
+                               SHA1 (по умолчанию) или SHA256.
+ /codepage:&lt;n&gt;                 Задать кодовую страницу, используемую при открытии исходных
+                               файлов.
+ /utf8output                   Выводить сообщения компилятора в кодировке UTF-8.
+ /main:&lt;тип&gt;                  Указать тип, содержащий точку входа
+                               (все другие возможные точки входа игнорируются) (краткая
+                               форма: /m)
+ /fullpaths                    Компилятор создает полные пути.
+ /filealign:&lt;n&gt;                Задать выравнивание для разделов выходных
+                               файлов.
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Specify a mapping for source path names output by
-                               the compiler.
- /pdb:&lt;file&gt;                   Specify debug information file name (default:
-                               output file name with .pdb extension)
- /errorendlocation             Output line and column of the end location of
-                               each error
- /preferreduilang              Specify the preferred output language name.
- /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
- /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
- /lib:&lt;file list&gt;              Specify additional directories to search in for
-                               references
- /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
-                               prompt, send, queue, or none. The default is
+                               Задать сопоставление для выходных данных имен исходного пути по
+                               компилятору.
+ /pdb:&lt;файл&gt;                   Задать имя файла для отладочной информации (по умолчанию
+                               используется имя выходного файла с расширением PDB)
+ /errorendlocation             Выводить строку и столбец конечного расположения
+                               каждой ошибки.
+ /preferreduilang              Указать имя предпочтительного языка вывода.
+ /nostdlib[+|-]                Не обращаться к стандартной библиотеке (mscorlib.dll).
+ /subsystemversion:&lt;строка&gt;    Задать версию подсистемы этой сборки.
+ /lib:&lt;список файлов&gt;              Задать дополнительные каталоги для поиска
+                               ссылок.
+ /errorreport:&lt;строка&gt;         Указать способ обработки внутренних ошибок компилятора:
+                               prompt, send, queue или none. По умолчанию используется
                                queue.
- /appconfig:&lt;file&gt;             Specify an application configuration file
-                               containing assembly binding settings
- /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
-                               a part of
- /modulename:&lt;string&gt;          Specify the name of the source module
+ /appconfig:&lt;файл&gt;             Указать файл конфигурации приложения,
+                               содержащий параметры привязки сборки.
+ /moduleassemblyname:&lt;строка&gt;  Имя сборки, частью которой будет являться
+                               этот модуль.
+ /modulename:&lt;строка&gt;          Задать имя исходного модуля.
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3372,9 +3435,6 @@
   <data name="ERR_InvalidSignaturePublicKey" xml:space="preserve">
     <value>В AssemblySignatureKeyAttribute определен недопустимый открытый ключ подписи.</value>
   </data>
-  <data name="ERR_OverloadRefOut" xml:space="preserve">
-    <value>"{0}" не может определять перегруженные методы, которые различаются только параметрами ref и out.</value>
-  </data>
   <data name="WRN_TupleLiteralNameMismatch" xml:space="preserve">
     <value>Имя элемента кортежа "{0}" игнорируется, так как целевым типом "{1}" задано другое имя либо имя не задано.</value>
   </data>
@@ -3389,9 +3449,6 @@
   </data>
   <data name="ERR_AmbigContext" xml:space="preserve">
     <value>'{0}" является неоднозначной ссылкой между "{1}" и "{2}".</value>
-  </data>
-  <data name="ERR_ParamsCantBeRefOut" xml:space="preserve">
-    <value>Параметр params не может объявляться как параметр с ключевым словом ref или out.</value>
   </data>
   <data name="WRN_CmdOptionConflictsSource_Title" xml:space="preserve">
     <value>Параметр переопределяет атрибут, заданный в исходном файле или добавленном модуле</value>
@@ -3453,9 +3510,6 @@
   <data name="ERR_NoDynamicPhantomOnBaseCtor" xml:space="preserve">
     <value>Не удается выполнить требуемую для вызова конструктора динамическую отправку, поскольку этот вызов является частью инициализатора конструктора. Попробуйте привести динамические аргументы.</value>
   </data>
-  <data name="ERR_RefReturnCall2" xml:space="preserve">
-    <value>Невозможно вернуть по ссылке член результата "{0}", так как аргумент, переданный в параметре "{1}", невозможно вернуть по ссылке</value>
-  </data>
   <data name="ERR_TypeInferenceFailedForImplicitlyTypedOutVariable" xml:space="preserve">
     <value>Невозможно определить тип неявно типизированной переменной "out" "{0}".</value>
   </data>
@@ -3467,6 +3521,9 @@
   </data>
   <data name="ERR_ImplicitlyTypedVariableMultipleDeclarator" xml:space="preserve">
     <value>Неявно типизированные переменные не могут быть многократно объявлены.</value>
+  </data>
+  <data name="ERR_RefReturnReadonlyNotField" xml:space="preserve">
+    <value>Невозможно вернуть {0} "{1}" по ссылке для записи, так как это переменная только для чтения</value>
   </data>
   <data name="ERR_NamespaceUnexpected" xml:space="preserve">
     <value>Пространство имен не может напрямую включать в себя такие члены, как поля или методы.</value>
@@ -3630,9 +3687,6 @@
   <data name="ERR_InvalidAssemblyCulture" xml:space="preserve">
     <value>Строки языка и региональных параметров сборки могут не содержать встроенных символов NULL.</value>
   </data>
-  <data name="ERR_AddrOnReadOnlyLocal" xml:space="preserve">
-    <value>Невозможно получить адрес локальной переменной, доступной только для чтения.</value>
-  </data>
   <data name="ERR_PatternNullableType" xml:space="preserve">
     <value>Запрещено использовать тип "{0}", допускающий значение NULL, в шаблоне. Используйте вместо него базовый тип "{1}".</value>
   </data>
@@ -3664,7 +3718,7 @@
     <value>Невозможно применить CallerMemberNameAttribute, так как отсутствуют стандартные преобразования из типа "{0}" в тип "{1}".</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
+    <value>Невозможно вернуть по ссылке член параметра "{0}", так как это не параметр ref или out</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(Местоположение символа, связанного с предыдущей ошибкой)</value>
@@ -3687,8 +3741,8 @@
   <data name="WRN_InvalidSearchPathDir_Title" xml:space="preserve">
     <value>Указан недопустимый путь поиска</value>
   </data>
-  <data name="ERR_RefReturnCall" xml:space="preserve">
-    <value>Невозможно вернуть по ссылке результат "{0}", так как аргумент, переданный в параметре "{1}", невозможно вернуть по ссылке</value>
+  <data name="ERR_RefReturnThis" xml:space="preserve">
+    <value>Невозможно вернуть this по ссылке.</value>
   </data>
   <data name="ERR_NoCanonicalView" xml:space="preserve">
     <value>Не удается найти тип взаимодействия, соответствующий внедренному типу взаимодействия "{0}". Возможно, отсутствует ссылка на сборку.</value>
@@ -3709,7 +3763,7 @@
     <value>Невозможно вернуть параметр "{0}" по ссылке, так как это не параметр ref или out</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
+    <value>Элементы, определенные в пространстве имен, нельзя объявлять в явном виде как частные, защищенные, защищенные внутренние или частные защищенные.</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>Параметр /moduleassemblyname может использоваться только при сборке модуля.</value>
@@ -3745,7 +3799,7 @@
     <value>'{0}" не является ссылочным типом, как требуется в операторе lock.</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic" xml:space="preserve">
-    <value>Статическое поле, доступное только для чтения, невозможно вернуть по ссылке</value>
+    <value>Статическое поле, доступное только для чтения, невозможно вернуть по ссылке для записи</value>
   </data>
   <data name="WRN_CLS_BadInterfaceMember_Title" xml:space="preserve">
     <value>Интерфейсы, совместимые с CLS, должны включать только совместимые с CLS члены</value>
@@ -3809,6 +3863,9 @@
   </data>
   <data name="ERR_PropertyLacksGet" xml:space="preserve">
     <value>Свойство или индексатор "{0}" не может использоваться в этом контексте, так как не имеет метода доступа get.</value>
+  </data>
+  <data name="ERR_AutoPropsInRoStruct" xml:space="preserve">
+    <value>Автоматически реализуемые свойства экземпляра в структурах только для чтения должны быть доступны только для чтения.</value>
   </data>
   <data name="ERR_LanguageVersionCannotHaveLeadingZeroes" xml:space="preserve">
     <value>Указанная версия языка "{0}" не может содержать начальные нули.</value>
@@ -3880,7 +3937,7 @@
     <value>"{0}" определяет оператор "==" или оператор "!=", но не переопределяет Object.GetHashCode().</value>
   </data>
   <data name="IDS_LangVersions" xml:space="preserve">
-    <value>Supported language versions:</value>
+    <value>Поддерживаемые языковые версии:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>Тип одного из параметров бинарного оператора должен быть вмещающим.</value>
@@ -3947,6 +4004,9 @@
   </data>
   <data name="ERR_UnexpectedSemicolon" xml:space="preserve">
     <value>Использование точки с запятой после блока метода или доступа недопустимо.</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField2" xml:space="preserve">
+    <value>Члены {0} "{1}" невозможно использовать как значения ref или out, так как это переменная только для чтения</value>
   </data>
   <data name="ERR_LocalTypeNameClash" xml:space="preserve">
     <value>Внедрение типа взаимодействия "{0}" из сборки "{1}" служит причиной конфликта имен в текущей сборке. Попробуйте задать свойству "Внедрить типы взаимодействия" значение False.</value>
@@ -4050,6 +4110,9 @@
   <data name="ERR_ArrayOfStaticClass" xml:space="preserve">
     <value>'{0}": элементы массива не могут быть статического типа.</value>
   </data>
+  <data name="IDS_SK_CONSTRUCTOR" xml:space="preserve">
+    <value>конструктор</value>
+  </data>
   <data name="ERR_InvalidQM" xml:space="preserve">
     <value>Не удается определить тип условного выражения, так как неявного преобразования между "{0}" и "{1}" не существует.</value>
   </data>
@@ -4061,6 +4124,9 @@
   </data>
   <data name="ERR_InaccessibleSetter" xml:space="preserve">
     <value>Свойство или индексатор "{0}" невозможно использовать в данном контексте, так как метод доступа set недоступен.</value>
+  </data>
+  <data name="IConversionExpressionIsNotCSharpConversion" xml:space="preserve">
+    <value>{0} не является допустимым выражением преобразования C#</value>
   </data>
   <data name="ERR_NamedArgumentUsedInPositional" xml:space="preserve">
     <value>Именованный аргумент "{0}" задает параметр, для которого уже был установлен позиционный аргумент.</value>
@@ -4204,7 +4270,7 @@
     <value>Объект "{0}" нельзя удалить более одного раза.</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongRefReturn" xml:space="preserve">
-    <value>"{0}" не реализует член интерфейса "{1}". "{2}" не может реализовать "{1}", так как он не возвращает данные по {3}</value>
+    <value>"{0}" не реализует член интерфейса "{1}". "{2}" не может реализовать "{1}", так как он не имеет соответствующего возвращаемого по ссылке типа.</value>
   </data>
   <data name="ERR_FixedNeedsLvalue" xml:space="preserve">
     <value>Доступ к буферам фиксированного размера разрешен только через локальные переменные или поля.</value>
@@ -4345,7 +4411,7 @@
     <value>Параметр типа "{1}" имеет ограничение "struct", поэтому "{1}" не может использоваться в качестве ограничения для "{0}".</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
+    <value>Предопределенный тип "{0}" не определен и не импортирован или объявлен в нескольких сборках, на которые имеются ссылки.</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>Аргумент типа не может иметь значение Null</value>
@@ -4406,6 +4472,9 @@
   </data>
   <data name="ERR_BadCastInFixed" xml:space="preserve">
     <value>Правая часть присваивания оператора fixed не может быть выражением приведения типа.</value>
+  </data>
+  <data name="IDS_FeatureRefExtensionMethods" xml:space="preserve">
+    <value>ссылочные методы расширения</value>
   </data>
   <data name="ERR_AssgReadonly2" xml:space="preserve">
     <value>Члены поля "{0}", предназначенного только для чтения, могут быть изменены только в конструкторе или инициализаторе переменных.</value>
@@ -4503,6 +4572,9 @@
   <data name="ERR_ComRefCallInExpressionTree" xml:space="preserve">
     <value>Дерево лямбда-выражения не может содержать вызов COM с пропущенным аргументом ref.</value>
   </data>
+  <data name="ERR_ParamsCantBeWithModifier" xml:space="preserve">
+    <value>Параметр params не может объявляться с ключевым словом {0}</value>
+  </data>
   <data name="ERR_BadForeachDecl" xml:space="preserve">
     <value>В операторе foreach требуется указать и тип, и идентификатор.</value>
   </data>
@@ -4510,7 +4582,7 @@
     <value>Аргумент {0}: не удается преобразовать из "{1}" в "{2}".</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
+    <value>Спецификации именованных аргументов должны создаваться после указания всех фиксированных аргументов. Используйте версию языка {0} или более позднюю, чтобы разрешить неконечные именованные аргументы.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>Ограничения для параметра типа "{0}" метода "{1}" должны соответствовать ограничениям параметра типа "{2}" метода интерфейса "{3}". Рассмотрите возможность явной реализации интерфейса.</value>
@@ -4532,6 +4604,9 @@
   </data>
   <data name="ERR_UnexpectedToken" xml:space="preserve">
     <value>Непредвиденный токен "{0}"</value>
+  </data>
+  <data name="ERR_RefConditionalDifferentTypes" xml:space="preserve">
+    <value>Для соответствия альтернативному ссылочному значению выражение должно иметь тип "{0}"</value>
   </data>
   <data name="ERR_CantDeriveFromSealedType" xml:space="preserve">
     <value>'{0}": не может быть производным от запечатанного типа "{1}".</value>
@@ -4620,6 +4695,9 @@
   <data name="ERR_IllegalFixedType" xml:space="preserve">
     <value>Тип буфера фиксированного размера должен входить в следующий список: bool, byte, short, int, long, char, sbyte, ushort, uint, ulong, float или double.</value>
   </data>
+  <data name="ERR_CallArgMixing" xml:space="preserve">
+    <value>Это сочетание аргументов для "{0}" запрещено, так как оно может делать переменные, на которые ссылается параметр "{1}", доступными за пределами их области объявления</value>
+  </data>
   <data name="ERR_ConstOutOfRange" xml:space="preserve">
     <value>Значение константы "{0}" не может быть преобразовано в "{1}".</value>
   </data>
@@ -4672,7 +4750,7 @@
     <value>Возможность "{0}" недоступна в C# 6. Используйте версию языка {1} или выше.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7" xml:space="preserve">
-    <value>Возможность "{0}" недоступна в C# 7.  Используйте версию языка {1} или выше.</value>
+    <value>Возможность "{0}" недоступна в C# 7.0. Используйте версию языка {1} или более позднюю.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion4" xml:space="preserve">
     <value>Возможность "{0}" недоступна в C# 4. Используйте версию языка {1} или выше.</value>
@@ -4760,6 +4838,9 @@
   </data>
   <data name="ERR_SubexpressionNotInNameof" xml:space="preserve">
     <value>Невозможно использовать подвыражение в аргументе nameof.</value>
+  </data>
+  <data name="ERR_MismatchedRefEscapeInTernary" xml:space="preserve">
+    <value>Ветви ссылочного тернарного оператора не могут ссылаться на переменные с несовместимыми областями объявления.</value>
   </data>
   <data name="ERR_FixedDimsRequired" xml:space="preserve">
     <value>Поле буфера фиксированного размера должно иметь спецификатор размера массива после имени поля.</value>
@@ -4913,6 +4994,9 @@
   </data>
   <data name="ERR_PatternDynamicType" xml:space="preserve">
     <value>Запрещено использовать тип dynamic в шаблоне.</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField" xml:space="preserve">
+    <value>Невозможно использовать {0} "{1}" как значение ref или out, так как это переменная только для чтения</value>
   </data>
   <data name="ERR_CallingFinalizeDeprecated" xml:space="preserve">
     <value>Непосредственный вызов деструкторов и функций object.Finalize запрещен. Рекомендуется вызов функции IDisposable.Dispose, если она доступна.</value>
@@ -5092,7 +5176,7 @@
     <value>индексатор, воплощающий выражение</value>
   </data>
   <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
-    <value>'{0}' is a local function and must therefore always have a body.</value>
+    <value>"{0}" — это локальная функция, и поэтому всегда должна иметь тело.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>'{0}": не может наследовать от динамического типа.</value>

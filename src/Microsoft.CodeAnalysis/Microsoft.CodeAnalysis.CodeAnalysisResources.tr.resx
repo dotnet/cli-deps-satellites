@@ -179,7 +179,7 @@
     <value>class</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>Ekli metinler yalnızca PDB gösterilirken desteklenir.</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>Derleme meta verileri oluşturmak için modül kopyası kullanılamaz.</value>
@@ -234,9 +234,6 @@
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>'/keepalive' seçeneğinin -1'den düşük bağımsız değişkenleri geçersiz.</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>'IOperation' özelliği devre dışı bırakıldı.</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>Mutlak yok bekleniyor.</value>

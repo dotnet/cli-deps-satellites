@@ -2317,6 +2317,9 @@
   <data name="lexOusideDecimal" xml:space="preserve">
     <value>이 숫자는 10진 리터럴에 대해 허용 가능한 범위를 벗어납니다.</value>
   </data>
+  <data name="pickleUnexpectedNonZero" xml:space="preserve">
+    <value>어셈블리 '{0}'의 F# 메타데이터를 읽는 동안 오류가 발생했습니다. 예약된 구문이 사용되었습니다. F# 컴파일러를 업그레이드하거나 특정 구문을 사용하지 않는 이전 버전의 어셈블리를 사용해야 할 수 있습니다.</value>
+  </data>
   <data name="etTooManyStaticParameters" xml:space="preserve">
     <value>정적 매개 변수가 너무 많습니다. 최대 {0}개의 매개 변수가 필요한데 명명되지 않은 매개 변수 {1}개와 명명된 매개 변수 {2}개가 있습니다.</value>
   </data>

@@ -318,6 +318,9 @@
   <data name="QinvalidFuncType" xml:space="preserve">
     <value>Ungültiger Funktionstyp.</value>
   </data>
+  <data name="thisValueCannotBeMutated" xml:space="preserve">
+    <value>Für diesen Wert darf kein Mutating verwendet werden.</value>
+  </data>
   <data name="mismatchIARCancel" xml:space="preserve">
     <value>Das bereitgestellte IAsyncResult-Objekt stimmt nicht mit diesem "Abbrechen"-Vorgang überein.</value>
   </data>
@@ -389,9 +392,6 @@
   </data>
   <data name="notComparable" xml:space="preserve">
     <value>Die beiden Objekte haben verschiedene Typen und sind nicht vergleichbar.</value>
-  </data>
-  <data name="ThisValueCannotBeMutated" xml:space="preserve">
-    <value>Für diesen Wert darf kein Mutating verwendet werden.</value>
   </data>
   <data name="unsupportedQueryConstruct" xml:space="preserve">
     <value>Dies ist kein gültiger Abfrageausdruck. Das folgende Konstrukt wurde in einer Abfrage verwendet, wird jedoch vom F#-to-LINQ-Abfragekonvertierungsprogramm nicht erkannt:\n{0}\nÜberprüfen Sie die Spezifikation von zulässigen Abfragen, und entfernen Sie unter Umständen einige Operationen aus dem Abfrageausdruck.</value>

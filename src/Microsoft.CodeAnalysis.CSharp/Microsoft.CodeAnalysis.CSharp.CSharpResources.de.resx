@@ -222,6 +222,9 @@
   <data name="WRN_CallerLineNumberPreferredOverCallerMemberName_Title" xml:space="preserve">
     <value>Das CallerMemberNameAttribute hat keine Auswirkungen; es wird von dem CallerLineNumberAttribute überschrieben</value>
   </data>
+  <data name="ERR_RefReturnReadonlyNotField2" xml:space="preserve">
+    <value>Member von {0} "{1}" können nicht als schreibbarer Verweis zurückgegeben werden, weil es sich um eine schreibgeschützte Variable handelt.</value>
+  </data>
   <data name="ERR_AbstractHasBody" xml:space="preserve">
     <value>"{0}" ist als abstrakt markiert und kann daher keinen Text deklarieren.</value>
   </data>
@@ -300,10 +303,13 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>Dynamische Objekte können nicht dekonstruiert werden.</value>
   </data>
   <data name="ERR_RefReturnLvalueExpected" xml:space="preserve">
-    <value>Ein Ausdruck kann in diesem Kontext nicht verwendet werden, weil er ggf. nicht als Verweis zurückgegeben wird.</value>
+    <value>Ein Ausdruck kann in diesem Kontext nicht verwendet werden, weil er möglicherweise nicht als Verweis übergeben oder zurückgegeben wird.</value>
   </data>
   <data name="ERR_OneAliasPerReference" xml:space="preserve">
     <value>Eine /reference-Option, die einen externen Alias deklariert, kann nur einen Dateinamen haben. Um mehrere Aliase oder Dateinamen festzulegen, verwenden Sie mehrere /reference-Optionen.</value>
+  </data>
+  <data name="ERR_StackAllocConversionNotPossible" xml:space="preserve">
+    <value>Die Umwandlung eines stackalloc-Ausdrucks vom Typ "{0}" in den Typ "{1}" ist nicht möglich.</value>
   </data>
   <data name="ERR_UnclosedExpressionHole" xml:space="preserve">
     <value>Das schließende Trennzeichen "}" fehlt für den interpolierten Ausdruck, der mit "{" beginnt.</value>
@@ -381,7 +387,7 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>Nur CLS-kompatible Elemente können abstrakt sein</value>
   </data>
   <data name="IDS_FeaturePrivateProtected" xml:space="preserve">
-    <value>private protected</value>
+    <value>privat geschützt</value>
   </data>
   <data name="ERR_ConflictingMachineModule" xml:space="preserve">
     <value>Die Assembly und das Modul "{0}" können nicht verschiedene Zielprozessoren haben.</value>
@@ -425,9 +431,6 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   <data name="WRN_InvalidAssemblyName" xml:space="preserve">
     <value>Der Assemblyverweis "{0}" ist ungültig und kann nicht aufgelöst werden.</value>
   </data>
-  <data name="ERR_BadOutWithThis" xml:space="preserve">
-    <value> Der Parametermodifizierer "out" kann nicht mit "this" verwendet werden. </value>
-  </data>
   <data name="ERR_DeconstructRequiresExpression" xml:space="preserve">
     <value>Für die Dekonstruktionszuweisung ist ein Ausdruck mit einem Typ auf der rechten Seite erforderlich.</value>
   </data>
@@ -437,6 +440,9 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   <data name="ERR_ThisStructNotInAnonMeth" xml:space="preserve">
     <value>Anonyme Methoden, Lambdaausdrücke und Abfrageausdrücke innerhalb von Strukturen können nicht auf Instanzmember von "this" zugreifen. Kopieren Sie "this" in eine lokale Variable außerhalb der anonymen Methode, des Lambdaausdrucks oder des Abfrageausdrucks, und verwenden Sie die lokale Variable.</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField2" xml:space="preserve">
+    <value>Eine Zuweisung zu einem Member von {0} "{1}" ist nicht möglich, weil es sich um eine schreibgeschützte Variable handelt.</value>
+  </data>
   <data name="ERR_InterfaceImplementedByConditional" xml:space="preserve">
     <value>Der bedingte Member "{0}" kann den Schnittstellenmember "{1}" im Typ "{2}" nicht implementieren.</value>
   </data>
@@ -444,7 +450,7 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>Die statische {0}-Klasse kann nicht vom Typ "{1}" abgeleitet werden. Statische Klassen müssen von einem Objekt abgeleitet werden.</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic2" xml:space="preserve">
-    <value>Felder eines statischen schreibgeschützten Felds "{0}" können nicht als Verweis zurückgegeben werden.</value>
+    <value>Felder eines statischen schreibgeschützten Felds "{0}" können nicht als schreibbarer Verweis zurückgegeben werden.</value>
   </data>
   <data name="ERR_ForwardedTypeInThisAssembly" xml:space="preserve">
     <value>Der Typ "{0}" ist zwar in dieser Assembly definiert, es wurde aber eine Typweiterleitung für ihn festgelegt.</value>
@@ -471,7 +477,7 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>"{0}" implementiert das Muster "{1}" nicht. "{2}" ist mit "{3}" nicht eindeutig.</value>
   </data>
   <data name="ERR_BadCompatMode" xml:space="preserve">
-    <value>Invalid option '{0}' for /langversion. Use '/langversion:?' to list supported values.</value>
+    <value>Ungültige Option "{0}" für "/langversion". Mit "/langversion:?" können Sie eine Liste unterstützter Werte abrufen.</value>
   </data>
   <data name="ERR_AliasQualifiedNameNotAnExpression" xml:space="preserve">
     <value>Ein aliasqualifizierter Name ist kein Ausdruck.</value>
@@ -717,13 +723,16 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>Die Gleitkommakonstante liegt außerhalb des Bereichs von Typ "{0}".</value>
   </data>
   <data name="ERR_InvalidDebugInfo" xml:space="preserve">
-    <value>Unable to read debug information of method '{0}' (token 0x{1:X8}) from assembly '{2}'</value>
+    <value>Die Debuginformationen der Methode "{0}" (Token 0x{1:X8}) können nicht aus der Assembly "{2}" gelesen werden.</value>
   </data>
   <data name="ERR_EncodinglessSyntaxTree" xml:space="preserve">
     <value>Debuginformationen für einen Quelltext können nur codiert ausgegeben werden.</value>
   </data>
   <data name="ERR_BadResourceVis" xml:space="preserve">
     <value>Ungültige Option "{0}". Ressourcensichtbarkeit muss entweder "public" oder "private" sein.</value>
+  </data>
+  <data name="ERR_ExplicitReservedAttr" xml:space="preserve">
+    <value>Verwenden Sie nicht "{0}". Dies ist für die Nutzung durch den Compiler reserviert.</value>
   </data>
   <data name="WRN_BadRestoreNumber_Title" xml:space="preserve">
     <value>Warnung konnte nicht wiederhergestellt werden, da sie global deaktiviert wurde.</value>
@@ -741,7 +750,7 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>Eine Endkennung für Element "{0}" wurde erwartet.</value>
   </data>
   <data name="IDS_FeatureLeadingDigitSeparator" xml:space="preserve">
-    <value>leading digit separator</value>
+    <value>Trennzeichen für vorangestellte Ziffern</value>
   </data>
   <data name="ERR_UnexpectedBoundGenericName" xml:space="preserve">
     <value>Typargumente sind im nameof-Operator unzulässig.</value>
@@ -860,6 +869,9 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   <data name="ERR_BadVisReturnType" xml:space="preserve">
     <value>Inkonsistenter Zugriff: Rückgabetyp "{1}" ist weniger zugreifbar als Methode "{0}".</value>
   </data>
+  <data name="ERR_FieldsInRoStruct" xml:space="preserve">
+    <value>Instanzfelder oder schreibgeschützte Strukturen müssen schreibgeschützt sein.</value>
+  </data>
   <data name="UseLiteralForTokens" xml:space="preserve">
     <value>Verwenden Sie "Microsoft.CodeAnalysis.CSharp.SyntaxFactory.Literal" zum Erstellen von Zeichenliteraltoken.</value>
   </data>
@@ -882,13 +894,13 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>Der Typ "{0}" aus der Assembly "{1}" kann nichtüber Assemblygrenzen hinweg verwendet werden, da er ein generisches Typargument besitzt, bei dem es sich um einen eingebetteten Interoptyp handelt.</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction" xml:space="preserve">
-    <value>The local function '{0}' is declared but never used</value>
+    <value>Die lokale Funktion "{0}" ist deklariert, wird aber nie verwendet.</value>
   </data>
   <data name="ERR_AsMustHaveReferenceType" xml:space="preserve">
     <value>Der as-Operator muss mit einem Referenztyp oder einem Typ, der NULL-Werte zulässt, verwendet werden. ("{0}" ist ein Werttyp, der keine NULL-Werte zulässt.)</value>
   </data>
   <data name="ERR_AbstractNotVirtual" xml:space="preserve">
-    <value>The abstract {0} '{1}' cannot be marked virtual</value>
+    <value>Das abstrakte {0}-Element "{1}" kann nicht als virtuell markiert werden.</value>
   </data>
   <data name="ERR_OperatorInStaticClass" xml:space="preserve">
     <value>"{0}": Statische Klassen können keine benutzerdefinierten Operatoren enthalten.</value>
@@ -1031,6 +1043,9 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
   <data name="ERR_BadAwaitWithoutAsyncLambda" xml:space="preserve">
     <value>Der "await"-Operator kann nur mit Async-{0} verwendet werden. Markieren Sie ggf. {0} mit dem "async"-Modifizierer.</value>
   </data>
+  <data name="ERR_RefExtensionMustBeValueTypeOrConstrainedToOne" xml:space="preserve">
+    <value>Der erste Parameter einer ref-Erweiterungsmethode "{0}" muss ein Werttyp oder ein generischer Typ sein, der auf die Struktur eingeschränkt ist.</value>
+  </data>
   <data name="ChainingSpeculativeModelIsNotSupported" xml:space="preserve">
     <value>Die Verkettung eines spekulativen semantischen Modells wird nicht unterstützt. Sie sollten ein spekulatives Modell aus dem nicht spekulativen ParentModel erstellen.</value>
   </data>
@@ -1041,7 +1056,7 @@ Ein catch()-Block nach einem catch (System.Exception e)-Block kann nicht-CLS-Aus
     <value>Der Filterausdruck ist eine Konstante. Sie sollte den Filter entfernen.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_2" xml:space="preserve">
-    <value>Feature '{0}' is not available in C# 7.2. Please use language version {1} or greater.</value>
+    <value>Das Feature "{0}" ist in C# 7.2 nicht verfügbar. Verwenden Sie Sprachversion {1} oder höher.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7_1" xml:space="preserve">
     <value>Das Feature "{0}" ist in C# 7.1 nicht verfügbar. Verwenden Sie die Sprachversion {1} oder höher.</value>
@@ -1125,7 +1140,7 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
     <value>Das Mitglied "{0}" blendet kein verfügbares Mitglied aus. Das neue Schlüsselwort ist nicht erforderlich.</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgumentInDynamicInvocation" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.</value>
+    <value>Die Spezifikationen für benannte Argumente müssen in einem dynamischen Aufruf nach Angabe aller festen Argumente aufgeführt werden.</value>
   </data>
   <data name="WRN_BadWarningNumber_Description" xml:space="preserve">
     <value>Eine Zahl, die an die Präprozessordirektive der #pragma-Warnung übergeben wurde, war keine gültige Warnungszahl. Vergewissern Sie sich, dass die Zahl eine Warnung und keinen Fehler darstellt.</value>
@@ -1146,13 +1161,13 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
     <value>#r ist nur in Skripts zulässig.</value>
   </data>
   <data name="ERR_DynamicLocalFunctionTypeParameter" xml:space="preserve">
-    <value>Cannot pass argument with dynamic type to generic local function '{0}' with inferred type arguments.</value>
+    <value>Ein Argument vom dynamischen Typ kann nicht an die generische lokale Funktion "{0}" mit abgeleiteten Typargumenten übergeben werden.</value>
   </data>
   <data name="SyntaxTreeAlreadyPresent" xml:space="preserve">
     <value>Der Syntaxbaum ist bereits vorhanden.</value>
   </data>
-  <data name="ERR_BadRefWithThis" xml:space="preserve">
-    <value> Der Parametermodifizierer "ref" kann nicht mit "this" verwendet werden. </value>
+  <data name="ERR_BadParameterModifiersOrder" xml:space="preserve">
+    <value>Der Parametermodifizierer "{0}" kann nicht nach dem Modifizierer "{1}" verwendet werden. </value>
   </data>
   <data name="ERR_InvalidOutputName" xml:space="preserve">
     <value>Ungültiger Ausgabename: {0}</value>
@@ -1241,6 +1256,9 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
   <data name="ERR_ExternHasConstructorInitializer" xml:space="preserve">
     <value>'{0}' darf nicht extern sein und keinen Konstruktor/Initialisierer aufweisen</value>
   </data>
+  <data name="IDS_StackAllocExpression" xml:space="preserve">
+    <value>stackalloc {0}[{1}]</value>
+  </data>
   <data name="ERR_AutoPropertyCannotBeRefReturning" xml:space="preserve">
     <value>Für automatisch implementierte Eigenschaften darf keine Rückgabe als Verweis erfolgen.</value>
   </data>
@@ -1301,6 +1319,9 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
   <data name="ERR_BadTypeforThis" xml:space="preserve">
     <value>Der erste Parameter einer Erweiterungsmethode darf nicht den Typ "{0}" haben.</value>
   </data>
+  <data name="IDS_FeatureReadOnlyReferences" xml:space="preserve">
+    <value>schreibgeschützte Verweise</value>
+  </data>
   <data name="ERR_BadSKunknown" xml:space="preserve">
     <value>"{0}" ist "{1}" und im angegebenen Kontext nicht gültig.</value>
   </data>
@@ -1343,11 +1364,14 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
   <data name="ERR_AliasMissingFile" xml:space="preserve">
     <value>Ungültige Verweisaliasoption: "{0}=". Fehlender Dateiname.</value>
   </data>
+  <data name="ERR_FieldAutoPropCantBeByRefLike" xml:space="preserve">
+    <value>Ein Feld oder eine automatisch implementierte Eigenschaft darf nur dann vom Typ "{0}" sein, wenn es sich um einen Instanzmember einer Referenzstruktur handelt.</value>
+  </data>
   <data name="ERR_BadNonTrailingNamedArgument" xml:space="preserve">
-    <value>Named argument '{0}' is used out-of-position but is followed by an unnamed argument</value>
+    <value>Das benannte Argument "{0}" wird außerhalb der Position verwendet, wird jedoch von einem unbenannten Argument gefolgt.</value>
   </data>
   <data name="ERR_RefReturnReadonly2" xml:space="preserve">
-    <value>Member des schreibgeschützten Felds "{0}" können nicht als Verweis zurückgegeben werden.</value>
+    <value>Member des schreibgeschützten Felds "{0}" können nicht als schreibbarer Verweis zurückgegeben werden.</value>
   </data>
   <data name="ERR_BadDynamicMethodArg" xml:space="preserve">
     <value>Ein Ausdruck vom Typ "{0}" kann nicht als Argument für einen dynamisch verteilten Vorgang verwendet werden.</value>
@@ -1371,7 +1395,7 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
     <value>Ein Windows-Runtime-Ereignis darf nicht als out- oder ref-Parameter übergeben werden.</value>
   </data>
   <data name="ERR_SpecialByRefInLambda" xml:space="preserve">
-    <value>Instance of type '{0}' cannot be used inside a nested function, query expression, iterator block or async method</value>
+    <value>Eine Instanz des Typs "{0}" kann nicht in einer geschachtelten Funktion, einem Abfrageausdruck, einem Iteratorblock oder einer Async-Methode verwendet werden.</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongReturnType" xml:space="preserve">
     <value>"{0}" implementiert den Schnittstellenmember "{1}" nicht. "{2}" hat nicht den entsprechenden Rückgabetyp "{3}" und kann "{1}" daher nicht implementieren.</value>
@@ -1445,6 +1469,9 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
   <data name="WRN_RefCultureMismatch_Title" xml:space="preserve">
     <value>Referenzierte Assembly hat andere Kultureinstellungen</value>
   </data>
+  <data name="ERR_InExtensionMustBeValueType" xml:space="preserve">
+    <value>Der erste Parameter einer in-Erweiterungsmethode "{0}" muss ein Werttyp sein.</value>
+  </data>
   <data name="ERR_NoConversionForNubDefaultParam" xml:space="preserve">
     <value>Ein Wert vom Typ "{0}" kann nicht als Standardparameter für den Parameter "{1}", der NULL-Werte zulässt, verwendet werden, weil "{0}" kein einfacher Typ ist.</value>
   </data>
@@ -1516,6 +1543,9 @@ Sie sollten das Unterdrücken der Warnung nur in Betracht ziehen, wenn Sie siche
   </data>
   <data name="ThisMethodCanOnlyBeUsedToCreateTokens" xml:space="preserve">
     <value>Diese Methode kann nur zum Erstellen von Token verwendet werden. "{0}" ist kein Token.</value>
+  </data>
+  <data name="ERR_OverloadRefKind" xml:space="preserve">
+    <value>"{0}" kann kein überladenes {1}-Element definieren, das sich nur in den Parametermodifizierern "{2}" und "{3}" unterscheidet.</value>
   </data>
   <data name="ERR_NameNotInContextPossibleMissingReference" xml:space="preserve">
     <value>Der Name "{0}" ist im aktuellen Kontext nicht vorhanden. (Möglicherweise fehlt ein Verweis auf Assembly "{1}".)</value>
@@ -1710,9 +1740,6 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="ERR_IntegralTypeValueExpected" xml:space="preserve">
     <value>Ganzzahlwert erwartet.</value>
   </data>
-  <data name="ERR_MultiParamMod" xml:space="preserve">
-    <value>Ein Parameter kann nicht alle angegebenen Modifizierer aufweisen. Für den Parameter wurden zu viele Modifizierer angegeben.</value>
-  </data>
   <data name="ERR_NotYetImplementedInRoslyn" xml:space="preserve">
     <value>Diese Sprachfunktion ("{0}") ist noch nicht implementiert.</value>
   </data>
@@ -1812,6 +1839,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="ERR_ClassDoesntImplementInterface" xml:space="preserve">
     <value>"{0}": Der enthaltende Typ implementiert die "{1}"-Schnittstelle nicht.</value>
   </data>
+  <data name="ERR_RefStructInterfaceImpl" xml:space="preserve">
+    <value>{0}: Referenzstrukturen können keine Schnittstellen implementieren.</value>
+  </data>
   <data name="ERR_QueryNoProviderStandard" xml:space="preserve">
     <value>Es konnte keine Implementierung des Abfragemusters für den Quelltyp "{0}" gefunden werden. "{1}" wurde nicht gefunden. Fehlt möglicherweise ein Verweis auf "System.Core.dll" oder eine Using-Direktive für "System.Linq"?</value>
   </data>
@@ -1836,6 +1866,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="WRN_TooManyLinesForDebugger_Title" xml:space="preserve">
     <value>Die Quelldatei hat das Limit von 16.707.565 Zeilen überschritten, die in der PDB dargestellt werden können. Die Debuginformationen sind falsch.</value>
   </data>
+  <data name="IDS_FeatureRefStructs" xml:space="preserve">
+    <value>Referenzstrukturen</value>
+  </data>
   <data name="ERR_AutoPropertyInitializerInInterface" xml:space="preserve">
     <value>Automatisch implementierte Eigenschaften in Schnittstellen können keine Initialisierer aufweisen.</value>
   </data>
@@ -1852,7 +1885,7 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
     <value>Der Operand eines Inkrement- oder Dekrementoperators muss eine Variable, eine Eigenschaft oder ein Indexer sein.</value>
   </data>
   <data name="ERR_CannotEmbedWithoutPdb" xml:space="preserve">
-    <value>/embed switch is only supported when emitting a PDB.</value>
+    <value>Die Option "/embed" wird nur beim Ausgeben einer PDB unterstützt.</value>
   </data>
   <data name="ERR_AbstractAndExtern" xml:space="preserve">
     <value>"{0}" kann nicht gleichzeitig extern und abstrakt sein.</value>
@@ -1889,6 +1922,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   </data>
   <data name="ERR_MustHaveRefReturn" xml:space="preserve">
     <value>By-value-Rückgaben können nur in Methoden verwendet werden, deren Rückgabe nach Wert erfolgt.</value>
+  </data>
+  <data name="ERR_EscapeStackAlloc" xml:space="preserve">
+    <value>Ein Ergebnis eines stackalloc-Ausdrucks vom Typ "{0}" kann in diesem Kontext nicht verwendet werden, weil es dadurch möglicherweise außerhalb der enthaltenden Methode verfügbar gemacht wird.</value>
   </data>
   <data name="ERR_InvalidFwdType" xml:space="preserve">
     <value>Ein ungültiger Typ wurde als Argument für das TypeForwardedTo-Attribut angegeben.</value>
@@ -2077,7 +2113,7 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
     <value>Die Klassentypeinschränkung "{0}" muss vor allen anderen Einschränkungen stehen.</value>
   </data>
   <data name="ERR_CantChangeRefReturnOnOverride" xml:space="preserve">
-    <value>Die Rückgabe von "{0}" muss {2}als Verweis erfolgen, um mit dem überschriebenen Member "{1}" übereinzustimmen.</value>
+    <value>"{0}" muss mit der Rückgabe des außer Kraft gesetzten Members "{1}" als Verweis übereinstimmen.</value>
   </data>
   <data name="WRN_CallerLineNumberPreferredOverCallerFilePath_Title" xml:space="preserve">
     <value>Das CallerFilePathAttribute hat keine Auswirkungen; es wird von dem CallerLineNumberAttribute überschrieben</value>
@@ -2094,6 +2130,12 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="ERR_TypeArgsNotAllowed" xml:space="preserve">
     <value>{1} "{0}" kann nicht mit Typargumenten verwendet werden.</value>
   </data>
+  <data name="ERR_EscapeLocal" xml:space="preserve">
+    <value>"{0}" (lokal) kann in diesem Kontext nicht verwendet werden, weil referenzierte Variablen dadurch möglicherweise außerhalb ihres Deklarationsbereichs verfügbar gemacht werden.</value>
+  </data>
+  <data name="ERR_EscapeOther" xml:space="preserve">
+    <value>Der Ausdruck kann in diesem Kontext nicht verwendet werden, weil Variablen dadurch möglicherweise außerhalb ihrer Deklaration indirekt verfügbar gemacht werden.</value>
+  </data>
   <data name="ERR_PartialMethodOnlyOneLatent" xml:space="preserve">
     <value>Eine partielle Methode darf nicht über mehrere definierende Deklarationen verfügen.</value>
   </data>
@@ -2105,6 +2147,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   </data>
   <data name="ERR_BadAwaitArg" xml:space="preserve">
     <value>"await" erfordert, dass der Typ "{0}" über eine geeignete GetAwaiter-Methode verfügt.</value>
+  </data>
+  <data name="ERR_EscapeCall2" xml:space="preserve">
+    <value>Ein Member des Ergebnisses von "{0}" kann in diesem Kontext nicht verwendet werden, weil dadurch vom Parameter "{1}" referenzierte Variablen möglicherweise außerhalb ihres Deklarationsbereichs verfügbar gemacht werden.</value>
   </data>
   <data name="ERR_MemberReserved" xml:space="preserve">
     <value>Der Typ "{1}" reserviert bereits einen Member namens "{0}" mit den gleichen Parametertypen.</value>
@@ -2202,6 +2247,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="WRN_NonObsoleteOverridingObsolete_Title" xml:space="preserve">
     <value>Element überschreibt veraltetes Element</value>
   </data>
+  <data name="ERR_AssignReadonlyNotField" xml:space="preserve">
+    <value>Eine Zuweisung zu {0} "{1}" ist nicht möglich, weil es sich um eine schreibgeschützte Variable handelt.</value>
+  </data>
   <data name="ERR_BadAsyncLocalType" xml:space="preserve">
     <value>Asynchrone Methoden dürfen keine lokalen Elemente als Verweis besitzen.</value>
   </data>
@@ -2235,6 +2283,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="ERR_PatternIsSubsumed" xml:space="preserve">
     <value>Der Parameter wurde bereits von einem vorherigen Parameter verarbeitet.</value>
   </data>
+  <data name="ERR_EscapeCall" xml:space="preserve">
+    <value>Ein Ergebnis von "{0}" kann in diesem Kontext nicht verwendet werden, weil dadurch vom Parameter "{1}" referenzierte Variablen möglicherweise außerhalb ihres Deklarationsbereichs verfügbar gemacht werden.</value>
+  </data>
   <data name="ERR_ForwardedTypeIsNested" xml:space="preserve">
     <value>Der Typ "{0}" ist ein geschachtelter Typ von "{1}" und kann daher nicht weitergeleitet werden.</value>
   </data>
@@ -2258,6 +2309,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   </data>
   <data name="ERR_CantOverrideBogusMethod" xml:space="preserve">
     <value>"{1}" wird von der Sprache nicht unterstützt und kann deshalb von "{0}" nicht überschrieben werden.</value>
+  </data>
+  <data name="ERR_BadParameterModifiers" xml:space="preserve">
+    <value> Der Parametermodifizierer "{0}" kann nicht mit "{1}" verwendet werden. </value>
   </data>
   <data name="ERR_NonInvocableMemberCalled" xml:space="preserve">
     <value>Der nicht aufrufbare Member "{0}" kann nicht wie eine Methode verwendet werden.</value>
@@ -2391,6 +2445,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="ERR_BadEmptyThrow" xml:space="preserve">
     <value>Eine throw-Anweisung ohne Argumente ist außerhalb einer catch-Klausel unzulässig.</value>
   </data>
+  <data name="ERR_BadSpecialByRefIterator" xml:space="preserve">
+    <value>Die foreach-Anweisung kann nicht für Enumeratoren vom Typ "{0}" in asynchronen oder Iteratormethoden verwendet werden, weil "{0}" eine Referenzstruktur ist.</value>
+  </data>
   <data name="WRN_UnreferencedEvent" xml:space="preserve">
     <value>Das Ereignis "{0}" wird nie verwendet.</value>
   </data>
@@ -2448,6 +2505,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="ERR_InvalidSpecifier" xml:space="preserve">
     <value>"{0}" ist kein gültiger Formatbezeichner.</value>
   </data>
+  <data name="ERR_RefConditionalAndAwait" xml:space="preserve">
+    <value>"await" kann nicht in einem Ausdruck mit einem bedingten ref-Operator verwendet werden.</value>
+  </data>
   <data name="ERR_DuplicateImportSimple" xml:space="preserve">
     <value>Es wurde bereits eine Assembly mit dem einfachen Namen "{0}" importiert. Entfernen Sie einen der Verweise (z. B. "{1}"), oder signieren Sie die Verweise, damit sie parallel verwendet werden können.</value>
   </data>
@@ -2490,6 +2550,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   <data name="ERR_ExternAliasNotAllowed" xml:space="preserve">
     <value>Der externe Alias ist in diesem Kontext nicht gültig.</value>
   </data>
+  <data name="ERR_RefConditionalNeedsTwoRefs" xml:space="preserve">
+    <value>Entweder beide bedingten Operatorwerte müssen ref-Werte sein oder keiner von beiden.</value>
+  </data>
   <data name="ERR_NoPIANestedType" xml:space="preserve">
     <value>Der Typ "{0}" kann nicht eingebettet werden, da es sich um einen geschachtelten Typ handelt. Legen Sie die Eigenschaft "Interoptypen einbetten" ggf. auf "False" fest.</value>
   </data>
@@ -2507,9 +2570,6 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   </data>
   <data name="IDS_XMLNOINCLUDE" xml:space="preserve">
     <value> Für folgende Include-Kennung wurden keine übereinstimmenden Elemente gefunden. </value>
-  </data>
-  <data name="ERR_FeatureIsExperimental" xml:space="preserve">
-    <value>Das Feature "{0}" ist experimentell und wird nicht unterstützt. Verwenden Sie "/features:{1}", um es zu aktivieren.</value>
   </data>
   <data name="WRN_EqualsWithoutGetHashCode_Title" xml:space="preserve">
     <value>Typ überschreibt Object.Equals(object o), überschreibt jedoch nicht Object.GetHashCode()</value>
@@ -2582,6 +2642,9 @@ Um die Warnung zu beheben, können Sie stattdessen /reference verwenden (Einbett
   </data>
   <data name="WRN_AttributeIgnoredWhenPublicSigning_Title" xml:space="preserve">
     <value>Das Attribut wird ignoriert, wenn öffentliche Signierung angegeben wird.</value>
+  </data>
+  <data name="ERR_TypeReserved" xml:space="preserve">
+    <value>Der Typname "{0}" ist für die Verwendung durch den Compiler reserviert.</value>
   </data>
   <data name="ERR_QueryInnerKey" xml:space="preserve">
     <value>Der Name "{0}" ist auf der rechten Seite von "equals" nicht im Bereich. Vertauschen Sie die Ausdrücke auf beiden Seiten von "equals".</value>
@@ -2764,6 +2827,9 @@ Unterstützen Sie den Compiler bei der Unterscheidung zwischen den Methoden. Daz
   <data name="ERR_BadAttributeArgument" xml:space="preserve">
     <value>Ein Attributargument muss ein constant-, typeof- oder Arrayerstellungsausdruck eines Attributparametertyps sein.</value>
   </data>
+  <data name="IDS_FeatureReadOnlyStructs" xml:space="preserve">
+    <value>schreibgeschützte Strukturen</value>
+  </data>
   <data name="IDS_ThrowExpression" xml:space="preserve">
     <value>throw-Ausdruck</value>
   </data>
@@ -2908,6 +2974,9 @@ Unterstützen Sie den Compiler bei der Unterscheidung zwischen den Methoden. Daz
   <data name="ERR_ReadonlyValueTypeInObjectInitializer" xml:space="preserve">
     <value>Member des schreibgeschützten Felds "{0}" vom Typ "{1}" können nicht mit einem Objektinitialisierer zugewiesen werden, da es sich um einen Werttyp handelt.</value>
   </data>
+  <data name="ERR_FieldlikeEventsInRoStruct" xml:space="preserve">
+    <value>Feldähnliche Ereignisse sind in schreibgeschützten Strukturen unzulässig.</value>
+  </data>
   <data name="ERR_BadAsyncLacksBody" xml:space="preserve">
     <value>Der Modifizierer "async" kann nur in Methoden verwendet werden, die über einen Textkörper verfügen.</value>
   </data>
@@ -2954,7 +3023,7 @@ Unterstützen Sie den Compiler bei der Unterscheidung zwischen den Methoden. Daz
     <value>Es wird ein Arrayinitialisierer der Länge "{0}" erwartet.</value>
   </data>
   <data name="ERR_RefReturnReadonly" xml:space="preserve">
-    <value>Ein schreibgeschütztes Feld kann nicht als Verweis zurückgegeben werden.</value>
+    <value>Ein schreibgeschütztes Feld kann nicht als schreibbarer Verweis zurückgegeben werden.</value>
   </data>
   <data name="ERR_V6SwitchGoverningTypeValueExpected" xml:space="preserve">
     <value>Ein switch-Ausdruck oder eine case-Bezeichnung muss den Typ "bool", "char", "string", "integral", "enum" oder einen entsprechenden Nullable-Typ in C# 6 oder früher aufweisen.</value>
@@ -2988,9 +3057,6 @@ Unterstützen Sie den Compiler bei der Unterscheidung zwischen den Methoden. Daz
   </data>
   <data name="ERR_AnonymousTypePropertyAssignedBadValue" xml:space="preserve">
     <value>"{0}" kann keiner Eigenschaft eines anonymen Typs zugeordnet werden.</value>
-  </data>
-  <data name="ERR_OverloadRefOutCtor" xml:space="preserve">
-    <value>Der überladene Konstruktor "{0}" kann nicht definiert werden, da er von einem anderen Konstruktor nur bezüglich des ref- und out-Parameters abweicht.</value>
   </data>
   <data name="ERR_CantOpenFileWrite" xml:space="preserve">
     <value>"{0}" kann nicht zum Schreiben geöffnet werden: "{1}"</value>
@@ -3045,9 +3111,6 @@ Unterstützen Sie den Compiler bei der Unterscheidung zwischen den Methoden. Daz
   </data>
   <data name="ERR_ConstValueRequired" xml:space="preserve">
     <value>Für ein Konstantenfeld muss ein Wert bereitgestellt werden.</value>
-  </data>
-  <data name="ERR_RefReturnReceiver" xml:space="preserve">
-    <value>"{0}" kann nicht als Verweis zurückgegeben werden, weil der Empfänger ggf. nicht als Verweis zurückgegeben wird.</value>
   </data>
   <data name="WRN_BadRestoreNumber" xml:space="preserve">
     <value>Die Warnung "CS{0}" kann nicht wiederhergestellt werden, da sie global deaktiviert wurde.</value>
@@ -3136,7 +3199,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Mehrdeutigkeit zwischen "{0}" und "{1}"</value>
   </data>
   <data name="WRN_UnreferencedLocalFunction_Title" xml:space="preserve">
-    <value>Local function is declared but never used</value>
+    <value>Die lokale Funktion ist deklariert, wird aber nie verwendet.</value>
   </data>
   <data name="ERR_MissingGuidForOption" xml:space="preserve">
     <value>Befehlszeilen-Syntaxfehler: Fehlende GUID für Option "{1}".</value>
@@ -3215,146 +3278,146 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="IDS_CSCHelp" xml:space="preserve">
     <value>
-                              Visual C# Compiler Options
+                              Visual C#-Compileroptionen
 
-                        - OUTPUT FILES -
- /out:&lt;file&gt;                   Specify output file name (default: base name of
-                               file with main class or first file)
- /target:exe                   Build a console executable (default) (Short
+                        - AUSGABEDATEIEN -
+ /out:&lt; Datei &gt;                   Gibt den Namen der Ausgabedatei an (Standardeinstellung: Basisname der
+                               Datei mit der Hauptklasse oder der ersten Datei)
+ /target:exe                   Erstellt eine ausführbare Konsolendatei (Standardeinstellung) (Kurzform:
                                form: /t:exe)
- /target:winexe                Build a Windows executable (Short form:
+ /target:winexe                winexe                Erstellt eine ausführbare Windows-Datei (Kurzform:
                                /t:winexe)
- /target:library               Build a library (Short form: /t:library)
- /target:module                Build a module that can be added to another
-                               assembly (Short form: /t:module)
- /target:appcontainerexe       Build an Appcontainer executable (Short form:
+ /target:library               Erstellt eine Bibliothek (Kurzform: /t:library)
+ /target:module                Erstellt ein Modul, das einer anderen Assembly
+                               hinzugefügt werden kann (Kurzform: /t:module)
+ /target:appcontainerexe       Erstellt eine ausführbare App-Containerdatei (Kurzform:
                                /t:appcontainerexe)
- /target:winmdobj              Build a Windows Runtime intermediate file that
-                               is consumed by WinMDExp (Short form: /t:winmdobj)
- /doc:&lt;file&gt;                   XML Documentation file to generate
- /refout:&lt;file&gt;                Reference assembly output to generate
- /platform:&lt;string&gt;            Limit which platforms this code can run on: x86,
-                               Itanium, x64, arm, anycpu32bitpreferred, or
-                               anycpu. The default is anycpu.
+ /target:winmdobj              Erstellt eine temporäre Windows-Runtime-Zwischendatei, die
+                               von WinMDExp verwendet wird (Kurzform: /t:winmdobj)
+ /doc:&lt; Datei &gt;                   Die zu generierende XML-Dokumentationsdatei
+ /refout:&lt;Datei&gt;                Die zu generierende Referenzverweisausgabe
+ /platform:&lt; Zeichenfolge &gt;            Schränkt ein, auf welchen Plattformen dieser Code ausgeführt werden kann: x86,
+                               Itanium, x64, arm, anycpu32bitpreferred oder
+                               anycpu. Die Standardeinstellung ist "anycpu".
 
-                        - INPUT FILES -
- /recurse:&lt;wildcard&gt;           Include all files in the current directory and
-                               subdirectories according to the wildcard
-                               specifications
- /reference:&lt;alias&gt;=&lt;file&gt;     Reference metadata from the specified assembly
-                               file using the given alias (Short form: /r)
- /reference:&lt;file list&gt;        Reference metadata from the specified assembly
-                               files (Short form: /r)
- /addmodule:&lt;file list&gt;        Link the specified modules into this assembly
- /link:&lt;file list&gt;             Embed metadata from the specified interop
-                               assembly files (Short form: /l)
- /analyzer:&lt;file list&gt;         Run the analyzers from this assembly
-                               (Short form: /a)
- /additionalfile:&lt;file list&gt;   Additional files that don't directly affect code
-                               generation but may be used by analyzers for producing
-                               errors or warnings.
- /embed                        Embed all source files in the PDB.
- /embed:&lt;file list&gt;            Embed specific files in the PDB
+                        - EINGABEDATEIEN -
+ /recurse:&lt; Platzhalter &gt;           Schließt alle Dateien im aktuellen Verzeichnis und
+                               in Unterverzeichnissen gemäß Platzhalter-
+                               spezifikationen ein 
+ /reference:&lt;Alias&gt;=&lt;Datei&gt;     Verweist auf Metadaten aus der angegebenen Assembly-
+                               datei mithilfe eines angegebenen Alias (Kurzform: /r)
+ /reference:&lt;Dateiliste&gt;        Verweist aus Metadaten der angegebenen Assembly-
+                               dateien (Kurzform: /r)
+ /addmodule:&lt;Dateiliste&gt;        Verknüpft die angegebenen Module in dieser Assembly.
+ /link:&lt;Dateiliste&gt;             Bettet Metadaten der angegebenen Interop-
+                               assemblydateien ein (Kurzform: /l)
+ /analyzer:&lt; Dateiliste &gt;         Führt die Analyse aus dieser Assembly aus.
+                               (Kurzform: /a)
+ /additionalfile:&lt; Dateiliste &gt;   Zusätzliche Dateien, die sich nicht direkt auf die Code-
+                               generierung auswirken, aber von der Analyse zum Erzeugen von
+                               Fehlern oder Warnungen verwendet werden können.
+ /embed                        Bettet alle Quelldateien in die PDB-Datei ein.
+ /embed:&lt;Dateiliste&gt;            Bettet bestimmte Dateien in die PDB-Datei ein.
 
-                        - RESOURCES -
- /win32res:&lt;file&gt;              Specify a Win32 resource file (.res)
- /win32icon:&lt;file&gt;             Use this icon for the output
- /win32manifest:&lt;file&gt;         Specify a Win32 manifest file (.xml)
- /nowin32manifest              Do not include the default Win32 manifest
- /resource:&lt;resinfo&gt;           Embed the specified resource (Short form: /res)
- /linkresource:&lt;resinfo&gt;       Link the specified resource to this assembly
-                               (Short form: /linkres) Where the resinfo format
-                               is &lt;file&gt;[,&lt;string name&gt;[,public|private]]
+                        - RESSOURCEN -
+ /win32res:&lt;Datei&gt;              Gibt eine Win32-Ressourcendatei (RES-Datei) an.
+ /win32icon:&lt;Datei&gt;             Verwendet dieses Symbol für die Ausgabe.
+ /win32manifest:&lt;Datei&gt;         Gibt eine Win32-Manifestdatei (XML-Datei) an.
+ /nowin32manifest              Schließt das Win32-Standardmanifest nicht ein.
+ /resource:&lt;resinfo&gt;           Bettet die angegebene Ressource ein (Kurzform: /res)
+ /linkresource:&lt;resinfo&gt;       Verknüpft die angegebene Ressource mit dieser Assembly
+                               (Kurzform: /linkres). Dabei ist das ResInfo-Format
+                               &lt;Datei&gt;[,&lt;Zeichenfolgenname&gt;[,public|private]]
 
-                        - CODE GENERATION -
- /debug[+|-]                   Emit debugging information
+                        - CODEGENERIERUNG -
+ /debug[+|-]                   Gibt Debuginformationen aus 
  /debug:{full|pdbonly|portable|embedded}
-                               Specify debugging type ('full' is default,
-                               'portable' is a cross-platform format,
-                               'embedded' is a cross-platform format embedded into
-                               the target .dll or .exe)
- /optimize[+|-]                Enable optimizations (Short form: /o)
- /deterministic                Produce a deterministic assembly
-                               (including module version GUID and timestamp)
- /refonly                      Produce a reference assembly in place of the main output
- /instrument:TestCoverage      Produce an assembly instrumented to collect
-                               coverage information
- /sourcelink:&lt;file&gt;            Source link info to embed into PDB.
+                               Gibt den Debugtyp an ("full" ist der Standardwert,
+                               "portable" ist ein plattformübergreifendes Format,
+                               "embedded" ist ein plattformübergreifendes Format, das in die
+                               Ziel-DLL oder -EXE eingebettet ist).
+ /optimize[+|-]                Aktiviert Optimierungen (Kurzform: /o)
+ /deterministic                Generiert eine deterministische Assembly 
+                               (einschließlich Modulversion-GUID und Zeitstempel)
+ /refonly                      Erstellt eine Referenzassembly anstelle der Hauptausgabe.
+ /instrument:TestCoverage      Generiert eine Assembly, die für die
+                               Erfassung von Code Coverage-Informationen instrumentiert ist.
+ /sourcelink:&lt;Datei&gt;            Quelllinkinformationen zum Einbetten in portable PDB-Dateien.
 
-                        - ERRORS AND WARNINGS -
- /warnaserror[+|-]             Report all warnings as errors
- /warnaserror[+|-]:&lt;warn list&gt; Report specific warnings as errors
- /warn:&lt;n&gt;                     Set warning level (0-4) (Short form: /w)
- /nowarn:&lt;warn list&gt;           Disable specific warning messages
- /ruleset:&lt;file&gt;               Specify a ruleset file that disables specific
-                               diagnostics.
- /errorlog:&lt;file&gt;              Specify a file to log all compiler and analyzer
-                               diagnostics.
- /reportanalyzer               Report additional analyzer information, such as
-                               execution time.
+                        - FEHLER UND WARNUNGEN -
+ /warnaserror[+|-]             Meldet alle Warnungen als Fehler.
+ /warnaserror[+|-]:&lt;Warnungsliste&gt; Meldet bestimmte Warnungen als Fehler.
+ /warn:&lt;n&gt;                     Legt die Warnstufe fest (0–4) (Kurzform: /w)
+ /nowarn:&lt; Warnungsliste &gt;           Deaktiviert bestimmte Warnmeldungen.
+ /ruleset:&lt;Datei&gt;               Gibt eine Rulesetdatei an, die bestimmte Diagnosevorgänge
+                               deaktiviert.
+ /errorlog:&lt;Datei&gt;              Gibt eine Datei zur Protokollierung aller Diagnosevorgänge von Compiler und
+                               Analyzer an.
+ /reportanalyzer               Berichtet zusätzliche Analyseinformationen wie etwa die
+                               Ausführungszeit.
 
-                        - LANGUAGE -
- /checked[+|-]                 Generate overflow checks
- /unsafe[+|-]                  Allow 'unsafe' code
- /define:&lt;symbol list&gt;         Define conditional compilation symbol(s) (Short
+                        - SPRACHE -
+ /checked[+|-]                 Generiert Überlaufüberprüfungen
+ /unsafe[+|-]                  Lässt "unsicheren" Code zu.
+ /define:&lt;Symbolliste&gt;         Definiert bedingte Kompilationssymbole (Kurz-
                                form: /d)
- /langversion:?                Display the allowed values for language version
- /langversion:&lt;string&gt;         Specify language version such as
-                               `default` (latest major version), or
-                               `latest` (latest version, including minor versions),
-                               or specific versions like `6` or `7.1`
+ /langversion:?                    Zeigt die zulässigen Werte für die Sprachversion an.
+/langversion:&lt;Zeichenfolge&gt;             Gibt die Sprachversion an:
+                                  "default" (neueste Hauptversion) oder
+                                  "latest" (neueste Version, einschließlich Nebenversionen)
+                                  oder bestimmte Versionen wie "6" oder "7.1".
 
-                        - SECURITY -
- /delaysign[+|-]               Delay-sign the assembly using only the public
-                               portion of the strong name key
- /publicsign[+|-]              Public-sign the assembly using only the public
-                               portion of the strong name key
- /keyfile:&lt;file&gt;               Specify a strong name key file
- /keycontainer:&lt;string&gt;        Specify a strong name key container
- /highentropyva[+|-]           Enable high-entropy ASLR
+                        - SICHERHEIT -
+ /delaysign[+|-]               Signiert die Assembly verzögert nur mit dem öffentlichen
+                               Teil des starken Namensschlüssels.
+ /publicsign[+|-]              Signiert die Assembly öffentlich nur mit dem öffentlichen
+                               Teil des starken Namensschlüssels.
+ /keyfile:&lt;Datei&gt;               Gibt eine Datei für den starken Namensschlüssel an.
+ /keycontainer:&lt;Zeichenfolge&gt;        Gibt einen Container für den starken Namensschlüssel an.
+ /highentropyva[+|-]           Aktiviert ASLR mit hoher Entropie.
 
-                        - MISCELLANEOUS -
- @&lt;file&gt;                       Read response file for more options
- /help                         Display this usage message (Short form: /?)
- /nologo                       Suppress compiler copyright message
- /noconfig                     Do not auto include CSC.RSP file
- /parallel[+|-]                Concurrent build.
- /version                      Display the compiler version number and exit.
+                        - VERSCHIEDENES -
+ @&lt;Datei&gt;                       Weitere Optionen finden Sie in der Antwortdatei.
+ /help                         Zeigt diese Syntaxmeldung an (Kurzform: /?)
+ /nologo                       Unterdrückt die Copyrightmeldung des Compilers.
+ /noconfig                     Schließt die CSC.RSP-Datei nicht automatisch ein.
+ /parallel[+|-]                Gleichzeitige Erstellung.
+ /version                      Zeigt die Compilerversionsnummer und die Beendigung an.
 
-                        - ADVANCED -
- /baseaddress:&lt;address&gt;        Base address for the library to be built
- /checksumalgorithm:&lt;alg&gt;      Specify algorithm for calculating source file
-                               checksum stored in PDB. Supported values are:
-                               SHA1 (default) or SHA256.
- /codepage:&lt;n&gt;                 Specify the codepage to use when opening source
-                               files
- /utf8output                   Output compiler messages in UTF-8 encoding
- /main:&lt;type&gt;                  Specify the type that contains the entry point
-                               (ignore all other possible entry points) (Short
+                        - ERWEITERT -
+ /baseaddress:&lt;Adresse&gt;        Die Basisadresse für die zu erstellende Bibliothek.
+ /checksumalgorithm:&lt;alg&gt;      Gibt einen Algorithmus für das Berechnen der Quelldatei-
+                               prüfsumme an, die in der PDB-Datei gespeichert ist. Unterstützte Werte sind:
+                               SHA1 (Standard) oder SHA256.
+ /codepage:&lt;n&gt;                 Gibt die beim Öffnen von Quelldateien zu verwendende
+                               Codepage an.
+ /utf8output                   Ausgabecompilermeldungen in UTF-8-Codierung
+ /main:&lt;Typ&gt;                  Gibt den Typ an, der den Einstiegspunkt enthält
+                               (alle anderen möglichen Einstiegspunkte werden ignoriert) (Kurz-
                                form: /m)
- /fullpaths                    Compiler generates fully qualified paths
- /filealign:&lt;n&gt;                Specify the alignment used for output file
-                               sections
+ /fullpaths                    Der Compiler generiert vollqualifizierte Pfade.
+ /filealign:&lt;n&gt;                Gibt die Ausrichtung an, die für Ausgabedateiabschnitte
+                               verwendet werden soll.
  /pathmap:&lt;K1&gt;=&lt;V1&gt;,&lt;K2&gt;=&lt;V2&gt;,...
-                               Specify a mapping for source path names output by
-                               the compiler.
- /pdb:&lt;file&gt;                   Specify debug information file name (default:
-                               output file name with .pdb extension)
- /errorendlocation             Output line and column of the end location of
-                               each error
- /preferreduilang              Specify the preferred output language name.
+                               Gibt eine Zuordnung für die Quellpfadnamen an, die vom 
+                               Compiler ausgegeben werden.
+ /pdb:&lt;Datei&gt;                   Gibt den Namen der Debuginformationsdatei an (Standard:
+                               Ausgabedateiname mit der Erweiterung .pdb)
+ /errorendlocation             Die Ausgabezeile und -spalte des Endpunkts
+                               jedes Fehlers 
+ /preferreduilang              Gibt den bevorzugten Namen der Ausgabesprache an.
  /nostdlib[+|-]                Do not reference standard library (mscorlib.dll)
- /subsystemversion:&lt;string&gt;    Specify subsystem version of this assembly
- /lib:&lt;file list&gt;              Specify additional directories to search in for
-                               references
- /errorreport:&lt;string&gt;         Specify how to handle internal compiler errors:
-                               prompt, send, queue, or none. The default is
-                               queue.
- /appconfig:&lt;file&gt;             Specify an application configuration file
-                               containing assembly binding settings
- /moduleassemblyname:&lt;string&gt;  Name of the assembly which this module will be
-                               a part of
- /modulename:&lt;string&gt;          Specify the name of the source module
+ /subsystemversion:&lt;Zeichenfolge&gt;    Verweist nicht auf die Standardbibliothek 
+ /lib:&lt;Dateiliste&gt;              Gibt zusätzliche Verzeichnisse an, in denen nach Verweisen
+                               gesucht werden soll.
+ /errorreport:&lt;Zeichenfolge&gt;         Gibt die Verarbeitung interner Compilerfehler an:
+                               "prompt", "send", "queue" oder "none". Der Standardwert ist
+                               "queue".
+ /appconfig:&lt;Datei&gt;             Gibt eine Anwendungskonfigurationsdatei
+                               mit Assemblybindungseinstellungen an.
+ /moduleassemblyname:&lt;Zeichenfolge&gt;  Der Name der Assembly, zu der dieses Modul
+                               gehören wird .
+ /modulename:&lt;Zeichenfolge&gt;          Gibt den Quellmodulnamen an.
 </value>
   </data>
   <data name="ERR_ValueExpected" xml:space="preserve">
@@ -3372,9 +3435,6 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   <data name="ERR_InvalidSignaturePublicKey" xml:space="preserve">
     <value>Im AssemblySignatureKeyAttribute wurde ein öffentlicher Schlüssel mit ungültiger Signatur angegeben.</value>
   </data>
-  <data name="ERR_OverloadRefOut" xml:space="preserve">
-    <value>"{0}" kann keine überladenen Methoden definieren, die sich nur in "ref" und "out" unterscheiden.</value>
-  </data>
   <data name="WRN_TupleLiteralNameMismatch" xml:space="preserve">
     <value>Der Tupelelementname "{0}" wird ignoriert, da vom Zieltyp "{1}" ein anderer oder kein Name angegeben ist.</value>
   </data>
@@ -3389,9 +3449,6 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_AmbigContext" xml:space="preserve">
     <value>"{0}" ist ein mehrdeutiger Verweis zwischen "{1}" und "{2}".</value>
-  </data>
-  <data name="ERR_ParamsCantBeRefOut" xml:space="preserve">
-    <value>Der params-Parameter kann nicht als "ref" oder "out" deklariert werden.</value>
   </data>
   <data name="WRN_CmdOptionConflictsSource_Title" xml:space="preserve">
     <value>Die Option überschreibt das in einer Quelldatei oder einem hinzugefügten Modul angegebene Attribut.</value>
@@ -3453,9 +3510,6 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   <data name="ERR_NoDynamicPhantomOnBaseCtor" xml:space="preserve">
     <value>Der Konstruktoraufruf muss dynamisch verteilt werden. Dies ist aber nicht möglich, da er Teil eines Konstruktorinitialisierers ist. Wandeln Sie die dynamischen Argumente um.</value>
   </data>
-  <data name="ERR_RefReturnCall2" xml:space="preserve">
-    <value>Ein Member aus dem Ergebnis "{0}" kann nicht als Verweis zurückgegeben werden, weil das an den Parameter "{1}" übergebene Argument nicht als Verweis zurückgegeben werden kann.</value>
-  </data>
   <data name="ERR_TypeInferenceFailedForImplicitlyTypedOutVariable" xml:space="preserve">
     <value>Der Typ der implizit typisierten out-Variablen "{0}" kann nicht abgeleitet werden.</value>
   </data>
@@ -3467,6 +3521,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_ImplicitlyTypedVariableMultipleDeclarator" xml:space="preserve">
     <value>Implizit typisierte Variablen dürfen nicht über mehrere Deklarationen verfügen.</value>
+  </data>
+  <data name="ERR_RefReturnReadonlyNotField" xml:space="preserve">
+    <value>Die Rückgabe von {0} "{1}" als schreibbarer Verweis ist nicht möglich, weil es sich um eine schreibgeschützte Variable handelt.</value>
   </data>
   <data name="ERR_NamespaceUnexpected" xml:space="preserve">
     <value>Member, wie z. B. Felder oder Methoden, können nicht direkt in einem Namespace enthalten sein.</value>
@@ -3630,9 +3687,6 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   <data name="ERR_InvalidAssemblyCulture" xml:space="preserve">
     <value>Assemblykultur-Zeichenfolgen dürfen keine eingebetteten NUL-Zeichen enthalten.</value>
   </data>
-  <data name="ERR_AddrOnReadOnlyLocal" xml:space="preserve">
-    <value>Die Adresse einer schreibgeschützten lokalen Variablen kann nicht abgerufen werden.</value>
-  </data>
   <data name="ERR_PatternNullableType" xml:space="preserve">
     <value>Es ist unzulässig, den Nullable-Typ "{0}" in einem Muster zu verwenden. Verwenden Sie stattdessen den zugrunde liegenden Typ "{1}".</value>
   </data>
@@ -3664,7 +3718,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>CallerMemberNameAttribute kann nicht angewendet werden, da keine Standardkonvertierungen von Typ "{0}" in Typ "{1}" verfügbar sind.</value>
   </data>
   <data name="ERR_RefReturnParameter2" xml:space="preserve">
-    <value>Cannot return a member of parameter '{0}' by reference because it is not a ref or out parameter</value>
+    <value>Ein Member des Parameters "{0}" kann nicht als Verweis zurückgegeben werden, weil es sich nicht um einen ref- oder out-Parameter handelt.</value>
   </data>
   <data name="IDS_RELATEDERROR" xml:space="preserve">
     <value>(Position des Symbols für den vorherigen Fehler)</value>
@@ -3687,8 +3741,8 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   <data name="WRN_InvalidSearchPathDir_Title" xml:space="preserve">
     <value>Ungültiger Suchpfad angegeben</value>
   </data>
-  <data name="ERR_RefReturnCall" xml:space="preserve">
-    <value>Ein Ergebnis von "{0}" kann nicht als Verweis zurückgegeben werden, weil das an den Parameter "{1}" übergebene Argument nicht als Verweis zurückgegeben werden kann.</value>
+  <data name="ERR_RefReturnThis" xml:space="preserve">
+    <value>"this" kann nicht als Verweis zurückgegeben werden.</value>
   </data>
   <data name="ERR_NoCanonicalView" xml:space="preserve">
     <value>Der Interoptyp, der mit dem eingebetteten Interoptyp "{0}" übereinstimmt, wurde nicht gefunden. Möglicherweise fehlt ein Assemblyverweis.</value>
@@ -3709,7 +3763,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Ein Parameter kann nicht als Verweis "{0}" zurückgegeben werden, weil es sich nicht um einen ref- oder out-Parameter handelt.</value>
   </data>
   <data name="ERR_NoNamespacePrivate" xml:space="preserve">
-    <value>Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected</value>
+    <value>Die in einem Namespace definierten Elemente dürfen nicht explizit als "private", "protected", "protected internal" oder "private protected" deklariert werden.</value>
   </data>
   <data name="ERR_AssemblyNameOnNonModule" xml:space="preserve">
     <value>Die Option /moduleassemblyname kann nur beim Erstellen des Zieltyps "module" angegeben werden.</value>
@@ -3745,7 +3799,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>"{0}" ist kein Referenztyp, wie er für die lock-Anweisung erforderlich ist.</value>
   </data>
   <data name="ERR_RefReturnReadonlyStatic" xml:space="preserve">
-    <value>Ein statisches schreibgeschütztes Feld kann nicht als Verweis zurückgegeben werden.</value>
+    <value>Ein statisches schreibgeschütztes Feld kann nicht als schreibbarer Verweis zurückgegeben werden.</value>
   </data>
   <data name="WRN_CLS_BadInterfaceMember_Title" xml:space="preserve">
     <value>CLS-kompatible Schnittstellen dürfen nur CLS-kompatible Elemente besitzen</value>
@@ -3809,6 +3863,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_PropertyLacksGet" xml:space="preserve">
     <value>Die Eigenschaft oder der Indexer "{0}" kann in diesem Kontext nicht verwendet werden, weil der get-Accessor fehlt.</value>
+  </data>
+  <data name="ERR_AutoPropsInRoStruct" xml:space="preserve">
+    <value>Automatisch implementierte Instanzeigenschaften in schreibgeschützten Strukturen müssen schreibgeschützt sein.</value>
   </data>
   <data name="ERR_LanguageVersionCannotHaveLeadingZeroes" xml:space="preserve">
     <value>Die angegebene Sprachversion "{0}" darf keine führenden Nullen enthalten.</value>
@@ -3880,7 +3937,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>"{0}" definiert den Operator == oder !=, aber überschreibt Object.GetHashCode() nicht.</value>
   </data>
   <data name="IDS_LangVersions" xml:space="preserve">
-    <value>Supported language versions:</value>
+    <value>Unterstützte Sprachversionen:</value>
   </data>
   <data name="ERR_BadBinaryOperatorSignature" xml:space="preserve">
     <value>Einer der Parameter eines binären Operators muss der enthaltende Typ sein.</value>
@@ -3947,6 +4004,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_UnexpectedSemicolon" xml:space="preserve">
     <value>Unzulässiges Semikolon nach der Methode oder dem Accessorblock.</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField2" xml:space="preserve">
+    <value>Member von {0} "{1}" können nicht als ref- oder out-Wert verwendet werden, weil es sich um eine schreibgeschützte Variable handelt.</value>
   </data>
   <data name="ERR_LocalTypeNameClash" xml:space="preserve">
     <value>Durch Einbetten des Interoptyps "{0}" aus der Assembly "{1}" wird ein Namenskonflikt in der aktuellen Assembly verursacht. Legen Sie die Eigenschaft "Interoptypen einbetten" ggf. auf "False" fest.</value>
@@ -4050,6 +4110,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   <data name="ERR_ArrayOfStaticClass" xml:space="preserve">
     <value>"{0}": Arrayelemente können keinen statischen Typ aufweisen.</value>
   </data>
+  <data name="IDS_SK_CONSTRUCTOR" xml:space="preserve">
+    <value>Konstruktor</value>
+  </data>
   <data name="ERR_InvalidQM" xml:space="preserve">
     <value>Der Typ des bedingten Ausdrucks kann nicht bestimmt werden, weil keine implizite Konvertierung zwischen "{0}" und "{1}" erfolgt.</value>
   </data>
@@ -4061,6 +4124,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_InaccessibleSetter" xml:space="preserve">
     <value>Die Eigenschaft oder der Indexer "{0}" kann in diesem Kontext nicht verwendet werden, da nicht auf den set-Accessor zugegriffen werden kann.</value>
+  </data>
+  <data name="IConversionExpressionIsNotCSharpConversion" xml:space="preserve">
+    <value>"{0}" ist kein gültiger C#-Konvertierungsausdruck.</value>
   </data>
   <data name="ERR_NamedArgumentUsedInPositional" xml:space="preserve">
     <value>Das benannte {0}-Argument legt einen Parameter fest, für den bereits ein positionelles Argument angegeben wurde.</value>
@@ -4204,7 +4270,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Das Objekt "{0}" kann mehrere Male verworfen werden.</value>
   </data>
   <data name="ERR_CloseUnimplementedInterfaceMemberWrongRefReturn" xml:space="preserve">
-    <value>"{0}" implementiert nicht den Schnittstellenmember "{1}". "{2}" kann "{1}" nicht implementieren, weil die Rückgabe nicht nach {3} erfolgt.</value>
+    <value>"{0}" implementiert nicht den Schnittstellenmember "{1}". "{2}" kann "{1}" nicht implementieren, weil keine übereinstimmende Rückgabe als Verweis vorliegt.</value>
   </data>
   <data name="ERR_FixedNeedsLvalue" xml:space="preserve">
     <value>Auf Puffer fester Größe kann nur über lokale Variablen oder Felder zugegriffen werden.</value>
@@ -4345,7 +4411,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Der {1}-Typparameter enthält die Einschränkung "struct". "{1}" kann daher nicht als Einschränkung für "{0}" verwendet werden.</value>
   </data>
   <data name="ERR_PredefinedValueTupleTypeNotFound" xml:space="preserve">
-    <value>Predefined type '{0}' is not defined or imported, or is declared in multiple referenced assemblies</value>
+    <value>Der vordefinierte Typ "{0}" wurde nicht definiert oder importiert, oder er wurde in mehreren referenzierten Assemblys deklariert.</value>
   </data>
   <data name="TypeArgumentCannotBeNull" xml:space="preserve">
     <value>Das Typargument kann nicht NULL sein.</value>
@@ -4406,6 +4472,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_BadCastInFixed" xml:space="preserve">
     <value>Die rechte Seite einer fixed-Anweisungszuweisung darf kein Umwandlungsausdruck sein.</value>
+  </data>
+  <data name="IDS_FeatureRefExtensionMethods" xml:space="preserve">
+    <value>Referenzerweiterungsmethoden</value>
   </data>
   <data name="ERR_AssgReadonly2" xml:space="preserve">
     <value>Member des schreibgeschützten Felds "{0}" können nicht geändert werden (außer in einem Konstruktor oder Variableninitialisierer).</value>
@@ -4503,6 +4572,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   <data name="ERR_ComRefCallInExpressionTree" xml:space="preserve">
     <value>Ein Ausdrucksbaumstruktur-Lambda darf keinen COM-Aufruf enthalten, in dem "ref" für Argumente ausgelassen wurde.</value>
   </data>
+  <data name="ERR_ParamsCantBeWithModifier" xml:space="preserve">
+    <value>Der params-Parameter kann nicht als "{0}" deklariert werden.</value>
+  </data>
   <data name="ERR_BadForeachDecl" xml:space="preserve">
     <value>Ein Typ und ein Bezeichner sind in einer foreach-Anweisung erforderlich.</value>
   </data>
@@ -4510,7 +4582,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Argument "{0}": Konvertierung von "{1}" in "{2}" nicht möglich.</value>
   </data>
   <data name="ERR_NamedArgumentSpecificationBeforeFixedArgument" xml:space="preserve">
-    <value>Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments.</value>
+    <value>Die Spezifikationen für benannte Argumente müssen nach Angabe aller festen Argumente aufgeführt werden. Verwenden Sie Sprachversion {0} oder höher, um nicht nachfolgende benannte Argumente zuzulassen.</value>
   </data>
   <data name="ERR_ImplBadConstraints" xml:space="preserve">
     <value>Die Einschränkungen für den "{0}"-Typparameter der "{1}"-Methode müssen mit den Einschränkungen für den "{2}"-Typparameter der "{3}"-Schnittstellenmethode übereinstimmen. Verwenden Sie stattdessen eine explizite Schnittstellenimplementierung.</value>
@@ -4532,6 +4604,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_UnexpectedToken" xml:space="preserve">
     <value>Unerwartetes Token "{0}"</value>
+  </data>
+  <data name="ERR_RefConditionalDifferentTypes" xml:space="preserve">
+    <value>Der Ausdruck muss vom Typ "{0}" sein, um dem alternativen ref-Wert zu entsprechen.</value>
   </data>
   <data name="ERR_CantDeriveFromSealedType" xml:space="preserve">
     <value>"{0}": Vom versiegelten Typ "{1}" kann nicht abgeleitet werden.</value>
@@ -4620,6 +4695,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   <data name="ERR_IllegalFixedType" xml:space="preserve">
     <value>Puffer fester Größe müssen einen der folgenden Typen aufweisen: "bool", "byte", "short", "int", "long", "char", "sbyte", "ushort", "uint", "ulong", "float" oder "double".</value>
   </data>
+  <data name="ERR_CallArgMixing" xml:space="preserve">
+    <value>Diese Kombination von Argumenten für "{0}" ist unzulässig, weil dadurch vom Parameter "{1}" referenzierte Variablen möglicherweise außerhalb ihres Deklarationsbereichs verfügbar gemacht werden.</value>
+  </data>
   <data name="ERR_ConstOutOfRange" xml:space="preserve">
     <value>Der Konstantenwert "{0}" kann nicht in "{1}" konvertiert werden.</value>
   </data>
@@ -4672,7 +4750,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Das Feature "{0}" ist in C# 6 nicht verfügbar. Verwenden Sie Sprachversion {1} oder höher.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion7" xml:space="preserve">
-    <value>Das Feature "{0}" ist in C# 7 nicht verfügbar. Verwenden Sie die Sprachversion {1} oder höher.</value>
+    <value>Das Feature "{0}" ist in C# 7.0 nicht verfügbar. Verwenden Sie Sprachversion {1} oder höher.</value>
   </data>
   <data name="ERR_FeatureNotAvailableInVersion4" xml:space="preserve">
     <value>Die Funktion "{0}" ist in C# 4 nicht verfügbar. Verwenden Sie Sprachversion {1} oder höher.</value>
@@ -4760,6 +4838,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_SubexpressionNotInNameof" xml:space="preserve">
     <value>Unterausdruck kann nicht in einem Argument für "nameof" verwendet werden.</value>
+  </data>
+  <data name="ERR_MismatchedRefEscapeInTernary" xml:space="preserve">
+    <value>Branches eines ternären ref-Operators können nicht auf Variablen mit inkompatiblen Deklarationsbereichen verweisen.</value>
   </data>
   <data name="ERR_FixedDimsRequired" xml:space="preserve">
     <value>Bei einem Pufferfeld fester Größe muss sich der Arraygrößenspezifizierer hinter dem Feldnamen befinden.</value>
@@ -4913,6 +4994,9 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
   </data>
   <data name="ERR_PatternDynamicType" xml:space="preserve">
     <value>Der Typ "dynamic" darf nicht in einem Muster verwendet werden.</value>
+  </data>
+  <data name="ERR_RefReadonlyNotField" xml:space="preserve">
+    <value>{0} "{1}" kann nicht als ref- oder out-Wert verwendet werden, weil es sich um eine schreibgeschützte Variable handelt.</value>
   </data>
   <data name="ERR_CallingFinalizeDeprecated" xml:space="preserve">
     <value>Destruktoren und object.Finalize können nicht direkt aufgerufen werden. Rufen Sie IDisposable.Dispose auf, sofern verfügbar.</value>
@@ -5092,7 +5176,7 @@ Wenn solch eine Klasse als Basisklasse verwendet wird und die ableitende Klasse 
     <value>Ausdruckskörperindexer</value>
   </data>
   <data name="ERR_LocalFunctionMissingBody" xml:space="preserve">
-    <value>'{0}' is a local function and must therefore always have a body.</value>
+    <value>"{0}" ist eine lokale Funktion und muss daher immer Text enthalten.</value>
   </data>
   <data name="ERR_DeriveFromDynamic" xml:space="preserve">
     <value>"{0}": Keine Ableitung vom dynamischen Typ möglich.</value>

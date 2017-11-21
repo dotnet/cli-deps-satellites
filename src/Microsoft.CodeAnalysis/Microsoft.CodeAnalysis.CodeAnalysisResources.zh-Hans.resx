@@ -179,7 +179,7 @@
     <value>类</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>仅在发出 PDB 时才支持嵌入的文本。</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>模块复制不能用于创建程序集元数据。</value>
@@ -234,9 +234,6 @@
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>小于 -1 的 "/keepalive" 选项的参数无效。</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>功能 "IOperation" 已禁用。</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>预期的绝对路径。</value>

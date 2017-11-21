@@ -318,6 +318,9 @@
   <data name="QinvalidFuncType" xml:space="preserve">
     <value>함수 형식이 잘못되었습니다.</value>
   </data>
+  <data name="thisValueCannotBeMutated" xml:space="preserve">
+    <value>이 값을 변경할 수 없습니다.</value>
+  </data>
   <data name="mismatchIARCancel" xml:space="preserve">
     <value>제공된 IAsyncResult 개체가 이 '취소' 작업과 일치하지 않습니다.</value>
   </data>
@@ -389,9 +392,6 @@
   </data>
   <data name="notComparable" xml:space="preserve">
     <value>두 개체의 형식이 다르므로 비교할 수 없습니다.</value>
-  </data>
-  <data name="ThisValueCannotBeMutated" xml:space="preserve">
-    <value>이 값을 변경할 수 없습니다.</value>
   </data>
   <data name="unsupportedQueryConstruct" xml:space="preserve">
     <value>올바른 쿼리 식이 아닙니다. 다음 생성자가 쿼리에 사용되었지만 F#-to-LINQ 쿼리 변환기에서 인식할 수 없습니다.\n{0}\n허용되는 쿼리의 사양을 확인하고 일부 연산을 쿼리 식 외부로 이동하십시오.</value>

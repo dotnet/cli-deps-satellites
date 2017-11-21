@@ -318,6 +318,9 @@
   <data name="QinvalidFuncType" xml:space="preserve">
     <value>無效的函式類型</value>
   </data>
+  <data name="thisValueCannotBeMutated" xml:space="preserve">
+    <value>不能變更這個值</value>
+  </data>
   <data name="mismatchIARCancel" xml:space="preserve">
     <value>提供的 IAsyncResult 物件不符合此 'Cancel' 作業。</value>
   </data>
@@ -389,9 +392,6 @@
   </data>
   <data name="notComparable" xml:space="preserve">
     <value>兩個物件有不同的類型，無法進行計算。</value>
-  </data>
-  <data name="ThisValueCannotBeMutated" xml:space="preserve">
-    <value>不能變更這個值</value>
   </data>
   <data name="unsupportedQueryConstruct" xml:space="preserve">
     <value>這不是有效的查詢運算式。查詢中使用了下列建構，但 F#-to-LINQ 查詢翻譯工具無法加以辨認:\n{0}\n請檢查所允許之查詢的規格，並考慮將一些運算移出查詢運算式。</value>

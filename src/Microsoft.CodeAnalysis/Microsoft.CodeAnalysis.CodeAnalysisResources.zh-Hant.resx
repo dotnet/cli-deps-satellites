@@ -179,7 +179,7 @@
     <value>類別</value>
   </data>
   <data name="EmbeddedTextsRequirePdb" xml:space="preserve">
-    <value>Embedded texts are only supported when emitting a PDB.</value>
+    <value>只在發出 PDB 時才支援內嵌文字。</value>
   </data>
   <data name="ModuleCopyCannotBeUsedToCreateAssemblyMetadata" xml:space="preserve">
     <value>不可使用模組複本建立組件中繼資料。</value>
@@ -234,9 +234,6 @@
   </data>
   <data name="KeepAliveIsTooSmall" xml:space="preserve">
     <value>'/keepalive' 選項的引數若小於 -1 即為無效。</value>
-  </data>
-  <data name="IOperationFeatureDisabled" xml:space="preserve">
-    <value>已停用功能 'IOperation'。</value>
   </data>
   <data name="AbsolutePathExpected" xml:space="preserve">
     <value>必須是絕對路徑。</value>
