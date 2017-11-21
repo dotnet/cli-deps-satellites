@@ -22,5 +22,8 @@ $env:PATH="$DotnetInstallDir;$env:PATH"
 & dotnet restore src
 if ($lastExitCode -ne 0) { throw "Restore failed" }
 
+& dotnet restore tools/BuildTools.csproj
+if ($lastExitCode -ne 0) { throw "Restore BuildTools failed" }
+
 & dotnet build src /v:normal $ExtraParameters
 if ($lastExitCode -ne 0) { throw "Build failed" }

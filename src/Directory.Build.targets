@@ -21,7 +21,7 @@
 
   <Target Name="SignSatellites"
           BeforeTargets="PackSatellites"
-          Condition="$(IsPackage) and '$(OS)' == 'Windows_NT'">
+          Condition="$(IsPackage) and '$(OS)' == 'Windows_NT' and '$(SkipSignSatellites)' != 'true'">
     <ItemGroup>
       <SignToolArg Include="-nugetPackagesPath $(NuGetPackageRoot)" />
       <SignToolArg Include="-intermediateOutputPath $(IntermediateOutputPath)" />
