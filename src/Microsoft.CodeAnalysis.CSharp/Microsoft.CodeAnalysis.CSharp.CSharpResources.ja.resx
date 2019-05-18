@@ -456,7 +456,7 @@ AssemblyInfo.cs ファイルで RuntimeCompatibilityAttribute が false に設�
     <value>'{0}': イベント プロパティには、add および remove アクセサーの両方を指定する必要があります。</value>
   </data>
   <data name="ERR_SemiOrLBraceOrArrowExpected" xml:space="preserve">
-    <value>{ or ; or =&gt; 必要</value>
+    <value>{、;、または =&gt; が必要です。</value>
   </data>
   <data name="WRN_ConflictingMachineAssembly_Title" xml:space="preserve">
     <value>参照アセンブリは、異なるプロセッサを対象にしています</value>
